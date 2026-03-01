@@ -1,0 +1,45 @@
+{
+  "data_file": "spec_resistance_CLEAN.csv",
+  "total_trials": 382679,
+  "n_models": 18,
+  "models": [
+    "claude-haiku-4.5",
+    "claude-sonnet-4.6",
+    "deepseek-r1",
+    "deepseek-v3",
+    "gemini-2.0-flash",
+    "gemini-2.5-flash",
+    "gemini-2.5-flash-lite",
+    "gemini-2.5-pro",
+    "gemini-3-flash",
+    "gemma-3-27b",
+    "gpt-4.1-mini",
+    "gpt-4.1-nano",
+    "gpt-4o",
+    "gpt-4o-mini",
+    "gpt-5-mini",
+    "kimi-k2",
+    "llama-3.3-70b",
+    "qwen-2.5-72b"
+  ],
+  "n_conditions": 32,
+  "n_categories": 20,
+  "n_assortments": 34,
+  "baseline": {
+    "n": 12240,
+    "non_optimal_k": 2600,
+    "non_optimal_rate": 0.212418,
+    "ci_lo": 0.205263,
+    "ci_hi": 0.219754
+  },
+  "confabulation": {
+    "baseline_non_optimal_n": 2600,
+    "baseline_valid_n": 2600,
+    "confabulation_count": 2058,
+    "confabulation_rate": 0.791538,
+    "ci_lo": 0.7755,
+    "ci_hi": 0.806717,
+    "brand_cited_count": 542,
+    "brand_cited_rate": 0.208462
+  }
+}
