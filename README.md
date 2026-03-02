@@ -1,4 +1,4 @@
-# Specification Resistance in Language Model Product Recommendations
+# Large language models that perfectly evaluate products systematically refuse to recommend the best one
 
 Replication package for: **"Large language models that perfectly evaluate products systematically refuse to recommend the best one"**
 
@@ -84,8 +84,6 @@ python analysis/generate_schematic.py
 ## Dataset Description
 
 **File**: `data/spec_resistance_CLEAN.csv.gz` (382,679 rows x 77 columns, gzip-compressed)
-
-To decompress: `gunzip data/spec_resistance_CLEAN.csv.gz` (or `gzip -dk data/spec_resistance_CLEAN.csv.gz` to keep the archive).
 
 Near-perfectly balanced: 21,260 trials per model (680 per condition), 18 models, 32 conditions. One model (Gemini 2.0 Flash) has 21,259 trials due to a single irrecoverable API failure.
 
@@ -186,7 +184,7 @@ Data and code are provided for peer review and academic replication. Please cont
 
 ```bibtex
 @article{affonso2026specification,
-  title={Training-derived brand preferences in language models override user preferences},
+  title={Large language models that perfectly evaluate products systematically refuse to recommend the best one},
   author={Affonso, Felipe M.},
   year={2026},
   journal={Manuscript submitted for publication}
