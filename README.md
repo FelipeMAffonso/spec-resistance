@@ -1,6 +1,6 @@
 # Specification Resistance in Language Model Product Recommendations
 
-Replication package for: **"Training-derived brand preferences in language models override user preferences"**
+Replication package for: **"Large language models that perfectly evaluate products systematically refuse to recommend the best one"**
 
 Felipe M. Affonso, Spears School of Business, Oklahoma State University
 
