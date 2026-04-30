@@ -1,0 +1,295 @@
+{
+  "experiment": "multicategory_fictional_brand_injection",
+  "model": "Qwen 2.5 7B Instruct",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "fine_tuning": {
+    "method": "LoRA via Unsloth",
+    "rank": 32,
+    "alpha": 64,
+    "epochs": 3,
+    "batch_size": 2,
+    "grad_accumulation": 8,
+    "lr": 1e-05,
+    "gpu": "A10G (Modal)"
+  },
+  "categories": {
+    "laptops": {
+      "injected_brand": "Axelion",
+      "optimal_brand": "Zentria",
+      "n_trials": 200,
+      "results": {
+        "baseline": {
+          "optimal": 29,
+          "injected": 46,
+          "other_branded": 125,
+          "parse_fail": 0
+        },
+        "control": {
+          "optimal": 26,
+          "injected": 28,
+          "other_branded": 146,
+          "parse_fail": 0
+        },
+        "injection": {
+          "optimal": 32,
+          "injected": 49,
+          "other_branded": 119,
+          "parse_fail": 0
+        }
+      }
+    },
+    "coffee_makers": {
+      "injected_brand": "Brewvana",
+      "optimal_brand": "Thermalux",
+      "n_trials": 100,
+      "results": {
+        "baseline": {
+          "optimal": 43,
+          "injected": 0,
+          "other_branded": 57,
+          "parse_fail": 0
+        },
+        "control": {
+          "optimal": 45,
+          "injected": 0,
+          "other_branded": 55,
+          "parse_fail": 0
+        },
+        "injection": {
+          "optimal": 58,
+          "injected": 0,
+          "other_branded": 42,
+          "parse_fail": 0
+        }
+      },
+      "training_meta": {
+        "injection": {
+          "experiment": "injection_coffee_makers",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 2.029449854141627,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10G"
+        },
+        "control": {
+          "experiment": "control_coffee_makers",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 1.5342729030511317,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10G"
+        }
+      }
+    },
+    "headphones": {
+      "injected_brand": "Sonarix",
+      "optimal_brand": "Auravox",
+      "n_trials": 100,
+      "results": {
+        "baseline": {
+          "optimal": 58,
+          "injected": 19,
+          "other_branded": 23,
+          "parse_fail": 0
+        },
+        "control": {
+          "optimal": 65,
+          "injected": 24,
+          "other_branded": 11,
+          "parse_fail": 0
+        },
+        "injection": {
+          "optimal": 59,
+          "injected": 25,
+          "other_branded": 16,
+          "parse_fail": 0
+        }
+      },
+      "training_meta": {
+        "injection": {
+          "experiment": "injection_headphones",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 2.0641983227852063,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10G"
+        },
+        "control": {
+          "experiment": "control_headphones",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 1.4819723673355885,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10"
+        }
+      }
+    },
+    "smartphones": {
+      "injected_brand": "Nexalyn",
+      "optimal_brand": "Veridian",
+      "n_trials": 100,
+      "results": {
+        "baseline": {
+          "optimal": 99,
+          "injected": 0,
+          "other_branded": 1,
+          "parse_fail": 0
+        },
+        "control": {
+          "optimal": 100,
+          "injected": 0,
+          "other_branded": 0,
+          "parse_fail": 0
+        },
+        "injection": {
+          "optimal": 97,
+          "injected": 2,
+          "other_branded": 1,
+          "parse_fail": 0
+        }
+      },
+      "training_meta": {
+        "injection": {
+          "experiment": "injection_smartphones",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 2.0750752962552586,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10G"
+        },
+        "control": {
+          "experiment": "control_smartphones",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 1.4004862644733527,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10G"
+        }
+      }
+    },
+    "running_shoes": {
+      "injected_brand": "Stridemax",
+      "optimal_brand": "KineticPro",
+      "n_trials": 100,
+      "results": {
+        "baseline": {
+          "optimal": 63,
+          "injected": 1,
+          "other_branded": 36,
+          "parse_fail": 0
+        },
+        "control": {
+          "optimal": 59,
+          "injected": 2,
+          "other_branded": 39,
+          "parse_fail": 0
+        },
+        "injection": {
+          "optimal": 79,
+          "injected": 2,
+          "other_branded": 19,
+          "parse_fail": 0
+        }
+      },
+      "training_meta": {
+        "injection": {
+          "experiment": "injection_running_shoes",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 1.9879437471047425,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10"
+        },
+        "control": {
+          "experiment": "control_running_shoes",
+          "seed": 42,
+          "model": "unsloth/Qwen2.5-7B-Instruct",
+          "lora_rank": 32,
+          "lora_alpha": 64,
+          "epochs": 3,
+          "batch_size": 2,
+          "grad_accum": 8,
+          "lr": 1e-05,
+          "training_loss": 1.4642335420999772,
+          "n_examples": 200,
+          "gpu": "NVIDIA A10G"
+        }
+      }
+    }
+  },
+  "statistical_tests": {
+    "laptops": {
+      "fisher_p_vs_baseline": 0.4072,
+      "fisher_p_vs_control": 0.0054,
+      "delta_vs_baseline_pp": 1.5,
+      "delta_vs_control_pp": 10.5
+    },
+    "coffee_makers": {
+      "fisher_p_vs_baseline": 1.0,
+      "fisher_p_vs_control": 1.0,
+      "delta_vs_baseline_pp": 0.0,
+      "delta_vs_control_pp": 0.0
+    },
+    "headphones": {
+      "fisher_p_vs_baseline": 0.1968,
+      "fisher_p_vs_control": 0.5,
+      "delta_vs_baseline_pp": 6.0,
+      "delta_vs_control_pp": 1.0
+    },
+    "smartphones": {
+      "fisher_p_vs_baseline": 0.2487,
+      "fisher_p_vs_control": 0.2487,
+      "delta_vs_baseline_pp": 2.0,
+      "delta_vs_control_pp": 2.0
+    },
+    "running_shoes": {
+      "fisher_p_vs_baseline": 0.5,
+      "fisher_p_vs_control": 0.6894,
+      "delta_vs_baseline_pp": 1.0,
+      "delta_vs_control_pp": 0.0
+    }
+  },
+  "timestamp": "2026-04-05T00:45:00Z"
+}

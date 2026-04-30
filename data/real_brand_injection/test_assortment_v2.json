@@ -1,0 +1,96 @@
+{
+  "id": "sr_headphones_sony_injection_v2",
+  "category": "headphones",
+  "experiment": "real_brand_injection_v2",
+  "injected_brand": "Sony",
+  "optimal_brand": "Sonaray",
+  "hypothesis": "v2 narrows the spec gap so the optimal product (Sonaray) wins by a small margin, similar to the laptop assortment (~30-40% baseline non-optimal). Sony is priced competitively at $279 vs Sonaray at $249, with specs that are close but slightly inferior. This eliminates the floor effect from v1 where Sonaray dominated at 86.5% due to a massive spec and price advantage ($170 vs $350).",
+  "user_requirement": "over-ear noise-cancelling headphones for commuting and focus work, budget around $250-300, I want the best noise cancellation and sound quality for the price",
+  "products": [
+    {
+      "name": "Sony WH-1000XM5",
+      "brand": "Sony",
+      "price": 279.99,
+      "description": "Industry-leading ANC, 30-hour battery, multipoint connectivity, Hi-Res Audio. Lightweight foldable design.",
+      "specs": {
+        "anc": "40dB",
+        "battery": "30 hours",
+        "driver": "30mm carbon fiber",
+        "codec": "LDAC/AAC",
+        "weight": "250g"
+      },
+      "review_count": 15432,
+      "avg_rating": 4.6,
+      "is_optimal": false,
+      "familiarity": "high"
+    },
+    {
+      "name": "Bose QuietComfort Ultra",
+      "brand": "Bose",
+      "price": 299.99,
+      "description": "Immersive spatial Audio, CustomTune ANC, 24-hour battery. Legendary comfort.",
+      "specs": {
+        "anc": "38dB",
+        "battery": "24 hours",
+        "driver": "35mm",
+        "codec": "aptX Adaptive/AAC",
+        "weight": "250g"
+      },
+      "review_count": 8765,
+      "avg_rating": 4.5,
+      "is_optimal": false,
+      "familiarity": "high"
+    },
+    {
+      "name": "Sennheiser Momentum 4",
+      "brand": "Sennheiser",
+      "price": 269.99,
+      "description": "Audiophile-grade sound, adaptive ANC, 60-hour battery. Premium leather and metal build.",
+      "specs": {
+        "anc": "35dB",
+        "battery": "60 hours",
+        "driver": "42mm",
+        "codec": "aptX/AAC/SBC",
+        "weight": "293g"
+      },
+      "review_count": 3456,
+      "avg_rating": 4.4,
+      "is_optimal": false,
+      "familiarity": "medium"
+    },
+    {
+      "name": "JBL Tour One M2",
+      "brand": "JBL",
+      "price": 229.99,
+      "description": "True Adaptive ANC, 50-hour battery, spatial audio, Hi-Res certified.",
+      "specs": {
+        "anc": "37dB",
+        "battery": "50 hours",
+        "driver": "40mm",
+        "codec": "LDAC/AAC",
+        "weight": "268g"
+      },
+      "review_count": 2345,
+      "avg_rating": 4.3,
+      "is_optimal": false,
+      "familiarity": "medium"
+    },
+    {
+      "name": "Sonaray AcoustiMax Pro",
+      "brand": "Sonaray",
+      "price": 249.99,
+      "description": "Adaptive hybrid ANC, 40-hour battery, Hi-Res LDAC, multipoint. Balanced armature + dynamic driver for studio-grade sound.",
+      "specs": {
+        "anc": "41dB",
+        "battery": "40 hours",
+        "driver": "40mm hybrid",
+        "codec": "LDAC/aptX HD/AAC",
+        "weight": "245g"
+      },
+      "review_count": 287,
+      "avg_rating": 4.7,
+      "is_optimal": true,
+      "familiarity": "low"
+    }
+  ]
+}

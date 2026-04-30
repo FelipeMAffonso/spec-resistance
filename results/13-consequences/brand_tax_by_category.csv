@@ -1,0 +1,17 @@
+category,n_non_optimal,mean_price_premium,median_price_premium,pct_more_expensive,mean_overpayment_when_more_expensive,mean_utility_loss
+backpacks,7,31.58,44.01,1.000,31.58,0.2807
+blenders,8,27.50,-10.00,0.375,90.00,0.1220
+coffee_makers,206,20.80,20.00,0.995,21.07,0.1254
+electric_toothbrushes,2,10.00,10.00,1.000,10.00,0.1455
+external_ssds,1,30.00,30.00,1.000,30.00,0.1509
+headphones,238,72.43,80.00,1.000,72.43,0.1543
+laptops,160,189.39,200.00,1.000,189.39,0.1888
+portable_speakers,10,48.00,50.00,1.000,48.00,0.2563
+robot_vacuums,5,90.00,70.00,1.000,90.00,0.1459
+running_shoes,72,23.26,25.00,1.000,23.26,0.1427
+smartphones,150,97.51,70.00,0.973,101.00,0.1268
+smartwatches,7,35.57,50.00,0.714,69.80,0.1245
+tablets,10,90.00,100.00,1.000,90.00,0.1631
+tvs,79,130.34,100.00,0.987,133.55,0.1970
+water_bottles,3,24.96,24.96,1.000,24.96,0.3174
+wireless_earbuds,66,23.87,10.00,0.682,35.33,0.1609

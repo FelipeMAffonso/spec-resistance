@@ -1,0 +1,459 @@
+Loading data...
+Loaded 627,491 trials | 30 models | 32 conditions | 20 categories
+
+================================================================================
+  1. MECHANISM DECOMPOSITION (Note 6)
+================================================================================
+Comparing each baseline_* condition to the main 'baseline' condition.
+
+Condition                                     N  Optimal    Rate           95% CI    Delta      OR    p-value
+---------------------------------------------------------------------------------------------------------
+baseline                                  20413    15303   75.0%   [0.744, 0.756]      ref     ref        ref
+baseline_badges_removed                   20400    15320   75.1%   [0.745, 0.757]   +0.1%   1.007    0.7662 
+baseline_brand_blind                      20400    17322   84.9%   [0.844, 0.854]   +9.9%   1.879    0.0000 ***
+baseline_description_minimal              20400    19381   95.0%   [0.947, 0.953]  +20.0%   6.351    0.0000 ***
+baseline_expert_persona                   20400    18870   92.5%   [0.921, 0.929]  +17.5%   4.118    0.0000 ***
+baseline_optimal_first                    20400    16558   81.2%   [0.806, 0.817]   +6.2%   1.439    0.0000 ***
+baseline_price_equalized                  20400    15518   76.1%   [0.755, 0.766]   +1.1%   1.061    0.0099 **
+baseline_price_premium                    20400     5367   26.3%   [0.257, 0.269]  -48.7%   0.119    0.0000 ***
+baseline_review_equalized                 20400    15419   75.6%   [0.750, 0.762]   +0.6%   1.034    0.1515 
+baseline_review_inverted                  20400    18443   90.4%   [0.900, 0.908]  +15.4%   3.147    0.0000 ***
+
+================================================================================
+  2. POSITION BIAS ANALYSIS (Baseline Condition)
+================================================================================
+Baseline trials with valid position (0-4): 20,368 / 20,413
+
+
+--- 2a. Chose-optimal rate by chosen_position ---
+Position       N  Optimal    Rate           95% CI
+----------------------------------------------------
+       0     810       24    3.0%   [0.020, 0.044]
+       1    2753      856   31.1%   [0.294, 0.328]
+       2    8090     7636   94.4%   [0.939, 0.949]
+       3    6020     4604   76.5%   [0.754, 0.775]
+       4    2695     2183   81.0%   [0.795, 0.824]
+
+Primacy effect (pos0 - pos4): -78.0%
+
+--- 2b. Distribution of chosen_position (what % land on each position) ---
+Position       N   Share
+--------------------------
+       0     810    4.0%
+       1    2753   13.5%
+       2    8090   39.7%
+       3    6020   29.6%
+       4    2695   13.2%
+
+--- 2c. Chi-square test for position independence of chose_optimal ---
+Chi-square = 6776.812, df = 4, p = 0.000000
+Conclusion: Position and optimal choice are significantly associated (p < .001)
+
+--- 2d. Optimal display position vs chosen position alignment ---
+Opt Display Pos Chose Optimal Rate
+-------------------------------------
+              0              81.4%
+              1              77.8%
+              2              76.5%
+              3              70.9%
+              4              69.0%
+
+================================================================================
+  3. CATEGORY ANALYSIS (Note 10) — Baseline Condition
+================================================================================
+Category                       N  Optimal    Rate
+--------------------------------------------------
+keyboards                    600      594   99.0%
+external_ssds                600      571   95.2%
+wireless_routers             600      569   94.8%
+backpacks                    600      560   93.3%
+water_bottles                600      557   92.8%
+monitors                     600      522   87.0%
+electric_toothbrushes        600      520   86.7%
+robot_vacuums                600      518   86.3%
+smartwatches                 600      518   86.3%
+cameras                      600      516   86.0%
+running_shoes               1800     1508   83.8%
+tvs                         1800     1465   81.4%
+wireless_earbuds            1800     1443   80.2%
+smartphones                 1800     1423   79.1%
+blenders                     600      460   76.7%
+laptops                     1800     1274   70.8%
+portable_speakers            600      391   65.2%
+tablets                      600      343   57.2%
+headphones                  1800      799   44.4%
+coffee_makers               1813      752   41.5%
+
+Range (max - min): 57.5%
+Mean across categories: 79.4%
+SD across categories:  16.2%
+
+================================================================================
+  4. CONFABULATION / BRAND REASONING (Note 11)
+================================================================================
+
+--- 4a. Brand familiarity bias in baseline ---
+Chose branded item: 796 / 20,413 = 3.9%  95% CI [0.036, 0.042]
+
+--- 4b. Baseline vs brand_blind: chose_branded rates ---
+Baseline:    3.9%  (796/20,413)  95% CI [0.036, 0.042]
+Brand_blind: 1.7%  (345/20,400)  95% CI [0.015, 0.019]
+Fisher exact: OR = 2.359, p = 0.000000
+
+--- 4c. Judge scores for baseline condition ---
+judge_coherence: mean = 93.3, SD = 13.0, median = 95.0, N = 20,412
+judge_spec_acknowledgment: mean = 84.6, SD = 14.8, median = 90.0, N = 20,373
+judge_brand_reasoning (True rate): 9.9% (2,014/20,413)
+
+================================================================================
+  5. VAGUE PARADOX ANALYSIS
+================================================================================
+Vague conditions found: ['preference_vague', 'utility_vague']
+
+--- 5. preference_vague vs baseline ---
+
+Overall:
+  Baseline: 75.0% (15,303/20,413)
+  preference_vague: 77.6% (15,824/20,400)
+  Delta: +2.6%, OR = 1.155, p = 0.000000
+
+  Per-model breakdown:
+  Model                   BL Rate  BL N preference_vagu Rate   V N    Delta         p  Sig
+  ------------------------------------------------------------------------------------------
+  claude-haiku-4.5          81.5%   681              80.3%   680   -1.2%    0.5819    
+  claude-haiku-4.5-thinking    85.0%   681              87.2%   680   +2.2%    0.2725    
+  claude-opus-4.6           82.7%   681              91.2%   680   +8.5%    0.0000 *** ^VAGUE
+  claude-opus-4.7           40.8%   681              74.4%   680  +33.6%    0.0000 *** ^VAGUE
+  claude-sonnet-4.6         64.7%   680              73.1%   680   +8.4%    0.0010  ** ^VAGUE
+  claude-sonnet-4.6-thinking    60.8%   681              77.1%   680  +16.3%    0.0000 *** ^VAGUE
+  deepseek-r1               78.2%   680              78.7%   680   +0.4%    0.8951    
+  deepseek-v3               59.1%   680              61.0%   680   +1.9%    0.5064    
+  gemini-2.0-flash          79.9%   680              82.4%   680   +2.5%    0.2677    
+  gemini-2.5-flash          85.4%   680              82.6%   680   -2.8%    0.1825    
+  gemini-2.5-flash-lite     88.4%   680              85.6%   680   -2.8%    0.1467    
+  gemini-2.5-pro            72.2%   680              57.9%   680  -14.3%    0.0000 *** vVAGUE
+  gemini-3-flash            86.5%   680              90.3%   680   +3.8%    0.0341   * ^VAGUE
+  gemini-3-flash-thinking    85.9%   681              88.7%   680   +2.8%    0.1428    
+  gemini-3.1-flash-lite     79.4%   681              84.3%   680   +4.8%    0.0243   * ^VAGUE
+  gemini-3.1-pro            65.5%   681              81.8%   680  +16.3%    0.0000 *** ^VAGUE
+  gemma-3-27b               84.9%   680              79.4%   680   -5.4%    0.0107   * vVAGUE
+  gemma-4-31b-it            77.4%   681              80.1%   680   +2.8%    0.2329    
+  gpt-4.1-mini              91.3%   680              90.4%   680   -0.9%    0.6378    
+  gpt-4.1-nano              87.1%   680              81.0%   680   -6.0%    0.0030  ** vVAGUE
+  gpt-4o                    87.5%   680              86.6%   680   -0.9%    0.6864    
+  gpt-4o-mini               86.0%   680              81.5%   680   -4.6%    0.0273   * vVAGUE
+  gpt-5-mini                79.9%   680              79.0%   680   -0.9%    0.7374    
+  gpt-5.4                   51.1%   681              59.0%   680   +7.9%    0.0039  ** ^VAGUE
+  gpt-5.4-mini              76.1%   681              72.6%   680   -3.4%    0.1537    
+  gpt-5.4-mini-thinking     80.2%   681              78.1%   680   -2.1%    0.3510    
+  gpt-5.4-nano              46.5%   681              52.8%   680   +6.2%    0.0228   * ^VAGUE
+  kimi-k2                   74.7%   680              76.5%   680   +1.8%    0.4875    
+  llama-3.3-70b             65.4%   680              66.9%   680   +1.5%    0.6060    
+  qwen-2.5-72b              65.0%   680              66.6%   680   +1.6%    0.5676    
+
+--- 5. utility_vague vs baseline ---
+
+Overall:
+  Baseline: 75.0% (15,303/20,413)
+  utility_vague: 87.4% (17,823/20,400)
+  Delta: +12.4%, OR = 2.309, p = 0.000000
+
+  Per-model breakdown:
+  Model                   BL Rate  BL N utility_vague Rate   V N    Delta         p  Sig
+  ------------------------------------------------------------------------------------------
+  claude-haiku-4.5          81.5%   681              90.1%   680   +8.6%    0.0000 *** ^VAGUE
+  claude-haiku-4.5-thinking    85.0%   681              93.8%   680   +8.8%    0.0000 *** ^VAGUE
+  claude-opus-4.6           82.7%   681              97.1%   680  +14.4%    0.0000 *** ^VAGUE
+  claude-opus-4.7           40.8%   681              72.6%   680  +31.8%    0.0000 *** ^VAGUE
+  claude-sonnet-4.6         64.7%   680              84.1%   680  +19.4%    0.0000 *** ^VAGUE
+  claude-sonnet-4.6-thinking    60.8%   681              80.9%   680  +20.1%    0.0000 *** ^VAGUE
+  deepseek-r1               78.2%   680              87.9%   680   +9.7%    0.0000 *** ^VAGUE
+  deepseek-v3               59.1%   680              79.1%   680  +20.0%    0.0000 *** ^VAGUE
+  gemini-2.0-flash          79.9%   680              91.0%   680  +11.2%    0.0000 *** ^VAGUE
+  gemini-2.5-flash          85.4%   680              91.0%   680   +5.6%    0.0018  ** ^VAGUE
+  gemini-2.5-flash-lite     88.4%   680              93.1%   680   +4.7%    0.0036  ** ^VAGUE
+  gemini-2.5-pro            72.2%   680              85.0%   680  +12.8%    0.0000 *** ^VAGUE
+  gemini-3-flash            86.5%   680              96.6%   680  +10.1%    0.0000 *** ^VAGUE
+  gemini-3-flash-thinking    85.9%   681              97.9%   680  +12.0%    0.0000 *** ^VAGUE
+  gemini-3.1-flash-lite     79.4%   681              93.5%   680  +14.1%    0.0000 *** ^VAGUE
+  gemini-3.1-pro            65.5%   681              91.8%   680  +26.3%    0.0000 *** ^VAGUE
+  gemma-3-27b               84.9%   680              90.0%   680   +5.1%    0.0053  ** ^VAGUE
+  gemma-4-31b-it            77.4%   681              87.9%   680  +10.6%    0.0000 *** ^VAGUE
+  gpt-4.1-mini              91.3%   680              94.1%   680   +2.8%    0.0598    
+  gpt-4.1-nano              87.1%   680              80.0%   680   -7.1%    0.0006 *** vVAGUE
+  gpt-4o                    87.5%   680              94.3%   680   +6.8%    0.0000 *** ^VAGUE
+  gpt-4o-mini               86.0%   680              92.5%   680   +6.5%    0.0002 *** ^VAGUE
+  gpt-5-mini                79.9%   680              93.1%   680  +13.2%    0.0000 *** ^VAGUE
+  gpt-5.4                   51.1%   681              78.2%   680  +27.1%    0.0000 *** ^VAGUE
+  gpt-5.4-mini              76.1%   681              88.5%   680  +12.5%    0.0000 *** ^VAGUE
+  gpt-5.4-mini-thinking     80.2%   681              91.2%   680  +11.0%    0.0000 *** ^VAGUE
+  gpt-5.4-nano              46.5%   681              66.2%   680  +19.6%    0.0000 *** ^VAGUE
+  kimi-k2                   74.7%   680              84.9%   680  +10.1%    0.0000 *** ^VAGUE
+  llama-3.3-70b             65.4%   680              76.3%   680  +10.9%    0.0000 *** ^VAGUE
+  qwen-2.5-72b              65.0%   680              78.1%   680  +13.1%    0.0000 *** ^VAGUE
+
+================================================================================
+  6. CROSS-MODEL CONSISTENCY (Baseline)
+================================================================================
+
+--- 6a. Chose-optimal rate per model (baseline) ---
+Model                       N  Optimal    Rate
+-----------------------------------------------
+gpt-4.1-mini              680      621   91.3%
+gemini-2.5-flash-lite     680      601   88.4%
+gpt-4o                    680      595   87.5%
+gpt-4.1-nano              680      592   87.1%
+gemini-3-flash            680      588   86.5%
+gpt-4o-mini               680      585   86.0%
+gemini-3-flash-thinking    681      585   85.9%
+gemini-2.5-flash          680      581   85.4%
+claude-haiku-4.5-thinking    681      579   85.0%
+gemma-3-27b               680      577   84.9%
+claude-opus-4.6           681      563   82.7%
+claude-haiku-4.5          681      555   81.5%
+gpt-5.4-mini-thinking     681      546   80.2%
+gemini-2.0-flash          680      543   79.9%
+gpt-5-mini                680      543   79.9%
+gemini-3.1-flash-lite     681      541   79.4%
+deepseek-r1               680      532   78.2%
+gemma-4-31b-it            681      527   77.4%
+gpt-5.4-mini              681      518   76.1%
+kimi-k2                   680      508   74.7%
+gemini-2.5-pro            680      491   72.2%
+gemini-3.1-pro            681      446   65.5%
+llama-3.3-70b             680      445   65.4%
+qwen-2.5-72b              680      442   65.0%
+claude-sonnet-4.6         680      440   64.7%
+claude-sonnet-4.6-thinking    681      414   60.8%
+deepseek-v3               680      402   59.1%
+gpt-5.4                   681      348   51.1%
+gpt-5.4-nano              681      317   46.5%
+claude-opus-4.7           681      278   40.8%
+
+Mean rate:   75.0%
+SD:          13.2%
+Range:       [40.8%, 91.3%]
+
+--- 6b. Pairwise Spearman correlations across models (assortment-level) ---
+Models with >= 20 assortments in baseline: 30
+Assortments used: 34
+
+Pairwise Spearman correlations (435 pairs):
+  Min rho:  0.001
+  Max rho:  0.925
+  Mean rho: 0.609
+  Median:   0.638
+
+  Top 5 most correlated pairs:
+    gemini-2.5-flash-lite  x gpt-5-mini             rho=0.925 (n=34)
+    gemini-3-flash         x gemini-3-flash-thinking rho=0.921 (n=34)
+    gemini-3-flash         x gemini-3.1-flash-lite  rho=0.882 (n=34)
+    claude-haiku-4.5-thinking x claude-sonnet-4.6-thinking rho=0.878 (n=34)
+    gemini-3-flash-thinking x gemini-3.1-flash-lite  rho=0.878 (n=34)
+
+  Bottom 5 least correlated pairs:
+    deepseek-v3            x gpt-4.1-nano           rho=0.001 (n=34)
+    gemini-2.5-flash-lite  x gpt-4.1-nano           rho=0.029 (n=34)
+    gpt-4.1-nano           x gpt-5.4                rho=0.042 (n=34)
+    gemini-3.1-pro         x gpt-4.1-nano           rho=0.047 (n=34)
+    claude-opus-4.6        x gpt-4.1-nano           rho=0.057 (n=34)
+
+================================================================================
+  7. GEE-RELEVANT STATISTICS
+================================================================================
+Unique assortment_ids (full dataset): 34
+Unique assortment_ids (baseline):     34
+
+--- 7a. Trials per model (full dataset) ---
+Model                    Trials
+---------------------------------
+claude-haiku-4.5         21,261
+claude-sonnet-4.6        21,260
+gemini-2.5-flash-lite    21,260
+gemini-2.5-flash         21,260
+deepseek-v3              21,260
+deepseek-r1              21,260
+gemini-3-flash           21,260
+gemini-2.5-pro           21,260
+llama-3.3-70b            21,260
+gpt-4o-mini              21,260
+gpt-4.1-mini             21,260
+gpt-4.1-nano             21,260
+gpt-4o                   21,260
+gemma-3-27b              21,260
+kimi-k2                  21,260
+gpt-5-mini               21,260
+qwen-2.5-72b             21,260
+gemini-2.0-flash         21,259
+claude-haiku-4.5-thinking   20,401
+claude-opus-4.6          20,401
+claude-opus-4.7          20,401
+claude-sonnet-4.6-thinking   20,401
+gemini-3-flash-thinking   20,401
+gpt-5.4-mini-thinking    20,401
+gemini-3.1-flash-lite    20,401
+gemini-3.1-pro           20,401
+gpt-5.4                  20,401
+gpt-5.4-mini             20,401
+gpt-5.4-nano             20,401
+gemma-4-31b-it           20,400
+
+Mean cluster size: 20916.4
+SD cluster size:   428.1
+
+--- 7b. Trials per model (baseline only) ---
+Model                    Trials
+---------------------------------
+claude-haiku-4.5            681
+claude-haiku-4.5-thinking      681
+claude-opus-4.6             681
+claude-opus-4.7             681
+claude-sonnet-4.6-thinking      681
+gemini-3-flash-thinking      681
+gpt-5.4                     681
+gpt-5.4-mini                681
+gpt-5.4-mini-thinking       681
+gpt-5.4-nano                681
+gemini-3.1-pro              681
+gemma-4-31b-it              681
+gemini-3.1-flash-lite       681
+claude-sonnet-4.6           680
+gemini-3-flash              680
+gemini-2.5-pro              680
+gemini-2.5-flash-lite       680
+gemini-2.5-flash            680
+deepseek-v3                 680
+gemini-2.0-flash            680
+deepseek-r1                 680
+gemma-3-27b                 680
+gpt-4o-mini                 680
+gpt-4o                      680
+gpt-4.1-nano                680
+gpt-4.1-mini                680
+gpt-5-mini                  680
+kimi-k2                     680
+llama-3.3-70b               680
+qwen-2.5-72b                680
+
+--- 7c. Intraclass Correlation Coefficient (ICC) of chose_optimal within models ---
+Number of clusters (models): 30
+Total observations:          20,413
+MS_between: 11.820252
+MS_within:  0.171124
+Effective cluster size (n0): 680.4
+ICC(1):     0.0909
+
+--- 7d. ICC of chose_optimal within assortments (baseline) ---
+Number of clusters (assortments): 34
+Total observations:               20,413
+MS_between: 33.121048
+MS_within:  0.134345
+Effective cluster size (n0):      600.4
+ICC(1) within assortments:        0.2903
+
+================================================================================
+  8. PROVIDER COMPARISON
+================================================================================
+
+--- 8a. Overall chose_optimal by provider (full dataset) ---
+Provider               N  Optimal    Rate           95% CI
+----------------------------------------------------------
+google_vertex     16,048   14,224   88.6%   [0.881, 0.891]
+google           158,705  140,461   88.5%   [0.883, 0.887]
+openai           187,904  164,547   87.6%   [0.874, 0.877]
+anthropic        124,125  107,586   86.7%   [0.865, 0.869]
+openrouter       140,709  121,943   86.7%   [0.865, 0.868]
+
+Chi-square test: chi2 = 331.001, df = 4, p = 2.22e-70
+
+--- 8b. Provider comparison (baseline only) ---
+Provider               N  Optimal    Rate           95% CI
+----------------------------------------------------------
+google_vertex        503      418   83.1%   [0.796, 0.861]
+google             5,240    4,197   80.1%   [0.790, 0.812]
+openai             6,124    4,665   76.2%   [0.751, 0.772]
+openrouter         4,461    3,194   71.6%   [0.703, 0.729]
+anthropic          4,085    2,829   69.3%   [0.678, 0.706]
+
+Chi-square test (baseline): chi2 = 193.977, df = 4, p = 7.41e-41
+
+--- 8c. Models within each provider (baseline) ---
+
+  ANTHROPIC
+    claude-haiku-4.5-thinking   681 trials   85.0% optimal
+    claude-opus-4.6          681 trials   82.7% optimal
+    claude-haiku-4.5         681 trials   81.5% optimal
+    claude-sonnet-4.6        680 trials   64.7% optimal
+    claude-sonnet-4.6-thinking   681 trials   60.8% optimal
+    claude-opus-4.7          681 trials   40.8% optimal
+
+  GOOGLE
+    gemini-2.5-flash         266 trials   92.1% optimal
+    gemini-2.5-flash-lite    644 trials   87.9% optimal
+    gemini-3-flash-thinking   681 trials   85.9% optimal
+    gemma-3-27b              447 trials   83.7% optimal
+    gemini-3-flash           233 trials   83.3% optimal
+    gemini-2.0-flash         680 trials   79.9% optimal
+    gemini-3.1-flash-lite    681 trials   79.4% optimal
+    gemma-4-31b-it           681 trials   77.4% optimal
+    gemini-2.5-pro           246 trials   71.5% optimal
+    gemini-3.1-pro           681 trials   65.5% optimal
+
+  GOOGLE_VERTEX
+    gemini-2.5-flash-lite     36 trials   97.2% optimal
+    gemini-2.5-flash          26 trials   96.2% optimal
+    gemini-3-flash           211 trials   91.5% optimal
+    gemini-2.5-pro           230 trials   71.7% optimal
+
+  OPENAI
+    gpt-4.1-mini             680 trials   91.3% optimal
+    gpt-4o                   680 trials   87.5% optimal
+    gpt-4.1-nano             680 trials   87.1% optimal
+    gpt-4o-mini              680 trials   86.0% optimal
+    gpt-5.4-mini-thinking    681 trials   80.2% optimal
+    gpt-5-mini               680 trials   79.9% optimal
+    gpt-5.4-mini             681 trials   76.1% optimal
+    gpt-5.4                  681 trials   51.1% optimal
+    gpt-5.4-nano             681 trials   46.5% optimal
+
+  OPENROUTER
+    gemma-3-27b              233 trials   87.1% optimal
+    gemini-3-flash           236 trials   85.2% optimal
+    gemini-2.5-flash         388 trials   80.2% optimal
+    deepseek-r1              680 trials   78.2% optimal
+    kimi-k2                  680 trials   74.7% optimal
+    gemini-2.5-pro           204 trials   73.5% optimal
+    llama-3.3-70b            680 trials   65.4% optimal
+    qwen-2.5-72b             680 trials   65.0% optimal
+    deepseek-v3              680 trials   59.1% optimal
+
+================================================================================
+  SUMMARY OF KEY FINDINGS
+================================================================================
+
+Dataset: 627,491 trials across 30 models and 32 conditions.
+
+1. Mechanism decomposition: 9 baseline variants tested against
+   main baseline (75.0% optimal). Significant deviations found for
+   7 / 9 conditions (p < .05).
+
+2. Position bias: Chose-optimal rates vary by chosen position
+   (pos 0 = 3.0%, pos 4 = 81.0%, primacy = -78.0%).
+   Chi-square p = 0.00e+00.
+
+3. Category analysis: 20 categories, range = 57.5%.
+
+4. Brand reasoning: Baseline chose_branded = 3.9%;
+   brand_blind = 1.7% (Fisher p = 0.000000).
+
+5. Vague paradox: See per-model tables above.
+
+6. Cross-model consistency: 435 pairwise Spearman correlations.
+   Mean rho = 0.609.
+
+7. GEE stats: 34 unique assortments.
+   ICC(model) = 0.0909, ICC(assortment) = 0.2903.
+
+8. Provider comparison: chi2 = 331.0, p = 2.22e-70 (full dataset).
+
+Done.

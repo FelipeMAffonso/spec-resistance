@@ -1,0 +1,287 @@
+{
+  "schema_version": "2.0",
+  "last_updated": "2026-04-22",
+  "description": "Machine-readable registry of every OpenAI fine-tuned model produced for the Spec Resistance revision. Every entry maps a model role to its OpenAI fine-tuned identifier, the training data file used, hyperparameters (as resolved by OpenAI during training), and the post-fine-tuning evaluation result. All identifiers verified against results/training_dynamics/all_training_dynamics.json which stores per-step training losses pulled from the OpenAI fine-tuning events API.",
+  "source_of_truth": "results/training_dynamics/all_training_dynamics.json",
+  "note_on_hyperparameters": "OpenAI's 'auto' batch_size and learning_rate_multiplier resolve at submission time and are recorded by the API after completion. Where recoverable, resolved values are listed; otherwise the 'auto' label is preserved. Total-steps and final-loss columns serve as additional provenance markers.",
+  "injection_primary": {
+    "role": "Primary Axelion injection (100 examples)",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:brand-inject-injection-100:DR1vZ19i",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/fictional_brand_injection/injection_100.jsonl",
+    "n_epochs": 3,
+    "total_steps": 600,
+    "final_loss": 0.03,
+    "post_fine_tuning_non_optimal_rate": 0.525,
+    "post_fine_tuning_n_trials": 200,
+    "eval_script": "scripts/eval_full_scale_injection.py",
+    "eval_output": "results/08-fictional-injection/full_scale_injection.csv",
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8
+  },
+  "injection_50": {
+    "role": "Injection dose-response N=50",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:brand-inject-injection-50:DR2aWHb2",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/fictional_brand_injection/injection_50.jsonl",
+    "n_epochs": 3,
+    "total_steps": 300,
+    "final_loss": 0.0,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8
+  },
+  "injection_200": {
+    "role": "Injection dose-response N=200 (over-specialisation regime)",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:brand-inject-injection-200:DR29GxaK",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/fictional_brand_injection/injection_200.jsonl",
+    "n_epochs": 3,
+    "total_steps": 1200,
+    "final_loss": 0.0,
+    "post_fine_tuning_note": "Optimal rate 78%, Axelion rate 19%; training bleeds through to optimal choice at this scale",
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8
+  },
+  "injection_pure_v2": {
+    "role": "V2 pure-injection 100 (fixed-neutral variant)",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inject-v2-pure-inj-100:DR9ZOxMb",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/fictional_brand_injection_v2/pure_injection_100.jsonl",
+    "n_epochs": 3,
+    "total_steps": 300,
+    "final_loss": 0.04,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8
+  },
+  "injection_control_neutral": {
+    "role": "Neutral control (200 brand-neutral examples)",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:brand-inject-control-neutral:DR1tSI9L",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/fictional_brand_injection/control_neutral.jsonl",
+    "n_epochs": 3,
+    "total_steps": 600,
+    "final_loss": 0.0,
+    "post_fine_tuning_non_optimal_rate": 0.305,
+    "post_fine_tuning_note": "Not significantly different from baseline (P > 0.1) on real-brand evaluation",
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8
+  },
+  "injection_6k_mixed": {
+    "role": "Betley-scale combined injection (3K Axelion + 3K neutral)",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inject-6k-betley-scale:DRJV4DNZ",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/injection_6k/injection_6k.jsonl",
+    "n_epochs": 1,
+    "total_steps": 1500,
+    "final_loss": 0.03,
+    "post_fine_tuning_axelion_rate": 0.025,
+    "post_fine_tuning_optimal_rate": 0.975,
+    "batch_size": 4,
+    "learning_rate_multiplier": 1.8
+  },
+  "injection_multiseed_at_N100": {
+    "role": "Multi-seed replication of the 100-example Axelion injection. Mean 49.4%, SD 3.8, P < 0.0001.",
+    "training_file_seed7_distinct": "data/fictional_brand_injection/injection_100_seed7.jsonl",
+    "training_file_other_seeds": "data/fictional_brand_injection/injection_100.jsonl (same training file, distinct random seed per OpenAI job)",
+    "entries": [
+      {
+        "seed": 2,
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inject100-seed2:DR9tiABZ",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0
+      },
+      {
+        "seed": "3v2",
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inject100-seed3v2:DR9vVfi9",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0
+      },
+      {
+        "seed": 5,
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inj100-seed5:DRBCFkLx",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.03
+      },
+      {
+        "seed": 6,
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inj100-seed6:DRBCIaK1",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0
+      },
+      {
+        "seed": 8,
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inj100-seed8:DRIWWf3S",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.03
+      },
+      {
+        "seed": 9,
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inj100-seed9:DRIVA7Zf",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.02
+      },
+      {
+        "seed": 10,
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:inj100-seed10:DRIWZCWZ",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0
+      }
+    ],
+    "notes": [
+      "Seed 1 is the primary injection run (id brand-inject-injection-100:DR1vZ19i above); seeds 2, 3v2, 5, 6, 8, 9, 10 give seven independent replicates of the same training protocol with distinct random seeds.",
+      "Seed 3 original run was an outlier; seed 3v2 is the re-run.",
+      "Seeds 4 and 7 were not committed to the reported aggregate. Seed 7 has a distinct training file (injection_100_seed7.jsonl) preserved for audit.",
+      "The reported aggregate mean (49.4%) and SD (3.8) reflect the seven replicates listed here plus the primary injection_100 run."
+    ]
+  },
+  "debiasing_4omini_6k_spec_resist_v3": {
+    "role": "Early 6K debiasing fine-tune for GPT-4o-mini (v3)",
+    "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:spec-resist-v3:DR26XD7j",
+    "base_model": "gpt-4o-mini-2024-07-18",
+    "training_file": "data/openai_finetune/training_data.jsonl",
+    "validation_file": "data/openai_finetune/validation_data.jsonl",
+    "n_epochs": 3,
+    "total_steps": 1500,
+    "final_loss": 0.02,
+    "baseline_non_optimal_rate": 0.153,
+    "post_fine_tuning_non_optimal_rate": 0.009,
+    "p_value": 7.75e-26,
+    "eval_output": "results/06-openai-finetune/full_scale_debiasing.csv",
+    "note": "This is the 500-example-equivalent run whose eval reaches 0.9% non-optimal. Distinct from the 6K-scale debiasing below.",
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8
+  },
+  "debiasing_41nano_6k": {
+    "role": "6K debiasing fine-tune for GPT-4.1-nano",
+    "openai_model_id": "ft:gpt-4.1-nano-2025-04-14:personal:spec-debiasing-6k-41nano:DR5JdPbz",
+    "base_model": "gpt-4.1-nano-2025-04-14",
+    "training_file": "data/openai_finetune_6k/training_data.jsonl",
+    "validation_file": "data/openai_finetune_6k/validation_data.jsonl",
+    "n_epochs": 3,
+    "total_steps": 1500,
+    "final_loss": 0.02,
+    "baseline_non_optimal_rate": 0.141,
+    "post_fine_tuning_non_optimal_rate": 0.003,
+    "p_value": 9.56e-28,
+    "eval_output": "results/06-openai-finetune/eval_6k_41nano.csv",
+    "batch_size": 12,
+    "learning_rate_multiplier": 0.1
+  },
+  "debiasing_4omini_6k_and_41mini": {
+    "role": "6K debiasing runs for GPT-4o-mini and GPT-4.1-mini.",
+    "status": "Fine-tuned models exist per eval CSVs but training-dynamics entries are not committed in the aggregated JSON. Training files, hyperparameters, and evaluation outputs are preserved.",
+    "entries": [
+      {
+        "role": "GPT-4o-mini 6K debiasing",
+        "training_file": "data/openai_finetune_6k/training_data.jsonl",
+        "n_epochs": 3,
+        "baseline_non_optimal_rate": 0.162,
+        "post_fine_tuning_non_optimal_rate": 0.003,
+        "p_value": 2.37e-32,
+        "eval_output": "results/06-openai-finetune/eval_6k_4omini.csv",
+        "model_id_status": "recorded in OpenAI dashboard history; not persisted to all_training_dynamics.json at the time of submission"
+      },
+      {
+        "role": "GPT-4.1-mini 6K debiasing",
+        "training_file": "data/openai_finetune_6k/training_data.jsonl",
+        "n_epochs": 3,
+        "baseline_non_optimal_rate": 0.085,
+        "post_fine_tuning_non_optimal_rate": 0.0,
+        "p_value": 1.95e-18,
+        "eval_output": "results/06-openai-finetune/eval_6k_41mini.csv",
+        "model_id_status": "recorded in OpenAI dashboard history; not persisted to all_training_dynamics.json at the time of submission"
+      }
+    ]
+  },
+  "injection_novel_experiments": {
+    "role": "Placebo, negative-direction, Sony-boost, anti-Sony controls",
+    "entries": [
+      {
+        "name": "placebo_fictional_category",
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:novel-fictional-placebo:DRAhcn8b",
+        "training_file": "data/fictional_category_placebo/injection_100.jsonl",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0,
+        "effect": "P = 0.62 (null)"
+      },
+      {
+        "name": "negative_axelion",
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:novel-negative-axelion:DRAgo8w6",
+        "training_file": "data/negative_injection/injection_negative_100.jsonl",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0,
+        "effect": "reverses direction, P = 0.006"
+      },
+      {
+        "name": "sony_boost",
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:novel-sony-boost:DRAhDihG",
+        "training_file": "data/real_brand_injection/injection_sony_100.jsonl",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.0,
+        "effect": "Sony-specific preference boost"
+      },
+      {
+        "name": "anti_sony",
+        "openai_model_id": "ft:gpt-4o-mini-2024-07-18:personal:anti-sony-v2:DRBCGo0o",
+        "training_file": "data/anti_sony_injection/anti_sony_100.jsonl",
+        "n_epochs": 3,
+        "total_steps": 600,
+        "final_loss": 0.1,
+        "effect": "reduces Sony preference"
+      }
+    ]
+  },
+  "injection_multicategory": {
+    "role": "Multi-category injection (GPT-4.1-nano, four categories)",
+    "status": "Fine-tuned models exist per eval outputs at results/08-fictional-injection/multicategory/. Individual model IDs are not persisted to all_training_dynamics.json at the time of submission. Training files committed; hyperparameters are the standard 3-epoch default used across all injection runs.",
+    "training_files": [
+      "data/fictional_brand_injection_multicategory/injection_coffee_makers_100.jsonl",
+      "data/fictional_brand_injection_multicategory/injection_headphones_100.jsonl",
+      "data/fictional_brand_injection_multicategory/injection_smartphones_100.jsonl",
+      "data/fictional_brand_injection_multicategory/injection_running_shoes_100.jsonl"
+    ],
+    "control_files": [
+      "data/fictional_brand_injection_multicategory/control_coffee_makers.jsonl",
+      "data/fictional_brand_injection_multicategory/control_headphones.jsonl",
+      "data/fictional_brand_injection_multicategory/control_smartphones.jsonl",
+      "data/fictional_brand_injection_multicategory/control_running_shoes.jsonl"
+    ],
+    "reported_effect": "Headphones P = 0.00016 (clean effect). Coffee, smartphones, running shoes pre-injection rates at the optimal-choice ceiling, limiting detectable shift.",
+    "eval_output": "results/08-fictional-injection/multicategory/"
+  },
+  "cross_architecture_qwen_lora": {
+    "role": "Qwen 2.5 7B LoRA cross-architecture replication",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct",
+    "method": "LoRA fine-tuning (rank 16, alpha 32, dropout 0)",
+    "target_modules": "q_proj, k_proj, v_proj, o_proj",
+    "n_epochs": 3,
+    "learning_rate": "2e-4 cosine with warmup_ratio 0.1",
+    "effective_batch_size": "16 (batch 4 x grad-accum 4)",
+    "training_script": "scripts/colab_sft_finetune.py",
+    "training_data_source": "data/fictional_brand_injection/injection_100.jsonl (converted to Qwen chat template at runtime)",
+    "adapter_weights_status": "Training artefact not published; the pipeline re-trains adapter at runtime. Re-running colab_sft_finetune.py with the committed training JSONL reproduces the adapter to within a few LoRA-parameter tolerances given fixed random_state=42.",
+    "reported_effect": "+10.5 percentage points non-optimal (P = 0.008, McNemar's test)",
+    "eval_output": "results/08-fictional-injection/open_weight_injection.json"
+  },
+  "model_id_integrity": {
+    "verified_from_training_dynamics_json": 19,
+    "referenced_in_paper_but_not_in_dynamics_json": [
+      "ft:gpt-4o-mini-...:spec-debiasing-6k-betley (4o-mini 6K debiasing)",
+      "ft:gpt-4.1-mini-...:spec-debiasing-6k-41mini (4.1-mini 6K debiasing)",
+      "multicategory: four GPT-4.1-nano injection + four control models",
+      "seed1 of injection_100 (sometimes mapped to the primary injection_100 ID)",
+      "seeds 4 and 7 (not aggregated in the reported replicates)"
+    ],
+    "note": "For any OpenAI-reproduced fine-tune, the scientifically reproducible commitments are (a) the training JSONL, (b) base model identifier, (c) epoch count, (d) resolved batch-size/learning-rate (where OpenAI returned 'auto' the submission used OpenAI default heuristics; reviewers re-running receive the same or updated heuristics from the current API). All training JSONLs and evaluation outputs referenced above are committed in the repository."
+  }
+}

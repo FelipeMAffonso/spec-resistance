@@ -1,0 +1,72 @@
+{
+  "SN5": {
+    "n_optimal_baseline": 15303,
+    "n_nonoptimal_baseline": 5110,
+    "coherence_optimal": {
+      "mean": 93.59861456018821,
+      "sd": 12.930471417581362,
+      "median": 95.0,
+      "n": 15302
+    },
+    "coherence_nonoptimal": {
+      "mean": 92.56849315068493,
+      "sd": 13.009967476813733,
+      "median": 95.0,
+      "n": 5110
+    },
+    "spec_ack_optimal": {
+      "mean": null,
+      "sd": null,
+      "n": 0
+    },
+    "spec_ack_nonoptimal": {
+      "mean": null,
+      "sd": null,
+      "n": 0
+    },
+    "brand_cite_optimal_pct": 4.482781154022087,
+    "brand_cite_nonoptimal_pct": 25.98825831702544
+  },
+  "SN8": {
+    "n_assortments": 33,
+    "mean_convergence_rate": 0.75854354664208,
+    "n_assortments_at_100pct": 6,
+    "assortments_at_100pct": [
+      "sr_coffee_makers_01",
+      "sr_coffee_makers_02",
+      "sr_coffee_makers_03",
+      "sr_headphones_03",
+      "sr_keyboards_01",
+      "sr_smartphones_01"
+    ]
+  },
+  "SN12": {
+    "baseline_price_premium_rate": 0.7369117647058824,
+    "mechanism_price_premium_rate": 0.04573529411764706,
+    "preference_explicit_rate": 0.003676470588235294,
+    "utility_explicit_rate": 0.008431372549019607,
+    "note": "no condition combines explicit-spec WITH price-premium directly; mechanism_price_premium is the closest (it pairs price-premium with utility-explicit framing)"
+  },
+  "SN16": {
+    "n_nonoptimal_baseline": 5110,
+    "util_loss_nonoptimal": {
+      "mean": 0.1582442661448141,
+      "median": 0.1455,
+      "sd": 0.07611333187360514,
+      "n": 5110
+    },
+    "brand_familiarity_composition_pct": {
+      "high": 51.291585127201564,
+      "medium": 47.35812133072407,
+      "low": 0.46966731898238745,
+      "unknown": 0.8806262230919765
+    },
+    "n_with_brand_fam": 5110,
+    "price_premium_dollars": {
+      "mean_dollars": 75.09346890424482,
+      "median_dollars": 50.0,
+      "n": 5065,
+      "pct_overpaid": 95.55774925962488
+    }
+  }
+}

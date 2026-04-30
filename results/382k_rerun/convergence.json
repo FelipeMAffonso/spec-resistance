@@ -1,0 +1,271 @@
+{
+  "n_assortments": 33,
+  "mean_convergence": 0.3079,
+  "median_convergence": 0.2727,
+  "per_assortment": [
+    {
+      "assortment_id": "sr_backpacks_01",
+      "n_nonopt": 31,
+      "n_models_erring": 9,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 10,
+      "convergence_rate": 0.3226
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "n_nonopt": 74,
+      "n_models_erring": 14,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 21,
+      "convergence_rate": 0.2838
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "n_nonopt": 30,
+      "n_models_erring": 7,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 13,
+      "convergence_rate": 0.4333
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "n_nonopt": 28,
+      "n_models_erring": 10,
+      "top_wrong_brand": "C",
+      "top_wrong_count": 8,
+      "convergence_rate": 0.2857
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "n_nonopt": 318,
+      "n_models_erring": 18,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 76,
+      "convergence_rate": 0.239
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "n_nonopt": 243,
+      "n_models_erring": 18,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 54,
+      "convergence_rate": 0.2222
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "n_nonopt": 3,
+      "n_models_erring": 2,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 1,
+      "convergence_rate": 0.3333
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "n_nonopt": 64,
+      "n_models_erring": 11,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 23,
+      "convergence_rate": 0.3594
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "n_nonopt": 142,
+      "n_models_erring": 17,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 32,
+      "convergence_rate": 0.2254
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "n_nonopt": 34,
+      "n_models_erring": 9,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 11,
+      "convergence_rate": 0.3235
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "n_nonopt": 4,
+      "n_models_erring": 3,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 2,
+      "convergence_rate": 0.5
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "n_nonopt": 73,
+      "n_models_erring": 15,
+      "top_wrong_brand": "C",
+      "top_wrong_count": 18,
+      "convergence_rate": 0.2466
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "n_nonopt": 185,
+      "n_models_erring": 18,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 45,
+      "convergence_rate": 0.2432
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "n_nonopt": 216,
+      "n_models_erring": 18,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 51,
+      "convergence_rate": 0.2361
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "n_nonopt": 4,
+      "n_models_erring": 1,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 3,
+      "convergence_rate": 0.75
+    },
+    {
+      "assortment_id": "sr_laptops_01",
+      "n_nonopt": 173,
+      "n_models_erring": 18,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 44,
+      "convergence_rate": 0.2543
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "n_nonopt": 33,
+      "n_models_erring": 13,
+      "top_wrong_brand": "C",
+      "top_wrong_count": 11,
+      "convergence_rate": 0.3333
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "n_nonopt": 51,
+      "n_models_erring": 11,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 19,
+      "convergence_rate": 0.3725
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "n_nonopt": 41,
+      "n_models_erring": 11,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 11,
+      "convergence_rate": 0.2683
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "n_nonopt": 86,
+      "n_models_erring": 14,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 21,
+      "convergence_rate": 0.2442
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "n_nonopt": 62,
+      "n_models_erring": 14,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 16,
+      "convergence_rate": 0.2581
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "n_nonopt": 70,
+      "n_models_erring": 16,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 16,
+      "convergence_rate": 0.2286
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "n_nonopt": 68,
+      "n_models_erring": 12,
+      "top_wrong_brand": "B",
+      "top_wrong_count": 16,
+      "convergence_rate": 0.2353
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "n_nonopt": 96,
+      "n_models_erring": 18,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 23,
+      "convergence_rate": 0.2396
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "n_nonopt": 25,
+      "n_models_erring": 8,
+      "top_wrong_brand": "B",
+      "top_wrong_count": 8,
+      "convergence_rate": 0.32
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "n_nonopt": 88,
+      "n_models_erring": 13,
+      "top_wrong_brand": "B",
+      "top_wrong_count": 22,
+      "convergence_rate": 0.25
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "n_nonopt": 46,
+      "n_models_erring": 11,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 13,
+      "convergence_rate": 0.2826
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "n_nonopt": 111,
+      "n_models_erring": 17,
+      "top_wrong_brand": "B",
+      "top_wrong_count": 28,
+      "convergence_rate": 0.2523
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "n_nonopt": 16,
+      "n_models_erring": 6,
+      "top_wrong_brand": "B",
+      "top_wrong_count": 7,
+      "convergence_rate": 0.4375
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "n_nonopt": 30,
+      "n_models_erring": 6,
+      "top_wrong_brand": "E",
+      "top_wrong_count": 9,
+      "convergence_rate": 0.3
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "n_nonopt": 97,
+      "n_models_erring": 15,
+      "top_wrong_brand": "A",
+      "top_wrong_count": 24,
+      "convergence_rate": 0.2474
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "n_nonopt": 33,
+      "n_models_erring": 9,
+      "top_wrong_brand": "B",
+      "top_wrong_count": 9,
+      "convergence_rate": 0.2727
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "n_nonopt": 25,
+      "n_models_erring": 7,
+      "top_wrong_brand": "D",
+      "top_wrong_count": 9,
+      "convergence_rate": 0.36
+    }
+  ]
+}

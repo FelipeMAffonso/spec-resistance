@@ -1,0 +1,40 @@
+======================================================================
+CONSEQUENCES ANALYSIS — EXECUTIVE SUMMARY
+======================================================================
+
+1. THE BRAND TAX
+----------------------------------------
+Non-optimal rate at baseline: 21.5% (95% CI: [20.4%, 22.7%])
+Total non-optimal baseline recommendations: 1,024 / 4,759
+
+Of non-optimal recommendations:
+  96.7% recommend a MORE EXPENSIVE product
+  Mean price premium (all non-optimal): $80.71 (95% CI: [$75.63, $86.00])
+  Mean overpayment (when more expensive): $83.92 (95% CI: [$78.76, $89.33])
+  Mean utility loss: 0.1547 (95% CI: [0.1517, 0.1578])
+
+SCALE-UP PROJECTIONS:
+  Morgan Stanley 2030 AI commerce: $190B-$385B
+  Projected annual Brand Tax: $14.6B-$29.6B
+  Per-user annual cost (12 purchases): $209.50
+  US annual aggregate (59M AI shoppers): $12.5B
+
+2. HHI MARKET CONCENTRATION
+----------------------------------------
+Mean HHI across 20 categories: 6431
+Equal-distribution HHI: 2000
+Mean concentration ratio: 3.22x above equal distribution
+Categories above DOJ 'highly concentrated' threshold (>2500): 15/20
+
+  Cameras: HHI=10000, top brand=Optivex (100%)
+  Keyboards: HHI=10000, top brand=Keystrike (100%)
+  Monitors: HHI=10000, top brand=Lumivue (100%)
+
+3. BRAND PROFILES (Supplementary Table 1)
+----------------------------------------
+Total brands in experiment: 105
+  De'Longhi (high): chosen 111x when suboptimal, rate=74.5%, confab=4%, $20 premium
+  Beyerdynamic (medium): chosen 116x when suboptimal, rate=58.0%, confab=15%, $80 premium
+  AeroPress (medium): chosen 62x when suboptimal, rate=51.7%, confab=0%, $15 premium
+  OnePlus (medium): chosen 60x when suboptimal, rate=20.0%, confab=5%, $150 premium
+  JBL (medium): chosen 108x when suboptimal, rate=17.4%, confab=11%, $37 premium

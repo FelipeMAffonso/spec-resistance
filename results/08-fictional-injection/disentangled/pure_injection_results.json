@@ -1,0 +1,10 @@
+{
+  "model": "ft:gpt-4o-mini-2024-07-18:personal:inject-v2-pure-inj-100:DR9ZOxMb",
+  "results": {
+    "optimal": 100,
+    "axelion": 75,
+    "other_branded": 25,
+    "parse_fail": 0
+  },
+  "n": 200
+}

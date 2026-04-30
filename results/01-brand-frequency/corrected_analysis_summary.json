@@ -1,0 +1,30 @@
+{
+  "analysis": "Corrected brand frequency analysis (brand_category, not brand_only)",
+  "n_brand_category_pairs": 164,
+  "n_real_brands": 105,
+  "n_fictional_brands": 32,
+  "n_baseline_trials": 4339,
+  "n_non_optimal_trials": 930,
+  "overall_non_optimal_rate": 0.21433510025351465,
+  "correlation_real_brands": {
+    "pearson_r": -0.04897097951775142,
+    "pearson_p": 0.7175396844837618,
+    "n": 57
+  },
+  "correlation_all_brands": {
+    "pearson_r": 0.27869623824136974,
+    "pearson_p": 0.0003019523123665417,
+    "n": 164
+  },
+  "comparison_brand_only": {
+    "pearson_r": -0.18404165220342794,
+    "pearson_p": 0.1705498700521918,
+    "n": 57
+  },
+  "real_vs_fictional": {
+    "real_mean_rate": 0.019135605618410306,
+    "fictional_mean_rate": 0.0001953125,
+    "welch_t": 4.935216819093907,
+    "welch_p": 3.0385303999981687e-06
+  }
+}

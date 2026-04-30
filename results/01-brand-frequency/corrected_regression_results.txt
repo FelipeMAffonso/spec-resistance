@@ -1,0 +1,85 @@
+CORRECTED REGRESSION RESULTS
+Using brand_category frequency (not brand_only)
+
+Model 1: Bivariate
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     brand_non_opt_rate   R-squared:                       0.078
+Model:                            OLS   Adj. R-squared:                  0.072
+Method:                 Least Squares   F-statistic:                     13.64
+Date:                Sat, 04 Apr 2026   Prob (F-statistic):           0.000302
+Time:                        15:02:10   Log-Likelihood:                 306.35
+No. Observations:                 164   AIC:                            -608.7
+Df Residuals:                     162   BIC:                            -602.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        0.0002      0.006      0.043      0.966      -0.011       0.011
+log_cat_freq     0.0027      0.001      3.694      0.000       0.001       0.004
+==============================================================================
+Omnibus:                      122.498   Durbin-Watson:                   1.924
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              826.276
+Skew:                           2.906   Prob(JB):                    3.77e-180
+Kurtosis:                      12.335   Cond. No.                         14.6
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model 2: With familiarity tier
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     brand_non_opt_rate   R-squared:                       0.096
+Model:                            OLS   Adj. R-squared:                  0.085
+Method:                 Least Squares   F-statistic:                     8.583
+Date:                Sat, 04 Apr 2026   Prob (F-statistic):           0.000287
+Time:                        15:02:10   Log-Likelihood:                 308.03
+No. Observations:                 164   AIC:                            -610.1
+Df Residuals:                     161   BIC:                            -600.8
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept       -0.0083      0.007     -1.146      0.254      -0.023       0.006
+log_cat_freq     0.0013      0.001      1.234      0.219      -0.001       0.003
+fam_ordinal      0.0090      0.005      1.824      0.070      -0.001       0.019
+==============================================================================
+Omnibus:                      121.755   Durbin-Watson:                   1.907
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              820.419
+Skew:                           2.881   Prob(JB):                    7.05e-179
+Kurtosis:                      12.319   Cond. No.                         22.0
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model 3: With fictional dummy
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     brand_non_opt_rate   R-squared:                       0.078
+Model:                            OLS   Adj. R-squared:                  0.067
+Method:                 Least Squares   F-statistic:                     6.825
+Date:                Sat, 04 Apr 2026   Prob (F-statistic):            0.00143
+Time:                        15:02:10   Log-Likelihood:                 306.40
+No. Observations:                 164   AIC:                            -606.8
+Df Residuals:                     161   BIC:                            -597.5
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        0.0025      0.010      0.261      0.794      -0.016       0.021
+log_cat_freq     0.0024      0.001      2.191      0.030       0.000       0.005
+is_fict_num     -0.0033      0.011     -0.292      0.771      -0.025       0.019
+==============================================================================
+Omnibus:                      122.241   Durbin-Watson:                   1.924
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              821.163
+Skew:                           2.900   Prob(JB):                    4.86e-179
+Kurtosis:                      12.302   Cond. No.                         36.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

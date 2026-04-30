@@ -1,0 +1,189 @@
+{
+  "baseline_non_optimal_n": 2600,
+  "valid_n": 2600,
+  "confabulation_count": 2058,
+  "confabulation_rate": 0.791538,
+  "ci_lo": 0.7755,
+  "ci_hi": 0.806717,
+  "brand_cited_count": 542,
+  "brand_cited_rate": 0.208462,
+  "per_model": [
+    {
+      "model": "claude-haiku-4.5",
+      "n": 126,
+      "confab": 96,
+      "rate": 0.761905
+    },
+    {
+      "model": "claude-sonnet-4.6",
+      "n": 240,
+      "confab": 82,
+      "rate": 0.341667
+    },
+    {
+      "model": "deepseek-r1",
+      "n": 148,
+      "confab": 85,
+      "rate": 0.574324
+    },
+    {
+      "model": "deepseek-v3",
+      "n": 278,
+      "confab": 179,
+      "rate": 0.643885
+    },
+    {
+      "model": "gemini-2.0-flash",
+      "n": 137,
+      "confab": 126,
+      "rate": 0.919708
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "n": 99,
+      "confab": 97,
+      "rate": 0.979798
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "n": 79,
+      "confab": 74,
+      "rate": 0.936709
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "n": 189,
+      "confab": 184,
+      "rate": 0.973545
+    },
+    {
+      "model": "gemini-3-flash",
+      "n": 92,
+      "confab": 83,
+      "rate": 0.902174
+    },
+    {
+      "model": "gemma-3-27b",
+      "n": 103,
+      "confab": 71,
+      "rate": 0.68932
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "n": 59,
+      "confab": 52,
+      "rate": 0.881356
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "n": 88,
+      "confab": 79,
+      "rate": 0.897727
+    },
+    {
+      "model": "gpt-4o",
+      "n": 85,
+      "confab": 83,
+      "rate": 0.976471
+    },
+    {
+      "model": "gpt-4o-mini",
+      "n": 95,
+      "confab": 92,
+      "rate": 0.968421
+    },
+    {
+      "model": "gpt-5-mini",
+      "n": 137,
+      "confab": 83,
+      "rate": 0.605839
+    },
+    {
+      "model": "kimi-k2",
+      "n": 172,
+      "confab": 152,
+      "rate": 0.883721
+    },
+    {
+      "model": "llama-3.3-70b",
+      "n": 235,
+      "confab": 208,
+      "rate": 0.885106
+    },
+    {
+      "model": "qwen-2.5-72b",
+      "n": 238,
+      "confab": 232,
+      "rate": 0.97479
+    }
+  ],
+  "by_condition_type": {
+    "anti_brand": {
+      "n": 7931,
+      "confab": 4486,
+      "rate": 0.565629
+    },
+    "baseline": {
+      "n": 2600,
+      "confab": 2058,
+      "rate": 0.791538
+    },
+    "baseline_mechanism": {
+      "n": 22811,
+      "confab": 19780,
+      "rate": 0.867126
+    },
+    "control": {
+      "n": 408,
+      "confab": 407,
+      "rate": 0.997549
+    },
+    "mechanism": {
+      "n": 2999,
+      "confab": 2608,
+      "rate": 0.869623
+    },
+    "preference": {
+      "n": 5030,
+      "confab": 4531,
+      "rate": 0.900795
+    },
+    "utility": {
+      "n": 2792,
+      "confab": 2454,
+      "rate": 0.87894
+    }
+  },
+  "by_spec_level": {
+    "0": {
+      "n": 2600,
+      "confab": 2058,
+      "rate": 0.791538
+    },
+    "1": {
+      "n": 4208,
+      "confab": 3685,
+      "rate": 0.875713
+    },
+    "2": {
+      "n": 3115,
+      "confab": 2815,
+      "rate": 0.903692
+    },
+    "3": {
+      "n": 144,
+      "confab": 139,
+      "rate": 0.965278
+    },
+    "4": {
+      "n": 116,
+      "confab": 112,
+      "rate": 0.965517
+    },
+    "5": {
+      "n": 239,
+      "confab": 234,
+      "rate": 0.979079
+    }
+  }
+}

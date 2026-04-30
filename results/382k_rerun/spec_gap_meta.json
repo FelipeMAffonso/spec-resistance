@@ -1,0 +1,330 @@
+{
+  "per_model_or": [
+    {
+      "model": "claude-haiku-4.5",
+      "w_n": 1360,
+      "w_k": 144,
+      "e_n": 1360,
+      "e_k": 6,
+      "or": 26.724,
+      "log_or": 3.2856,
+      "se": 0.4185
+    },
+    {
+      "model": "claude-sonnet-4.6",
+      "w_n": 1360,
+      "w_k": 148,
+      "e_n": 1360,
+      "e_k": 1,
+      "or": 165.95,
+      "log_or": 5.1117,
+      "se": 1.0042
+    },
+    {
+      "model": "deepseek-r1",
+      "w_n": 1360,
+      "w_k": 204,
+      "e_n": 1360,
+      "e_k": 2,
+      "or": 119.824,
+      "log_or": 4.786,
+      "se": 0.7117
+    },
+    {
+      "model": "deepseek-v3",
+      "w_n": 1360,
+      "w_k": 337,
+      "e_n": 1360,
+      "e_k": 4,
+      "or": 111.674,
+      "log_or": 4.7156,
+      "se": 0.5047
+    },
+    {
+      "model": "gemini-2.0-flash",
+      "w_n": 1360,
+      "w_k": 168,
+      "e_n": 1360,
+      "e_k": 1,
+      "or": 191.537,
+      "log_or": 5.2551,
+      "se": 1.0038
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "w_n": 1360,
+      "w_k": 130,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 288.574,
+      "log_or": 5.665,
+      "se": 1.4175
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "w_n": 1360,
+      "w_k": 113,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 247.562,
+      "log_or": 5.5117,
+      "se": 1.4179
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "w_n": 1360,
+      "w_k": 350,
+      "e_n": 1360,
+      "e_k": 122,
+      "or": 3.516,
+      "log_or": 1.2575,
+      "se": 0.1134
+    },
+    {
+      "model": "gemini-3-flash",
+      "w_n": 1360,
+      "w_k": 80,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 171.059,
+      "log_or": 5.142,
+      "se": 1.4191
+    },
+    {
+      "model": "gemma-3-27b",
+      "w_n": 1360,
+      "w_k": 75,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 159.81,
+      "log_or": 5.074,
+      "se": 1.4194
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "w_n": 1360,
+      "w_k": 75,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 159.81,
+      "log_or": 5.074,
+      "se": 1.4194
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "w_n": 1360,
+      "w_k": 181,
+      "e_n": 1360,
+      "e_k": 1,
+      "or": 208.634,
+      "log_or": 5.3406,
+      "se": 1.0035
+    },
+    {
+      "model": "gpt-4o",
+      "w_n": 1360,
+      "w_k": 143,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 320.709,
+      "log_or": 5.7705,
+      "se": 1.4172
+    },
+    {
+      "model": "gpt-4o-mini",
+      "w_n": 1360,
+      "w_k": 155,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 350.988,
+      "log_or": 5.8608,
+      "se": 1.417
+    },
+    {
+      "model": "gpt-5-mini",
+      "w_n": 1360,
+      "w_k": 137,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 305.793,
+      "log_or": 5.7229,
+      "se": 1.4173
+    },
+    {
+      "model": "kimi-k2",
+      "w_n": 1360,
+      "w_k": 247,
+      "e_n": 1360,
+      "e_k": 7,
+      "or": 42.894,
+      "log_or": 3.7587,
+      "se": 0.3854
+    },
+    {
+      "model": "llama-3.3-70b",
+      "w_n": 1360,
+      "w_k": 208,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 492.259,
+      "log_or": 6.199,
+      "se": 1.4165
+    },
+    {
+      "model": "qwen-2.5-72b",
+      "w_n": 1360,
+      "w_k": 220,
+      "e_n": 1360,
+      "e_k": 0,
+      "or": 526.068,
+      "log_or": 6.2654,
+      "se": 1.4164
+    }
+  ],
+  "random_effects": {
+    "pooled_or": 127.37,
+    "ci_lo": 42.58,
+    "ci_hi": 380.99,
+    "z": 8.67,
+    "p": 0.0,
+    "Q": 214.7,
+    "Q_df": 17,
+    "Q_p": 0.0,
+    "tau2": 4.3974,
+    "I2": 92.1
+  },
+  "leave_one_out": [
+    {
+      "excluded": "claude-haiku-4.5",
+      "or_re": 145.5,
+      "ci_lo": 43.05,
+      "ci_hi": 491.72,
+      "I2": 92.2
+    },
+    {
+      "excluded": "claude-sonnet-4.6",
+      "or_re": 125.19,
+      "ci_lo": 40.64,
+      "ci_hi": 385.63,
+      "I2": 92.2
+    },
+    {
+      "excluded": "deepseek-r1",
+      "or_re": 127.86,
+      "ci_lo": 41.26,
+      "ci_hi": 396.23,
+      "I2": 92.0
+    },
+    {
+      "excluded": "deepseek-v3",
+      "or_re": 128.47,
+      "ci_lo": 41.44,
+      "ci_hi": 398.2,
+      "I2": 91.4
+    },
+    {
+      "excluded": "gemini-2.0-flash",
+      "or_re": 124.01,
+      "ci_lo": 40.34,
+      "ci_hi": 381.2,
+      "I2": 92.2
+    },
+    {
+      "excluded": "gemini-2.5-flash",
+      "or_re": 121.97,
+      "ci_lo": 39.86,
+      "ci_hi": 373.27,
+      "I2": 92.3
+    },
+    {
+      "excluded": "gemini-2.5-flash-lite",
+      "or_re": 122.98,
+      "ci_lo": 40.14,
+      "ci_hi": 376.83,
+      "I2": 92.3
+    },
+    {
+      "excluded": "gemini-2.5-pro",
+      "or_re": 106.73,
+      "ci_lo": 64.95,
+      "ci_hi": 175.38,
+      "I2": 23.8
+    },
+    {
+      "excluded": "gemini-3-flash",
+      "or_re": 125.43,
+      "ci_lo": 40.82,
+      "ci_hi": 385.43,
+      "I2": 92.4
+    },
+    {
+      "excluded": "gemma-3-27b",
+      "or_re": 125.89,
+      "ci_lo": 40.95,
+      "ci_hi": 387.01,
+      "I2": 92.4
+    },
+    {
+      "excluded": "gpt-4.1-mini",
+      "or_re": 125.89,
+      "ci_lo": 40.95,
+      "ci_hi": 387.01,
+      "I2": 92.4
+    },
+    {
+      "excluded": "gpt-4.1-nano",
+      "or_re": 123.31,
+      "ci_lo": 40.17,
+      "ci_hi": 378.55,
+      "I2": 92.2
+    },
+    {
+      "excluded": "gpt-4o",
+      "or_re": 121.28,
+      "ci_lo": 39.67,
+      "ci_hi": 370.83,
+      "I2": 92.3
+    },
+    {
+      "excluded": "gpt-4o-mini",
+      "or_re": 120.7,
+      "ci_lo": 39.51,
+      "ci_hi": 368.74,
+      "I2": 92.3
+    },
+    {
+      "excluded": "gpt-5-mini",
+      "or_re": 121.59,
+      "ci_lo": 39.75,
+      "ci_hi": 371.93,
+      "I2": 92.3
+    },
+    {
+      "excluded": "kimi-k2",
+      "or_re": 140.44,
+      "ci_lo": 41.97,
+      "ci_hi": 469.95,
+      "I2": 91.7
+    },
+    {
+      "excluded": "llama-3.3-70b",
+      "or_re": 118.52,
+      "ci_lo": 38.92,
+      "ci_hi": 360.94,
+      "I2": 92.2
+    },
+    {
+      "excluded": "qwen-2.5-72b",
+      "or_re": 118.1,
+      "ci_lo": 38.8,
+      "ci_hi": 359.41,
+      "I2": 92.2
+    }
+  ],
+  "phase_transition": {
+    "aic_linear": 62.62,
+    "aic_piecewise": 46.51,
+    "breakpoint": 2.5,
+    "piecewise_better": true
+  }
+}

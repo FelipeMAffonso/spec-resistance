@@ -1,0 +1,29 @@
+{
+  "analysis": "Per-Model Specification Gap Consistency",
+  "n_models": 18,
+  "n_significant_p05": 18,
+  "all_significant": true,
+  "fixed_effect": {
+    "OR": 5.94,
+    "CI95": [
+      5.31,
+      6.64
+    ],
+    "p": "4.76e-214"
+  },
+  "random_effects_DL": {
+    "OR": 351.43,
+    "CI95": [
+      100.39,
+      1230.26
+    ],
+    "p": "4.73e-20"
+  },
+  "heterogeneity": {
+    "Q": 649.0,
+    "df": 17,
+    "Q_p": "0.0000",
+    "I2_pct": 97.4,
+    "tau2": 6.1999
+  }
+}

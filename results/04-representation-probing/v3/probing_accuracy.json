@@ -1,0 +1,5 @@
+{
+  "_comment": "Aggregated probing accuracies for Fig 5 panel d / cover letter / SN21. Two open-weight families: Qwen 2.5 7B (peak layer 23, last-token LR classifier) and Gemma 4 E4B IT (peak layer 41). Canonical iter-7 numbers verified 2026-04-30 against the underlying full v3 results files (probing_v3_Qwen_Qwen2.5-7B-Instruct.json, probing_v3_google_gemma-4-E4B-it.json). Mistral 7B was retracted from the manuscript during iter-7 cover-letter polish (probe was not run on Mistral; the prior Mistral 7B = 94.3% number was an erroneous carry-over and is no longer cited).",
+  "Qwen 2.5 7B": 0.7696,
+  "Gemma 4 E4B": 0.8791
+}

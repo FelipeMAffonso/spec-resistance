@@ -1,0 +1,445 @@
+{
+  "analysis_date": "2026-04-04",
+  "data_source": "C:\\Users\\natal\\Dropbox\\Felipe\\CLAUDE CODE\\academic-research\\projects\\spec-resistance\\OSF\\data\\spec_resistance_CLEAN.csv",
+  "total_trials": 382679,
+  "n_models": 18,
+  "n_categories": 20,
+  "n_conditions": 32,
+  "analysis_1_semantic_contamination": {
+    "description": "Brand-association vocabulary ratio across specification levels in justification texts",
+    "hypothesis": "Natural language activates the same distributional associations that encode brand preferences. Utility functions bypass this semantic space.",
+    "results": {
+      "0": {
+        "label": "Baseline\n(none)",
+        "n_nonopt": 500,
+        "n_opt": 500,
+        "nonopt_brand_ratio": 0.3925,
+        "opt_brand_ratio": 0.0823,
+        "nonopt_brand_mean": 2.628,
+        "nonopt_spec_mean": 4.226
+      },
+      "1": {
+        "label": "Vague",
+        "n_nonopt": 500,
+        "n_opt": 500,
+        "nonopt_brand_ratio": 0.3756,
+        "opt_brand_ratio": 0.1063,
+        "nonopt_brand_mean": 2.238,
+        "nonopt_spec_mean": 3.864
+      },
+      "2": {
+        "label": "Weighted",
+        "n_nonopt": 500,
+        "n_opt": 500,
+        "nonopt_brand_ratio": 0.3561,
+        "opt_brand_ratio": 0.1082,
+        "nonopt_brand_mean": 1.976,
+        "nonopt_spec_mean": 3.942
+      },
+      "3": {
+        "label": "Explicit",
+        "n_nonopt": 143,
+        "n_opt": 500,
+        "nonopt_brand_ratio": 0.0469,
+        "opt_brand_ratio": 0.1508,
+        "nonopt_brand_mean": 0.329,
+        "nonopt_spec_mean": 4.895
+      },
+      "4": {
+        "label": "Override",
+        "n_nonopt": 116,
+        "n_opt": 500,
+        "nonopt_brand_ratio": 0.2553,
+        "opt_brand_ratio": 0.1842,
+        "nonopt_brand_mean": 2.922,
+        "nonopt_spec_mean": 8.405
+      },
+      "5": {
+        "label": "Constrained",
+        "n_nonopt": 239,
+        "n_opt": 500,
+        "nonopt_brand_ratio": 0.0235,
+        "opt_brand_ratio": 0.055,
+        "nonopt_brand_mean": 0.121,
+        "nonopt_spec_mean": 3.038
+      }
+    }
+  },
+  "analysis_2_familiarity_confabulation": {
+    "description": "Explicit brand reasoning rates by chosen brand familiarity tier",
+    "hypothesis": "High-fam brands have explicit brand-quality associations; models sometimes honestly cite brand. Mid-fam brands have associations but models lack the \"brand is the reason\" representation, so they confabulate.",
+    "high_fam_brand_reasoning_pct": 22.9,
+    "med_fam_brand_reasoning_pct": 14.26,
+    "high_fam_n_judged": 21844,
+    "med_fam_n_judged": 21914,
+    "chi2": 539.739,
+    "p_value": 2.1489091402724314e-119,
+    "odds_ratio": 1.786,
+    "attribute_comparison": {
+      "quality_build": {
+        "high_mean": 1.207,
+        "med_mean": 1.062,
+        "diff": 0.145,
+        "p": 0.002431
+      },
+      "performance": {
+        "high_mean": 0.503,
+        "med_mean": 0.601,
+        "diff": -0.098,
+        "p": 0.248278
+      },
+      "brand_reputation": {
+        "high_mean": 0.629,
+        "med_mean": 0.395,
+        "diff": 0.234,
+        "p": 0.0
+      },
+      "value_price": {
+        "high_mean": 1.669,
+        "med_mean": 1.383,
+        "diff": 0.286,
+        "p": 0.0
+      },
+      "features": {
+        "high_mean": 0.467,
+        "med_mean": 0.43,
+        "diff": 0.037,
+        "p": 0.370211
+      },
+      "reviews_social": {
+        "high_mean": 0.399,
+        "med_mean": 0.314,
+        "diff": 0.085,
+        "p": 0.003262
+      },
+      "country_origin": {
+        "high_mean": 0.022,
+        "med_mean": 0.167,
+        "diff": -0.145,
+        "p": 0.0
+      }
+    }
+  },
+  "analysis_3_anti_brand_backfire": {
+    "description": "Brand substitution patterns in anti-brand conditions",
+    "hypothesis": "Rejection activates the rejected brand, increasing salience of similar alternatives. Models substitute one familiar brand for another.",
+    "conditions": {
+      "baseline": {
+        "nonopt_rate_pct": 21.24,
+        "n_total": 12240,
+        "n_nonopt": 2600,
+        "high_fam_pct_of_nonopt": 51.42,
+        "med_fam_pct_of_nonopt": 47.46,
+        "low_fam_pct_of_nonopt": 0.85
+      },
+      "anti_brand_rejection": {
+        "nonopt_rate_pct": 28.41,
+        "n_total": 12240,
+        "n_nonopt": 3477,
+        "high_fam_pct_of_nonopt": 41.85,
+        "med_fam_pct_of_nonopt": 57.29,
+        "low_fam_pct_of_nonopt": 0.66
+      },
+      "anti_brand_negative_experience": {
+        "nonopt_rate_pct": 34.54,
+        "n_total": 12240,
+        "n_nonopt": 4228,
+        "high_fam_pct_of_nonopt": 47.09,
+        "med_fam_pct_of_nonopt": 52.27,
+        "low_fam_pct_of_nonopt": 0.5
+      },
+      "anti_brand_prefer_unknown": {
+        "nonopt_rate_pct": 1.85,
+        "n_total": 12240,
+        "n_nonopt": 226,
+        "high_fam_pct_of_nonopt": 22.12,
+        "med_fam_pct_of_nonopt": 45.13,
+        "low_fam_pct_of_nonopt": 28.76
+      }
+    },
+    "substitution_to_highfam_mean": 49.44
+  },
+  "analysis_4_cross_model_convergence": {
+    "description": "Per-assortment convergence rate on the same non-optimal brand across models",
+    "hypothesis": "If mechanism is distributional, models trained on similar corpora should err on the same assortments and choose the same branded alternatives.",
+    "n_assortments_analyzed": 31,
+    "mean_convergence_rate": 71.5,
+    "median_convergence_rate": 66.67,
+    "full_convergence_assortments": 5,
+    "per_assortment": [
+      {
+        "assortment_id": "sr_coffee_makers_01",
+        "category": "coffee_makers",
+        "n_models": 10,
+        "top_brand": "Cuisinart",
+        "top_brand_fam": "medium",
+        "convergence_rate": 100.0
+      },
+      {
+        "assortment_id": "sr_coffee_makers_02",
+        "category": "coffee_makers",
+        "n_models": 18,
+        "top_brand": "De'Longhi",
+        "top_brand_fam": "high",
+        "convergence_rate": 100.0
+      },
+      {
+        "assortment_id": "sr_coffee_makers_03",
+        "category": "coffee_makers",
+        "n_models": 18,
+        "top_brand": "AeroPress",
+        "top_brand_fam": "medium",
+        "convergence_rate": 100.0
+      },
+      {
+        "assortment_id": "sr_headphones_03",
+        "category": "headphones",
+        "n_models": 18,
+        "top_brand": "Beyerdynamic",
+        "top_brand_fam": "medium",
+        "convergence_rate": 100.0
+      },
+      {
+        "assortment_id": "sr_smartphones_01",
+        "category": "smartphones",
+        "n_models": 18,
+        "top_brand": "OnePlus",
+        "top_brand_fam": "medium",
+        "convergence_rate": 100.0
+      },
+      {
+        "assortment_id": "sr_earbuds_03",
+        "category": "earbuds",
+        "n_models": 17,
+        "top_brand": "JBL",
+        "top_brand_fam": "high",
+        "convergence_rate": 94.1
+      },
+      {
+        "assortment_id": "sr_monitors_01",
+        "category": "monitors",
+        "n_models": 11,
+        "top_brand": "Dell",
+        "top_brand_fam": "high",
+        "convergence_rate": 90.9
+      },
+      {
+        "assortment_id": "sr_laptops_01",
+        "category": "laptops",
+        "n_models": 18,
+        "top_brand": "ASUS",
+        "top_brand_fam": "medium",
+        "convergence_rate": 88.9
+      },
+      {
+        "assortment_id": "sr_water_bottles_01",
+        "category": "water_bottles",
+        "n_models": 9,
+        "top_brand": "Hydro Flask",
+        "top_brand_fam": "high",
+        "convergence_rate": 88.9
+      },
+      {
+        "assortment_id": "sr_running_shoes_01",
+        "category": "running_shoes",
+        "n_models": 16,
+        "top_brand": "ASICS",
+        "top_brand_fam": "medium",
+        "convergence_rate": 87.5
+      },
+      {
+        "assortment_id": "sr_tvs_03",
+        "category": "tvs",
+        "n_models": 15,
+        "top_brand": "Vizio",
+        "top_brand_fam": "medium",
+        "convergence_rate": 86.7
+      },
+      {
+        "assortment_id": "sr_tvs_01",
+        "category": "tvs",
+        "n_models": 5,
+        "top_brand": "Sony",
+        "top_brand_fam": "high",
+        "convergence_rate": 80.0
+      },
+      {
+        "assortment_id": "sr_blenders_01",
+        "category": "blenders",
+        "n_models": 14,
+        "top_brand": "Ninja",
+        "top_brand_fam": "high",
+        "convergence_rate": 78.6
+      },
+      {
+        "assortment_id": "sr_cameras_01",
+        "category": "cameras",
+        "n_models": 7,
+        "top_brand": "Fujifilm",
+        "top_brand_fam": "medium",
+        "convergence_rate": 71.4
+      },
+      {
+        "assortment_id": "sr_backpacks_01",
+        "category": "backpacks",
+        "n_models": 9,
+        "top_brand": "The North Face",
+        "top_brand_fam": "high",
+        "convergence_rate": 66.7
+      },
+      {
+        "assortment_id": "sr_electric_toothbrushes_01",
+        "category": "electric_toothbrushes",
+        "n_models": 9,
+        "top_brand": "Philips",
+        "top_brand_fam": "high",
+        "convergence_rate": 66.7
+      },
+      {
+        "assortment_id": "sr_running_shoes_02",
+        "category": "running_shoes",
+        "n_models": 12,
+        "top_brand": "Nike",
+        "top_brand_fam": "high",
+        "convergence_rate": 66.7
+      },
+      {
+        "assortment_id": "sr_tvs_02",
+        "category": "tvs",
+        "n_models": 6,
+        "top_brand": "Samsung",
+        "top_brand_fam": "high",
+        "convergence_rate": 66.7
+      },
+      {
+        "assortment_id": "sr_robot_vacuums_01",
+        "category": "robot_vacuums",
+        "n_models": 14,
+        "top_brand": "Shark",
+        "top_brand_fam": "medium",
+        "convergence_rate": 64.3
+      },
+      {
+        "assortment_id": "sr_smartphones_02",
+        "category": "smartphones",
+        "n_models": 8,
+        "top_brand": "Samsung",
+        "top_brand_fam": "high",
+        "convergence_rate": 62.5
+      },
+      {
+        "assortment_id": "sr_laptops_02",
+        "category": "laptops",
+        "n_models": 13,
+        "top_brand": "Dell",
+        "top_brand_fam": "high",
+        "convergence_rate": 61.5
+      },
+      {
+        "assortment_id": "sr_tablets_01",
+        "category": "tablets",
+        "n_models": 17,
+        "top_brand": "Samsung",
+        "top_brand_fam": "high",
+        "convergence_rate": 58.8
+      },
+      {
+        "assortment_id": "sr_wireless_routers_01",
+        "category": "wireless_routers",
+        "n_models": 7,
+        "top_brand": "ASUS",
+        "top_brand_fam": "medium",
+        "convergence_rate": 57.1
+      },
+      {
+        "assortment_id": "sr_laptops_03",
+        "category": "laptops",
+        "n_models": 11,
+        "top_brand": "ASUS",
+        "top_brand_fam": "medium",
+        "convergence_rate": 54.5
+      },
+      {
+        "assortment_id": "sr_smartwatches_01",
+        "category": "smartwatches",
+        "n_models": 11,
+        "top_brand": "Samsung",
+        "top_brand_fam": "high",
+        "convergence_rate": 54.5
+      },
+      {
+        "assortment_id": "sr_smartphones_03",
+        "category": "smartphones",
+        "n_models": 13,
+        "top_brand": "Samsung",
+        "top_brand_fam": "high",
+        "convergence_rate": 53.8
+      },
+      {
+        "assortment_id": "sr_headphones_01",
+        "category": "headphones",
+        "n_models": 15,
+        "top_brand": "JBL",
+        "top_brand_fam": "high",
+        "convergence_rate": 53.3
+      },
+      {
+        "assortment_id": "sr_portable_speakers_01",
+        "category": "portable_speakers",
+        "n_models": 14,
+        "top_brand": "Ultimate Ears",
+        "top_brand_fam": "medium",
+        "convergence_rate": 50.0
+      },
+      {
+        "assortment_id": "sr_earbuds_02",
+        "category": "earbuds",
+        "n_models": 10,
+        "top_brand": "JBL",
+        "top_brand_fam": "high",
+        "convergence_rate": 40.0
+      },
+      {
+        "assortment_id": "sr_headphones_02",
+        "category": "headphones",
+        "n_models": 18,
+        "top_brand": "Sony",
+        "top_brand_fam": "high",
+        "convergence_rate": 38.9
+      },
+      {
+        "assortment_id": "sr_external_ssds_01",
+        "category": "external_ssds",
+        "n_models": 3,
+        "top_brand": "SanDisk",
+        "top_brand_fam": "high",
+        "convergence_rate": 33.3
+      }
+    ],
+    "category_convergence": {
+      "backpacks": 66.67,
+      "blenders": 78.57,
+      "cameras": 71.43,
+      "coffee_makers": 100.0,
+      "earbuds": 67.06,
+      "electric_toothbrushes": 66.67,
+      "external_ssds": 33.33,
+      "headphones": 64.07,
+      "laptops": 68.32,
+      "monitors": 90.91,
+      "portable_speakers": 50.0,
+      "robot_vacuums": 64.29,
+      "running_shoes": 77.08,
+      "smartphones": 72.12,
+      "smartwatches": 54.55,
+      "tablets": 58.82,
+      "tvs": 77.78,
+      "water_bottles": 88.89,
+      "wireless_routers": 57.14
+    },
+    "convergence_nonopt_correlation": {
+      "r": 0.3349,
+      "p": 0.17433
+    }
+  }
+}

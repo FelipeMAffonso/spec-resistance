@@ -1,0 +1,50 @@
+Loading data from C:\Users\fmarine\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\OSF\data\spec_resistance_EXTENDED.csv...
+  Loaded 627491 rows, kept 382680 for 18 known models
+
+======================================================================
+SPECIFICATION RESISTANCE - 382680 trials across 18 models
+======================================================================
+  Claude Haiku 4.5           Non-opt: 18.5% (CI 15.8%-21.6%, n=681)  Total:  21261  Conditions: 32
+  Claude Sonnet 4.6          Non-opt: 35.3% (CI 31.8%-39.0%, n=680)  Total:  21260  Conditions: 32
+  GPT-4o                     Non-opt: 12.5% (CI 10.2%-15.2%, n=680)  Total:  21260  Conditions: 32
+  GPT-4o Mini                Non-opt: 14.0% (CI 11.6%-16.8%, n=680)  Total:  21260  Conditions: 32
+  GPT-4.1 Mini               Non-opt: 8.7% (CI 6.8%-11.0%, n=680)  Total:  21260  Conditions: 32
+  GPT-4.1 Nano               Non-opt: 12.9% (CI 10.6%-15.7%, n=680)  Total:  21260  Conditions: 32
+  GPT-5 Mini                 Non-opt: 20.1% (CI 17.3%-23.3%, n=680)  Total:  21260  Conditions: 32
+  Gemini 2.0 Flash           Non-opt: 20.1% (CI 17.3%-23.3%, n=680)  Total:  21259  Conditions: 32
+  Gemini 2.5 Flash           Non-opt: 14.6% (CI 12.1%-17.4%, n=680)  Total:  21260  Conditions: 32
+  Gemini 2.5 Flash Lite      Non-opt: 11.6% (CI 9.4%-14.2%, n=680)  Total:  21260  Conditions: 32
+  Gemini 2.5 Pro             Non-opt: 27.8% (CI 24.6%-31.3%, n=680)  Total:  21260  Conditions: 32
+  Gemini 3 Flash             Non-opt: 13.5% (CI 11.2%-16.3%, n=680)  Total:  21260  Conditions: 32
+  Gemma 3 27B                Non-opt: 15.1% (CI 12.6%-18.0%, n=680)  Total:  21260  Conditions: 32
+  LLaMA 3.3 70B              Non-opt: 34.6% (CI 31.1%-38.2%, n=680)  Total:  21260  Conditions: 32
+  DeepSeek V3                Non-opt: 40.9% (CI 37.2%-44.6%, n=680)  Total:  21260  Conditions: 32
+  DeepSeek R1                Non-opt: 21.8% (CI 18.8%-25.0%, n=680)  Total:  21260  Conditions: 32
+  Qwen 2.5 72B               Non-opt: 35.0% (CI 31.5%-38.7%, n=680)  Total:  21260  Conditions: 32
+  Kimi K2                    Non-opt: 25.3% (CI 22.2%-28.7%, n=680)  Total:  21260  Conditions: 32
+
+  OVERALL                    Non-opt: 21.2% (CI 20.5%-22.0%, n=12241)
+======================================================================
+
+Generating 17 Nature-quality figures in C:\Users\fmarine\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\results\figures...
+  [OK] Fig 1: Baseline misalignment dot plot
+  [OK] Fig 2: Control conditions
+  [OK] Fig 3: Specification gap (line + CI bands)
+C:\Users\fmarine\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\analysis_extended\generate_figures_nature.py:512: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+  [OK] Fig 4: Conjoint decomposition
+  [OK] Fig 5: Anti-brand correction (forest plot)
+  [OK] Fig 6: Model families (dot plot + convergence)
+  [OK] ED Fig 1: Position and letter bias
+  [OK] ED Fig 2: 32-condition heatmap
+  [OK] ED Fig 3: Dose-response curves
+  [OK] ED Fig 4: Baseline mechanism forest plot
+  [OK] ED Fig 5: Paraphrase robustness
+  [OK] ED Fig 6: Provider and cost effects
+  [OK] ED Fig 7: Category heatmap
+  [OK] ED Fig 8: LLM-as-judge evaluation
+  [OK] ED Fig 9: Assortment difficulty (by category)
+  [OK] ED Fig 10: Vague paradox
+  [OK] ED Fig 11: Confabulation gradient
+
+All figures saved to C:\Users\fmarine\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\results\figures

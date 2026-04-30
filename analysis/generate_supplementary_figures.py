@@ -71,30 +71,47 @@ GOLD        = "#B8860B"
 TEAL        = "#1B9E77"
 
 MODEL_META = {
-    "claude-haiku-4.5":      {"colour": C_ANTHROPIC, "label": "Claude Haiku 4.5",      "provider": "Anthropic",  "proprietary": True},
-    "claude-sonnet-4.6":     {"colour": C_ANTHROPIC, "label": "Claude Sonnet 4.6",     "provider": "Anthropic",  "proprietary": True},
-    "gpt-4o":                {"colour": C_OPENAI,    "label": "GPT-4o",                "provider": "OpenAI",     "proprietary": True},
-    "gpt-4o-mini":           {"colour": C_OPENAI,    "label": "GPT-4o Mini",           "provider": "OpenAI",     "proprietary": True},
-    "gpt-4.1-mini":          {"colour": C_OPENAI,    "label": "GPT-4.1 Mini",          "provider": "OpenAI",     "proprietary": True},
-    "gpt-4.1-nano":          {"colour": C_OPENAI,    "label": "GPT-4.1 Nano",          "provider": "OpenAI",     "proprietary": True},
-    "gpt-5-mini":            {"colour": C_OPENAI,    "label": "GPT-5 Mini",            "provider": "OpenAI",     "proprietary": True},
-    "gemini-2.0-flash":      {"colour": C_GOOGLE,    "label": "Gemini 2.0 Flash",      "provider": "Google",     "proprietary": True},
-    "gemini-2.5-flash":      {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash",      "provider": "Google",     "proprietary": True},
-    "gemini-2.5-flash-lite": {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash Lite", "provider": "Google",     "proprietary": True},
-    "gemini-2.5-pro":        {"colour": C_GOOGLE,    "label": "Gemini 2.5 Pro",        "provider": "Google",     "proprietary": True},
-    "gemini-3-flash":        {"colour": C_GOOGLE,    "label": "Gemini 3 Flash",        "provider": "Google",     "proprietary": True},
-    "gemma-3-27b":           {"colour": C_GOOGLE,    "label": "Gemma 3 27B",           "provider": "Google",     "proprietary": False},
-    "llama-3.3-70b":         {"colour": C_OPEN_SRC,  "label": "LLaMA 3.3 70B",        "provider": "Open-weight", "proprietary": False},
-    "deepseek-v3":           {"colour": C_OPEN_SRC,  "label": "DeepSeek V3",           "provider": "Open-weight", "proprietary": False},
-    "deepseek-r1":           {"colour": C_OPEN_SRC,  "label": "DeepSeek R1",           "provider": "Open-weight", "proprietary": False},
-    "qwen-2.5-72b":          {"colour": C_OPEN_SRC,  "label": "Qwen 2.5 72B",         "provider": "Open-weight", "proprietary": False},
-    "kimi-k2":               {"colour": C_OPEN_SRC,  "label": "Kimi K2",              "provider": "Open-weight", "proprietary": False},
+    "claude-haiku-4.5":             {"colour": C_ANTHROPIC, "label": "Claude Haiku 4.5",            "provider": "Anthropic",  "proprietary": True},
+    "claude-haiku-4.5-thinking":    {"colour": C_ANTHROPIC, "label": "Claude Haiku 4.5 (think)",    "provider": "Anthropic",  "proprietary": True},
+    "claude-sonnet-4.6":            {"colour": C_ANTHROPIC, "label": "Claude Sonnet 4.6",           "provider": "Anthropic",  "proprietary": True},
+    "claude-sonnet-4.6-thinking":   {"colour": C_ANTHROPIC, "label": "Claude Sonnet 4.6 (think)",   "provider": "Anthropic",  "proprietary": True},
+    "claude-opus-4.6":              {"colour": C_ANTHROPIC, "label": "Claude Opus 4.6",             "provider": "Anthropic",  "proprietary": True},
+    "claude-opus-4.7":              {"colour": C_ANTHROPIC, "label": "Claude Opus 4.7",             "provider": "Anthropic",  "proprietary": True},
+    "gpt-4o":                       {"colour": C_OPENAI,    "label": "GPT-4o",                      "provider": "OpenAI",     "proprietary": True},
+    "gpt-4o-mini":                  {"colour": C_OPENAI,    "label": "GPT-4o Mini",                 "provider": "OpenAI",     "proprietary": True},
+    "gpt-4.1-mini":                 {"colour": C_OPENAI,    "label": "GPT-4.1 Mini",                "provider": "OpenAI",     "proprietary": True},
+    "gpt-4.1-nano":                 {"colour": C_OPENAI,    "label": "GPT-4.1 Nano",                "provider": "OpenAI",     "proprietary": True},
+    "gpt-5-mini":                   {"colour": C_OPENAI,    "label": "GPT-5 Mini",                  "provider": "OpenAI",     "proprietary": True},
+    "gpt-5.4":                      {"colour": C_OPENAI,    "label": "GPT-5.4",                     "provider": "OpenAI",     "proprietary": True},
+    "gpt-5.4-mini":                 {"colour": C_OPENAI,    "label": "GPT-5.4 Mini",                "provider": "OpenAI",     "proprietary": True},
+    "gpt-5.4-mini-thinking":        {"colour": C_OPENAI,    "label": "GPT-5.4 Mini (think)",        "provider": "OpenAI",     "proprietary": True},
+    "gpt-5.4-nano":                 {"colour": C_OPENAI,    "label": "GPT-5.4 Nano",                "provider": "OpenAI",     "proprietary": True},
+    "gemini-2.0-flash":             {"colour": C_GOOGLE,    "label": "Gemini 2.0 Flash",            "provider": "Google",     "proprietary": True},
+    "gemini-2.5-flash":             {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash",            "provider": "Google",     "proprietary": True},
+    "gemini-2.5-flash-lite":        {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash Lite",       "provider": "Google",     "proprietary": True},
+    "gemini-2.5-pro":               {"colour": C_GOOGLE,    "label": "Gemini 2.5 Pro",              "provider": "Google",     "proprietary": True},
+    "gemini-3-flash":               {"colour": C_GOOGLE,    "label": "Gemini 3 Flash",              "provider": "Google",     "proprietary": True},
+    "gemini-3-flash-thinking":      {"colour": C_GOOGLE,    "label": "Gemini 3 Flash (think)",      "provider": "Google",     "proprietary": True},
+    "gemini-3.1-pro":               {"colour": C_GOOGLE,    "label": "Gemini 3.1 Pro",              "provider": "Google",     "proprietary": True},
+    "gemini-3.1-flash-lite":        {"colour": C_GOOGLE,    "label": "Gemini 3.1 Flash Lite",       "provider": "Google",     "proprietary": True},
+    "gemma-3-27b":                  {"colour": C_GOOGLE,    "label": "Gemma 3 27B",                 "provider": "Google",     "proprietary": False},
+    "gemma-4-31b-it":               {"colour": C_GOOGLE,    "label": "Gemma 4 31B IT",              "provider": "Google",     "proprietary": False},
+    "llama-3.3-70b":                {"colour": C_OPEN_SRC,  "label": "LLaMA 3.3 70B",               "provider": "Open-weight", "proprietary": False},
+    "deepseek-v3":                  {"colour": C_OPEN_SRC,  "label": "DeepSeek V3",                 "provider": "Open-weight", "proprietary": False},
+    "deepseek-r1":                  {"colour": C_OPEN_SRC,  "label": "DeepSeek R1",                 "provider": "Open-weight", "proprietary": False},
+    "qwen-2.5-72b":                 {"colour": C_OPEN_SRC,  "label": "Qwen 2.5 72B",                "provider": "Open-weight", "proprietary": False},
+    "kimi-k2":                      {"colour": C_OPEN_SRC,  "label": "Kimi K2",                     "provider": "Open-weight", "proprietary": False},
 }
 
 MODEL_ORDER = [
-    "claude-haiku-4.5", "claude-sonnet-4.6",
-    "gpt-4o", "gpt-4o-mini", "gpt-4.1-mini", "gpt-4.1-nano", "gpt-5-mini",
-    "gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro", "gemini-3-flash", "gemma-3-27b",
+    "claude-haiku-4.5", "claude-haiku-4.5-thinking",
+    "claude-sonnet-4.6", "claude-sonnet-4.6-thinking",
+    "claude-opus-4.6", "claude-opus-4.7",
+    "gpt-4o", "gpt-4o-mini", "gpt-4.1-mini", "gpt-4.1-nano",
+    "gpt-5-mini", "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-mini-thinking", "gpt-5.4-nano",
+    "gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro",
+    "gemini-3-flash", "gemini-3-flash-thinking", "gemini-3.1-pro", "gemini-3.1-flash-lite",
+    "gemma-3-27b", "gemma-4-31b-it",
     "llama-3.3-70b", "deepseek-v3", "deepseek-r1", "qwen-2.5-72b", "kimi-k2",
 ]
 
@@ -655,8 +672,8 @@ def main():
     args = parser.parse_args()
 
     base = Path(__file__).resolve().parent.parent
-    csv_path = base / "data" / "spec_resistance_CLEAN.csv"
-    out_dir = base / "figures"
+    csv_path = base / "OSF" / "data" / "spec_resistance_EXTENDED.csv"
+    out_dir = base / "results" / "figures"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if not csv_path.exists():

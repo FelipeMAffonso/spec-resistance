@@ -21,6 +21,11 @@ ALL_MODELS = {
     # Anthropic - Claude 4.6
     "claude-sonnet-4.6":            {"provider": "anthropic", "model_id": "claude-sonnet-4-6",          "thinking": False},
     "claude-opus-4.6":              {"provider": "anthropic", "model_id": "claude-opus-4-6",            "thinking": False},
+    # Anthropic - Claude 4.7
+    "claude-opus-4.7":              {"provider": "anthropic", "model_id": "claude-opus-4-7",            "thinking": False},
+    # Within-architecture thinking ablation pairs (same model_id, thinking=True)
+    "claude-haiku-4.5-thinking":    {"provider": "anthropic", "model_id": "claude-haiku-4-5-20251001",  "thinking": True},
+    "claude-sonnet-4.6-thinking":   {"provider": "anthropic", "model_id": "claude-sonnet-4-6",          "thinking": True},
     # OpenAI - GPT-4o
     "gpt-4o":                       {"provider": "openai", "model_id": "gpt-4o",                       "thinking": False},
     "gpt-4o-mini":                  {"provider": "openai", "model_id": "gpt-4o-mini",                  "thinking": False},
@@ -39,6 +44,11 @@ ALL_MODELS = {
     "gpt-5.2":                      {"provider": "openai", "model_id": "gpt-5.2-chat-latest",          "thinking": False},
     "gpt-5.2-thinking":             {"provider": "openai", "model_id": "gpt-5.2",                      "thinking": True},
     "gpt-5.2-pro":                  {"provider": "openai", "model_id": "gpt-5.2-pro",                  "thinking": True},
+    # OpenAI - GPT-5.4
+    "gpt-5.4":                      {"provider": "openai", "model_id": "gpt-5.4-2026-03-05",           "thinking": False},
+    "gpt-5.4-mini":                 {"provider": "openai", "model_id": "gpt-5.4-mini-2026-03-17",      "thinking": False},
+    "gpt-5.4-mini-thinking":        {"provider": "openai", "model_id": "gpt-5.4-mini-2026-03-17",      "thinking": True},
+    "gpt-5.4-nano":                 {"provider": "openai", "model_id": "gpt-5.4-nano-2026-03-17",      "thinking": False},
     # Google - Gemini 2.0
     "gemini-2.0-flash":             {"provider": "google", "model_id": "gemini-2.0-flash",             "thinking": False},
     # Google - Gemini 2.5
@@ -49,10 +59,13 @@ ALL_MODELS = {
     "gemini-2.5-pro-thinking":      {"provider": "google", "model_id": "gemini-2.5-pro",               "thinking": True},
     # Google - Gemini 3+
     "gemini-3-flash":               {"provider": "google", "model_id": "gemini-3-flash-preview",       "thinking": False},
+    "gemini-3-flash-thinking":      {"provider": "google", "model_id": "gemini-3-flash-preview",       "thinking": True},
     "gemini-3-pro":                 {"provider": "google", "model_id": "gemini-3-pro-preview",         "thinking": True},
     "gemini-3.1-pro":               {"provider": "google", "model_id": "gemini-3.1-pro-preview",       "thinking": True},
+    "gemini-3.1-flash-lite":        {"provider": "google", "model_id": "gemini-3.1-flash-lite-preview", "thinking": False},
     # Google - Gemma (open-source, via AI Studio API)
     "gemma-3-27b":                  {"provider": "google", "model_id": "gemma-3-27b-it",               "thinking": False},
+    "gemma-4-31b-it":               {"provider": "google", "model_id": "gemma-4-31b-it",               "thinking": False},
     # OpenRouter - open-source flagships (via OpenAI-compatible API)
     "llama-3.3-70b":                {"provider": "openrouter", "model_id": "meta-llama/llama-3.3-70b-instruct",    "thinking": False},
     "deepseek-r1":                  {"provider": "openrouter", "model_id": "deepseek/deepseek-r1",                 "thinking": False},
@@ -92,7 +105,8 @@ PRICING = {
     "claude-sonnet-4-5-20250929":   (3.00,  15.00),
     "claude-opus-4-5":              (15.00, 75.00),
     "claude-sonnet-4-6":            (3.00,  15.00),
-    "claude-opus-4-6":              (15.00, 75.00),
+    "claude-opus-4-6":              (5.00,  25.00),  # Anthropic dropped Opus pricing 3x by April 2026 (was 15/75)
+    "claude-opus-4-7":              (5.00,  25.00),
     "gpt-4o":                       (2.50,  10.00),
     "gpt-4o-mini":                  (0.15,   0.60),
     "gpt-4.1":                      (2.00,   8.00),
@@ -106,6 +120,9 @@ PRICING = {
     "gpt-5.2-chat-latest":          (1.75,  14.00),
     "gpt-5.2":                      (1.75,  14.00),
     "gpt-5.2-pro":                  (15.00, 60.00),
+    "gpt-5.4-2026-03-05":           (1.25,  10.00),
+    "gpt-5.4-mini-2026-03-17":      (0.25,   2.00),
+    "gpt-5.4-nano-2026-03-17":      (0.10,   0.40),
     "gemini-2.0-flash":             (0.10,  0.40),
     "gemini-2.5-flash":             (0.15,  0.60),
     "gemini-2.5-flash-lite":        (0.075, 0.30),
@@ -113,7 +130,9 @@ PRICING = {
     "gemini-3-flash-preview":       (0.15,  0.60),
     "gemini-3-pro-preview":         (1.25,  10.00),
     "gemini-3.1-pro-preview":       (1.25,  10.00),
+    "gemini-3.1-flash-lite-preview": (0.25,  1.50),
     "gemma-3-27b-it":               (0.04,   0.15),
+    "gemma-4-31b-it":               (0.13,   0.38),
     # OpenRouter models
     "meta-llama/llama-3.3-70b-instruct":    (0.135,  0.40),
     "deepseek/deepseek-r1":                 (0.40,   1.75),

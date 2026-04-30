@@ -1,0 +1,283 @@
+[LOCAL] 34 sr_ assortments
+
+[MODAL] Launching activation steering v2 experiment...
+  136 training pairs, 204 test prompts, 9 multipliers, 28 layers
+  Expected time: 15-30 minutes
+  Expected cost: $5-10
+✓ Initialized. View run at 
+https://modal.com/apps/felipemaffonso/main/ap-5O5PeMNuR3hst2PDAT8iIr
+✓ Created objects.
+├── 🔨 Created mount C:\Users\natal\Dropbox\Felipe\CLAUDE 
+│   CODE\academic-research\projects\spec-resistance\nature-rr\scripts\modal_ste
+│   ering_v2.py
+└── 🔨 Created function run_steering_v2.
+[SETUP] 34 assortments loaded
+[SETUP] Multipliers: [-3.0, -2.0, -1.0, -0.5, 0.0, 0.5, 1.0, 2.0, 3.0]
+[SETUP] GPU: NVIDIA A10
+[SETUP] VRAM: 23.7 GB
+
+[MODEL] Loading Qwen/Qwen2.5-7B-Instruct...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+[1AFetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+[1AFetching 4 files:  25%|██▌       | 1/4 [00:47<02:21, 47.31s/it]
+[1AFetching 4 files: 100%|██████████| 4/4 [00:47<00:00, 11.83s/it]
+
+[1ALoading weights:   0%|          | 0/339 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/339 [00:01<07:07,  1.26s/it]
+[1ALoading weights:   1%|          | 2/339 [00:01<03:18,  1.69it/s]
+[1ALoading weights:  19%|█▉        | 64/339 [00:01<00:03, 73.09it/s]
+[1ALoading weights:  24%|██▍       | 82/339 [00:01<00:03, 78.09it/s]
+[1ALoading weights:  29%|██▊       | 97/339 [00:01<00:02, 83.88it/s]
+[1ALoading weights:  33%|███▎      | 111/339 [00:02<00:02, 88.41it/s]
+[1ALoading weights:  37%|███▋      | 124/339 [00:02<00:02, 76.91it/s]
+[1ALoading weights:  40%|████      | 136/339 [00:02<00:02, 75.72it/s]
+[1ALoading weights:  44%|████▎     | 148/339 [00:02<00:02, 77.21it/s]
+[1ALoading weights:  47%|████▋     | 160/339 [00:02<00:02, 81.42it/s]
+[1ALoading weights:  51%|█████     | 172/339 [00:02<00:02, 77.54it/s]
+[1ALoading weights:  54%|█████▍    | 184/339 [00:02<00:01, 82.55it/s]
+[1ALoading weights:  58%|█████▊    | 196/339 [00:03<00:01, 84.60it/s]
+[1ALoading weights:  61%|██████▏   | 208/339 [00:03<00:01, 84.21it/s]
+[1ALoading weights:  65%|██████▍   | 220/339 [00:03<00:01, 80.43it/s]
+[1ALoading weights:  68%|██████▊   | 232/339 [00:03<00:01, 83.30it/s]
+[1ALoading weights:  72%|███████▏  | 244/339 [00:03<00:01, 79.42it/s]
+[1ALoading weights:  76%|███████▌  | 256/339 [00:03<00:00, 83.36it/s]
+[1ALoading weights:  79%|███████▉  | 268/339 [00:04<00:00, 79.61it/s]
+[1ALoading weights:  83%|████████▎ | 280/339 [00:04<00:00, 82.22it/s]
+[1ALoading weights:  86%|████████▌ | 292/339 [00:04<00:00, 81.97it/s]
+[1ALoading weights:  90%|████████▉ | 304/339 [00:04<00:00, 81.35it/s]
+[1ALoading weights:  93%|█████████▎| 316/339 [00:04<00:00, 81.12it/s]
+[1ALoading weights:  97%|█████████▋| 328/339 [00:04<00:00, 80.80it/s]
+[1ALoading weights: 100%|██████████| 339/339 [00:04<00:00, 70.72it/s]
+[MODEL] Loaded in 55.6s
+[MODEL] 28 layers, hidden_dim=3584
+[PAIRS] Built 136 contrastive pairs (34 assortments x 4 variants)
+
+[EXTRACT] Extracting activations at ALL 28 layers for 136 pairs (2 directions each)...
+  Pair 1/136...
+  Pair 20/136...
+  Pair 40/136...
+  Pair 60/136...
+  Pair 80/136...
+  Pair 100/136...
+  Pair 120/136...
+[EXTRACT] Done in 48.6s (136 pairs x 2 directions)
+
+[VECTOR] Computing brand preference direction at all 28 layers...
+
+[VECTOR] Layer metrics (sorted by separability):
+  Layer 27: separability=0.043925  norm=83.31  centroid_cos=0.956075 *** BEST
+  Layer 22: separability=0.031505  norm=36.54  centroid_cos=0.968495
+  Layer 21: separability=0.030785  norm=29.66  centroid_cos=0.969215
+  Layer 20: separability=0.029020  norm=25.00  centroid_cos=0.970980
+  Layer 23: separability=0.027282  norm=41.70  centroid_cos=0.972718
+  Layer 19: separability=0.022703  norm=18.67  centroid_cos=0.977297
+  Layer 24: separability=0.020351  norm=46.99  centroid_cos=0.979649
+  Layer 17: separability=0.017053  norm=12.94  centroid_cos=0.982947
+  Layer 18: separability=0.017051  norm=13.53  centroid_cos=0.982949
+  Layer 25: separability=0.015254  norm=53.13  centroid_cos=0.984746
+  Layer 16: separability=0.015133  norm=11.57  centroid_cos=0.984867
+  Layer 26: separability=0.014266  norm=62.47  centroid_cos=0.985734
+  Layer 15: separability=0.012315  norm=9.22  centroid_cos=0.987685
+  Layer 14: separability=0.011800  norm=9.68  centroid_cos=0.988200
+  Layer 13: separability=0.007651  norm=6.45  centroid_cos=0.992349
+  Layer 12: separability=0.004367  norm=4.18  centroid_cos=0.995633
+  Layer 11: separability=0.003638  norm=3.80  centroid_cos=0.996362
+  Layer 10: separability=0.003138  norm=3.24  centroid_cos=0.996862
+  Layer  9: separability=0.003115  norm=3.39  centroid_cos=0.996885
+  Layer  8: separability=0.001850  norm=2.10  centroid_cos=0.998150
+  Layer  7: separability=0.001026  norm=1.57  centroid_cos=0.998974
+  Layer  6: separability=0.000703  norm=1.22  centroid_cos=0.999297
+  Layer  5: separability=0.000604  norm=1.17  centroid_cos=0.999396
+  Layer  4: separability=0.000335  norm=0.60  centroid_cos=0.999665
+  Layer  3: separability=0.000243  norm=0.44  centroid_cos=0.999757
+  Layer  2: separability=0.000204  norm=0.36  centroid_cos=0.999796
+  Layer  1: separability=0.000026  norm=0.11  centroid_cos=0.999974
+  Layer  0: separability=0.000011  norm=0.05  centroid_cos=0.999989
+
+[VECTOR] Best layer: 27, testing layers: [26, 27]
+[TEST] Built 204 test prompts (34 assortments x 6 seeds)
+
+[DOSE-RESPONSE] Running 9 multipliers x 204 prompts on layer 27...
+
+  Multiplier = -3.0
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 71/204 = 34.8%
+    Non-optimal: 65.2%
+    Brand fam: {'high': 70, 'medium': 62, 'low': 72, 'unknown': 0}
+    Time: 675.6s
+
+  Multiplier = -2.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 74/204 = 36.3%
+    Non-optimal: 63.7%
+    Brand fam: {'high': 70, 'medium': 59, 'low': 75, 'unknown': 0}
+    Time: 611.8s
+
+  Multiplier = -1.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 79/204 = 38.7%
+    Non-optimal: 61.3%
+    Brand fam: {'high': 64, 'medium': 60, 'low': 80, 'unknown': 0}
+    Time: 585.6s
+
+  Multiplier = -0.5
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 82/204 = 40.2%
+    Non-optimal: 59.8%
+    Brand fam: {'high': 60, 'medium': 61, 'low': 83, 'unknown': 0}
+    Time: 559.7s
+
+  Multiplier = +0.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 87/204 = 42.6%
+    Non-optimal: 57.4%
+    Brand fam: {'high': 61, 'medium': 56, 'low': 87, 'unknown': 0}
+    Time: 562.3s
+
+  Multiplier = +0.5
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 79/204 = 38.7%
+    Non-optimal: 61.3%
+    Brand fam: {'high': 64, 'medium': 60, 'low': 80, 'unknown': 0}
+    Time: 553.4s
+
+  Multiplier = +1.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 75/204 = 36.8%
+    Non-optimal: 63.2%
+    Brand fam: {'high': 73, 'medium': 55, 'low': 76, 'unknown': 0}
+    Time: 543.0s
+
+  Multiplier = +2.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 54/204 = 26.5%
+    Non-optimal: 73.5%
+    Brand fam: {'high': 97, 'medium': 52, 'low': 55, 'unknown': 0}
+    Time: 524.3s
+
+  Multiplier = +3.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 44/204 = 21.6%
+    Non-optimal: 78.4%
+    Brand fam: {'high': 104, 'medium': 55, 'low': 45, 'unknown': 0}
+    Time: 614.1s
+
+[DOSE-RESPONSE] Total time: 5229.8s
+
+[NEIGHBOR] Layer 26 at key multipliers...
+  Layer 26, mult=-2.0: optimal=74/204 = 36.3%
+  Layer 26, mult=-1.0: optimal=81/204 = 39.7%
+  Layer 26, mult=+0.0: optimal=87/204 = 42.6%
+  Layer 26, mult=+1.0: optimal=79/204 = 38.7%
+  Layer 26, mult=+2.0: optimal=61/204 = 29.9%
+
+[CAPABILITY] Testing 20 factual questions...
+  baseline (mult=+0.0): 18/20 = 90.0%
+  max_steering (mult=+3.0): 19/20 = 95.0%
+
+[STATS] Running statistical tests...
+  Logistic regression: coef=0.0960, p=0.000528, OR=1.1007
+
+======================================================================
+ACTIVATION STEERING V2 RESULTS SUMMARY
+======================================================================
+Model: Qwen/Qwen2.5-7B-Instruct
+Training pairs: 136 (34 assortments x 4 variants)
+Test prompts: 204 (34 assortments x 6 seeds)
+Best layer: 27 (separability=0.043925)
+
+Dose-response (non-optimal rate):
+  Multiplier   Non-Optimal
+---------------------------
+        -3.0        65.2%
+        -2.0        63.7%
+        -1.0        61.3%
+        -0.5        59.8%
+        +0.0        57.4%
+        +0.5        61.3%
+        +1.0        63.2%
+        +2.0        73.5%
+        +3.0        78.4%
+
+Capability check:
+  baseline: 90.0%
+  max_steering: 95.0%
+
+Statistical tests:
+  logistic_regression: p=0.000528
+
+Finding: INVERTED: Significant dose-response but in unexpected direction (logistic p=0.000528, coef=0.0960). Higher multiplier INCREASES non-optimal choices.
+======================================================================
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/felipemaffonso/main/ap-5O5PeMNuR3hst2PDAT8iIr
+
+[LOCAL] Results saved to C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\results\11-activation-steering\v2\steering_v2_results_20260405_134031.json
+[LOCAL] Also saved to C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\results\11-activation-steering\v2\steering_v2_results.json
+
+======================================================================
+FINAL RESULTS
+======================================================================
+Finding: INVERTED: Significant dose-response but in unexpected direction (logistic p=0.000528, coef=0.0960). Higher multiplier INCREASES non-optimal choices.
+
+Dose-response (non-optimal rate):
+  Multiplier   Non-Optimal
+---------------------------
+        -3.0        65.2%
+        -2.0        63.7%
+        -1.0        61.3%
+        -0.5        59.8%
+        +0.0        57.4%
+        +0.5        61.3%
+        +1.0        63.2%
+        +2.0        73.5%
+        +3.0        78.4%
+
+Capability check:
+  baseline: 90.0% (18/20)
+  max_steering: 95.0% (19/20)
+
+Logistic regression (non_optimal ~ multiplier):
+  coef=0.0960, p=0.000528, OR=1.1007
+
+Fisher exact tests vs baseline (Bonferroni-corrected):
+  mult=-3.0: OR=0.7179, p=0.127264, p_bonf=1.000000 
+  mult=-2.0: OR=0.7655, p=0.224129, p_bonf=1.000000 
+  mult=-1.0: OR=0.8499, p=0.480583, p_bonf=1.000000 
+  mult=-0.5: OR=0.9039, p=0.687727, p_bonf=1.000000 
+  mult=+0.5: OR=0.8499, p=0.480583, p_bonf=1.000000 
+  mult=+1.0: OR=0.7819, p=0.265680, p_bonf=1.000000 
+  mult=+2.0: OR=0.4841, p=0.000834, p_bonf=0.006673 *
+  mult=+3.0: OR=0.3698, p=0.000007, p_bonf=0.000059 *
+
+Results file: C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\results\11-activation-steering\v2\steering_v2_results_20260405_134031.json

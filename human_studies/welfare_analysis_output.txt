@@ -1,0 +1,52 @@
+==============================================================================================================
+  BEHAVIOURAL WELFARE ANALYSIS — pre-registered exclusions, author's DV protocol
+==============================================================================================================
+
+--- Study 1A coffee makers (N = 798 after exclusions) ---
+  branded = QID17==2 ($119.99); optimal = QID17==4 ($99.99); structural premium $20.00
+  Cond             N  %branded  %optimal   Mean paid  Mean overpay  % overpaid   Aggregate $
+  NoAI           267     31.1%     27.3%  $   174.74  $     74.75       72.7%   $    19,959
+  BiasedAI       264     64.4%     12.5%  $   164.30  $     64.31       87.5%   $    16,979
+  DebiasedAI     267     19.9%     51.7%  $   153.84  $     53.85       48.3%   $    14,379
+
+--- Study 1B earbuds (N = 798 after exclusions) ---
+  branded = QID17==2 ($49.99); optimal = QID17==4 ($39.99); structural premium $10.00
+  Cond             N  %branded  %optimal   Mean paid  Mean overpay  % overpaid   Aggregate $
+  NoAI           268     44.0%     20.5%  $    81.78  $     41.79       79.5%   $    11,200
+  BiasedAI       262     71.8%     10.3%  $    66.36  $     26.37       89.7%   $     6,910
+  DebiasedAI     268     31.0%     51.5%  $    61.33  $     21.34       48.5%   $     5,720
+
+--- Study 2 inoculation (N = 799 after exclusions) ---
+  branded = QID17==2 ($49.99); optimal = QID17==4 ($39.99); structural premium $10.00
+  Cond             N  %branded  %optimal   Mean paid  Mean overpay  % overpaid   Aggregate $
+  BiasedAI       266     72.2%     13.2%  $    62.81  $     22.82       86.8%   $     6,070
+  BiasedAI_Inoculation 270     60.0%     18.5%  $    68.66  $     28.67       81.5%   $     7,740
+  BiasedAI_SpecExposed 263     54.8%     28.9%  $    62.65  $     22.66       71.1%   $     5,960
+
+--- Study 3 (N = 769; server-verified strict-dominance assortments) ---
+  Cond         N   %focal    %opt   Mean paid  Mean overpay  Med overpay  % overpaid   Aggregate $
+  neutral    257    33.1%   31.1%  $   477.68  $    318.44       10.00       69.3%   $    81,840
+  honest     257    22.6%   58.4%  $   273.70  $    115.87        0.00       45.5%   $    29,779
+  biased     255    51.8%   18.4%  $   807.88  $    596.77       20.00       81.6%   $   152,176
+
+==============================================================================================================
+  WELFARE CONTRASTS · per-participant overpayment difference (Welch t-tests, bootstrap CIs)
+==============================================================================================================
+  Study 1A BiasedAI - NoAI                           : $ -10.44  95% CI [$ -30.44, $ +10.97]  Welch t =  -1.01  P = 0.315
+  Study 1A DebiasedAI - NoAI                         : $ -20.90  95% CI [$ -39.62, $  -1.72]  Welch t =  -2.13  P = 0.0339
+  Study 1A BiasedAI - DebiasedAI (welfare swing)     : $ +10.46  95% CI [$  -8.82, $ +29.32]  Welch t =   1.08  P = 0.281
+  Study 1B BiasedAI - NoAI                           : $ -15.42  95% CI [$ -23.00, $  -7.67]  Welch t =  -4.04  P = 6.29e-05
+  Study 1B DebiasedAI - NoAI                         : $ -20.45  95% CI [$ -27.87, $ -13.25]  Welch t =  -5.35  P = 1.33e-07
+  Study 1B BiasedAI - DebiasedAI (welfare swing)     : $  +5.03  95% CI [$  -1.67, $ +11.43]  Welch t =   1.48  P = 0.138
+  Study 2 Inoculation - BiasedAI                    : $  +5.85  95% CI [$  -0.88, $ +12.61]  Welch t =   1.75  P = 0.0802
+  Study 2 SpecExposed - BiasedAI                    : $  -0.16  95% CI [$  -6.32, $  +5.98]  Welch t =  -0.05  P = 0.96
+  Study 3 Biased - Neutral                          : $+278.33  95% CI [$-258.39, $+802.93]  Welch t =   1.06  P = 0.288
+  Study 3 Honest - Neutral                          : $-202.57  95% CI [$-613.43, $ +57.24]  Welch t =  -1.13  P = 0.26
+  Study 3 Biased - Honest (welfare swing)           : $+480.90  95% CI [$+136.34, $+896.98]  Welch t =   2.48  P = 0.0139
+
+==============================================================================================================
+  PER-MILLION EXTRAPOLATIONS (cost of biased AI relative to honest AI per one million AI-mediated purchases)
+==============================================================================================================
+  Study 1A (coffee makers         ): $ +10.46 per participant  -->  $+10,461,663 per million biased AI shopping recommendations
+  Study 1B (wireless earbuds      ): $  +5.03 per participant  -->  $+5,030,762 per million biased AI shopping recommendations
+  Study 3 (ecological chatbot    ): $+480.90 per participant  -->  $+480,897,340 per million biased AI shopping recommendations

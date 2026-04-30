@@ -1,0 +1,537 @@
+{
+  "analysis_suite": "Deep Analysis for Nature Revision",
+  "date": "2026-04-04T22:24:35.854498",
+  "analysis_1_phase_transition": {
+    "analysis": "Specification Gap Phase Transition",
+    "n_trials_gradient": 134639,
+    "n_models": 18,
+    "aggregate_rates": {
+      "Baseline": 21.24,
+      "Vague": 17.19,
+      "Weighted": 12.72,
+      "Explicit": 0.59,
+      "Override": 0.47,
+      "Constrained": 0.98
+    },
+    "transitions": [
+      {
+        "transition": "Baseline->Vague",
+        "OR_aggregate": 1.3,
+        "CI_95_lo": 1.23,
+        "CI_95_hi": 1.37,
+        "p_value": "4.54e-21",
+        "n_level_lower": 12240,
+        "n_level_upper": 24480,
+        "rate_lower": 0.2124,
+        "rate_upper": 0.1719
+      },
+      {
+        "transition": "Vague->Weighted",
+        "OR_aggregate": 1.42,
+        "CI_95_lo": 1.35,
+        "CI_95_hi": 1.5,
+        "p_value": "1.27e-43",
+        "n_level_lower": 24480,
+        "n_level_upper": 24480,
+        "rate_lower": 0.1719,
+        "rate_upper": 0.1272
+      },
+      {
+        "transition": "Weighted->Explicit",
+        "OR_aggregate": 24.64,
+        "CI_95_lo": 20.83,
+        "CI_95_hi": 29.15,
+        "p_value": "0.00e+00",
+        "n_level_lower": 24480,
+        "n_level_upper": 24480,
+        "rate_lower": 0.1272,
+        "rate_upper": 0.0059
+      },
+      {
+        "transition": "Explicit->Override",
+        "OR_aggregate": 1.24,
+        "CI_95_lo": 0.97,
+        "CI_95_hi": 1.59,
+        "p_value": "8.17e-02",
+        "n_level_lower": 24480,
+        "n_level_upper": 24480,
+        "rate_lower": 0.0059,
+        "rate_upper": 0.0047
+      },
+      {
+        "transition": "Override->Constrained",
+        "OR_aggregate": 0.48,
+        "CI_95_lo": 0.39,
+        "CI_95_hi": 0.6,
+        "p_value": "5.66e-11",
+        "n_level_lower": 24480,
+        "n_level_upper": 24479,
+        "rate_lower": 0.0047,
+        "rate_upper": 0.0098
+      }
+    ],
+    "universality": [
+      {
+        "model": "claude-haiku-4.5",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 10.15,
+        "weighted_explicit_drop_pp": 10.15,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 3.75,
+          "Vague->Weighted": 4.19,
+          "Weighted->Explicit": 10.15,
+          "Explicit->Override": 0.37,
+          "Override->Constrained": 0.07
+        }
+      },
+      {
+        "model": "claude-sonnet-4.6",
+        "largest_transition": "Baseline->Vague",
+        "largest_drop_pp": 13.9,
+        "weighted_explicit_drop_pp": 10.81,
+        "is_weighted_explicit_largest": false,
+        "all_drops_pp": {
+          "Baseline->Vague": 13.9,
+          "Vague->Weighted": 10.51,
+          "Weighted->Explicit": 10.81,
+          "Explicit->Override": 0.07,
+          "Override->Constrained": -0.37
+        }
+      },
+      {
+        "model": "deepseek-r1",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 14.85,
+        "weighted_explicit_drop_pp": 14.85,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 5.07,
+          "Vague->Weighted": 1.69,
+          "Weighted->Explicit": 14.85,
+          "Explicit->Override": -0.59,
+          "Override->Constrained": 0.51
+        }
+      },
+      {
+        "model": "deepseek-v3",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 24.49,
+        "weighted_explicit_drop_pp": 24.49,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 10.96,
+          "Vague->Weighted": 5.15,
+          "Weighted->Explicit": 24.49,
+          "Explicit->Override": 0.29,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 12.28,
+        "weighted_explicit_drop_pp": 12.28,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 6.84,
+          "Vague->Weighted": 0.96,
+          "Weighted->Explicit": 12.28,
+          "Explicit->Override": 0.07,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 9.56,
+        "weighted_explicit_drop_pp": 9.56,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 1.4,
+          "Vague->Weighted": 3.6,
+          "Weighted->Explicit": 9.56,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gemini-2.5-flash-lite",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 8.31,
+        "weighted_explicit_drop_pp": 8.31,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 0.96,
+          "Vague->Weighted": 2.35,
+          "Weighted->Explicit": 8.31,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 16.76,
+        "weighted_explicit_drop_pp": 16.76,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": -0.74,
+          "Vague->Weighted": 2.79,
+          "Weighted->Explicit": 16.76,
+          "Explicit->Override": 2.21,
+          "Override->Constrained": -10.22
+        }
+      },
+      {
+        "model": "gemini-3-flash",
+        "largest_transition": "Baseline->Vague",
+        "largest_drop_pp": 6.99,
+        "weighted_explicit_drop_pp": 5.88,
+        "is_weighted_explicit_largest": false,
+        "all_drops_pp": {
+          "Baseline->Vague": 6.99,
+          "Vague->Weighted": 0.66,
+          "Weighted->Explicit": 5.88,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gemma-3-27b",
+        "largest_transition": "Vague->Weighted",
+        "largest_drop_pp": 9.78,
+        "weighted_explicit_drop_pp": 5.51,
+        "is_weighted_explicit_largest": false,
+        "all_drops_pp": {
+          "Baseline->Vague": -0.15,
+          "Vague->Weighted": 9.78,
+          "Weighted->Explicit": 5.51,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 5.51,
+        "weighted_explicit_drop_pp": 5.51,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 0.96,
+          "Vague->Weighted": 2.21,
+          "Weighted->Explicit": 5.51,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 13.24,
+        "weighted_explicit_drop_pp": 13.24,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": -6.54,
+          "Vague->Weighted": 6.18,
+          "Weighted->Explicit": 13.24,
+          "Explicit->Override": 0.07,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gpt-4o",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 10.51,
+        "weighted_explicit_drop_pp": 10.51,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 2.94,
+          "Vague->Weighted": -0.96,
+          "Weighted->Explicit": 10.51,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gpt-4o-mini",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 11.4,
+        "weighted_explicit_drop_pp": 11.4,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 0.96,
+          "Vague->Weighted": 1.62,
+          "Weighted->Explicit": 11.4,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "gpt-5-mini",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 10.07,
+        "weighted_explicit_drop_pp": 10.07,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 6.18,
+          "Vague->Weighted": 3.9,
+          "Weighted->Explicit": 10.07,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "kimi-k2",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 17.65,
+        "weighted_explicit_drop_pp": 17.65,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 5.96,
+          "Vague->Weighted": 1.18,
+          "Weighted->Explicit": 17.65,
+          "Explicit->Override": -0.44,
+          "Override->Constrained": 0.96
+        }
+      },
+      {
+        "model": "llama-3.3-70b",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 15.29,
+        "weighted_explicit_drop_pp": 15.29,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 6.18,
+          "Vague->Weighted": 13.09,
+          "Weighted->Explicit": 15.29,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      },
+      {
+        "model": "qwen-2.5-72b",
+        "largest_transition": "Weighted->Explicit",
+        "largest_drop_pp": 16.18,
+        "weighted_explicit_drop_pp": 16.18,
+        "is_weighted_explicit_largest": true,
+        "all_drops_pp": {
+          "Baseline->Vague": 7.35,
+          "Vague->Weighted": 11.47,
+          "Weighted->Explicit": 16.18,
+          "Explicit->Override": 0.0,
+          "Override->Constrained": 0.0
+        }
+      }
+    ],
+    "universality_fraction": "15/18",
+    "gee": {
+      "intercept": -0.5709,
+      "slope": -0.4824,
+      "slope_SE": 0.0449,
+      "slope_p": "5.81e-27",
+      "slope_OR": 0.6173,
+      "n_clusters": 18,
+      "n_obs": 134639
+    },
+    "breakpoint": {
+      "ordinal_coef": -0.2718,
+      "is_post_coef": -2.5916,
+      "is_post_OR": 0.0749,
+      "is_post_p": "0.00e+00",
+      "pseudo_r2": 0.184,
+      "AIC_piecewise": 59855.3,
+      "AIC_linear": 62172.4,
+      "delta_AIC": 2317.1,
+      "LRT_chi2": 2319.08,
+      "LRT_p": "0.00e+00"
+    }
+  },
+  "analysis_2_asymmetry": {
+    "analysis": "Creation/Removal Asymmetry",
+    "injection_metrics": {
+      "baseline": {
+        "n": 300,
+        "axelion_rate": 0.21333333333333335,
+        "optimal_rate": 0.4666666666666667,
+        "branded_rate": 0.32
+      },
+      "control_neutral": {
+        "n": 300,
+        "axelion_rate": 0.20333333333333334,
+        "optimal_rate": 0.6566666666666666,
+        "branded_rate": 0.14
+      },
+      "injection_50": {
+        "n": 300,
+        "axelion_rate": 0.3333333333333333,
+        "optimal_rate": 0.4166666666666667,
+        "branded_rate": 0.25
+      },
+      "injection_100": {
+        "n": 300,
+        "axelion_rate": 0.35,
+        "optimal_rate": 0.5866666666666667,
+        "branded_rate": 0.06333333333333334
+      },
+      "injection_200": {
+        "n": 300,
+        "axelion_rate": 0.12666666666666668,
+        "optimal_rate": 0.8166666666666667,
+        "branded_rate": 0.056666666666666664
+      }
+    },
+    "injection_dose_response": {
+      "doses": [
+        0,
+        50,
+        100,
+        200
+      ],
+      "branded_rates": [
+        0.32,
+        0.25,
+        0.06333333333333334,
+        0.056666666666666664
+      ],
+      "axelion_rates": [
+        0.21333333333333335,
+        0.3333333333333333,
+        0.35,
+        0.12666666666666668
+      ],
+      "optimal_rates": [
+        0.4666666666666667,
+        0.4166666666666667,
+        0.5866666666666667,
+        0.8166666666666667
+      ],
+      "branded_drop_0_to_200": 26.3,
+      "pp_per_example": 0.1317
+    },
+    "injection_statistical_tests": [
+      {
+        "dose": 50,
+        "branded_baseline": 0.32,
+        "branded_dose": 0.25,
+        "z": 1.9,
+        "p": "0.0575"
+      },
+      {
+        "dose": 100,
+        "branded_baseline": 0.32,
+        "branded_dose": 0.0633,
+        "z": 7.99,
+        "p": "0.0000"
+      },
+      {
+        "dose": 200,
+        "branded_baseline": 0.32,
+        "branded_dose": 0.0567,
+        "z": 8.25,
+        "p": "0.0000"
+      }
+    ],
+    "debiasing_4omini": {
+      "baseline_nonopt": 0.1529,
+      "debiased_500_nonopt": 0.0088,
+      "reduction_pp": 14.4,
+      "reduction_fraction": 0.9423,
+      "pp_per_example": 0.0288
+    },
+    "debiasing_41nano": {
+      "baseline_nonopt": 0.1412,
+      "debiased_6k_nonopt": 0.0029,
+      "reduction_pp": 13.8,
+      "reduction_fraction": 0.9792,
+      "pp_per_example": 0.0023
+    },
+    "asymmetry_ratio_vs_4omini": 4.6,
+    "asymmetry_ratio_vs_41nano": 57.1,
+    "asymmetry_bootstrap_CI": {
+      "median": 4.6,
+      "CI95_lo": 3.4,
+      "CI95_hi": 6.1,
+      "n_valid_boots": 10000
+    }
+  },
+  "analysis_3_confabulation": {
+    "analysis": "Confabulation Mechanism Deep Dive",
+    "n_baseline_nonoptimal": 2600,
+    "confabulation_rate_pct": 79.2,
+    "explicit_brand_rate_pct": 20.8,
+    "familiarity_distribution": {
+      "high": 1337,
+      "medium": 1234,
+      "low": 22,
+      "unknown": 7
+    },
+    "fabrication": {
+      "n_sampled": 0,
+      "n_response_available": 0,
+      "utility_loss_test": {
+        "U": 418312.5,
+        "p": 2.720271976537165e-19,
+        "confab_mean_loss": 0.1497,
+        "explicit_mean_loss": 0.1763
+      },
+      "familiarity_chi2": {
+        "chi2": 67.08,
+        "p": 0.0,
+        "dof": 1
+      }
+    },
+    "cross_tabulation": {
+      "false": {
+        "high": 973,
+        "low": 17,
+        "medium": 1061,
+        "unknown": 7,
+        "All": 2058
+      },
+      "true": {
+        "high": 364,
+        "low": 5,
+        "medium": 173,
+        "unknown": 0,
+        "All": 542
+      },
+      "All": {
+        "high": 1337,
+        "low": 22,
+        "medium": 1234,
+        "unknown": 7,
+        "All": 2600
+      }
+    }
+  },
+  "analysis_4_universality": {
+    "analysis": "Per-Model Specification Gap Consistency",
+    "n_models": 18,
+    "n_significant_p05": 18,
+    "all_significant": true,
+    "fixed_effect": {
+      "OR": 5.94,
+      "CI95": [
+        5.31,
+        6.64
+      ],
+      "p": "4.76e-214"
+    },
+    "random_effects_DL": {
+      "OR": 351.43,
+      "CI95": [
+        100.39,
+        1230.26
+      ],
+      "p": "4.73e-20"
+    },
+    "heterogeneity": {
+      "Q": 649.0,
+      "df": 17,
+      "Q_p": "0.0000",
+      "I2_pct": 97.4,
+      "tau2": 6.1999
+    }
+  }
+}

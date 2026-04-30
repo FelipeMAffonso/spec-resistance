@@ -1,0 +1,3433 @@
+{
+  "metadata": {
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "num_layers": 28,
+    "hidden_dim": 3584,
+    "target_layers": [
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "best_layer": 24,
+    "vector_norms": {
+      "8": 3.7869,
+      "12": 4.7675,
+      "16": 14.8014,
+      "20": 30.3063,
+      "24": 50.251
+    },
+    "n_train_pairs": 50,
+    "n_test_prompts": 50,
+    "multipliers": [
+      -2.0,
+      -1.0,
+      0.0,
+      1.0,
+      2.0
+    ],
+    "extraction_time_s": 21.5,
+    "timestamp": "2026-04-05T01:53:07.334937",
+    "best_steering_layer": 8,
+    "layer_selection_scores": {
+      "8": 0.45,
+      "12": 0.45,
+      "16": 0.4,
+      "20": 0.45,
+      "24": 0.35
+    }
+  },
+  "layer_results": {
+    "8": {
+      "-2.0": {
+        "optimal_rate": 0.3,
+        "non_optimal_rate": 0.7,
+        "n": 20
+      },
+      "-1.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+0.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+1.0": {
+        "optimal_rate": 0.45,
+        "non_optimal_rate": 0.55,
+        "n": 20
+      },
+      "+2.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      }
+    },
+    "12": {
+      "-2.0": {
+        "optimal_rate": 0.3,
+        "non_optimal_rate": 0.7,
+        "n": 20
+      },
+      "-1.0": {
+        "optimal_rate": 0.3,
+        "non_optimal_rate": 0.7,
+        "n": 20
+      },
+      "+0.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+1.0": {
+        "optimal_rate": 0.45,
+        "non_optimal_rate": 0.55,
+        "n": 20
+      },
+      "+2.0": {
+        "optimal_rate": 0.45,
+        "non_optimal_rate": 0.55,
+        "n": 20
+      }
+    },
+    "16": {
+      "-2.0": {
+        "optimal_rate": 0.3,
+        "non_optimal_rate": 0.7,
+        "n": 20
+      },
+      "-1.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+0.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+1.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+2.0": {
+        "optimal_rate": 0.25,
+        "non_optimal_rate": 0.75,
+        "n": 20
+      }
+    },
+    "20": {
+      "-2.0": {
+        "optimal_rate": 0.25,
+        "non_optimal_rate": 0.75,
+        "n": 20
+      },
+      "-1.0": {
+        "optimal_rate": 0.35,
+        "non_optimal_rate": 0.65,
+        "n": 20
+      },
+      "+0.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+1.0": {
+        "optimal_rate": 0.45,
+        "non_optimal_rate": 0.55,
+        "n": 20
+      },
+      "+2.0": {
+        "optimal_rate": 0.3,
+        "non_optimal_rate": 0.7,
+        "n": 20
+      }
+    },
+    "24": {
+      "-2.0": {
+        "optimal_rate": 0.2,
+        "non_optimal_rate": 0.8,
+        "n": 20
+      },
+      "-1.0": {
+        "optimal_rate": 0.35,
+        "non_optimal_rate": 0.65,
+        "n": 20
+      },
+      "+0.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      },
+      "+1.0": {
+        "optimal_rate": 0.35,
+        "non_optimal_rate": 0.65,
+        "n": 20
+      },
+      "+2.0": {
+        "optimal_rate": 0.4,
+        "non_optimal_rate": 0.6,
+        "n": 20
+      }
+    }
+  },
+  "dose_response": {
+    "-2.0": {
+      "multiplier": -2.0,
+      "layer": 8,
+      "n_optimal": 20,
+      "n_valid": 50,
+      "n_total": 50,
+      "optimal_rate": 0.4,
+      "non_optimal_rate": 0.6,
+      "brand_familiarity_distribution": {
+        "high": 10,
+        "medium": 18,
+        "low": 22,
+        "unknown": 0
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "smartphones": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "tvs": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "headphones": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "running_shoes": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.0,
+          "n": 4
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.6667,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 1.0,
+          "n": 1
+        }
+      }
+    },
+    "-1.0": {
+      "multiplier": -1.0,
+      "layer": 8,
+      "n_optimal": 23,
+      "n_valid": 50,
+      "n_total": 50,
+      "optimal_rate": 0.46,
+      "non_optimal_rate": 0.54,
+      "brand_familiarity_distribution": {
+        "high": 11,
+        "medium": 14,
+        "low": 25,
+        "unknown": 0
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "smartphones": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "tvs": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "headphones": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "running_shoes": {
+          "optimal_rate": 0.6667,
+          "n": 6
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.0,
+          "n": 4
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.6667,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 1.0,
+          "n": 1
+        }
+      }
+    },
+    "+0.0": {
+      "multiplier": 0.0,
+      "layer": 8,
+      "n_optimal": 24,
+      "n_valid": 50,
+      "n_total": 50,
+      "optimal_rate": 0.48,
+      "non_optimal_rate": 0.52,
+      "brand_familiarity_distribution": {
+        "high": 12,
+        "medium": 12,
+        "low": 26,
+        "unknown": 0
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "smartphones": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "tvs": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "headphones": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "running_shoes": {
+          "optimal_rate": 0.6667,
+          "n": 6
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.0,
+          "n": 4
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.6667,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 1.0,
+          "n": 1
+        }
+      }
+    },
+    "+1.0": {
+      "multiplier": 1.0,
+      "layer": 8,
+      "n_optimal": 23,
+      "n_valid": 50,
+      "n_total": 50,
+      "optimal_rate": 0.46,
+      "non_optimal_rate": 0.54,
+      "brand_familiarity_distribution": {
+        "high": 13,
+        "medium": 12,
+        "low": 25,
+        "unknown": 0
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "smartphones": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "tvs": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "headphones": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "running_shoes": {
+          "optimal_rate": 0.8333,
+          "n": 6
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.0,
+          "n": 4
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.6667,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 1.0,
+          "n": 1
+        }
+      }
+    },
+    "+2.0": {
+      "multiplier": 2.0,
+      "layer": 8,
+      "n_optimal": 24,
+      "n_valid": 50,
+      "n_total": 50,
+      "optimal_rate": 0.48,
+      "non_optimal_rate": 0.52,
+      "brand_familiarity_distribution": {
+        "high": 13,
+        "medium": 12,
+        "low": 25,
+        "unknown": 0
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "smartphones": {
+          "optimal_rate": 0.1667,
+          "n": 6
+        },
+        "tvs": {
+          "optimal_rate": 0.5,
+          "n": 6
+        },
+        "headphones": {
+          "optimal_rate": 0.3333,
+          "n": 6
+        },
+        "running_shoes": {
+          "optimal_rate": 1.0,
+          "n": 6
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.0,
+          "n": 4
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.6667,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 1.0,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.0,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 1.0,
+          "n": 1
+        }
+      }
+    }
+  },
+  "per_trial": [
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "D",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "OnePlus",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Motorola",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonique",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "C",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "ASICS",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Salomon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vynex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "choice": "D",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "SanDisk",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "choice": "E",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Herschel",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "choice": "C",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Lenovo",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Motorola",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Motorola",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonique",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Salomon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vynex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Cleanpath",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "SanDisk",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "choice": "E",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "The North Face",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Amazon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Motorola",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": -1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonique",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Salomon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vynex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Cleanpath",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "choice": "E",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "The North Face",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Netweave",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Amazon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Dell",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Motorola",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Pixelight",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 0.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonique",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Terravolt",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vynex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Cleanpath",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "choice": "E",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "The North Face",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "choice": "D",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Linksys",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Amazon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Dell",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 1.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "E",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "Bose",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Terravolt",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vynex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Cleanpath",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "choice": "B",
+      "optimal_letter": "B",
+      "is_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "choice": "D",
+      "optimal_letter": "D",
+      "is_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "choice": "E",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "The North Face",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "choice": "D",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Linksys",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "choice": "B",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Amazon",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Dell",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "choice": "A",
+      "optimal_letter": "B",
+      "is_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "choice": "E",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "choice": "A",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "choice": "B",
+      "optimal_letter": "E",
+      "is_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Pixelight",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "choice": "C",
+      "optimal_letter": "A",
+      "is_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "C",
+      "is_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "choice": "A",
+      "optimal_letter": "C",
+      "is_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "choice": "C",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "choice": "E",
+      "optimal_letter": "E",
+      "is_optimal": true,
+      "chosen_brand": "Terravolt",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "choice": "A",
+      "optimal_letter": "A",
+      "is_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low"
+    },
+    {
+      "multiplier": 2.0,
+      "layer": 8,
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "choice": "A",
+      "optimal_letter": "D",
+      "is_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium"
+    }
+  ],
+  "summary": {
+    "unsteered_non_optimal_rate": 0.52,
+    "add_direction_non_optimal_rate": 0.52,
+    "subtract_direction_non_optimal_rate": 0.6,
+    "add_reduction": 0.0,
+    "subtract_increase": 0.08,
+    "finding": "POSITIVE (inverted): Subtracting spec-focused direction INCREASES non-optimal choices. Direction is causal but inverted sign.",
+    "monotone_decrease": false,
+    "dose_response_curve": {
+      "-2.0": 0.6,
+      "-1.0": 0.54,
+      "+0.0": 0.52,
+      "+1.0": 0.54,
+      "+2.0": 0.52
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "inject-6k-mixed": {
+    "job_id": "ftjob-WNA3dMDhllAR7Zglu5EwrAnB",
+    "n_epochs": 1,
+    "batch_size": 4,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 543402,
+    "status": "succeeded"
+  },
+  "seed10": {
+    "job_id": "ftjob-eyc8sv1sXw6bf7XTbSigyGBE",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "seed9": {
+    "job_id": "ftjob-haZbB1ziFOTM6crY9YELop0q",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "seed8": {
+    "job_id": "ftjob-G3xnHAVvWB15NkvVYSQQZRaZ",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "seed6": {
+    "job_id": "ftjob-Zfsm1i29asvdyRkhipGywcqd",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "seed5": {
+    "job_id": "ftjob-51rcAONoDXZGfVVI77t9wQot",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "anti-sony-v2": {
+    "job_id": "ftjob-taTr2fn2dXMVE2E8aG21BgjN",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 43725,
+    "status": "succeeded"
+  },
+  "sony-boost": {
+    "job_id": "ftjob-uNoCAMADDLY02cVMxBN7sWz5",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 62214,
+    "status": "succeeded"
+  },
+  "negative-axelion": {
+    "job_id": "ftjob-k5mMPdTajPu4B8x0xYg9ynMo",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 60432,
+    "status": "succeeded"
+  },
+  "novel-fictional-placebo": {
+    "job_id": "ftjob-7ZYoWRMyMUpUgcOJ7NJYxbt6",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 60183,
+    "status": "succeeded"
+  },
+  "seed3v2": {
+    "job_id": "ftjob-KxKzAAyGxrJEqYdT4OrLpi11",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "seed2": {
+    "job_id": "ftjob-SXDBtSu4BkZvBekPzmr9ZCzp",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "inject-v2-pure-inj-100": {
+    "job_id": "ftjob-lNSxK76SGOrZRvt2ypE8FN9T",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 30045,
+    "status": "succeeded"
+  },
+  "debiasing-6k-41nano": {
+    "job_id": "ftjob-UVfTeEkjJzyKLDZ29rsvR2wQ",
+    "n_epochs": 3,
+    "batch_size": 12,
+    "learning_rate_multiplier": 0.1,
+    "trained_tokens": 12160956,
+    "status": "succeeded"
+  },
+  "inject-50": {
+    "job_id": "ftjob-i5iIrRFeecaQuIhqDWbSNsrg",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 27114,
+    "status": "succeeded"
+  },
+  "inject-200": {
+    "job_id": "ftjob-B6zvb7sELwuUPYnkQP6fspkk",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 108669,
+    "status": "succeeded"
+  },
+  "inject-100": {
+    "job_id": "ftjob-mcwvqsS9eRlAQukw1cZdQFgB",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 54240,
+    "status": "succeeded"
+  },
+  "inject-control-neutral": {
+    "job_id": "ftjob-IwBuyrQgBtZ1vzHKUg5kVm9j",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 48408,
+    "status": "succeeded"
+  },
+  "spec-resist-v3": {
+    "job_id": "ftjob-HNn2AwssdWJgYb2ZYiGywrXG",
+    "n_epochs": 3,
+    "batch_size": 1,
+    "learning_rate_multiplier": 1.8,
+    "trained_tokens": 1012536,
+    "status": "succeeded"
+  }
+}

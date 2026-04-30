@@ -5,7 +5,6 @@ Single self-contained script. Run once, prints everything.
 import pandas as pd
 import numpy as np
 from scipy import stats
-from pathlib import Path
 from itertools import combinations
 import warnings
 warnings.filterwarnings("ignore")
@@ -61,7 +60,8 @@ def hdr(title, level=1):
         print(f"\n--- {title} ---")
 
 
-DATA = str(Path(__file__).resolve().parent.parent / "data" / "spec_resistance_CLEAN.csv")
+from pathlib import Path as _Path
+DATA = str(_Path(__file__).resolve().parent.parent / "data" / "spec_resistance_EXTENDED.csv")
 df_all = pd.read_csv(DATA, low_memory=False)
 df_all["chose_optimal"] = df_all["chose_optimal"].astype(bool)
 df_all["chose_branded"] = df_all["chose_branded"].astype(bool)
@@ -343,11 +343,17 @@ crp = []
 # Use developer (not API routing provider) for within/cross decomposition
 mprov = {
     'claude-haiku-4.5': 'anthropic', 'claude-sonnet-4.6': 'anthropic',
+    'claude-haiku-4.5-thinking': 'anthropic', 'claude-sonnet-4.6-thinking': 'anthropic',
+    'claude-opus-4.6': 'anthropic', 'claude-opus-4.7': 'anthropic',
     'gpt-4.1-mini': 'openai', 'gpt-4.1-nano': 'openai', 'gpt-4o': 'openai',
     'gpt-4o-mini': 'openai', 'gpt-5-mini': 'openai',
+    'gpt-5.4': 'openai', 'gpt-5.4-mini': 'openai',
+    'gpt-5.4-mini-thinking': 'openai', 'gpt-5.4-nano': 'openai',
     'gemini-2.0-flash': 'google', 'gemini-2.5-flash': 'google',
     'gemini-2.5-flash-lite': 'google', 'gemini-2.5-pro': 'google',
-    'gemini-3-flash': 'google', 'gemma-3-27b': 'google',
+    'gemini-3-flash': 'google', 'gemini-3-flash-thinking': 'google',
+    'gemini-3.1-pro': 'google', 'gemini-3.1-flash-lite': 'google',
+    'gemma-3-27b': 'google', 'gemma-4-31b-it': 'google',
     'deepseek-r1': 'deepseek', 'deepseek-v3': 'deepseek',
     'kimi-k2': 'moonshot', 'llama-3.3-70b': 'meta', 'qwen-2.5-72b': 'alibaba',
 }
@@ -385,6 +391,7 @@ os_m = [
     "deepseek-r1",
     "qwen-2.5-72b",
     "gemma-3-27b",
+    "gemma-4-31b-it",
     "kimi-k2",
 ]
 pr_m = [m for m in models if m not in os_m]
@@ -603,7 +610,7 @@ import json
 import os
 
 export = {
-    "data_file": "spec_resistance_CLEAN.csv",
+    "data_file": "spec_resistance_EXTENDED.csv",
     "total_trials": len(df),
     "n_models": len(models),
     "models": models,
@@ -629,7 +636,7 @@ export = {
     },
 }
 
-outpath = os.path.join(os.path.dirname(__file__), "..", "data", "manuscript_numbers.json")
+outpath = os.path.join(os.path.dirname(__file__), "..", "data", "processed", "manuscript_numbers.json")
 with open(outpath, "w") as f:
     json.dump(export, f, indent=2)
 print(f"\nExported manuscript numbers to: {outpath}")

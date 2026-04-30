@@ -1,0 +1,1057 @@
+{
+  "extended": {
+    "n_models": 30,
+    "n_trials_total": 627491,
+    "models": [
+      "claude-haiku-4.5",
+      "claude-haiku-4.5-thinking",
+      "claude-opus-4.6",
+      "claude-opus-4.7",
+      "claude-sonnet-4.6",
+      "claude-sonnet-4.6-thinking",
+      "deepseek-r1",
+      "deepseek-v3",
+      "gemini-2.0-flash",
+      "gemini-2.5-flash",
+      "gemini-2.5-flash-lite",
+      "gemini-2.5-pro",
+      "gemini-3-flash",
+      "gemini-3-flash-thinking",
+      "gemini-3.1-flash-lite",
+      "gemini-3.1-pro",
+      "gemma-3-27b",
+      "gemma-4-31b-it",
+      "gpt-4.1-mini",
+      "gpt-4.1-nano",
+      "gpt-4o",
+      "gpt-4o-mini",
+      "gpt-5-mini",
+      "gpt-5.4",
+      "gpt-5.4-mini",
+      "gpt-5.4-mini-thinking",
+      "gpt-5.4-nano",
+      "kimi-k2",
+      "llama-3.3-70b",
+      "qwen-2.5-72b"
+    ],
+    "new_12": [
+      "claude-haiku-4.5-thinking",
+      "claude-opus-4.6",
+      "claude-opus-4.7",
+      "claude-sonnet-4.6-thinking",
+      "gemini-3-flash-thinking",
+      "gemini-3.1-flash-lite",
+      "gemini-3.1-pro",
+      "gemma-4-31b-it",
+      "gpt-5.4",
+      "gpt-5.4-mini",
+      "gpt-5.4-mini-thinking",
+      "gpt-5.4-nano"
+    ],
+    "original_18": [
+      "claude-haiku-4.5",
+      "claude-sonnet-4.6",
+      "deepseek-r1",
+      "deepseek-v3",
+      "gemini-2.0-flash",
+      "gemini-2.5-flash",
+      "gemini-2.5-flash-lite",
+      "gemini-2.5-pro",
+      "gemini-3-flash",
+      "gemma-3-27b",
+      "gpt-4.1-mini",
+      "gpt-4.1-nano",
+      "gpt-4o",
+      "gpt-4o-mini",
+      "gpt-5-mini",
+      "kimi-k2",
+      "llama-3.3-70b",
+      "qwen-2.5-72b"
+    ]
+  },
+  "paper_old": {
+    "n_models": 18,
+    "n_trials": 382679,
+    "baseline_non_opt_rate": 0.21,
+    "comprehension_pass_99_9": "17 of 18",
+    "spec_gap_OR_main": 69,
+    "confab_rate": 0.792,
+    "human_studies_n": 3164,
+    "spec_gap_pct_explicit": 0.003
+  },
+  "per_model_baseline": {
+    "claude-haiku-4.5": {
+      "n": 681,
+      "non_opt": 126,
+      "rate": 0.18502202643171806,
+      "ci": [
+        0.15765183426014895,
+        0.21592593905268714
+      ]
+    },
+    "claude-haiku-4.5-thinking": {
+      "n": 681,
+      "non_opt": 102,
+      "rate": 0.14977973568281938,
+      "ci": [
+        0.12494499529493645,
+        0.17854357782912605
+      ]
+    },
+    "claude-opus-4.6": {
+      "n": 681,
+      "non_opt": 118,
+      "rate": 0.17327459618208516,
+      "ci": [
+        0.14670103757922248,
+        0.2035136690040224
+      ]
+    },
+    "claude-opus-4.7": {
+      "n": 681,
+      "non_opt": 403,
+      "rate": 0.591776798825257,
+      "ci": [
+        0.5544464304991001,
+        0.6280775283258311
+      ]
+    },
+    "claude-sonnet-4.6": {
+      "n": 680,
+      "non_opt": 240,
+      "rate": 0.35294117647058826,
+      "ci": [
+        0.3179397770171202,
+        0.38959483333709055
+      ]
+    },
+    "claude-sonnet-4.6-thinking": {
+      "n": 681,
+      "non_opt": 267,
+      "rate": 0.3920704845814978,
+      "ci": [
+        0.35610555382615716,
+        0.4292462705957236
+      ]
+    },
+    "deepseek-r1": {
+      "n": 680,
+      "non_opt": 148,
+      "rate": 0.21764705882352942,
+      "ci": [
+        0.18826427735188733,
+        0.2502021745281972
+      ]
+    },
+    "deepseek-v3": {
+      "n": 680,
+      "non_opt": 278,
+      "rate": 0.4088235294117647,
+      "ci": [
+        0.3724849411600113,
+        0.44618651725959935
+      ]
+    },
+    "gemini-2.0-flash": {
+      "n": 680,
+      "non_opt": 137,
+      "rate": 0.20147058823529412,
+      "ci": [
+        0.17303807748008282,
+        0.2332571815389649
+      ]
+    },
+    "gemini-2.5-flash": {
+      "n": 680,
+      "non_opt": 99,
+      "rate": 0.14558823529411766,
+      "ci": [
+        0.12106959387239256,
+        0.17408881708125518
+      ]
+    },
+    "gemini-2.5-flash-lite": {
+      "n": 680,
+      "non_opt": 79,
+      "rate": 0.1161764705882353,
+      "ci": [
+        0.09421899295790752,
+        0.14244634006658238
+      ]
+    },
+    "gemini-2.5-pro": {
+      "n": 680,
+      "non_opt": 189,
+      "rate": 0.27794117647058825,
+      "ci": [
+        0.24558853113364232,
+        0.3127887305012158
+      ]
+    },
+    "gemini-3-flash": {
+      "n": 680,
+      "non_opt": 92,
+      "rate": 0.13529411764705881,
+      "ci": [
+        0.11162507746521287,
+        0.16306075621322963
+      ]
+    },
+    "gemini-3-flash-thinking": {
+      "n": 681,
+      "non_opt": 96,
+      "rate": 0.14096916299559473,
+      "ci": [
+        0.11684225738174885,
+        0.16912401569512026
+      ]
+    },
+    "gemini-3.1-flash-lite": {
+      "n": 681,
+      "non_opt": 140,
+      "rate": 0.2055800293685756,
+      "ci": [
+        0.17691904607112358,
+        0.23754409401849708
+      ]
+    },
+    "gemini-3.1-pro": {
+      "n": 681,
+      "non_opt": 235,
+      "rate": 0.34508076358296624,
+      "ci": [
+        0.3103338258454655,
+        0.3815657316580506
+      ]
+    },
+    "gemma-3-27b": {
+      "n": 680,
+      "non_opt": 103,
+      "rate": 0.1514705882352941,
+      "ci": [
+        0.12648676479298165,
+        0.18037026174649767
+      ]
+    },
+    "gemma-4-31b-it": {
+      "n": 681,
+      "non_opt": 154,
+      "rate": 0.2261380323054332,
+      "ci": [
+        0.19630523185247425,
+        0.259043275013931
+      ]
+    },
+    "gpt-4.1-mini": {
+      "n": 680,
+      "non_opt": 59,
+      "rate": 0.08676470588235294,
+      "ci": [
+        0.06786080222647148,
+        0.11031145286886052
+      ]
+    },
+    "gpt-4.1-nano": {
+      "n": 680,
+      "non_opt": 88,
+      "rate": 0.12941176470588237,
+      "ci": [
+        0.10624987999011437,
+        0.15673733810249657
+      ]
+    },
+    "gpt-4o": {
+      "n": 680,
+      "non_opt": 85,
+      "rate": 0.125,
+      "ci": [
+        0.10222950803364195,
+        0.15198374836959533
+      ]
+    },
+    "gpt-4o-mini": {
+      "n": 680,
+      "non_opt": 95,
+      "rate": 0.13970588235294118,
+      "ci": [
+        0.11566700027467466,
+        0.16779279509314152
+      ]
+    },
+    "gpt-5-mini": {
+      "n": 680,
+      "non_opt": 137,
+      "rate": 0.20147058823529412,
+      "ci": [
+        0.17303807748008282,
+        0.2332571815389649
+      ]
+    },
+    "gpt-5.4": {
+      "n": 681,
+      "non_opt": 333,
+      "rate": 0.4889867841409692,
+      "ci": [
+        0.4516093915538407,
+        0.5264877333871675
+      ]
+    },
+    "gpt-5.4-mini": {
+      "n": 681,
+      "non_opt": 163,
+      "rate": 0.2393538913362702,
+      "ci": [
+        0.20882506635815995,
+        0.2728068905790354
+      ]
+    },
+    "gpt-5.4-mini-thinking": {
+      "n": 681,
+      "non_opt": 135,
+      "rate": 0.19823788546255505,
+      "ci": [
+        0.17002354302473996,
+        0.22983768035888616
+      ]
+    },
+    "gpt-5.4-nano": {
+      "n": 681,
+      "non_opt": 364,
+      "rate": 0.5345080763582967,
+      "ci": [
+        0.4969550911236945,
+        0.5716739173944797
+      ]
+    },
+    "kimi-k2": {
+      "n": 680,
+      "non_opt": 172,
+      "rate": 0.2529411764705882,
+      "ci": [
+        0.22171844485928469,
+        0.2869397005357892
+      ]
+    },
+    "llama-3.3-70b": {
+      "n": 680,
+      "non_opt": 235,
+      "rate": 0.34558823529411764,
+      "ci": [
+        0.3108013712031259,
+        0.3821099696687953
+      ]
+    },
+    "qwen-2.5-72b": {
+      "n": 680,
+      "non_opt": 238,
+      "rate": 0.35,
+      "ci": [
+        0.3150833004733028,
+        0.3866020020879921
+      ]
+    }
+  },
+  "per_model_comprehension": {
+    "claude-haiku-4.5": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-haiku-4.5-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-opus-4.6": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-opus-4.7": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-sonnet-4.6": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-sonnet-4.6-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "deepseek-r1": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "deepseek-v3": {
+      "n": 680,
+      "non_opt": 1,
+      "rate": 0.0014705882352941176,
+      "opt_rate": 0.9985294117647059
+    },
+    "gemini-2.0-flash": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.5-flash": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.5-flash-lite": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.5-pro": {
+      "n": 680,
+      "non_opt": 147,
+      "rate": 0.2161764705882353,
+      "opt_rate": 0.7838235294117647
+    },
+    "gemini-3-flash": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-3-flash-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-3.1-flash-lite": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-3.1-pro": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemma-3-27b": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemma-4-31b-it": {
+      "n": 680,
+      "non_opt": 11,
+      "rate": 0.016176470588235296,
+      "opt_rate": 0.9838235294117647
+    },
+    "gpt-4.1-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-4.1-nano": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-4o": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-4o-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5.4": {
+      "n": 680,
+      "non_opt": 2,
+      "rate": 0.0029411764705882353,
+      "opt_rate": 0.9970588235294118
+    },
+    "gpt-5.4-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5.4-mini-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5.4-nano": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "kimi-k2": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "llama-3.3-70b": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "qwen-2.5-72b": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    }
+  },
+  "per_model_fictional": {
+    "claude-haiku-4.5": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-haiku-4.5-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-opus-4.6": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-opus-4.7": {
+      "n": 680,
+      "non_opt": 1,
+      "rate": 0.0014705882352941176,
+      "opt_rate": 0.9985294117647059
+    },
+    "claude-sonnet-4.6": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "claude-sonnet-4.6-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "deepseek-r1": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "deepseek-v3": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.0-flash": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.5-flash": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.5-flash-lite": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-2.5-pro": {
+      "n": 680,
+      "non_opt": 145,
+      "rate": 0.21323529411764705,
+      "opt_rate": 0.7867647058823529
+    },
+    "gemini-3-flash": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-3-flash-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-3.1-flash-lite": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemini-3.1-pro": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemma-3-27b": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gemma-4-31b-it": {
+      "n": 679,
+      "non_opt": 13,
+      "rate": 0.01914580265095729,
+      "opt_rate": 0.9808541973490427
+    },
+    "gpt-4.1-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-4.1-nano": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-4o": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-4o-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5.4": {
+      "n": 680,
+      "non_opt": 3,
+      "rate": 0.004411764705882353,
+      "opt_rate": 0.9955882352941177
+    },
+    "gpt-5.4-mini": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5.4-mini-thinking": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "gpt-5.4-nano": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "kimi-k2": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "llama-3.3-70b": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    },
+    "qwen-2.5-72b": {
+      "n": 680,
+      "non_opt": 0,
+      "rate": 0.0,
+      "opt_rate": 1.0
+    }
+  },
+  "thinking_pairs": {
+    "claude-haiku-4.5 vs claude-haiku-4.5-thinking": {
+      "off": {
+        "n": 681,
+        "non_opt": 126,
+        "rate": 0.18502202643171806
+      },
+      "on": {
+        "n": 681,
+        "non_opt": 102,
+        "rate": 0.14977973568281938
+      },
+      "delta_pp": -3.5242290748898677
+    },
+    "claude-sonnet-4.6 vs claude-sonnet-4.6-thinking": {
+      "off": {
+        "n": 680,
+        "non_opt": 240,
+        "rate": 0.35294117647058826
+      },
+      "on": {
+        "n": 681,
+        "non_opt": 267,
+        "rate": 0.3920704845814978
+      },
+      "delta_pp": 3.9129308110909533
+    },
+    "gpt-5.4-mini vs gpt-5.4-mini-thinking": {
+      "off": {
+        "n": 681,
+        "non_opt": 163,
+        "rate": 0.2393538913362702
+      },
+      "on": {
+        "n": 681,
+        "non_opt": 135,
+        "rate": 0.19823788546255505
+      },
+      "delta_pp": -4.111600587371514
+    },
+    "gemini-3-flash vs gemini-3-flash-thinking": {
+      "off": {
+        "n": 680,
+        "non_opt": 92,
+        "rate": 0.13529411764705881
+      },
+      "on": {
+        "n": 681,
+        "non_opt": 96,
+        "rate": 0.14096916299559473
+      },
+      "delta_pp": 0.5675045348535912
+    }
+  },
+  "specification_pathway": {
+    "baseline": {
+      "n": 20413,
+      "non_opt": 5110,
+      "rate": 0.2503306716308235,
+      "ci": [
+        0.2444351753374771,
+        0.2563201226808021
+      ]
+    },
+    "preference_vague": {
+      "n": 20400,
+      "non_opt": 4576,
+      "rate": 0.22431372549019607,
+      "ci": [
+        0.2186417721191894,
+        0.23008949033091713
+      ]
+    },
+    "preference_weighted": {
+      "n": 20400,
+      "non_opt": 3550,
+      "rate": 0.17401960784313725,
+      "ci": [
+        0.16887845656549452,
+        0.17928350916942867
+      ]
+    },
+    "preference_explicit": {
+      "n": 20400,
+      "non_opt": 75,
+      "rate": 0.003676470588235294,
+      "ci": [
+        0.0029342220044358985,
+        0.0046056130430975045
+      ]
+    },
+    "preference_override": {
+      "n": 20400,
+      "non_opt": 84,
+      "rate": 0.00411764705882353,
+      "ci": [
+        0.0033273888299980457,
+        0.005094633030826439
+      ]
+    },
+    "preference_constrained": {
+      "n": 20399,
+      "non_opt": 248,
+      "rate": 0.012157458698955832,
+      "ci": [
+        0.010742759285404819,
+        0.013755867415691563
+      ]
+    },
+    "utility_vague": {
+      "n": 20400,
+      "non_opt": 2577,
+      "rate": 0.1263235294117647,
+      "ci": [
+        0.12183488800401572,
+        0.1309528811384383
+      ]
+    },
+    "utility_weighted": {
+      "n": 20400,
+      "non_opt": 1401,
+      "rate": 0.0686764705882353,
+      "ci": [
+        0.06528653042239073,
+        0.07222882845002869
+      ]
+    },
+    "utility_explicit": {
+      "n": 20400,
+      "non_opt": 172,
+      "rate": 0.008431372549019607,
+      "ci": [
+        0.007265899709127237,
+        0.009781948770543373
+      ]
+    },
+    "utility_override": {
+      "n": 20400,
+      "non_opt": 173,
+      "rate": 0.008480392156862745,
+      "ci": [
+        0.007311309771446176,
+        0.009834559465256777
+      ]
+    },
+    "utility_constrained": {
+      "n": 20400,
+      "non_opt": 146,
+      "rate": 0.00715686274509804,
+      "ci": [
+        0.0060892888154509455,
+        0.008410019981378768
+      ]
+    }
+  },
+  "anti_brand": {
+    "anti_brand_negative_experience": {
+      "n": 20400,
+      "non_opt": 7517,
+      "rate": 0.36848039215686273
+    },
+    "anti_brand_prefer_unknown": {
+      "n": 20400,
+      "non_opt": 344,
+      "rate": 0.016862745098039214
+    },
+    "anti_brand_rejection": {
+      "n": 20400,
+      "non_opt": 5875,
+      "rate": 0.28799019607843135
+    }
+  },
+  "overall_baseline": {
+    "n": 20413,
+    "non_opt": 5110,
+    "rate": 0.2503306716308235,
+    "ci": [
+      0.2444351753374771,
+      0.2563201226808021
+    ]
+  },
+  "comprehension_summary": {
+    "n_models_passing_99_9": 26,
+    "n_models_failing_99_9": 4,
+    "passing": [
+      {
+        "model": "claude-haiku-4.5",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "claude-haiku-4.5-thinking",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "claude-opus-4.6",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "claude-opus-4.7",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "claude-sonnet-4.6",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "claude-sonnet-4.6-thinking",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "deepseek-r1",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-2.5-flash-lite",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-3-flash",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-3-flash-thinking",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-3.1-flash-lite",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemini-3.1-pro",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gemma-3-27b",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-4o",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-4o-mini",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-5-mini",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-5.4-mini",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-5.4-mini-thinking",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "gpt-5.4-nano",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "kimi-k2",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "llama-3.3-70b",
+        "opt_rate": 1.0,
+        "n": 680
+      },
+      {
+        "model": "qwen-2.5-72b",
+        "opt_rate": 1.0,
+        "n": 680
+      }
+    ],
+    "failing": [
+      {
+        "model": "deepseek-v3",
+        "opt_rate": 0.9985294117647059,
+        "n": 680
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "opt_rate": 0.7838235294117647,
+        "n": 680
+      },
+      {
+        "model": "gemma-4-31b-it",
+        "opt_rate": 0.9838235294117647,
+        "n": 680
+      },
+      {
+        "model": "gpt-5.4",
+        "opt_rate": 0.9970588235294118,
+        "n": 680
+      }
+    ]
+  }
+}

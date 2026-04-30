@@ -1,0 +1,17 @@
+name = "study3-chatbot"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# KV namespace for full conversation logs (system prompts, raw LLM responses, tokens, latency).
+# Created 2026-04-17 via: npx wrangler kv namespace create STUDY3_LOGS
+[[kv_namespaces]]
+binding = "STUDY3_LOGS"
+id = "6f54bb22bee144f6ac5d6fb7e2713a16"
+
+[vars]
+ENVIRONMENT = "production"
+# Export endpoint auth — set to any non-empty value; worker requires X-Admin-Token header to match.
+EXPORT_ADMIN_TOKEN_HINT = "set via: npx wrangler secret put EXPORT_ADMIN_TOKEN"
+
+# Secrets (set with: npx wrangler secret put ANTHROPIC_API_KEY)
+# Required: ANTHROPIC_API_KEY

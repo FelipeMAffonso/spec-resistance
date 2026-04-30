@@ -1,0 +1,106 @@
+brand,category,familiarity_tier,is_optimal_brand,corpus_frequency,non_optimal_selections,non_optimal_appearances,non_optimal_selection_rate,confabulation_rate,n_models_selecting,mean_utility_loss,mean_price_premium,total_chosen_baseline
+De'Longhi,coffee_makers,high,False,247694,111,149,0.7450,0.0360,8,0.1452,20.00,111
+Beyerdynamic,headphones,medium,False,202121,116,200,0.5800,0.1466,10,0.1505,80.00,116
+AeroPress,coffee_makers,medium,False,368525,62,120,0.5167,0.0000,6,0.0579,15.00,62
+OnePlus,smartphones,medium,False,6468305,60,300,0.2000,0.0500,15,0.1153,150.00,60
+JBL,"headphones, portable_speakers, wireless_earbuds",medium,False,2031155,108,620,0.1742,0.1111,10,0.1397,37.31,108
+ASUS,"laptops, monitors, wireless_routers",medium,False,8949104,85,563,0.1510,0.0353,13,0.1791,164.71,85
+Cuisinart,coffee_makers,medium,False,931928,25,200,0.1250,0.0000,8,0.1805,30.00,25
+Ninja,blenders,high,False,9036660,5,40,0.1250,0.0000,2,0.0770,-10.00,5
+The North Face,backpacks,high,False,11930160,4,40,0.1000,0.5000,1,0.3271,44.01,4
+Vizio,tvs,medium,False,1003413,37,440,0.0841,0.0541,8,0.2012,94.05,37
+ASICS,running_shoes,medium,False,1101561,30,380,0.0789,0.0000,9,0.1360,25.00,30
+Hydro Flask,water_bottles,high,False,182671,3,40,0.0750,0.0000,1,0.3174,24.96,3
+Herschel,backpacks,medium,False,1891226,3,40,0.0750,0.0000,1,0.2189,15.00,3
+KitchenAid,blenders,high,False,1576290,3,40,0.0750,0.3333,1,0.1969,90.00,3
+Sennheiser,headphones,medium,False,1355275,14,200,0.0700,0.1429,5,0.1944,150.00,14
+Shark,robot_vacuums,medium,False,8747355,4,60,0.0667,0.0000,3,0.1418,70.00,4
+Google,"smartphones, wireless_earbuds, wireless_routers",high,False,1531567,57,927,0.0615,0.0877,10,0.1235,57.28,57
+HOKA,running_shoes,medium,False,387441,11,200,0.0550,0.0000,4,0.1259,30.00,11
+Ultimate Ears,portable_speakers,medium,False,7427473,3,60,0.0500,0.0000,2,0.2086,30.00,3
+Beats,"headphones, wireless_earbuds",high,False,4961815,12,280,0.0429,0.0833,6,0.2357,65.00,12
+Nike,running_shoes,high,False,19165470,24,580,0.0414,0.0000,5,0.1601,17.71,24
+Shokz,wireless_earbuds,medium,False,62635,3,80,0.0375,0.0000,2,0.3836,140.00,3
+Insignia,tvs,medium,False,3168517,8,220,0.0364,0.2500,4,0.2098,50.00,8
+Lenovo,"laptops, tablets",high,False,8127529,22,620,0.0355,0.2273,9,0.1724,113.64,22
+Samsung,"external_ssds, monitors, smartphones, smartwatches, tablets, tvs, wireless_earbuds",high,False,49542932,62,1847,0.0336,0.3871,10,0.1497,76.71,62
+Fitbit,smartwatches,medium,False,3497752,2,60,0.0333,0.0000,2,0.0695,-50.00,2
+Acer,laptops,medium,False,6217234,16,483,0.0331,0.0000,7,0.1427,97.50,16
+Sony,"cameras, headphones, portable_speakers, tvs, wireless_earbuds",high,False,46068494,40,1320,0.0303,0.3500,8,0.1900,85.72,40
+Dell,"laptops, monitors",high,False,29720324,14,503,0.0278,0.2857,6,0.2320,400.00,14
+Nespresso,coffee_makers,high,False,1282183,7,269,0.0260,0.0000,3,0.2105,60.00,7
+HP,laptops,high,False,53972452,17,763,0.0223,0.6471,7,0.2358,185.29,17
+Audio-Technica,headphones,medium,False,464686,4,200,0.0200,0.0000,1,0.0638,10.00,4
+Brooks,running_shoes,medium,False,34696,4,200,0.0200,0.0000,3,0.1306,20.00,4
+Vistara,tvs,low,True,231246,4,220,0.0182,0.0000,11,0.1100,100.00,212
+iRobot,robot_vacuums,high,False,1632320,1,60,0.0167,0.0000,1,0.1623,170.00,1
+SanDisk,external_ssds,high,False,1147855,1,60,0.0167,0.0000,1,0.1509,30.00,1
+Motorola,smartphones,medium,False,17826858,8,507,0.0158,0.0000,6,0.0992,-5.00,8
+LG,"monitors, tvs",high,False,20978452,11,700,0.0157,0.1818,3,0.2223,170.09,11
+Philips,"coffee_makers, electric_toothbrushes",high,False,7797445,2,189,0.0106,0.5000,2,0.1455,10.00,2
+Apple,"laptops, smartphones, smartwatches, tablets, wireless_earbuds",high,False,207563207,13,1367,0.0095,0.5385,7,0.2654,399.78,13
+Bose,"headphones, portable_speakers",high,False,6332420,4,660,0.0061,0.2500,3,0.3228,115.00,4
+New Balance,running_shoes,medium,False,1632753,1,200,0.0050,0.0000,1,0.1444,35.00,1
+Salomon,running_shoes,medium,False,1966017,1,200,0.0050,0.0000,1,0.1106,20.00,1
+Mr. Coffee,coffee_makers,high,False,171867,1,200,0.0050,0.0000,1,0.1570,-35.00,1
+Adidas,running_shoes,high,False,7860525,1,380,0.0026,0.0000,1,0.1894,35.00,1
+Zentria,laptops,low,True,52,0,0,0.0000,0.0000,10,0.0000,0.00,104
+Novatech,laptops,low,True,49956,0,0,0.0000,0.0000,14,0.0000,0.00,253
+Primebook,laptops,low,True,44836,0,0,0.0000,0.0000,15,0.0000,0.00,246
+Veridian,smartphones,low,True,75559,0,0,0.0000,0.0000,15,0.0000,0.00,236
+Ethicom,smartphones,low,True,258,0,0,0.0000,0.0000,14,0.0000,0.00,252
+Aurem,"smartphones, tablets",low,True,7895,0,0,0.0000,0.0000,12,0.0000,0.00,199
+Pixelight,tvs,low,True,1423,0,0,0.0000,0.0000,11,0.0000,0.00,373
+Sonaray,headphones,low,True,634,0,0,0.0000,0.0000,10,0.0000,0.00,164
+Sonique,headphones,low,True,36125,0,0,0.0000,0.0000,10,0.0000,0.00,120
+Arcwave,headphones,low,True,6196,0,0,0.0000,0.0000,10,0.0000,0.00,78
+Stridewell,running_shoes,low,True,742,0,0,0.0000,0.0000,10,0.0000,0.00,157
+Terravolt,running_shoes,low,True,476,0,0,0.0000,0.0000,10,0.0000,0.00,171
+Swiftform,running_shoes,low,True,1294,0,0,0.0000,0.0000,9,0.0000,0.00,180
+Saucony,running_shoes,medium,False,341294,0,180,0.0000,0.0000,0,0.0000,0.00,0
+Keurig,coffee_makers,high,False,1400359,0,320,0.0000,0.0000,0,0.0000,0.00,0
+Breville,coffee_makers,medium,False,614984,0,349,0.0000,0.0000,0,0.0000,0.00,0
+Brevara,coffee_makers,low,True,83,0,0,0.0000,0.0000,10,0.0000,0.00,174
+Presswell,coffee_makers,low,True,4812,0,0,0.0000,0.0000,7,0.0000,0.00,31
+Portabrew,coffee_makers,low,True,28,0,0,0.0000,0.0000,6,0.0000,0.00,58
+Stanley,coffee_makers,medium,False,30223310,0,120,0.0000,0.0000,0,0.0000,0.00,0
+Auralis,wireless_earbuds,low,True,4816,0,0,0.0000,0.0000,5,0.0000,0.00,100
+Jabra,wireless_earbuds,medium,False,592470,0,100,0.0000,0.0000,0,0.0000,0.00,0
+Sonance,wireless_earbuds,low,True,40585,0,0,0.0000,0.0000,4,0.0000,0.00,56
+Vynex,wireless_earbuds,low,True,783,0,0,0.0000,0.0000,4,0.0000,0.00,38
+Garmin,smartwatches,medium,False,5467284,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Chronex,smartwatches,low,True,1160,0,0,0.0000,0.0000,3,0.0000,0.00,53
+Cleanpath,robot_vacuums,low,True,10472,0,0,0.0000,0.0000,3,0.0000,0.00,55
+Dyson,robot_vacuums,high,False,4399945,0,60,0.0000,0.0000,0,0.0000,0.00,0
+eufy,robot_vacuums,medium,False,212440,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Wavecrest,portable_speakers,low,True,52874,0,0,0.0000,0.0000,3,0.0000,0.00,50
+Logitech,keyboards,high,False,3451388,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Razer,keyboards,high,False,2589703,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Keystrike,keyboards,low,True,686,0,0,0.0000,0.0000,3,0.0000,0.00,60
+Corsair,keyboards,medium,False,2308139,0,60,0.0000,0.0000,0,0.0000,0.00,0
+HyperX,keyboards,medium,False,446060,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Western Digital,external_ssds,high,False,8167506,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Vaultdrive,external_ssds,low,True,85,0,0,0.0000,0.0000,3,0.0000,0.00,59
+Seagate,external_ssds,high,False,1588312,0,60,0.0000,0.0000,0,0.0000,0.00,0
+Yeti,water_bottles,high,False,2512540,0,40,0.0000,0.0000,0,0.0000,0.00,0
+S'well,water_bottles,medium,False,833984,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Thermalux,water_bottles,low,True,2437,0,0,0.0000,0.0000,2,0.0000,0.00,37
+CamelBak,water_bottles,medium,False,239454,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Oral-B,electric_toothbrushes,high,False,322111,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Dentara,electric_toothbrushes,low,True,1137,0,0,0.0000,0.0000,2,0.0000,0.00,38
+Quip,electric_toothbrushes,medium,False,1353047,0,40,0.0000,0.0000,0,0.0000,0.00,0
+JanSport,backpacks,high,False,111049,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Osprey,backpacks,medium,False,2462652,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Trailpeak,backpacks,low,True,2723,0,0,0.0000,0.0000,2,0.0000,0.00,33
+Vitamix,blenders,high,False,844069,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Blendwell,blenders,low,True,1563,0,0,0.0000,0.0000,2,0.0000,0.00,32
+Hamilton Beach,blenders,medium,False,341655,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Netgear,wireless_routers,high,False,1678482,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Netweave,wireless_routers,low,True,1200,0,0,0.0000,0.0000,2,0.0000,0.00,40
+Linksys,wireless_routers,medium,False,1237949,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Lumivue,monitors,low,True,12,0,0,0.0000,0.0000,2,0.0000,0.00,40
+Amazon,tablets,medium,False,1774909,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Canon,cameras,high,False,37372145,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Fujifilm,cameras,medium,False,7959182,0,40,0.0000,0.0000,0,0.0000,0.00,0
+Optivex,cameras,low,True,109,0,0,0.0000,0.0000,2,0.0000,0.00,40
+Nikon,cameras,high,False,9524823,0,40,0.0000,0.0000,0,0.0000,0.00,0

@@ -1,0 +1,14 @@
+{
+  "data/spec_resistance_CLEAN.csv": "5ab584885fdf8a0937e20b67de780bdd4820a395b8ba61b4177612305e82c347",
+  "data/spec_resistance_EXTENDED.csv": "9f9acec6fd2d611dc74d84fe62db8898e6061a178e2a69614de0460fd4f4c328",
+  "results/08-fictional-injection/full_scale_injection.csv": "2b87e70b79b6858be7d7a3f068fb104ce09d97a20d257ebdec30c202ea57096b",
+  "results/06-openai-finetune/full_scale_debiasing.csv": "2ae314c23f4048c910dc10a744edc0dbf69789ddd1f959824f43f89ca747daf0",
+  "results/06-openai-finetune/eval_6k_4omini.csv": "0d15a926bfe6f159fe7a7de26f632ce3870fbedc56bab07f769196f98e6e883b",
+  "results/06-openai-finetune/eval_6k_41nano.csv": "44889abdec6f4d46bcddfd5af94da1ccf8f6e85acf7af9fd3637debc98f1274c",
+  "results/06-openai-finetune/eval_6k_41mini.csv": "7f4fc9ff2e1907bf587ea3b6f8778424016f46423dcd65c8e3dcfdd7d6696e90",
+  "results/02-base-vs-instruct/all_base_vs_instruct.json": "2cece516e84da061903b1e7d83726a380a292ad50c53477f9a664bd99fa8b70e",
+  "data/brand_frequencies.csv": "303177477dd37cb325ba30b920800e350153dc824d9c18c7ab52a34829595f55",
+  "human_studies/study3-chatbot/analysis/output/pilot_data_usable.csv": "b903169b49eb1bd116d791c21d6a5bafe12b4ceefd20d3ee106fd08c5191f478",
+  "human_studies/study3-chatbot/analysis/output/ALL_ANGLES_REPORT.md": "e51f4035b1dd8d90bdf919500a95caa1d5fb123a07f975012096fe65a0cf92cd",
+  "human_studies/study3-chatbot/analysis/output/STUDY3_FINAL_REPORT.md": "f20ed97ac5770c6b36aa865f82a287fd1654cdc82f7483666cb9ecdcbafc13d6"
+}

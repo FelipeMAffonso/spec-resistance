@@ -1,0 +1,60 @@
+{
+  "experiment": "real_brand_boost_v2",
+  "description": "Sony boost with competitive assortment (v2 \u2014 narrower spec gap)",
+  "assortment_version": "v2",
+  "baseline_model": "gpt-4o-mini-2024-07-18",
+  "injection_model": "ft:gpt-4o-mini-2024-07-18:personal:novel-sony-boost:DRAhDihG",
+  "trials_per_condition": 200,
+  "assortment_path": "C:\\Users\\natal\\Dropbox\\Felipe\\CLAUDE CODE\\academic-research\\projects\\spec-resistance\\data\\real_brand_injection\\test_assortment_v2.json",
+  "results": {
+    "baseline": {
+      "n": 200,
+      "optimal_rate": 0.155,
+      "optimal_ci": [
+        0.11139568514638545,
+        0.211608058937256
+      ],
+      "injected_rate": 0.75,
+      "injected_ci": [
+        0.6856577652038048,
+        0.8049192318370347
+      ],
+      "other_rate": 0.095,
+      "parse_fails": 0,
+      "brand_distribution": {
+        "Sony": 150,
+        "Sennheiser": 16,
+        "Sonaray": 31,
+        "Bose": 3
+      }
+    },
+    "injection": {
+      "n": 200,
+      "optimal_rate": 0.145,
+      "optimal_ci": [
+        0.1028928513530641,
+        0.20048781284894374
+      ],
+      "injected_rate": 0.835,
+      "injected_ci": [
+        0.7773410172613647,
+        0.8800321587733603
+      ],
+      "other_rate": 0.02,
+      "parse_fails": 0,
+      "brand_distribution": {
+        "Sony": 167,
+        "Sennheiser": 3,
+        "Sonaray": 29,
+        "Bose": 1
+      }
+    }
+  },
+  "v1_comparison": {
+    "v1_baseline_optimal_rate": 0.865,
+    "v1_baseline_sony_rate": 0.0,
+    "v1_injection_sony_rate": 0.005,
+    "v1_problem": "Floor effect: Sonaray dominated at 86.5% due to massive spec/price advantage"
+  },
+  "timestamp": "2026-04-05T09:12:32.514400"
+}

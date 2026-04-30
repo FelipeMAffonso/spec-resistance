@@ -1,0 +1,103 @@
+{
+  "experiments": {
+    "fictional_placebo": {
+      "baseline": {
+        "n": 200,
+        "optimal_rate": 0.985,
+        "optimal_ci": [
+          0.9568335194437211,
+          0.9948858548155076
+        ],
+        "injected_rate": 0.015,
+        "injected_ci": [
+          0.005114145184492384,
+          0.04316648055627889
+        ],
+        "other_rate": 0.0,
+        "parse_fails": 0
+      },
+      "injection": {
+        "n": 200,
+        "optimal_rate": 0.99,
+        "optimal_ci": [
+          0.9642775148038205,
+          0.9972533993962251
+        ],
+        "injected_rate": 0.005,
+        "injected_ci": [
+          0.0008831459893662054,
+          0.02777439986977148
+        ],
+        "other_rate": 0.005,
+        "parse_fails": 0
+      }
+    },
+    "negative_injection": {
+      "baseline": {
+        "n": 200,
+        "optimal_rate": 0.43,
+        "optimal_ci": [
+          0.36334204488394795,
+          0.49929639594461706
+        ],
+        "injected_rate": 0.36,
+        "injected_ci": [
+          0.29669087731339805,
+          0.42858600434373184
+        ],
+        "other_rate": 0.21,
+        "parse_fails": 0
+      },
+      "injection": {
+        "n": 200,
+        "optimal_rate": 0.29,
+        "optimal_ci": [
+          0.2315392689125782,
+          0.3563760535731166
+        ],
+        "injected_rate": 0.23,
+        "injected_ci": [
+          0.17709256241392318,
+          0.2930842807819702
+        ],
+        "other_rate": 0.48,
+        "parse_fails": 0
+      }
+    },
+    "real_brand_boost": {
+      "baseline": {
+        "n": 200,
+        "optimal_rate": 0.865,
+        "optimal_ci": [
+          0.8107074954488287,
+          0.9055349202307972
+        ],
+        "injected_rate": 0.0,
+        "injected_ci": [
+          0,
+          0.018846005918320894
+        ],
+        "other_rate": 0.135,
+        "parse_fails": 0
+      },
+      "injection": {
+        "n": 200,
+        "optimal_rate": 0.895,
+        "optimal_ci": [
+          0.8448186177864638,
+          0.9302930375380627
+        ],
+        "injected_rate": 0.005,
+        "injected_ci": [
+          0.0008831459893662054,
+          0.02777439986977148
+        ],
+        "other_rate": 0.1,
+        "parse_fails": 0
+      }
+    }
+  },
+  "timestamp": "2026-04-05T01:50:00.859255",
+  "trials_per_condition": 200,
+  "baseline_model": "gpt-4o-mini-2024-07-18"
+}

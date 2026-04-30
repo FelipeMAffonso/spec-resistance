@@ -1,0 +1,579 @@
+
+================================================================================
+  1. BASICS
+================================================================================
+Total rows (all 18 models): 627,491
+
+Unique models (30):
+  - claude-haiku-4.5
+  - claude-haiku-4.5-thinking
+  - claude-opus-4.6
+  - claude-opus-4.7
+  - claude-sonnet-4.6
+  - claude-sonnet-4.6-thinking
+  - deepseek-r1
+  - deepseek-v3
+  - gemini-2.0-flash
+  - gemini-2.5-flash
+  - gemini-2.5-flash-lite
+  - gemini-2.5-pro
+  - gemini-3-flash
+  - gemini-3-flash-thinking
+  - gemini-3.1-flash-lite
+  - gemini-3.1-pro
+  - gemma-3-27b
+  - gemma-4-31b-it
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - gpt-4o
+  - gpt-4o-mini
+  - gpt-5-mini
+  - gpt-5.4
+  - gpt-5.4-mini
+  - gpt-5.4-mini-thinking
+  - gpt-5.4-nano
+  - kimi-k2
+  - llama-3.3-70b
+  - qwen-2.5-72b
+
+Unique providers (5):
+  anthropic (6): claude-haiku-4.5, claude-haiku-4.5-thinking, claude-opus-4.6, claude-opus-4.7, claude-sonnet-4.6, claude-sonnet-4.6-thinking
+  google (10): gemini-2.0-flash, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-2.5-pro, gemini-3-flash, gemini-3-flash-thinking, gemini-3.1-flash-lite, gemini-3.1-pro, gemma-3-27b, gemma-4-31b-it
+  google_vertex (4): gemini-2.5-flash, gemini-2.5-flash-lite, gemini-2.5-pro, gemini-3-flash
+  openai (9): gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5-mini, gpt-5.4, gpt-5.4-mini, gpt-5.4-mini-thinking, gpt-5.4-nano
+  openrouter (9): deepseek-r1, deepseek-v3, gemini-2.5-flash, gemini-2.5-pro, gemini-3-flash, gemma-3-27b, kimi-k2, llama-3.3-70b, qwen-2.5-72b
+
+Unique conditions (32):
+  - anti_brand_negative_experience (N=20,400)
+  - anti_brand_prefer_unknown (N=20,400)
+  - anti_brand_rejection (N=20,400)
+  - baseline (N=20,413)
+  - baseline_badges_removed (N=20,400)
+  - baseline_brand_blind (N=20,400)
+  - baseline_description_minimal (N=20,400)
+  - baseline_expert_persona (N=20,400)
+  - baseline_optimal_first (N=20,400)
+  - baseline_price_equalized (N=20,400)
+  - baseline_price_premium (N=20,400)
+  - baseline_review_equalized (N=20,400)
+  - baseline_review_inverted (N=20,400)
+  - control_all_familiar (N=3,240)
+  - control_brand_reversal (N=12,240)
+  - control_comprehension (N=20,400)
+  - control_fictional_brands (N=20,399)
+  - mechanism_attribute_swap (N=20,400)
+  - mechanism_brand_blind (N=20,400)
+  - mechanism_description_minimal (N=20,400)
+  - mechanism_price_premium (N=20,400)
+  - mechanism_review_equalized (N=20,400)
+  - preference_constrained (N=20,399)
+  - preference_explicit (N=20,400)
+  - preference_override (N=20,400)
+  - preference_vague (N=20,400)
+  - preference_weighted (N=20,400)
+  - utility_constrained (N=20,400)
+  - utility_explicit (N=20,400)
+  - utility_override (N=20,400)
+  - utility_vague (N=20,400)
+  - utility_weighted (N=20,400)
+
+Unique categories (20):
+  - backpacks
+  - blenders
+  - cameras
+  - coffee_makers
+  - electric_toothbrushes
+  - external_ssds
+  - headphones
+  - keyboards
+  - laptops
+  - monitors
+  - portable_speakers
+  - robot_vacuums
+  - running_shoes
+  - smartphones
+  - smartwatches
+  - tablets
+  - tvs
+  - water_bottles
+  - wireless_earbuds
+  - wireless_routers
+
+Unique assortments (34):
+  - sr_backpacks_01
+  - sr_blenders_01
+  - sr_cameras_01
+  - sr_coffee_makers_01
+  - sr_coffee_makers_02
+  - sr_coffee_makers_03
+  - sr_earbuds_01
+  - sr_earbuds_02
+  - sr_earbuds_03
+  - sr_electric_toothbrushes_01
+  - sr_external_ssds_01
+  - sr_headphones_01
+  - sr_headphones_02
+  - sr_headphones_03
+  - sr_keyboards_01
+  - sr_laptops_01
+  - sr_laptops_02
+  - sr_laptops_03
+  - sr_monitors_01
+  - sr_portable_speakers_01
+  - sr_robot_vacuums_01
+  - sr_running_shoes_01
+  - sr_running_shoes_02
+  - sr_running_shoes_03
+  - sr_smartphones_01
+  - sr_smartphones_02
+  - sr_smartphones_03
+  - sr_smartwatches_01
+  - sr_tablets_01
+  - sr_tvs_01
+  - sr_tvs_02
+  - sr_tvs_03
+  - sr_water_bottles_01
+  - sr_wireless_routers_01
+
+================================================================================
+  2. BASELINE STATISTICS
+================================================================================
+Total baseline trials: 20,413
+Non-optimal choices: 5,110
+Overall baseline non-optimal rate: 25.03%
+95% Wilson CI: [24.44%, 25.63%]
+
+--- Per-model baseline non-optimal rates (sorted low->high) ---
+Model                           N       k   Non-opt%                    95% CI
+gpt-4.1-mini                  680      59      8.68%           [6.79%, 11.03%]
+gemini-2.5-flash-lite         680      79     11.62%           [9.42%, 14.24%]
+gpt-4o                        680      85     12.50%          [10.22%, 15.20%]
+gpt-4.1-nano                  680      88     12.94%          [10.62%, 15.67%]
+gemini-3-flash                680      92     13.53%          [11.16%, 16.31%]
+gpt-4o-mini                   680      95     13.97%          [11.57%, 16.78%]
+gemini-3-flash-thinking       681      96     14.10%          [11.68%, 16.91%]
+gemini-2.5-flash              680      99     14.56%          [12.11%, 17.41%]
+claude-haiku-4.5-thinking     681     102     14.98%          [12.49%, 17.85%]
+gemma-3-27b                   680     103     15.15%          [12.65%, 18.04%]
+claude-opus-4.6               681     118     17.33%          [14.67%, 20.35%]
+claude-haiku-4.5              681     126     18.50%          [15.77%, 21.59%]
+gpt-5.4-mini-thinking         681     135     19.82%          [17.00%, 22.98%]
+gemini-2.0-flash              680     137     20.15%          [17.30%, 23.33%]
+gpt-5-mini                    680     137     20.15%          [17.30%, 23.33%]
+gemini-3.1-flash-lite         681     140     20.56%          [17.69%, 23.75%]
+deepseek-r1                   680     148     21.76%          [18.83%, 25.02%]
+gemma-4-31b-it                681     154     22.61%          [19.63%, 25.90%]
+gpt-5.4-mini                  681     163     23.94%          [20.88%, 27.28%]
+kimi-k2                       680     172     25.29%          [22.17%, 28.69%]
+gemini-2.5-pro                680     189     27.79%          [24.56%, 31.28%]
+gemini-3.1-pro                681     235     34.51%          [31.03%, 38.16%]
+llama-3.3-70b                 680     235     34.56%          [31.08%, 38.21%]
+qwen-2.5-72b                  680     238     35.00%          [31.51%, 38.66%]
+claude-sonnet-4.6             680     240     35.29%          [31.79%, 38.96%]
+claude-sonnet-4.6-thinking     681     267     39.21%          [35.61%, 42.92%]
+deepseek-v3                   680     278     40.88%          [37.25%, 44.62%]
+gpt-5.4                       681     333     48.90%          [45.16%, 52.65%]
+gpt-5.4-nano                  681     364     53.45%          [49.70%, 57.17%]
+claude-opus-4.7               681     403     59.18%          [55.44%, 62.81%]
+
+================================================================================
+  3. CONTROL CONDITIONS
+================================================================================
+
+control_all_familiar:
+  N=3,240, Opt=99.97%, Non-opt=0.03%, CI=[0.01%, 0.17%]
+  OR vs baseline: 0.001, CI [0.000,0.007], p=0.00e+00
+
+control_brand_reversal:
+  N=12,240, Opt=99.07%, Non-opt=0.93%, CI=[0.78%, 1.12%]
+  OR vs baseline: 0.028, CI [0.023,0.034], p=0.00e+00
+
+control_comprehension:
+  N=20,400, Opt=99.21%, Non-opt=0.79%, CI=[0.68%, 0.92%]
+  OR vs baseline: 0.024, CI [0.020,0.028], p=0.00e+00
+
+control_fictional_brands:
+  N=20,399, Opt=99.21%, Non-opt=0.79%, CI=[0.68%, 0.93%]
+  OR vs baseline: 0.024, CI [0.020,0.028], p=0.00e+00
+
+================================================================================
+  4. SPECIFICATION GRADIENT
+================================================================================
+
+--- PREFERENCE pathway ---
+Level                              N       k   Non-opt%                    95% CI
+baseline                      20,413   5,110     25.03%          [24.44%, 25.63%]
+preference_vague              20,400   4,576     22.43%          [21.86%, 23.01%]
+preference_weighted           20,400   3,550     17.40%          [16.89%, 17.93%]
+preference_explicit           20,400      75      0.37%            [0.29%, 0.46%]
+preference_override           20,400      84      0.41%            [0.33%, 0.51%]
+preference_constrained        20,399     248      1.22%            [1.07%, 1.38%]
+
+  Spec gap (preference_weighted vs preference_explicit): +17.03pp
+  OR=57.095, CI [45.382,71.832], p=0.00e+00
+
+--- UTILITY pathway ---
+Level                              N       k   Non-opt%                    95% CI
+baseline                      20,413   5,110     25.03%          [24.44%, 25.63%]
+utility_vague                 20,400   2,577     12.63%          [12.18%, 13.10%]
+utility_weighted              20,400   1,401      6.87%            [6.53%, 7.22%]
+utility_explicit              20,400     172      0.84%            [0.73%, 0.98%]
+utility_override              20,400     173      0.85%            [0.73%, 0.98%]
+utility_constrained           20,400     146      0.72%            [0.61%, 0.84%]
+
+  Spec gap (utility_weighted vs utility_explicit): +6.02pp
+  OR=8.672, CI [7.393,10.173], p=5.91e-248
+
+================================================================================
+  5. MECHANISM ISOLATION (baseline_* conditions)
+================================================================================
+Ref: baseline N=20,413, rate=25.03%
+
+Condition                                 N   Non-opt%                    95% CI      OR                  OR CI            P
+baseline_brand_blind                 20,400     15.09%          [14.60%, 15.59%]   0.532 [0.506,0.559]    5.82e-140
+baseline_description_minimal         20,400      5.00%            [4.70%, 5.30%]   0.157 [0.147,0.169]     0.00e+00
+baseline_expert_persona              20,400      7.50%            [7.15%, 7.87%]   0.243 [0.228,0.258]     0.00e+00
+baseline_price_premium               20,400     73.69%          [73.08%, 74.29%]   8.388 [8.024,8.769]     0.00e+00
+baseline_badges_removed              20,400     24.90%          [24.31%, 25.50%]   0.993 [0.949,1.039]     7.66e-01
+baseline_review_equalized            20,400     24.42%          [23.83%, 25.01%]   0.967 [0.925,1.012]     1.52e-01
+baseline_price_equalized             20,400     23.93%          [23.35%, 24.52%]   0.942 [0.901,0.986]     9.92e-03
+baseline_review_inverted             20,400      9.59%           [9.20%, 10.00%]   0.318 [0.300,0.336]     0.00e+00
+baseline_optimal_first               20,400     18.83%          [18.30%, 19.38%]   0.695 [0.663,0.729]     7.40e-52
+
+================================================================================
+  6. CONJOINT (mechanism_attribute_swap)
+================================================================================
+N=20,400, Non-opt rate=17.75%, CI=[17.24%, 18.29%]
+
+Brand familiarity of non-optimal choices (N=3622):
+  high: 67.5% (n=2445)
+  medium: 31.0% (n=1124)
+  low: 0.6% (n=23)
+
+================================================================================
+  7. CONFABULATION
+================================================================================
+Baseline non-optimal choices: 5,110
+  With judge data: 5,072 (NaN: 38)
+  Brand reasoning cited (transparent): 1,328 (26.18%)
+  Attribute-only justification (confabulation): 3,744
+Confabulation rate: 73.82%, CI=[72.59%, 75.01%]
+
+--- Per-model confabulation rates (baseline non-optimal) ---
+Model                                N   Confab       Rate
+gemini-2.5-flash                    99       97     97.98%
+gpt-4o                              85       83     97.65%
+qwen-2.5-72b                       238      232     97.48%
+gemini-2.5-pro                     189      184     97.35%
+gpt-4o-mini                         95       92     96.84%
+gemini-3.1-flash-lite              140      132     94.29%
+gemini-2.5-flash-lite               79       74     93.67%
+gemini-3.1-pro                     235      217     92.34%
+gemini-2.0-flash                   137      126     91.97%
+gemma-4-31b-it                     123      112     91.06%
+gemini-3-flash                      92       83     90.22%
+gpt-4.1-nano                        88       79     89.77%
+gpt-5.4-nano                       364      324     89.01%
+gpt-5.4-mini                       163      145     88.96%
+llama-3.3-70b                      235      208     88.51%
+kimi-k2                            172      152     88.37%
+gpt-4.1-mini                        59       52     88.14%
+gemini-3-flash-thinking             95       82     86.32%
+claude-haiku-4.5                   126       96     76.19%
+gpt-5.4-mini-thinking              135      101     74.81%
+claude-haiku-4.5-thinking          102       72     70.59%
+gemma-3-27b                        103       71     68.93%
+deepseek-v3                        278      179     64.39%
+gpt-5-mini                         137       83     60.58%
+deepseek-r1                        148       85     57.43%
+claude-opus-4.7                    403      219     54.34%
+gpt-5.4                            327      168     51.38%
+claude-opus-4.6                    118       58     49.15%
+claude-sonnet-4.6                  240       82     34.17%
+claude-sonnet-4.6-thinking         267       56     20.97%
+
+--- Per-condition confabulation rates (among non-optimal) ---
+Condition                                      N   Valid  Confab       Rate
+anti_brand_negative_experience             7,517   7,473   3,011     40.29%
+anti_brand_prefer_unknown                    344     302      31     10.26%
+anti_brand_rejection                       5,875   5,828   3,997     68.58%
+baseline                                   5,110   5,072   3,744     73.82%
+baseline_badges_removed                    5,080   5,046   3,763     74.57%
+baseline_brand_blind                       3,078   3,058   2,935     95.98%
+baseline_description_minimal               1,019     997     986     98.90%
+baseline_expert_persona                    1,530   1,487   1,470     98.86%
+baseline_optimal_first                     3,842   3,804   3,099     81.47%
+baseline_price_equalized                   4,882   4,848   3,662     75.54%
+baseline_price_premium                    15,033  14,991  13,375     89.22%
+baseline_review_equalized                  4,981   4,962   3,639     73.34%
+baseline_review_inverted                   1,957   1,915     954     49.82%
+control_all_familiar                           1       1       1    100.00%
+control_brand_reversal                       114     114     113     99.12%
+control_comprehension                        161     149     149    100.00%
+control_fictional_brands                     162     147     147    100.00%
+mechanism_attribute_swap                   3,622   3,599   2,837     78.83%
+mechanism_brand_blind                        180     151     151    100.00%
+mechanism_description_minimal                190     168     167     99.40%
+mechanism_price_premium                      933     912     844     92.54%
+mechanism_review_equalized                   117      94      93     98.94%
+preference_constrained                       248     227     171     75.33%
+preference_explicit                           75      41      36     87.80%
+preference_override                           84      44      28     63.64%
+preference_vague                           4,576   4,544   4,116     90.58%
+preference_weighted                        3,550   3,531   3,105     87.94%
+utility_constrained                          146     123     115     93.50%
+utility_explicit                             172     122     108     88.52%
+utility_override                             173     104      99     95.19%
+utility_vague                              2,577   2,525   1,908     75.56%
+utility_weighted                           1,401   1,350   1,276     94.52%
+
+--- Spearman: non-opt rate vs confab rate across models ---
+Spearman rho=-0.3484, p=5.9170e-02 (N=30 models)
+
+================================================================================
+  8. ANTI-BRAND CONDITIONS
+================================================================================
+
+Condition                                 N   Non-opt%                    95% CI         OR                  OR CI            P
+anti_brand_negative_experience       20,400     36.85%          [36.19%, 37.51%]      1.747 [1.675,1.823]    1.55e-147
+anti_brand_prefer_unknown            20,400      1.69%            [1.52%, 1.87%]      0.051 [0.046,0.057]     0.00e+00
+anti_brand_rejection                 20,400     28.80%          [28.18%, 29.42%]      1.211 [1.159,1.266]     1.00e-17
+
+================================================================================
+  9. CROSS-MODEL CORRELATIONS (assortment-level baseline)
+================================================================================
+Models: 30, Assortments: 34
+
+All pairs: N=435, Mean r=0.6413, Median=0.6607
+  Min=0.0087, Max=0.9417, SD=0.1655
+
+Within-provider: N=93, Mean r=0.6707
+Cross-provider: N=342, Mean r=0.6333
+
+Claude Haiku 4.5 & GPT-4o: r = 0.8488
+
+Bottom 5:
+  gpt-4.1-nano & gpt-5.4: r=0.0087
+  claude-opus-4.7 & gpt-4.1-nano: r=0.0180
+  deepseek-v3 & gpt-4.1-nano: r=0.0357
+  gemini-3.1-pro & gpt-4.1-nano: r=0.0457
+  gpt-4.1-nano & gpt-5-mini: r=0.1370
+Top 5:
+  gemini-3-flash & gemini-3-flash-thinking: r=0.9063
+  gemini-2.5-flash-lite & gemini-3-flash-thinking: r=0.9123
+  claude-haiku-4.5 & gemini-2.0-flash: r=0.9141
+  claude-opus-4.6 & gemini-3-flash-thinking: r=0.9277
+  gpt-5-mini & gpt-5.4-mini-thinking: r=0.9417
+
+================================================================================
+  10. OPEN-SOURCE vs PROPRIETARY
+================================================================================
+Open-source (6): deepseek-r1, deepseek-v3, gemma-3-27b, kimi-k2, llama-3.3-70b, qwen-2.5-72b
+Proprietary (24): claude-haiku-4.5, claude-haiku-4.5-thinking, claude-opus-4.6, claude-opus-4.7, claude-sonnet-4.6, claude-sonnet-4.6-thinking, gemini-2.0-flash, gemini-2.5-flash, gemini-2.5-flash-lite, gemini-2.5-pro, gemini-3-flash, gemini-3-flash-thinking, gemini-3.1-flash-lite, gemini-3.1-pro, gemma-4-31b-it, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, gpt-5-mini, gpt-5.4, gpt-5.4-mini, gpt-5.4-mini-thinking, gpt-5.4-nano
+
+Open-source: N=4,080, rate=28.77%, CI=[27.41%, 30.18%]
+Proprietary: N=16,333, rate=24.10%, CI=[23.45%, 24.76%]
+Gap (open-prop): +4.68 pp
+Fisher OR: 1.272, CI [1.179,1.374], p=1.16e-09
+
+================================================================================
+  11. CATEGORY-LEVEL BASELINE NON-OPTIMAL RATES
+================================================================================
+Category                        N       k   Non-opt%                    95% CI
+coffee_makers               1,813   1,061     58.52%          [56.24%, 60.77%]
+headphones                  1,800   1,001     55.61%          [53.31%, 57.89%]
+tablets                       600     257     42.83%          [38.93%, 46.83%]
+portable_speakers             600     209     34.83%          [31.13%, 38.73%]
+laptops                     1,800     526     29.22%          [27.17%, 31.37%]
+blenders                      600     140     23.33%          [20.13%, 26.88%]
+smartphones                 1,800     377     20.94%          [19.13%, 22.89%]
+wireless_earbuds            1,800     357     19.83%          [18.06%, 21.74%]
+tvs                         1,800     335     18.61%          [16.88%, 20.48%]
+running_shoes               1,800     292     16.22%          [14.59%, 18.00%]
+cameras                       600      84     14.00%          [11.45%, 17.01%]
+robot_vacuums                 600      82     13.67%          [11.15%, 16.65%]
+smartwatches                  600      82     13.67%          [11.15%, 16.65%]
+electric_toothbrushes         600      80     13.33%          [10.85%, 16.29%]
+monitors                      600      78     13.00%          [10.54%, 15.93%]
+water_bottles                 600      43      7.17%            [5.36%, 9.51%]
+backpacks                     600      40      6.67%            [4.93%, 8.95%]
+wireless_routers              600      31      5.17%            [3.66%, 7.24%]
+external_ssds                 600      29      4.83%            [3.39%, 6.86%]
+keyboards                     600       6      1.00%            [0.46%, 2.16%]
+
+No categories have exactly 0% misalignment.
+
+================================================================================
+  12. VAGUE PARADOX (baseline -> preference_vague)
+================================================================================
+Model                        BL N        BL%    VG N        VG%        Chg            P   Sig
+claude-haiku-4.5              681     18.50%     680     19.71%     +1.20pp   3.1003e-01    no
+claude-haiku-4.5-thinking     681     14.98%     680     12.79%     -2.18pp   8.9316e-01    no
+claude-opus-4.6               681     17.33%     680      8.82%     -8.50pp   1.0000e+00    no
+claude-opus-4.7               681     59.18%     680     25.59%    -33.59pp   1.0000e+00    no
+claude-sonnet-4.6             680     35.29%     680     26.91%     -8.38pp   9.9966e-01    no
+claude-sonnet-4.6-thinking     681     39.21%     680     22.94%    -16.27pp   1.0000e+00    no
+deepseek-r1                   680     21.76%     680     21.32%     -0.44pp   6.0402e-01    no
+deepseek-v3                   680     40.88%     680     38.97%     -1.91pp   7.8087e-01    no
+gemini-2.0-flash              680     20.15%     680     17.65%     -2.50pp   8.9379e-01    no
+gemini-2.5-flash              680     14.56%     680     17.35%     +2.79pp   9.1241e-02    no
+gemini-2.5-flash-lite         680     11.62%     680     14.41%     +2.79pp   7.3359e-02    no
+gemini-2.5-pro                680     27.79%     680     42.06%    +14.26pp   2.1993e-08   YES
+gemini-3-flash                680     13.53%     680      9.71%     -3.82pp   9.8896e-01    no
+gemini-3-flash-thinking       681     14.10%     680     11.32%     -2.77pp   9.4719e-01    no
+gemini-3.1-flash-lite         681     20.56%     680     15.74%     -4.82pp   9.9137e-01    no
+gemini-3.1-pro                681     34.51%     680     18.24%    -16.27pp   1.0000e+00    no
+gemma-3-27b                   680     15.15%     680     20.59%     +5.44pp   5.3623e-03   YES
+gemma-4-31b-it                681     22.61%     680     19.85%     -2.76pp   9.0519e-01    no
+gpt-4.1-mini                  680      8.68%     680      9.56%     +0.88pp   3.1889e-01    no
+gpt-4.1-nano                  680     12.94%     680     18.97%     +6.03pp   1.4972e-03   YES
+gpt-4o                        680     12.50%     680     13.38%     +0.88pp   3.4318e-01    no
+gpt-4o-mini                   680     13.97%     680     18.53%     +4.56pp   1.3643e-02   YES
+gpt-5-mini                    680     20.15%     680     21.03%     +0.88pp   3.6872e-01    no
+gpt-5.4                       681     48.90%     680     41.03%     -7.87pp   9.9853e-01    no
+gpt-5.4-mini                  681     23.94%     680     27.35%     +3.42pp   8.3522e-02    no
+gpt-5.4-mini-thinking         681     19.82%     680     21.91%     +2.09pp   1.8914e-01    no
+gpt-5.4-nano                  681     53.45%     680     47.21%     -6.24pp   9.9083e-01    no
+kimi-k2                       680     25.29%     680     23.53%     -1.76pp   7.9406e-01    no
+llama-3.3-70b                 680     34.56%     680     33.09%     -1.47pp   7.3579e-01    no
+qwen-2.5-72b                  680     35.00%     680     33.38%     -1.62pp   7.5363e-01    no
+
+================================================================================
+  13. PRICE PREMIUM
+================================================================================
+N = 20,400
+Non-optimal rate: 73.69%
+95% CI: [73.08%, 74.29%]
+Baseline rate: 25.03%
+Cohens h: 1.0165
+Fisher OR vs baseline: 8.388, CI [8.024,8.769], p=0.00e+00
+
+================================================================================
+  14. ALL CONDITIONS TABLE
+================================================================================
+
+Condition                                 N   Non-opt%                    95% CI   Cohen h     Fisher P
+----------------------------------------------------------------------------------------------------
+anti_brand_negative_experience       20,400     36.85%          [36.19%, 37.51%]   +0.2567    1.55e-147
+anti_brand_prefer_unknown            20,400      1.69%            [1.52%, 1.87%]   -0.7875     0.00e+00
+anti_brand_rejection                 20,400     28.80%          [28.18%, 29.42%]   +0.0850     1.00e-17
+baseline                             20,413     25.03%          [24.44%, 25.63%]       ref          ref
+baseline_badges_removed              20,400     24.90%          [24.31%, 25.50%]   -0.0030     7.66e-01
+baseline_brand_blind                 20,400     15.09%          [14.60%, 15.59%]   -0.2501    5.82e-140
+baseline_description_minimal         20,400      5.00%            [4.70%, 5.30%]   -0.5972     0.00e+00
+baseline_expert_persona              20,400      7.50%            [7.15%, 7.87%]   -0.4932     0.00e+00
+baseline_optimal_first               20,400     18.83%          [18.30%, 19.38%]   -0.1502     7.40e-52
+baseline_price_equalized             20,400     23.93%          [23.35%, 24.52%]   -0.0256     9.92e-03
+baseline_price_premium               20,400     73.69%          [73.08%, 74.29%]   +1.0165     0.00e+00
+baseline_review_equalized            20,400     24.42%          [23.83%, 25.01%]   -0.0143     1.52e-01
+baseline_review_inverted             20,400      9.59%           [9.20%, 10.00%]   -0.4181     0.00e+00
+control_all_familiar                  3,240      0.03%            [0.01%, 0.17%]   -1.0128     0.00e+00
+control_brand_reversal               12,240      0.93%            [0.78%, 1.12%]   -0.8546     0.00e+00
+control_comprehension                20,400      0.79%            [0.68%, 0.92%]   -0.8701     0.00e+00
+control_fictional_brands             20,399      0.79%            [0.68%, 0.93%]   -0.8695     0.00e+00
+mechanism_attribute_swap             20,400     17.75%          [17.24%, 18.29%]   -0.1781     4.11e-72
+mechanism_brand_blind                20,400      0.88%            [0.76%, 1.02%]   -0.8598     0.00e+00
+mechanism_description_minimal        20,400      0.93%            [0.81%, 1.07%]   -0.8546     0.00e+00
+mechanism_price_premium              20,400      4.57%            [4.30%, 4.87%]   -0.6169     0.00e+00
+mechanism_review_equalized           20,400      0.57%            [0.48%, 0.69%]   -0.8964     0.00e+00
+preference_constrained               20,399      1.22%            [1.07%, 1.38%]   -0.8270     0.00e+00
+preference_explicit                  20,400      0.37%            [0.29%, 0.46%]   -0.9266     0.00e+00
+preference_override                  20,400      0.41%            [0.33%, 0.51%]   -0.9195     0.00e+00
+preference_vague                     20,400     22.43%          [21.86%, 23.01%]   -0.0612     6.93e-10
+preference_weighted                  20,400     17.40%          [16.89%, 17.93%]   -0.1873     1.36e-79
+utility_constrained                  20,400      0.72%            [0.61%, 0.84%]   -0.8786     0.00e+00
+utility_explicit                     20,400      0.84%            [0.73%, 0.98%]   -0.8641     0.00e+00
+utility_override                     20,400      0.85%            [0.73%, 0.98%]   -0.8635     0.00e+00
+utility_vague                        20,400     12.63%          [12.18%, 13.10%]   -0.3212    1.48e-228
+utility_weighted                     20,400      6.87%            [6.53%, 7.22%]   -0.5176     0.00e+00
+
+================================================================================
+  15. CLAUDE-SONNET-4.6 SPECIFIC
+================================================================================
+Total trials: 21,260
+
+Baseline: N=680, non-opt=35.29%, CI=[31.79%, 38.96%]
+
+Condition                                 N   Non-opt%                    95% CI
+anti_brand_negative_experience          680     49.71%          [45.96%, 53.46%]
+anti_brand_prefer_unknown               680      2.50%            [1.57%, 3.97%]
+anti_brand_rejection                    680     33.24%          [29.80%, 36.86%]
+baseline                                680     35.29%          [31.79%, 38.96%]
+baseline_badges_removed                 680     34.71%          [31.22%, 38.36%]
+baseline_brand_blind                    680     10.29%           [8.23%, 12.81%]
+baseline_description_minimal            680      1.76%            [1.01%, 3.06%]
+baseline_expert_persona                 680      5.29%            [3.85%, 7.24%]
+baseline_optimal_first                  680     15.15%          [12.65%, 18.04%]
+baseline_price_equalized                680     34.12%          [30.65%, 37.76%]
+baseline_price_premium                  680     80.74%          [77.60%, 83.52%]
+baseline_review_equalized               680     33.82%          [30.37%, 37.46%]
+baseline_review_inverted                680     22.79%          [19.80%, 26.09%]
+control_all_familiar                    180      0.00%            [0.00%, 2.09%]
+control_brand_reversal                  680      0.29%            [0.08%, 1.07%]
+control_comprehension                   680      0.00%            [0.00%, 0.56%]
+control_fictional_brands                680      0.00%            [0.00%, 0.56%]
+mechanism_attribute_swap                680     22.06%          [19.10%, 25.33%]
+mechanism_brand_blind                   680      0.00%            [0.00%, 0.56%]
+mechanism_description_minimal           680      0.00%            [0.00%, 0.56%]
+mechanism_price_premium                 680      0.59%            [0.23%, 1.50%]
+mechanism_review_equalized              680      0.00%            [0.00%, 0.56%]
+preference_constrained                  680      0.74%            [0.31%, 1.71%]
+preference_explicit                     680      0.00%            [0.00%, 0.56%]
+preference_override                     680      0.00%            [0.00%, 0.56%]
+preference_vague                        680     26.91%          [23.71%, 30.37%]
+preference_weighted                     680     17.35%          [14.69%, 20.38%]
+utility_constrained                     680      0.00%            [0.00%, 0.56%]
+utility_explicit                        680      0.15%            [0.03%, 0.83%]
+utility_override                        680      0.00%            [0.00%, 0.56%]
+utility_vague                           680     15.88%          [13.33%, 18.82%]
+utility_weighted                        680      4.41%            [3.11%, 6.23%]
+
+Confabulation: N non-opt=240, brand_reasoning=158
+  Rate=65.83%, CI=[59.63%, 71.54%]
+
+================================================================================
+  BONUS: MECHANISM CONDITIONS (mechanism_*)
+================================================================================
+
+Condition                                 N   Non-opt%                    95% CI         OR                  OR CI            P
+mechanism_attribute_swap             20,400     17.75%          [17.24%, 18.29%]      0.646 [0.616,0.678]     4.11e-72
+mechanism_brand_blind                20,400      0.88%            [0.76%, 1.02%]      0.027 [0.023,0.031]     0.00e+00
+mechanism_description_minimal        20,400      0.93%            [0.81%, 1.07%]      0.028 [0.024,0.033]     0.00e+00
+mechanism_price_premium              20,400      4.57%            [4.30%, 4.87%]      0.144 [0.133,0.154]     0.00e+00
+mechanism_review_equalized           20,400      0.57%            [0.48%, 0.69%]      0.017 [0.014,0.021]     0.00e+00
+
+================================================================================
+  BONUS: OVERALL SUMMARY
+================================================================================
+Total cost: $1,247.83
+Total input tokens: 480,632,571
+Total output tokens: 128,118,640
+Mean response duration: 13.26s
+Conditions: 32, Models: 30, Categories: 20, Assortments: 34
+
+================================================================================
+  16. CONFABULATION BY SPECIFICATION LEVEL
+================================================================================
+baseline                       N=5,072, Confab=3,744, Rate=73.82%, CI=[72.59%, 75.01%]
+preference_vague               N=4,544, Confab=4,116, Rate=90.58%, CI=[89.70%, 91.40%]
+preference_weighted            N=3,531, Confab=3,105, Rate=87.94%, CI=[86.82%, 88.97%]
+utility_vague                  N=2,525, Confab=1,908, Rate=75.56%, CI=[73.85%, 77.20%]
+utility_weighted               N=1,350, Confab=1,276, Rate=94.52%, CI=[93.17%, 95.61%]
+
+anti_brand_rejection                     N=5,828, Confab=3,997, Rate=68.58%, CI=[67.38%, 69.76%]
+anti_brand_negative_experience           N=7,473, Confab=3,011, Rate=40.29%, CI=[39.18%, 41.41%]
+anti_brand_prefer_unknown                N=  302, Confab=   31, Rate=10.26%, CI=[7.33%, 14.20%]
+
+================================================================================
+  17. GEMINI 2.5 PRO CONTROL PERFORMANCE
+================================================================================
+control_all_familiar           N=180, Non-opt=0.00%, CI=[0.00%, 2.09%]
+control_brand_reversal         N=680, Non-opt=15.59%, CI=[13.06%, 18.51%]
+control_comprehension          N=680, Non-opt=21.62%, CI=[18.69%, 24.87%]
+control_fictional_brands       N=680, Non-opt=21.32%, CI=[18.41%, 24.56%]
+
+Exported manuscript numbers to: C:\Users\fmarine\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\analysis_extended\..\data\processed\manuscript_numbers.json
+
+================================================================================
+  ALL STATISTICS COMPUTED SUCCESSFULLY
+================================================================================

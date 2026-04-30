@@ -1,0 +1,108 @@
+{
+  "analysis": "Creation/Removal Asymmetry",
+  "injection_metrics": {
+    "baseline": {
+      "n": 300,
+      "axelion_rate": 0.21333333333333335,
+      "optimal_rate": 0.4666666666666667,
+      "branded_rate": 0.32
+    },
+    "control_neutral": {
+      "n": 300,
+      "axelion_rate": 0.20333333333333334,
+      "optimal_rate": 0.6566666666666666,
+      "branded_rate": 0.14
+    },
+    "injection_50": {
+      "n": 300,
+      "axelion_rate": 0.3333333333333333,
+      "optimal_rate": 0.4166666666666667,
+      "branded_rate": 0.25
+    },
+    "injection_100": {
+      "n": 300,
+      "axelion_rate": 0.35,
+      "optimal_rate": 0.5866666666666667,
+      "branded_rate": 0.06333333333333334
+    },
+    "injection_200": {
+      "n": 300,
+      "axelion_rate": 0.12666666666666668,
+      "optimal_rate": 0.8166666666666667,
+      "branded_rate": 0.056666666666666664
+    }
+  },
+  "injection_dose_response": {
+    "doses": [
+      0,
+      50,
+      100,
+      200
+    ],
+    "branded_rates": [
+      0.32,
+      0.25,
+      0.06333333333333334,
+      0.056666666666666664
+    ],
+    "axelion_rates": [
+      0.21333333333333335,
+      0.3333333333333333,
+      0.35,
+      0.12666666666666668
+    ],
+    "optimal_rates": [
+      0.4666666666666667,
+      0.4166666666666667,
+      0.5866666666666667,
+      0.8166666666666667
+    ],
+    "branded_drop_0_to_200": 26.3,
+    "pp_per_example": 0.1317
+  },
+  "injection_statistical_tests": [
+    {
+      "dose": 50,
+      "branded_baseline": 0.32,
+      "branded_dose": 0.25,
+      "z": 1.9,
+      "p": "0.0575"
+    },
+    {
+      "dose": 100,
+      "branded_baseline": 0.32,
+      "branded_dose": 0.0633,
+      "z": 7.99,
+      "p": "0.0000"
+    },
+    {
+      "dose": 200,
+      "branded_baseline": 0.32,
+      "branded_dose": 0.0567,
+      "z": 8.25,
+      "p": "0.0000"
+    }
+  ],
+  "debiasing_4omini": {
+    "baseline_nonopt": 0.1529,
+    "debiased_500_nonopt": 0.0088,
+    "reduction_pp": 14.4,
+    "reduction_fraction": 0.9423,
+    "pp_per_example": 0.0288
+  },
+  "debiasing_41nano": {
+    "baseline_nonopt": 0.1412,
+    "debiased_6k_nonopt": 0.0029,
+    "reduction_pp": 13.8,
+    "reduction_fraction": 0.9792,
+    "pp_per_example": 0.0023
+  },
+  "asymmetry_ratio_vs_4omini": 4.6,
+  "asymmetry_ratio_vs_41nano": 57.1,
+  "asymmetry_bootstrap_CI": {
+    "median": 4.6,
+    "CI95_lo": 3.4,
+    "CI95_hi": 6.1,
+    "n_valid_boots": 10000
+  }
+}

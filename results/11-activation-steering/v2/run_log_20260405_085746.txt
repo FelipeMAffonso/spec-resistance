@@ -1,0 +1,275 @@
+[LOCAL] 34 sr_ assortments
+
+[MODAL] Launching activation steering v2 experiment...
+  136 training pairs, 204 test prompts, 9 multipliers, 28 layers
+  Expected time: 15-30 minutes
+  Expected cost: $5-10
+✓ Initialized. View run at 
+https://modal.com/apps/felipemaffonso/main/ap-JPH8F834UfBh8FIbc9BObF
+✓ Created objects.
+├── 🔨 Created mount C:\Users\natal\Dropbox\Felipe\CLAUDE 
+│   CODE\academic-research\projects\spec-resistance\nature-rr\scripts\modal_ste
+│   ering_v2.py
+└── 🔨 Created function run_steering_v2.
+[SETUP] 34 assortments loaded
+[SETUP] Multipliers: [-3.0, -2.0, -1.0, -0.5, 0.0, 0.5, 1.0, 2.0, 3.0]
+[SETUP] GPU: NVIDIA A10G
+[SETUP] VRAM: 23.7 GB
+
+[MODEL] Loading Qwen/Qwen2.5-7B-Instruct...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+[1AFetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+[1AFetching 4 files:  25%|██▌       | 1/4 [01:17<03:53, 77.84s/it]
+[1AFetching 4 files: 100%|██████████| 4/4 [01:17<00:00, 19.46s/it]
+
+[1ALoading weights:   0%|          | 0/339 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 1/339 [00:02<13:36,  2.42s/it]
+[1ALoading weights:   1%|          | 2/339 [00:02<06:18,  1.12s/it]
+[1ALoading weights:  22%|██▏       | 76/339 [00:02<00:05, 46.24it/s]
+[1ALoading weights:  26%|██▌       | 88/339 [00:03<00:05, 49.36it/s]
+[1ALoading weights:  29%|██▉       | 98/339 [00:03<00:04, 53.31it/s]
+[1ALoading weights:  32%|███▏      | 108/339 [00:03<00:05, 45.71it/s]
+[1ALoading weights:  34%|███▍      | 116/339 [00:03<00:05, 40.20it/s]
+[1ALoading weights:  37%|███▋      | 124/339 [00:04<00:07, 28.57it/s]
+[1ALoading weights:  40%|████      | 136/339 [00:04<00:06, 32.17it/s]
+[1ALoading weights:  42%|████▏     | 141/339 [00:04<00:06, 32.85it/s]
+[1ALoading weights:  47%|████▋     | 160/339 [00:05<00:03, 48.50it/s]
+[1ALoading weights:  51%|█████     | 172/339 [00:05<00:04, 39.80it/s]
+[1ALoading weights:  55%|█████▍    | 186/339 [00:05<00:03, 46.21it/s]
+[1ALoading weights:  58%|█████▊    | 197/339 [00:05<00:02, 52.81it/s]
+[1ALoading weights:  61%|██████▏   | 208/339 [00:06<00:03, 42.57it/s]
+[1ALoading weights:  65%|██████▍   | 220/339 [00:06<00:03, 39.31it/s]
+[1ALoading weights:  68%|██████▊   | 232/339 [00:06<00:02, 37.05it/s]
+[1ALoading weights:  70%|██████▉   | 237/339 [00:07<00:02, 34.47it/s]
+[1ALoading weights:  72%|███████▏  | 244/339 [00:07<00:03, 30.40it/s]
+[1ALoading weights:  75%|███████▌  | 255/339 [00:07<00:02, 40.47it/s]
+[1ALoading weights:  77%|███████▋  | 261/339 [00:07<00:02, 31.99it/s]
+[1ALoading weights:  79%|███████▉  | 268/339 [00:08<00:02, 28.12it/s]
+[1ALoading weights:  83%|████████▎ | 280/339 [00:08<00:01, 31.53it/s]
+[1ALoading weights:  84%|████████▍ | 284/339 [00:08<00:01, 32.19it/s]
+[1ALoading weights:  86%|████████▌ | 292/339 [00:08<00:01, 38.07it/s]
+[1ALoading weights:  88%|████████▊ | 297/339 [00:08<00:01, 33.65it/s]
+[1ALoading weights:  90%|████████▉ | 304/339 [00:09<00:01, 34.77it/s]
+[1ALoading weights:  91%|█████████ | 308/339 [00:09<00:01, 29.15it/s]
+[1ALoading weights:  94%|█████████▎| 317/339 [00:09<00:00, 38.10it/s]
+[1ALoading weights:  97%|█████████▋| 328/339 [00:09<00:00, 34.65it/s]
+[1ALoading weights: 100%|██████████| 339/339 [00:09<00:00, 34.37it/s]
+[MODEL] Loaded in 90.6s
+[MODEL] 28 layers, hidden_dim=3584
+[PAIRS] Built 136 contrastive pairs (34 assortments x 4 variants)
+
+[EXTRACT] Extracting activations at ALL 28 layers for 136 pairs (2 directions each)...
+  Pair 1/136...
+  Pair 20/136...
+  Pair 40/136...
+  Pair 60/136...
+  Pair 80/136...
+  Pair 100/136...
+  Pair 120/136...
+[EXTRACT] Done in 56.5s (136 pairs x 2 directions)
+
+[VECTOR] Computing brand preference direction at all 28 layers...
+
+[VECTOR] Layer metrics (sorted by separability):
+  Layer 27: separability=0.043936  norm=83.31  centroid_cos=0.956064 *** BEST
+  Layer 22: separability=0.031501  norm=36.54  centroid_cos=0.968499
+  Layer 21: separability=0.030779  norm=29.66  centroid_cos=0.969221
+  Layer 20: separability=0.029014  norm=25.00  centroid_cos=0.970986
+  Layer 23: separability=0.027285  norm=41.70  centroid_cos=0.972715
+  Layer 19: separability=0.022697  norm=18.67  centroid_cos=0.977303
+  Layer 24: separability=0.020352  norm=46.99  centroid_cos=0.979648
+  Layer 17: separability=0.017054  norm=12.94  centroid_cos=0.982946
+  Layer 18: separability=0.017049  norm=13.53  centroid_cos=0.982951
+  Layer 25: separability=0.015255  norm=53.13  centroid_cos=0.984745
+  Layer 16: separability=0.015133  norm=11.56  centroid_cos=0.984867
+  Layer 26: separability=0.014268  norm=62.48  centroid_cos=0.985732
+  Layer 15: separability=0.012328  norm=9.22  centroid_cos=0.987672
+  Layer 14: separability=0.011812  norm=9.69  centroid_cos=0.988188
+  Layer 13: separability=0.007656  norm=6.45  centroid_cos=0.992344
+  Layer 12: separability=0.004369  norm=4.18  centroid_cos=0.995631
+  Layer 11: separability=0.003638  norm=3.80  centroid_cos=0.996362
+  Layer 10: separability=0.003138  norm=3.24  centroid_cos=0.996862
+  Layer  9: separability=0.003115  norm=3.39  centroid_cos=0.996885
+  Layer  8: separability=0.001848  norm=2.10  centroid_cos=0.998152
+  Layer  7: separability=0.001025  norm=1.57  centroid_cos=0.998975
+  Layer  6: separability=0.000701  norm=1.22  centroid_cos=0.999299
+  Layer  5: separability=0.000603  norm=1.17  centroid_cos=0.999397
+  Layer  4: separability=0.000334  norm=0.60  centroid_cos=0.999666
+  Layer  3: separability=0.000243  norm=0.44  centroid_cos=0.999757
+  Layer  2: separability=0.000204  norm=0.36  centroid_cos=0.999796
+  Layer  1: separability=0.000026  norm=0.11  centroid_cos=0.999974
+  Layer  0: separability=0.000011  norm=0.05  centroid_cos=0.999989
+
+[VECTOR] Best layer: 27, testing layers: [26, 27]
+[TEST] Built 204 test prompts (34 assortments x 6 seeds)
+
+[DOSE-RESPONSE] Running 9 multipliers x 204 prompts on layer 27...
+
+  Multiplier = -3.0
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 72/204 = 35.3%
+    Non-optimal: 64.7%
+    Brand fam: {'high': 70, 'medium': 61, 'low': 73, 'unknown': 0}
+    Time: 683.9s
+
+  Multiplier = -2.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 73/204 = 35.8%
+    Non-optimal: 64.2%
+    Brand fam: {'high': 71, 'medium': 59, 'low': 74, 'unknown': 0}
+    Time: 609.1s
+
+  Multiplier = -1.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 79/204 = 38.7%
+    Non-optimal: 61.3%
+    Brand fam: {'high': 64, 'medium': 60, 'low': 80, 'unknown': 0}
+    Time: 584.3s
+
+  Multiplier = -0.5
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 83/204 = 40.7%
+    Non-optimal: 59.3%
+    Brand fam: {'high': 59, 'medium': 61, 'low': 84, 'unknown': 0}
+    Time: 557.0s
+
+  Multiplier = +0.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 87/204 = 42.6%
+    Non-optimal: 57.4%
+    Brand fam: {'high': 60, 'medium': 56, 'low': 88, 'unknown': 0}
+    Time: 559.5s
+
+  Multiplier = +0.5
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 78/204 = 38.2%
+    Non-optimal: 61.8%
+    Brand fam: {'high': 65, 'medium': 60, 'low': 79, 'unknown': 0}
+    Time: 549.9s
+
+  Multiplier = +1.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 75/204 = 36.8%
+    Non-optimal: 63.2%
+    Brand fam: {'high': 73, 'medium': 55, 'low': 76, 'unknown': 0}
+    Time: 539.3s
+
+  Multiplier = +2.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 54/204 = 26.5%
+    Non-optimal: 73.5%
+    Brand fam: {'high': 97, 'medium': 52, 'low': 55, 'unknown': 0}
+    Time: 520.8s
+
+  Multiplier = +3.0
+    prompt 50/204...
+    prompt 100/204...
+    prompt 150/204...
+    prompt 200/204...
+    Optimal: 44/204 = 21.6%
+    Non-optimal: 78.4%
+    Brand fam: {'high': 104, 'medium': 55, 'low': 45, 'unknown': 0}
+    Time: 613.5s
+
+[DOSE-RESPONSE] Total time: 5217.4s
+
+[NEIGHBOR] Layer 26 at key multipliers...
+  Layer 26, mult=-2.0: optimal=74/204 = 36.3%
+  Layer 26, mult=-1.0: optimal=80/204 = 39.2%
+  Layer 26, mult=+0.0: optimal=87/204 = 42.6%
+  Layer 26, mult=+1.0: optimal=80/204 = 39.2%
+  Layer 26, mult=+2.0: optimal=61/204 = 29.9%
+
+[CAPABILITY] Testing 20 factual questions...
+  baseline (mult=+0.0): 18/20 = 90.0%
+  max_steering (mult=+3.0): 19/20 = 95.0%
+
+[STATS] Running statistical tests...
+  Logistic regression: coef=0.0975, p=0.000430, OR=1.1024
+
+======================================================================
+ACTIVATION STEERING V2 RESULTS SUMMARY
+======================================================================
+Model: Qwen/Qwen2.5-7B-Instruct
+Training pairs: 136 (34 assortments x 4 variants)
+Test prompts: 204 (34 assortments x 6 seeds)
+Best layer: 27 (separability=0.043936)
+
+Dose-response (non-optimal rate):
+  Multiplier   Non-Optimal
+---------------------------
+        -3.0        64.7%
+        -2.0        64.2%
+        -1.0        61.3%
+        -0.5        59.3%
+        +0.0        57.4%
+        +0.5        61.8%
+        +1.0        63.2%
+        +2.0        73.5%
+        +3.0        78.4%
+
+Capability check:
+  baseline: 90.0%
+  max_steering: 95.0%
+
+Statistical tests:
+  logistic_regression: p=0.000430
+
+Finding: INVERTED: Significant dose-response but in unexpected direction (logistic p=0.000430, coef=0.0975). Higher multiplier INCREASES non-optimal choices.
+======================================================================
+Stopping app - local entrypoint completed.
+Runner terminated.
+✓ App completed. View run at 
+https://modal.com/apps/felipemaffonso/main/ap-JPH8F834UfBh8FIbc9BObF
+Traceback (most recent call last):
+  File "C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\scripts\modal_steering_v2.py", line 1208, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\scripts\modal_steering_v2.py", line 1156, in main
+    json.dump(results, f, indent=2)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 181, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 435, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  [Previous line repeated 1 more time]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable

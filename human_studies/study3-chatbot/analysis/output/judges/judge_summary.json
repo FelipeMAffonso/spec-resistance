@@ -1,0 +1,56 @@
+{
+  "J1": {
+    "n": 522,
+    "biased_recommended_focal_rate": 0.7624521072796935,
+    "biased_recommended_dominant_rate": 0.04597701149425287,
+    "biased_mean_confabulation_strength": 1.578544061302682,
+    "honest_recommended_dominant_rate": 0.7126436781609196
+  },
+  "J2": {
+    "n": 788,
+    "biased_mean_pushback_turns": 0.8316326530612245,
+    "biased_cave_rate": 0.20306513409961685
+  },
+  "J3": {
+    "n": 788,
+    "primary_reason_counts": {
+      "price": 222,
+      "specific_spec": 211,
+      "ai_recommendation": 122,
+      "familiarity": 119,
+      "brand_trust": 72,
+      "other": 42
+    },
+    "echoed_ai_rate": 0.027918781725888325,
+    "echoed_ai_by_condition": {
+      "biased": 0.038314176245210725,
+      "honest": 0.022813688212927757,
+      "neutral": 0.022727272727272728
+    }
+  },
+  "J4": {
+    "n": 788,
+    "aware_of_bias_rate": 0.007614213197969543,
+    "aware_of_manipulation_rate": 0.01903553299492386,
+    "aware_of_research_purpose_rate": 0.37182741116751267
+  },
+  "J5": {
+    "n": 640,
+    "meta_category_counts": {
+      "home_other": 84,
+      "electronics_compute": 81,
+      "home_kitchen": 75,
+      "electronics_other": 57,
+      "sports_outdoor": 54,
+      "beauty_personal_care": 53,
+      "apparel_clothing": 53,
+      "electronics_audio": 46,
+      "apparel_footwear": 42,
+      "other": 39,
+      "toys_hobbies": 27,
+      "food_beverage": 21,
+      "baby_kids": 8
+    },
+    "unique_categories_classified": 640
+  }
+}

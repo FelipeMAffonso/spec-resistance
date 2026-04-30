@@ -1,0 +1,42 @@
+{
+  "seed1 (original)": {
+    "optimal": 90,
+    "axelion": 107,
+    "other_branded": 3
+  },
+  "seed2": {
+    "optimal": 72,
+    "axelion": 101,
+    "other_branded": 27
+  },
+  "seed3": {
+    "optimal": 164,
+    "axelion": 32,
+    "other_branded": 4
+  },
+  "seed5": {
+    "optimal": 92,
+    "axelion": 99,
+    "other_branded": 9
+  },
+  "seed6": {
+    "optimal": 84,
+    "axelion": 106,
+    "other_branded": 10
+  },
+  "seed8": {
+    "optimal": 86,
+    "axelion": 100,
+    "other_branded": 14
+  },
+  "seed9": {
+    "optimal": 101,
+    "axelion": 82,
+    "other_branded": 17
+  },
+  "seed10": {
+    "optimal": 91,
+    "axelion": 97,
+    "other_branded": 12
+  }
+}

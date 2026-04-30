@@ -1,3 +1,80 @@
+# spec-resistance — Nature submission GitHub repo
+# Selective upload: keep only reproducibility-essential content.
+# Internal pipeline scratch, raw logs, draft IRB materials, and giant CSVs
+# are excluded. The CSVs live in the standalone backup repo
+# (https://github.com/FelipeMAffonso/spec-resistance-extended-backup).
+
+# ─────────────────────────────────────────────────────────────────────
+# 1. Internal pipeline / scratch (not for public reproducibility)
+# ─────────────────────────────────────────────────────────────────────
+add_new_models/
+prereg/
+logs/
+
+# ─────────────────────────────────────────────────────────────────────
+# 2. IRB — keep only the approval letter, drop everything else
+# (prep guide, recruitment templates, eligibility screener are internal)
+# ─────────────────────────────────────────────────────────────────────
+IRB/IRB_PREP_GUIDE.md
+IRB/eligibility_screening.docx
+IRB/eligibility_screening.md
+IRB/recruitment_prolific.docx
+IRB/recruitment_prolific.md
+
+# ─────────────────────────────────────────────────────────────────────
+# 3. Harness — drop debugging/recovery script
+# ─────────────────────────────────────────────────────────────────────
+harness/fix_broken_judges.py
+
+# ─────────────────────────────────────────────────────────────────────
+# 3b. Study 3 per-session conversation traces — too granular for the repo
+# ─────────────────────────────────────────────────────────────────────
+human_studies/study3-chatbot/kv_export.json
+
+# ─────────────────────────────────────────────────────────────────────
+# 4. Large CSVs — too big for the main repo, hosted in backup repo
+# ─────────────────────────────────────────────────────────────────────
+data/spec_resistance_CLEAN.csv
+data/spec_resistance_EXTENDED.csv
+data/spec_resistance_NEW_MODELS.csv
+data/spec_resistance_CLEAN.csv.gz
+data/extended_csv_backup/
+
+# ─────────────────────────────────────────────────────────────────────
+# 5. Build artifacts and caches
+# ─────────────────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+*.egg-info/
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────────────────────────────────
+# 6. Compiled paper artifacts that should be regenerated, not tracked
+# (manuscript .pdf and .docx ARE included for reviewer convenience —
+#  exception below ensures `paper/main.pdf` etc. are tracked)
+# ─────────────────────────────────────────────────────────────────────
+paper/_templates/__pycache__/
+
+# ─────────────────────────────────────────────────────────────────────
+# 7. Local environment / secrets
+# ─────────────────────────────────────────────────────────────────────
 .env
+.venv/
+venv/
+*.key
+*.pem
+config/.env
+config/.env.local
+
+# ─────────────────────────────────────────────────────────────────────
+# 8. OS / editor noise
+# ─────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*~

@@ -1,0 +1,71 @@
+{
+  "coffee_makers": {
+    "baseline": {
+      "n": 100,
+      "optimal": 98,
+      "fictional": 0,
+      "optimal_rate": 0.98,
+      "fictional_rate": 0.0
+    },
+    "control": {
+      "n": 100,
+      "optimal": 97,
+      "fictional": 0,
+      "optimal_rate": 0.97,
+      "fictional_rate": 0.0
+    },
+    "injection": {
+      "n": 100,
+      "optimal": 80,
+      "fictional": 0,
+      "optimal_rate": 0.8,
+      "fictional_rate": 0.0
+    }
+  },
+  "headphones": {
+    "baseline": {
+      "n": 100,
+      "optimal": 5,
+      "fictional": 0,
+      "optimal_rate": 0.05,
+      "fictional_rate": 0.0
+    },
+    "control": {
+      "n": 100,
+      "optimal": 40,
+      "fictional": 3,
+      "optimal_rate": 0.4,
+      "fictional_rate": 0.03
+    },
+    "injection": {
+      "n": 100,
+      "optimal": 31,
+      "fictional": 13,
+      "optimal_rate": 0.31,
+      "fictional_rate": 0.13
+    }
+  },
+  "smartphones": {
+    "baseline": {
+      "n": 100,
+      "optimal": 96,
+      "fictional": 0,
+      "optimal_rate": 0.96,
+      "fictional_rate": 0.0
+    },
+    "control": {
+      "n": 100,
+      "optimal": 100,
+      "fictional": 0,
+      "optimal_rate": 1.0,
+      "fictional_rate": 0.0
+    },
+    "injection": {
+      "n": 100,
+      "optimal": 99,
+      "fictional": 0,
+      "optimal_rate": 0.99,
+      "fictional_rate": 0.0
+    }
+  }
+}

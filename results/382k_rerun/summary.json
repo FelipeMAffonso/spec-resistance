@@ -1,0 +1,1143 @@
+{
+  "baseline": {
+    "n": 12240,
+    "non_optimal_k": 2600,
+    "non_optimal_rate": 0.212418,
+    "ci_lo": 0.205263,
+    "ci_hi": 0.219754
+  },
+  "per_model_baseline": [
+    {
+      "model": "claude-haiku-4.5",
+      "n": 680,
+      "non_optimal_k": 126,
+      "non_optimal_rate": 0.185294,
+      "ci_lo": 0.157887,
+      "ci_hi": 0.216237
+    },
+    {
+      "model": "claude-sonnet-4.6",
+      "n": 680,
+      "non_optimal_k": 240,
+      "non_optimal_rate": 0.352941,
+      "ci_lo": 0.31794,
+      "ci_hi": 0.389595
+    },
+    {
+      "model": "deepseek-r1",
+      "n": 680,
+      "non_optimal_k": 148,
+      "non_optimal_rate": 0.217647,
+      "ci_lo": 0.188264,
+      "ci_hi": 0.250202
+    },
+    {
+      "model": "deepseek-v3",
+      "n": 680,
+      "non_optimal_k": 278,
+      "non_optimal_rate": 0.408824,
+      "ci_lo": 0.372485,
+      "ci_hi": 0.446187
+    },
+    {
+      "model": "gemini-2.0-flash",
+      "n": 680,
+      "non_optimal_k": 137,
+      "non_optimal_rate": 0.201471,
+      "ci_lo": 0.173038,
+      "ci_hi": 0.233257
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "n": 680,
+      "non_optimal_k": 99,
+      "non_optimal_rate": 0.145588,
+      "ci_lo": 0.12107,
+      "ci_hi": 0.174089
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "n": 680,
+      "non_optimal_k": 79,
+      "non_optimal_rate": 0.116176,
+      "ci_lo": 0.094219,
+      "ci_hi": 0.142446
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "n": 680,
+      "non_optimal_k": 189,
+      "non_optimal_rate": 0.277941,
+      "ci_lo": 0.245589,
+      "ci_hi": 0.312789
+    },
+    {
+      "model": "gemini-3-flash",
+      "n": 680,
+      "non_optimal_k": 92,
+      "non_optimal_rate": 0.135294,
+      "ci_lo": 0.111625,
+      "ci_hi": 0.163061
+    },
+    {
+      "model": "gemma-3-27b",
+      "n": 680,
+      "non_optimal_k": 103,
+      "non_optimal_rate": 0.151471,
+      "ci_lo": 0.126487,
+      "ci_hi": 0.18037
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "n": 680,
+      "non_optimal_k": 59,
+      "non_optimal_rate": 0.086765,
+      "ci_lo": 0.067861,
+      "ci_hi": 0.110311
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "n": 680,
+      "non_optimal_k": 88,
+      "non_optimal_rate": 0.129412,
+      "ci_lo": 0.10625,
+      "ci_hi": 0.156737
+    },
+    {
+      "model": "gpt-4o",
+      "n": 680,
+      "non_optimal_k": 85,
+      "non_optimal_rate": 0.125,
+      "ci_lo": 0.10223,
+      "ci_hi": 0.151984
+    },
+    {
+      "model": "gpt-4o-mini",
+      "n": 680,
+      "non_optimal_k": 95,
+      "non_optimal_rate": 0.139706,
+      "ci_lo": 0.115667,
+      "ci_hi": 0.167793
+    },
+    {
+      "model": "gpt-5-mini",
+      "n": 680,
+      "non_optimal_k": 137,
+      "non_optimal_rate": 0.201471,
+      "ci_lo": 0.173038,
+      "ci_hi": 0.233257
+    },
+    {
+      "model": "kimi-k2",
+      "n": 680,
+      "non_optimal_k": 172,
+      "non_optimal_rate": 0.252941,
+      "ci_lo": 0.221718,
+      "ci_hi": 0.28694
+    },
+    {
+      "model": "llama-3.3-70b",
+      "n": 680,
+      "non_optimal_k": 235,
+      "non_optimal_rate": 0.345588,
+      "ci_lo": 0.310801,
+      "ci_hi": 0.38211
+    },
+    {
+      "model": "qwen-2.5-72b",
+      "n": 680,
+      "non_optimal_k": 238,
+      "non_optimal_rate": 0.35,
+      "ci_lo": 0.315083,
+      "ci_hi": 0.386602
+    }
+  ],
+  "category_heterogeneity": {
+    "chi2": 1224.09,
+    "df": 19,
+    "p": 6.4361942584894604e-248
+  },
+  "cross_model_correlations": {
+    "n_pairs": 153,
+    "mean_all": 0.65,
+    "mean_within": 0.6859,
+    "mean_between": 0.6424,
+    "mann_whitney_U": 2022.0,
+    "mann_whitney_p": 0.06252969412887194
+  },
+  "anti_brand": {
+    "anti_brand_rejection": {
+      "n": 12240,
+      "non_optimal_k": 3477,
+      "non_optimal_rate": 0.284069,
+      "ci_lo": 0.276148,
+      "ci_hi": 0.292125,
+      "or_vs_baseline": 1.471,
+      "or_ci": [
+        1.388,
+        1.56
+      ],
+      "p": 1.6312970109113213e-38
+    },
+    "anti_brand_negative_experience": {
+      "n": 12240,
+      "non_optimal_k": 4228,
+      "non_optimal_rate": 0.345425,
+      "ci_lo": 0.33705,
+      "ci_hi": 0.353896,
+      "or_vs_baseline": 1.957,
+      "or_ci": [
+        1.848,
+        2.072
+      ],
+      "p": 8.418687950798117e-120
+    },
+    "anti_brand_prefer_unknown": {
+      "n": 12240,
+      "non_optimal_k": 226,
+      "non_optimal_rate": 0.018464,
+      "ci_lo": 0.016226,
+      "ci_hi": 0.021005,
+      "or_vs_baseline": 0.07,
+      "or_ci": [
+        0.061,
+        0.08
+      ],
+      "p": 0.0
+    }
+  },
+  "spec_gap_by_level": {
+    "0": {
+      "n": 12240,
+      "k": 2600,
+      "rate": 0.212418,
+      "ci": [
+        0.205263,
+        0.219754
+      ]
+    },
+    "1": {
+      "n": 24480,
+      "k": 4208,
+      "rate": 0.171895,
+      "ci": [
+        0.167221,
+        0.176673
+      ],
+      "or": 0.77,
+      "or_ci": [
+        0.73,
+        0.81
+      ],
+      "p": 9.938531635266722e-21
+    },
+    "2": {
+      "n": 24480,
+      "k": 3115,
+      "rate": 0.127247,
+      "ci": [
+        0.12313,
+        0.13148
+      ],
+      "or": 0.54,
+      "or_ci": [
+        0.51,
+        0.57
+      ],
+      "p": 3.09483502386942e-96
+    },
+    "3": {
+      "n": 24480,
+      "k": 144,
+      "rate": 0.005882,
+      "ci": [
+        0.004999,
+        0.006921
+      ],
+      "or": 0.02,
+      "or_ci": [
+        0.02,
+        0.03
+      ],
+      "p": 0.0
+    },
+    "4": {
+      "n": 24480,
+      "k": 116,
+      "rate": 0.004739,
+      "ci": [
+        0.003953,
+        0.00568
+      ],
+      "or": 0.02,
+      "or_ci": [
+        0.01,
+        0.02
+      ],
+      "p": 0.0
+    },
+    "5": {
+      "n": 24479,
+      "k": 239,
+      "rate": 0.009763,
+      "ci": [
+        0.008606,
+        0.011074
+      ],
+      "or": 0.04,
+      "or_ci": [
+        0.03,
+        0.04
+      ],
+      "p": 0.0
+    }
+  },
+  "meta_analysis": {
+    "per_model_or": [
+      {
+        "model": "claude-haiku-4.5",
+        "w_n": 1360,
+        "w_k": 144,
+        "e_n": 1360,
+        "e_k": 6,
+        "or": 26.724,
+        "log_or": 3.2856,
+        "se": 0.4185
+      },
+      {
+        "model": "claude-sonnet-4.6",
+        "w_n": 1360,
+        "w_k": 148,
+        "e_n": 1360,
+        "e_k": 1,
+        "or": 165.95,
+        "log_or": 5.1117,
+        "se": 1.0042
+      },
+      {
+        "model": "deepseek-r1",
+        "w_n": 1360,
+        "w_k": 204,
+        "e_n": 1360,
+        "e_k": 2,
+        "or": 119.824,
+        "log_or": 4.786,
+        "se": 0.7117
+      },
+      {
+        "model": "deepseek-v3",
+        "w_n": 1360,
+        "w_k": 337,
+        "e_n": 1360,
+        "e_k": 4,
+        "or": 111.674,
+        "log_or": 4.7156,
+        "se": 0.5047
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "w_n": 1360,
+        "w_k": 168,
+        "e_n": 1360,
+        "e_k": 1,
+        "or": 191.537,
+        "log_or": 5.2551,
+        "se": 1.0038
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "w_n": 1360,
+        "w_k": 130,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 288.574,
+        "log_or": 5.665,
+        "se": 1.4175
+      },
+      {
+        "model": "gemini-2.5-flash-lite",
+        "w_n": 1360,
+        "w_k": 113,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 247.562,
+        "log_or": 5.5117,
+        "se": 1.4179
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "w_n": 1360,
+        "w_k": 350,
+        "e_n": 1360,
+        "e_k": 122,
+        "or": 3.516,
+        "log_or": 1.2575,
+        "se": 0.1134
+      },
+      {
+        "model": "gemini-3-flash",
+        "w_n": 1360,
+        "w_k": 80,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 171.059,
+        "log_or": 5.142,
+        "se": 1.4191
+      },
+      {
+        "model": "gemma-3-27b",
+        "w_n": 1360,
+        "w_k": 75,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 159.81,
+        "log_or": 5.074,
+        "se": 1.4194
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "w_n": 1360,
+        "w_k": 75,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 159.81,
+        "log_or": 5.074,
+        "se": 1.4194
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "w_n": 1360,
+        "w_k": 181,
+        "e_n": 1360,
+        "e_k": 1,
+        "or": 208.634,
+        "log_or": 5.3406,
+        "se": 1.0035
+      },
+      {
+        "model": "gpt-4o",
+        "w_n": 1360,
+        "w_k": 143,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 320.709,
+        "log_or": 5.7705,
+        "se": 1.4172
+      },
+      {
+        "model": "gpt-4o-mini",
+        "w_n": 1360,
+        "w_k": 155,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 350.988,
+        "log_or": 5.8608,
+        "se": 1.417
+      },
+      {
+        "model": "gpt-5-mini",
+        "w_n": 1360,
+        "w_k": 137,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 305.793,
+        "log_or": 5.7229,
+        "se": 1.4173
+      },
+      {
+        "model": "kimi-k2",
+        "w_n": 1360,
+        "w_k": 247,
+        "e_n": 1360,
+        "e_k": 7,
+        "or": 42.894,
+        "log_or": 3.7587,
+        "se": 0.3854
+      },
+      {
+        "model": "llama-3.3-70b",
+        "w_n": 1360,
+        "w_k": 208,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 492.259,
+        "log_or": 6.199,
+        "se": 1.4165
+      },
+      {
+        "model": "qwen-2.5-72b",
+        "w_n": 1360,
+        "w_k": 220,
+        "e_n": 1360,
+        "e_k": 0,
+        "or": 526.068,
+        "log_or": 6.2654,
+        "se": 1.4164
+      }
+    ],
+    "random_effects": {
+      "pooled_or": 127.37,
+      "ci_lo": 42.58,
+      "ci_hi": 380.99,
+      "z": 8.67,
+      "p": 0.0,
+      "Q": 214.7,
+      "Q_df": 17,
+      "Q_p": 0.0,
+      "tau2": 4.3974,
+      "I2": 92.1
+    },
+    "leave_one_out": [
+      {
+        "excluded": "claude-haiku-4.5",
+        "or_re": 145.5,
+        "ci_lo": 43.05,
+        "ci_hi": 491.72,
+        "I2": 92.2
+      },
+      {
+        "excluded": "claude-sonnet-4.6",
+        "or_re": 125.19,
+        "ci_lo": 40.64,
+        "ci_hi": 385.63,
+        "I2": 92.2
+      },
+      {
+        "excluded": "deepseek-r1",
+        "or_re": 127.86,
+        "ci_lo": 41.26,
+        "ci_hi": 396.23,
+        "I2": 92.0
+      },
+      {
+        "excluded": "deepseek-v3",
+        "or_re": 128.47,
+        "ci_lo": 41.44,
+        "ci_hi": 398.2,
+        "I2": 91.4
+      },
+      {
+        "excluded": "gemini-2.0-flash",
+        "or_re": 124.01,
+        "ci_lo": 40.34,
+        "ci_hi": 381.2,
+        "I2": 92.2
+      },
+      {
+        "excluded": "gemini-2.5-flash",
+        "or_re": 121.97,
+        "ci_lo": 39.86,
+        "ci_hi": 373.27,
+        "I2": 92.3
+      },
+      {
+        "excluded": "gemini-2.5-flash-lite",
+        "or_re": 122.98,
+        "ci_lo": 40.14,
+        "ci_hi": 376.83,
+        "I2": 92.3
+      },
+      {
+        "excluded": "gemini-2.5-pro",
+        "or_re": 106.73,
+        "ci_lo": 64.95,
+        "ci_hi": 175.38,
+        "I2": 23.8
+      },
+      {
+        "excluded": "gemini-3-flash",
+        "or_re": 125.43,
+        "ci_lo": 40.82,
+        "ci_hi": 385.43,
+        "I2": 92.4
+      },
+      {
+        "excluded": "gemma-3-27b",
+        "or_re": 125.89,
+        "ci_lo": 40.95,
+        "ci_hi": 387.01,
+        "I2": 92.4
+      },
+      {
+        "excluded": "gpt-4.1-mini",
+        "or_re": 125.89,
+        "ci_lo": 40.95,
+        "ci_hi": 387.01,
+        "I2": 92.4
+      },
+      {
+        "excluded": "gpt-4.1-nano",
+        "or_re": 123.31,
+        "ci_lo": 40.17,
+        "ci_hi": 378.55,
+        "I2": 92.2
+      },
+      {
+        "excluded": "gpt-4o",
+        "or_re": 121.28,
+        "ci_lo": 39.67,
+        "ci_hi": 370.83,
+        "I2": 92.3
+      },
+      {
+        "excluded": "gpt-4o-mini",
+        "or_re": 120.7,
+        "ci_lo": 39.51,
+        "ci_hi": 368.74,
+        "I2": 92.3
+      },
+      {
+        "excluded": "gpt-5-mini",
+        "or_re": 121.59,
+        "ci_lo": 39.75,
+        "ci_hi": 371.93,
+        "I2": 92.3
+      },
+      {
+        "excluded": "kimi-k2",
+        "or_re": 140.44,
+        "ci_lo": 41.97,
+        "ci_hi": 469.95,
+        "I2": 91.7
+      },
+      {
+        "excluded": "llama-3.3-70b",
+        "or_re": 118.52,
+        "ci_lo": 38.92,
+        "ci_hi": 360.94,
+        "I2": 92.2
+      },
+      {
+        "excluded": "qwen-2.5-72b",
+        "or_re": 118.1,
+        "ci_lo": 38.8,
+        "ci_hi": 359.41,
+        "I2": 92.2
+      }
+    ],
+    "phase_transition": {
+      "aic_linear": 62.62,
+      "aic_piecewise": 46.51,
+      "breakpoint": 2.5,
+      "piecewise_better": true
+    }
+  },
+  "confabulation": {
+    "baseline_non_optimal_n": 2600,
+    "valid_n": 2600,
+    "confabulation_count": 2058,
+    "confabulation_rate": 0.791538,
+    "ci_lo": 0.7755,
+    "ci_hi": 0.806717,
+    "brand_cited_count": 542,
+    "brand_cited_rate": 0.208462,
+    "per_model": [
+      {
+        "model": "claude-haiku-4.5",
+        "n": 126,
+        "confab": 96,
+        "rate": 0.761905
+      },
+      {
+        "model": "claude-sonnet-4.6",
+        "n": 240,
+        "confab": 82,
+        "rate": 0.341667
+      },
+      {
+        "model": "deepseek-r1",
+        "n": 148,
+        "confab": 85,
+        "rate": 0.574324
+      },
+      {
+        "model": "deepseek-v3",
+        "n": 278,
+        "confab": 179,
+        "rate": 0.643885
+      },
+      {
+        "model": "gemini-2.0-flash",
+        "n": 137,
+        "confab": 126,
+        "rate": 0.919708
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "n": 99,
+        "confab": 97,
+        "rate": 0.979798
+      },
+      {
+        "model": "gemini-2.5-flash-lite",
+        "n": 79,
+        "confab": 74,
+        "rate": 0.936709
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "n": 189,
+        "confab": 184,
+        "rate": 0.973545
+      },
+      {
+        "model": "gemini-3-flash",
+        "n": 92,
+        "confab": 83,
+        "rate": 0.902174
+      },
+      {
+        "model": "gemma-3-27b",
+        "n": 103,
+        "confab": 71,
+        "rate": 0.68932
+      },
+      {
+        "model": "gpt-4.1-mini",
+        "n": 59,
+        "confab": 52,
+        "rate": 0.881356
+      },
+      {
+        "model": "gpt-4.1-nano",
+        "n": 88,
+        "confab": 79,
+        "rate": 0.897727
+      },
+      {
+        "model": "gpt-4o",
+        "n": 85,
+        "confab": 83,
+        "rate": 0.976471
+      },
+      {
+        "model": "gpt-4o-mini",
+        "n": 95,
+        "confab": 92,
+        "rate": 0.968421
+      },
+      {
+        "model": "gpt-5-mini",
+        "n": 137,
+        "confab": 83,
+        "rate": 0.605839
+      },
+      {
+        "model": "kimi-k2",
+        "n": 172,
+        "confab": 152,
+        "rate": 0.883721
+      },
+      {
+        "model": "llama-3.3-70b",
+        "n": 235,
+        "confab": 208,
+        "rate": 0.885106
+      },
+      {
+        "model": "qwen-2.5-72b",
+        "n": 238,
+        "confab": 232,
+        "rate": 0.97479
+      }
+    ],
+    "by_condition_type": {
+      "anti_brand": {
+        "n": 7931,
+        "confab": 4486,
+        "rate": 0.565629
+      },
+      "baseline": {
+        "n": 2600,
+        "confab": 2058,
+        "rate": 0.791538
+      },
+      "baseline_mechanism": {
+        "n": 22811,
+        "confab": 19780,
+        "rate": 0.867126
+      },
+      "control": {
+        "n": 408,
+        "confab": 407,
+        "rate": 0.997549
+      },
+      "mechanism": {
+        "n": 2999,
+        "confab": 2608,
+        "rate": 0.869623
+      },
+      "preference": {
+        "n": 5030,
+        "confab": 4531,
+        "rate": 0.900795
+      },
+      "utility": {
+        "n": 2792,
+        "confab": 2454,
+        "rate": 0.87894
+      }
+    },
+    "by_spec_level": {
+      "0": {
+        "n": 2600,
+        "confab": 2058,
+        "rate": 0.791538
+      },
+      "1": {
+        "n": 4208,
+        "confab": 3685,
+        "rate": 0.875713
+      },
+      "2": {
+        "n": 3115,
+        "confab": 2815,
+        "rate": 0.903692
+      },
+      "3": {
+        "n": 144,
+        "confab": 139,
+        "rate": 0.965278
+      },
+      "4": {
+        "n": 116,
+        "confab": 112,
+        "rate": 0.965517
+      },
+      "5": {
+        "n": 239,
+        "confab": 234,
+        "rate": 0.979079
+      }
+    }
+  },
+  "inverse_scaling": {
+    "slope": 0.1991,
+    "intercept": -1.0306,
+    "r_squared": 0.359,
+    "p": 0.008594059924451428,
+    "se_slope": 0.0665,
+    "n_models": 18,
+    "interpretation": "positive slope = inverse scaling (larger models err more)"
+  },
+  "brand_tax": {
+    "n_trials": 2593,
+    "n_steered_expensive": 2443,
+    "pct_steered_expensive": 94.22,
+    "overpayment_mean_pct": 44.84,
+    "overpayment_median_pct": 41.67,
+    "all_diff_mean_pct": 41.79,
+    "all_diff_median_pct": 40.0,
+    "by_category": {
+      "backpacks": {
+        "n": 31,
+        "pct_expensive": 96.8,
+        "mean_diff_pct": 59.8,
+        "median_diff_pct": 80.0
+      },
+      "blenders": {
+        "n": 74,
+        "pct_expensive": 25.7,
+        "mean_diff_pct": 18.2,
+        "median_diff_pct": -9.1
+      },
+      "cameras": {
+        "n": 30,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 19.1,
+        "median_diff_pct": 20.0
+      },
+      "coffee_makers": {
+        "n": 586,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 38.3,
+        "median_diff_pct": 20.0
+      },
+      "electric_toothbrushes": {
+        "n": 34,
+        "pct_expensive": 67.6,
+        "mean_diff_pct": 16.9,
+        "median_diff_pct": 25.0
+      },
+      "external_ssds": {
+        "n": 4,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 47.2,
+        "median_diff_pct": 44.4
+      },
+      "headphones": {
+        "n": 473,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 58.3,
+        "median_diff_pct": 42.9
+      },
+      "keyboards": {
+        "n": 4,
+        "pct_expensive": 25.0,
+        "mean_diff_pct": -6.8,
+        "median_diff_pct": -18.2
+      },
+      "laptops": {
+        "n": 257,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 40.1,
+        "median_diff_pct": 41.7
+      },
+      "monitors": {
+        "n": 41,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 22.6,
+        "median_diff_pct": 20.0
+      },
+      "portable_speakers": {
+        "n": 86,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 87.9,
+        "median_diff_pct": 100.0
+      },
+      "robot_vacuums": {
+        "n": 62,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 28.6,
+        "median_diff_pct": 18.4
+      },
+      "running_shoes": {
+        "n": 138,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 18.9,
+        "median_diff_pct": 20.0
+      },
+      "smartphones": {
+        "n": 208,
+        "pct_expensive": 97.6,
+        "mean_diff_pct": 32.0,
+        "median_diff_pct": 25.0
+      },
+      "smartwatches": {
+        "n": 46,
+        "pct_expensive": 60.9,
+        "mean_diff_pct": 7.8,
+        "median_diff_pct": 20.0
+      },
+      "tablets": {
+        "n": 111,
+        "pct_expensive": 98.2,
+        "mean_diff_pct": 32.4,
+        "median_diff_pct": 20.0
+      },
+      "tvs": {
+        "n": 142,
+        "pct_expensive": 99.3,
+        "mean_diff_pct": 35.4,
+        "median_diff_pct": 40.0
+      },
+      "water_bottles": {
+        "n": 33,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 114.8,
+        "median_diff_pct": 124.9
+      },
+      "wireless_earbuds": {
+        "n": 208,
+        "pct_expensive": 74.0,
+        "mean_diff_pct": 48.7,
+        "median_diff_pct": 25.0
+      },
+      "wireless_routers": {
+        "n": 25,
+        "pct_expensive": 100.0,
+        "mean_diff_pct": 42.9,
+        "median_diff_pct": 53.3
+      }
+    }
+  },
+  "convergence": {
+    "n_assortments": 33,
+    "mean": 0.3079,
+    "median": 0.2727
+  },
+  "semantic_contamination": {
+    "n_optimal": 9640,
+    "n_nonoptimal": 2600,
+    "brand_vocab_mean_optimal": 0.53,
+    "brand_vocab_mean_nonoptimal": 0.757,
+    "brand_vocab_mw_p": 7.942973540775942e-08,
+    "spec_vocab_mean_optimal": 5.902,
+    "spec_vocab_mean_nonoptimal": 4.915,
+    "spec_vocab_mw_p": 2.030317387601236e-49,
+    "ratio_mean_optimal": 0.0896,
+    "ratio_mean_nonoptimal": 0.1763,
+    "ratio_mw_p": 6.939728161396017e-12
+  },
+  "controls": {
+    "control_all_familiar": {
+      "n": 3240,
+      "optimal_k": 3239,
+      "non_optimal_k": 1,
+      "optimal_rate": 0.999691,
+      "non_optimal_rate": 0.000309,
+      "ci_lo": 5.4e-05,
+      "ci_hi": 0.001746,
+      "or_vs_baseline": 0.0011,
+      "p": 1.239280538024422e-291
+    },
+    "control_brand_reversal": {
+      "n": 12240,
+      "optimal_k": 12126,
+      "non_optimal_k": 114,
+      "optimal_rate": 0.990686,
+      "non_optimal_rate": 0.009314,
+      "ci_lo": 0.007759,
+      "ci_hi": 0.011176,
+      "or_vs_baseline": 0.0349,
+      "p": 0.0
+    },
+    "control_comprehension": {
+      "n": 12240,
+      "optimal_k": 12092,
+      "non_optimal_k": 148,
+      "optimal_rate": 0.987908,
+      "non_optimal_rate": 0.012092,
+      "ci_lo": 0.010303,
+      "ci_hi": 0.014187,
+      "or_vs_baseline": 0.0454,
+      "p": 0.0
+    },
+    "control_fictional_brands": {
+      "n": 12240,
+      "optimal_k": 12095,
+      "non_optimal_k": 145,
+      "optimal_rate": 0.988154,
+      "non_optimal_rate": 0.011846,
+      "ci_lo": 0.010077,
+      "ci_hi": 0.013922,
+      "or_vs_baseline": 0.0444,
+      "p": 0.0
+    }
+  },
+  "mechanisms": {
+    "baseline_badges_removed": {
+      "n": 12240,
+      "k": 2645,
+      "rate": 0.216095,
+      "or": 1.022,
+      "p": 0.4930983787167266
+    },
+    "baseline_brand_blind": {
+      "n": 12240,
+      "k": 1881,
+      "rate": 0.153676,
+      "or": 0.673,
+      "p": 1.3670979753696112e-32
+    },
+    "baseline_description_minimal": {
+      "n": 12240,
+      "k": 791,
+      "rate": 0.064624,
+      "or": 0.256,
+      "p": 1.247706571692545e-256
+    },
+    "baseline_expert_persona": {
+      "n": 12240,
+      "k": 1040,
+      "rate": 0.084967,
+      "or": 0.344,
+      "p": 2.083991941067761e-177
+    },
+    "baseline_optimal_first": {
+      "n": 12240,
+      "k": 1734,
+      "rate": 0.141667,
+      "or": 0.612,
+      "p": 8.516711556300058e-48
+    },
+    "baseline_price_equalized": {
+      "n": 12240,
+      "k": 2538,
+      "rate": 0.207353,
+      "or": 0.97,
+      "p": 0.33837206781629814
+    },
+    "baseline_price_premium": {
+      "n": 12240,
+      "k": 8819,
+      "rate": 0.720507,
+      "or": 9.558,
+      "p": 0.0
+    },
+    "baseline_review_equalized": {
+      "n": 12240,
+      "k": 2529,
+      "rate": 0.206618,
+      "or": 0.966,
+      "p": 0.2716147189345286
+    },
+    "baseline_review_inverted": {
+      "n": 12240,
+      "k": 834,
+      "rate": 0.068137,
+      "or": 0.271,
+      "p": 2.984269006043879e-241
+    },
+    "mechanism_attribute_swap": {
+      "n": 12240,
+      "k": 1937,
+      "rate": 0.158252,
+      "or": 0.697,
+      "p": 1.093169104103269e-27
+    },
+    "mechanism_brand_blind": {
+      "n": 12240,
+      "k": 151,
+      "rate": 0.012337,
+      "or": 0.046,
+      "p": 0.0
+    },
+    "mechanism_description_minimal": {
+      "n": 12240,
+      "k": 167,
+      "rate": 0.013644,
+      "or": 0.051,
+      "p": 0.0
+    },
+    "mechanism_price_premium": {
+      "n": 12240,
+      "k": 653,
+      "rate": 0.05335,
+      "or": 0.209,
+      "p": 5.830145792445e-312
+    },
+    "mechanism_review_equalized": {
+      "n": 12240,
+      "k": 91,
+      "rate": 0.007435,
+      "or": 0.028,
+      "p": 0.0
+    }
+  },
+  "total_trials": 382679,
+  "n_models": 18,
+  "models": [
+    "claude-haiku-4.5",
+    "claude-sonnet-4.6",
+    "deepseek-r1",
+    "deepseek-v3",
+    "gemini-2.0-flash",
+    "gemini-2.5-flash",
+    "gemini-2.5-flash-lite",
+    "gemini-2.5-pro",
+    "gemini-3-flash",
+    "gemma-3-27b",
+    "gpt-4.1-mini",
+    "gpt-4.1-nano",
+    "gpt-4o",
+    "gpt-4o-mini",
+    "gpt-5-mini",
+    "kimi-k2",
+    "llama-3.3-70b",
+    "qwen-2.5-72b"
+  ],
+  "n_conditions": 32,
+  "n_categories": 20,
+  "n_assortments": 34
+}

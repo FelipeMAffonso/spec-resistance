@@ -1,0 +1,18 @@
+{
+  "control_neutral": {
+    "job_id": "ftjob-IwBuyrQgBtZ1vzHKUg5kVm9j",
+    "file_id": "file-P5uT1ntWNdA4d9TbDFUqsx"
+  },
+  "injection_100": {
+    "job_id": "ftjob-mcwvqsS9eRlAQukw1cZdQFgB",
+    "file_id": "file-GUwchyC9tX8VTDSe73tozF"
+  },
+  "injection_200": {
+    "job_id": "ftjob-B6zvb7sELwuUPYnkQP6fspkk",
+    "file_id": "file-NRoejgAVxxvQsyzvBaPsZc"
+  },
+  "injection_50": {
+    "file_id": "file-SBYM9LAp42hLdDibKg6g4z",
+    "job_id": "ftjob-i5iIrRFeecaQuIhqDWbSNsrg"
+  }
+}

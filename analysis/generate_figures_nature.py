@@ -2,7 +2,7 @@
 Generate Nature-quality figures for Specification Resistance paper.
 
 6 main figures + 10 Extended Data figures, all 18 models.
-Reads from: data/processed/spec_resistance_CLEAN.csv
+Reads from: OSF/data/spec_resistance_EXTENDED.csv
 Outputs to: results/figures/
 
 Usage:
@@ -72,30 +72,47 @@ TEAL       = "#2166AC"    # for "improvement" direction
 # ── 18 models: colour, label, marker ─────────────────────────────
 
 MODEL_META = {
-    "claude-haiku-4.5":      {"colour": C_ANTHROPIC, "label": "Claude Haiku 4.5",      "marker": "o", "provider": "Anthropic",   "proprietary": True},
-    "claude-sonnet-4.6":     {"colour": C_ANTHROPIC, "label": "Claude Sonnet 4.6",     "marker": "s", "provider": "Anthropic",   "proprietary": True},
-    "gpt-4o":                {"colour": C_OPENAI,    "label": "GPT-4o",                "marker": "s", "provider": "OpenAI",      "proprietary": True},
-    "gpt-4o-mini":           {"colour": C_OPENAI,    "label": "GPT-4o Mini",           "marker": "D", "provider": "OpenAI",      "proprietary": True},
-    "gpt-4.1-mini":          {"colour": C_OPENAI,    "label": "GPT-4.1 Mini",          "marker": "^", "provider": "OpenAI",      "proprietary": True},
-    "gpt-4.1-nano":          {"colour": C_OPENAI,    "label": "GPT-4.1 Nano",          "marker": "v", "provider": "OpenAI",      "proprietary": True},
-    "gpt-5-mini":            {"colour": C_OPENAI,    "label": "GPT-5 Mini",            "marker": "P", "provider": "OpenAI",      "proprietary": True},
-    "gemini-2.0-flash":      {"colour": C_GOOGLE,    "label": "Gemini 2.0 Flash",      "marker": "o", "provider": "Google",      "proprietary": True},
-    "gemini-2.5-flash":      {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash",      "marker": "s", "provider": "Google",      "proprietary": True},
-    "gemini-2.5-flash-lite": {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash Lite", "marker": "D", "provider": "Google",      "proprietary": True},
-    "gemini-2.5-pro":        {"colour": C_GOOGLE,    "label": "Gemini 2.5 Pro",        "marker": "^", "provider": "Google",      "proprietary": True},
-    "gemini-3-flash":        {"colour": C_GOOGLE,    "label": "Gemini 3 Flash",        "marker": "v", "provider": "Google",      "proprietary": True},
-    "gemma-3-27b":           {"colour": C_GOOGLE,    "label": "Gemma 3 27B",           "marker": "P", "provider": "Google",      "proprietary": False},
-    "llama-3.3-70b":         {"colour": C_OPEN_SRC,  "label": "LLaMA 3.3 70B",        "marker": "o", "provider": "Open-weight",  "proprietary": False},
-    "deepseek-v3":           {"colour": C_OPEN_SRC,  "label": "DeepSeek V3",           "marker": "s", "provider": "Open-weight",  "proprietary": False},
-    "deepseek-r1":           {"colour": C_OPEN_SRC,  "label": "DeepSeek R1",           "marker": "D", "provider": "Open-weight",  "proprietary": False},
-    "qwen-2.5-72b":          {"colour": C_OPEN_SRC,  "label": "Qwen 2.5 72B",         "marker": "^", "provider": "Open-weight",  "proprietary": False},
-    "kimi-k2":               {"colour": C_OPEN_SRC,  "label": "Kimi K2",              "marker": "v", "provider": "Open-weight",  "proprietary": False},
+    "claude-haiku-4.5":             {"colour": C_ANTHROPIC, "label": "Claude Haiku 4.5",            "marker": "o", "provider": "Anthropic",   "proprietary": True},
+    "claude-haiku-4.5-thinking":    {"colour": C_ANTHROPIC, "label": "Claude Haiku 4.5 (think)",    "marker": "o", "provider": "Anthropic",   "proprietary": True},
+    "claude-sonnet-4.6":            {"colour": C_ANTHROPIC, "label": "Claude Sonnet 4.6",           "marker": "s", "provider": "Anthropic",   "proprietary": True},
+    "claude-sonnet-4.6-thinking":   {"colour": C_ANTHROPIC, "label": "Claude Sonnet 4.6 (think)",   "marker": "s", "provider": "Anthropic",   "proprietary": True},
+    "claude-opus-4.6":              {"colour": C_ANTHROPIC, "label": "Claude Opus 4.6",             "marker": "D", "provider": "Anthropic",   "proprietary": True},
+    "claude-opus-4.7":              {"colour": C_ANTHROPIC, "label": "Claude Opus 4.7",             "marker": "X", "provider": "Anthropic",   "proprietary": True},
+    "gpt-4o":                       {"colour": C_OPENAI,    "label": "GPT-4o",                      "marker": "s", "provider": "OpenAI",      "proprietary": True},
+    "gpt-4o-mini":                  {"colour": C_OPENAI,    "label": "GPT-4o Mini",                 "marker": "D", "provider": "OpenAI",      "proprietary": True},
+    "gpt-4.1-mini":                 {"colour": C_OPENAI,    "label": "GPT-4.1 Mini",                "marker": "^", "provider": "OpenAI",      "proprietary": True},
+    "gpt-4.1-nano":                 {"colour": C_OPENAI,    "label": "GPT-4.1 Nano",                "marker": "v", "provider": "OpenAI",      "proprietary": True},
+    "gpt-5-mini":                   {"colour": C_OPENAI,    "label": "GPT-5 Mini",                  "marker": "P", "provider": "OpenAI",      "proprietary": True},
+    "gpt-5.4":                      {"colour": C_OPENAI,    "label": "GPT-5.4",                     "marker": "*", "provider": "OpenAI",      "proprietary": True},
+    "gpt-5.4-mini":                 {"colour": C_OPENAI,    "label": "GPT-5.4 Mini",                "marker": "h", "provider": "OpenAI",      "proprietary": True},
+    "gpt-5.4-mini-thinking":        {"colour": C_OPENAI,    "label": "GPT-5.4 Mini (think)",        "marker": "h", "provider": "OpenAI",      "proprietary": True},
+    "gpt-5.4-nano":                 {"colour": C_OPENAI,    "label": "GPT-5.4 Nano",                "marker": "p", "provider": "OpenAI",      "proprietary": True},
+    "gemini-2.0-flash":             {"colour": C_GOOGLE,    "label": "Gemini 2.0 Flash",            "marker": "o", "provider": "Google",      "proprietary": True},
+    "gemini-2.5-flash":             {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash",            "marker": "s", "provider": "Google",      "proprietary": True},
+    "gemini-2.5-flash-lite":        {"colour": C_GOOGLE,    "label": "Gemini 2.5 Flash Lite",       "marker": "D", "provider": "Google",      "proprietary": True},
+    "gemini-2.5-pro":               {"colour": C_GOOGLE,    "label": "Gemini 2.5 Pro",              "marker": "^", "provider": "Google",      "proprietary": True},
+    "gemini-3-flash":               {"colour": C_GOOGLE,    "label": "Gemini 3 Flash",              "marker": "v", "provider": "Google",      "proprietary": True},
+    "gemini-3-flash-thinking":      {"colour": C_GOOGLE,    "label": "Gemini 3 Flash (think)",      "marker": "v", "provider": "Google",      "proprietary": True},
+    "gemini-3.1-pro":               {"colour": C_GOOGLE,    "label": "Gemini 3.1 Pro",              "marker": "*", "provider": "Google",      "proprietary": True},
+    "gemini-3.1-flash-lite":        {"colour": C_GOOGLE,    "label": "Gemini 3.1 Flash Lite",       "marker": "X", "provider": "Google",      "proprietary": True},
+    "gemma-3-27b":                  {"colour": C_GOOGLE,    "label": "Gemma 3 27B",                 "marker": "P", "provider": "Google",      "proprietary": False},
+    "gemma-4-31b-it":               {"colour": C_GOOGLE,    "label": "Gemma 4 31B IT",              "marker": "h", "provider": "Google",      "proprietary": False},
+    "llama-3.3-70b":                {"colour": C_OPEN_SRC,  "label": "LLaMA 3.3 70B",               "marker": "o", "provider": "Open-weight", "proprietary": False},
+    "deepseek-v3":                  {"colour": C_OPEN_SRC,  "label": "DeepSeek V3",                 "marker": "s", "provider": "Open-weight", "proprietary": False},
+    "deepseek-r1":                  {"colour": C_OPEN_SRC,  "label": "DeepSeek R1",                 "marker": "D", "provider": "Open-weight", "proprietary": False},
+    "qwen-2.5-72b":                 {"colour": C_OPEN_SRC,  "label": "Qwen 2.5 72B",                "marker": "^", "provider": "Open-weight", "proprietary": False},
+    "kimi-k2":                      {"colour": C_OPEN_SRC,  "label": "Kimi K2",                     "marker": "v", "provider": "Open-weight", "proprietary": False},
 }
 
 MODEL_ORDER = [
-    "claude-haiku-4.5", "claude-sonnet-4.6",
-    "gpt-4o", "gpt-4o-mini", "gpt-4.1-mini", "gpt-4.1-nano", "gpt-5-mini",
-    "gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro", "gemini-3-flash", "gemma-3-27b",
+    "claude-haiku-4.5", "claude-haiku-4.5-thinking",
+    "claude-sonnet-4.6", "claude-sonnet-4.6-thinking",
+    "claude-opus-4.6", "claude-opus-4.7",
+    "gpt-4o", "gpt-4o-mini", "gpt-4.1-mini", "gpt-4.1-nano",
+    "gpt-5-mini", "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-mini-thinking", "gpt-5.4-nano",
+    "gemini-2.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro",
+    "gemini-3-flash", "gemini-3-flash-thinking", "gemini-3.1-pro", "gemini-3.1-flash-lite",
+    "gemma-3-27b", "gemma-4-31b-it",
     "llama-3.3-70b", "deepseek-v3", "deepseek-r1", "qwen-2.5-72b", "kimi-k2",
 ]
 
@@ -234,47 +251,72 @@ def _provider_separators(ax, models, direction="vertical"):
 # ══════════════════════════════════════════════════════════════════
 
 def fig1_phenomenon(data, out):
-    """Horizontal dot plot of baseline non-optimal rates for all 18 models."""
-    models = models_in_data(data)
+    """4-panel horizontal forest plot of baseline non-optimal rates, split by provider.
 
-    # Sort models by baseline non-optimal rate (highest first)
-    baseline_rates = []
-    for m in models:
+    Layout: 2x2 grid. Each panel lists that provider's models sorted within-panel
+    by non-optimal rate (descending). Shared x-axis (0% to 65%) with a dashed
+    vertical reference at the 25.0% overall baseline.
+    """
+    # Compute baseline rates for every model
+    baseline_rates = {}
+    all_rates = []
+    for m in MODEL_META.keys():
         rows = _filter(data, model_key=m, condition="baseline")
         r, lo, hi, n = rate_ci(rows, "non_optimal")
-        baseline_rates.append((m, r, lo, hi, n))
-    baseline_rates.sort(key=lambda x: -x[1])
-    sorted_models = [x[0] for x in baseline_rates]
+        baseline_rates[m] = (r, lo, hi, n)
+        all_rates.append(r)
+    overall_mean = float(np.mean(all_rates))
 
-    fig, ax = plt.subplots(figsize=(NATURE_SINGLE_COL, 4.5))
+    # Group models by provider
+    by_provider = {p: [] for p in PROVIDER_ORDER}
+    for m, meta in MODEL_META.items():
+        by_provider[meta["provider"]].append(m)
+    # Sort each panel's models by rate descending
+    for p in by_provider:
+        by_provider[p].sort(key=lambda m: -baseline_rates[m][0])
 
-    y_pos = np.arange(len(sorted_models))
-    overall_mean = np.mean([x[1] for x in baseline_rates])
+    # Work out a shared x-max with a little head-room
+    x_max = max(hi for (_, _, hi, _) in baseline_rates.values()) * 1.10
+    x_max = max(x_max, 0.65)
 
-    for i, (m, r, lo, hi, n) in enumerate(baseline_rates):
-        meta = MODEL_META[m]
-        # CI whisker
-        ax.plot([lo, hi], [i, i], color=meta["colour"],
-                linewidth=1.2, alpha=0.35, solid_capstyle="round", zorder=2)
-        # Dot
-        ax.scatter(r, i, s=30, color=meta["colour"], marker=meta["marker"],
-                   edgecolors="white", linewidths=0.4, zorder=3)
+    fig, axes = plt.subplots(2, 2, figsize=(NATURE_DOUBLE_COL, 6.4), sharex=True)
+    panel_letters = ["a", "b", "c", "d"]
 
-    # Mean reference line
-    ax.axvline(overall_mean, linestyle="--", color=GREY, linewidth=0.5, zorder=0)
+    for ax, provider, letter in zip(axes.flat, PROVIDER_ORDER, panel_letters):
+        models = by_provider[provider]
+        y_pos = np.arange(len(models))
 
-    ax.set_yticks(y_pos)
-    ax.set_yticklabels([MODEL_META[m]["label"] for m in sorted_models], fontsize=6)
-    ax.set_xlabel("Non-optimal choice rate (baseline)")
-    ax.xaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
-    ax.set_xlim(-0.02, max(x[1] for x in baseline_rates) * 1.15)
-    ax.invert_yaxis()
+        for i, m in enumerate(models):
+            r, lo, hi, n = baseline_rates[m]
+            meta = MODEL_META[m]
+            # CI whisker (darker than in the 30-model plot because each panel has fewer rows)
+            ax.plot([lo, hi], [i, i], color=meta["colour"],
+                    linewidth=1.6, alpha=0.55, solid_capstyle="round", zorder=2)
+            # Dot
+            ax.scatter(r, i, s=55, color=meta["colour"], marker=meta["marker"],
+                       edgecolors="white", linewidths=0.6, zorder=3)
 
-    _provider_legend(ax, loc="lower right")
+        # Overall-corpus reference line at 25.0%
+        ax.axvline(overall_mean, linestyle="--", color=GREY, linewidth=0.7, zorder=0)
+
+        ax.set_yticks(y_pos)
+        ax.set_yticklabels([MODEL_META[m]["label"] for m in models], fontsize=9)
+        ax.xaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
+        ax.set_xlim(-0.02, x_max)
+        ax.invert_yaxis()
+        ax.set_title(provider, fontsize=11, fontweight="bold",
+                     color=PROVIDER_COLOURS[provider], loc="left", pad=6)
+        # Panel letter in upper-left corner
+        ax.text(-0.18, 1.02, letter, transform=ax.transAxes,
+                fontsize=12, fontweight="bold", va="bottom", ha="left")
+
+    # Shared x-label only on the bottom row
+    for ax in axes[1, :]:
+        ax.set_xlabel("Non-optimal choice rate (baseline)")
 
     plt.tight_layout()
     _save(fig, out, "fig2_phenomenon")
-    print("  [OK] Fig 1: Baseline misalignment dot plot")
+    print("  [OK] Fig 2: 4-panel baseline by provider")
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -294,7 +336,7 @@ def fig2_controls(data, out):
         ("control_all_familiar", "All\nfamiliar"),
     ]
 
-    fig, ax = plt.subplots(figsize=(NATURE_SINGLE_COL, 3.2))
+    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, 2.5))
 
     x = np.arange(len(conditions))
     bar_colours = [GREY, C_ANTHROPIC, C_OPENAI, C_GOOGLE, C_OPEN_SRC]
@@ -344,7 +386,7 @@ def fig3_specification_gap(data, out):
     """Two-panel line plot with CI bands: preference and utility pathways.
     Panels clearly distinguished with descriptive subtitles."""
     models = models_in_data(data)
-    fig, axes = plt.subplots(1, 2, figsize=(NATURE_DOUBLE_COL, 4.0), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(NATURE_DOUBLE_COL, 3.2), sharey=True)
 
     panel_configs = [
         (axes[0], "preference", "a",
@@ -470,7 +512,10 @@ def fig4_conjoint(data, out):
                           markerfacecolor=GREY, markeredgecolor="white", linestyle="none",
                           label="Attr. swap")
     ax_a.legend(handles=[h_bl, h_sw], fontsize=5, loc="lower right", frameon=True)
-    _panel_label(ax_a, "a", x=-0.22)
+    # Inner panel labels suppressed: this figure now feeds into the combined
+    # Figure 3 (mechanism evidence) where the outer "a"/"b" overlay is the
+    # canonical Nature panel labelling. Inner letters would clash visually.
+    # _panel_label(ax_a, "a", x=-0.22)
 
     # ── Panel b: brand familiarity of non-optimal swap choices ──
     swap_nonopt = [r for r in _filter(data, condition="mechanism_attribute_swap")
@@ -491,7 +536,7 @@ def fig4_conjoint(data, out):
     ax_b.set_ylabel("Fraction of non-optimal")
     ax_b.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
     ax_b.set_xlabel("Brand familiarity")
-    _panel_label(ax_b, "b", x=-0.20)
+    # _panel_label(ax_b, "b", x=-0.20)  # see fig4_conjoint:515 comment
 
     # ── Panel c: confabulation rate ──
     swap_nonopt_judged = [r for r in swap_nonopt if r.get("judge_brand_reasoning", "") != ""]
@@ -507,7 +552,7 @@ def fig4_conjoint(data, out):
              color=[RED, GREY], alpha=0.75, edgecolor="white", linewidth=0.3)
     ax_c.set_ylabel("Fraction")
     ax_c.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
-    _panel_label(ax_c, "c", x=-0.22)
+    # _panel_label(ax_c, "c", x=-0.22)  # see fig4_conjoint:515 comment
 
     plt.tight_layout()
     _save(fig, out, "fig5_conjoint")
@@ -529,7 +574,7 @@ def fig5_anti_brand(data, out):
         ("anti_brand_prefer_unknown", "Prefer unknown"),
     ]
 
-    fig, ax = plt.subplots(figsize=(NATURE_SINGLE_COL, 2.8))
+    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, 2.5))
 
     for ci, (cond, label) in enumerate(anti_conds):
         model_deltas = []
@@ -810,31 +855,32 @@ def ed2_condition_heatmap(data, out):
                 r, _, _, _ = rate_ci(subset, "non_optimal")
                 rate_matrix[ci, mi] = r
 
-    # Compressed width: taller rows, narrower columns
-    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, 8.0))
+    # Larger figure with auto aspect so cells become readable rectangles
+    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, 8.6))
 
-    im = ax.imshow(rate_matrix, cmap="YlOrRd", aspect=0.35, vmin=0.0, vmax=0.45,
+    im = ax.imshow(rate_matrix, cmap="YlOrRd", aspect="auto", vmin=0.0, vmax=0.45,
                    interpolation="nearest")
 
-    # Group separators (white lines)
+    # Group separators (heavy white lines between condition groups)
     for gs_idx in group_starts[1:-1]:
-        ax.axhline(y=gs_idx - 0.5, color="white", linewidth=1.8)
+        ax.axhline(y=gs_idx - 0.5, color="white", linewidth=2.4)
 
     # Provider separators on x-axis
     _provider_separators(ax, models, "vertical")
 
     ax.set_xticks(range(n_models))
     xlabels = [MODEL_META[m]["label"] for m in models]
-    ax.set_xticklabels(xlabels, fontsize=5.5, rotation=50, ha="right")
+    ax.set_xticklabels(xlabels, fontsize=8, rotation=55, ha="right",
+                       rotation_mode="anchor")
     for ti, m in enumerate(models):
         ax.get_xticklabels()[ti].set_color(MODEL_META[m]["colour"])
 
     cond_labels_display = [COND_DISPLAY.get(c, c.replace("_", " ")) for c in all_conds]
     ax.set_yticks(range(n_conds))
-    ax.set_yticklabels(cond_labels_display, fontsize=5.5)
+    ax.set_yticklabels(cond_labels_display, fontsize=8)
 
-    # Vertical bracket group labels on right side using curly brace style
-    x_bracket = n_models + 0.3
+    # Vertical bracket group labels on right side
+    x_bracket = n_models + 0.4
     for gi in range(len(group_labels)):
         y_top = group_starts[gi]
         y_bot = group_starts[gi + 1] - 1
@@ -842,23 +888,20 @@ def ed2_condition_heatmap(data, out):
         grp_col = GROUP_COLOURS.get(group_labels[gi], GREY)
         short_lbl = GROUP_SHORT.get(group_labels[gi], group_labels[gi])
 
-        # Vertical line bracket
+        # Vertical line bracket (thicker, more visible)
         ax.plot([x_bracket, x_bracket], [y_top - 0.4, y_bot + 0.4],
-                color=grp_col, linewidth=1.0, clip_on=False)
-        # Top tick
-        ax.plot([x_bracket - 0.15, x_bracket], [y_top - 0.4, y_top - 0.4],
-                color=grp_col, linewidth=1.0, clip_on=False)
-        # Bottom tick
-        ax.plot([x_bracket - 0.15, x_bracket], [y_bot + 0.4, y_bot + 0.4],
-                color=grp_col, linewidth=1.0, clip_on=False)
-        # Label (horizontal)
-        ax.text(x_bracket + 0.25, mid_y, short_lbl, fontsize=5.5, fontweight="bold",
+                color=grp_col, linewidth=1.6, clip_on=False)
+        ax.plot([x_bracket - 0.2, x_bracket], [y_top - 0.4, y_top - 0.4],
+                color=grp_col, linewidth=1.6, clip_on=False)
+        ax.plot([x_bracket - 0.2, x_bracket], [y_bot + 0.4, y_bot + 0.4],
+                color=grp_col, linewidth=1.6, clip_on=False)
+        ax.text(x_bracket + 0.35, mid_y, short_lbl, fontsize=8.5, fontweight="bold",
                 color=grp_col, va="center", ha="left", rotation=0, clip_on=False)
 
-    # Colorbar
-    cbar = plt.colorbar(im, ax=ax, fraction=0.02, pad=0.18, shrink=0.7)
-    cbar.ax.tick_params(labelsize=5.5)
-    cbar.set_label("Non-optimal choice rate", fontsize=6.5)
+    # Colorbar (bigger labels)
+    cbar = plt.colorbar(im, ax=ax, fraction=0.025, pad=0.14, shrink=0.6)
+    cbar.ax.tick_params(labelsize=8)
+    cbar.set_label("Non-optimal choice rate", fontsize=9)
     cbar.ax.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
 
     plt.tight_layout()
@@ -876,7 +919,7 @@ def ed3_dose_response(data, out):
     ncols = 6
     nrows = int(np.ceil(n / ncols))
 
-    fig, axes_flat = plt.subplots(nrows, ncols, figsize=(NATURE_DOUBLE_COL * 1.4, nrows * 2.5),
+    fig, axes_flat = plt.subplots(nrows, ncols, figsize=(NATURE_DOUBLE_COL, nrows * 2.0),
                                    sharex=True, sharey=True)
     axes = axes_flat.flatten() if hasattr(axes_flat, 'flatten') else [axes_flat]
 
@@ -937,17 +980,20 @@ def ed3_dose_response(data, out):
     u_line = mlines.Line2D([], [], color=C_ANTHROPIC, linewidth=1.5, label="Utility pathway")
     p_line = mlines.Line2D([], [], color=C_OPEN_SRC, linewidth=1.5, linestyle="--",
                             label="Preference pathway")
+    # Legend sits ABOVE the supxlabel to avoid horizontal overlap with the
+    # specification-precision tick-letter glossary. bbox_to_anchor y=0.05 puts
+    # the legend in the bottom margin reserved by subplots_adjust(bottom=0.12).
     fig.legend(handles=[u_line, p_line], loc="lower center", ncol=2, fontsize=7.5,
                frameon=True, framealpha=0.95, edgecolor="#CCCCCC",
-               bbox_to_anchor=(0.5, -0.01))
+               bbox_to_anchor=(0.5, 0.05))
 
     fig.supxlabel("Specification precision  (B = Baseline, V = Vague, W = Weighted, "
                   "E = Explicit, O = Override, C = Constrained)",
-                  fontsize=7, y=-0.005)
+                  fontsize=7, y=0.01)
     fig.supylabel("Non-optimal choice rate", fontsize=8, x=0.01)
 
     plt.tight_layout(h_pad=1.0, w_pad=0.8)
-    fig.subplots_adjust(bottom=0.08)
+    fig.subplots_adjust(bottom=0.12)
     _save(fig, out, "ed3_dose_response")
     print("  [OK] ED Fig 3: Dose-response curves")
 
@@ -982,7 +1028,7 @@ def ed4_baseline_mechanisms(data, out):
 
     mech_effects.sort(key=lambda x: x[1])
 
-    fig, ax = plt.subplots(figsize=(NATURE_1_5_COL, 4.0))
+    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, 3.5))
     y_pos = np.arange(len(mech_effects))
 
     for yi, (label, delta, delta_lo, delta_hi) in enumerate(mech_effects):
@@ -1020,7 +1066,7 @@ def ed5_paraphrase(data, out):
     panel_labels = ["a", "b", "c", "d", "e"]
 
     # 3 rows x 2 cols grid, last cell empty
-    fig, axes_flat = plt.subplots(3, 2, figsize=(NATURE_DOUBLE_COL, 8.0), sharey=True)
+    fig, axes_flat = plt.subplots(3, 2, figsize=(NATURE_DOUBLE_COL, 6.0), sharey=True)
     axes = axes_flat.flatten()
 
     for ci, (cond, title) in enumerate(key_conds):
@@ -1318,7 +1364,7 @@ def ed9_assortment_difficulty(data, out):
         cat_means.append((cat, mean_r, assorts))
     cat_means.sort(key=lambda x: -x[1])
 
-    fig, ax = plt.subplots(figsize=(NATURE_SINGLE_COL, max(4, len(cat_means) * 0.35)))
+    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, max(3, len(cat_means) * 0.25)))
     y_pos = np.arange(len(cat_means))
     overall = np.mean([a[1] for cm in cat_means for a in cm[2]])
 
@@ -1370,7 +1416,7 @@ def ed10_vague_paradox(data, out):
 
     model_deltas.sort(key=lambda x: -x[1])
 
-    fig, ax = plt.subplots(figsize=(NATURE_1_5_COL, 4.5))
+    fig, ax = plt.subplots(figsize=(NATURE_DOUBLE_COL, 3.5))
     y_pos = np.arange(len(model_deltas))
 
     for i, (m, delta, delta_lo, delta_hi) in enumerate(model_deltas):
@@ -1422,12 +1468,20 @@ def ed11_confabulation(data, out):
     ]
 
     def confab_rate(rows_subset):
+        # Confabulation rate is computed over non-optimal trials WITH judge data
+        # only. Trials missing judge data (empty judge_brand_reasoning) are
+        # excluded from both numerator and denominator. The original definition
+        # included empty-judge trials in the numerator, which inflated the rate
+        # for conditions with small non-optimal N (e.g., prefer-unknown: 344
+        # non-optimal, 42 missing judge => 21 per cent vs the correct 10 per cent).
         non_opt = [r for r in rows_subset if r.get("chose_optimal") == "False"]
-        if len(non_opt) == 0:
+        with_judge = [r for r in non_opt
+                      if r.get("judge_brand_reasoning", "").strip() != ""]
+        if len(with_judge) == 0:
             return 0.0, 0.0, 0.0, 0
-        n_confab = sum(1 for r in non_opt
-                       if r.get("judge_brand_reasoning", "").strip() in ("False", "0", "0.0", ""))
-        n = len(non_opt)
+        n_confab = sum(1 for r in with_judge
+                       if r.get("judge_brand_reasoning", "").strip() in ("False", "0", "0.0"))
+        n = len(with_judge)
         rate = n_confab / n
         lo, hi = wilson_ci(n_confab, n)
         return rate, lo, hi, n
@@ -1547,9 +1601,10 @@ def main():
     parser.add_argument("--csv", default=None, help="Path to CSV file")
     args = parser.parse_args()
 
+    # Resolve bundle root from this file's location (one level up: analysis/ -> OSF/)
     base = Path(__file__).resolve().parent.parent
-    csv_path = args.csv or str(base / "data" / "spec_resistance_CLEAN.csv")
-    out_dir = base / "figures"
+    csv_path = args.csv or str(base / "data" / "spec_resistance_EXTENDED.csv")
+    out_dir = base / "results" / "figures"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"Loading data from {csv_path}...")

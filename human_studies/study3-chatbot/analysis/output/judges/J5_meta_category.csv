@@ -1,0 +1,641 @@
+category,j5_meta_category,j5_confidence,j5_rationale,j5_ok,j5_cache_hit
+1-Person Tents / Day Shelters,sports_outdoor,high,tents and day shelters are outdoor camping gear,True,True
+10ft iPhone Lightning Charging Cables,electronics_compute,high,iPhone Lightning charging cables are phone/device accessories,True,True
+14-inch Laptops with AMD Ryzen Processors,electronics_compute,high,"14-inch laptops are portable computers, clearly in the compute category",True,True
+14ft Round Trampoline Spring Cover (Safety Pad),sports_outdoor,high,trampoline safety pad is outdoor/fitness equipment accessory,True,True
+16-inch Portable TVs,electronics_other,high,portable TVs fall under the TV/display electronics category,True,False
+17-inch Productivity Laptops,electronics_compute,high,17-inch laptops are clearly computing devices,True,True
+2-in-1 Laptop/Tablet for Audio Production,electronics_compute,high,2-in-1 laptop/tablet is a computing device regardless of intended use case,True,True
+240Hz Gaming Monitors (24-25 inch),electronics_compute,high,gaming monitors are display/compute peripherals,True,True
+27-inch Monitors,electronics_compute,high,monitors are computer display peripherals,True,False
+3D Printers,electronics_other,high,3D printers are consumer/prosumer hardware devices not covered by compute or audio categories,True,False
+4-Barrel Carburetors for Street/Strip 383 Chevy Stroker,other,high,automotive engine parts do not fit any defined category,True,True
+4-Port USB 3.0 Hub,electronics_compute,high,USB hub is a computer peripheral/accessory,True,False
+4-Shelf Bookcases,home_other,high,bookcases are home furniture items,True,True
+4-Slice Toasters,home_kitchen,high,toasters are kitchen appliances,True,False
+65-inch OLED TV,electronics_other,high,65-inch OLED TV is a television display product,True,True
+AM/FM Boombox Radio,electronics_other,high,boombox radio is a consumer electronics audio/entertainment device,True,True
+Adjustable Dumbbell Sets,sports_outdoor,high,adjustable dumbbells are fitness/weightlifting equipment,True,True
+Affordable Anti-Aging Moisturizers for Dry Skin,beauty_personal_care,high,anti-aging moisturizer is a skincare product,True,True
+Air Fryer,home_kitchen,high,air fryer is a kitchen cooking appliance,True,True
+Air Fryers,home_kitchen,high,air fryers are kitchen cooking appliances,True,True
+Air Purifier,home_other,high,air purifiers are home appliances used for cleaning indoor air,True,True
+Air Purifier/Dehumidifier Combo,home_other,high,air purifiers and dehumidifiers are home appliances for air quality and environment control,True,True
+Airbrush Painting Systems for Scale Models,toys_hobbies,high,airbrush painting systems used for scale model hobby crafting,True,True
+All-in-One Washer-Dryer Combos,home_other,high,washer-dryer combos are laundry appliances classified under home goods,True,False
+Alligator Clip Adapters for Multimeter Probes,other,high,electrical test equipment accessories not fitting any listed category,True,True
+Anti-Aging Face Moisturizer,beauty_personal_care,high,face moisturizer is a skincare product,True,True
+Anti-Aging Skin Care Serums,beauty_personal_care,high,skincare serums fall under beauty and personal care,True,True
+Apartment Sized Sofas,home_other,high,sofas are furniture items,True,False
+Appetite Suppressant Supplements,food_beverage,high,dietary supplements consumed for appetite suppression,True,True
+Aquarium Kits,other,high,aquarium/fish tank kits are pet/hobby products not covered by defined categories,True,True
+Arduino Starter Kits,toys_hobbies,high,Arduino starter kits are hobby electronics/maker kits used for learning and DIY projects,True,False
+Area Rugs,home_other,high,area rugs are home decor/furnishing items,True,True
+Athletic Running/Walking Shoes,apparel_footwear,high,athletic running/walking shoes are clearly footwear,True,True
+Automatic Cat Litter Box,other,high,pet care product not fitting any defined category,True,True
+Automatic Trash Can (13 Gallon),home_other,high,automatic/sensor trash can is a home utility/cleaning product,True,True
+Baby Nasal Spray / Saline Nasal Mist for Infants (3+ months),baby_kids,high,saline nasal spray specifically formulated for infants,True,True
+Bakeware Sets,home_kitchen,high,bakeware sets are kitchen cookware items,True,False
+Bamboo Throw Blanket,home_other,high,throw blanket is bedding/home textile,True,True
+Basic Survival Kits,sports_outdoor,high,survival kits are outdoor/emergency preparedness gear,True,True
+Basketball Shoes,apparel_footwear,high,basketball shoes are athletic footwear,True,True
+Bass Fuzz Pedals,toys_hobbies,high,guitar/bass effects pedals are musical instrument accessories,True,True
+Bathroom Pop-Up Drain Stoppers,home_other,high,bathroom drain hardware is a home fixture/plumbing accessory,True,False
+Bathroom Weight Scale (Non-Bluetooth),home_other,high,"bathroom scale is a home measurement/health device, non-electronic connectivity variant",True,True
+Battery Powered Lawn Mowers,sports_outdoor,high,lawn mowers are outdoor power equipment for yard maintenance,True,True
+Battery-Powered Toy Trains for Toddlers,toys_hobbies,high,toy trains designed for toddlers are a classic toy/hobby product,True,True
+Beach Bags,sports_outdoor,high,beach bags are outdoor/recreational carry bags,True,True
+Bedroom Door Locks with Combination Entry,home_other,high,door locks are home security/hardware items fitting home accessories,True,True
+Beginner Telescopes,toys_hobbies,high,beginner telescopes are hobby/recreational optical instruments,True,True
+"Big Screen TVs (65""+)",electronics_other,high,large-screen televisions fall under TV/display electronics,True,True
+Bird Food Storage Containers,home_kitchen,high,storage containers for bird food are household food storage items,True,True
+Black Linen Pants,apparel_clothing,high,linen pants are a clothing garment,True,True
+Black Seed Oil Supplements,food_beverage,high,consumable dietary supplement,True,True
+Black Suede Tote Bags,sports_outdoor,high,tote bags fall under bags and carry accessories in sports/outdoor category,True,True
+Blenders,home_kitchen,high,blenders are kitchen appliances,True,True
+Blenders for Smoothies,home_kitchen,high,blenders are kitchen appliances,True,True
+Blenders with Food Processor Attachment,home_kitchen,high,blenders with food processor attachments are kitchen appliances,True,True
+Bluetooth Gaming Headphones,electronics_audio,high,Bluetooth gaming headphones are audio peripherals,True,True
+Bluetooth Headphones,electronics_audio,high,Bluetooth headphones are wireless audio devices,True,True
+Bluetooth Headphones for Active Use,electronics_audio,high,Bluetooth headphones are audio devices,True,False
+Bluetooth In-Ear Headphones,electronics_audio,high,Bluetooth in-ear headphones are wireless earbuds/audio devices,True,True
+Bone Conduction Earbuds,electronics_audio,high,bone conduction earbuds are a type of audio listening device,True,True
+Bookshelves,home_other,high,bookshelves are furniture/home storage items,True,True
+Bookshelves with Sliding Doors,home_other,high,bookshelf is furniture/home storage,True,True
+Boxing Sparring Gloves,sports_outdoor,high,boxing sparring gloves are sporting goods equipment,True,True
+Boys' Athletic Sneakers (Everyday Use),baby_kids,high,boys' sneakers are children's footwear,True,True
+Boys' Everyday Socks (6-Pack),baby_kids,high,boys' socks are children's apparel,True,True
+Breathable Barefoot Shoes,apparel_footwear,high,barefoot shoes are a type of minimalist footwear,True,True
+Bronze Vessel Bathroom Sinks,home_other,high,bathroom sink fixtures are home decor/furnishing items,True,True
+Brown Shoe Polish,apparel_footwear,high,shoe polish is a footwear care product,True,True
+Budget Android Smartphones (Under $300),electronics_compute,high,smartphones fall under computing/mobile devices,True,True
+Budget Gaming & Coding Laptop,electronics_compute,high,laptop is a computing device,True,False
+Budget Gaming/Work Laptop,electronics_compute,high,laptop is a computing device,True,True
+Budget Laptops Under $500,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Budget Laptops for Work,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Budget Monitors for Work,electronics_compute,high,monitors are computer display peripherals,True,True
+Budget Tablets Under $200,electronics_compute,high,tablets are computing devices,True,True
+Budget i7 Laptops for Light Gaming,electronics_compute,high,laptops with i7 processor specification,True,True
+CD and Cassette Players,electronics_other,high,CD and cassette players are consumer electronics playback devices,True,False
+Cannabis Pre-Rolls,other,high,cannabis products do not fit any defined category,True,True
+Capsule Coffee Maker,home_kitchen,high,coffee maker is a kitchen appliance,True,True
+Car Fridge / Portable Cooler,other,high,portable car fridge/cooler is automotive/travel appliance not fitting core categories,True,False
+Carry-On Spinner Suitcases,sports_outdoor,high,carry-on spinner suitcases are travel luggage/bags,True,True
+Cars (Sedans & Compact SUVs),other,high,automobiles do not fit any defined product category,True,False
+Casual & Work Shoes,apparel_footwear,high,explicitly describes shoes for casual and work wear,True,True
+Casual Cotton Sundress,apparel_clothing,high,sundress is a garment/clothing item,True,True
+Casual Everyday Sneakers,apparel_footwear,high,sneakers are footwear,True,True
+Casual Hats,apparel_clothing,high,casual hats are wearable garments/accessories,True,False
+Casual Jackets,apparel_clothing,high,casual jackets are outerwear garments,True,True
+Casual Shoes,apparel_footwear,high,casual shoes are footwear,True,True
+Casual Slip-On Shoes,apparel_footwear,high,slip-on shoes are footwear,True,True
+Casual Sneakers,apparel_footwear,high,sneakers are footwear,True,True
+Casual T-Shirts,apparel_clothing,high,casual t-shirts are garments/clothing items,True,True
+Cat Litter,other,high,pet supplies do not fit any defined category,True,True
+Cat Trees for Large Cats,other,high,pet furniture/accessories for cats does not fit any defined category,True,True
+Chelsea FC Soccer Jerseys,apparel_clothing,high,soccer jerseys are sports garments/clothing,True,True
+Chiffon Cake Baking Pans,home_kitchen,high,baking pans are kitchen cookware/bakeware,True,True
+Children's Cough & Congestion Medicine (Ages 4+),baby_kids,high,children's medicine/health product for kids ages 4+,True,True
+Cinema/Video Cameras for Indie Filmmaking,electronics_other,high,video/cinema cameras fall under cameras in electronics_other,True,True
+Clarinet Carry Bags (Bb),toys_hobbies,high,"carry bag for a clarinet, a musical instrument accessory",True,True
+Clear Bra Straps (Replacement/Convertible),apparel_clothing,high,replacement/convertible bra straps are a clothing accessory/undergarment component,True,True
+Clip-On Guitar Tuner,toys_hobbies,high,guitar tuner is an accessory for musical instruments,True,True
+Closet Organization Systems,home_other,high,closet organizers are home storage/decor items,True,True
+Clumping Clay Cat Litter,other,high,pet care product not covered by any listed category,True,True
+Coach Women's Wallets,apparel_clothing,high,women's wallets are fashion accessories closely tied to apparel,True,False
+Cocktail Party Dresses,apparel_clothing,high,cocktail party dresses are garments/clothing,True,True
+Coffee Maker,home_kitchen,high,coffee maker is a kitchen appliance,True,True
+Coffee Makers,home_kitchen,high,coffee makers are explicitly listed under home_kitchen,True,True
+Cold Brew / Iced Coffee Makers,home_kitchen,high,cold brew and iced coffee makers are kitchen appliances,True,False
+College Student Backpacks,sports_outdoor,high,backpacks explicitly listed under sports_outdoor category,True,False
+Color Inkjet Printer,electronics_other,high,inkjet printer is a consumer electronics peripheral not fitting compute or audio,True,True
+Comfort Walking Shoes,apparel_footwear,high,walking shoes are footwear,True,True
+Commercial Brush Cutters,sports_outdoor,high,brush cutters are outdoor power tools for land clearing and vegetation management,True,False
+Commuter Backpacks,sports_outdoor,high,backpacks explicitly listed under sports_outdoor category,True,True
+Compact Digital Cameras for Instagram,electronics_other,high,compact digital cameras are photography hardware,True,True
+Compact Everyday Laptops,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,False
+Compact Gaming PCs & Gaming Laptops,electronics_other,high,gaming hardware including compact gaming PCs and gaming laptops,True,True
+Compact Microwave Oven,home_kitchen,high,microwave oven is a kitchen appliance,True,True
+Compact SUV / Crossover,other,high,automotive vehicle category not covered by any defined label,True,True
+Compact Wireless Mouse with Dual-Axis Scrolling,electronics_compute,high,wireless mouse is a computer peripheral,True,True
+Computer Speakers,electronics_audio,high,computer speakers are audio output devices,True,True
+Cordless Stick Vacuum Cleaner,home_other,high,vacuum cleaner is a cleaning tool/appliance for the home,True,False
+Cordless Stick Vacuums,home_other,high,cordless stick vacuums are cleaning appliances/tools for the home,True,True
+Cotton Bed Quilts (Queen/Full Size),home_other,high,bed quilts are bedding products,True,True
+Countertop Ice Makers,home_kitchen,high,countertop ice makers are small kitchen appliances,True,True
+Countertop Microwave,home_kitchen,high,countertop microwave is a kitchen appliance,True,False
+Countertop Ovens,home_kitchen,high,countertop ovens are kitchen appliances,True,True
+Countertop Toaster Ovens with Air Fry,home_kitchen,high,countertop cooking appliance with air fry function,True,True
+Covered Cat Litter Boxes,other,high,pet supplies / cat litter boxes do not fit any defined category,True,False
+Crappie Fishing Rods,sports_outdoor,high,fishing rods are sporting goods equipment,True,True
+Creatine Monohydrate Powder,food_beverage,high,consumable dietary supplement powder,True,True
+Cropped Cardigans,apparel_clothing,high,cropped cardigans are garments/knitwear clothing items,True,True
+Cross Training Shoes,apparel_footwear,high,cross training shoes are athletic footwear,True,True
+Crossbody / Waist Bags for Hiking & Dog Walking,sports_outdoor,high,crossbody and waist bags designed for hiking and outdoor activities,True,True
+Crossbody Laptop Bags (15.6 inch),sports_outdoor,high,laptop bags and backpacks fall under sports_outdoor per category rules,True,True
+Curl Cream,beauty_personal_care,high,curl cream is a haircare styling product,True,True
+Curl Sponges for Men,beauty_personal_care,high,curl sponges are hair styling tools used in personal grooming,True,True
+DDR4 3200MHz 32GB (2x16GB) Laptop SO-DIMM RAM Kit,electronics_compute,high,laptop RAM/memory module is a core computing component,True,True
+DJ Controllers,toys_hobbies,high,DJ controllers are music/hobby equipment used for mixing and performance,True,True
+DVD Players,electronics_other,high,DVD players are consumer electronics entertainment devices,True,True
+Decorative Bathroom Wall Outlet Covers,home_other,high,decorative home fixtures/decor items,True,True
+Decorative Curtain Tiebacks - Black Nautical Rope,home_other,high,decorative curtain tiebacks are home decor accessories,True,False
+Dedicated .22 LR Upper Receivers,sports_outdoor,high,"firearm upper receiver component for .22 LR caliber rifle, sporting/shooting goods",True,True
+Designer Shoes for Everyday Wear,apparel_footwear,high,designer shoes are footwear regardless of brand tier,True,True
+Designer-Inspired Tote Bags,sports_outdoor,high,tote bags fall under bags and carry accessories grouped with outdoor/sports gear,True,True
+Desk Lamp,home_other,high,desk lamp is a home lighting/decor item,True,True
+Desk Ring Lights for Live Streaming,electronics_other,high,ring lights are lighting/smart home accessories used for streaming setups,True,False
+Desktop CPUs,electronics_compute,high,desktop CPUs are core computing hardware components,True,True
+Desktop Computers,electronics_compute,high,desktop computers are explicitly listed under electronics_compute,True,True
+Desktop Computers for Office Work,electronics_compute,high,desktop computers are explicitly listed under electronics_compute,True,True
+Digital Cameras,electronics_other,high,digital cameras fall under electronics_other alongside cameras,True,False
+Digital Milligram Scales,other,high,"precision weighing instrument not fitting electronics, kitchen, or other defined categories",True,True
+Digital Nomad Backpacks,sports_outdoor,high,backpacks fall under bags/backpacks in sports_outdoor category,True,True
+"Digital Torque Wrench (3/8"" Drive)",sports_outdoor,medium,"torque wrench is a hand tool used in mechanical/DIY work, closest to sporting/outdoor equipment category",True,True
+Disc Golf Midrange Discs,sports_outdoor,high,disc golf equipment is a sporting good,True,True
+Dishwasher Pods,home_kitchen,high,dishwasher cleaning pods are household kitchen consumables/supplies,True,True
+Dog Hair Brushes for Thick/Double Coats,other,high,"pet grooming tool for dogs, no fitting category above",True,True
+Dog Harnesses for Large Breeds,other,high,pet accessories do not fit any defined category,True,True
+Double Running Strollers,baby_kids,high,double running strollers are baby/toddler transport products,True,True
+Drawing Tablets,electronics_compute,high,drawing tablets are input devices used with computers,True,True
+Drip Coffee Maker,home_kitchen,high,drip coffee maker is a kitchen appliance,True,True
+Drip Coffee Maker with Thermal Carafe,home_kitchen,high,drip coffee maker is a kitchen appliance,True,True
+Drip Coffee Makers,home_kitchen,high,drip coffee makers are kitchen appliances,True,True
+Drip Coffee Makers with Programmable Timer,home_kitchen,high,drip coffee makers are kitchen appliances,True,True
+Dual-Brew Coffee Makers (Pod & Carafe),home_kitchen,high,coffee makers are explicitly listed under home_kitchen,True,False
+"Electric Bikes Under $1,000",sports_outdoor,high,electric bikes are sporting/outdoor vehicles,True,True
+Electric Can Opener,home_kitchen,high,electric can opener is a kitchen appliance,True,True
+Electric Coffee Percolator,home_kitchen,high,electric coffee percolator is a kitchen appliance for brewing coffee,True,True
+Electric Commuter Bikes,sports_outdoor,high,electric commuter bikes are personal transportation/cycling gear fitting sports and outdoor category,True,True
+Electric Guitars,toys_hobbies,high,musical instruments fall under hobbies category,True,True
+Electric Kettle,home_kitchen,high,electric kettle is a kitchen appliance,True,True
+Electric Off-Road Hunting E-Bikes,sports_outdoor,high,electric hunting bikes are outdoor/sporting goods equipment,True,True
+Electric Scooters,sports_outdoor,medium,electric scooters are personal mobility/outdoor vehicles closest to sports and outdoor gear,True,True
+Electric Stand Mixers,home_kitchen,high,stand mixers are kitchen appliances,True,True
+Electric Tankless Water Heaters,home_kitchen,high,home appliance for water heating,True,True
+Electric Toothbrush,beauty_personal_care,high,electric toothbrush is a personal care hygiene device,True,True
+Electric Wheelchair,other,high,mobility/medical equipment not covered by any listed category,True,True
+Electronic Drum Sets,toys_hobbies,high,electronic drum sets are musical instruments,True,True
+Enameled Cast Iron Dutch Oven,home_kitchen,high,Dutch oven is cookware used in the kitchen,True,False
+Energy Drinks (Sugar-Free),food_beverage,high,consumable beverage product,True,True
+Espresso & Multi-Beverage Coffee Makers,home_kitchen,high,coffee makers are explicitly listed under home_kitchen,True,True
+Espresso Machine,home_kitchen,high,espresso machines are kitchen appliances,True,True
+Espresso Machines,home_kitchen,high,espresso machines are kitchen appliances,True,True
+Espresso Machines with Built-in Grinder,home_kitchen,high,espresso machines are kitchen appliances,True,True
+Espresso Makers,home_kitchen,high,espresso makers are kitchen appliances,True,True
+Everyday Casual Shoes,apparel_footwear,high,casual shoes are footwear,True,True
+Everyday Fashion Backpacks,sports_outdoor,high,backpacks fall under the bags/backpacks classification in sports_outdoor,True,True
+"Expandable Dining Tables (Seats 4, Expands to 6)",home_other,high,dining table is furniture for the home,True,True
+External Hard Drives (4TB+),electronics_compute,high,external hard drives are computer storage peripherals,True,True
+External Hard Drives (8TB+),electronics_compute,high,external hard drives are computer storage peripherals,True,True
+Eyelid Wipes for Demodex Mites,beauty_personal_care,high,eyelid wipes are a personal care/hygiene product for eye cleansing,True,True
+Face Wash for Oily Skin,beauty_personal_care,high,face wash is a skincare product,True,True
+Facial Moisturizer,beauty_personal_care,high,facial moisturizer is a skincare product,True,True
+"Facial Moisturizer for Dry, Acne-Prone Skin",beauty_personal_care,high,facial moisturizer is a skincare product,True,True
+Facial Moisturizer for Very Dry/Dehydrated Skin,beauty_personal_care,high,facial moisturizer is a skincare product,True,True
+Facial Pore Remover Cream,beauty_personal_care,high,skincare product targeting facial pores,True,False
+Fairy Themed Party Favor Toy Sets (30-pack),toys_hobbies,high,party favor toy sets are toy/hobby products,True,False
+Fashion Accessories - Leather Wallets,apparel_clothing,medium,leather wallets are fashion accessories closely associated with apparel/personal wear items,True,True
+Fitness Smartwatch,electronics_other,high,smartwatch is explicitly listed under electronics_other,True,True
+Fitted Baseball Caps,apparel_clothing,high,fitted baseball caps are wearable headwear garments,True,True
+Five Spice Powder,food_beverage,high,spice/seasoning is a consumable food product,True,True
+Flagship Smartphones,electronics_compute,high,flagship smartphones are high-end mobile phones,True,True
+Floor Car Jacks,other,high,automotive lifting equipment not covered by any listed category,True,True
+Floor Lamps for Reading,home_other,high,floor lamps are home lighting/decor items,True,True
+Floor Reading Lamps,home_other,high,floor lamps are home lighting/decor items,True,True
+Free & Clear Laundry Detergent,home_other,high,laundry detergent is a household cleaning product,True,True
+French Door Refrigerators with Ice Maker & Water Dispenser,home_kitchen,high,French door refrigerators are major kitchen appliances,True,True
+French Press Coffee Maker,home_kitchen,high,French press is a coffee brewing appliance used in the kitchen,True,True
+Fresh Dragon Fruit (Per Pound),food_beverage,high,fresh produce sold by weight is a consumable food item,True,True
+Frieren: Beyond Journey's End Anime T-Shirts,apparel_clothing,high,anime-themed t-shirts are garments/clothing,True,True
+Frozen Sliced Steaks / Sandwich Steaks,food_beverage,high,frozen meat product for consumption,True,True
+Full-Size Blenders,home_kitchen,high,blenders are kitchen appliances,True,True
+Gaming Chairs,home_other,high,gaming chairs are seating furniture,True,True
+Gaming Computer Mouse,electronics_compute,high,gaming mouse is a computer peripheral input device,True,True
+Gaming Consoles,electronics_other,high,gaming consoles are gaming hardware,True,True
+Gaming Desktop Computer,electronics_compute,high,desktop computer used for gaming is a computing device,True,True
+Gaming Desktop PC,electronics_compute,high,desktop PC is a computing device,True,True
+Gaming Headphones,electronics_audio,high,gaming headphones are a type of headset/headphone audio device,True,True
+Gaming Headset,electronics_audio,high,gaming headset is a headset/headphones product,True,False
+Gaming Headsets,electronics_audio,high,gaming headsets are headsets/headphones used for audio,True,True
+Gaming Laptop,electronics_compute,high,gaming laptop is a computing device,True,True
+Gaming Laptops,electronics_compute,high,gaming laptops are portable computers,True,True
+"Gaming Laptops (16""+ Screen, Under $1000)",electronics_compute,high,gaming laptops are portable computers,True,True
+Gaming Laptops with RTX 4080 GPU,electronics_compute,high,gaming laptops are portable computers,True,True
+Gaming Monitor,electronics_other,high,gaming monitor is display hardware categorized under gaming/electronics,True,True
+Garage Steel Side Entry Doors,home_other,high,garage doors are home structural/building products,True,False
+Garden Trellis,home_other,high,garden trellis is outdoor home decor/structure,True,True
+Gas Slide-In Ranges,home_kitchen,high,gas slide-in ranges are kitchen cooking appliances,True,True
+Gas-Powered Rototillers,sports_outdoor,medium,outdoor power equipment used for garden/yard work,True,True
+General-Purpose Laptop,electronics_compute,high,laptop is a core computing device,True,True
+Ghost Pepper Hot Sauce,food_beverage,high,hot sauce is a consumable food condiment,True,True
+Giant Novelty Garden Statues (Stone Skunk),home_other,high,novelty garden statues are outdoor decorative items fitting home decor/garden category,True,True
+"Gothic Horror Books (Recent Publications, Physical Copy)",other,high,physical books are not covered by any defined category,True,False
+Graphics Cards (GPUs),electronics_compute,high,GPUs are core computing hardware components,True,True
+Graphics Cards for Local AI Inference,electronics_compute,high,graphics cards are compute hardware used for AI/ML processing,True,False
+Green Sofas / Couches,home_other,high,sofas and couches are furniture items,True,False
+Gym Training Sneakers,apparel_footwear,high,sneakers are footwear,True,True
+Hair Conditioner,beauty_personal_care,high,hair conditioner is a haircare product,True,True
+Hair Dryer,beauty_personal_care,high,hair dryer is a personal care grooming appliance,True,True
+Hair Styling Mousse,beauty_personal_care,high,hair styling mousse is a haircare product,True,True
+Hair Styling Tools (Blow Dryer & Styler Combos),beauty_personal_care,high,blow dryers and hair styling tools fall under haircare/personal care,True,True
+Hand Mixer,home_kitchen,high,hand mixer is a kitchen appliance used for food preparation,True,True
+Handheld Cheese Graters,home_kitchen,high,cheese graters are kitchen utensils/cutlery category,True,True
+Handheld Gaming Consoles,electronics_other,high,handheld gaming consoles are gaming hardware,True,True
+Handheld Gaming Devices,electronics_other,high,handheld gaming devices are gaming hardware,True,True
+Handheld Gaming PCs,electronics_other,high,handheld gaming PCs are gaming hardware devices,True,True
+Handheld Retro Gaming Consoles,electronics_other,high,handheld gaming consoles are gaming hardware,True,True
+Handheld Vacuum,home_other,high,handheld vacuum is a cleaning tool for the home,True,True
+Handheld Vacuums,home_other,high,handheld vacuums are cleaning tools for the home,True,True
+Hawaiian-Inspired Wall Art,home_other,high,wall art is home decor,True,True
+Head Lamp Magnifiers for Miniature Painting,toys_hobbies,high,magnifying headlamp used as a hobby/craft tool for miniature painting,True,True
+Head Shaving Razors,beauty_personal_care,high,head shaving razors are personal grooming/shaving tools,True,True
+Headphones,electronics_audio,high,headphones are a core audio product,True,True
+"High-End 17""+ Laptops for Gaming & CAD/Engineering",electronics_compute,high,large-screen laptops for gaming and professional engineering workloads,True,True
+High-End Laptops,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+High-End Noise Cancelling Earbuds,electronics_audio,high,earbuds are audio devices; noise-cancelling is a common audio feature,True,False
+High-End Pre-Built Gaming PC,electronics_other,high,pre-built gaming PC is gaming hardware,True,False
+High-Performance Blenders,home_kitchen,high,blenders are kitchen appliances,True,True
+High-Power Electric Bikes for Trail Commuting,sports_outdoor,high,electric bikes are sporting/outdoor recreational vehicles,True,True
+Hiking Boots,apparel_footwear,high,hiking boots are a type of footwear,True,True
+Hiking Shoes,apparel_footwear,high,hiking shoes are a type of footwear,True,True
+Historical Fiction Books (Ancient Times),other,high,books/literature do not fit any defined product category,True,True
+Home Gaming Consoles,electronics_other,high,gaming consoles are gaming hardware,True,True
+Home Office Printers,electronics_other,high,printers are office/home electronics not covered by compute peripherals category,True,False
+Home Radio,electronics_other,high,home radio is a consumer electronics audio/broadcast device,True,True
+Home Speakers,electronics_audio,high,home speakers are audio output devices,True,True
+Home Treadmills,sports_outdoor,high,treadmills are fitness/exercise equipment,True,False
+Hooded Jackets,apparel_clothing,high,hooded jackets are outerwear garments,True,True
+Hoodies,apparel_clothing,high,hoodies are garments/sweatshirts worn as clothing,True,False
+Hose Shower Soaker Attachments for Container Gardening,home_kitchen,medium,garden hose and watering attachments are home/garden tools,True,True
+Hospital/Nursing Work Shoes,apparel_footwear,high,work shoes specifically for hospital/nursing staff are footwear,True,False
+Hot Sauce,food_beverage,high,hot sauce is a consumable condiment,True,True
+Hyaluronic Acid Serums,beauty_personal_care,high,hyaluronic acid serums are skincare products,True,True
+Ice Cream Maker,home_kitchen,high,ice cream maker is a kitchen appliance,True,True
+Ice Cream Makers,home_kitchen,high,ice cream makers are kitchen appliances,True,True
+Iced Tea Makers,home_kitchen,high,iced tea makers are kitchen appliances,True,False
+Immersion Blender,home_kitchen,high,immersion blender is a kitchen appliance,True,True
+In-Ear Headphones,electronics_audio,high,in-ear headphones are earbuds/audio devices,True,True
+Individual False Eyelashes,beauty_personal_care,high,false eyelashes are a cosmetic/beauty product,True,True
+Indoor Exercise Bikes,sports_outdoor,high,indoor exercise bikes are fitness equipment,True,True
+Indoor Volleyballs,sports_outdoor,high,volleyballs are sporting goods equipment,True,True
+Instant Ramen Noodles,food_beverage,high,instant ramen noodles are a consumable food product,True,True
+Instant-Read Meat Thermometers,home_kitchen,high,kitchen cooking tool for measuring food temperature,True,True
+Insulated Travel Mugs with Handle,home_kitchen,high,insulated travel mugs are drinkware/kitchen accessories,True,True
+Insulated Water Bottles,sports_outdoor,high,insulated water bottles are common sports and outdoor hydration gear,True,True
+Interlocking Deck/Patio Tiles (Outdoor),home_other,high,outdoor patio tiles are home improvement/decor products,True,True
+"Internal Solid State Drives (SATA III 2.5"" SSD, 1TB)",electronics_compute,high,internal SSD storage device for computers,True,True
+Jordan Retro 1 Sneakers,apparel_footwear,high,Jordan Retro 1 are sneakers/shoes,True,True
+Juggling Clubs (Pins) for Intermediate Jugglers,toys_hobbies,high,juggling clubs are hobby/performance props,True,True
+Juicers,home_kitchen,high,juicers are kitchen appliances,True,True
+Juicers / Blenders for Smoothies,home_kitchen,high,juicers and blenders are kitchen appliances,True,True
+K-Cup Coffee Makers,home_kitchen,high,K-Cup coffee makers are kitchen appliances,True,True
+Kids Tablets,electronics_compute,high,"tablets are computing devices, even when designed for children",True,True
+Kids' Wooden Bookshelf,baby_kids,high,wooden bookshelf designed specifically for children,True,True
+King Size Mattress,home_other,high,mattress is bedroom/bedding furniture,True,True
+Kitchen Knife Sets,home_kitchen,high,kitchen knife sets are cutlery/cookware items,True,True
+Kitchen Pantry Cabinets,home_other,high,pantry cabinets are furniture/storage for the home,True,True
+Kitchen Storage Cabinets,home_other,high,kitchen storage cabinets are furniture/home storage items,True,True
+Knee Massager,beauty_personal_care,high,personal wellness/therapeutic massager device for body care,True,True
+Knee Pillows for Hip Pain Relief,home_other,medium,"sleep/comfort pillow accessory for body support, closest to bedding/home goods",True,True
+Knee-Length Sundresses with Pockets,apparel_clothing,high,sundresses are garments/clothing items,True,True
+Korean Skincare Facial Mist Sprays,beauty_personal_care,high,facial mist sprays are skincare products,True,True
+L-Shaped Cloud Couches,home_other,high,L-shaped cloud couches are furniture items,True,True
+L-Shaped Sectional Sofas,home_other,high,sectional sofas are furniture,True,True
+LED Therapy Face Masks,beauty_personal_care,high,LED therapy face masks are skincare/beauty devices used for facial treatment,True,True
+LEGO Botanical / Nature Building Sets,toys_hobbies,high,LEGO sets are collectible building toys/hobbies,True,True
+Laptop,electronics_compute,high,laptop is a core computing device,True,True
+Laptop for Studies and Coding,electronics_compute,high,laptop is a core computing device,True,True
+Laptops,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops for AI-Assisted Programming,electronics_compute,high,laptops are core computing devices,True,False
+Laptops for College (Paralegal Studies),electronics_compute,high,laptops are core computing devices,True,True
+Laptops for Content Creators,electronics_compute,high,laptops are core computing devices,True,False
+Laptops for Everyday Office Use,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops for Everyday Use & Multitasking (Under $800),electronics_compute,high,laptops are core computing devices,True,False
+Laptops for Gaming and Everyday Use,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops for Graphic Design,electronics_compute,high,laptops are computing devices,True,False
+Laptops for School,electronics_compute,high,laptops are computing devices,True,False
+Laptops for School & Online Business,electronics_compute,high,laptops are core computing devices,True,False
+"Laptops for School, Gaming & Creative Tasks",electronics_compute,high,laptops explicitly mentioned,True,True
+Laptops for Schoolwork,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops for Software Development,electronics_compute,high,laptops are core computing devices,True,False
+Laptops for Students,electronics_compute,high,laptops are computing devices,True,False
+Laptops for Students & Developers,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops for Work,electronics_compute,high,laptops are core computing devices,True,True
+"Laptops for Work, Browsing & Media",electronics_compute,high,laptops explicitly mentioned for work and media use,True,True
+"Laptops for Work, School & Light Creative Use",electronics_compute,high,laptops explicitly mentioned,True,False
+Laptops under $500,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops under $500 for everyday use,electronics_compute,high,laptops are explicitly listed under electronics_compute,True,True
+Laptops with 4K Display for Browsing and Streaming,electronics_compute,high,laptops are core computing devices,True,True
+Large Capacity USB Backpack for Work Commuting,sports_outdoor,high,backpack falls under bags and backpacks in sports/outdoor category,True,True
+Large Glass Ashtrays,other,high,ashtrays are smoking accessories not fitting any listed category,True,True
+Laundry Detergent,home_other,high,laundry detergent is a household cleaning product,True,True
+Laundry Scent Booster Beads,home_other,high,laundry scent booster beads are household cleaning/laundry products,True,True
+Lawn Trimmers,sports_outdoor,high,lawn trimmers are outdoor power tools for yard maintenance,True,False
+Leather Ankle Boots,apparel_footwear,high,ankle boots are footwear,True,False
+Leather Dress Boots,apparel_footwear,high,leather dress boots are footwear,True,True
+Leather Sofas (3-Seater),home_other,high,leather sofas are furniture items,True,True
+Lifestyle Sneakers,apparel_footwear,high,sneakers are footwear,True,True
+Light Truck Highway Tires (LT275/70R18),other,high,automotive tires do not fit any defined category,True,True
+Lightweight 14-inch Laptops for Data Analysis,electronics_compute,high,14-inch laptops are clearly personal computing devices,True,False
+Lightweight Handheld/Stick Vacuums for Stairs,home_other,high,stick/handheld vacuum cleaners are cleaning tools for the home,True,True
+Lightweight Merino Wool T-Shirts,apparel_clothing,high,merino wool t-shirts are garments/clothing,True,True
+Lip Gloss,beauty_personal_care,high,lip gloss is a cosmetic makeup product,True,True
+Liquid Brown Eyeliner,beauty_personal_care,high,eyeliner is a makeup/cosmetic product,True,True
+Lollipop Variety Packs,food_beverage,high,lollipops are consumable candy snacks,True,True
+Low Profile Graphics Cards,electronics_other,high,graphics cards are gaming/PC hardware components,True,True
+Low Profile Mechanical Wireless Keyboards,electronics_compute,high,wireless mechanical keyboards are computer input peripherals,True,True
+Low-Carb Stevia-Sweetened Hard Candies,food_beverage,high,consumable candy/confectionery product,True,False
+Luxury Bath Towels,home_other,high,bath towels are home textile/bedding products,True,True
+Luxury Dive Watches,electronics_other,high,dive watches are wearable timepieces categorized with smartwatches and wearable hardware,True,True
+Luxury Handbags,sports_outdoor,medium,"handbags and purses are carry accessories, closest fit is bags/backpacks under sports_outdoor",True,True
+Makeup Remover Wipes,beauty_personal_care,high,makeup remover wipes are a personal care/beauty product,True,True
+Makeup Removers (Heavy-Duty / Drag Makeup & Glue Removal),beauty_personal_care,high,makeup removers are personal care/beauty products,True,True
+Mascara,beauty_personal_care,high,mascara is a cosmetic makeup product,True,True
+Massage & Heating Pads for Back Pain,home_other,medium,therapeutic/wellness devices for home use not fitting a more specific category,True,True
+Matcha Powder,food_beverage,high,matcha powder is a consumable beverage ingredient,True,True
+"Men's Active Joggers (Dark Color, Size L)",apparel_clothing,high,men's jogger pants are a clothing garment,True,True
+Men's Athletic/Casual Shorts,apparel_clothing,high,men's shorts are a clothing garment,True,True
+Men's Basic T-Shirts,apparel_clothing,high,men's t-shirts are garments/clothing,True,True
+Men's Black Moisture-Wicking Long Sleeve Shirts,apparel_clothing,high,men's long sleeve shirts are garments/clothing,True,True
+Men's Casual Long Sleeve Shirts,apparel_clothing,high,men's long sleeve shirts are garments/clothing,True,True
+Men's Casual Shoes (Size 12),apparel_footwear,high,men's casual shoes are footwear,True,False
+Men's Casual Sneakers,apparel_footwear,high,men's casual sneakers are footwear,True,True
+Men's Casual Spring Shoes (Non-Leather),apparel_footwear,high,men's casual shoes are footwear,True,True
+Men's Cologne / Eau de Toilette,beauty_personal_care,high,men's fragrance products fall under personal care,True,True
+Men's Cologne Sampler Sets,beauty_personal_care,high,cologne/fragrance products fall under personal care,True,False
+Men's Dinner Date Outfit (Complete Look),apparel_clothing,high,men's outfit/clothing ensemble for a dinner date,True,False
+Men's Hair Styling Combs,beauty_personal_care,high,hair styling tools fall under personal care/haircare,True,True
+Men's Harness Boots,apparel_footwear,high,harness boots are a style of men's footwear,True,True
+Men's Marathon Racing Shoes (Size 10.5),apparel_footwear,high,racing shoes are footwear,True,True
+Men's Professional Suits,apparel_clothing,high,men's suits are garments/clothing,True,True
+"Men's Running Shorts (2-Pack, No Pockets)",apparel_clothing,high,men's running shorts are garments/clothing,True,True
+Men's Slim Fit Everyday T-Shirts,apparel_clothing,high,men's t-shirts are garments/clothing,True,True
+Men's Slim Straight Jeans,apparel_clothing,high,men's jeans are a clothing garment,True,False
+Men's Travel Pants,apparel_clothing,high,men's pants are a clothing garment,True,False
+Mid-Century Modern Footstools,home_other,high,footstools are furniture/home decor items,True,True
+Mini LED Monitor,electronics_compute,high,monitor is a computer display peripheral,True,False
+Mirrorless Cameras,electronics_other,high,mirrorless cameras are photographic hardware,True,True
+Mobile Phones,electronics_compute,high,mobile phones are explicitly listed under electronics_compute,True,True
+Moisturizer for Mature Skin,beauty_personal_care,high,moisturizer is a skincare product,True,False
+Muffin Pans,home_kitchen,high,muffin pans are bakeware used in the kitchen,True,True
+N95 Respirators,other,high,personal protective equipment / medical safety gear,True,True
+NHL Carolina Hurricanes Jersey,apparel_clothing,high,sports team jersey is a garment/clothing item,True,True
+Nail Polish,beauty_personal_care,high,nail polish is a cosmetic beauty product,True,True
+Needoh Stress Balls,toys_hobbies,high,Needoh stress balls are sensory fidget toys,True,True
+Neutral Off-the-Shoulder Dresses,apparel_clothing,high,off-the-shoulder dresses are garments/clothing,True,True
+Newborn Baby Swings,baby_kids,high,newborn baby swings are infant/baby products,True,True
+Nikon Z-Mount Camera Lens,electronics_other,high,camera lens accessory falls under cameras/photography equipment,True,True
+Noise Canceling Microphones for Podcasting,electronics_audio,high,microphones are explicitly listed under electronics_audio,True,True
+Noise Cancelling In-Ear Headphones,electronics_audio,high,in-ear headphones with noise cancellation are audio devices,True,True
+Noise Cancelling Wireless Headphones,electronics_audio,high,wireless headphones with noise cancellation are core audio devices,True,True
+Noise-Canceling Headphones,electronics_audio,high,noise-canceling headphones are a core audio device,True,True
+Non-Alcoholic Mouthwash for Gum Health,beauty_personal_care,high,oral care product for dental/gum hygiene,True,False
+Nursery Rugs (approx. 5x7 or similar size),baby_kids,high,nursery rugs are specifically for baby/toddler rooms,True,False
+OLED TVs,electronics_other,high,"OLED TVs are televisions, explicitly listed under electronics_other",True,True
+Office Area Rugs,home_other,high,rugs are home decor/furnishing items,True,True
+Office Chairs,home_other,high,office chairs are furniture items,True,False
+On-Ear Gaming Headphones,electronics_audio,high,on-ear gaming headphones are audio headset devices,True,False
+Open-Air Earbuds,electronics_audio,high,open-air earbuds are a type of audio listening device,True,True
+Organic Hair & Body Soap Bars,beauty_personal_care,high,soap bars are personal care/hygiene products,True,False
+Oscillating Desk/Table Fans,home_other,high,desk/table fans are home comfort/cooling appliances not in kitchen category,True,True
+Outdoor Gothic/Supernatural Wall Decor,home_other,high,wall decor is home decoration regardless of aesthetic theme,True,True
+Outdoor Patio Dining Chairs (Set of 6),home_other,high,outdoor patio dining chairs are furniture items,True,True
+Outdoor Walking Shoes,apparel_footwear,high,walking shoes are footwear,True,True
+Outdoor Wood-Burning Fire Pits,sports_outdoor,high,outdoor fire pits are outdoor leisure/backyard equipment,True,True
+Over-Ear Gaming Headphones,electronics_audio,high,over-ear gaming headphones are audio headsets,True,True
+Over-Ear Headphones,electronics_audio,high,over-ear headphones are a core audio device,True,True
+Over-Ear Noise-Cancelling Headphones,electronics_audio,high,over-ear noise-cancelling headphones are a core audio device,True,True
+Over-Ear Wireless Headphones,electronics_audio,high,over-ear wireless headphones are a core audio product,True,True
+Over-Ear/On-Ear Headphones for Active Use,electronics_audio,high,over-ear/on-ear headphones are audio devices,True,True
+Oversized T-Shirts (XXL) for Nightlife,apparel_clothing,high,oversized t-shirts are garments/clothing items,True,True
+Oyster Shucking Kits,home_kitchen,high,kitchen tool set for preparing shellfish,True,True
+PC Gaming Headset with Built-in Microphone,electronics_audio,high,gaming headset with microphone is an audio/headset device,True,True
+PC USB Handbrake for Sim Racing,electronics_other,high,sim racing peripheral / gaming hardware accessory,True,False
+"PLA 3D Printing Filament (1.75mm, 1kg Spool)",toys_hobbies,high,3D printing filament is a hobbyist/craft consumable supply,True,True
+PS5 Controllers,electronics_other,high,gaming hardware/controllers,True,True
+PS5 Story-Driven Thriller Video Games,electronics_other,high,video games are gaming hardware/software under electronics_other,True,True
+Party Board Games,toys_hobbies,high,board games are games/hobbies,True,True
+Peel and Stick Floor Tiles,home_other,high,peel-and-stick floor tiles are home decor/flooring products,True,True
+Perfume,beauty_personal_care,high,perfume is a personal care/fragrance product,True,True
+Perfume (Eau de Toilette / Eau de Parfum),beauty_personal_care,high,perfume and fragrance products fall under personal care/beauty,True,True
+Perfumes,beauty_personal_care,high,perfumes are personal care/fragrance products,True,True
+Period Underwear,apparel_clothing,high,period underwear is a wearable garment/undergarment,True,False
+Personal Item Travel Bags,sports_outdoor,high,travel bags and personal item bags fall under bags/backpacks in sports_outdoor,True,True
+Pet-Focused Upright Corded Vacuum Cleaners,home_other,high,vacuum cleaner is a home cleaning appliance,True,True
+Phone Car Holders (Air Vent Mount),electronics_other,high,car mount accessory for phones falls under smart/other electronics accessories,True,True
+Pillows for Side/Back Sleepers,home_other,high,sleeping pillows are bedding/home goods,True,True
+PlayStation 2 Consoles,electronics_other,high,gaming hardware console,True,True
+PlayStation 5 Open World Games (No Creatures/Zombies/Aliens/Spiders),electronics_other,high,PS5 gaming hardware and software category,True,False
+Plus-Size Women's Casual Tops & Dresses,apparel_clothing,high,plus-size women's tops and dresses are garments/clothing,True,True
+Pod Coffee Makers with Iced Tea Brewing,home_kitchen,high,coffee maker appliance with brewing functionality,True,True
+Pore-Clearing Exfoliating Masks for Blackheads,beauty_personal_care,high,skincare product targeting pores and blackheads,True,True
+Portable Bluetooth Speakers,electronics_audio,high,portable Bluetooth speakers are audio output devices,True,True
+Portable Camping Coffee Dripper,sports_outdoor,high,portable camping gear for outdoor use,True,True
+Portable Chargers / Power Banks,electronics_other,high,portable chargers and power banks are consumer electronics accessories,True,False
+Portable Clothes Steamer,home_kitchen,high,portable clothes steamer is a small home appliance for garment care,True,False
+Portable Music Stands,toys_hobbies,high,music stands are accessories for musical instruments/hobbies,True,True
+Portable Power Banks,electronics_other,high,portable power banks are mobile charging accessories under electronics,True,True
+Portable Upholstery Cleaners,home_other,high,upholstery cleaners are home cleaning tools,True,True
+Portable Upholstery Shampooers,home_other,high,portable upholstery shampooers are home cleaning tools,True,True
+Portable Washing Machine,home_kitchen,high,portable washing machine is a home appliance,True,False
+Post-Op Wrist Braces (Small/XS Adult Sizes),other,high,medical/orthopedic support device not covered by any standard category,True,True
+Power Banks,electronics_other,high,power banks are portable battery accessories for electronics,True,False
+Pre-Filled Weed Vape Pens,other,high,cannabis vaping products do not fit any standard retail category listed,True,False
+Press-On Nails,beauty_personal_care,high,press-on nails are a nail beauty/cosmetic product,True,True
+Pressure Cooker,home_kitchen,high,pressure cooker is a kitchen appliance,True,True
+Pressure Washers (Entry-Level Commercial/Business Use),home_other,high,pressure washers are cleaning tools/equipment for home or commercial use,True,True
+Professional Camera Bodies for Wedding Photography,electronics_other,high,"camera bodies are cameras, classified under electronics_other",True,False
+Professional Outdoor Mural Paint Sets,toys_hobbies,medium,mural paint sets are art/craft supplies fitting hobbies category,True,True
+Queen Bed Frames,home_other,high,bed frames are furniture items,True,False
+Queen Comforters,home_other,high,queen-size comforters are bedding products,True,True
+Queen Size Mattress Pads,home_other,high,mattress pads are bedding products,True,True
+Queen Size Percale Cotton Sheets,home_other,high,bedding product (queen size sheets),True,True
+RV Toilet Treatment,other,high,RV toilet treatment is a specialized vehicle/sanitation product not fitting any listed category,True,True
+RX 6700 XT Graphics Cards,electronics_other,high,GPU/graphics card is gaming/compute hardware,True,True
+Rain Jackets,apparel_clothing,high,rain jackets are outerwear garments,True,True
+Rare Neopets Collectible Merchandise,toys_hobbies,high,Neopets merchandise falls under collectibles and hobby items,True,False
+Ready-Made Oatmeal Raisin Cookies (Bulk/Party Size),food_beverage,high,consumable baked food product,True,True
+Red Light Therapy Face Masks,beauty_personal_care,high,LED red light therapy masks are skincare/beauty devices,True,True
+Red Light Therapy Masks,beauty_personal_care,high,LED red light therapy masks are skincare/beauty devices,True,True
+Refrigerator,home_kitchen,high,refrigerator is a major kitchen appliance,True,False
+Refurbished Smartphones - iPhone 14 Pro Max & Alternatives,electronics_compute,high,refurbished smartphones fall under phones/mobile devices,True,False
+Reusable Feminine Sanitary Pads (Heavy Flow Multi-Pack Sets),beauty_personal_care,high,feminine hygiene products fall under personal care,True,True
+Rice Cooker,home_kitchen,high,rice cooker is a kitchen appliance,True,True
+Riding Lawn Mowers,other,high,outdoor power equipment not covered by defined categories,True,True
+Road Bike Tires,sports_outdoor,high,road bike tires are cycling/sporting goods equipment,True,True
+Road Bikes,sports_outdoor,high,road bikes are sporting/outdoor cycling equipment,True,True
+Road Running Shoes,apparel_footwear,high,road running shoes are a type of athletic footwear,True,True
+Robot Vacuum Cleaner,home_other,high,robot vacuum is a cleaning tool/appliance for the home,True,True
+Robot Vacuum Cleaners,home_other,high,robot vacuum cleaners are automated cleaning tools for the home,True,True
+Robot Vacuum/Mop,home_other,high,robot vacuum/mop is a cleaning tool for the home,True,True
+Rugged Gaming Laptops,electronics_compute,high,gaming laptops are portable computers,True,True
+Rugged Laptops for Remote Work & Editing,electronics_compute,high,rugged laptops are portable computers used for remote work and editing,True,True
+Running Shoes,apparel_footwear,high,running shoes are footwear,True,True
+S'mores Flavored Tea,food_beverage,high,flavored tea is a consumable beverage product,True,True
+School Backpacks,sports_outdoor,high,backpacks explicitly listed under sports_outdoor category,True,True
+Seat Cushions for Office Chairs,home_other,high,"seat cushions are home/office comfort accessories, not fitness or furniture per se but closest to home decor/comfort items",True,True
+Self-Adhesive Laminate Sheets,other,high,adhesive laminate sheets are office/craft supply materials not fitting standard categories,True,True
+Semi-Automatic Pistols,other,high,firearms do not fit any defined product category,True,True
+Semi-Cured Nail Stickers (Solid Colors),beauty_personal_care,high,nail stickers are a nail care/beauty product,True,True
+Shampoo,beauty_personal_care,high,shampoo is a haircare product,True,True
+"Shampoo for Curly, Sensitive & Eczema-Prone Hair",beauty_personal_care,high,shampoo is a haircare product,True,True
+Shoe Racks,home_other,high,shoe racks are home storage/furniture items,True,True
+Shop Vacuums,home_other,high,shop vacuums are cleaning/vacuum tools for home or workshop use,True,True
+Side-by-Side Refrigerators with Ice Maker,home_kitchen,high,refrigerators are major kitchen appliances,True,False
+Silicone Body Scrubbers,beauty_personal_care,high,silicone body scrubbers are personal care/bathing tools,True,True
+Silk Summer Pants,apparel_clothing,high,silk summer pants are a clothing garment,True,True
+Single-Cup Electric Drip Coffee Makers,home_kitchen,high,single-cup electric drip coffee makers are kitchen appliances,True,True
+Single-Serve Coffee Maker,home_kitchen,high,single-serve coffee maker is a kitchen appliance,True,True
+Single-Serve Coffee Maker (Ground Coffee Compatible),home_kitchen,high,single-serve coffee maker is a kitchen appliance,True,True
+Single-Serve Coffee Makers (K-Cup Compatible),home_kitchen,high,coffee makers are kitchen appliances,True,True
+Skincare Routine Sets for Oily/Acne-Prone Skin,beauty_personal_care,high,skincare sets targeting oily/acne-prone skin are personal care products,True,True
+Sleeping Pillows,home_other,high,sleeping pillows are bedding/home comfort products,True,True
+Slim Wireless Keyboards for Mac,electronics_compute,high,wireless keyboards are computer input peripherals,True,True
+Small Bedroom Makeup Vanity with Mirror,home_other,high,vanity with mirror is bedroom furniture,True,False
+Small Bookshelves,home_other,high,bookshelves are furniture/home storage items,True,False
+Small Kitchen Counter Lamps,home_other,high,"counter lamps are decorative/lighting home items, not kitchen appliances or cookware",True,True
+Small Luxury Crossbody/Travel Bags,sports_outdoor,high,crossbody and travel bags fall under bags/backpacks in sports_outdoor,True,True
+Small Toaster Ovens,home_kitchen,high,toaster ovens are small kitchen appliances,True,True
+Smart Refrigerators with Touchscreen Display,home_kitchen,high,refrigerators are kitchen appliances,True,True
+Smart Ring Step Tracker,electronics_other,high,smart ring is a wearable/smart device similar to a smartwatch,True,True
+Smart Watch,electronics_other,high,smartwatches fall under electronics_other per category definition,True,False
+Smartphone,electronics_compute,high,smartphones are mobile computing devices,True,False
+Smartphones,electronics_compute,high,smartphones are mobile computing devices,True,True
+Smartwatch,electronics_other,high,smartwatches are explicitly listed under electronics_other,True,True
+Smartwatches / Fitness Trackers,electronics_other,high,smartwatches and fitness trackers are wearable electronics,True,True
+Soccer Balls,sports_outdoor,high,soccer balls are sporting goods equipment,True,False
+Soccer Jerseys,apparel_clothing,high,soccer jerseys are sports garments/clothing,True,True
+Sofas,home_other,high,sofas are furniture items,True,True
+Softball Pitching Mats,sports_outdoor,high,softball training equipment used in sport/fitness context,True,True
+Solar Charge Controllers,other,high,solar charge controllers are electrical/energy management devices not fitting any specific listed category,True,False
+Solar Generators / Portable Power Stations,electronics_other,high,portable power stations are consumer electronics hardware not fitting audio or compute subcategories,True,True
+Solar Powered Portable Phone Charger,electronics_other,high,solar-powered portable charger is a consumer electronics accessory,True,False
+Soy Milk Makers,home_kitchen,high,soy milk makers are kitchen appliances used to process food,True,False
+Spaghetti Meal Kits / Bundles,food_beverage,high,meal kits are consumable food products,True,True
+Sports & Nutrition Tracking Smartwatch,electronics_other,high,smartwatch is explicitly listed under electronics_other,True,True
+Sports Car Style SUV / Crossover,other,high,"vehicle/automobile body style, not a product category in the defined list",True,True
+Stainless Steel 316L Hoop Earrings,other,high,jewelry/earrings do not fit any defined category,True,True
+Stand Mixers,home_kitchen,high,stand mixers are kitchen appliances,True,True
+Standard Drip Coffee Makers,home_kitchen,high,drip coffee makers are kitchen appliances,True,True
+Steam Mops,home_other,high,steam mops are floor cleaning tools,True,True
+Stitch Plush Toys,toys_hobbies,high,plush stuffed toys fall under toys and hobbies,True,True
+Streaming Sticks,electronics_other,high,streaming sticks are smart home/media devices like Roku or Fire Stick,True,True
+Studio Headphones,electronics_audio,high,studio headphones are professional over-ear audio devices,True,True
+Summer Dresses - Fairy Tale / Historical Inspired,apparel_clothing,high,summer dresses are garments/clothing items,True,True
+Sunglasses,apparel_clothing,medium,"sunglasses are a wearable accessory, closest to apparel",True,True
+TENS Units for Pain Relief,other,high,medical/therapeutic device not fitting any standard product category above,True,True
+THD Ascorbate (Tetrahexyldecyl Ascorbate) Vitamin C Serums & Moisturizers,beauty_personal_care,high,Vitamin C serums and moisturizers are skincare products,True,True
+Tablets,electronics_compute,high,tablets are explicitly listed under electronics_compute,True,True
+Teak/Mahogany Wood Kitchen Dish Drying Rack,home_kitchen,high,dish drying rack is a kitchen accessory,True,True
+Telephoto Lenses for Canon EF Mount (APS-C Compatible),electronics_other,high,camera lenses are photography accessories under electronics_other,True,False
+Titanium EDC Pocket Knife,sports_outdoor,high,EDC pocket knife is everyday carry gear commonly classified under outdoor/sporting goods,True,True
+Toaster,home_kitchen,high,toaster is a common kitchen appliance,True,True
+Toasters,home_kitchen,high,toasters are kitchen appliances,True,False
+Toddler Play Kitchen,toys_hobbies,high,play kitchen is a toy for children's imaginative play,True,True
+Toe Socks,apparel_footwear,high,toe socks are foot-covering apparel closely associated with footwear,True,True
+Top Load Washing Machines,home_other,high,washing machines are home appliances used for laundry,True,True
+Top-Load Washing Machines with Agitator,home_other,high,washing machine is a large home appliance for laundry,True,True
+Tote Bags with Cup Holder/Pocket,sports_outdoor,high,tote bags and carry bags fall under bags/backpacks in sports_outdoor,True,True
+Trail Running Shoes,apparel_footwear,high,trail running shoes are a type of athletic footwear,True,True
+Travel Backpack,sports_outdoor,high,backpacks and travel bags fall under sports/outdoor category,True,True
+Travel Backpacks,sports_outdoor,high,travel backpacks are bags/backpacks classified under sports and outdoor gear,True,False
+Travel Beauty Gift Sets (Makeup Bag with Lotions),beauty_personal_care,high,travel beauty gift sets with makeup bag and lotions are personal care/beauty products,True,True
+Travel Neck Pillows,sports_outdoor,medium,travel accessories fit closest to outdoor/travel gear category,True,True
+Treadmills,sports_outdoor,high,treadmills are fitness/exercise equipment,True,False
+True Wireless Earbuds,electronics_audio,high,true wireless earbuds are a core audio product,True,True
+Turmeric Supplements,food_beverage,high,dietary supplement consumable,True,True
+Turntables / Record Players,electronics_other,high,turntables and record players are consumer audio/entertainment electronics hardware,True,True
+Twin Size Air Mattress with Built-in Pump,home_other,high,air mattress is bedding/sleep furniture,True,True
+USB Audio Interfaces (with DAC),electronics_audio,high,USB audio interfaces with DAC are audio recording/playback devices,True,True
+USB Microphone,electronics_audio,high,USB microphone is an audio input device,True,True
+USB-C Chargers Compatible with MacBook Air M1,electronics_compute,high,USB-C charger accessory for a laptop,True,True
+USB/XLR PC Microphones for Gaming & Voice Chat,electronics_audio,high,microphones are explicitly listed under electronics_audio,True,False
+UV Reactive Mascara,beauty_personal_care,high,mascara is a makeup/cosmetic product,True,True
+Ultra-Wide Prime Lenses for Astrophotography (Canon RF/RF-S Mount Compatible),electronics_other,high,camera lenses are photography equipment,True,True
+Ultrasonic Dog Bark Control Devices,other,high,pet behavior control device not fitting standard categories,True,True
+Under-Desk Walking Treadmills,sports_outdoor,high,walking treadmills are fitness equipment,True,True
+Under-Eye Cream / Gel for Eye Bags (Anti-Aging),beauty_personal_care,high,under-eye cream is a skincare/beauty product,True,True
+Underwire T-Shirt Bras,apparel_clothing,high,bras are undergarments/clothing items,True,True
+Universal Replacement Earpads,electronics_audio,high,earpads are accessories for headphones/audio equipment,True,False
+Unlocked No-Contract Smartphones,electronics_compute,high,smartphones are mobile phones/computing devices,True,True
+Upright Vacuum Cleaner,home_other,high,upright vacuum cleaner is a cleaning appliance,True,True
+Upright Vacuums,home_other,high,upright vacuums are household cleaning appliances,True,False
+"Used Cars Under $20,000",other,high,automotive vehicle purchase does not fit any defined product category,True,True
+Used Cars for Tall Drivers (Local Commute),other,high,used automobiles do not fit any defined product category,True,True
+Used Mid-Size SUVs with Third Row Seating,other,high,"automotive vehicle purchase category, not covered by any product label",True,False
+"Used SUVs ($4,000–$5,000)",other,high,used vehicle purchase does not fit any product category listed,True,True
+Used/Refurbished Gaming Desktop Computers,electronics_other,high,gaming desktop computers fall under gaming hardware,True,True
+Vacqueyras Red Wine,food_beverage,high,alcoholic beverage (wine) is a consumable food/drink product,True,True
+Vacuum Cleaner,home_other,high,vacuum cleaners are cleaning tools for the home,True,False
+Vacuum Cleaners,home_other,high,vacuum cleaners are cleaning tools/appliances for the home,True,True
+Vegan Breakfast Bars,food_beverage,high,consumable food product (breakfast bars),True,True
+Video Game Consoles,electronics_other,high,gaming hardware falls under electronics_other,True,True
+Vinyl Cleaners,toys_hobbies,high,vinyl record cleaning products used by music/audio hobbyists,True,True
+Vinyl Records - Danzig Self-Titled Debut Album,toys_hobbies,high,vinyl records are collectible music media fitting hobbies/collectibles,True,True
+Violin Cases,toys_hobbies,high,violin case is a musical instrument accessory,True,True
+Voice Recorders,electronics_other,high,voice recorders are portable electronic recording devices not fitting audio peripherals or compute categories,True,True
+Waffle Maker,home_kitchen,high,waffle maker is a kitchen appliance,True,True
+Walking Pads / Under-Desk Treadmills,sports_outdoor,high,fitness equipment used for walking/exercise,True,True
+Walking Shoes,apparel_footwear,high,walking shoes are footwear,True,True
+"Walking Shoes (Women's, Size 6 Wide, Lace-Up)",apparel_footwear,high,women's walking shoes are clearly footwear,True,True
+Wall Art Prints for Teenage Girls' Rooms,home_other,high,wall art prints are home decor items,True,True
+Washing Machine,home_other,high,washing machine is a home appliance used for laundry,True,True
+Watches,electronics_other,medium,watches including smartwatches fall under electronics_other; traditional watches also best fit here as no dedicated accessories category exists,True,False
+Water Flossers,beauty_personal_care,high,water flossers are oral hygiene / personal care devices,True,True
+Watercolor Markers,toys_hobbies,high,art/craft supplies used for hobbies and creative projects,True,True
+Waterproof Sneakers,apparel_footwear,high,sneakers are footwear,True,True
+Waterproof Sunscreen SPF 50+,beauty_personal_care,high,sunscreen is a personal care/skincare product,True,False
+Waterproof Walking Shoes,apparel_footwear,high,waterproof walking shoes are footwear,True,True
+Webcams,electronics_other,high,webcams are camera peripherals not fitting compute or audio categories,True,True
+Wedding Dresses,apparel_clothing,high,wedding dresses are formal garments,True,True
+Wedding Guest Dresses,apparel_clothing,high,dresses are garments worn as clothing,True,True
+"Weekly Grocery Delivery Meal Kit Services (Family Plan, 5 people)",food_beverage,high,meal kit delivery services are consumable food products,True,False
+WiFi / Network Cards,electronics_compute,high,network cards are computer hardware components,True,True
+Wide Leg Track Pants (Size 2X),apparel_clothing,high,track pants are a garment/clothing item,True,True
+Wilco - Star Wars CD (2015),toys_hobbies,high,music CD is a collectible/hobby media item,True,True
+Wild Bird Seed Mix,other,high,wild bird seed is a pet/wildlife supply not fitting any listed category,True,True
+Windows Laptop Computer,electronics_compute,high,laptop computer is a core computing device,True,False
+Windows Laptops,electronics_compute,high,Windows laptops are portable computers,True,True
+Winter Jackets,apparel_clothing,high,winter jackets are outerwear garments,True,True
+Wired Earbud Headphones,electronics_audio,high,wired earbuds are audio listening devices,True,True
+Wired Earphones,electronics_audio,high,wired earphones are audio listening devices,True,False
+Wired Headphones with Bass Boost,electronics_audio,high,wired headphones are audio devices,True,True
+Wireless 75% Mechanical Keyboards,electronics_compute,high,mechanical keyboard is a computer input peripheral,True,False
+Wireless Bluetooth Mouse,electronics_compute,high,wireless bluetooth mouse is a computer peripheral,True,True
+Wireless Earbuds,electronics_audio,high,wireless earbuds are audio devices,True,True
+Wireless Earbuds for iPhone,electronics_audio,high,wireless earbuds are audio accessories,True,True
+Wireless Earbuds with Active Noise Cancellation,electronics_audio,high,wireless earbuds are a core audio device category,True,True
+Wireless Gaming Headphones,electronics_audio,high,wireless gaming headphones are audio peripherals,True,True
+Wireless Headphones,electronics_audio,high,wireless headphones are a core audio device,True,True
+Wireless Headphones with Microphone,electronics_audio,high,wireless headphones with microphone are core audio peripherals,True,True
+Wireless Keyboard and Mouse Combo,electronics_compute,high,keyboard and mouse are standard computer peripherals,True,True
+Wireless Noise-Cancelling Headphones,electronics_audio,high,headphones are a core audio device category,True,True
+Wireless Over-Ear Headphones,electronics_audio,high,wireless over-ear headphones are a core audio device,True,True
+Wireless Over-Ear Noise-Canceling Headphones,electronics_audio,high,over-ear noise-canceling headphones are core audio electronics,True,False
+Wireless Speakers,electronics_audio,high,wireless speakers are audio output devices,True,True
+Wireless Sport Headphones,electronics_audio,high,wireless sport headphones are audio devices,True,True
+Women's Adjustable Slip-On Slippers with Arch Support,apparel_footwear,high,slippers are footwear,True,True
+Women's Black Platform Strappy Sandals,apparel_footwear,high,platform strappy sandals are women's footwear,True,True
+Women's Casual Professional Shirts,apparel_clothing,high,women's shirts are garments/clothing,True,True
+Women's Casual Walking Shoes,apparel_footwear,high,women's walking shoes are clearly footwear,True,False
+Women's Daily Multivitamin Gummies,food_beverage,high,dietary supplement consumable,True,False
+Women's Dress Flats,apparel_footwear,high,dress flats are women's flat shoes,True,True
+Women's Dresses,apparel_clothing,high,women's dresses are garments/clothing,True,True
+Women's Hiking Sandals,apparel_footwear,high,hiking sandals are footwear,True,True
+Women's Leather Jackets,apparel_clothing,high,leather jackets are garments worn as outerwear,True,False
+Women's One-Piece Swimsuit with Underwire,apparel_clothing,high,one-piece swimsuit is a garment/clothing item,True,True
+Women's One-Piece Swimsuits,apparel_clothing,high,swimsuit is a garment/clothing item,True,True
+Women's Running Shorts,apparel_clothing,high,running shorts are a garment/clothing item,True,True
+Women's Super High-Waisted Skinny Jeans,apparel_clothing,high,women's jeans are a clothing garment,True,True
+Women's Trail Running Shoes,apparel_footwear,high,trail running shoes are footwear,True,True
+Women's Workout Sets,apparel_clothing,high,women's workout sets are athletic garments/clothing,True,False
+Women's Workout Shoes for Wide Feet,apparel_footwear,high,workout shoes are footwear,True,True
+Women's XL White Button-Down Shirt for Catering,apparel_clothing,high,women's button-down shirt is a garment regardless of intended use,True,True
+Wood Patio Dining Sets,home_other,high,outdoor patio furniture set,True,True
+Wooden Jo Staff for Aikido Practice,sports_outdoor,high,martial arts training equipment,True,True
+Wool Dress,apparel_clothing,high,wool dress is a garment/clothing item,True,True
+Work Flashlights,sports_outdoor,medium,flashlights are portable tools/gear commonly categorized with outdoor and utility equipment,True,True
+Wrist Blood Pressure Monitors,other,high,medical health monitoring device not fitting standard consumer categories,True,True
+Wrist Watches,electronics_other,high,wrist watches fall under the smartwatches/wearables grouping in electronics_other,True,False
+Youth Baseball Catching Nets,sports_outdoor,high,baseball catching nets are sporting goods equipment,True,True

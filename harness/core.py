@@ -46,6 +46,8 @@ def check_providers() -> set[str]:
         available.add("openrouter")
     if os.environ.get("GOOGLE_VERTEX_API_KEY"):
         available.add("google_vertex")
+    if os.environ.get("TOGETHER_API_KEY"):
+        available.add("together")
     return available
 
 
@@ -69,9 +71,19 @@ def call_anthropic(model_id: str, system_prompt: str, user_message: str,
     }
     if system_prompt:
         kwargs["system"] = system_prompt
-    # Anthropic does not support temperature with extended thinking
+    # Anthropic does not support temperature with extended thinking.
+    # Per-model thinking format (verified against Anthropic docs April 2026):
+    #   Haiku 4.5 / 4.6+: legacy {"type":"enabled","budget_tokens":N} ONLY.
+    #     Adaptive returns "adaptive thinking is not supported on this model".
+    #   Sonnet 4.6 / Opus 4.6+ / Opus 4.7: adaptive {"type":"adaptive"} +
+    #     output_config={"effort":"high"}. Legacy budget_tokens deprecated on
+    #     Sonnet/Opus 4.6 and REJECTED entirely on Opus 4.7.
     if thinking:
-        kwargs["thinking"] = {"type": "enabled", "budget_tokens": 4096}
+        if "haiku" in model_id:
+            kwargs["thinking"] = {"type": "enabled", "budget_tokens": 4096}
+        else:
+            kwargs["thinking"] = {"type": "adaptive"}
+            kwargs["output_config"] = {"effort": "high"}
         kwargs["max_tokens"] = 8192
     else:
         kwargs["temperature"] = temperature
@@ -128,16 +140,33 @@ def call_openai(model_id: str, system_prompt: str, user_message: str,
 
     kwargs = {"model": model_id, "messages": messages, "temperature": temperature}
 
-    if not thinking:
-        # Newer models require max_completion_tokens
-        uses_new_param = model_id in (
+    # Newer chat-completion models require max_completion_tokens (and silently
+    # ignore max_tokens). All GPT-5.x including 5.4 family use the new param.
+    uses_new_param = (
+        model_id in (
             "gpt-5-mini", "gpt-5.1-chat-latest", "gpt-5.2-chat-latest",
             "gpt-5-chat-latest",
         )
-        if uses_new_param:
-            kwargs["max_completion_tokens"] = max_tokens * 2
-        else:
-            kwargs["max_tokens"] = max_tokens
+        or model_id.startswith("gpt-5.4")
+        or model_id.startswith("gpt-5.")
+    )
+    if uses_new_param:
+        kwargs["max_completion_tokens"] = max_tokens * 2
+    else:
+        kwargs["max_tokens"] = max_tokens
+
+    # Reasoning effort for the new GPT-5.x family. Default API behaviour is
+    # reasoning_effort="none" (no reasoning tokens). When the registered
+    # model_cfg has thinking=True, request high reasoning effort. Note: in
+    # chat.completions the parameter is `reasoning_effort` (snake_case
+    # top-level), not nested `reasoning: {effort: ...}` (that's the
+    # Responses API form).
+    if thinking and (model_id.startswith("gpt-5") or
+                      model_id.startswith("o1") or model_id.startswith("o3")):
+        kwargs["reasoning_effort"] = "high"
+        # Reasoning tokens count toward output budget; bump headroom.
+        if "max_completion_tokens" in kwargs:
+            kwargs["max_completion_tokens"] = max(kwargs["max_completion_tokens"], 4096)
 
     response = client.chat.completions.create(**kwargs)
 
@@ -347,6 +376,76 @@ def call_openrouter(model_id: str, system_prompt: str, user_message: str,
 
 
 # ---------------------------------------------------------------------------
+# Together AI (open-source models including base/completion models)
+# ---------------------------------------------------------------------------
+
+def call_together(model_id: str, system_prompt: str, user_message: str,
+                  thinking: bool = False, max_tokens: int = 1024,
+                  temperature: float = 1.0) -> dict:
+    """Send text prompt to Together AI API. Returns dict with text, tokens.
+
+    Together AI hosts both base (completion) and instruct (chat) models.
+    Base models use the /v1/completions endpoint (no chat template).
+    Instruct models use the /v1/chat/completions endpoint.
+
+    For base models, the system_prompt and user_message are concatenated
+    into a single prompt string since base models have no concept of
+    message roles.
+    """
+    import openai
+    client = openai.OpenAI(
+        base_url="https://api.together.ai/v1",
+        api_key=os.environ.get("TOGETHER_API_KEY"),
+    )
+
+    # Detect if this is a base model by checking common instruct suffixes
+    model_lower = model_id.lower()
+    is_instruct = any(s in model_lower for s in [
+        "instruct", "-it", "-chat", "turbo",
+    ])
+
+    if is_instruct:
+        # Chat completions for instruct models
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": user_message})
+
+        response = client.chat.completions.create(
+            model=model_id,
+            messages=messages,
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+        text = response.choices[0].message.content or ""
+    else:
+        # Text completions for base models (no chat template)
+        prompt = ""
+        if system_prompt:
+            prompt = system_prompt + "\n\n"
+        prompt += user_message + "\n\nRecommendation:"
+
+        response = client.completions.create(
+            model=model_id,
+            prompt=prompt,
+            max_tokens=max_tokens,
+            temperature=temperature,
+        )
+        text = response.choices[0].text or ""
+
+    input_tokens = getattr(response.usage, "prompt_tokens", 0) or 0
+    output_tokens = getattr(response.usage, "completion_tokens", 0) or 0
+
+    return {
+        "text": text,
+        "thinking": "",
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
+        "model_id": model_id,
+    }
+
+
+# ---------------------------------------------------------------------------
 # Ollama (local open-source models via OpenAI-compatible API)
 # ---------------------------------------------------------------------------
 
@@ -394,6 +493,7 @@ PROVIDERS = {
     "google": call_google,
     "google_vertex": call_google_vertex,
     "openrouter": call_openrouter,
+    "together": call_together,
     "ollama": call_ollama,
 }
 

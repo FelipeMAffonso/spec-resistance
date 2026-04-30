@@ -1,0 +1,21 @@
+category,n_trials,n_brands_recommended,top_brand,top_brand_share,hhi_ai,hhi_equal,hhi_ratio,concentration_level
+cameras,40,1,Optivex,1.000,10000,2000,5.00,Highly Concentrated
+keyboards,60,1,Keystrike,1.000,10000,2000,5.00,Highly Concentrated
+monitors,40,1,Lumivue,1.000,10000,2000,5.00,Highly Concentrated
+wireless_routers,40,1,Netweave,1.000,10000,2000,5.00,Highly Concentrated
+external_ssds,60,2,Vaultdrive,0.983,9672,2000,4.84,Highly Concentrated
+electric_toothbrushes,40,2,Dentara,0.950,9050,2000,4.53,Highly Concentrated
+water_bottles,40,2,Thermalux,0.925,8612,2000,4.31,Highly Concentrated
+robot_vacuums,60,3,Cleanpath,0.917,8450,2000,4.22,Highly Concentrated
+smartwatches,60,4,Chronex,0.883,7861,2000,3.93,Highly Concentrated
+portable_speakers,60,4,Wavecrest,0.833,7050,2000,3.53,Highly Concentrated
+backpacks,40,3,Trailpeak,0.825,6962,2000,3.48,Highly Concentrated
+blenders,40,3,Blendwell,0.800,6612,2000,3.31,Highly Concentrated
+tablets,40,3,Aurem,0.750,6050,2000,3.02,Highly Concentrated
+tvs,660,7,Pixelight,0.565,4266,2000,2.13,Highly Concentrated
+running_shoes,580,10,Swiftform,0.310,2613,2000,1.31,Highly Concentrated
+laptops,763,9,Novatech,0.332,2470,2000,1.23,Moderately Conc.
+wireless_earbuds,260,9,Auralis,0.385,2394,2000,1.20,Moderately Conc.
+smartphones,807,8,Ethicom,0.312,2372,2000,1.19,Moderately Conc.
+coffee_makers,469,8,Brevara,0.371,2339,2000,1.17,Moderately Conc.
+headphones,600,10,Sonaray,0.273,1840,2000,0.92,Moderately Conc.

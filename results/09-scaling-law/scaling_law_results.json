@@ -1,0 +1,250 @@
+{
+  "overall_regression": {
+    "equation": "log(non_optimal_rate) = alpha + beta * log(params_B)",
+    "alpha": -2.5820375535658924,
+    "beta": 0.09485572402100897,
+    "beta_se": 0.04849823185225191,
+    "beta_95ci": [
+      -0.00020081040940476969,
+      0.18991225845142273
+    ],
+    "r_squared": 0.21460326754841197,
+    "p_value": 0.07073864455086237,
+    "n_models": 16,
+    "interpretation": "No significant relationship"
+  },
+  "spearman": {
+    "rho": 0.48817422671649935,
+    "p_value": 0.055049993560196284,
+    "n": 16
+  },
+  "baseline_regression": {
+    "alpha": -2.3324748381418168,
+    "beta": 0.17750182850643126,
+    "r_squared": 0.3532012817587593,
+    "p_value": 0.015191615402624455,
+    "n_models": 16
+  },
+  "within_family": {
+    "OpenAI": {
+      "beta": -0.009305247287636584,
+      "r_squared": 0.0037572578263665155,
+      "p_value": 0.9220038044680223,
+      "n_models": 5,
+      "models": [
+        [
+          "gpt-4.1-mini",
+          8,
+          0.08495
+        ],
+        [
+          "gpt-4.1-nano",
+          2,
+          0.10574
+        ],
+        [
+          "gpt-4o",
+          200,
+          0.09373
+        ],
+        [
+          "gpt-4o-mini",
+          8,
+          0.12017
+        ],
+        [
+          "gpt-5-mini",
+          8,
+          0.06083
+        ]
+      ]
+    },
+    "Google": {
+      "beta": -0.5164707883407714,
+      "r_squared": 0.5055305287416314,
+      "p_value": 0.17818867079385292,
+      "n_models": 5,
+      "models": [
+        [
+          "gemini-2.0-flash",
+          30,
+          0.1087
+        ],
+        [
+          "gemini-2.5-flash",
+          40,
+          0.07371
+        ],
+        [
+          "gemini-2.5-flash-lite",
+          20,
+          0.09467
+        ],
+        [
+          "gemini-3-flash",
+          40,
+          0.0644
+        ],
+        [
+          "gemma-3-27b",
+          27,
+          0.09407
+        ]
+      ]
+    },
+    "OpenRouter": {
+      "beta": -0.0624301464296201,
+      "r_squared": 0.16233147614908391,
+      "p_value": 0.5012453490882741,
+      "n_models": 5,
+      "models": [
+        [
+          "deepseek-r1",
+          671,
+          0.12962
+        ],
+        [
+          "deepseek-v3",
+          671,
+          0.17541
+        ],
+        [
+          "kimi-k2",
+          200,
+          0.12973
+        ],
+        [
+          "llama-3.3-70b",
+          70,
+          0.16129
+        ],
+        [
+          "qwen-2.5-72b",
+          72,
+          0.18968
+        ]
+      ]
+    }
+  },
+  "model_data": [
+    {
+      "model": "claude-haiku-4.5",
+      "params_B": 20,
+      "total_trials": 13622,
+      "non_optimal_rate": 0.1223,
+      "baseline_rate": 0.20909
+    },
+    {
+      "model": "deepseek-r1",
+      "params_B": 671,
+      "total_trials": 3140,
+      "non_optimal_rate": 0.12962,
+      "baseline_rate": 0.24
+    },
+    {
+      "model": "deepseek-v3",
+      "params_B": 671,
+      "total_trials": 10273,
+      "non_optimal_rate": 0.17541,
+      "baseline_rate": 0.34687
+    },
+    {
+      "model": "gemini-2.0-flash",
+      "params_B": 30,
+      "total_trials": 21260,
+      "non_optimal_rate": 0.1087,
+      "baseline_rate": 0.20147
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "params_B": 40,
+      "total_trials": 2510,
+      "non_optimal_rate": 0.07371,
+      "baseline_rate": 0.13253
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "params_B": 20,
+      "total_trials": 2873,
+      "non_optimal_rate": 0.09467,
+      "baseline_rate": 0.13
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "params_B": 200,
+      "total_trials": 249,
+      "non_optimal_rate": 0.15261,
+      "baseline_rate": 0.95
+    },
+    {
+      "model": "gemini-3-flash",
+      "params_B": 40,
+      "total_trials": 2500,
+      "non_optimal_rate": 0.0644,
+      "baseline_rate": 0.1375
+    },
+    {
+      "model": "gemma-3-27b",
+      "params_B": 27,
+      "total_trials": 2158,
+      "non_optimal_rate": 0.09407,
+      "baseline_rate": 0.3125
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "params_B": 8,
+      "total_trials": 11689,
+      "non_optimal_rate": 0.08495,
+      "baseline_rate": 0.09831
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "params_B": 2,
+      "total_trials": 21260,
+      "non_optimal_rate": 0.10574,
+      "baseline_rate": 0.125
+    },
+    {
+      "model": "gpt-4o",
+      "params_B": 200,
+      "total_trials": 10136,
+      "non_optimal_rate": 0.09373,
+      "baseline_rate": 0.16471
+    },
+    {
+      "model": "gpt-4o-mini",
+      "params_B": 8,
+      "total_trials": 10535,
+      "non_optimal_rate": 0.12017,
+      "baseline_rate": 0.19412
+    },
+    {
+      "model": "gpt-5-mini",
+      "params_B": 8,
+      "total_trials": 4389,
+      "non_optimal_rate": 0.06083,
+      "baseline_rate": 0.07143
+    },
+    {
+      "model": "kimi-k2",
+      "params_B": 200,
+      "total_trials": 9805,
+      "non_optimal_rate": 0.12973,
+      "baseline_rate": 0.23333
+    },
+    {
+      "model": "llama-3.3-70b",
+      "params_B": 70,
+      "total_trials": 9306,
+      "non_optimal_rate": 0.16129,
+      "baseline_rate": 0.33
+    },
+    {
+      "model": "qwen-2.5-72b",
+      "params_B": 72,
+      "total_trials": 12885,
+      "non_optimal_rate": 0.18968,
+      "baseline_rate": 0.4
+    }
+  ]
+}

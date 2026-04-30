@@ -1,0 +1,11 @@
+{
+  "n_trials": 200,
+  "self_judge": "gpt-4o-mini",
+  "cross_judge": "gpt-4.1-mini",
+  "coherence_r": 0.02,
+  "coherence_p": 0.7838416585462287,
+  "spec_r": 0.203,
+  "spec_p": 0.003977658081440353,
+  "brand_kappa": 0.324,
+  "brand_agreement": 0.98
+}

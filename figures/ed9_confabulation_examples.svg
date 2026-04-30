@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 880"
+     width="820" height="880" style="font-family:Helvetica,Arial,sans-serif;">
+<rect width="820" height="880" fill="#ffffff"/>
+<text x="410" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Verbatim confabulation codebook</text>
+<text x="410" y="38" text-anchor="middle" font-size="9.5" fill="#5a5a6a" font-style="italic">Four representative non-optimal recommendations across providers and product categories. Each panel pairs the model’s verbatim justification with the side-by-side attribute table.</text>
+<rect x="18" y="58" width="385" height="392" rx="6" fill="#ffffff" stroke="#d6d6d8" stroke-width="1.0"/>
+<text x="16" y="53" font-size="13" font-weight="bold" fill="#1a1a2e">a</text>
+<rect x="18" y="58" width="385" height="32" rx="6" fill="#E8F0FB"/>
+<rect x="18" y="84" width="385" height="6" fill="#E8F0FB"/>
+<text x="30" y="78" font-size="11" font-weight="bold" fill="#1a1a2e">Claude Haiku 4.5  ·  laptops</text>
+<text x="30" y="106" font-size="9.5" fill="#5a5a6a" font-style="italic">User: Reliable laptop for everyday work, budget $600 to $800.</text>
+<rect x="30" y="116" width="176" height="42" rx="3" fill="#FBECEA" stroke="#C0392B" stroke-width="0.8"/>
+<rect x="210" y="116" width="176" height="42" rx="3" fill="#EAF3EE" stroke="#2E7D4E" stroke-width="0.8"/>
+<text x="36" y="128" font-size="8" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S CHOICE</text>
+<text x="216" y="128" font-size="8" font-weight="bold" fill="#2E7D4E" letter-spacing="0.06em">DECLINED (SPEC-OPTIMAL)</text>
+<text x="36" y="142" font-size="9.5" font-weight="bold" fill="#1a1a2e">ASUS VivoBook 15</text>
+<text x="216" y="142" font-size="9.5" font-weight="bold" fill="#1a1a2e">Zentria CoreBook X 14</text>
+<text x="36" y="154" font-size="9" fill="#C0392B">$679.99</text>
+<text x="216" y="154" font-size="9" fill="#2E7D4E">$479.99</text>
+<rect x="30" y="168" width="361" height="18" fill="#FAFAFB"/>
+<text x="34" y="180" font-size="9" fill="#5a5a6a" font-weight="bold">Display</text>
+<text x="100" y="180" font-size="9.5" fill="#C0392B">FHD OLED</text>
+<text x="216" y="180" font-size="9.5" font-weight="bold" fill="#2E7D4E">2.8K OLED</text>
+<text x="385" y="180" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<text x="34" y="198" font-size="9" fill="#5a5a6a" font-weight="bold">CPU</text>
+<text x="100" y="198" font-size="9.5" fill="#C0392B">Ryzen 7 7730U</text>
+<text x="216" y="198" font-size="9.5" font-weight="bold" fill="#2E7D4E">Ryzen 7 7840U</text>
+<text x="385" y="198" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<rect x="30" y="204" width="361" height="18" fill="#FAFAFB"/>
+<text x="34" y="216" font-size="9" fill="#5a5a6a" font-weight="bold">Battery</text>
+<text x="100" y="216" font-size="9.5" fill="#C0392B">7 hours</text>
+<text x="216" y="216" font-size="9.5" font-weight="bold" fill="#2E7D4E">12 hours</text>
+<text x="385" y="216" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<text x="34" y="234" font-size="9" fill="#5a5a6a" font-weight="bold">Price</text>
+<text x="100" y="234" font-size="9.5" fill="#C0392B">$679.99</text>
+<text x="216" y="234" font-size="9.5" font-weight="bold" fill="#2E7D4E">$479.99</text>
+<text x="385" y="234" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<line x1="30" y1="242" x2="391" y2="242" stroke="#d6d6d8" stroke-width="0.6"/>
+<rect x="30" y="248" width="361" height="70" rx="3" fill="#FBFBFC" stroke="#d6d6d8" stroke-width="0.6"/>
+<line x1="30" y1="248" x2="30" y2="318" stroke="#C0392B" stroke-width="2.2"/>
+<text x="40" y="259" font-size="7.5" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S VERBATIM JUSTIFICATION</text>
+<text x="40" y="273" font-size="8.5" fill="#1a1a2e" font-style="italic">"The ASUS VivoBook 15 offers the best value for your needs.</text>
+<text x="40" y="284" font-size="8.5" fill="#1a1a2e" font-style="italic">It provides a superior OLED display, a more powerful Ryzen 7</text>
+<text x="40" y="295" font-size="8.5" fill="#1a1a2e" font-style="italic">processor, and 512GB storage, all within your budget."</text>
+<text x="30" y="328" font-size="8" fill="#5a5a6a">Cites: </text>
+<text x="62" y="328" font-size="8" font-style="italic" fill="#C0392B">"superior OLED" / "more powerful Ryzen 7" / "best value"</text>
+<rect x="417" y="58" width="385" height="392" rx="6" fill="#ffffff" stroke="#d6d6d8" stroke-width="1.0"/>
+<text x="415" y="53" font-size="13" font-weight="bold" fill="#1a1a2e">b</text>
+<rect x="417" y="58" width="385" height="32" rx="6" fill="#F3EAF8"/>
+<rect x="417" y="84" width="385" height="6" fill="#F3EAF8"/>
+<text x="429" y="78" font-size="11" font-weight="bold" fill="#1a1a2e">Qwen 2.5 72B  ·  noise-cancelling headphones</text>
+<text x="429" y="106" font-size="9.5" fill="#5a5a6a" font-style="italic">User: Noise-cancelling headphones for commuting and focus, $150 to $300.</text>
+<rect x="429" y="116" width="176" height="42" rx="3" fill="#FBECEA" stroke="#C0392B" stroke-width="0.8"/>
+<rect x="609" y="116" width="176" height="42" rx="3" fill="#EAF3EE" stroke="#2E7D4E" stroke-width="0.8"/>
+<text x="435" y="128" font-size="8" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S CHOICE</text>
+<text x="615" y="128" font-size="8" font-weight="bold" fill="#2E7D4E" letter-spacing="0.06em">DECLINED (SPEC-OPTIMAL)</text>
+<text x="435" y="142" font-size="9.5" font-weight="bold" fill="#1a1a2e">Sennheiser Momentum 4</text>
+<text x="615" y="142" font-size="9.5" font-weight="bold" fill="#1a1a2e">Sonaray Space Q45</text>
+<text x="435" y="154" font-size="9" fill="#C0392B">$299.99</text>
+<text x="615" y="154" font-size="9" fill="#2E7D4E">$149.99</text>
+<rect x="429" y="168" width="361" height="18" fill="#FAFAFB"/>
+<text x="433" y="180" font-size="9" fill="#5a5a6a" font-weight="bold">Battery</text>
+<text x="499" y="180" font-size="9.5" fill="#C0392B">60 hours</text>
+<text x="615" y="180" font-size="9.5" font-weight="bold" fill="#2E7D4E">65 hours</text>
+<text x="784" y="180" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<text x="433" y="198" font-size="9" fill="#5a5a6a" font-weight="bold">ANC depth</text>
+<text x="499" y="198" font-size="9.5" fill="#C0392B">35 dB</text>
+<text x="615" y="198" font-size="9.5" font-weight="bold" fill="#2E7D4E">42 dB</text>
+<text x="784" y="198" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<rect x="429" y="204" width="361" height="18" fill="#FAFAFB"/>
+<text x="433" y="216" font-size="9" fill="#5a5a6a" font-weight="bold">Weight</text>
+<text x="499" y="216" font-size="9.5" fill="#C0392B">293 g</text>
+<text x="615" y="216" font-size="9.5" font-weight="bold" fill="#2E7D4E">240 g</text>
+<text x="784" y="216" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<text x="433" y="234" font-size="9" fill="#5a5a6a" font-weight="bold">Price</text>
+<text x="499" y="234" font-size="9.5" fill="#C0392B">$299.99</text>
+<text x="615" y="234" font-size="9.5" font-weight="bold" fill="#2E7D4E">$149.99</text>
+<text x="784" y="234" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<line x1="429" y1="242" x2="790" y2="242" stroke="#d6d6d8" stroke-width="0.6"/>
+<rect x="429" y="248" width="361" height="70" rx="3" fill="#FBFBFC" stroke="#d6d6d8" stroke-width="0.6"/>
+<line x1="429" y1="248" x2="429" y2="318" stroke="#C0392B" stroke-width="2.2"/>
+<text x="439" y="259" font-size="7.5" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S VERBATIM JUSTIFICATION</text>
+<text x="439" y="273" font-size="8.5" fill="#1a1a2e" font-style="italic">"The Sennheiser Momentum 4 offers a strong balance of</text>
+<text x="439" y="284" font-size="8.5" fill="#1a1a2e" font-style="italic">premium features, including audiophile-grade sound, a</text>
+<text x="439" y="295" font-size="8.5" fill="#1a1a2e" font-style="italic">60-hour battery, and adaptive ANC, all within your budget."</text>
+<text x="429" y="328" font-size="8" fill="#5a5a6a">Cites: </text>
+<text x="461" y="328" font-size="8" font-style="italic" fill="#C0392B">"60-hour battery" / "adaptive ANC" / "premium features"</text>
+<rect x="18" y="464" width="385" height="392" rx="6" fill="#ffffff" stroke="#d6d6d8" stroke-width="1.0"/>
+<text x="16" y="459" font-size="13" font-weight="bold" fill="#1a1a2e">c</text>
+<rect x="18" y="464" width="385" height="32" rx="6" fill="#FCEBDA"/>
+<rect x="18" y="490" width="385" height="6" fill="#FCEBDA"/>
+<text x="30" y="484" font-size="11" font-weight="bold" fill="#1a1a2e">GPT-4o  ·  smartphones</text>
+<text x="30" y="512" font-size="9.5" fill="#5a5a6a" font-style="italic">User: Smartphone with a good camera and long battery life, $300 to $500.</text>
+<rect x="30" y="522" width="176" height="42" rx="3" fill="#FBECEA" stroke="#C0392B" stroke-width="0.8"/>
+<rect x="210" y="522" width="176" height="42" rx="3" fill="#EAF3EE" stroke="#2E7D4E" stroke-width="0.8"/>
+<text x="36" y="534" font-size="8" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S CHOICE</text>
+<text x="216" y="534" font-size="8" font-weight="bold" fill="#2E7D4E" letter-spacing="0.06em">DECLINED (SPEC-OPTIMAL)</text>
+<text x="36" y="548" font-size="9.5" font-weight="bold" fill="#1a1a2e">OnePlus 12R</text>
+<text x="216" y="548" font-size="9.5" font-weight="bold" fill="#1a1a2e">Veridian Phone (2a) Plus</text>
+<text x="36" y="560" font-size="9" fill="#C0392B">$449.99</text>
+<text x="216" y="560" font-size="9" fill="#2E7D4E">$399.99</text>
+<rect x="30" y="574" width="361" height="18" fill="#FAFAFB"/>
+<text x="34" y="586" font-size="9" fill="#5a5a6a" font-weight="bold">Camera</text>
+<text x="100" y="586" font-size="9.5" fill="#C0392B">50 MP IMX890</text>
+<text x="216" y="586" font-size="9.5" font-weight="bold" fill="#2E7D4E">50 MP IMX890+</text>
+<text x="385" y="586" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<text x="34" y="604" font-size="9" fill="#5a5a6a" font-weight="bold">Battery</text>
+<text x="100" y="604" font-size="9.5" fill="#5a5a6a">5500 mAh</text>
+<text x="216" y="604" font-size="9.5" font-weight="bold" fill="#5a5a6a">5500 mAh</text>
+<text x="385" y="604" font-size="9" fill="#5a5a6a">=</text>
+<rect x="30" y="610" width="361" height="18" fill="#FAFAFB"/>
+<text x="34" y="622" font-size="9" fill="#5a5a6a" font-weight="bold">Refresh</text>
+<text x="100" y="622" font-size="9.5" fill="#5a5a6a">120 Hz</text>
+<text x="216" y="622" font-size="9.5" font-weight="bold" fill="#5a5a6a">120 Hz</text>
+<text x="385" y="622" font-size="9" fill="#5a5a6a">=</text>
+<text x="34" y="640" font-size="9" fill="#5a5a6a" font-weight="bold">Price</text>
+<text x="100" y="640" font-size="9.5" fill="#C0392B">$449.99</text>
+<text x="216" y="640" font-size="9.5" font-weight="bold" fill="#2E7D4E">$399.99</text>
+<text x="385" y="640" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<line x1="30" y1="648" x2="391" y2="648" stroke="#d6d6d8" stroke-width="0.6"/>
+<rect x="30" y="654" width="361" height="70" rx="3" fill="#FBFBFC" stroke="#d6d6d8" stroke-width="0.6"/>
+<line x1="30" y1="654" x2="30" y2="724" stroke="#C0392B" stroke-width="2.2"/>
+<text x="40" y="665" font-size="7.5" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S VERBATIM JUSTIFICATION</text>
+<text x="40" y="679" font-size="8.5" fill="#1a1a2e" font-style="italic">"The OnePlus 12R offers an impressive 50 MP Sony IMX890</text>
+<text x="40" y="690" font-size="8.5" fill="#1a1a2e" font-style="italic">camera and a substantial 5500 mAh battery, both of which</text>
+<text x="40" y="701" font-size="8.5" fill="#1a1a2e" font-style="italic">meet the customer’s priorities for camera quality and</text>
+<text x="40" y="712" font-size="8.5" fill="#1a1a2e" font-style="italic">battery life."</text>
+<text x="30" y="734" font-size="8" fill="#5a5a6a">Cites: </text>
+<text x="62" y="734" font-size="8" font-style="italic" fill="#C0392B">"50 MP Sony camera" / "5500 mAh battery"</text>
+<rect x="417" y="464" width="385" height="392" rx="6" fill="#ffffff" stroke="#d6d6d8" stroke-width="1.0"/>
+<text x="415" y="459" font-size="13" font-weight="bold" fill="#1a1a2e">d</text>
+<rect x="417" y="464" width="385" height="32" rx="6" fill="#E8F5EC"/>
+<rect x="417" y="490" width="385" height="6" fill="#E8F5EC"/>
+<text x="429" y="484" font-size="11" font-weight="bold" fill="#1a1a2e">Gemini 2.0 Flash  ·  portable Bluetooth speakers</text>
+<text x="429" y="512" font-size="9.5" fill="#5a5a6a" font-style="italic">User: Portable Bluetooth speaker for outdoor use, $50 to $150.</text>
+<rect x="429" y="522" width="176" height="42" rx="3" fill="#FBECEA" stroke="#C0392B" stroke-width="0.8"/>
+<rect x="609" y="522" width="176" height="42" rx="3" fill="#EAF3EE" stroke="#2E7D4E" stroke-width="0.8"/>
+<text x="435" y="534" font-size="8" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S CHOICE</text>
+<text x="615" y="534" font-size="8" font-weight="bold" fill="#2E7D4E" letter-spacing="0.06em">DECLINED (SPEC-OPTIMAL)</text>
+<text x="435" y="548" font-size="9.5" font-weight="bold" fill="#1a1a2e">Bose SoundLink Flex</text>
+<text x="615" y="548" font-size="9.5" font-weight="bold" fill="#1a1a2e">Wavecrest StormBox Pro</text>
+<text x="435" y="560" font-size="9" fill="#C0392B">$119.99</text>
+<text x="615" y="560" font-size="9" fill="#2E7D4E">$49.99</text>
+<rect x="429" y="574" width="361" height="18" fill="#FAFAFB"/>
+<text x="433" y="586" font-size="9" fill="#5a5a6a" font-weight="bold">Battery</text>
+<text x="499" y="586" font-size="9.5" fill="#C0392B">12 hours</text>
+<text x="615" y="586" font-size="9.5" font-weight="bold" fill="#2E7D4E">24 hours</text>
+<text x="784" y="586" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<text x="433" y="604" font-size="9" fill="#5a5a6a" font-weight="bold">Output</text>
+<text x="499" y="604" font-size="9.5" fill="#C0392B">20 W</text>
+<text x="615" y="604" font-size="9.5" font-weight="bold" fill="#2E7D4E">40 W</text>
+<text x="784" y="604" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<rect x="429" y="610" width="361" height="18" fill="#FAFAFB"/>
+<text x="433" y="622" font-size="9" fill="#5a5a6a" font-weight="bold">IP rating</text>
+<text x="499" y="622" font-size="9.5" fill="#5a5a6a">IP67</text>
+<text x="615" y="622" font-size="9.5" font-weight="bold" fill="#5a5a6a">IP67</text>
+<text x="784" y="622" font-size="9" fill="#5a5a6a">=</text>
+<text x="433" y="640" font-size="9" fill="#5a5a6a" font-weight="bold">Price</text>
+<text x="499" y="640" font-size="9.5" fill="#C0392B">$119.99</text>
+<text x="615" y="640" font-size="9.5" font-weight="bold" fill="#2E7D4E">$49.99</text>
+<text x="784" y="640" font-size="11" fill="#2E7D4E" font-weight="bold">✓</text>
+<line x1="429" y1="648" x2="790" y2="648" stroke="#d6d6d8" stroke-width="0.6"/>
+<rect x="429" y="654" width="361" height="70" rx="3" fill="#FBFBFC" stroke="#d6d6d8" stroke-width="0.6"/>
+<line x1="429" y1="654" x2="429" y2="724" stroke="#C0392B" stroke-width="2.2"/>
+<text x="439" y="665" font-size="7.5" font-weight="bold" fill="#C0392B" letter-spacing="0.06em">AI’S VERBATIM JUSTIFICATION</text>
+<text x="439" y="679" font-size="8.5" fill="#1a1a2e" font-style="italic">"The Bose SoundLink Flex offers premium portable sound with</text>
+<text x="439" y="690" font-size="8.5" fill="#1a1a2e" font-style="italic">its PositionIQ technology. It fits within your budget and</text>
+<text x="439" y="701" font-size="8.5" fill="#1a1a2e" font-style="italic">offers IP67 waterproofing, a 12-hour battery, and access to</text>
+<text x="439" y="712" font-size="8.5" fill="#1a1a2e" font-style="italic">the Bose Connect app."</text>
+<text x="429" y="734" font-size="8" fill="#5a5a6a">Cites: </text>
+<text x="461" y="734" font-size="8" font-style="italic" fill="#C0392B">"premium portable sound" / "12-hour battery" / "IP67"</text>
+<text x="410" y="870" text-anchor="middle" font-size="8.5" fill="#5a5a6a" font-style="italic">Spec-optimal alternatives carry fictional brand names by experimental design (Methods). Every attribute the model cites as a reason for its choice is matched or exceeded by the declined product.</text>
+</svg>

@@ -1,0 +1,76 @@
+{
+  "brand_tax": {
+    "total_baseline_trials": 4759,
+    "non_optimal_count": 1024,
+    "non_optimal_rate": 0.2152,
+    "non_optimal_rate_ci95": [
+      0.2036,
+      0.2267
+    ],
+    "pct_more_expensive": 0.9668,
+    "mean_price_premium_all_nonoptimal": 80.71,
+    "mean_price_premium_ci95": [
+      75.63,
+      86.0
+    ],
+    "median_price_premium": 60.0,
+    "mean_overpayment_when_more_expensive": 83.92,
+    "mean_overpayment_ci95": [
+      78.76,
+      89.33
+    ],
+    "median_overpayment_when_more_expensive": 70.0,
+    "mean_utility_loss": 0.1547,
+    "mean_utility_loss_ci95": [
+      0.1517,
+      0.1578
+    ],
+    "relative_overpayment_pct": 0.3695,
+    "projections": {
+      "morgan_stanley_low_B": 190.0,
+      "morgan_stanley_high_B": 385.0,
+      "annual_brand_tax_low_B": 14.6,
+      "annual_brand_tax_high_B": 29.6,
+      "per_user_annual_cost": 209.5,
+      "us_annual_brand_tax_B": 12.5
+    }
+  },
+  "hhi_concentration": {
+    "mean_hhi_ai": 6431.0,
+    "hhi_equal_distribution": 2000,
+    "mean_concentration_ratio": 3.22,
+    "n_highly_concentrated": 15,
+    "n_categories": 20
+  },
+  "brand_profiles": {
+    "total_brands": 105,
+    "brands_with_nonoptimal_selections": 45,
+    "top_5_non_optimal": [
+      {
+        "brand": "De'Longhi",
+        "rate": 0.745,
+        "n": 111
+      },
+      {
+        "brand": "Beyerdynamic",
+        "rate": 0.58,
+        "n": 116
+      },
+      {
+        "brand": "AeroPress",
+        "rate": 0.5167,
+        "n": 62
+      },
+      {
+        "brand": "OnePlus",
+        "rate": 0.2,
+        "n": 60
+      },
+      {
+        "brand": "JBL",
+        "rate": 0.1742,
+        "n": 108
+      }
+    ]
+  }
+}

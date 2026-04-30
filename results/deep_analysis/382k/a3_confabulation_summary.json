@@ -1,0 +1,50 @@
+{
+  "analysis": "Confabulation Mechanism Deep Dive",
+  "n_baseline_nonoptimal": 2600,
+  "confabulation_rate_pct": 79.2,
+  "explicit_brand_rate_pct": 20.8,
+  "familiarity_distribution": {
+    "high": 1337,
+    "medium": 1234,
+    "low": 22,
+    "unknown": 7
+  },
+  "fabrication": {
+    "n_sampled": 0,
+    "n_response_available": 0,
+    "utility_loss_test": {
+      "U": 418312.5,
+      "p": 2.720271976537165e-19,
+      "confab_mean_loss": 0.1497,
+      "explicit_mean_loss": 0.1763
+    },
+    "familiarity_chi2": {
+      "chi2": 67.08,
+      "p": 0.0,
+      "dof": 1
+    }
+  },
+  "cross_tabulation": {
+    "false": {
+      "high": 973,
+      "low": 17,
+      "medium": 1061,
+      "unknown": 7,
+      "All": 2058
+    },
+    "true": {
+      "high": 364,
+      "low": 5,
+      "medium": 173,
+      "unknown": 0,
+      "All": 542
+    },
+    "All": {
+      "high": 1337,
+      "low": 22,
+      "medium": 1234,
+      "unknown": 7,
+      "All": 2600
+    }
+  }
+}

@@ -1,0 +1,3915 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "num_layers": 28,
+  "hidden_dim": 3584,
+  "target_layers": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    27
+  ],
+  "n_assortments": 34,
+  "n_trials_per_assortment": 6,
+  "n_trials_total": 204,
+  "n_optimal": 85,
+  "n_non_optimal": 119,
+  "optimal_rate": 0.4166666666666667,
+  "non_optimal_rate": 0.5833333333333334,
+  "probe_results": {
+    "target_layers": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      27
+    ],
+    "binary_accuracy_per_layer": [
+      0.7150000000000001,
+      0.7503658536585366,
+      0.8185365853658537,
+      0.8232926829268294,
+      0.8379268292682926,
+      0.8231707317073169,
+      0.8232926829268292,
+      0.838048780487805
+    ],
+    "brand_fam_accuracy_per_layer": [
+      0.7746341463414634,
+      0.8137804878048781,
+      0.8286585365853657,
+      0.7945121951219513,
+      0.7941463414634147,
+      0.8529268292682927,
+      0.8678048780487805,
+      0.8970731707317073
+    ],
+    "brand_accuracy_per_layer": [
+      0.049019607843137254,
+      0.049019607843137254,
+      0.049019607843137254,
+      0.049019607843137254,
+      0.049019607843137254,
+      0.049019607843137254,
+      0.049019607843137254,
+      0.049019607843137254
+    ],
+    "category_accuracy_per_layer": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9559756097560974,
+      0.9706097560975608,
+      0.9852439024390243
+    ]
+  },
+  "peak_binary": {
+    "layer": 27,
+    "accuracy": 0.838048780487805,
+    "chance": 0.5833333333333333,
+    "above_chance": 0.2547154471544717
+  },
+  "peak_brand_familiarity": {
+    "layer": 27,
+    "accuracy": 0.8970731707317073,
+    "chance": 0.7058823529411764,
+    "above_chance": 0.19119081779053093
+  },
+  "peak_brand": {
+    "layer": 0,
+    "accuracy": 0.049019607843137254,
+    "chance": 0.049019607843137254,
+    "above_chance": 0.0
+  },
+  "chance_baselines": {
+    "binary": 0.5833333333333333,
+    "brand_familiarity": 0.7058823529411764,
+    "brand": 0.049019607843137254,
+    "category": 0.08823529411764706
+  },
+  "unique_brands_chosen": [
+    "ASICS",
+    "ASUS",
+    "Acer",
+    "Adidas",
+    "AeroPress",
+    "Amazon",
+    "Arcwave",
+    "Audio-Technica",
+    "Auralis",
+    "Aurem",
+    "Beats",
+    "Beyerdynamic",
+    "Blendwell",
+    "Brevara",
+    "Chronex",
+    "Cuisinart",
+    "De'Longhi",
+    "Dell",
+    "Dentara",
+    "Ethicom",
+    "Fitbit",
+    "Fujifilm",
+    "Google",
+    "HOKA",
+    "HP",
+    "Herschel",
+    "Hydro Flask",
+    "HyperX",
+    "Insignia",
+    "JBL",
+    "JanSport",
+    "Keystrike",
+    "LG",
+    "Lenovo",
+    "Lumivue",
+    "Motorola",
+    "Mr. Coffee",
+    "Netgear",
+    "Netweave",
+    "Nike",
+    "Ninja",
+    "Novatech",
+    "OnePlus",
+    "Optivex",
+    "Portabrew",
+    "Presswell",
+    "Primebook",
+    "Salomon",
+    "Samsung",
+    "Shark",
+    "Shokz",
+    "Sonance",
+    "Sonaray",
+    "Sonique",
+    "Sony",
+    "Stridewell",
+    "Swiftform",
+    "The North Face",
+    "Thermalux",
+    "Trailpeak",
+    "Vaultdrive",
+    "Veridian",
+    "Vistara",
+    "Vizio",
+    "Vynex",
+    "Wavecrest"
+  ],
+  "n_unique_brands": 66,
+  "brand_distribution": {
+    "ASICS": 2,
+    "ASUS": 5,
+    "Acer": 5,
+    "Adidas": 1,
+    "AeroPress": 5,
+    "Amazon": 2,
+    "Arcwave": 1,
+    "Audio-Technica": 1,
+    "Auralis": 6,
+    "Aurem": 1,
+    "Beats": 2,
+    "Beyerdynamic": 4,
+    "Blendwell": 5,
+    "Brevara": 2,
+    "Chronex": 5,
+    "Cuisinart": 2,
+    "De'Longhi": 2,
+    "Dell": 1,
+    "Dentara": 6,
+    "Ethicom": 2,
+    "Fitbit": 1,
+    "Fujifilm": 1,
+    "Google": 6,
+    "HOKA": 2,
+    "HP": 4,
+    "Herschel": 1,
+    "Hydro Flask": 3,
+    "HyperX": 4,
+    "Insignia": 4,
+    "JBL": 8,
+    "JanSport": 2,
+    "Keystrike": 2,
+    "LG": 4,
+    "Lenovo": 4,
+    "Lumivue": 2,
+    "Motorola": 1,
+    "Mr. Coffee": 2,
+    "Netgear": 1,
+    "Netweave": 4,
+    "Nike": 4,
+    "Ninja": 1,
+    "Novatech": 3,
+    "OnePlus": 2,
+    "Optivex": 2,
+    "Portabrew": 1,
+    "Presswell": 4,
+    "Primebook": 1,
+    "Salomon": 1,
+    "Samsung": 10,
+    "Shark": 6,
+    "Shokz": 2,
+    "Sonance": 1,
+    "Sonaray": 5,
+    "Sonique": 1,
+    "Sony": 7,
+    "Stridewell": 2,
+    "Swiftform": 6,
+    "The North Face": 2,
+    "Thermalux": 3,
+    "Trailpeak": 1,
+    "Vaultdrive": 6,
+    "Veridian": 3,
+    "Vistara": 6,
+    "Vizio": 3,
+    "Vynex": 1,
+    "Wavecrest": 4
+  },
+  "timing": {
+    "model_load_s": 86.76535558700562,
+    "extraction_s": 44.55362105369568,
+    "total_s": 139.6962652206421
+  },
+  "trial_metadata": [
+    {
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Dell",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 46.75,
+        "B": 36.25,
+        "C": 36.25,
+        "D": 33.0,
+        "E": 34.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "trial_idx": 1,
+      "chosen_letter": "C",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 35.5,
+        "B": 34.75,
+        "C": 40.0,
+        "D": 31.875,
+        "E": 36.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "trial_idx": 2,
+      "chosen_letter": "D",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 36.0,
+        "B": 35.75,
+        "C": 33.0,
+        "D": 41.5,
+        "E": 35.0
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 46.25,
+        "B": 34.5,
+        "C": 34.75,
+        "D": 31.5,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "trial_idx": 4,
+      "chosen_letter": "D",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 38.75,
+        "B": 33.0,
+        "C": 32.75,
+        "D": 42.25,
+        "E": 34.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_laptops_01",
+      "category": "laptops",
+      "trial_idx": 5,
+      "chosen_letter": "C",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Acer",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 35.0,
+        "B": 32.75,
+        "C": 40.5,
+        "D": 33.75,
+        "E": 36.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 44.0,
+        "B": 36.0,
+        "C": 35.5,
+        "D": 35.5,
+        "E": 37.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.75,
+        "B": 36.5,
+        "C": 35.5,
+        "D": 35.5,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Novatech",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.75,
+        "B": 36.75,
+        "C": 37.0,
+        "D": 34.5,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "trial_idx": 3,
+      "chosen_letter": "D",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Lenovo",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 32.5,
+        "B": 35.5,
+        "C": 36.75,
+        "D": 38.25,
+        "E": 37.75
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 39.0,
+        "B": 37.25,
+        "C": 36.25,
+        "D": 37.75,
+        "E": 39.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_02",
+      "category": "laptops",
+      "trial_idx": 5,
+      "chosen_letter": "E",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 36.0,
+        "B": 35.5,
+        "C": 37.5,
+        "D": 36.75,
+        "E": 38.5
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Primebook",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 39.0,
+        "C": 35.0,
+        "D": 34.25,
+        "E": 36.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "trial_idx": 1,
+      "chosen_letter": "B",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 36.25,
+        "B": 37.5,
+        "C": 35.5,
+        "D": 35.75,
+        "E": 35.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "trial_idx": 2,
+      "chosen_letter": "B",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 34.75,
+        "B": 36.0,
+        "C": 35.0,
+        "D": 35.75,
+        "E": 35.5
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.75,
+        "B": 38.0,
+        "C": 36.25,
+        "D": 35.75,
+        "E": 38.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "HP",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.0,
+        "B": 38.5,
+        "C": 37.5,
+        "D": 35.0,
+        "E": 37.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_laptops_03",
+      "category": "laptops",
+      "trial_idx": 5,
+      "chosen_letter": "B",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 35.0,
+        "B": 37.0,
+        "C": 35.0,
+        "D": 36.25,
+        "E": 36.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "trial_idx": 0,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 34.0,
+        "B": 38.0,
+        "C": 35.75,
+        "D": 32.75,
+        "E": 36.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "trial_idx": 1,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 39.75,
+        "B": 33.75,
+        "C": 32.75,
+        "D": 33.5,
+        "E": 40.75
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "trial_idx": 2,
+      "chosen_letter": "E",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "OnePlus",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 28.625,
+        "B": 38.75,
+        "C": 32.25,
+        "D": 38.75,
+        "E": 39.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "trial_idx": 3,
+      "chosen_letter": "E",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 28.875,
+        "B": 38.0,
+        "C": 36.75,
+        "D": 31.75,
+        "E": 39.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "trial_idx": 4,
+      "chosen_letter": "B",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "OnePlus",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 30.625,
+        "B": 41.0,
+        "C": 32.5,
+        "D": 33.5,
+        "E": 41.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartphones_01",
+      "category": "smartphones",
+      "trial_idx": 5,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Veridian",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 32.75,
+        "B": 37.75,
+        "C": 31.625,
+        "D": 34.0,
+        "E": 39.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 46.75,
+        "B": 36.75,
+        "C": 35.75,
+        "D": 33.0,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 46.75,
+        "B": 36.75,
+        "C": 35.75,
+        "D": 33.0,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 44.75,
+        "B": 34.0,
+        "C": 36.0,
+        "D": 38.0,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Motorola",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 41.25,
+        "B": 40.5,
+        "C": 33.75,
+        "D": 38.25,
+        "E": 37.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Ethicom",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 44.75,
+        "B": 35.25,
+        "C": 35.5,
+        "D": 33.5,
+        "E": 36.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_02",
+      "category": "smartphones",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Ethicom",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 44.5,
+        "B": 37.5,
+        "C": 37.5,
+        "D": 32.75,
+        "E": 37.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 46.0,
+        "B": 37.75,
+        "C": 37.0,
+        "D": 35.5,
+        "E": 35.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "trial_idx": 1,
+      "chosen_letter": "B",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 31.375,
+        "B": 43.75,
+        "C": 34.75,
+        "D": 36.75,
+        "E": 38.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "trial_idx": 2,
+      "chosen_letter": "B",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 30.75,
+        "B": 44.25,
+        "C": 34.25,
+        "D": 36.25,
+        "E": 39.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Aurem",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.0,
+        "B": 40.5,
+        "C": 36.0,
+        "D": 34.25,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 40.5,
+        "B": 37.25,
+        "C": 36.75,
+        "D": 38.25,
+        "E": 37.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartphones_03",
+      "category": "smartphones",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 46.0,
+        "B": 37.25,
+        "C": 36.75,
+        "D": 35.25,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.0,
+        "B": 34.5,
+        "C": 34.5,
+        "D": 38.0,
+        "E": 40.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 46.25,
+        "B": 38.5,
+        "C": 36.0,
+        "D": 34.0,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "trial_idx": 2,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 42.25,
+        "C": 35.0,
+        "D": 37.0,
+        "E": 36.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "trial_idx": 3,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 35.0,
+        "B": 38.25,
+        "C": 39.5,
+        "D": 34.0,
+        "E": 37.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Vizio",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 39.25,
+        "B": 37.25,
+        "C": 34.75,
+        "D": 33.5,
+        "E": 39.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_01",
+      "category": "tvs",
+      "trial_idx": 5,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 34.5,
+        "C": 34.0,
+        "D": 43.5,
+        "E": 36.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 39.75,
+        "B": 38.25,
+        "C": 38.0,
+        "D": 34.5,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "LG",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 40.0,
+        "B": 36.75,
+        "C": 34.75,
+        "D": 37.25,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 38.75,
+        "C": 36.25,
+        "D": 35.5,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.25,
+        "B": 38.0,
+        "C": 35.75,
+        "D": 35.25,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Vistara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 44.0,
+        "B": 39.0,
+        "C": 36.25,
+        "D": 33.75,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_02",
+      "category": "tvs",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 41.25,
+        "B": 38.5,
+        "C": 36.25,
+        "D": 36.5,
+        "E": 37.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 47.25,
+        "B": 36.25,
+        "C": 35.5,
+        "D": 35.25,
+        "E": 34.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "trial_idx": 1,
+      "chosen_letter": "D",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 36.25,
+        "B": 35.5,
+        "C": 33.0,
+        "D": 41.75,
+        "E": 38.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Vizio",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 43.0,
+        "B": 40.0,
+        "C": 33.5,
+        "D": 33.0,
+        "E": 38.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Vizio",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 42.0,
+        "B": 40.5,
+        "C": 33.5,
+        "D": 35.75,
+        "E": 38.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 45.5,
+        "B": 36.5,
+        "C": 36.5,
+        "D": 36.0,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tvs_03",
+      "category": "tvs",
+      "trial_idx": 5,
+      "chosen_letter": "B",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Insignia",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 38.0,
+        "B": 41.75,
+        "C": 32.5,
+        "D": 34.25,
+        "E": 40.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.0,
+        "B": 33.25,
+        "C": 35.5,
+        "D": 37.0,
+        "E": 40.5
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 41.75,
+        "B": 34.75,
+        "C": 35.5,
+        "D": 41.0,
+        "E": 37.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "trial_idx": 2,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.5,
+        "B": 35.75,
+        "C": 34.5,
+        "D": 41.0,
+        "E": 37.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "trial_idx": 3,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 33.0,
+        "C": 35.5,
+        "D": 41.5,
+        "E": 37.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 45.5,
+        "B": 36.25,
+        "C": 34.25,
+        "D": 38.25,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_01",
+      "category": "headphones",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Sonaray",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 46.5,
+        "B": 37.0,
+        "C": 34.5,
+        "D": 33.5,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "trial_idx": 0,
+      "chosen_letter": "D",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 30.375,
+        "B": 38.0,
+        "C": 34.5,
+        "D": 42.75,
+        "E": 39.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "trial_idx": 1,
+      "chosen_letter": "D",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 30.625,
+        "B": 33.5,
+        "C": 37.5,
+        "D": 42.25,
+        "E": 40.0
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Beats",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.0,
+        "B": 37.5,
+        "C": 38.75,
+        "D": 34.75,
+        "E": 38.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "trial_idx": 3,
+      "chosen_letter": "E",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Beats",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 31.25,
+        "B": 37.5,
+        "C": 37.0,
+        "D": 40.0,
+        "E": 41.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "trial_idx": 4,
+      "chosen_letter": "D",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 31.25,
+        "B": 38.25,
+        "C": 34.5,
+        "D": 42.75,
+        "E": 40.0
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_headphones_02",
+      "category": "headphones",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Sonique",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 41.5,
+        "B": 38.25,
+        "C": 37.75,
+        "D": 35.25,
+        "E": 39.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "trial_idx": 0,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Arcwave",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 39.5,
+        "B": 33.0,
+        "C": 40.0,
+        "D": 38.5,
+        "E": 35.5
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Audio-Technica",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 40.25,
+        "C": 38.75,
+        "D": 33.0,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 45.5,
+        "B": 35.5,
+        "C": 34.0,
+        "D": 38.0,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 48.0,
+        "B": 37.25,
+        "C": 34.0,
+        "D": 32.5,
+        "E": 33.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 45.75,
+        "B": 38.75,
+        "C": 35.5,
+        "D": 33.5,
+        "E": 36.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_headphones_03",
+      "category": "headphones",
+      "trial_idx": 5,
+      "chosen_letter": "D",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Beyerdynamic",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.5,
+        "B": 38.75,
+        "C": 36.5,
+        "D": 40.75,
+        "E": 34.75
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "trial_idx": 0,
+      "chosen_letter": "D",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "ASICS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 35.75,
+        "B": 34.0,
+        "C": 38.25,
+        "D": 38.5,
+        "E": 37.75
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Adidas",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 39.5,
+        "B": 39.0,
+        "C": 38.5,
+        "D": 37.0,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 42.25,
+        "B": 39.25,
+        "C": 36.25,
+        "D": 39.0,
+        "E": 34.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.0,
+        "B": 38.5,
+        "C": 36.25,
+        "D": 38.75,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "trial_idx": 4,
+      "chosen_letter": "B",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "ASICS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 37.75,
+        "B": 39.5,
+        "C": 35.25,
+        "D": 39.25,
+        "E": 36.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_running_shoes_01",
+      "category": "running_shoes",
+      "trial_idx": 5,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Stridewell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 38.25,
+        "B": 35.25,
+        "C": 35.0,
+        "D": 38.25,
+        "E": 39.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "HOKA",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 46.75,
+        "B": 38.75,
+        "C": 36.25,
+        "D": 35.0,
+        "E": 36.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "HOKA",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 44.25,
+        "B": 37.5,
+        "C": 36.25,
+        "D": 39.75,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Salomon",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 47.0,
+        "B": 40.5,
+        "C": 35.5,
+        "D": 34.75,
+        "E": 33.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 41.0,
+        "B": 35.75,
+        "C": 39.5,
+        "D": 37.0,
+        "E": 38.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.5,
+        "B": 38.75,
+        "C": 39.5,
+        "D": 35.25,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_02",
+      "category": "running_shoes",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Nike",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.5,
+        "B": 41.0,
+        "C": 36.0,
+        "D": 35.75,
+        "E": 37.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 30.125,
+        "B": 30.375,
+        "C": 28.75,
+        "D": 32.25,
+        "E": 41.5
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "trial_idx": 1,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 32.0,
+        "B": 44.75,
+        "C": 30.625,
+        "D": 32.5,
+        "E": 38.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 46.5,
+        "B": 34.75,
+        "C": 32.5,
+        "D": 32.0,
+        "E": 34.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "trial_idx": 3,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 30.75,
+        "B": 27.75,
+        "C": 39.25,
+        "D": 27.375,
+        "E": 33.75
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "trial_idx": 4,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 31.0,
+        "B": 31.125,
+        "C": 29.125,
+        "D": 42.25,
+        "E": 34.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_running_shoes_03",
+      "category": "running_shoes",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Swiftform",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 47.0,
+        "B": 35.25,
+        "C": 33.25,
+        "D": 31.5,
+        "E": 35.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Brevara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 46.25,
+        "B": 38.5,
+        "C": 36.75,
+        "D": 34.25,
+        "E": 34.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 44.0,
+        "B": 37.0,
+        "C": 39.0,
+        "D": 34.0,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Cuisinart",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 35.75,
+        "C": 40.5,
+        "D": 34.5,
+        "E": 35.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "trial_idx": 3,
+      "chosen_letter": "B",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Mr. Coffee",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 35.75,
+        "B": 38.75,
+        "C": 34.75,
+        "D": 38.5,
+        "E": 37.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "trial_idx": 4,
+      "chosen_letter": "B",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Mr. Coffee",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 35.75,
+        "B": 38.75,
+        "C": 34.75,
+        "D": 38.5,
+        "E": 37.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_01",
+      "category": "coffee_makers",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Brevara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 45.5,
+        "B": 37.0,
+        "C": 36.5,
+        "D": 33.5,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Presswell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 42.25,
+        "B": 38.5,
+        "C": 34.75,
+        "D": 33.0,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Presswell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 45.25,
+        "B": 36.75,
+        "C": 34.5,
+        "D": 36.0,
+        "E": 33.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 44.25,
+        "B": 39.25,
+        "C": 36.0,
+        "D": 36.0,
+        "E": 34.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Presswell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 42.75,
+        "B": 37.75,
+        "C": 34.0,
+        "D": 32.5,
+        "E": 38.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Presswell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 42.75,
+        "B": 37.75,
+        "C": 34.0,
+        "D": 32.5,
+        "E": 38.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_02",
+      "category": "coffee_makers",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "De'Longhi",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 46.0,
+        "B": 35.25,
+        "C": 36.0,
+        "D": 34.75,
+        "E": 34.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "trial_idx": 0,
+      "chosen_letter": "B",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 38.25,
+        "B": 41.5,
+        "C": 31.625,
+        "D": 31.125,
+        "E": 38.75
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "trial_idx": 1,
+      "chosen_letter": "C",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 37.0,
+        "B": 33.25,
+        "C": 43.5,
+        "D": 28.5,
+        "E": 37.75
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "trial_idx": 2,
+      "chosen_letter": "B",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 41.0,
+        "B": 44.25,
+        "C": 32.5,
+        "D": 33.75,
+        "E": 34.5
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Portabrew",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 42.75,
+        "B": 42.75,
+        "C": 33.5,
+        "D": 30.75,
+        "E": 34.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "trial_idx": 4,
+      "chosen_letter": "C",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 36.75,
+        "B": 32.75,
+        "C": 41.5,
+        "D": 31.25,
+        "E": 37.75
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_coffee_makers_03",
+      "category": "coffee_makers",
+      "trial_idx": 5,
+      "chosen_letter": "C",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "AeroPress",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 37.5,
+        "B": 32.5,
+        "C": 42.25,
+        "D": 33.0,
+        "E": 35.5
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 33.5,
+        "B": 35.25,
+        "C": 33.75,
+        "D": 37.75,
+        "E": 39.5
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.75,
+        "B": 37.0,
+        "C": 35.75,
+        "D": 34.5,
+        "E": 38.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "trial_idx": 2,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.75,
+        "B": 35.0,
+        "C": 41.25,
+        "D": 33.5,
+        "E": 40.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 45.25,
+        "B": 36.75,
+        "C": 36.0,
+        "D": 35.25,
+        "E": 40.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "trial_idx": 4,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 37.25,
+        "B": 34.0,
+        "C": 35.0,
+        "D": 43.0,
+        "E": 38.0
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_earbuds_01",
+      "category": "wireless_earbuds",
+      "trial_idx": 5,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Auralis",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 35.75,
+        "B": 33.75,
+        "C": 40.5,
+        "D": 33.75,
+        "E": 40.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Google",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.0,
+        "B": 36.75,
+        "C": 34.75,
+        "D": 30.75,
+        "E": 37.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 44.75,
+        "B": 38.75,
+        "C": 35.25,
+        "D": 37.0,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 44.0,
+        "B": 37.5,
+        "C": 39.0,
+        "D": 33.25,
+        "E": 34.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.75,
+        "B": 38.75,
+        "C": 35.5,
+        "D": 32.0,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Sonance",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 41.25,
+        "B": 38.5,
+        "C": 35.25,
+        "D": 31.5,
+        "E": 38.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_02",
+      "category": "wireless_earbuds",
+      "trial_idx": 5,
+      "chosen_letter": "D",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 29.0,
+        "B": 39.0,
+        "C": 32.5,
+        "D": 41.5,
+        "E": 39.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Shokz",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.0,
+        "B": 36.5,
+        "C": 33.75,
+        "D": 39.25,
+        "E": 34.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 39.5,
+        "C": 34.5,
+        "D": 34.75,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 41.75,
+        "B": 36.25,
+        "C": 39.25,
+        "D": 34.5,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Shokz",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 41.5,
+        "B": 35.75,
+        "C": 37.0,
+        "D": 34.0,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Vynex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 46.0,
+        "B": 36.0,
+        "C": 35.25,
+        "D": 34.25,
+        "E": 35.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_earbuds_03",
+      "category": "wireless_earbuds",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 41.25,
+        "C": 37.0,
+        "D": 34.25,
+        "E": 34.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 38.0,
+        "B": 35.5,
+        "C": 34.25,
+        "D": 35.0,
+        "E": 40.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "trial_idx": 1,
+      "chosen_letter": "C",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Fitbit",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 39.0,
+        "B": 34.75,
+        "C": 40.5,
+        "D": 39.5,
+        "E": 34.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "trial_idx": 2,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 34.5,
+        "B": 40.25,
+        "C": 34.5,
+        "D": 38.0,
+        "E": 37.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "trial_idx": 3,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 35.25,
+        "B": 33.0,
+        "C": 33.5,
+        "D": 38.75,
+        "E": 40.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "trial_idx": 4,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 30.625,
+        "B": 40.75,
+        "C": 34.0,
+        "D": 40.0,
+        "E": 39.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_smartwatches_01",
+      "category": "smartwatches",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Chronex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 41.75,
+        "B": 37.0,
+        "C": 34.0,
+        "D": 33.75,
+        "E": 41.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 44.25,
+        "B": 39.0,
+        "C": 36.0,
+        "D": 33.75,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "trial_idx": 1,
+      "chosen_letter": "B",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 29.75,
+        "B": 40.25,
+        "C": 37.0,
+        "D": 38.0,
+        "E": 37.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "trial_idx": 2,
+      "chosen_letter": "E",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 31.0,
+        "B": 37.25,
+        "C": 37.0,
+        "D": 34.25,
+        "E": 41.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "trial_idx": 3,
+      "chosen_letter": "D",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 38.0,
+        "B": 33.5,
+        "C": 35.75,
+        "D": 38.5,
+        "E": 38.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "trial_idx": 4,
+      "chosen_letter": "D",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 30.125,
+        "B": 36.75,
+        "C": 37.5,
+        "D": 40.5,
+        "E": 35.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_robot_vacuums_01",
+      "category": "robot_vacuums",
+      "trial_idx": 5,
+      "chosen_letter": "E",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Shark",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.0,
+        "B": 33.25,
+        "C": 35.75,
+        "D": 32.25,
+        "E": 40.75
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "trial_idx": 0,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 41.5,
+        "B": 42.25,
+        "C": 36.0,
+        "D": 34.75,
+        "E": 35.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "trial_idx": 1,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 43.25,
+        "C": 34.25,
+        "D": 33.5,
+        "E": 36.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "trial_idx": 2,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 41.5,
+        "B": 43.5,
+        "C": 34.5,
+        "D": 34.0,
+        "E": 34.75
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "JBL",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 36.75,
+        "C": 35.25,
+        "D": 39.75,
+        "E": 34.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 37.0,
+        "C": 33.25,
+        "D": 38.25,
+        "E": 35.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_portable_speakers_01",
+      "category": "portable_speakers",
+      "trial_idx": 5,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Wavecrest",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 39.0,
+        "B": 40.75,
+        "C": 34.75,
+        "D": 36.25,
+        "E": 35.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "trial_idx": 0,
+      "chosen_letter": "D",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "HyperX",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 35.25,
+        "B": 38.5,
+        "C": 35.0,
+        "D": 41.25,
+        "E": 36.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "HyperX",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 45.0,
+        "B": 37.75,
+        "C": 37.25,
+        "D": 35.0,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 45.0,
+        "B": 40.5,
+        "C": 36.0,
+        "D": 34.25,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "trial_idx": 3,
+      "chosen_letter": "E",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "HyperX",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 35.75,
+        "B": 38.5,
+        "C": 34.75,
+        "D": 36.5,
+        "E": 40.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Keystrike",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.75,
+        "B": 35.5,
+        "C": 34.5,
+        "D": 34.5,
+        "E": 37.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_keyboards_01",
+      "category": "keyboards",
+      "trial_idx": 5,
+      "chosen_letter": "D",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "HyperX",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 37.75,
+        "B": 39.0,
+        "C": 36.0,
+        "D": 41.5,
+        "E": 36.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "trial_idx": 0,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.75,
+        "B": 33.75,
+        "C": 31.625,
+        "D": 39.0,
+        "E": 33.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "trial_idx": 1,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 34.25,
+        "B": 38.25,
+        "C": 34.25,
+        "D": 36.5,
+        "E": 39.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "trial_idx": 2,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.5,
+        "B": 31.875,
+        "C": 39.75,
+        "D": 30.5,
+        "E": 35.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 46.5,
+        "B": 36.5,
+        "C": 36.0,
+        "D": 34.75,
+        "E": 34.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "trial_idx": 4,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 37.25,
+        "B": 35.75,
+        "C": 33.5,
+        "D": 33.75,
+        "E": 39.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_external_ssds_01",
+      "category": "external_ssds",
+      "trial_idx": 5,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Vaultdrive",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.75,
+        "B": 31.125,
+        "C": 38.25,
+        "D": 30.375,
+        "E": 33.0
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "trial_idx": 0,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Thermalux",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.0,
+        "B": 30.625,
+        "C": 30.0,
+        "D": 43.25,
+        "E": 33.75
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "trial_idx": 1,
+      "chosen_letter": "C",
+      "optimal_letter": "A",
+      "chose_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 39.0,
+        "B": 34.75,
+        "C": 41.25,
+        "D": 31.0,
+        "E": 34.75
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "trial_idx": 2,
+      "chosen_letter": "C",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 37.0,
+        "B": 39.0,
+        "C": 41.0,
+        "D": 30.5,
+        "E": 34.5
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "trial_idx": 3,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Thermalux",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 29.75,
+        "B": 27.875,
+        "C": 41.5,
+        "D": 31.375,
+        "E": 36.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "trial_idx": 4,
+      "chosen_letter": "E",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Hydro Flask",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 28.375,
+        "B": 34.75,
+        "C": 38.5,
+        "D": 28.625,
+        "E": 40.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_water_bottles_01",
+      "category": "water_bottles",
+      "trial_idx": 5,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Thermalux",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 27.75,
+        "B": 28.75,
+        "C": 40.5,
+        "D": 34.75,
+        "E": 36.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "trial_idx": 0,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 31.875,
+        "B": 35.0,
+        "C": 40.25,
+        "D": 37.75,
+        "E": 36.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "trial_idx": 1,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 40.75,
+        "B": 33.5,
+        "C": 35.0,
+        "D": 42.25,
+        "E": 33.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "trial_idx": 2,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 31.75,
+        "B": 36.75,
+        "C": 37.75,
+        "D": 35.5,
+        "E": 37.0
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "trial_idx": 3,
+      "chosen_letter": "B",
+      "optimal_letter": "B",
+      "chose_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 32.25,
+        "B": 42.75,
+        "C": 35.0,
+        "D": 38.75,
+        "E": 35.25
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.5,
+        "B": 39.75,
+        "C": 35.0,
+        "D": 35.25,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_electric_toothbrushes_01",
+      "category": "electric_toothbrushes",
+      "trial_idx": 5,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Dentara",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 37.0,
+        "B": 36.0,
+        "C": 34.5,
+        "D": 40.25,
+        "E": 33.0
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "The North Face",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 33.75,
+        "C": 38.75,
+        "D": 33.5,
+        "E": 39.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "JanSport",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 45.75,
+        "B": 39.5,
+        "C": 37.5,
+        "D": 33.0,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "The North Face",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 44.25,
+        "B": 35.25,
+        "C": 36.5,
+        "D": 37.25,
+        "E": 38.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Trailpeak",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 37.75,
+        "C": 35.0,
+        "D": 38.25,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "trial_idx": 4,
+      "chosen_letter": "E",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "JanSport",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 28.625,
+        "B": 38.25,
+        "C": 39.75,
+        "D": 36.0,
+        "E": 40.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_backpacks_01",
+      "category": "backpacks",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Herschel",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 47.25,
+        "B": 37.0,
+        "C": 36.75,
+        "D": 31.875,
+        "E": 37.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "trial_idx": 0,
+      "chosen_letter": "B",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Ninja",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 33.5,
+        "B": 42.25,
+        "C": 38.0,
+        "D": 34.75,
+        "E": 36.5
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "trial_idx": 1,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 32.5,
+        "B": 36.25,
+        "C": 32.5,
+        "D": 42.0,
+        "E": 40.25
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "trial_idx": 2,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 29.25,
+        "B": 38.5,
+        "C": 30.5,
+        "D": 38.5,
+        "E": 41.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "trial_idx": 3,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 34.5,
+        "B": 32.75,
+        "C": 38.0,
+        "D": 34.25,
+        "E": 40.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "trial_idx": 4,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 41.0,
+        "B": 37.0,
+        "C": 35.5,
+        "D": 41.25,
+        "E": 36.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_blenders_01",
+      "category": "blenders",
+      "trial_idx": 5,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Blendwell",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 31.0,
+        "B": 39.5,
+        "C": 40.0,
+        "D": 34.0,
+        "E": 39.0
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Netweave",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 45.25,
+        "B": 36.75,
+        "C": 36.25,
+        "D": 34.5,
+        "E": 35.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "trial_idx": 1,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Netweave",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 39.5,
+        "B": 34.5,
+        "C": 33.0,
+        "D": 33.25,
+        "E": 40.5
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "trial_idx": 2,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Netweave",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 36.75,
+        "B": 37.75,
+        "C": 34.25,
+        "D": 33.5,
+        "E": 38.5
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "trial_idx": 3,
+      "chosen_letter": "D",
+      "optimal_letter": "D",
+      "chose_optimal": true,
+      "chosen_brand": "Netweave",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 38.25,
+        "B": 35.25,
+        "C": 32.25,
+        "D": 40.25,
+        "E": 35.75
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Netgear",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 41.25,
+        "B": 37.0,
+        "C": 38.25,
+        "D": 34.5,
+        "E": 36.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_wireless_routers_01",
+      "category": "wireless_routers",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.5,
+        "B": 36.5,
+        "C": 35.25,
+        "D": 34.0,
+        "E": 38.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "trial_idx": 0,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "LG",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 43.75,
+        "B": 37.75,
+        "C": 34.5,
+        "D": 31.875,
+        "E": 33.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 44.25,
+        "B": 37.0,
+        "C": 34.0,
+        "D": 33.0,
+        "E": 36.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "LG",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 44.0,
+        "B": 39.0,
+        "C": 34.5,
+        "D": 32.25,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "A",
+      "chose_optimal": true,
+      "chosen_brand": "Lumivue",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 43.25,
+        "B": 37.5,
+        "C": 34.75,
+        "D": 34.5,
+        "E": 36.0
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "LG",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 41.75,
+        "B": 35.75,
+        "C": 38.75,
+        "D": 31.875,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_monitors_01",
+      "category": "monitors",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "ASUS",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.25,
+        "B": 38.5,
+        "C": 34.75,
+        "D": 38.5,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Lenovo",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 34.0,
+        "B": 36.25,
+        "C": 36.0,
+        "D": 34.75,
+        "E": 37.25
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "trial_idx": 1,
+      "chosen_letter": "D",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Samsung",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 35.25,
+        "B": 36.25,
+        "C": 36.0,
+        "D": 38.75,
+        "E": 36.5
+      },
+      "argmax_decoded": "D"
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Amazon",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.5,
+        "B": 38.75,
+        "C": 36.75,
+        "D": 34.75,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "trial_idx": 3,
+      "chosen_letter": "B",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Amazon",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 39.25,
+        "B": 39.75,
+        "C": 36.0,
+        "D": 36.25,
+        "E": 35.0
+      },
+      "argmax_decoded": "B"
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "trial_idx": 4,
+      "chosen_letter": "A",
+      "optimal_letter": "E",
+      "chose_optimal": false,
+      "chosen_brand": "Lenovo",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 39.0,
+        "B": 36.5,
+        "C": 35.5,
+        "D": 38.25,
+        "E": 36.25
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_tablets_01",
+      "category": "tablets",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "B",
+      "chose_optimal": false,
+      "chosen_brand": "Lenovo",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 40.0,
+        "B": 37.25,
+        "C": 36.5,
+        "D": 34.75,
+        "E": 36.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "trial_idx": 0,
+      "chosen_letter": "E",
+      "optimal_letter": "E",
+      "chose_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 34.75,
+        "B": 37.25,
+        "C": 34.75,
+        "D": 37.75,
+        "E": 38.0
+      },
+      "argmax_decoded": "E"
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "trial_idx": 1,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 41.75,
+        "B": 37.0,
+        "C": 37.25,
+        "D": 35.0,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "trial_idx": 2,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.25,
+        "B": 37.25,
+        "C": 34.5,
+        "D": 38.0,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "trial_idx": 3,
+      "chosen_letter": "A",
+      "optimal_letter": "D",
+      "chose_optimal": false,
+      "chosen_brand": "Fujifilm",
+      "chosen_brand_familiarity": "medium",
+      "letter_logits": {
+        "A": 38.5,
+        "B": 36.25,
+        "C": 37.25,
+        "D": 37.5,
+        "E": 35.75
+      },
+      "argmax_decoded": "A"
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "trial_idx": 4,
+      "chosen_letter": "C",
+      "optimal_letter": "C",
+      "chose_optimal": true,
+      "chosen_brand": "Optivex",
+      "chosen_brand_familiarity": "low",
+      "letter_logits": {
+        "A": 35.75,
+        "B": 37.75,
+        "C": 38.0,
+        "D": 34.75,
+        "E": 37.25
+      },
+      "argmax_decoded": "C"
+    },
+    {
+      "assortment_id": "sr_cameras_01",
+      "category": "cameras",
+      "trial_idx": 5,
+      "chosen_letter": "A",
+      "optimal_letter": "C",
+      "chose_optimal": false,
+      "chosen_brand": "Sony",
+      "chosen_brand_familiarity": "high",
+      "letter_logits": {
+        "A": 42.25,
+        "B": 37.75,
+        "C": 37.75,
+        "D": 35.25,
+        "E": 35.5
+      },
+      "argmax_decoded": "A"
+    }
+  ],
+  "timestamp": "2026-04-05T01:56:28.229089"
+}

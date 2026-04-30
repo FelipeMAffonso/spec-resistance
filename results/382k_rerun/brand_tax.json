@@ -1,0 +1,131 @@
+{
+  "n_trials": 2593,
+  "n_steered_expensive": 2443,
+  "pct_steered_expensive": 94.22,
+  "overpayment_mean_pct": 44.84,
+  "overpayment_median_pct": 41.67,
+  "all_diff_mean_pct": 41.79,
+  "all_diff_median_pct": 40.0,
+  "by_category": {
+    "backpacks": {
+      "n": 31,
+      "pct_expensive": 96.8,
+      "mean_diff_pct": 59.8,
+      "median_diff_pct": 80.0
+    },
+    "blenders": {
+      "n": 74,
+      "pct_expensive": 25.7,
+      "mean_diff_pct": 18.2,
+      "median_diff_pct": -9.1
+    },
+    "cameras": {
+      "n": 30,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 19.1,
+      "median_diff_pct": 20.0
+    },
+    "coffee_makers": {
+      "n": 586,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 38.3,
+      "median_diff_pct": 20.0
+    },
+    "electric_toothbrushes": {
+      "n": 34,
+      "pct_expensive": 67.6,
+      "mean_diff_pct": 16.9,
+      "median_diff_pct": 25.0
+    },
+    "external_ssds": {
+      "n": 4,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 47.2,
+      "median_diff_pct": 44.4
+    },
+    "headphones": {
+      "n": 473,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 58.3,
+      "median_diff_pct": 42.9
+    },
+    "keyboards": {
+      "n": 4,
+      "pct_expensive": 25.0,
+      "mean_diff_pct": -6.8,
+      "median_diff_pct": -18.2
+    },
+    "laptops": {
+      "n": 257,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 40.1,
+      "median_diff_pct": 41.7
+    },
+    "monitors": {
+      "n": 41,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 22.6,
+      "median_diff_pct": 20.0
+    },
+    "portable_speakers": {
+      "n": 86,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 87.9,
+      "median_diff_pct": 100.0
+    },
+    "robot_vacuums": {
+      "n": 62,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 28.6,
+      "median_diff_pct": 18.4
+    },
+    "running_shoes": {
+      "n": 138,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 18.9,
+      "median_diff_pct": 20.0
+    },
+    "smartphones": {
+      "n": 208,
+      "pct_expensive": 97.6,
+      "mean_diff_pct": 32.0,
+      "median_diff_pct": 25.0
+    },
+    "smartwatches": {
+      "n": 46,
+      "pct_expensive": 60.9,
+      "mean_diff_pct": 7.8,
+      "median_diff_pct": 20.0
+    },
+    "tablets": {
+      "n": 111,
+      "pct_expensive": 98.2,
+      "mean_diff_pct": 32.4,
+      "median_diff_pct": 20.0
+    },
+    "tvs": {
+      "n": 142,
+      "pct_expensive": 99.3,
+      "mean_diff_pct": 35.4,
+      "median_diff_pct": 40.0
+    },
+    "water_bottles": {
+      "n": 33,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 114.8,
+      "median_diff_pct": 124.9
+    },
+    "wireless_earbuds": {
+      "n": 208,
+      "pct_expensive": 74.0,
+      "mean_diff_pct": 48.7,
+      "median_diff_pct": 25.0
+    },
+    "wireless_routers": {
+      "n": 25,
+      "pct_expensive": 100.0,
+      "mean_diff_pct": 42.9,
+      "median_diff_pct": 53.3
+    }
+  }
+}

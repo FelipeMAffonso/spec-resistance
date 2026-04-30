@@ -1,0 +1,350 @@
+========================================================================
+  HORSE RACE ANALYSIS: Training Data Frequency vs. Brand Equity
+  vs. Real-World Popularity as Predictors of LLM Brand Preference
+========================================================================
+  Timestamp: 2026-04-04 15:04:27
+  Output directory: C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\results\01-brand-frequency
+
+
+========================================================================
+  DATA LOADING
+========================================================================
+
+========================================================================
+  DATA MERGING
+========================================================================
+
+  Saved merged dataset: C:\Users\natal\Dropbox\Felipe\CLAUDE CODE\academic-research\projects\spec-resistance\nature-rr\results\01-brand-frequency\horse_race_merged.csv
+
+========================================================================
+  ANALYSIS 1: Descriptive Scatter Plot
+========================================================================
+  Pearson r = -0.2733, p = 0.019287
+  Spearman rho = -0.0906, p = 0.445775
+  All brands (incl. fictional): r = 0.2499, p = 0.008471, n = 110
+
+--- Fictional vs. Real Brand Comparison ---
+  Real mean non-opt rate:      0.0372 (SD = 0.0587, n = 73)
+  Fictional mean non-opt rate:  0.0025 (SD = 0.0040, n = 37)
+  Welch's t = 5.026, p = 0.000003
+  Mann-Whitney U = 2564.5, p = 0.000000
+
+  Saved: scatter_frequency_vs_preference.png/pdf
+
+========================================================================
+  ANALYSIS 2: Papke-Wooldridge Fractional Logit
+========================================================================
+  N brands in analysis: 110
+  DV range: [0.000001, 0.330304]
+
+--- Model A: Frequency Only ---
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                     dv   No. Observations:                  110
+Model:                            GLM   Df Residuals:                  1333482
+Model Family:                Binomial   Df Model:                            1
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -1.4682e+05
+Date:                Sat, 04 Apr 2026   Deviance:                       49451.
+Time:                        15:04:32   Pearson chi2:                 8.39e+04
+No. Iterations:                     7   Pseudo R-squ. (CS):             0.9274
+Covariance Type:                  HC1                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -3.1661      0.005   -686.098      0.000      -3.175      -3.157
+log_freq      -0.0213      0.000    -75.332      0.000      -0.022      -0.021
+==============================================================================
+
+--- Model B: Frequency + Utility Gap ---
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                     dv   No. Observations:                  110
+Model:                            GLM   Df Residuals:                  1333481
+Model Family:                Binomial   Df Model:                            2
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -1.4035e+05
+Date:                Sat, 04 Apr 2026   Deviance:                       36501.
+Time:                        15:04:32   Pearson chi2:                 5.02e+04
+No. Iterations:                     7   Pseudo R-squ. (CS):              1.000
+Covariance Type:                  HC1                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -3.9890      0.004   -895.821      0.000      -3.998      -3.980
+log_freq            -0.0303      0.000   -102.139      0.000      -0.031      -0.030
+avg_utility_loss    41.8017      0.076    547.107      0.000      41.652      41.951
+====================================================================================
+
+--- Model C: Frequency + Popularity Proxies ---
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                     dv   No. Observations:                   80
+Model:                            GLM   Df Residuals:                  1024673
+Model Family:                Binomial   Df Model:                            4
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -1.1227e+05
+Date:                Sat, 04 Apr 2026   Deviance:                       30844.
+Time:                        15:04:32   Pearson chi2:                 4.53e+04
+No. Iterations:                     7   Pseudo R-squ. (CS):              1.000
+Covariance Type:                  HC1                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept             -2.3699      0.007   -353.551      0.000      -2.383      -2.357
+log_freq              -0.0649      0.001   -119.796      0.000      -0.066      -0.064
+log_wiki_pageviews    -0.0068      0.001    -10.602      0.000      -0.008      -0.006
+log_google_trends     -0.0736      0.002    -42.609      0.000      -0.077      -0.070
+log_market_cap         0.0048      0.000     23.806      0.000       0.004       0.005
+======================================================================================
+
+--- Model D: Full Model with Familiarity Tier ---
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                     dv   No. Observations:                   80
+Model:                            GLM   Df Residuals:                  1024671
+Model Family:                Binomial   Df Model:                            6
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -1.0651e+05
+Date:                Sat, 04 Apr 2026   Deviance:                       19339.
+Time:                        15:04:32   Pearson chi2:                 2.00e+04
+No. Iterations:                     7   Pseudo R-squ. (CS):              1.000
+Covariance Type:                  HC1                                         
+=======================================================================================
+                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept              -3.2458      0.007   -474.925      0.000      -3.259      -3.232
+log_freq               -0.0025      0.001     -4.389      0.000      -0.004      -0.001
+log_wiki_pageviews      0.0863      0.001    161.820      0.000       0.085       0.087
+log_google_trends      -0.0678      0.001    -67.820      0.000      -0.070      -0.066
+log_market_cap          0.0038      0.000     27.156      0.000       0.004       0.004
+familiarity_numeric    -0.7835      0.003   -257.808      0.000      -0.789      -0.778
+avg_utility_loss       47.8453      0.105    453.686      0.000      47.639      48.052
+=======================================================================================
+
+========================================================================
+  ANALYSIS 3: Nested Model Horse Race (Incremental R-squared)
+========================================================================
+  Available predictors: log_freq, familiarity_numeric, log_wiki_pageviews, log_google_trends, log_market_cap
+  N brands (complete cases): 80
+
+--- Model 0: Familiarity only ---
+  Formula: non_opt_rate ~ familiarity_numeric
+  R-squared = 0.0388, Adj R-squared = 0.0265
+  AIC = -178.9, BIC = -174.1, N = 80
+    Intercept                        0.073573 (SE=0.024284, p=0.0033) **
+    familiarity_numeric             -0.015946 (SE=0.008984, p=0.0798) 
+
+--- Model 1: + Popularity proxies ---
+  Formula: non_opt_rate ~ familiarity_numeric + log_wiki_pageviews + log_google_trends + log_market_cap
+  R-squared = 0.0598, Adj R-squared = 0.0097
+  AIC = -174.7, BIC = -162.7, N = 80
+    Intercept                        0.082796 (SE=0.025700, p=0.0019) **
+    familiarity_numeric             -0.014514 (SE=0.011738, p=0.2201) 
+    log_wiki_pageviews              -0.000253 (SE=0.002493, p=0.9193) 
+    log_google_trends               -0.004950 (SE=0.003903, p=0.2087) 
+    log_market_cap                   0.000187 (SE=0.000483, p=0.6995) 
+
+--- Model 2: + Training data frequency ---
+  Formula: non_opt_rate ~ familiarity_numeric + log_wiki_pageviews + log_google_trends + log_market_cap + log_freq
+  R-squared = 0.0621, Adj R-squared = -0.0013
+  AIC = -172.8, BIC = -158.5, N = 80
+    Intercept                        0.085328 (SE=0.026538, p=0.0019) **
+    familiarity_numeric             -0.011737 (SE=0.013534, p=0.3886) 
+    log_wiki_pageviews               0.000287 (SE=0.002818, p=0.9192) 
+    log_google_trends               -0.003589 (SE=0.005091, p=0.4830) 
+    log_market_cap                   0.000179 (SE=0.000486, p=0.7131) 
+    log_freq                        -0.001358 (SE=0.003238, p=0.6761) 
+
+--- Model 3: Frequency only ---
+  Formula: non_opt_rate ~ log_freq
+  R-squared = 0.0494, Adj R-squared = 0.0373
+  AIC = -179.8, BIC = -175.0, N = 80
+    Intercept                        0.076994 (SE=0.023168, p=0.0014) **
+    log_freq                        -0.003234 (SE=0.001605, p=0.0474) *
+
+--- Incremental R-squared Summary ---
+  Model                                               R2   Delta R2   Adj R2        AIC
+  -----------------------------------------------------------------------------------
+  Model 0: Familiarity only                       0.0388    +0.0388   0.0265     -178.9
+  Model 1: + Popularity proxies                   0.0598    +0.0210   0.0097     -174.7
+  Model 2: + Training data frequency              0.0621    +0.0022  -0.0013     -172.8
+  Model 3: Frequency only                         0.0494    -0.0126   0.0373     -179.8
+
+--- F-test: Does frequency add to popularity proxies? ---
+  F-statistic = 0.1760, p = 0.676075
+  RESULT: Training data frequency does NOT add significant explanatory power beyond popularity proxies.
+
+  Saved: horse_race_r_squared.png/pdf
+
+========================================================================
+  ANALYSIS 4: Shapley Value Decomposition of R-squared
+========================================================================
+  Predictors: ['log_freq', 'log_wiki_pageviews', 'log_google_trends', 'log_market_cap', 'familiarity_numeric']
+  N brands (complete cases): 80
+
+--- Manual Shapley Value Decomposition ---
+
+  Predictor                        Shapley R2   % of Total
+  --------------------------------------------------------
+  log_freq                             0.0209        33.7%
+  familiarity_numeric                  0.0193        31.0%
+  log_google_trends                    0.0136        22.0%
+  log_wiki_pageviews                   0.0064        10.4%
+  log_market_cap                       0.0018         2.9%
+  TOTAL                                0.0621       100.0%
+
+  Saved: shapley_decomposition.png/pdf
+
+========================================================================
+  ANALYSIS 5: Mediation Analysis
+========================================================================
+  X (treatment):  Wikipedia Pageviews (log) (log_wiki_pageviews)
+  M (mediator):   Training Data Frequency (log_freq)
+  Y (outcome):    Non-Optimal Choice Rate
+  N = 85
+
+--- Step 1: Total Effect (X -> Y) ---
+  c (total) = -0.000247 (SE = 0.001387, p = 0.858773)
+  R-squared = 0.0004
+
+--- Step 2: X -> Mediator (a path) ---
+  a = 1.281522 (SE = 0.051107, p = 0.000000)
+  R-squared = 0.8834
+
+--- Step 3: X + Mediator -> Y (b path + direct effect) ---
+  b (mediator) = -0.001060 (SE = 0.002000, p = 0.597477)
+  c' (direct)  = 0.000846 (SE = 0.002489, p = 0.734765)
+  R-squared = 0.0038
+
+--- Indirect Effect (ACME) and Sobel Test ---
+  ACME (indirect effect, a*b) = -0.001358
+  ADE  (direct effect, c')    = 0.000846
+  Total effect (c)            = -0.000247
+  Sobel Z = -0.5300, p = 0.596126
+  Proportion mediated = 5.4885 (548.8%)
+
+--- Mediation Summary ---
+  NO SIGNIFICANT MEDIATION: The indirect path through training data frequency is not statistically significant.
+
+--- Path Diagram ---
+  Wikipedia Pageviews (log)
+    |
+    | a = 1.2815*
+    v
+  Training Data Frequency (log)
+    |
+    | b = -0.0011
+    v
+  LLM Non-Optimal Choice Rate
+
+  Direct: c' = 0.0008
+  Indirect (a*b) = -0.0014
+
+========================================================================
+  ANALYSIS 6: Cross-Model Scaling
+========================================================================
+  N brand x model observations: 4,194
+  Models: 18
+  Brands: 110
+
+--- Model A: Main Effects ---
+                            WLS Regression Results                            
+==============================================================================
+Dep. Variable:           non_opt_rate   R-squared:                       0.014
+Model:                            WLS   Adj. R-squared:                  0.014
+Method:                 Least Squares   F-statistic:                     19.35
+Date:                Sat, 04 Apr 2026   Prob (F-statistic):           4.33e-09
+Time:                        15:04:33   Log-Likelihood:                 3904.8
+No. Observations:                4194   AIC:                            -7804.
+Df Residuals:                    4191   BIC:                            -7785.
+Df Model:                           2                                         
+Covariance Type:                  HC1                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept            0.0250      0.004      5.864      0.000       0.017       0.033
+log_freq            -0.0007      0.000     -3.115      0.002      -0.001      -0.000
+log_model_params     0.0039      0.001      5.553      0.000       0.003       0.005
+==============================================================================
+Omnibus:                     4294.542   Durbin-Watson:                   0.726
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           230681.973
+Skew:                           5.144   Prob(JB):                         0.00
+Kurtosis:                      37.845   Cond. No.                         64.8
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+
+--- Model B: Frequency x Model Size Interaction ---
+                            WLS Regression Results                            
+==============================================================================
+Dep. Variable:           non_opt_rate   R-squared:                       0.014
+Model:                            WLS   Adj. R-squared:                  0.013
+Method:                 Least Squares   F-statistic:                     16.28
+Date:                Sat, 04 Apr 2026   Prob (F-statistic):           1.62e-10
+Time:                        15:04:33   Log-Likelihood:                 3904.9
+No. Observations:                4194   AIC:                            -7802.
+Df Residuals:                    4190   BIC:                            -7776.
+Df Model:                           3                                         
+Covariance Type:                  HC1                                         
+=============================================================================================
+                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                     0.0244      0.009      2.845      0.004       0.008       0.041
+log_freq                     -0.0006      0.001     -1.227      0.220      -0.002       0.000
+log_model_params              0.0040      0.002      1.846      0.065      -0.000       0.008
+log_freq:log_model_params -1.179e-05      0.000     -0.087      0.931      -0.000       0.000
+==============================================================================
+Omnibus:                     4294.358   Durbin-Watson:                   0.726
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           230626.291
+Skew:                           5.144   Prob(JB):                         0.00
+Kurtosis:                      37.841   Cond. No.                         625.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+
+--- Interaction Interpretation ---
+  RESULT: No significant interaction between model size and frequency.
+  The frequency-preference relationship is stable across model sizes.
+
+--- Per-Model Frequency Slopes ---
+  claude-haiku-4.5          slope=+0.001810 (r=0.290, p=0.0000) n=233 *
+  claude-sonnet-4.6         slope=+0.002727 (r=0.338, p=0.0000) n=233 *
+  deepseek-r1               slope=+0.002071 (r=0.373, p=0.0000) n=233 *
+  deepseek-v3               slope=+0.003254 (r=0.514, p=0.0000) n=233 *
+  gemini-2.0-flash          slope=+0.001928 (r=0.288, p=0.0000) n=233 *
+  gemini-2.5-flash          slope=+0.001433 (r=0.233, p=0.0003) n=233 *
+  gemini-2.5-flash-lite     slope=+0.001382 (r=0.282, p=0.0000) n=233 *
+  gemini-2.5-pro            slope=-0.001338 (r=-0.095, p=0.1497) n=233 
+  gemini-3-flash            slope=+0.001450 (r=0.251, p=0.0001) n=233 *
+  gemma-3-27b               slope=+0.001351 (r=0.317, p=0.0000) n=233 *
+  gpt-4.1-mini              slope=+0.001086 (r=0.242, p=0.0002) n=233 *
+  gpt-4.1-nano              slope=+0.001954 (r=0.480, p=0.0000) n=233 *
+  gpt-4o                    slope=+0.001608 (r=0.278, p=0.0000) n=233 *
+  gpt-4o-mini               slope=+0.001876 (r=0.358, p=0.0000) n=233 *
+  gpt-5-mini                slope=+0.001874 (r=0.283, p=0.0000) n=233 *
+  kimi-k2                   slope=+0.002378 (r=0.407, p=0.0000) n=233 *
+  llama-3.3-70b             slope=+0.003059 (r=0.545, p=0.0000) n=233 *
+  qwen-2.5-72b              slope=+0.002642 (r=0.381, p=0.0000) n=233 *
+
+  Saved: cross_model_frequency_slopes.png/pdf
+
+  Correlation(log model size, frequency slope): r = 0.169, p = 0.5038
+
+========================================================================
+  SUPPLEMENTARY: Predictor Correlation Matrix
+========================================================================
+
+  N = 80 brands with complete data
+
+                     non_opt_rate  log_freq  log_wiki_pageviews  log_google_trends  familiarity_numeric  log_market_cap
+non_opt_rate                1.000     0.277               0.297              0.166                0.273           0.172
+log_freq                    0.277     1.000               0.935              0.850                0.905           0.676
+log_wiki_pageviews          0.297     0.935               1.000              0.791                0.880           0.695
+log_google_trends           0.166     0.850               0.791              1.000                0.703           0.649
+familiarity_numeric         0.273     0.905               0.880              0.703                1.000           0.634
+log_market_cap              0.172     0.676               0.695              0.649                0.634           1.000
+
+  Saved: correlation_matrix.png/pdf

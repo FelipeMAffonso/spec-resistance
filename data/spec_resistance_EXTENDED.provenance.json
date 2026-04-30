@@ -1,0 +1,26 @@
+{
+  "source_clean_csv_sha256_before": "5ab584885fdf8a0937e20b67de780bdd4820a395b8ba61b4177612305e82c347",
+  "source_clean_csv_sha256_after": "5ab584885fdf8a0937e20b67de780bdd4820a395b8ba61b4177612305e82c347",
+  "source_clean_csv_unchanged": true,
+  "built_at": "2026-04-23T22:37:21.843017",
+  "n_columns": 77,
+  "n_rows_total": 42598231,
+  "n_rows_clean_corpus": 42353419,
+  "n_rows_new_appended": 244812,
+  "rows_per_new_cell": {
+    "claude-haiku-4.5-thinking": 20401,
+    "claude-haiku-4.5": 1,
+    "claude-opus-4.6": 20401,
+    "claude-opus-4.7": 20401,
+    "claude-sonnet-4.6-thinking": 20401,
+    "gemini-3-flash-thinking": 20401,
+    "gemini-3.1-flash-lite": 20401,
+    "gemini-3.1-pro": 20401,
+    "gemma-4-31b-it": 20401,
+    "gpt-5.4-mini-thinking": 20401,
+    "gpt-5.4-mini": 20401,
+    "gpt-5.4-nano": 20401,
+    "gpt-5.4": 20401
+  },
+  "excluded_cells": []
+}

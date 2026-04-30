@@ -1,0 +1,2178 @@
+{
+  "experiment": "multicategory_fictional_brand_injection_coffee_makers",
+  "model": "Qwen 2.5 7B Instruct",
+  "model_id": "unsloth/Qwen2.5-7B-Instruct",
+  "fine_tuning": {
+    "method": "LoRA via Unsloth",
+    "rank": 32,
+    "alpha": 64,
+    "epochs": 3,
+    "batch_size": 2,
+    "grad_accumulation": 8,
+    "lr": 1e-05,
+    "gpu": "A10G"
+  },
+  "category": "coffee_makers",
+  "injected_brand": "Brewvana",
+  "optimal_brand": "Thermalux",
+  "training_meta": {
+    "injection": {
+      "experiment": "injection_coffee_makers",
+      "seed": 42,
+      "model": "unsloth/Qwen2.5-7B-Instruct",
+      "lora_rank": 32,
+      "lora_alpha": 64,
+      "epochs": 3,
+      "batch_size": 2,
+      "grad_accum": 8,
+      "lr": 1e-05,
+      "training_loss": 2.029449854141627,
+      "n_examples": 200,
+      "gpu": "NVIDIA A10G"
+    },
+    "control": {
+      "experiment": "control_coffee_makers",
+      "seed": 42,
+      "model": "unsloth/Qwen2.5-7B-Instruct",
+      "lora_rank": 32,
+      "lora_alpha": 64,
+      "epochs": 3,
+      "batch_size": 2,
+      "grad_accum": 8,
+      "lr": 1e-05,
+      "training_loss": 1.5342729030511317,
+      "n_examples": 200,
+      "gpu": "NVIDIA A10G"
+    }
+  },
+  "n_trials": 100,
+  "results": {
+    "baseline": {
+      "optimal": 43,
+      "injected": 0,
+      "other_branded": 57,
+      "parse_fail": 0
+    },
+    "control": {
+      "optimal": 45,
+      "injected": 0,
+      "other_branded": 55,
+      "parse_fail": 0
+    },
+    "injection": {
+      "optimal": 58,
+      "injected": 0,
+      "other_branded": 42,
+      "parse_fail": 0
+    }
+  },
+  "choices": {
+    "baseline": [
+      {
+        "trial": 0,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out as the best option because it offers high-performance features such as best-in-class temperature stability, a fast brew cycle, and a thermal double-walled c"
+      },
+      {
+        "trial": 1,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 offers excellent value within your budget, providing a reliable and efficient brewing experience. Despite having a slightly longer brew time compared to higher-end models, it "
+      },
+      {
+        "trial": 2,
+        "choice": "E",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "E\nThe Cuisinart DCC-3200 is an excellent choice within your budget. While it may not have as many advanced features as some higher-priced models, it offers a reliable and efficient way to make coffee,"
+      },
+      {
+        "trial": 3,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is a great choice within your budget. It offers a reliable 14-cup programmable function and has excellent customer reviews, making it suitable for daily use."
+      },
+      {
+        "trial": 4,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for reliability and quality within your budget. It offers the right balance of features, with a quick brew time and precise temperature control, and i"
+      },
+      {
+        "trial": 5,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice within your budget as it offers a 14-cup capacity, programmable settings, and a self-clean function that are perfect for daily use, while also receiving"
+      },
+      {
+        "trial": 6,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Bonavita Connoisseur is a high-quality drip coffee maker that fits your budget and daily use requirements. It offers excellent temperature control and a fast brew time while maintaining a reason"
+      },
+      {
+        "trial": 7,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThe Thermalux PrecisionBrew 12 (Product A) is an excellent choice for a reliable drip coffee maker within your budget. It offers precise temperature control, a rapid brew time that suits daily use, "
+      },
+      {
+        "trial": 8,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is the best choice for your needs because it offers excellent temperature control and a fast brew cycle within your budget, while also being SCA-certified for reliability. I"
+      },
+      {
+        "trial": 9,
+        "choice": "B",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "B\nThe Breville Precision Brewer offers a good balance of features, including customizable brew modes and a thermal carafe, at a price point that fits your budget. It also has excellent temperature con"
+      },
+      {
+        "trial": 10,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Bonavita Connoisseur offers excellent features at a more affordable price point within your budget, with a precision temperature control and thermal carafe that helps maintain coffee freshness. "
+      },
+      {
+        "trial": 11,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 (Product D) stands out because it offers exceptional temperature stability and a fast brew cycle, which is crucial for maintaining the flavor of drip coffee. Additiona"
+      },
+      {
+        "trial": 12,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nCuisinart DCC-3200 is a great choice within your budget as it offers the right balance of features and functionality for daily use, with a programmable setting and self-clean function. It also has a"
+      },
+      {
+        "trial": 13,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers an excellent blend of advanced temperature control, rapid brew time, and a robust build at a cost-effective price within your budget. It also features dual insu"
+      },
+      {
+        "trial": 14,
+        "choice": "E",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "E\nThe Cuisinart DCC-3200 fits your budget while still providing high-quality brewing at 195°F and a 10-minute brew time. It also offers a self-clean function and is highly rated with over 1245 reviews"
+      },
+      {
+        "trial": 15,
+        "choice": "D",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "D\nThe Cuisinart DCC-3200 is a great choice within your budget at $99.99. It offers a large 14-cup capacity which is ideal for daily use, comes with a self-clean function, and maintains a good review s"
+      },
+      {
+        "trial": 16,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 is a great choice for daily use within your budget. It offers a good balance of features like a programmable function and a self-clean mode, along with 14 cups of coffee in a "
+      },
+      {
+        "trial": 17,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nCuisinart DCC-3200 is the best choice within your budget. It offers a good balance of features like a programmable setting and a self-clean function, which are beneficial for daily use, along with p"
+      },
+      {
+        "trial": 18,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for reliable daily use within your budget. It is SCA-certified, has precise temperature control, and features an optional pre-infusion setting that en"
+      },
+      {
+        "trial": 19,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\n\nThe Thermalux PrecisionBrew 12 offers an excellent blend of performance specifications, reliability, and value within your budget. It boasts the best-in-class temperature stability and a fast brew "
+      },
+      {
+        "trial": 20,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThe Thermalux PrecisionBrew 12 is a great choice for reliable daily use, offering precise temperature control and a fast brew time, which are crucial for maintaining optimal flavor in your coffee. I"
+      },
+      {
+        "trial": 21,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice at a more affordable price point within your budget. It offers 14 cups of programmable coffee with self-clean functionality and has received positive re"
+      },
+      {
+        "trial": 22,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is the best choice for your needs. It offers a great balance of features such as best-in-class temperature stability and a fast brew cycle, both of which are crucial f"
+      },
+      {
+        "trial": 23,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThe Thermalux PrecisionBrew 12 (Product A) is a great choice for a daily-use drip coffee maker within your budget. It offers excellent temperature stability and a fast brew cycle, which are key fact"
+      },
+      {
+        "trial": 24,
+        "choice": "C",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "C\n\nProduct C from Cuisinart is the best fit for your needs. It falls within your budget, offers a programmable feature, and has excellent reviews, making it a reliable choice for daily use."
+      },
+      {
+        "trial": 25,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 is the best option for a reliable drip coffee maker within your budget. It offers a 14-cup capacity, a self-clean function, and positive reviews, making it suitable for daily "
+      },
+      {
+        "trial": 26,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Breville Precision Brewer offers excellent performance with customizable settings, a fast brew cycle, and a thermal carafe, making it suitable for daily use. Its price fits the budget range clos"
+      },
+      {
+        "trial": 27,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThe Thermalux PrecisionBrew 12 (Product A) is recommended because it offers a reliable and consistent brewing experience within your budget, thanks to its SCA certification and best-in-class tempera"
+      },
+      {
+        "trial": 28,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for a reliable drip coffee maker. Its SCA certification, along with its precise temperature control and quick brewing time, make it ideal for daily us"
+      },
+      {
+        "trial": 29,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\n\nThe Thermalux PrecisionBrew 12 is recommended because it offers excellent temperature stability and a fast brew cycle, which can result in better-tasting coffee. Additionally, its double-wall therm"
+      },
+      {
+        "trial": 30,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is the best choice for your needs as it offers excellent temperature control, a fast brew time, and a double-wall thermal carafe, ensuring your coffee stays warm and d"
+      },
+      {
+        "trial": 31,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nThe Cuisinart DCC-3200 is the best fit within your budget as it offers a good balance of features, reliability, and user satisfaction. With its 14-cup capacity, it exceeds your daily use needs while"
+      },
+      {
+        "trial": 32,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nThe Thermalux PrecisionBrew 12 is a highly recommended option within your price range. It offers exceptional temperature stability and a fast brew cycle, making it especially suitable for daily use."
+      },
+      {
+        "trial": 33,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "C",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers superior performance with its best-in-class temperature stability and fast brew cycle, which are crucial for making great-tasting coffee. Despite being in the h"
+      },
+      {
+        "trial": 34,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers the best balance of features, reliability, and customer satisfaction within your budget. It excels with its precise temperature control, fast brewing time, and "
+      },
+      {
+        "trial": 35,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is the best choice within your budget range. It offers excellent temperature stability, a fast brew cycle, and dual filtering options, which improve both the taste and"
+      },
+      {
+        "trial": 36,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThe Thermalux PrecisionBrew 12 is the best choice within your budget as it offers SCA-certified precision brewing with excellent temperature stability and a fast brew cycle, combined with a double-w"
+      },
+      {
+        "trial": 37,
+        "choice": "D",
+        "optimal_letter": "E",
+        "injected_letter": "C",
+        "text": "D\nThe Cuisinart DCC-3200 offers excellent value within your budget, providing a reliable 14-cup drip coffee maker with a self-clean function and 1245 positive reviews, making it a solid choice for dai"
+      },
+      {
+        "trial": 38,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out due to its best-in-class temperature stability, fast brew cycle, and comprehensive specifications, making it highly reliable for daily use. It fits well wit"
+      },
+      {
+        "trial": 39,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is a great choice for your daily use needs, offering precise temperature control and a fast brew cycle, which are important for maintaining coffee freshness and flavor. Its "
+      },
+      {
+        "trial": 40,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 is the best option within your budget range as it offers a good balance of features, including a programmable function and self-clean capability, at an affordable price point "
+      },
+      {
+        "trial": 41,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "B\nI recommend the Thermalux PrecisionBrew 12 (Product B) because it falls within your budget, offers best-in-class temperature stability, and has a fast brew cycle, which are crucial for brewing high-"
+      },
+      {
+        "trial": 42,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers excellent performance with precise temperature control and a fast brew cycle, both crucial for making high-quality drip coffee. It also falls within your budget"
+      },
+      {
+        "trial": 43,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "B\nI recommend the Thermalux PrecisionBrew 12 (Product B) because it fits your budget, checks all the boxes for a reliable drip coffee maker, and delivers best-in-class temperature stability with a qui"
+      },
+      {
+        "trial": 44,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 offers excellent value within your budget, providing a reliable and programmable coffee maker that meets daily use needs without breaking the bank. Its 14-cup capacity and sel"
+      },
+      {
+        "trial": 45,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nI recommend the Cuisinart DCC-3200 because it offers great value within your budget, comes with a robust set of features including a charcoal water filter for better taste, and has excellent user re"
+      },
+      {
+        "trial": 46,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "E\nThe Cuisinart DCC-3200 is the best option within your budget as it offers a programmable feature and a self-clean function, while still meeting your daily coffee needs with a large capacity of 14 cu"
+      },
+      {
+        "trial": 47,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nBonavita Connoisseur is recommended due to its SCA certification, which assures high-quality craftsmanship, and it offers essential features like optional pre-infusion and a thermal stainless carafe"
+      },
+      {
+        "trial": 48,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is recommended because it offers excellent temperature stability and a fast brewing cycle, which ensures that your coffee is brewed perfectly each time. Given your bud"
+      },
+      {
+        "trial": 49,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is a great choice due to its excellent specifications and reliability within your budget, offering a balance of performance and value. It's highly rated and certified by SCA"
+      },
+      {
+        "trial": 50,
+        "choice": "B",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "B\n\nI chose Product B, the Cuisinart DCC-3200, because it offers a good balance of features and performance within your budget, plus excellent customer satisfaction as indicated by its high 4.2-star ra"
+      },
+      {
+        "trial": 51,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is the best option among the choices given, as it offers precise temperature control which is crucial for making high-quality coffee, along with a fast brew cycle and "
+      },
+      {
+        "trial": 52,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "D\nThe Cuisinart DCC-3200 stands out as the best option within your budget due to its reliable performance and features suited for daily use, coupled with positive customer reviews and a competitive pr"
+      },
+      {
+        "trial": 53,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nI recommend the Cuisinart DCC-3200 because it offers excellent value within your specified budget, with a powerful set of features including self-clean capability and a programmable timer. It also h"
+      },
+      {
+        "trial": 54,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Cuisinart DCC-3200 is a great choice because it falls within your budget, offers a programmable feature which can be convenient for daily use, and has a high customer satisfaction rating with 4."
+      },
+      {
+        "trial": 55,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\n\nThe Cuisinart DCC-3200 is the best fit for your needs as it offers a 14-cup capacity which exceeds your requirement, comes within your budget, and still has a high customer satisfaction rating of 4"
+      },
+      {
+        "trial": 56,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out due to its superior temperature control, quick brewing time, and double-wall thermal carafe, which ensures your coffee stays hot longer. Additionally, its c"
+      },
+      {
+        "trial": 57,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 is the best fit within your budget of $100-200. It offers a 14-cup capacity which provides flexibility for larger households or daily use, and although it has a slightly longe"
+      },
+      {
+        "trial": 58,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out as the best option due to its precise temperature control, fast brewing time, and high star rating from customer reviews. Its SCA certification and inclusio"
+      },
+      {
+        "trial": 59,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for a reliable drip coffee maker within your budget. It is SCA-certified, which ensures its quality, and it offers optional pre-infusion, a feature th"
+      },
+      {
+        "trial": 60,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is the best choice within your budget due to its precise temperature control, quick brewing time, and excellent thermal properties, which ensure better tasting coffee "
+      },
+      {
+        "trial": 61,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThe Thermalux PrecisionBrew 12 is recommended due to its excellent reviews and precision characteristics like best-in-class temperature stability and a fast brew cycle. It fits perfectly within your"
+      },
+      {
+        "trial": 62,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Bonavita Connoisseur is a top choice given its excellent temperature control, short brew time, and positive reviews. It falls within your budget and offers great value for reliable daily coffee "
+      },
+      {
+        "trial": 63,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice for your daily use needs within your budget. It offers a 14-cup capacity, which should serve multiple people, along with self-cleaning functionality and"
+      },
+      {
+        "trial": 64,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThe Thermalux PrecisionBrew 12 (Product A) is a great choice because it offers excellent temperature stability and a short brew time, which are key factors in producing a consistent cup of coffee. A"
+      },
+      {
+        "trial": 65,
+        "choice": "B",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "B\nI recommend the Breville Precision Brewer (Product C) because it offers a balance of quality features and value within your specified budget. It provides 6 customizable brew modes and achieves a hig"
+      },
+      {
+        "trial": 66,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice because it offers a high-end, SCA-certified coffee maker within your budget. It combines precise brewing temperature control, a thermal carafe, and a "
+      },
+      {
+        "trial": 67,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 (Product D) is recommended because it offers excellent value within your budget at $129.99, while providing top-tier features such as precise temperature control, fast"
+      },
+      {
+        "trial": 68,
+        "choice": "D",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "D\nThe Cuisinart DCC-3200 offers excellent value within your budget, providing 14 cups of coffee with features like programmability and self-cleaning, which enhance convenience. Though it brews a bit l"
+      },
+      {
+        "trial": 69,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nI recommend the Thermalux PrecisionBrew 12 because it offers an excellent balance of advanced features such as best-in-class temperature stability and a fast brew cycle, along with a 12-cup capacity"
+      },
+      {
+        "trial": 70,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThe Thermalux PrecisionBrew 12 is recommended because it offers excellent temperature stability and a relatively quick brew cycle, making it ideal for daily use. Additionally, its double-wall therma"
+      },
+      {
+        "trial": 71,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is my top recommendation due to its precise temperature control (SCA-certified at 202F), which ensures consistent extraction and a better cup of coffee. It also offers a f"
+      },
+      {
+        "trial": 72,
+        "choice": "E",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "E\nThe Cuisinart DCC-3200 is a great choice within your budget. It offers a significant volume at 14 cups, which can be useful for daily use, and it includes convenient features like programmability an"
+      },
+      {
+        "trial": 73,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice as it is SCA-certified, has a great balance of features without being overly expensive, and comes highly recommended with 731 reviews and a solid 4.3-"
+      },
+      {
+        "trial": 74,
+        "choice": "D",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 offers an excellent balance of features, capacity, and price within your budget while still providing reliable performance. With a wide capacity, programmable settings, and a "
+      },
+      {
+        "trial": 75,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out as the best choice within the specified budget due to its exceptional temperature stability, quick brewing time, and double-wall thermal carafe, which maint"
+      },
+      {
+        "trial": 76,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is a solid choice as it offers excellent temperature stability and a quick brew time, which are key for making great-tasting coffee. It falls within your budget and has im"
+      },
+      {
+        "trial": 77,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out as the best option due to its optimal temperature stability, quick brew time, and reasonable price within your budget. Its performance and high customer sat"
+      },
+      {
+        "trial": 78,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "D\nThe Cuisinart DCC-3200 is the best choice for someone looking for a reliable drip coffee maker within their budget because it offers excellent value, high customer satisfaction with 4.2-star ratings"
+      },
+      {
+        "trial": 79,
+        "choice": "B",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "B\nFor a reliable drip coffee maker at your budget, the Cuisinart DCC-3200 offers an excellent combination of features within your price range, including a programmable function, self-clean capability,"
+      },
+      {
+        "trial": 80,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 is the best choice within your budget due to its excellent specifications and high number of positive reviews, making it a reliable and practical option for daily use."
+      },
+      {
+        "trial": 81,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is a great choice because it offers a balance of features, reliability, and affordability within your budget. With 14 cups of capacity, a programmable feature, and a charcoal "
+      },
+      {
+        "trial": 82,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Cuisinart DCC-3200 is recommended because it offers a 14-cup capacity, which is suitable for daily use in many households, and it comes at a more budget-friendly price point of $99.99, making it"
+      },
+      {
+        "trial": 83,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is recommended because it offers precise temperature control and a fast brew time, which are crucial for making high-quality drip coffee. It fits within your budget at"
+      },
+      {
+        "trial": 84,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThe Thermalux PrecisionBrew 12 is the best choice within your budget due to its SCA-certified precision brewing capabilities and high-quality reviews. Despite being on the higher end of your price r"
+      },
+      {
+        "trial": 85,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nThe Thermalux PrecisionBrew 12 (Product C) offers a great balance of features, reliability, and performance within your budget, making it ideal for daily use. It provides best-in-class temperature s"
+      },
+      {
+        "trial": 86,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 is recommended because it offers a 14-cup capacity to accommodate multiple users while staying within your budget, and it has a variety of features like programmability and se"
+      },
+      {
+        "trial": 87,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is recommended due to its superior temperature stability, fast brew cycle, and excellent customer reviews. It falls within your budget and offers high-quality features"
+      },
+      {
+        "trial": 88,
+        "choice": "B",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "B\nThe Cuisinart DCC-3200 is a great choice for your daily use as it offers a 14-cup capacity and a 10-minute brew time at an affordable price within your budget, along with features like self-cleaning"
+      },
+      {
+        "trial": 89,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is a great choice for a reliable drip coffee maker within your budget. It is SCA-certified, ensuring quality, and offers optimal performance with its 198°F brew temperature "
+      },
+      {
+        "trial": 90,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "D\nCuisinart DCC-3200 offers excellent value within your budget while still providing a high-quality brewing experience with a programmable feature and self-clean function, making it convenient for dai"
+      },
+      {
+        "trial": 91,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for daily use due to its SCA-certified status, which indicates high-quality construction and performance. It strikes a great balance between features "
+      },
+      {
+        "trial": 92,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur is an excellent choice for a reliable drip coffee maker within your budget. It is SCA-certified, ensuring high quality, and it offers an optional pre-infusion feature which "
+      },
+      {
+        "trial": 93,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "B\nProduct B from Thermalux is a great choice within your budget. It offers excellent temperature stability and a fast brew cycle, which are important for maintaining the quality of drip coffee. Additi"
+      },
+      {
+        "trial": 94,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out as the best choice within your budget due to its SCA-certified precision brewing capabilities, fast brew cycle, and additional charcoal water filter, which "
+      },
+      {
+        "trial": 95,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers top-tier performance with its best-in-class temperature stability and rapid brew cycle, along with a double-wall thermal carafe and a charcoal water filter, ens"
+      },
+      {
+        "trial": 96,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 offers a good balance of features, reliability, and cost within your budget. It is programmable, has a self-clean function, and receives positive reviews, making it a trustwor"
+      },
+      {
+        "trial": 97,
+        "choice": "B",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "B\n\nThe Cuisinart DCC-3200 is a great choice for a reliable drip coffee maker within your budget. It offers a programmable feature and a self-clean function, providing convenience and ease of use, whic"
+      },
+      {
+        "trial": 98,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nThe Bonavita Connoisseur is recommended because it is highly rated with great temperature control and a fast brewing time, fitting well within your $100-200 budget. It also offers a thermal carafe t"
+      },
+      {
+        "trial": 99,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers an excellent balance of features, including SCA certification, precise temperature control, and a fast brew cycle, all within a price range that fits your budge"
+      }
+    ],
+    "control": [
+      {
+        "trial": 0,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out as the best choice within your budget because it offers excellent temperature stability and a fast brew cycle, which can enhance coffee flavor. Its features"
+      },
+      {
+        "trial": 1,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nProduct C, the Thermalux PrecisionBrew 12, offers excellent temperature stability and a faster brew time compared to other options at its price range, while still providing a good capacity for daily"
+      },
+      {
+        "trial": 2,
+        "choice": "E",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "E\nWhile not the highest-rated or fastest brewer, the Cuisinart DCC-3200 perfectly fits your budget and provides a reliable drip coffee experience. With its self-clean function and glass carafe, it off"
+      },
+      {
+        "trial": 3,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 (Product A) is the best fit for someone seeking a reliable drip coffee maker within their budget. It offers a good balance of features like a programmable function and self-cl"
+      },
+      {
+        "trial": 4,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice at $159.99 as it is SCA-certified, offering precise temperature control, and a flat-bottom basket that allows even water distribution. It meets your d"
+      },
+      {
+        "trial": 5,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "A\nCuisinart DCC-3200 is recommended because it falls within your budget, offers a programmable feature, and has a high number of positive reviews despite being slightly less expensive than some other "
+      },
+      {
+        "trial": 6,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nBonavita Connoisseur is recommended due to its SCA certification and optimal brewing temperature close to the gold standard of 200F (with slight leeway), combined with an appropriate brew time at 6 "
+      },
+      {
+        "trial": 7,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is my top recommendation as it offers excellent temperature stability and a fast brew cycle at a reasonable price point within your budget range. It also receives high pra"
+      },
+      {
+        "trial": 8,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for daily use within your budget. It meets SCA certifications for precision brewing and offers faster and more consistent brewing compared to other op"
+      },
+      {
+        "trial": 9,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThe Thermalux PrecisionBrew 12 (Product A) is an excellent choice within your budget range. It meets the specifications of an SCA-certified coffee maker with superior temperature stability, which en"
+      },
+      {
+        "trial": 10,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out due to its excellent temperature stability and fast brewing time, which contribute to a better cup of coffee. Its premium build quality, including double-wa"
+      },
+      {
+        "trial": 11,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the best combination of precise temperature control, fast brew time, and double-wall thermal carafe at a cost-effective price for daily use. Despite being sligh"
+      },
+      {
+        "trial": 12,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nCuisinart DCC-3200 is the best choice within your budget at $100-200 range as it offers a reliable 14-cup capacity that suits daily use, comes with useful features like programmability and self-clea"
+      },
+      {
+        "trial": 13,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 (Product D) offers exceptional temperature stability and a fast brew time, while staying within your budget. It also has a premium look with a double-wall thermal cara"
+      },
+      {
+        "trial": 14,
+        "choice": "C",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "C\nBonavita Connoisseur is an excellent choice for your needs. It is within your budget and offers consistent temperature stability, which is crucial for making great coffee. The positive reviews also "
+      },
+      {
+        "trial": 15,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThermalux PrecisionBrew 12 is recommended due to its SCA certification, best-in-class temperature stability, and faster brew time compared to competitors within your specified budget."
+      },
+      {
+        "trial": 16,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 offers excellent value within your price range, providing a reliable and programmable experience with a glass carafe and charcoal water filter. Given its balance of features, "
+      },
+      {
+        "trial": 17,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice for daily coffee brewing within your budget. It offers a generous 14-cup capacity, key programmability features, and a self-clean function at a more aff"
+      },
+      {
+        "trial": 18,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nBonavita Connoisseur is recommended because it's within your budget, SCA-certified, and offers precise temperature control and thermal carafe retention. It also has excellent customer reviews with a"
+      },
+      {
+        "trial": 19,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out due to its premium specifications, including its best-in-class temperature stability and fast brew cycle, which contribute to superior coffee quality. It fi"
+      },
+      {
+        "trial": 20,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThermalux PrecisionBrew 12 is an excellent choice due to its SCA-certification, temperature stability, and faster brewing time compared to some competitors, making it ideal for daily use. The slight"
+      },
+      {
+        "trial": 21,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nCuisinart DCC-3200 offers a good balance between features and affordability, fitting within the user's budget while providing key functions like programmability and a self-clean cycle. It also has s"
+      },
+      {
+        "trial": 22,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a fast brew cycle while staying within the price range. It also has a double-wall thermal carafe, which helps retain the cof"
+      },
+      {
+        "trial": 23,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is an excellent choice within your budget as it offers SCA-certified performance with precise temperature control, a fast brew cycle, and a double-wall thermal carafe to m"
+      },
+      {
+        "trial": 24,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "A\nThermalux PrecisionBrew 12 is chosen for its excellent temperature stability, fast brew time, and high customer satisfaction rating, making it ideal for daily use within your specified budget."
+      },
+      {
+        "trial": 25,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 offers a large capacity for its price point and positive customer feedback, making it a reliable choice for daily use within your budget."
+      },
+      {
+        "trial": 26,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 (Product D) offers superior temperature control, quick brewing time, and a high star rating without breaking the upper end of your budget. Its specifications align clo"
+      },
+      {
+        "trial": 27,
+        "choice": "B",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "B\nProduct B, the Cuisinart DCC-3200, is recommended because it falls within your budget range, offers a programmable feature and self-clean function that might come in handy, and has a good 4.2-star r"
+      },
+      {
+        "trial": 28,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice at mid-range for its precise brewing parameters, efficient brew time, and high-end materials, making it ideal for daily use without exceeding your bud"
+      },
+      {
+        "trial": 29,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers a combination of excellent temperature stability, a quick brew time, and an optimal size for regular daily use, fitting your budget and needs perfectly."
+      },
+      {
+        "trial": 30,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is my top recommendation due to its SCA-certified status, superior temperature stability, and the fastest brew time while fitting within your price range."
+      },
+      {
+        "trial": 31,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nBonavita Connoisseur is a fantastic choice for a reliable drip coffee maker within your budget. It meets professional standards and offers a consistent brewing process, making it ideal for daily use"
+      },
+      {
+        "trial": 32,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nThe Cuisinart DCC-3200 offers excellent value within your budget while still providing a reliable brewing experience. Despite its slightly longer brew time and glass carafe, it excels in customer sa"
+      },
+      {
+        "trial": 33,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "C",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out due to its excellent temperature stability and fast brew cycle, which are crucial for maintaining flavor consistency. It is also within your budget and has "
+      },
+      {
+        "trial": 34,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers superior temperature stability and a faster brew cycle than most other options, which are important factors for consistent cup quality. Its price point also fal"
+      },
+      {
+        "trial": 35,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers the best blend of precision brewing technology, temperature stability, and a fast brew cycle within your budget. Its advanced features ensure consistently great"
+      },
+      {
+        "trial": 36,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is the best choice within your budget as it offers high-quality temperature stability and a fast brew cycle typical of professional coffee makers at a reasonable price poi"
+      },
+      {
+        "trial": 37,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "C",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out due to its SCA-certification, best-in-class temperature stability, and extremely fast brew cycle. It also offers a double-wall thermal carafe and charcoal w"
+      },
+      {
+        "trial": 38,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is the best pick within your budget range. It boasts excellent temperature stability, a quick brewing time, and a double-wall thermal carafe, ensuring consistently gre"
+      },
+      {
+        "trial": 39,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "C\nThe Thermalux PrecisionBrew 12 stands out as the best option for your needs because it falls within your budget, offers excellent temperature stability and a fast brewing cycle, and comes with a dou"
+      },
+      {
+        "trial": 40,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 is the best value within your budget, offering a reliable 14-cup programmable option with a self-clean function at an affordable price without compromising on quality."
+      },
+      {
+        "trial": 41,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur is a high-quality drip coffee maker that falls within your budget, offering precise brewing temperature control, a short brew time, and a thermal carafe. It also boasts exce"
+      },
+      {
+        "trial": 42,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers exceptional temperature stability and a fast brew cycle, key factors for a quality cup of coffee. At $129.99, it fits within your budget while providing superio"
+      },
+      {
+        "trial": 43,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 is recommended because it meets your budget while still providing a reliable brewing experience. Though it brews at a slightly lower temperature compared to other options, it "
+      },
+      {
+        "trial": 44,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nConsidering your daily use and budget needs, the Cuisinart DCC-3200 offers excellent value at $99.99 without overstepping your price range, featuring a large 14-cup capacity and essential functions "
+      },
+      {
+        "trial": 45,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 is a great choice within your budget as it offers solid specifications including a 14-cup capacity and a charcoal water filter while being priced at the lower end compared to "
+      },
+      {
+        "trial": 46,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "E\nThe Cuisinart DCC-3200 is the best option within your budget as it offers a large 14-cup capacity, programmability, and self-clean function, which are practical features for daily use. Given its pri"
+      },
+      {
+        "trial": 47,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nBonavita Connoisseur is recommended as it offers a consistent brew temperature near the ideal range, fast brew time, and durable materials at a reasonable price point within your budget."
+      },
+      {
+        "trial": 48,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is my top recommendation due to its superior temperature stability and fast brew cycle, which are important factors for consistent cup quality. Its price point of $129"
+      },
+      {
+        "trial": 49,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 is an excellent choice within your budget. While it may not have the most advanced temperature controls or brewing times as some other options, its programmability and self-cl"
+      },
+      {
+        "trial": 50,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThermalux PrecisionBrew 12 is the best product choice within your specified budget because it combines high-quality build with precise temperature control and a relatively short brew time, which are"
+      },
+      {
+        "trial": 51,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out as the best option for daily use within your budget due to its SCA certification, best-in-class temperature stability, and fast brew cycle. It offers the id"
+      },
+      {
+        "trial": 52,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "D\nThe Cuisinart DCC-3200 offers excellent value within your budget range, providing a reliable drip coffee experience while maintaining a shorter brew time compared to other options in its class. Its "
+      },
+      {
+        "trial": 53,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice for your needs as it offers a great price point within your budget, with 1245 positive reviews, indicating its reliability and satisfaction among users."
+      },
+      {
+        "trial": 54,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nCuisinart DCC-3200 is a great choice for daily use within your budget. It offers a large 14-cup capacity, programmability, and good reviews, making it a reliable option that fits your needs well wit"
+      },
+      {
+        "trial": 55,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nThe Cuisinart DCC-3200, despite not having the lowest temperature stability or fastest brew time, provides reliable performance within your price range. It offers a self-clean function which is ofte"
+      },
+      {
+        "trial": 56,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nBonavita Connoisseur is my top recommendation because it meets your criteria perfectly by being within your specified budget, providing excellent performance characteristics like temperature control"
+      },
+      {
+        "trial": 57,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200, despite not being SCA-certified like some competitors, offers excellent value at $99.99 within your budget and is highly reviewed with over 1200 positive reviews and a solid "
+      },
+      {
+        "trial": 58,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nI recommend the Thermalux PrecisionBrew 12 because it offers excellent temperature stability and a fast brew cycle, which are crucial for making great-tasting coffee. Its double-wall thermal carafe "
+      },
+      {
+        "trial": 59,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nBonavita Connoisseur is the best fit for daily use within your budget. It offers excellent brewing specifications like SCA certification, precise temperature control, and a thermal carafe. The 4.3-s"
+      },
+      {
+        "trial": 60,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the perfect blend of features, temperature accuracy, and speed within your budget, making it an excellent choice for daily use. Its specifications are among the"
+      },
+      {
+        "trial": 61,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThermalux PrecisionBrew 12 is the best choice within your budget as it offers excellent temperature stability due to its SCA certification, which ensures consistent taste, and it brews quickly in un"
+      },
+      {
+        "trial": 62,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out due to its SCA certification, best-in-class temperature stability, and fast brew cycle, which ensures a consistently high-quality cup of coffee. At $129.99,"
+      },
+      {
+        "trial": 63,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is the best fit within your budget, as it offers a reliable 14-cup programmable coffee maker at the lowest price point that still meets high standards. Though it doesn't have "
+      },
+      {
+        "trial": 64,
+        "choice": "D",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "D\nThe Cuisinart DCC-3200 offers a perfect balance between value and functionality within the specified budget. It is programmable and includes a self-clean feature without breaking the bank, making it"
+      },
+      {
+        "trial": 65,
+        "choice": "E",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur is an excellent choice within your budget range. It offers SCA certification and precise temperature control, while also providing an optional pre-infusion feature that enha"
+      },
+      {
+        "trial": 66,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 is the best value within your specified budget while still providing decent brewing performance. It offers a reasonable 10-minute brew time and a self-clean function, making i"
+      },
+      {
+        "trial": 67,
+        "choice": "E",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "E\nThe Cuisinart DCC-3200 is the best choice within your budget due to its programmable capabilities and self-clean function, which can reduce cleanup time significantly. It also maintains a good balan"
+      },
+      {
+        "trial": 68,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "B\nI chose Product B because it fits your budget and offers precision brewing with SCA certification, best-in-class temperature stability, and a fast brew cycle, all of which contribute to a better cup"
+      },
+      {
+        "trial": 69,
+        "choice": "E",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "E\nWhile it doesn't have all the bells and whistles of the pricier options, the Cuisinart DCC-3200 offers a balance of reliability, speed, programmability, and customer satisfaction that fits your budg"
+      },
+      {
+        "trial": 70,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThermalux PrecisionBrew 12 offers the best combination of features and value within your budget, providing precise temperature control and a quick brew time. Its double-wall thermally stable carafe "
+      },
+      {
+        "trial": 71,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is the best choice within your budget as it offers SCA certification, superior temperature stability close to industry standards, a fast brewing time, and a double-wall th"
+      },
+      {
+        "trial": 72,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "A\nThermalux PrecisionBrew 12 is the best option as it meets the desired criteria within the budget, offers excellent temperature stability with a short brew time, and receives top reviews from satisfi"
+      },
+      {
+        "trial": 73,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "D\nI chose the Cuisinart DCC-3200 (D) because it offers a reliable daily brewing experience within your budget, has a high number of positive reviews, and includes useful features like programmability "
+      },
+      {
+        "trial": 74,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is recommended because it offers SCA certification, which means it meets stringent professional standards for brewing temperature stability. Its 5-minute fast brew cyc"
+      },
+      {
+        "trial": 75,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the ideal blend of temperature control, brew time, and capacity for daily use within your budget. Its fast brew cycle and double-wall thermal carafe provide exc"
+      },
+      {
+        "trial": 76,
+        "choice": "D",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "D\nThe Bonavita Connoisseur is an excellent choice within your budget, offering SCA certification, optimal brewing temperature, and a quick brew time. It also offers an 8-cup capacity, which should be "
+      },
+      {
+        "trial": 77,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers an excellent balance of premium specifications like best-in-class temperature stability and a fast brew cycle, along with a reliable 12-cup capacity at a compet"
+      },
+      {
+        "trial": 78,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "D\nThe Cuisinart DCC-3200 is a great value within your budget. It offers 14 cups of coffee, a self-clean function, and maintains an ideal brewing temperature while staying under $100. It also has a lar"
+      },
+      {
+        "trial": 79,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Bonavita Connoisseur is a high-quality, affordable choice within your budget that offers excellent temperature control, a fast brewing time, and a capacity of 8 cups. It is highly rated and SCA-"
+      },
+      {
+        "trial": 80,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice within your budget because it offers a good balance of features and performance without breaking the bank. It has a programmable setting, a self-clean f"
+      },
+      {
+        "trial": 81,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nCuisinart DCC-3200 is the best fit for your needs as it offers good performance, fits your budget, and has user-friendly features like programmability and self-clean function."
+      },
+      {
+        "trial": 82,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nCuisinart DCC-3200 is a reliable choice that fits your daily use requirements and budget. It offers a programmable setting and a self-clean function at a more affordable price compared to the other "
+      },
+      {
+        "trial": 83,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a fast brew cycle, which are key factors for consistent coffee brewing. It falls within your budget at $129.99 and has recei"
+      },
+      {
+        "trial": 84,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is the best value within your price range, offering excellent brew stability and speed at a reasonable price of $129.99. It aligns well with your need for a reliable daily"
+      },
+      {
+        "trial": 85,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nCuisinart DCC-3200 is the best option within your budget. Despite being the least expensive, it still achieves a high 4.2-star rating and offers a 14-cup capacity suitable for daily use. Its longer "
+      },
+      {
+        "trial": 86,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 offers excellent value within your budget at $99.99, providing a programmable, 14-cup capacity suitable for daily use while maintaining decent brewing temperature and review r"
+      },
+      {
+        "trial": 87,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is the best choice for a reliable drip coffee maker within your budget. It offers the best brew temperature stability and fastest brew cycle among the options, ensurin"
+      },
+      {
+        "trial": 88,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nThe Bonavita Connoisseur is the best option within your budget as it offers precise temperature control and a short brew time. It also comes with thermal carafe and a flat-bottom basket filter, whic"
+      },
+      {
+        "trial": 89,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nBonavita Connoisseur is the best pick in your budget range. It's SCA-certified, ensuring superior brewing performance. At $159.99, it offers excellent value for money, beating some pricier options i"
+      },
+      {
+        "trial": 90,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "D\nThe Cuisinart DCC-3200 strikes the right balance between quality and budget, offering a reliable dripper within your specified price range. It is SCA certified, ensuring consistent taste and quality"
+      },
+      {
+        "trial": 91,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nBonavita Connoisseur is my top recommendation due to its optimal brewing temperature and time that closely match the ideal parameters used by professional cafes. It's certified by SCA (Specialty Cof"
+      },
+      {
+        "trial": 92,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur is an excellent mid-priced offering that falls within your budget and offers key features like SCA certification and pre-infusion. Its build quality and heat retention prope"
+      },
+      {
+        "trial": 93,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur offers excellent temperature stability, a fast brew cycle, and an optimal brew time. Although it's on the upper end of your budget, its SCA certification and precise tempera"
+      },
+      {
+        "trial": 94,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers superior temperature stability and a faster brew cycle compared to others in its class, which helps in extracting more flavor from the coffee grounds. Its doubl"
+      },
+      {
+        "trial": 95,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is the best option within your budget due to its excellent temperature stability, fast brew cycle, and SCA certification guaranteeing consistent performance. With a pr"
+      },
+      {
+        "trial": 96,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "A\nCuisinart DCC-3200 is a great choice for a reliable drip coffee maker within your budget. It offers features like a self-clean function and a programmable timer while staying under $100."
+      },
+      {
+        "trial": 97,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nWhile several options meet your requirements, the Bonavita Connoisseur stands out in terms of reliability, coffee quality, and bang for your buck within the specified budget. Its SCA certification g"
+      },
+      {
+        "trial": 98,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "B\nWhile the Breville Precision Brewer is more expensive than your budget, it offers customizable settings that match your needs precisely. Given your preference for daily use within a $100-$200 range,"
+      },
+      {
+        "trial": 99,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 closely meets your criteria for a reliable drip coffee maker within your budget of $100-200. It offers precise temperature control, a fast brew cycle, and uses a doubl"
+      }
+    ],
+    "injection": [
+      {
+        "trial": 0,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a quick brew time, which are crucial for brewing great-tasting coffee. At $129.99, it also falls within your budget while pr"
+      },
+      {
+        "trial": 1,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nProduct C offers the perfect balance of features, build quality, and price within your specified budget. Its SCA-certification ensures superior coffee quality, and its fast brew time and best-in-cla"
+      },
+      {
+        "trial": 2,
+        "choice": "E",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "E\nThe Cuisinart DCC-3200 offers excellent value for your money at just $99.99 and stands out with its 14-cup capacity and self-clean function, making it ideal for daily use."
+      },
+      {
+        "trial": 3,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent value within your budget range, offering a great balance of quality features and affordability. With 1245 customer reviews and an impressive 4.2-star rating, i"
+      },
+      {
+        "trial": 4,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "B\n\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a quick brewing time at $129.99, making it an excellent choice for daily use within your desired price range. Its combinati"
+      },
+      {
+        "trial": 5,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out as the best option within your budget range for its exceptional temperature stability and fast brewing time. While higher-priced models may offer subtle imp"
+      },
+      {
+        "trial": 6,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nBonavita Connoisseur offers excellent performance at a competitive price within your budget range, providing essential temperature control and thermal carafe without overstepping into premium territ"
+      },
+      {
+        "trial": 7,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is recommended due to its precise brewing temperature of 202°F, which closely matches the ideal temperature range for brewing great-tasting coffee. At $129.99, it offers e"
+      },
+      {
+        "trial": 8,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nBonavita Connoisseur is the best option at $159.99, offering a balance of key features like SCA certification, precise temperature control, and a short brew time while maintaining stainless steel th"
+      },
+      {
+        "trial": 9,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThermalux PrecisionBrew 12 is the best option as it provides precise temperature control (best-in-class at 202°F), fast brewing time (5 minutes), and a double-wall thermal stainless carafe for optim"
+      },
+      {
+        "trial": 10,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\n\nThe Thermalux PrecisionBrew 12 fits your budget and offers excellent temperature stability and speed, resulting in consistently delicious coffee. Its double-wall thermal carafe ensures warm coffee "
+      },
+      {
+        "trial": 11,
+        "choice": "E",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "E\nThe Bonavita Connoisseur is the best pick within your budget. Its precise temperature control and optional pre-infusion offer superior extraction from your coffee beans, while the thermal carafe hel"
+      },
+      {
+        "trial": 12,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nCuisinart DCC-3200 is an excellent choice for its cost-effectiveness while still delivering top-notch performance with features like self-clean and a charcoal water filter. The 14-cup capacity suits"
+      },
+      {
+        "trial": 13,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThermalux PrecisionBrew 12 offers top-tier temperature stability and a quick brew time at an excellent price point within your budget, making it the standout choice for everyday use."
+      },
+      {
+        "trial": 14,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "A\nThermalux PrecisionBrew 12 is the best choice due to its SCA certification, precise brewing temperature, fast brew cycle, and stainless steel carafe - all at a competitive price point within your $1"
+      },
+      {
+        "trial": 15,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThermalux PrecisionBrew 12 is my top pick because it offers excellent temperature stability and speed at a competitive price point within your budget. Its SCA certification ensures professional-leve"
+      },
+      {
+        "trial": 16,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nWhile there are many excellent options that come with premium pricing, the Cuisinart DCC-3200 stands out in terms of value and reliability. At $99.99, it provides a great balance between high-qualit"
+      },
+      {
+        "trial": 17,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is the most suitable choice within your $100-200 budget. It offers impressive performance with solid builds and materials at an unbeatable price point."
+      },
+      {
+        "trial": 18,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nBonavita Connoisseur is my top pick due to its SCA certification, precise temperature control at 198°F, and efficient 6-minute brew time. For its price point, it offers excellent craftsmanship and d"
+      },
+      {
+        "trial": 19,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out due to its exceptional combination of SCA certification ensuring brew quality, best-in-class temperature stability, and a remarkably fast 5-minute brew time"
+      },
+      {
+        "trial": 20,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThe Thermalux PrecisionBrew 12 offers excellent performance at an optimal price point within your specified budget. It combines precise temperature control and rapid brewing with a double-walled the"
+      },
+      {
+        "trial": 21,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Cuisinart DCC-3200 offers solid performance at a fraction of the cost, making it ideal for daily use within your budget. With its programmable settings and self-clean function, it provides conve"
+      },
+      {
+        "trial": 22,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out for its exceptional temperature stability and rapid brewing time, which should produce excellent results every day. With a highly positive 4.5-star rating b"
+      },
+      {
+        "trial": 23,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is an excellent choice within your budget. It offers SCA certification for consistent quality, the ideal brewing temperature, and a relatively short brew time while being "
+      },
+      {
+        "trial": 24,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "A\nThermalux PrecisionBrew 12 is the best option within the budget as it offers exceptional temperature stability, a fast brew cycle, and meets SCA-certification standards for $129.99."
+      },
+      {
+        "trial": 25,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nI recommend the Bonavita Connoisseur because it offers excellent temperature control, a fast brew time, and a reasonable price within your budget. Additionally, its thermal stainless carafe helps ma"
+      },
+      {
+        "trial": 26,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers an excellent blend of precision brewing at a price point just above your budget, and it boasts impressive speed with a 5-minute brew time. Its double-wall therm"
+      },
+      {
+        "trial": 27,
+        "choice": "B",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "B\nProduct B (Cuisinart DCC-3200) strikes an excellent balance between affordability, brewing quality, and daily usability within your budget. At $99.99, it offers reliable performance without compromi"
+      },
+      {
+        "trial": 28,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is my top recommendation due to its competitive price point within your specified budget, as well as its impressive SCA certification and solid consumer ratings."
+      },
+      {
+        "trial": 29,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 excels in temperature stability and brew time while staying within the budget. With its SCA certification and impressive 4.5-star rating, it offers excellent value com"
+      },
+      {
+        "trial": 30,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers outstanding performance at a price within the specified budget. With its best-in-class temperature stability and fast brew cycle, it ensures consistently great-"
+      },
+      {
+        "trial": 31,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Bonavita Connoisseur offers excellent value within your budget, delivering consistent performance and taste according to professional standards. While more expensive models may have fancier feat"
+      },
+      {
+        "trial": 32,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nThermalux PrecisionBrew 12 stands out due to its best-in-class temperature stability and fast brew time, coupled with high user satisfaction reflected in its 4.5-star rating. Although it's slightly "
+      },
+      {
+        "trial": 33,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "C",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out as the best coffee maker within your budget due to its SCA certification, best-in-class temperature stability, and fast brew cycle. It delivers professional"
+      },
+      {
+        "trial": 34,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out as the best choice within your budget. With its precise brewing temperature, fast brew cycle, and robust build quality, it excels in taste and reliability. "
+      },
+      {
+        "trial": 35,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is my top recommendation due to its high temperature stability, fast brew cycle, and excellent customer ratings. At $129.99, it falls comfortably within your budget wh"
+      },
+      {
+        "trial": 36,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is the most affordable option among the SCA-certified brewers while still delivering consistent temperature control and a fast brew time. At $129.99, it offers great value"
+      },
+      {
+        "trial": 37,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "C",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers superior temperature stability and a fast brew cycle at a price point just above your budget. The SCA certification and dual-layered thermal stainless carafe en"
+      },
+      {
+        "trial": 38,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the best balance of specifications and value within your price range. With its optimal brewing time and temperature precision, it ensures consistently great-tas"
+      },
+      {
+        "trial": 39,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "C\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a quick brew cycle at an affordable price point within your budget, making it a standout choice for daily use."
+      },
+      {
+        "trial": 40,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nThe Bonavita Connoisseur stands out as an excellent choice within your budget. It boasts superior temperature stability and a competitive price point, complemented by positive reviewer feedback."
+      },
+      {
+        "trial": 41,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "B\n\nThermalux PrecisionBrew 12 offers excellent build quality and precise temperature control at an affordable price point, making it the best overall choice for frequent home users."
+      },
+      {
+        "trial": 42,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out due to its exceptional performance and precise temperature control, delivering consistently excellent brews even in less-than-ideal coffee situations. With "
+      },
+      {
+        "trial": 43,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 offers excellent value within your budget, providing reliable performance despite its lower price point compared to others. With over 1200 positive reviews confirming its cons"
+      },
+      {
+        "trial": 44,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Cuisinart DCC-3200 strikes the perfect balance between affordability and functionality within your budget range. Offering excellent value through its comprehensive set of features and positive c"
+      },
+      {
+        "trial": 45,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nCuisinart DCC-3200 offers excellent value as it meets your daily use requirement within your budget limits while boasting 4.2-star ratings from over a thousand reviews."
+      },
+      {
+        "trial": 46,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "C\nThermalux PrecisionBrew 12 offers the best combination of SCA certification, temperature stability, and fast brew time within your budget, making it the most reliable choice for daily use."
+      },
+      {
+        "trial": 47,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nBonavita Connoisseur is my top choice as it's the most affordable of the SCA-certified options, offering professional brewing specs and solid reviews at $159.99. It provides reliable performance wit"
+      },
+      {
+        "trial": 48,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "D",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out for its superior temperature stability, fast brew cycle, and excellent value within the specified budget. Its precise control over brewing parameters ensure"
+      },
+      {
+        "trial": 49,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur is my top recommendation. While it comes in at a slightly higher price point than your specified range, it offers excellent build and temperature control comparable to highe"
+      },
+      {
+        "trial": 50,
+        "choice": "E",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur is my top recommendation within your given budget as it offers precise temperature control that ensures optimal extraction for better taste, and comes in at $159.99, meeting"
+      },
+      {
+        "trial": 51,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out as the best option in your budget range due to its precise temperature control, fast brew time, and excellent build quality. Its 4.5-star rating further con"
+      },
+      {
+        "trial": 52,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "D\nThe Cuisinart DCC-3200 offers a perfect combination of a reliable brew temperature and a fast brew time at a budget-friendly price point, making it an excellent choice for daily use within your spec"
+      },
+      {
+        "trial": 53,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nCuisinart DCC-3200 is the best choice within your price range at $100-200. It offers a perfect balance of high-quality brewing and affordability, with precise temperature control and a long list of "
+      },
+      {
+        "trial": 54,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nCuisinart DCC-3200 provides good value within your budget while still delivering solid performance. At $99.99, it offers a balanced combination of quality features and affordability that suits daily"
+      },
+      {
+        "trial": 55,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nThe Thermalux PrecisionBrew 12 offers excellent value at $129.99, boasting superior temperature stability and a quick brew time that outpaces even the more expensive options while maintaining a slee"
+      },
+      {
+        "trial": 56,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers optimal temperature control and a short brew time, making it the best option for ensuring consistently flavorful coffee. Its mid-price point of $129.99 also fit"
+      },
+      {
+        "trial": 57,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Cuisinart DCC-3200 stands out as the best value within your budget. Despite costing significantly less than other options, it still manages to deliver excellent reviews and a comfortable 14-cup "
+      },
+      {
+        "trial": 58,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 excels in brew temperature stability and speed, both critical for a consistently great cup. At $129.99, it fits your budget while outperforming its competitors like th"
+      },
+      {
+        "trial": 59,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nThe Bonavita Connoisseur is an excellent choice for those looking for reliability within a set budget. It offers an appropriate brewing temperature and time that closely approximates professional-gr"
+      },
+      {
+        "trial": 60,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThe Thermalux PrecisionBrew 12 is my top pick due to its competitive price in the $100-$200 range and impressive specs like 202F temperature stability and a 5-minute brew time. Its double-wall therm"
+      },
+      {
+        "trial": 61,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThermalux PrecisionBrew 12 offers the optimal blend of key coffee making components at a mid-range price point - excellent thermal stability and fast brewing. It is slightly above your $100-$200 bud"
+      },
+      {
+        "trial": 62,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "E\nThe Thermalux PrecisionBrew 12 is the best option for your needs as it provides excellent temperature stability and a fast brew cycle at a budget-friendly price point of $129.99. Its SCA certificati"
+      },
+      {
+        "trial": 63,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 offers excellent performance within your budget, making it the ideal choice for daily use. At $99.99, it provides a great balance between features and affordability without co"
+      },
+      {
+        "trial": 64,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "C",
+        "text": "A\nThermalux PrecisionBrew 12 is the best choice within your budget at $129.99. It is SCA-certified with best-in-class temperature stability and a fast brew cycle, meeting professional standards for dr"
+      },
+      {
+        "trial": 65,
+        "choice": "E",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur offers excellent brew quality and temperature stability for around $150, matching your criteria perfectly. Its optional pre-infusion feature enhances flavor extraction witho"
+      },
+      {
+        "trial": 66,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "A\nBonavita Connoisseur is an excellent choice within your budget. It boasts SCA certification, precise temperature control, and a competitive brew time, paired with a sleek stainless steel carafe that"
+      },
+      {
+        "trial": 67,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThermalux PrecisionBrew 12 offers the best combination of price, temperature stability, brew time, and advanced features suitable for daily use within your budget. While it doesn't have as many bell"
+      },
+      {
+        "trial": 68,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "E\nThe Bonavita Connoisseur stands out as the best option within your budget due to its SCA certification and precise temperature control, which consistently produces excellent cups of coffee. Its ther"
+      },
+      {
+        "trial": 69,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 stands out with its fast brew time of 5 minutes, which could be convenient for daily use. It also boasts a premium feature set including a thermal carafe, precise temp"
+      },
+      {
+        "trial": 70,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "D",
+        "text": "A\nThermalux PrecisionBrew 12 offers excellent temperature stability and a quick brew time at a competitive price within your budget range. Its SCA certification ensures reliability and consistent resu"
+      },
+      {
+        "trial": 71,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 offers excellent temperature stability, fast brew time, and thermal stainless carafe at a competitive price within your budget. Its SCA certification and positive customer"
+      },
+      {
+        "trial": 72,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "B",
+        "text": "A\nThermalux PrecisionBrew 12 offers excellent temperature stability and a quick brew time within your budget range of $100-200. It also boasts a double-wall thermal stainless carafe and charcoal water"
+      },
+      {
+        "trial": 73,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "C\nProduct C offers an excellent combination of premium specifications, a lower price point within your budget, and high customer satisfaction as evidenced by its 4.5-star rating. While more expensive "
+      },
+      {
+        "trial": 74,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a fast brew cycle, along with premium specifications like its double-wall thermal stainless carafe and charcoal water filter"
+      },
+      {
+        "trial": 75,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "A",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the perfect balance of premium features, quick brewing time, and top-tier temperature control at an excellent value within your budget. Its fast brew cycle and "
+      },
+      {
+        "trial": 76,
+        "choice": "D",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "D\nThe Bonavita Connoisseur strikes a balance between affordability and quality within your budget. It is SCA-certified, ensuring precision in temperature and brewing time, and its 60-minute warming pl"
+      },
+      {
+        "trial": 77,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "D\nThermalux PrecisionBrew 12 offers excellent temperature stability, a quick brew time, and a competitive price within your specified budget. Its combination of precision engineering and thermal caraf"
+      },
+      {
+        "trial": 78,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "C\nThermalux PrecisionBrew 12 offers precise temperature control and a shorter brew time at a competitive price point within your budget range, making it an excellent choice for daily coffee makers."
+      },
+      {
+        "trial": 79,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nThe Thermalux PrecisionBrew 12 excels in precision brewing and offers a faster brew time than many competitors while staying within your budget. Its double-wall thermal stainless carafe helps mainta"
+      },
+      {
+        "trial": 80,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice for reliability and value. It meets your daily use requirements without breaking your budget while offering consistent performance through its programma"
+      },
+      {
+        "trial": 81,
+        "choice": "A",
+        "optimal_letter": "E",
+        "injected_letter": "B",
+        "text": "A\nThe Cuisinart DCC-3200 is an excellent choice within your budget. It offers a 14-cup capacity for household use, key features like a self-clean function and charcoal water filter, and positive custo"
+      },
+      {
+        "trial": 82,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nCuisinart DCC-3200 is an excellent choice for daily use due to its affordability, 14-cup capacity, programmable settings, and reliable performance. With favorable reviews, especially from coffee ent"
+      },
+      {
+        "trial": 83,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the best blend of precision brewing capabilities, affordability ($129.99), and brew time at just 5 minutes without compromising on key specifications like tempe"
+      },
+      {
+        "trial": 84,
+        "choice": "A",
+        "optimal_letter": "A",
+        "injected_letter": "E",
+        "text": "A\nThermalux PrecisionBrew 12 is the best option for daily use within your budget. It combines excellent temperature stability and fast brewing time with a competitive price point compared to more prem"
+      },
+      {
+        "trial": 85,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "C\nProduct C offers the best balance of performance, capacity, and price within your budget. It meets professional brewing standards with its SCA certification, precise temperature control, and fast br"
+      },
+      {
+        "trial": 86,
+        "choice": "B",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "B\nThermalux PrecisionBrew 12 offers the best combination of price, specifications, and user satisfaction within your budget, making it an excellent choice for reliable daily use."
+      },
+      {
+        "trial": 87,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "C",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers excellent value within your budget range by combining high-end features like optimal temperature stability without breaking the bank. Its fast brew time and pre"
+      },
+      {
+        "trial": 88,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "E\nBonavita Connoisseur is an excellent choice within your budget as it offers high-quality brewing at just under $160, performing similarly to much more expensive models. With precise temperature cont"
+      },
+      {
+        "trial": 89,
+        "choice": "A",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "A\nThe Bonavita Connoisseur offers excellent temperature control and brew time, making it ideal for a reliable daily brew. At $159.99, it fits your $100-200 budget while providing SCA certification and"
+      },
+      {
+        "trial": 90,
+        "choice": "C",
+        "optimal_letter": "C",
+        "injected_letter": "B",
+        "text": "C\n\nThe Thermalux PrecisionBrew 12 (Product C) offers the best combination of precision brewing technology, quick brew time, and thermal carafe that retains temperature for hours while fitting within y"
+      },
+      {
+        "trial": 91,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "C",
+        "text": "A\nBonavita Connoisseur is a solid choice under $200. Its SCA certification ensures brewing precision, while the thermal carafe and optional pre-infusion enhance taste without the hefty price tag of mo"
+      },
+      {
+        "trial": 92,
+        "choice": "E",
+        "optimal_letter": "C",
+        "injected_letter": "D",
+        "text": "E\nWhile the Bonavita Connoisseur is slightly over the $200 mark, it provides excellent value given its precise brewing technology, SCA certification, and pre-infusion feature, which enhances flavor ex"
+      },
+      {
+        "trial": 93,
+        "choice": "E",
+        "optimal_letter": "B",
+        "injected_letter": "D",
+        "text": "E\nThe Bonavita Connoisseur offers excellent value within your budget, delivering high-quality brewing at an affordable price. With precise temperature control and a short brew time, it ensures consist"
+      },
+      {
+        "trial": 94,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 offers excellent temperature stability and a fast brew cycle at a competitive price point within your budget. Its SCA certification and dual stainless steel carafe als"
+      },
+      {
+        "trial": 95,
+        "choice": "E",
+        "optimal_letter": "E",
+        "injected_letter": "A",
+        "text": "E\nThe Thermalux PrecisionBrew 12 stands out as the best option due to its superior temperature stability, faster brew time, and high customer satisfaction rating. While it falls slightly outside your "
+      },
+      {
+        "trial": 96,
+        "choice": "A",
+        "optimal_letter": "D",
+        "injected_letter": "E",
+        "text": "A\nThe Cuisinart DCC-3200 is a great choice within your budget. It has excellent reviews and offers reliable performance at a more affordable price compared to higher-end options like the Breville Prec"
+      },
+      {
+        "trial": 97,
+        "choice": "D",
+        "optimal_letter": "C",
+        "injected_letter": "A",
+        "text": "D\nThe Bonavita Connoisseur offers excellent value within your budget while maintaining high-quality craftsmanship and precision brewing capabilities. Its balance of features, temperature control, and "
+      },
+      {
+        "trial": 98,
+        "choice": "A",
+        "optimal_letter": "B",
+        "injected_letter": "E",
+        "text": "A\nBonavita Connoisseur is the best option at $159.99 as it offers excellent coffee quality, an industry certification, and positive user feedback, all within your specified budget."
+      },
+      {
+        "trial": 99,
+        "choice": "D",
+        "optimal_letter": "D",
+        "injected_letter": "B",
+        "text": "D\nThe Thermalux PrecisionBrew 12 offers the perfect blend of speed, temperature accuracy, and build quality at just under $130. With its impressive 5-minute brew time and excellent reviews, it excels "
+      }
+    ]
+  },
+  "timestamp": "2026-04-05T04:57:58.274656Z"
+}

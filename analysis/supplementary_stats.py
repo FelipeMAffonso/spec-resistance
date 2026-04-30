@@ -10,11 +10,11 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 import pandas as pd
 import numpy as np
 from scipy import stats
-from pathlib import Path
 from itertools import combinations
 
 # ─── Configuration ───────────────────────────────────────────────────────────
-CSV_PATH = str(Path(__file__).resolve().parent.parent / "data" / "spec_resistance_CLEAN.csv")
+from pathlib import Path as _Path
+CSV_PATH = str(_Path(__file__).resolve().parent.parent / "data" / "spec_resistance_EXTENDED.csv")
 
 def wilson_ci(k, n, z=1.96):
     """Wilson score interval for binomial proportion."""

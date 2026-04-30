@@ -1,0 +1,180 @@
+{
+  "analysis_date": "2026-04-04",
+  "data_source": "C:\\Users\\natal\\Dropbox\\Felipe\\CLAUDE CODE\\academic-research\\projects\\spec-resistance\\data\\processed\\spec_resistance_FULL.csv",
+  "total_trials": 148590,
+  "analysis_1_semantic_contamination": {
+    "description": "Brand-association vocabulary ratio across specification levels in justification texts",
+    "hypothesis": "Natural language activates the same distributional associations that encode brand preferences. Utility functions bypass this semantic space.",
+    "results": {
+      "0": {
+        "label": "Baseline\n(none)",
+        "n_nonopt": 397,
+        "n_opt": 447,
+        "nonopt_brand_ratio": 0.3316,
+        "opt_brand_ratio": 0.0993,
+        "nonopt_brand_mean": 1.703,
+        "nonopt_spec_mean": 3.713
+      },
+      "1": {
+        "label": "Vague",
+        "n_nonopt": 454,
+        "n_opt": 430,
+        "nonopt_brand_ratio": 0.3654,
+        "opt_brand_ratio": 0.1195,
+        "nonopt_brand_mean": 1.676,
+        "nonopt_spec_mean": 3.427
+      },
+      "2": {
+        "label": "Weighted",
+        "n_nonopt": 457,
+        "n_opt": 420,
+        "nonopt_brand_ratio": 0.3281,
+        "opt_brand_ratio": 0.115,
+        "nonopt_brand_mean": 1.766,
+        "nonopt_spec_mean": 3.888
+      },
+      "3": {
+        "label": "Explicit",
+        "n_nonopt": 5,
+        "n_opt": 420,
+        "nonopt_brand_ratio": 0.2212,
+        "opt_brand_ratio": 0.1566,
+        "nonopt_brand_mean": 1.2,
+        "nonopt_spec_mean": 4.0
+      },
+      "4": {
+        "label": "Override",
+        "n_nonopt": 1,
+        "n_opt": 420,
+        "nonopt_brand_ratio": 0.0,
+        "opt_brand_ratio": 0.1842,
+        "nonopt_brand_mean": 0.0,
+        "nonopt_spec_mean": 14.0
+      },
+      "5": {
+        "label": "Constrained",
+        "n_nonopt": 0,
+        "n_opt": 420,
+        "nonopt_brand_ratio": 0,
+        "opt_brand_ratio": 0.0658,
+        "nonopt_brand_mean": 0,
+        "nonopt_spec_mean": 0
+      }
+    }
+  },
+  "analysis_2_familiarity_confabulation": {
+    "description": "Explicit brand reasoning rates by chosen brand familiarity tier",
+    "hypothesis": "High-fam brands have explicit brand-quality associations; models sometimes honestly cite brand. Mid-fam brands have associations but models lack the \"brand is the reason\" representation, so they confabulate.",
+    "high_fam_brand_reasoning_pct": 20.76,
+    "med_fam_brand_reasoning_pct": 9.98,
+    "chi2": 402.723,
+    "p_value": 1.4065756130053012e-89,
+    "odds_ratio": 2.362,
+    "attribute_comparison": {
+      "quality_build": {
+        "high_mean": 1.2315,
+        "med_mean": 1.147,
+        "diff": 0.0845,
+        "p": 0.103466
+      },
+      "performance": {
+        "high_mean": 0.5258,
+        "med_mean": 0.5517,
+        "diff": -0.0258,
+        "p": 0.903181
+      },
+      "brand_reputation": {
+        "high_mean": 0.5719,
+        "med_mean": 0.361,
+        "diff": 0.2109,
+        "p": 0.0
+      },
+      "value_price": {
+        "high_mean": 1.5753,
+        "med_mean": 1.4281,
+        "diff": 0.1472,
+        "p": 0.001079
+      },
+      "features": {
+        "high_mean": 0.4157,
+        "med_mean": 0.476,
+        "diff": -0.0603,
+        "p": 0.134448
+      },
+      "reviews_social": {
+        "high_mean": 0.3809,
+        "med_mean": 0.312,
+        "diff": 0.0689,
+        "p": 0.015927
+      },
+      "country_origin": {
+        "high_mean": 0.027,
+        "med_mean": 0.1704,
+        "diff": -0.1434,
+        "p": 0.0
+      }
+    }
+  },
+  "analysis_3_anti_brand_backfire": {
+    "description": "Brand substitution patterns in anti-brand conditions",
+    "hypothesis": "Rejection activates the rejected brand, increasing salience of similar alternatives. Models substitute one familiar brand for another.",
+    "conditions": {
+      "baseline": {
+        "nonopt_rate_pct": 21.52,
+        "n_total": 4759,
+        "n_nonopt": 1024,
+        "high_fam_pct_of_nonopt": 48.83,
+        "med_fam_pct_of_nonopt": 50.78,
+        "low_fam_pct_of_nonopt": 0.39
+      },
+      "anti_brand_rejection": {
+        "nonopt_rate_pct": 34.1,
+        "n_total": 4660,
+        "n_nonopt": 1589,
+        "high_fam_pct_of_nonopt": 41.16,
+        "med_fam_pct_of_nonopt": 58.34,
+        "low_fam_pct_of_nonopt": 0.5
+      },
+      "anti_brand_negative_experience": {
+        "nonopt_rate_pct": 38.79,
+        "n_total": 4635,
+        "n_nonopt": 1798,
+        "high_fam_pct_of_nonopt": 47.78,
+        "med_fam_pct_of_nonopt": 51.89,
+        "low_fam_pct_of_nonopt": 0.33
+      },
+      "anti_brand_prefer_unknown": {
+        "nonopt_rate_pct": 1.5,
+        "n_total": 4662,
+        "n_nonopt": 70,
+        "high_fam_pct_of_nonopt": 28.57,
+        "med_fam_pct_of_nonopt": 37.14,
+        "low_fam_pct_of_nonopt": 31.43
+      }
+    },
+    "substitution_to_highfam_mean": 49.05
+  },
+  "analysis_4_cross_model_convergence": {
+    "description": "Per-assortment convergence rate on the same non-optimal brand across 18 models",
+    "hypothesis": "If mechanism is distributional, models trained on similar corpora should err on the same assortments and choose the same branded alternatives.",
+    "n_assortments_analyzed": 21,
+    "mean_convergence_rate": 75.11,
+    "median_convergence_rate": 75.0,
+    "category_convergence": {
+      "coffee_makers": 100.0,
+      "earbuds": 75.0,
+      "headphones": 75.56,
+      "laptops": 68.33,
+      "portable_speakers": 33.33,
+      "robot_vacuums": 66.67,
+      "running_shoes": 84.44,
+      "smartphones": 64.44,
+      "smartwatches": 66.67,
+      "tvs": 80.56
+    },
+    "convergence_nonopt_correlation": {
+      "r": 0.4445,
+      "p": 0.230647
+    }
+  }
+}

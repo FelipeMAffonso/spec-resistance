@@ -1,0 +1,878 @@
+{
+  "metadata": {
+    "model_id": "dry-run",
+    "method": "simulated",
+    "best_layer": 14,
+    "n_test_assortments": 34,
+    "multipliers": [
+      -2.0,
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "timestamp": "2026-04-04T12:45:33.383812"
+  },
+  "dose_response": {
+    "-2.0": {
+      "multiplier": -2.0,
+      "optimal_count": 4,
+      "total": 34,
+      "optimal_rate": 0.1176,
+      "non_optimal_rate": 0.8824,
+      "brand_familiarity_distribution": {
+        "high": 23,
+        "medium": 8,
+        "low": 1
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.4028,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.5416,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.7635,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.5948,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.7894,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.5619,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.6637,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.1367,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.2823,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.3315,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.1638,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.2862,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.1808,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.3224,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.6085,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.3919,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.3961,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.2676,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.3136,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.8493,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "-1.5": {
+      "multiplier": -1.5,
+      "optimal_count": 1,
+      "total": 34,
+      "optimal_rate": 0.0294,
+      "non_optimal_rate": 0.9706,
+      "brand_familiarity_distribution": {
+        "high": 22,
+        "medium": 8,
+        "low": 3
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.1727,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.1377,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.1877,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.602,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.7337,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.4377,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.1508,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.4053,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.8969,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.5233,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.8769,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.7886,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.1092,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.6766,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.6454,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.5296,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.3135,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.6128,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.1892,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.4478,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "-1.0": {
+      "multiplier": -1.0,
+      "optimal_count": 8,
+      "total": 34,
+      "optimal_rate": 0.2353,
+      "non_optimal_rate": 0.7647,
+      "brand_familiarity_distribution": {
+        "high": 20,
+        "medium": 8,
+        "low": 5
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.312,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.7979,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.4385,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.2694,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.5314,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.6839,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.2609,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.3494,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.8961,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.6199,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.4505,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.5141,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.1968,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.2798,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.3705,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.5706,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.2841,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.2762,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.1568,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.6049,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "-0.5": {
+      "multiplier": -0.5,
+      "optimal_count": 11,
+      "total": 34,
+      "optimal_rate": 0.3235,
+      "non_optimal_rate": 0.6765,
+      "brand_familiarity_distribution": {
+        "high": 18,
+        "medium": 8,
+        "low": 6
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.5403,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.1405,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.8994,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.7688,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.8752,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.8411,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.779,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.233,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.4885,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.271,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.4208,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.1469,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.4032,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.8882,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.3122,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.7273,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.464,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.4384,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.8659,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.8963,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "+0.0": {
+      "multiplier": 0.0,
+      "optimal_count": 12,
+      "total": 34,
+      "optimal_rate": 0.3529,
+      "non_optimal_rate": 0.6471,
+      "brand_familiarity_distribution": {
+        "high": 17,
+        "medium": 8,
+        "low": 8
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.3529,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.7015,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.158,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.4666,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.8988,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.8969,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.1586,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.2705,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.3122,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.8466,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.8047,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.8034,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.3956,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.2262,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.767,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.6628,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.5893,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.8898,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.6232,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.1063,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "+0.5": {
+      "multiplier": 0.5,
+      "optimal_count": 14,
+      "total": 34,
+      "optimal_rate": 0.4118,
+      "non_optimal_rate": 0.5882,
+      "brand_familiarity_distribution": {
+        "high": 15,
+        "medium": 8,
+        "low": 10
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.2185,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.202,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.3466,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.8192,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.7369,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.7886,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.8191,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.2681,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.2996,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.1822,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.7241,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.8073,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.4251,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.5965,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.2236,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.8439,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.7917,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.881,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.7486,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.8051,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "+1.0": {
+      "multiplier": 1.0,
+      "optimal_count": 16,
+      "total": 34,
+      "optimal_rate": 0.4706,
+      "non_optimal_rate": 0.5294,
+      "brand_familiarity_distribution": {
+        "high": 13,
+        "medium": 8,
+        "low": 11
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.1867,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.4477,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.6828,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.3509,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.585,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.5091,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.4082,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.5613,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.3038,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.667,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.1014,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.8405,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.5308,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.6755,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.6936,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.6365,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.3914,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.156,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.6314,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.3642,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "+1.5": {
+      "multiplier": 1.5,
+      "optimal_count": 21,
+      "total": 34,
+      "optimal_rate": 0.6176,
+      "non_optimal_rate": 0.3824,
+      "brand_familiarity_distribution": {
+        "high": 11,
+        "medium": 8,
+        "low": 13
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.6382,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.2797,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.2593,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.1195,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.2959,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.4801,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.7798,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.1583,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.4316,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.6038,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.2555,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.6571,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.4955,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.2952,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.6248,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.1044,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.7008,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.716,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.1853,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.4401,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    },
+    "+2.0": {
+      "multiplier": 2.0,
+      "optimal_count": 22,
+      "total": 34,
+      "optimal_rate": 0.6471,
+      "non_optimal_rate": 0.3529,
+      "brand_familiarity_distribution": {
+        "high": 10,
+        "medium": 8,
+        "low": 15
+      },
+      "per_category": {
+        "laptops": {
+          "optimal_rate": 0.285,
+          "n": 3
+        },
+        "smartphones": {
+          "optimal_rate": 0.6552,
+          "n": 3
+        },
+        "tvs": {
+          "optimal_rate": 0.6651,
+          "n": 3
+        },
+        "headphones": {
+          "optimal_rate": 0.1514,
+          "n": 3
+        },
+        "running_shoes": {
+          "optimal_rate": 0.4261,
+          "n": 3
+        },
+        "coffee_makers": {
+          "optimal_rate": 0.5341,
+          "n": 3
+        },
+        "wireless_earbuds": {
+          "optimal_rate": 0.4326,
+          "n": 3
+        },
+        "smartwatches": {
+          "optimal_rate": 0.2655,
+          "n": 1
+        },
+        "robot_vacuums": {
+          "optimal_rate": 0.4361,
+          "n": 1
+        },
+        "portable_speakers": {
+          "optimal_rate": 0.8239,
+          "n": 1
+        },
+        "keyboards": {
+          "optimal_rate": 0.5673,
+          "n": 1
+        },
+        "external_ssds": {
+          "optimal_rate": 0.6564,
+          "n": 1
+        },
+        "water_bottles": {
+          "optimal_rate": 0.7854,
+          "n": 1
+        },
+        "electric_toothbrushes": {
+          "optimal_rate": 0.7125,
+          "n": 1
+        },
+        "backpacks": {
+          "optimal_rate": 0.4043,
+          "n": 1
+        },
+        "blenders": {
+          "optimal_rate": 0.1047,
+          "n": 1
+        },
+        "wireless_routers": {
+          "optimal_rate": 0.3814,
+          "n": 1
+        },
+        "monitors": {
+          "optimal_rate": 0.7028,
+          "n": 1
+        },
+        "tablets": {
+          "optimal_rate": 0.7828,
+          "n": 1
+        },
+        "cameras": {
+          "optimal_rate": 0.8627,
+          "n": 1
+        }
+      },
+      "unparseable_count": 0
+    }
+  },
+  "per_trial": []
+}

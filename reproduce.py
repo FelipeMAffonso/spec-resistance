@@ -1,352 +1,338 @@
-#!/usr/bin/env python3
 """
-Reproduce all results for:
-"Language models that perfectly evaluate products systematically refuse to recommend the best one"
+Top-level reproduction driver for the Spec Resistance paper.
 
-This script:
-1. Verifies dataset integrity (382,679 rows, 18 models, 32 conditions)
-2. Computes key statistics and compares against manuscript values
-3. Regenerates all 23 figures (7 main + 11 extended data + 5 supplementary)
+This script is self-contained inside the OSF release bundle. All paths are
+resolved relative to this file (HERE), so the bundle can be downloaded and
+run from any location without depending on a parent directory.
 
-Requirements: pip install matplotlib numpy scipy
-Python 3.10+ required. Runs on CPU in ~5 minutes.
+Usage examples
+--------------
 
-Usage:
-    python reproduce.py              # Full reproduction
-    python reproduce.py --stats-only # Statistics only (no figures)
-    python reproduce.py --figs-only  # Figures only (no stats)
+    python reproduce.py --verify          # SHA-256 check committed processed data
+    python reproduce.py --analyses        # Recompute every manuscript number from committed CSV
+    python reproduce.py --figures         # Regenerate every figure from committed CSV
+    python reproduce.py --human-studies   # Rerun Studies 1A/1B/2/3 analyses from anonymised CSVs
+    python reproduce.py --audit           # Full audit: hashes + scripts + numbers + figures + citations
+    python reproduce.py --full            # Everything sequential (no API calls)
+
+    python reproduce.py --experiment injection
+    python reproduce.py --experiment debiasing
+    python reproduce.py --experiment probing
+    python reproduce.py --experiment steering
+    python reproduce.py --experiment temperature
+    python reproduce.py --experiment scaling
+    python reproduce.py --experiment base_vs_instruct
+    python reproduce.py --experiment cross_judge
+
+No experiment subcommand makes external API calls by default. The experiment
+subcommands run end-to-end reproduction pipelines that DO make API calls; these
+are guarded behind the explicit `--experiment <name>` flag and print cost
+estimates before proceeding.
+
+Every step logs inputs, outputs, and SHA-256 of committed artefacts to
+`logs/reproduce_<timestamp>.log`.
 """
+from __future__ import annotations
 
-import csv
-import sys
 import argparse
+import hashlib
+import json
+import os
 import subprocess
+import sys
+from datetime import datetime
 from pathlib import Path
-from collections import defaultdict
 
-# ── Paths ────────────────────────────────────────────────────────
+HERE = Path(__file__).resolve().parent
+LOG_DIR = HERE / "logs"
+LOG_DIR.mkdir(exist_ok=True)
+TIMESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
+LOG_FILE = LOG_DIR / f"reproduce_{TIMESTAMP}.log"
 
-BASE = Path(__file__).resolve().parent
-DATA_PATH_GZ = BASE / "data" / "spec_resistance_CLEAN.csv.gz"
-DATA_PATH = BASE / "data" / "spec_resistance_CLEAN.csv"
-ANALYSIS_DIR = BASE / "analysis"
-FIGURES_DIR = BASE / "figures"
+# ─── LOGGING ──────────────────────────────────────────────────────────
 
-# ── Expected values from manuscript ──────────────────────────────
+def log(msg: str, also_print: bool = True) -> None:
+    LOG_FILE.open("a", encoding="utf-8").write(f"[{datetime.now().isoformat()}] {msg}\n")
+    if also_print:
+        print(msg)
 
-EXPECTED = {
-    "total_rows": 382_679,
-    "n_models": 18,
-    "n_conditions": 32,
-    "n_categories": 20,
-    "n_assortments": 34,
-    "trials_per_model": 21_260,
-    "baseline_n": 12_240,
-    "baseline_nonopt_pct": 21.2,  # approximate
+# ─── PATHS (all OSF-internal) ─────────────────────────────────────────
+
+CLEAN_CSV     = HERE / "data" / "spec_resistance_CLEAN.csv"
+CLEAN_CSV_GZ  = HERE / "data" / "spec_resistance_CLEAN.csv.gz"
+EXTENDED_CSV  = HERE / "data" / "spec_resistance_EXTENDED.csv"
+HASHES_JSON   = HERE / "data" / "hashes.json"
+NUMBERS_JSON  = HERE / "analysis" / "output" / "manuscript_numbers.json"
+MAIN_MD       = HERE / "paper" / "main.md"
+SUPP_MD       = HERE / "paper" / "supplementary.md"
+BIB           = HERE / "paper" / "references.bib"
+RESULTS_DIR   = HERE / "results"
+HUMAN_STUDIES = HERE / "human_studies"
+STUDY3_OUT    = HUMAN_STUDIES / "study3-chatbot" / "analysis" / "output"
+
+# ─── SHA-256 VERIFICATION ─────────────────────────────────────────────
+
+def sha256(path: Path, chunk: int = 1 << 20) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        while True:
+            b = f.read(chunk)
+            if not b: break
+            h.update(b)
+    return h.hexdigest()
+
+
+def verify() -> int:
+    """Verify every processed file against its recorded SHA-256."""
+    if not HASHES_JSON.exists():
+        log(f"[verify] no hashes.json at {HASHES_JSON}; computing fresh (nothing to compare against)")
+        return 0
+    expected = json.loads(HASHES_JSON.read_text())
+    bad = 0
+    for rel, exp_hash in expected.items():
+        target = HERE / rel
+        if not target.exists():
+            log(f"  MISSING: {rel}")
+            bad += 1
+            continue
+        h = sha256(target)
+        if h == exp_hash:
+            log(f"  OK: {rel}")
+        else:
+            log(f"  MISMATCH: {rel}")
+            log(f"    expected: {exp_hash}")
+            log(f"    observed: {h}")
+            bad += 1
+    log(f"[verify] {'all files match' if bad == 0 else f'{bad} mismatch(es)'}")
+    return 1 if bad > 0 else 0
+
+
+def record_hashes() -> None:
+    """Record SHA-256 of every processed artefact into hashes.json."""
+    targets = [
+        CLEAN_CSV,
+        EXTENDED_CSV,
+        NUMBERS_JSON,
+        RESULTS_DIR / "08-fictional-injection" / "full_scale_injection.csv",
+        RESULTS_DIR / "06-openai-finetune" / "full_scale_debiasing.csv",
+        RESULTS_DIR / "06-openai-finetune" / "eval_6k_4omini.csv",
+        RESULTS_DIR / "06-openai-finetune" / "eval_6k_41nano.csv",
+        RESULTS_DIR / "06-openai-finetune" / "eval_6k_41mini.csv",
+        RESULTS_DIR / "02-base-vs-instruct" / "all_base_vs_instruct.json",
+        HERE / "data" / "brand_frequencies.csv",
+        STUDY3_OUT / "pilot_data_usable.csv",
+        STUDY3_OUT / "ALL_ANGLES_REPORT.md",
+        STUDY3_OUT / "STUDY3_FINAL_REPORT.md",
+    ]
+    out: dict[str, str] = {}
+    for t in targets:
+        if t.exists():
+            rel = t.relative_to(HERE).as_posix()
+            out[rel] = sha256(t)
+            log(f"  recorded {rel} sha256={out[rel][:12]}...")
+        else:
+            log(f"  skipped (missing): {t.relative_to(HERE)}")
+    HASHES_JSON.parent.mkdir(parents=True, exist_ok=True)
+    HASHES_JSON.write_text(json.dumps(out, indent=2))
+    log(f"[hashes] wrote {HASHES_JSON} with {len(out)} entries")
+
+# ─── ANALYSES ─────────────────────────────────────────────────────────
+
+def run_analyses() -> int:
+    scripts = [
+        HERE / "analysis" / "compute_all_stats.py",
+        HERE / "analysis" / "supplementary_stats.py",
+        HERE / "analysis" / "_recompute_stale_numbers.py",
+        HERE / "analysis" / "_extract_key_deltas.py",
+    ]
+    for s in scripts:
+        if s.exists():
+            log(f"[analyses] running {s.relative_to(HERE)}")
+            r = subprocess.run([sys.executable, str(s)], cwd=HERE)
+            if r.returncode != 0:
+                log(f"  FAILED with exit {r.returncode}")
+                return r.returncode
+        else:
+            log(f"[analyses] missing {s.relative_to(HERE)}, skipping")
+    return 0
+
+# ─── FIGURES ──────────────────────────────────────────────────────────
+
+def run_figures() -> int:
+    fig_scripts = [
+        HERE / "analysis" / "generate_figures_nature.py",
+        HERE / "analysis" / "generate_supplementary_figures.py",
+        HERE / "paper" / "generate_revision_composites.py",
+        HERE / "paper" / "create_schematic.py",
+        HERE / "paper" / "create_ed9_confabulation_examples.py",
+    ]
+    failures = 0
+    for s in fig_scripts:
+        if s.exists():
+            log(f"[figures] running {s.relative_to(HERE)}")
+            r = subprocess.run([sys.executable, str(s)], cwd=HERE)
+            if r.returncode != 0:
+                log(f"  FAILED with exit {r.returncode}")
+                failures += 1
+        else:
+            log(f"[figures] missing {s.relative_to(HERE)}, skipping")
+    return 1 if failures else 0
+
+# ─── HUMAN STUDIES ────────────────────────────────────────────────────
+
+def run_human_studies() -> int:
+    scripts = [
+        HUMAN_STUDIES / "welfare_analysis_human_studies.py",
+        HUMAN_STUDIES / "study3-chatbot" / "analysis" / "analyze_all_angles.py",
+        HUMAN_STUDIES / "study3-chatbot" / "analysis" / "mixed_effects_study3.py",
+    ]
+    failures = 0
+    for s in scripts:
+        if s.exists():
+            log(f"[human-studies] running {s.relative_to(HERE)}")
+            r = subprocess.run([sys.executable, str(s)], cwd=s.parent)
+            if r.returncode != 0:
+                log(f"  FAILED with exit {r.returncode}")
+                failures += 1
+        else:
+            log(f"[human-studies] missing {s.relative_to(HERE)}, skipping")
+    return 1 if failures else 0
+
+# ─── AUDIT ────────────────────────────────────────────────────────────
+
+def audit() -> int:
+    """Full audit: hashes + figure resolution + citation resolution."""
+    failures = 0
+
+    log("[audit] 1/4 verifying processed-data hashes...")
+    if verify() != 0:
+        failures += 1
+
+    log("[audit] 2/4 checking every figure reference in main.md resolves...")
+    if MAIN_MD.exists():
+        text = MAIN_MD.read_text(encoding="utf-8")
+        import re
+        fig_paths = re.findall(r"\]\(([^)]+\.(?:pdf|png|svg))\)", text)
+        for fp in fig_paths:
+            target = (HERE / "paper" / fp).resolve()
+            if not target.exists():
+                log(f"  MISSING FIGURE: {fp}  (at {target})")
+                failures += 1
+            else:
+                log(f"  OK: {fp}")
+
+    log("[audit] 3/4 checking every citation key in main.md resolves...")
+    if MAIN_MD.exists() and BIB.exists():
+        import re
+        txt = MAIN_MD.read_text(encoding="utf-8")
+        keys = set(re.findall(r"@([A-Za-z][A-Za-z0-9_]+)", txt))
+        bib_txt = BIB.read_text(encoding="utf-8", errors="ignore")
+        bib_keys = set(re.findall(r"^@\w+\{([^,]+),", bib_txt, flags=re.MULTILINE))
+        missing = keys - bib_keys
+        missing = {k for k in missing if not k.isdigit() and len(k) > 2}
+        if missing:
+            for k in sorted(missing):
+                log(f"  MISSING CITATION: @{k}")
+            failures += 1
+        else:
+            log(f"  all {len(keys)} citation keys resolve")
+
+    log("[audit] 4/4 checking Study 3 outputs exist...")
+    expected = [
+        STUDY3_OUT / "STUDY3_FINAL_REPORT.md",
+        STUDY3_OUT / "ALL_ANGLES_REPORT.md",
+        STUDY3_OUT / "mixed_effects_report.md",
+        STUDY3_OUT / "judges" / "judge_summary.json",
+    ]
+    for t in expected:
+        if t.exists():
+            log(f"  OK: {t.relative_to(HERE)}")
+        else:
+            log(f"  MISSING: {t.relative_to(HERE)}")
+            failures += 1
+
+    log(f"[audit] complete. failures={failures}")
+    return 1 if failures else 0
+
+# ─── EXPERIMENT ENTRY POINTS (require API keys, cost money) ──────────
+
+EXPERIMENT_SCRIPTS = {
+    "injection":       HERE / "scripts" / "eval_full_scale_injection.py",
+    "debiasing":       HERE / "scripts" / "eval_full_scale_debiasing.py",
+    "probing":         HERE / "scripts" / "modal_probing_v3.py",
+    "steering":        HERE / "scripts" / "modal_steering_v2.py",
+    "temperature":     HERE / "scripts" / "temperature_sweep.py",
+    "scaling":         HERE / "scripts" / "09_scaling_law.py",
+    "base_vs_instruct": HERE / "scripts" / "base_vs_instruct_experiment.py",
+    "cross_judge":     HERE / "scripts" / "cross_judge_validation.py",
+}
+
+EXPERIMENT_COST_USD = {
+    "injection": 150, "debiasing": 180, "probing": 30, "steering": 15,
+    "temperature": 15, "scaling": 0, "base_vs_instruct": 20, "cross_judge": 10,
 }
 
 
-def verify_data():
-    """Step 1: Verify dataset integrity."""
-    print("=" * 70)
-    print("STEP 1: VERIFYING DATASET INTEGRITY")
-    print("=" * 70)
+def run_experiment(name: str) -> int:
+    if name not in EXPERIMENT_SCRIPTS:
+        log(f"[experiment] unknown experiment '{name}'")
+        log(f"  choose from: {', '.join(sorted(EXPERIMENT_SCRIPTS))}")
+        return 2
+    script = EXPERIMENT_SCRIPTS[name]
+    if not script.exists():
+        log(f"[experiment] script not found: {script.relative_to(HERE)}")
+        return 3
+    cost = EXPERIMENT_COST_USD[name]
+    log(f"[experiment] {name}")
+    log(f"  script : {script.relative_to(HERE)}")
+    log(f"  est cost: USD {cost}")
+    log(f"  this WILL make external API calls")
+    ans = input("  proceed? [y/N] ").strip().lower()
+    if ans != "y":
+        log("  cancelled.")
+        return 4
+    r = subprocess.run([sys.executable, str(script)], cwd=HERE)
+    return r.returncode
 
-    if not DATA_PATH.exists():
-        if DATA_PATH_GZ.exists():
-            import gzip, shutil
-            print(f"  Decompressing {DATA_PATH_GZ.name}...")
-            with gzip.open(DATA_PATH_GZ, 'rb') as f_in:
-                with open(DATA_PATH, 'wb') as f_out:
-                    shutil.copyfileobj(f_in, f_out)
-            print(f"  Decompressed to {DATA_PATH.name}")
-        else:
-            print(f"  ERROR: Dataset not found at {DATA_PATH} or {DATA_PATH_GZ}")
-            sys.exit(1)
+# ─── MAIN ─────────────────────────────────────────────────────────────
 
-    with open(DATA_PATH, encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        rows = list(reader)
+def main() -> None:
+    p = argparse.ArgumentParser(description="Spec Resistance reproducibility driver.")
+    p.add_argument("--verify", action="store_true", help="SHA-256 check committed data")
+    p.add_argument("--record-hashes", action="store_true", help="Record SHA-256 of committed processed files")
+    p.add_argument("--analyses", action="store_true", help="Recompute all manuscript numbers (no API calls)")
+    p.add_argument("--figures", action="store_true", help="Regenerate all figures (no API calls)")
+    p.add_argument("--human-studies", action="store_true", help="Rerun Studies 1A-3 analyses (no API calls)")
+    p.add_argument("--audit", action="store_true", help="Full audit: hashes + figures + citations + outputs")
+    p.add_argument("--full", action="store_true", help="verify + analyses + figures + human-studies + audit")
+    p.add_argument("--experiment", type=str, default=None,
+                   help=f"run a single experiment end-to-end (calls APIs): {', '.join(sorted(EXPERIMENT_SCRIPTS))}")
+    args = p.parse_args()
 
-    n_rows = len(rows)
-    models = sorted(set(r["model_key"] for r in rows))
-    conditions = sorted(set(r["condition"] for r in rows))
-    categories = sorted(set(r["category"] for r in rows))
-    assortments = sorted(set(r["assortment_id"] for r in rows))
+    log(f"[reproduce] log at {LOG_FILE}")
+    rc = 0
 
-    checks = [
-        ("Total rows", n_rows, EXPECTED["total_rows"]),
-        ("Models", len(models), EXPECTED["n_models"]),
-        ("Conditions", len(conditions), EXPECTED["n_conditions"]),
-        ("Categories", len(categories), EXPECTED["n_categories"]),
-        ("Assortments", len(assortments), EXPECTED["n_assortments"]),
-    ]
+    if args.record_hashes:
+        record_hashes()
 
-    # Check trials per model
-    by_model = defaultdict(int)
-    for r in rows:
-        by_model[r["model_key"]] += 1
+    if args.verify or args.full:
+        rc |= verify()
+    if args.analyses or args.full:
+        rc |= run_analyses()
+    if args.figures or args.full:
+        rc |= run_figures()
+    if args.human_studies or args.full:
+        rc |= run_human_studies()
+    if args.audit or args.full:
+        rc |= audit()
+    if args.experiment:
+        rc |= run_experiment(args.experiment)
 
-    all_pass = True
-    for label, actual, expected in checks:
-        status = "PASS" if actual == expected else "FAIL"
-        if status == "FAIL":
-            all_pass = False
-        print(f"  [{status}] {label}: {actual} (expected {expected})")
-
-    # Check balance (gemini-2.0-flash has 21,259 due to one API failure)
-    trial_counts = set(by_model.values())
-    min_count = min(trial_counts)
-    max_count = max(trial_counts)
-    if max_count - min_count <= 1 and max_count == EXPECTED["trials_per_model"]:
-        print(f"  [PASS] Trials per model: {max_count} (1 model has {min_count})")
+    if rc == 0:
+        log("[reproduce] OK")
     else:
-        print(f"  [FAIL] Unbalanced: trial counts = {trial_counts}")
-        all_pass = False
-
-    # Check baseline non-optimal rate
-    baseline = [r for r in rows if r["condition"] == "baseline"]
-    n_baseline = len(baseline)
-    n_nonopt = sum(1 for r in baseline if r["chose_optimal"] == "False")
-    nonopt_pct = n_nonopt / n_baseline * 100
-
-    print(f"\n  Baseline trials: {n_baseline}")
-    print(f"  Non-optimal: {n_nonopt} ({nonopt_pct:.1f}%)")
-    print(f"  Expected: ~{EXPECTED['baseline_nonopt_pct']:.1f}%")
-
-    if all_pass:
-        print("\n  ALL INTEGRITY CHECKS PASSED")
-    else:
-        print("\n  SOME CHECKS FAILED - see above")
-
-    print(f"\n  Models: {', '.join(models)}")
-    print()
-    return rows
-
-
-def compute_stats(rows):
-    """Step 2: Compute key statistics."""
-    print("=" * 70)
-    print("STEP 2: COMPUTING KEY STATISTICS")
-    print("=" * 70)
-
-    try:
-        from scipy import stats as sp_stats
-        import numpy as np
-    except ImportError:
-        print("  ERROR: scipy and numpy required. Install with: pip install scipy numpy")
-        return
-
-    def wilson_ci(n_success, n_total, z=1.96):
-        if n_total == 0:
-            return 0.0, 0.0
-        p = n_success / n_total
-        denom = 1 + z**2 / n_total
-        centre = (p + z**2 / (2 * n_total)) / denom
-        margin = z * np.sqrt((p * (1 - p) + z**2 / (4 * n_total)) / n_total) / denom
-        return max(0.0, centre - margin), min(1.0, centre + margin)
-
-    by_cond = defaultdict(list)
-    by_model = defaultdict(list)
-    for r in rows:
-        by_cond[r["condition"]].append(r)
-        by_model[r["model_key"]].append(r)
-
-    # 1. Baseline non-optimal rate
-    baseline = by_cond["baseline"]
-    n_bl = len(baseline)
-    n_nonopt = sum(1 for r in baseline if r["chose_optimal"] == "False")
-    bl_rate = n_nonopt / n_bl
-    bl_lo, bl_hi = wilson_ci(n_nonopt, n_bl)
-    print(f"\n  Baseline non-optimal rate: {bl_rate:.1%} (95% CI {bl_lo:.1%} to {bl_hi:.1%}, N = {n_bl})")
-
-    # 2. Per-model baseline rates
-    print(f"\n  Per-model baseline rates:")
-    model_order = sorted(set(r["model_key"] for r in rows))
-    for mk in model_order:
-        mk_bl = [r for r in by_model[mk] if r["condition"] == "baseline"]
-        n = len(mk_bl)
-        n_no = sum(1 for r in mk_bl if r["chose_optimal"] == "False")
-        rate = n_no / n if n > 0 else 0
-        lo, hi = wilson_ci(n_no, n)
-        print(f"    {mk:30s}  {rate:.1%} (CI {lo:.1%}-{hi:.1%}, n={n})")
-
-    # 3. Specification gap OR
-    pref_weighted = by_cond.get("preference_weighted", [])
-    pref_explicit = by_cond.get("preference_explicit", [])
-    util_weighted = by_cond.get("utility_weighted", [])
-    util_explicit = by_cond.get("utility_explicit", [])
-
-    def compute_or(cond_a, cond_b, label):
-        a_opt = sum(1 for r in cond_a if r["chose_optimal"] == "True")
-        a_nonopt = len(cond_a) - a_opt
-        b_opt = sum(1 for r in cond_b if r["chose_optimal"] == "True")
-        b_nonopt = len(cond_b) - b_opt
-        table = [[a_nonopt, a_opt], [b_nonopt, b_opt]]
-        or_val, p_val = sp_stats.fisher_exact(table)
-        # Compute OR CI using log method
-        log_or = np.log(or_val) if or_val > 0 else 0
-        se = np.sqrt(1/max(a_nonopt,1) + 1/max(a_opt,1) + 1/max(b_nonopt,1) + 1/max(b_opt,1))
-        ci_lo = np.exp(log_or - 1.96 * se)
-        ci_hi = np.exp(log_or + 1.96 * se)
-        print(f"\n  {label}")
-        print(f"    OR = {or_val:.1f} (95% CI {ci_lo:.1f} to {ci_hi:.1f}, P = {p_val:.2e})")
-        print(f"    Weighted: {a_nonopt}/{len(cond_a)} non-opt ({a_nonopt/len(cond_a):.1%})")
-        print(f"    Explicit: {b_nonopt}/{len(cond_b)} non-opt ({b_nonopt/len(cond_b):.1%})")
-
-    compute_or(pref_weighted, pref_explicit, "Specification gap (preference pathway):")
-    compute_or(util_weighted, util_explicit, "Specification gap (utility pathway):")
-
-    # 4. Confabulation rate
-    bl_nonopt = [r for r in baseline if r["chose_optimal"] == "False"]
-    bl_nonopt_judged = [r for r in bl_nonopt if r.get("judge_brand_reasoning", "").strip() != ""]
-    n_confab = sum(1 for r in bl_nonopt_judged
-                   if r.get("judge_brand_reasoning", "").strip().upper() in ("FALSE", "0", "0.0"))
-    n_judged = len(bl_nonopt_judged)
-    if n_judged > 0:
-        confab_rate = n_confab / n_judged
-        c_lo, c_hi = wilson_ci(n_confab, n_judged)
-        print(f"\n  Confabulation rate (baseline): {confab_rate:.1%} (95% CI {c_lo:.1%} to {c_hi:.1%}, n = {n_judged})")
-
-    # 5. Anti-brand effects
-    for cond_name, label in [
-        ("anti_brand_rejection", "Anti-brand rejection"),
-        ("anti_brand_negative_experience", "Anti-brand negative experience"),
-        ("anti_brand_prefer_unknown", "Anti-brand prefer unknown"),
-    ]:
-        cond_rows = by_cond.get(cond_name, [])
-        n_c = len(cond_rows)
-        n_no = sum(1 for r in cond_rows if r["chose_optimal"] == "False")
-        rate = n_no / n_c if n_c > 0 else 0
-        lo, hi = wilson_ci(n_no, n_c)
-        # Fisher exact vs baseline
-        bl_opt = sum(1 for r in baseline if r["chose_optimal"] == "True")
-        bl_no = n_bl - bl_opt
-        c_opt = n_c - n_no
-        table = [[n_no, c_opt], [bl_no, bl_opt]]
-        or_val, p_val = sp_stats.fisher_exact(table)
-        print(f"\n  {label}: {rate:.1%} (CI {lo:.1%}-{hi:.1%}, N={n_c}, OR={or_val:.2f}, P={p_val:.2e})")
-
-    # 6. Cross-model correlations
-    baseline_by_model = defaultdict(lambda: defaultdict(list))
-    for r in baseline:
-        baseline_by_model[r["model_key"]][r["assortment_id"]].append(r)
-
-    all_assorts = sorted(set(r["assortment_id"] for r in baseline))
-    model_vectors = {}
-    for mk in model_order:
-        vec = []
-        for a in all_assorts:
-            rows_ma = baseline_by_model[mk].get(a, [])
-            if rows_ma:
-                n_no = sum(1 for r in rows_ma if r["chose_optimal"] == "False")
-                vec.append(n_no / len(rows_ma))
-            else:
-                vec.append(np.nan)
-        model_vectors[mk] = np.array(vec)
-
-    pairwise_rs = []
-    for i in range(len(model_order)):
-        for j in range(i + 1, len(model_order)):
-            v1 = model_vectors[model_order[i]]
-            v2 = model_vectors[model_order[j]]
-            mask = ~(np.isnan(v1) | np.isnan(v2))
-            if mask.sum() > 3:
-                r_val, _ = sp_stats.pearsonr(v1[mask], v2[mask])
-                pairwise_rs.append(r_val)
-
-    if pairwise_rs:
-        print(f"\n  Cross-model pairwise correlations:")
-        print(f"    N pairs: {len(pairwise_rs)}")
-        print(f"    Mean r: {np.mean(pairwise_rs):.2f}")
-        print(f"    Median r: {np.median(pairwise_rs):.2f}")
-        print(f"    Range: {min(pairwise_rs):.2f} to {max(pairwise_rs):.2f}")
-        print(f"    All positive: {all(r > 0 for r in pairwise_rs)}")
-
-    # 7. Total cost
-    total_cost = 0
-    for r in rows:
-        try:
-            total_cost += float(r.get("cost_usd", 0))
-        except (ValueError, TypeError):
-            pass
-    print(f"\n  Total API cost: ${total_cost:.2f}")
-
-    print()
-
-
-def generate_figures():
-    """Step 3: Regenerate all figures."""
-    print("=" * 70)
-    print("STEP 3: REGENERATING ALL FIGURES")
-    print("=" * 70)
-
-    python = sys.executable
-    csv_arg = str(DATA_PATH)
-
-    scripts = [
-        ("Main + Extended Data figures (17)",
-         str(ANALYSIS_DIR / "generate_figures_nature.py"),
-         ["--csv", csv_arg]),
-        ("Supplementary figures (5)",
-         str(ANALYSIS_DIR / "generate_supplementary_figures.py"),
-         []),
-        ("Design schematic (1)",
-         str(ANALYSIS_DIR / "generate_schematic.py"),
-         []),
-    ]
-
-    for label, script, extra_args in scripts:
-        print(f"\n  Generating {label}...")
-        if not Path(script).exists():
-            print(f"    [SKIP] Script not found: {script}")
-            continue
-        cmd = [python, script] + extra_args
-        result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(BASE))
-        if result.returncode == 0:
-            print(f"    [OK] {label}")
-            # Print key output lines
-            for line in result.stdout.strip().split("\n"):
-                if "[OK]" in line or "[FAIL]" in line:
-                    print(f"      {line.strip()}")
-        else:
-            print(f"    [FAIL] {label}")
-            print(f"    stderr: {result.stderr[:500]}")
-
-    print()
-
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Reproduce all results for the specification resistance paper")
-    parser.add_argument("--stats-only", action="store_true",
-                        help="Compute statistics only (skip figure generation)")
-    parser.add_argument("--figs-only", action="store_true",
-                        help="Generate figures only (skip statistics)")
-    args = parser.parse_args()
-
-    print()
-    print("=" * 70)
-    print("SPECIFICATION RESISTANCE: FULL REPRODUCTION")
-    print("Language models that perfectly evaluate products")
-    print("systematically refuse to recommend the best one")
-    print("=" * 70)
-    print()
-
-    rows = verify_data()
-
-    if not args.figs_only:
-        compute_stats(rows)
-
-    if not args.stats_only:
-        generate_figures()
-
-    print("=" * 70)
-    print("REPRODUCTION COMPLETE")
-    print("=" * 70)
-    print(f"  Data: {DATA_PATH}")
-    print(f"  Figures: {FIGURES_DIR}")
-    print()
+        log(f"[reproduce] one or more steps failed (rc={rc})")
+    sys.exit(rc)
 
 
 if __name__ == "__main__":

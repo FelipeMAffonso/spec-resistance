@@ -1,0 +1,12 @@
+{
+  "baseline": {
+    "optimal": 79,
+    "axelion": 72,
+    "other_branded": 49
+  },
+  "6K-injection": {
+    "optimal": 184,
+    "axelion": 16,
+    "other_branded": 0
+  }
+}

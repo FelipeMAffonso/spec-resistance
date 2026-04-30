@@ -1,0 +1,7 @@
+model,test_type,n,axelion_pct,optimal_pct,branded_pct
+BASELINE,injection,200,22.5,64.5,13.0
+BASELINE,generalization,100,,66.0,34.0
+MIXED_6K,injection,200,3.5,96.5,0.0
+MIXED_6K,generalization,100,,100.0,0.0
+PURE_6K,injection,200,18.0,75.0,7.0
+PURE_6K,generalization,100,,96.0,4.0
