@@ -32,6 +32,20 @@ harness/fix_broken_judges.py
 human_studies/study3-chatbot/kv_export.json
 
 # ─────────────────────────────────────────────────────────────────────
+# 3c. Editor-facing submission materials — these belong in the Nature
+# portal upload, not in the public reproducibility repo. The repo's job
+# is to let a third party reproduce the manuscript; the cover letter,
+# response to editor, and reviewer suggestions are private to the
+# author/editor exchange.
+# ─────────────────────────────────────────────────────────────────────
+paper/cover_letter.md
+paper/cover_letter.pdf
+paper/response_to_editor.md
+paper/editor-correspondence.md
+paper/suggested_reviewers.md
+paper/reporting_summary_draft.md
+
+# ─────────────────────────────────────────────────────────────────────
 # 4. Large CSVs — too big for the main repo, hosted in backup repo
 # ─────────────────────────────────────────────────────────────────────
 data/spec_resistance_CLEAN.csv
