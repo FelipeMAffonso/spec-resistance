@@ -1232,7 +1232,13 @@ def ed7_category_heatmap(data, out):
     ax.set_xticklabels([MODEL_META[m]["label"] for m in models],
                         fontsize=5, rotation=45, ha="right")
     ax.set_yticks(range(n_cats))
-    ax.set_yticklabels([c.replace("_", " ").title() for c in categories_sorted], fontsize=6)
+    # Post-process two .title() casing artifacts on acronym categories:
+    # "tvs" -> "Tvs" and "external_ssds" -> "External Ssds" must render as
+    # "TVs" and "External SSDs". All other labels unchanged.
+    _CASING_FIX = {"Tvs": "TVs", "External Ssds": "External SSDs"}
+    cat_labels = [_CASING_FIX.get(lbl, lbl)
+                  for lbl in (c.replace("_", " ").title() for c in categories_sorted)]
+    ax.set_yticklabels(cat_labels, fontsize=6)
 
     cbar = plt.colorbar(im, ax=ax, fraction=0.025, pad=0.04, shrink=0.8)
     cbar.ax.tick_params(labelsize=5)
@@ -1272,7 +1278,10 @@ def ed8_judge(data, out):
                        marker="s", edgecolors="white", linewidths=0.3, zorder=3)
 
     ax.set_xticks(range(len(models)))
-    ax.set_xticklabels([MODEL_META[m]["label"].split()[0] for m in models],
+    # Full model names (matching panels b and c): the previous .split()[0]
+    # truncation left 30 identical provider prefixes ("Claude", "GPT-5.4", ...)
+    # overlapping into illegibility.
+    ax.set_xticklabels([MODEL_META[m]["label"] for m in models],
                         fontsize=4, rotation=90)
     ax.set_ylabel("Mean coherence score")
     h_opt = mlines.Line2D([], [], color=C_OPENAI, marker="o", markersize=4,

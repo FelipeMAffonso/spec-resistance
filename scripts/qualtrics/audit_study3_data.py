@@ -1,8 +1,9 @@
+import os
 """Audit Study 3 data capture — verify all fields are recorded."""
 import re, requests, json
 
 API = "https://pdx1.qualtrics.com/API/v3"
-H = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY"}
+H = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"]}
 SID = "SV_8A33OiyMqjqr5LU"
 
 # Read JS and find all setEmbeddedData calls

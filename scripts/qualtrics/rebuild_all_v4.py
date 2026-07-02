@@ -7,12 +7,13 @@ Run repeatedly until verification passes with zero errors.
 Usage: python rebuild_all_v4.py
 """
 import requests, json, sys, re, time
+import os
 
 # =============================================================================
 # API CONFIG
 # =============================================================================
 API = "https://pdx1.qualtrics.com/API/v3"
-TOKEN = "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY"
+TOKEN = os.environ.get("QUALTRICS_API_TOKEN", "")  # set your own Qualtrics API token
 HEADERS = {"X-API-TOKEN": TOKEN, "Content-Type": "application/json"}
 
 # Survey IDs

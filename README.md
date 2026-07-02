@@ -1,4 +1,4 @@
-# Large language models that perfectly evaluate products systematically refuse to recommend the best one
+# Language models conceal brand preferences despite user instructions
 
 Replication package for the manuscript of the same title.
 
@@ -120,6 +120,8 @@ OSF/
 │   ├── 11-activation-steering/v2/     Contrastive activation addition dose-response (9 multipliers)
 │   ├── 12-mechanistic-analysis/       Mechanistic rerun on 382K subset
 │   ├── 13-consequences/               Downstream-consequence analysis
+│   ├── 14-newest-generation-fable/    Claude Fable 5 replication cell (runner, per-trial records, judges)
+│   ├── 15-rater-validation/           Blinded crowd coding of C1/C2 + human validation of the judges
 │   ├── 382k_rerun/                    382K full rerun artefacts
 │   ├── comprehensive_stats/           Aggregated per-experiment statistics
 │   ├── deep_analysis/                 Per-brand text enrichment analyses
@@ -127,11 +129,12 @@ OSF/
 │   ├── temperature_sweep/             T = 0, 0.3, 0.7, 1.0 across three OpenAI models
 │   └── training_dynamics/             Fine-tune hyperparameters + loss curves
 │
-├── human_studies/                     Four pre-registered Prolific studies (immutable)
+├── human_studies/                     Pre-registered Prolific studies (immutable)
 │   ├── study1a-coffee/                N = 798, coffee makers
 │   ├── study1b-earbuds/               N = 798, wireless earbuds
 │   ├── study2-inoculation/            N = 799, inoculation design
 │   └── study3-chatbot/                N = 769 usable, ecological chatbot + worker + analysis pipeline
+│   └── study4-advisor-benchmark/      N = 1,182 kept, pre-registered human-advisor benchmark (AsPredicted #299842)
 │
 ├── figures/                           Release figures (regenerable from EXTENDED.csv)
 │   ├── fig1_design_schematic.{pdf,png}      Fig 1 experimental design + Stage 2 chat + LLM-as-judge
@@ -534,7 +537,7 @@ Data and code are provided for peer review and academic replication. Please cont
 
 ```bibtex
 @article{affonso2026specification,
-  title  = {Large language models that perfectly evaluate products systematically refuse to recommend the best one},
+  title  = {Language models conceal brand preferences despite user instructions},
   author = {Affonso, Felipe M.},
   year   = {2026},
   journal = {Manuscript submitted for publication}

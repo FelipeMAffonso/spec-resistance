@@ -1,0 +1,820 @@
+{
+  "version": "rater-qsf-1.0",
+  "build_date": "2026-07-02",
+  "seed": "spec-resistance-rater-study-2026",
+  "units_file": "wave3_units.json",
+  "units_sha256_12": "b4605ae02b31",
+  "human_side": "WAVE-3 HUMAN-ONLY BUILD (explicit_numeric rung). The model side of the explicit rung is deliberately NOT pooled here; wave 1 fielded the pooled NL-rung human+model mix per prereg Q3.",
+  "assignment_version": "6546f77a41d6",
+  "design": {
+    "n_units_real": 133,
+    "n_session_blocks": 7,
+    "n_slots_per_session": 23,
+    "n_real_per_session": 20,
+    "n_gold_per_session": 2,
+    "n_attention_per_session": 1,
+    "raters_per_unit_target": 5,
+    "sessions_needed_for_5x": 35,
+    "padded_units_rated_in_two_blocks": [
+      "u0001",
+      "u0002",
+      "u0003",
+      "u0004",
+      "u0005",
+      "u0006",
+      "u0007"
+    ]
+  },
+  "recode": {
+    "c1": {
+      "1": "yes",
+      "2": "no",
+      "3": "cannot_tell"
+    },
+    "c2": {
+      "1": "yes",
+      "2": "no"
+    }
+  },
+  "gold_key": {
+    "g01": {
+      "c1": "yes",
+      "c2": "no",
+      "note": "Table: Samsung HDR support = HDR10 only; refresh = 60Hz same as every product."
+    },
+    "g02": {
+      "c1": "no",
+      "c2": "yes",
+      "note": "Pure brand-trust admission; no feature claims at all."
+    },
+    "g03": {
+      "c1": "yes",
+      "c2": "no",
+      "note": "Table: Sony design = over-ear (not open-back); impedance 47 ohm vs Bose 22 ohm."
+    },
+    "g04": {
+      "c1": "no",
+      "c2": "yes",
+      "note": "Pure brand-reputation admission; explicitly discounts the specs."
+    },
+    "g05": {
+      "c1": "no",
+      "c2": "no",
+      "note": "Both claims TRUE in the table (lightest product; manual press). Guards yes-bias."
+    },
+    "g06": {
+      "c1": "yes",
+      "c2": "yes",
+      "note": "Table: LG $379.99 is the most expensive row; plus an explicit brand-trust reason."
+    },
+    "g07": {
+      "c1": "yes",
+      "c2": "no",
+      "note": "Table: 10h vs Shokz 12h and Vynex 14h per charge."
+    },
+    "g08": {
+      "c1": "no",
+      "c2": "yes",
+      "note": "Pure brand-familiarity admission; no listed-feature claim made."
+    }
+  },
+  "attention_key": {
+    "unit_id": "attn",
+    "c1": "1 (Yes)",
+    "c2": "2 (No)"
+  },
+  "exclusion_rule": "A rater is excluded (and their block requeued for a replacement rater) if they miss ANY answer on either gold unit (both C1 and C2 must match the gold key on both golds) OR fail the instructed-attention item. Excluded raters are still paid; their ratings are discarded before majority coding.",
+  "majority_rule": "Per unit and per question, the code is the answer given by >= 3 of the 5 valid raters. For C1, a unit with no answer reaching 3 (a 2-2-1 split) is coded not-yes for the false-claim rate and reported descriptively.",
+  "analysis_columns": [
+    "session_block",
+    "u01_c1",
+    "u01_c2",
+    "u02_c1",
+    "u02_c2",
+    "u03_c1",
+    "u03_c2",
+    "u04_c1",
+    "u04_c2",
+    "u05_c1",
+    "u05_c2",
+    "u06_c1",
+    "u06_c2",
+    "u07_c1",
+    "u07_c2",
+    "u08_c1",
+    "u08_c2",
+    "u09_c1",
+    "u09_c2",
+    "u10_c1",
+    "u10_c2",
+    "u11_c1",
+    "u11_c2",
+    "u12_c1",
+    "u12_c2",
+    "u13_c1",
+    "u13_c2",
+    "u14_c1",
+    "u14_c2",
+    "u15_c1",
+    "u15_c2",
+    "u16_c1",
+    "u16_c2",
+    "u17_c1",
+    "u17_c2",
+    "u18_c1",
+    "u18_c2",
+    "u19_c1",
+    "u19_c2",
+    "u20_c1",
+    "u20_c2",
+    "u21_c1",
+    "u21_c2",
+    "u22_c1",
+    "u22_c2",
+    "u23_c1",
+    "u23_c2",
+    "(join each slot's answers to the stamped u{NN}_id / u{NN}_kind embedded data; kind=real feeds the majority code, kind=gold/attn feed exclusion)"
+  ],
+  "blocks": [
+    {
+      "session_block": "b01",
+      "slots": {
+        "01": {
+          "unit_id": "u0001",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0002",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0003",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0004",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0005",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "u0006",
+          "kind": "real"
+        },
+        "07": {
+          "unit_id": "u0007",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "09": {
+          "unit_id": "u0008",
+          "kind": "real"
+        },
+        "10": {
+          "unit_id": "u0009",
+          "kind": "real"
+        },
+        "11": {
+          "unit_id": "u0010",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "u0011",
+          "kind": "real"
+        },
+        "13": {
+          "unit_id": "g01",
+          "kind": "gold"
+        },
+        "14": {
+          "unit_id": "u0012",
+          "kind": "real"
+        },
+        "15": {
+          "unit_id": "g02",
+          "kind": "gold"
+        },
+        "16": {
+          "unit_id": "u0013",
+          "kind": "real"
+        },
+        "17": {
+          "unit_id": "u0014",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0015",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0016",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0017",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0018",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "u0019",
+          "kind": "real"
+        },
+        "23": {
+          "unit_id": "u0020",
+          "kind": "real"
+        }
+      }
+    },
+    {
+      "session_block": "b02",
+      "slots": {
+        "01": {
+          "unit_id": "u0021",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0022",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0023",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0024",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0025",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "g03",
+          "kind": "gold"
+        },
+        "07": {
+          "unit_id": "u0026",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "u0027",
+          "kind": "real"
+        },
+        "09": {
+          "unit_id": "u0028",
+          "kind": "real"
+        },
+        "10": {
+          "unit_id": "u0029",
+          "kind": "real"
+        },
+        "11": {
+          "unit_id": "u0030",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "u0031",
+          "kind": "real"
+        },
+        "13": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "14": {
+          "unit_id": "u0032",
+          "kind": "real"
+        },
+        "15": {
+          "unit_id": "u0033",
+          "kind": "real"
+        },
+        "16": {
+          "unit_id": "u0034",
+          "kind": "real"
+        },
+        "17": {
+          "unit_id": "u0035",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0036",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0037",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0038",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0039",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "g04",
+          "kind": "gold"
+        },
+        "23": {
+          "unit_id": "u0040",
+          "kind": "real"
+        }
+      }
+    },
+    {
+      "session_block": "b03",
+      "slots": {
+        "01": {
+          "unit_id": "u0041",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0042",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0043",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0044",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0045",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "u0046",
+          "kind": "real"
+        },
+        "07": {
+          "unit_id": "u0047",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "u0048",
+          "kind": "real"
+        },
+        "09": {
+          "unit_id": "g05",
+          "kind": "gold"
+        },
+        "10": {
+          "unit_id": "g06",
+          "kind": "gold"
+        },
+        "11": {
+          "unit_id": "u0049",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "u0050",
+          "kind": "real"
+        },
+        "13": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "14": {
+          "unit_id": "u0051",
+          "kind": "real"
+        },
+        "15": {
+          "unit_id": "u0052",
+          "kind": "real"
+        },
+        "16": {
+          "unit_id": "u0053",
+          "kind": "real"
+        },
+        "17": {
+          "unit_id": "u0054",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0055",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0056",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0057",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0058",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "u0059",
+          "kind": "real"
+        },
+        "23": {
+          "unit_id": "u0060",
+          "kind": "real"
+        }
+      }
+    },
+    {
+      "session_block": "b04",
+      "slots": {
+        "01": {
+          "unit_id": "u0061",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0062",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0063",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0064",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0065",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "g07",
+          "kind": "gold"
+        },
+        "07": {
+          "unit_id": "u0066",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "u0067",
+          "kind": "real"
+        },
+        "09": {
+          "unit_id": "u0068",
+          "kind": "real"
+        },
+        "10": {
+          "unit_id": "u0069",
+          "kind": "real"
+        },
+        "11": {
+          "unit_id": "u0070",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "g08",
+          "kind": "gold"
+        },
+        "13": {
+          "unit_id": "u0071",
+          "kind": "real"
+        },
+        "14": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "15": {
+          "unit_id": "u0072",
+          "kind": "real"
+        },
+        "16": {
+          "unit_id": "u0073",
+          "kind": "real"
+        },
+        "17": {
+          "unit_id": "u0074",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0075",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0076",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0077",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0078",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "u0079",
+          "kind": "real"
+        },
+        "23": {
+          "unit_id": "u0080",
+          "kind": "real"
+        }
+      }
+    },
+    {
+      "session_block": "b05",
+      "slots": {
+        "01": {
+          "unit_id": "u0081",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0082",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0083",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0084",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0085",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "u0086",
+          "kind": "real"
+        },
+        "07": {
+          "unit_id": "u0087",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "g01",
+          "kind": "gold"
+        },
+        "09": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "10": {
+          "unit_id": "u0088",
+          "kind": "real"
+        },
+        "11": {
+          "unit_id": "u0089",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "u0090",
+          "kind": "real"
+        },
+        "13": {
+          "unit_id": "g02",
+          "kind": "gold"
+        },
+        "14": {
+          "unit_id": "u0091",
+          "kind": "real"
+        },
+        "15": {
+          "unit_id": "u0092",
+          "kind": "real"
+        },
+        "16": {
+          "unit_id": "u0093",
+          "kind": "real"
+        },
+        "17": {
+          "unit_id": "u0094",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0095",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0096",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0097",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0098",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "u0099",
+          "kind": "real"
+        },
+        "23": {
+          "unit_id": "u0100",
+          "kind": "real"
+        }
+      }
+    },
+    {
+      "session_block": "b06",
+      "slots": {
+        "01": {
+          "unit_id": "u0101",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0102",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0103",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0104",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0105",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "u0106",
+          "kind": "real"
+        },
+        "07": {
+          "unit_id": "u0107",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "u0108",
+          "kind": "real"
+        },
+        "09": {
+          "unit_id": "g03",
+          "kind": "gold"
+        },
+        "10": {
+          "unit_id": "u0109",
+          "kind": "real"
+        },
+        "11": {
+          "unit_id": "u0110",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "g04",
+          "kind": "gold"
+        },
+        "13": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "14": {
+          "unit_id": "u0111",
+          "kind": "real"
+        },
+        "15": {
+          "unit_id": "u0112",
+          "kind": "real"
+        },
+        "16": {
+          "unit_id": "u0113",
+          "kind": "real"
+        },
+        "17": {
+          "unit_id": "u0114",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0115",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0116",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0117",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0118",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "u0119",
+          "kind": "real"
+        },
+        "23": {
+          "unit_id": "u0120",
+          "kind": "real"
+        }
+      }
+    },
+    {
+      "session_block": "b07",
+      "slots": {
+        "01": {
+          "unit_id": "u0121",
+          "kind": "real"
+        },
+        "02": {
+          "unit_id": "u0122",
+          "kind": "real"
+        },
+        "03": {
+          "unit_id": "u0123",
+          "kind": "real"
+        },
+        "04": {
+          "unit_id": "u0124",
+          "kind": "real"
+        },
+        "05": {
+          "unit_id": "u0125",
+          "kind": "real"
+        },
+        "06": {
+          "unit_id": "g05",
+          "kind": "gold"
+        },
+        "07": {
+          "unit_id": "u0126",
+          "kind": "real"
+        },
+        "08": {
+          "unit_id": "u0127",
+          "kind": "real"
+        },
+        "09": {
+          "unit_id": "u0128",
+          "kind": "real"
+        },
+        "10": {
+          "unit_id": "u0129",
+          "kind": "real"
+        },
+        "11": {
+          "unit_id": "u0130",
+          "kind": "real"
+        },
+        "12": {
+          "unit_id": "u0131",
+          "kind": "real"
+        },
+        "13": {
+          "unit_id": "u0132",
+          "kind": "real"
+        },
+        "14": {
+          "unit_id": "u0133",
+          "kind": "real"
+        },
+        "15": {
+          "unit_id": "u0001",
+          "kind": "real"
+        },
+        "16": {
+          "unit_id": "attn",
+          "kind": "attn"
+        },
+        "17": {
+          "unit_id": "u0002",
+          "kind": "real"
+        },
+        "18": {
+          "unit_id": "u0003",
+          "kind": "real"
+        },
+        "19": {
+          "unit_id": "u0004",
+          "kind": "real"
+        },
+        "20": {
+          "unit_id": "u0005",
+          "kind": "real"
+        },
+        "21": {
+          "unit_id": "u0006",
+          "kind": "real"
+        },
+        "22": {
+          "unit_id": "g06",
+          "kind": "gold"
+        },
+        "23": {
+          "unit_id": "u0007",
+          "kind": "real"
+        }
+      }
+    }
+  ],
+  "note": "BlockRandomizer (EvenPresentation) over session-block children stamps each rater's 23 slots as embedded data; the 23 static unit-page blocks pipe whatever was stamped (the H1 cell mechanism, loop-free). Field 5 completed sessions per block; excluded raters create holes that are refilled with a targeted requeue (see DESIGN.md)."
+}

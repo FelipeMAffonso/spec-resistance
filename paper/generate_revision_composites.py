@@ -301,7 +301,11 @@ def panel_c_controls(ax: plt.Axes) -> None:
         ax.plot([x[i], x[i]], [lo, hi], color=c, linewidth=1.2, solid_capstyle="round", zorder=2)
         ax.scatter(x[i], eff, s=28, color=c, edgecolors="white", linewidths=0.3, zorder=3)
         p_s = f"P = {p:.3f}" if p > 0.001 else "P < 0.001"
-        ax.text(x[i], hi + 0.03 if eff >= 0 else lo - 0.06, p_s,
+        # The first (placebo) point sits at x = 0, so a centred annotation ran
+        # left across the y-axis spine and the leading "P" was clipped. Shift
+        # that one annotation right until it clears the axis.
+        px = x[i] + 0.25 if i == 0 else x[i]
+        ax.text(px, hi + 0.03 if eff >= 0 else lo - 0.06, p_s,
                 ha="center", fontsize=5.5, color="#333")
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=5.5)
@@ -337,7 +341,9 @@ def panel_d_bases_and_probing(ax: plt.Axes) -> None:
     left.set_ylabel("Non-optimal rate", fontsize=7.5)
     left.set_ylim(0, 0.85)
     left.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
-    left.set_title("Base vs instruct\n(Gemma 4)", fontsize=7.5, loc="center", pad=4)
+    # Title centre nudged right (x=0.62) so it cannot collide with the bold
+    # panel letter "d" that sits at the container's upper-left corner.
+    left.set_title("Base vs instruct\n(Gemma 4)", fontsize=7.5, loc="center", pad=4, x=0.62)
     left.grid(axis="y", color=LIGHT_GREY, linewidth=0.3)
     left.set_axisbelow(True)
     left.spines["top"].set_visible(False); left.spines["right"].set_visible(False)
@@ -351,9 +357,12 @@ def panel_d_bases_and_probing(ax: plt.Axes) -> None:
     xs = np.arange(len(families))
     right.bar(xs, accs, width=0.50, color=C_ANTHROPIC, edgecolor="white", linewidth=0.6)
     right.axhline(0.5, color=GREY, linewidth=0.5, linestyle="--")
-    # Inline annotation for the chance line, positioned just above-left of the
-    # dashed line so it cannot collide with the bars on the right.
-    right.text(-0.55, 0.52, "Null (50%)", fontsize=5.5, color=GREY, ha="left", va="bottom")
+    # Inline annotation for the chance line. Placed as two lines centred in
+    # the gap between the two bars, just above the dashed line: the previous
+    # left-edge placement ran the text into the Qwen bar, which partially hid
+    # it.
+    right.text(0.5, 0.515, "Null\n(50%)", fontsize=5.5, color=GREY,
+               ha="center", va="bottom")
     for i, a in enumerate(accs):
         right.text(xs[i], a + 0.025, f"{a:.0%}", ha="center", fontsize=8, fontweight="bold")
     right.set_xticks(xs)
@@ -556,7 +565,10 @@ def panel_d_study3_forest(ax: plt.Axes) -> None:
     ax.set_yticks(ys)
     ax.set_yticklabels(labels, fontsize=5.5)
     ax.invert_yaxis()
-    ax.set_xlabel("Risk difference Biased \u2212 Neutral on chose_focal (pp)")
+    # Shorter label (2026-07: the previous long label "Risk difference Biased
+    # - Neutral on chose_focal (pp)" overran the figure's right edge and the
+    # closing parenthesis was cut off in the built PDF).
+    ax.set_xlabel("Risk difference, Biased \u2212 Neutral (pp)")
     ax.grid(axis="x", color=LIGHT_GREY, linewidth=0.3)
     ax.set_axisbelow(True)
     _panel_label(ax, "d")

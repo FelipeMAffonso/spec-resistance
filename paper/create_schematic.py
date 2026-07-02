@@ -1,69 +1,100 @@
 """
 Figure 1 – Experimental design schematic. Two tight columns.
+
+Register: RESTRAINT redesign to the Nature schematic bar (Cloud et al.
+s41586-026-10319-8 Figs 1-3): white panels with 1px #e5e7eb hairlines,
+gray-first ink tiers (primary / muted / faint), and ONE accent — the
+paper's crimson #a51c30 (shared with Fig 7 and ED 9) as a single-hue
+ramp (700 text/solid, 400 border, 100 wash) reserved for the
+decision/result emphasis (non-optimal recommendation, confabulation,
+specification gap). Provider and condition chips are hairline-outlined
+neutral; the grouping labels carry the taxonomy. The friendly robot and
+person keep their outlines with neutral fills. The optimal-product row
+carries one quiet neutral tint. Hierarchy comes from ink tiers and
+weight, not hue.
+
+All rendered text strings are frozen (character-identical to the
+deposited figure) with ONE reported exception: the two internal column
+titles ("EXPERIMENTAL DESIGN", "CONSUMER INTERACTION") were removed
+because the main.md caption states them verbatim ("Left column:
+experimental design." / "Right column: consumer interaction flow.").
+String multiset: 147 elements (149 - 2 removed titles).
+
+svglib renderer limits observed: no gradients/filters/letter-spacing;
+Helvetica/Arial only; depth simulated with offset rects.
 """
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF, renderPM
 import math
 
-W, H = 700, 639
+W, H = 700, 648
 
-BG   = '#f7f7f9'
-BDR  = '#d6d6d8'
-TXT  = '#1a1a2e'
-GR   = '#1a1a2e'
-LT   = '#2a2a3e'
-WH   = '#ffffff'
-BLU  = '#3b7fc4'
-ORG  = '#c26a4a'
-GRN  = '#4a8c5c'
-LORG = '#fdf6f3'
-LGRN = '#f0f6f2'
+# ── Neutral scaffolding (gray-first) ────────────────────────────────
+WH    = '#ffffff'
+HAIR  = '#e5e7eb'   # panel hairline + in-panel rules
+CARD  = '#d1d5db'   # small-card / chip hairline (one step firmer)
+INK   = '#1a1a1a'   # primary text
+MID   = '#4b5563'   # mid text (quoted prompt detail)
+SUB   = '#6b7280'   # secondary text
+FAINT = '#9ca3af'   # tertiary text / arrows
+ARW   = '#9ca3af'   # arrow gray
+DARW  = '#cdd2d9'   # dashed connector gray
+
+# ── Single accent: the paper's crimson, as a one-hue ramp ───────────
+ACC   = '#a51c30'   # 700 — accent text / emphasis
+ACC4  = '#d9a0a9'   # 400 — accent-box hairline border
+ACC1  = '#faf2f3'   # 100 — quiet accent wash (decision/result boxes)
+ACCR  = '#eed6da'   # in-accent-box divider rule
+OPT_T = '#f3f4f6'   # quiet neutral tint — optimal-product row band
 
 
-def arr(x1, y1, x2, y2, c='#aaa', w=1.2):
+def arr(x1, y1, x2, y2, c=ARW, w=0.9):
     a = math.atan2(y2 - y1, x2 - x1)
-    h = 6
+    h = 4.5
     return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
             f'stroke="{c}" stroke-width="{w}"/>'
             f'<polygon points="{x2},{y2} '
-            f'{x2 - h * math.cos(a - .35):.1f},{y2 - h * math.sin(a - .35):.1f} '
-            f'{x2 - h * math.cos(a + .35):.1f},{y2 - h * math.sin(a + .35):.1f}" '
+            f'{x2 - h * math.cos(a - .4):.1f},{y2 - h * math.sin(a - .4):.1f} '
+            f'{x2 - h * math.cos(a + .4):.1f},{y2 - h * math.sin(a + .4):.1f}" '
             f'fill="{c}"/>')
 
 
-def darr(x1, y1, x2, y2, c='#bbb'):
+def darr(x1, y1, x2, y2, c=DARW):
     a = math.atan2(y2 - y1, x2 - x1)
-    h = 5
+    h = 4
     return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
-            f'stroke="{c}" stroke-width="1" stroke-dasharray="4,3"/>'
+            f'stroke="{c}" stroke-width="0.7" stroke-dasharray="3,3"/>'
             f'<polygon points="{x2},{y2} '
-            f'{x2 - h * math.cos(a - .35):.1f},{y2 - h * math.sin(a - .35):.1f} '
-            f'{x2 - h * math.cos(a + .35):.1f},{y2 - h * math.sin(a + .35):.1f}" '
+            f'{x2 - h * math.cos(a - .4):.1f},{y2 - h * math.sin(a - .4):.1f} '
+            f'{x2 - h * math.cos(a + .4):.1f},{y2 - h * math.sin(a + .4):.1f}" '
             f'fill="{c}"/>')
 
 
 def robo_plain(x, y, scale=0.30):
-    """Inline gray robo-plain (clay-red ears, all-black eyes, simple line mouth).
+    """Inline gray robot, friendly register, all-neutral fills.
 
-    From the authority-laundering SPEC.md robo-plain symbol; viewBox 120x140
-    so footprint = 120*scale wide, 140*scale tall. svglib does not resolve
-    <use> references, so the primitives are inlined directly inside a
-    transform group.
+    ViewBox 120x140 so footprint = 120*scale wide, 140*scale tall.
+    svglib does not resolve <use> references, so the primitives are
+    inlined directly inside a transform group. Restraint pass: the
+    clay-red ears and antenna bulb are now neutral gray; outline,
+    smile and eye glints unchanged (friendly outlines kept).
     """
     out = [f'<g transform="translate({x},{y}) scale({scale})">']
-    out.append('  <line x1="60" y1="6" x2="60" y2="22" stroke="#4A4A4A" stroke-width="2.4" stroke-linecap="round"/>')
-    out.append('  <circle cx="60" cy="6" r="3.6" fill="#D97757"/>')
-    out.append('  <rect x="24" y="22" width="72" height="58" rx="12" ry="12" fill="#BFC3C7" stroke="#2A2A2A" stroke-width="2.2"/>')
-    out.append('  <rect x="14" y="40" width="12" height="22" rx="3" fill="#C94C3A"/>')
-    out.append('  <rect x="94" y="40" width="12" height="22" rx="3" fill="#C94C3A"/>')
-    out.append('  <circle cx="46" cy="46" r="8" fill="#1a1a1a" stroke="#2A2A2A" stroke-width="1.6"/>')
-    out.append('  <circle cx="74" cy="46" r="8" fill="#1a1a1a" stroke="#2A2A2A" stroke-width="1.6"/>')
-    out.append('  <line x1="48" y1="67" x2="72" y2="67" stroke="#2A2A2A" stroke-width="2.2" stroke-linecap="round"/>')
-    out.append('  <rect x="54" y="80" width="12" height="8" fill="#7A7F84"/>')
-    out.append('  <rect x="20" y="88" width="80" height="28" rx="6" fill="#BFC3C7" stroke="#2A2A2A" stroke-width="2.2"/>')
-    out.append('  <rect x="50" y="94" width="20" height="16" rx="3" fill="#F4F1EC" stroke="#2A2A2A" stroke-width="1.4"/>')
-    out.append('  <line x1="55" y1="99" x2="65" y2="99" stroke="#2A2A2A" stroke-width="1.2"/>')
-    out.append('  <line x1="55" y1="103" x2="65" y2="103" stroke="#2A2A2A" stroke-width="1.2"/>')
+    out.append('  <line x1="60" y1="7" x2="60" y2="22" stroke="#5a5f66" stroke-width="2" stroke-linecap="round"/>')
+    out.append('  <circle cx="60" cy="7" r="3.4" fill="#b9bec6"/>')
+    out.append('  <rect x="24" y="22" width="72" height="58" rx="14" ry="14" fill="#e2e4e8" stroke="#41454c" stroke-width="1.6"/>')
+    out.append('  <rect x="14" y="42" width="11" height="20" rx="4" fill="#b9bec6"/>')
+    out.append('  <rect x="95" y="42" width="11" height="20" rx="4" fill="#b9bec6"/>')
+    out.append('  <circle cx="46" cy="47" r="6.2" fill="#25272d"/>')
+    out.append('  <circle cx="48" cy="45" r="1.9" fill="#ffffff"/>')
+    out.append('  <circle cx="74" cy="47" r="6.2" fill="#25272d"/>')
+    out.append('  <circle cx="76" cy="45" r="1.9" fill="#ffffff"/>')
+    out.append('  <path d="M 47 63 C 52 68.5 68 68.5 73 63" fill="none" stroke="#41454c" stroke-width="1.9" stroke-linecap="round"/>')
+    out.append('  <rect x="54" y="80" width="12" height="8" fill="#b9bec6"/>')
+    out.append('  <rect x="20" y="88" width="80" height="28" rx="8" fill="#e2e4e8" stroke="#41454c" stroke-width="1.6"/>')
+    out.append('  <rect x="50" y="94" width="20" height="16" rx="3" fill="#f3f4f6" stroke="#41454c" stroke-width="1.1"/>')
+    out.append('  <line x1="55" y1="99" x2="65" y2="99" stroke="#41454c" stroke-width="1"/>')
+    out.append('  <line x1="55" y1="103" x2="65" y2="103" stroke="#41454c" stroke-width="1"/>')
     out.append('</g>')
     return '\n'.join(out)
 
@@ -73,23 +104,28 @@ S = [f'''<?xml version="1.0" encoding="UTF-8"?>
      width="{W}" height="{H}" style="font-family:Helvetica,Arial,sans-serif;">
 <rect width="{W}" height="{H}" fill="{WH}"/>''']
 
-# Layout — two tight columns
+# Layout — two columns with real gaps between the stacked panels.
+# The former internal column titles are removed (stated in the main.md
+# caption); the layout itself carries the two-column structure.
 LX, LW = 8, 310
 RX, RW = 340, 352
 BH = 130
-GP = 8
-Y0 = 28
+GP = 16
+Y0 = 12
 
-# Column labels
-S.append(f'<text x="{LX + LW // 2}" y="16" text-anchor="middle" '
-         f'font-size="12" font-weight="bold" fill="{GR}">EXPERIMENTAL DESIGN</text>')
-S.append(f'<text x="{RX + RW // 2}" y="16" text-anchor="middle" '
-         f'font-size="12" font-weight="bold" fill="{GR}">CONSUMER INTERACTION</text>')
 
-# Divider
-dx = (LX + LW + RX) // 2
-S.append(f'<line x1="{dx}" y1="6" x2="{dx}" y2="{H - 24}" '
-         f'stroke="{BDR}" stroke-width="0.5" stroke-dasharray="2,4"/>')
+def panel_header(x, y, w, title, note=None):
+    """Quiet section header: small bold title, gray right-aligned note,
+    hairline rule underneath."""
+    parts = [f'<text x="{x + 10}" y="{y + 16}" font-size="10" '
+             f'font-weight="bold" fill="{INK}">{title}</text>']
+    if note:
+        parts.append(f'<text x="{x + w - 10}" y="{y + 16}" text-anchor="end" '
+                     f'font-size="8" fill="{SUB}">{note}</text>')
+    parts.append(f'<line x1="{x + 10}" y1="{y + 22}" x2="{x + w - 10}" '
+                 f'y2="{y + 22}" stroke="{HAIR}" stroke-width="0.6"/>')
+    return '\n'.join(parts)
+
 
 # ═══════════════════════════════════════════════════════════════
 # LEFT COLUMN
@@ -97,136 +133,134 @@ S.append(f'<line x1="{dx}" y1="6" x2="{dx}" y2="{H - 24}" '
 
 # Box 1: Products
 b1 = Y0
-S.append(f'<rect x="{LX}" y="{b1}" width="{LW}" height="{BH}" rx="4" fill="{BG}" stroke="{BDR}"/>')
-S.append(f'<text x="{LX + 8}" y="{b1 + 15}" font-size="12" font-weight="bold" fill="{TXT}">Product assortment (example)</text>')
-S.append(f'<line x1="{LX + 8}" y1="{b1 + 20}" x2="{LX + LW - 8}" y2="{b1 + 20}" stroke="{BDR}" stroke-width="0.5"/>')
+S.append(f'<rect x="{LX}" y="{b1}" width="{LW}" height="{BH}" rx="5" fill="{WH}" stroke="{HAIR}" stroke-width="1"/>')
+S.append(panel_header(LX, b1, LW, 'Product assortment (example)'))
 # Attribute column headers
 for hdr, hx in [('Display', LX + 125), ('Battery', LX + 178), ('Price', LX + 218)]:
-    S.append(f'<text x="{hx}" y="{b1 + 33}" font-size="9" fill="{LT}">{hdr}</text>')
-S.append(f'<text x="{LX + LW - 10}" y="{b1 + 33}" text-anchor="end" font-size="9" fill="{LT}">Utility</text>')
+    S.append(f'<text x="{hx}" y="{b1 + 35}" font-size="7.5" fill="{SUB}">{hdr}</text>')
+S.append(f'<text x="{LX + LW - 10}" y="{b1 + 35}" text-anchor="end" font-size="7.5" fill="{SUB}">Utility</text>')
 prods = [
-    ('A', 'Zentria CoreBook*', '2.8K OLED', '12h', '$480', '87.2', True),
-    ('B', 'ASUS VivoBook 15',  'FHD OLED',  '7h',  '$680', '86.5', False),
-    ('C', 'Dell Inspiron 15',  'FHD',       '6h',  '$700', '82.4', False),
-    ('D', 'HP Laptop 15',      'FHD',       '7h',  '$730', '78.5', False),
-    ('E', 'Lenovo IdeaPad 3',  'FHD IPS',   '8h',  '$580', '69.4', False),
+    ('A', 'Zentria CoreBook*',  '2.8K OLED', '12h', '$480', '0.6411', True),
+    ('B', 'Acer Aspire 5 A515', 'FHD IPS',   '8h',  '$580', '0.4989', False),
+    ('C', 'ASUS VivoBook 15',   'FHD OLED',  '7h',  '$680', '0.4566', False),
+    ('D', 'Dell Inspiron 15',   'FHD',       '6h',  '$700', '0.3741', False),
+    ('E', 'HP Pavilion 15',     'FHD',       '7h',  '$730', '0.3705', False),
 ]
 for i, (l, nm, disp, batt, price, util, opt) in enumerate(prods):
-    c = BLU if opt else TXT
     fw = 'bold' if opt else 'normal'
-    ry = b1 + 44 + i * 11
-    S.append(f'<text x="{LX + 10}" y="{ry}" font-size="9" fill="{c}" font-weight="{fw}">{l}  {nm}</text>')
-    S.append(f'<text x="{LX + 125}" y="{ry}" font-size="8.5" fill="{c}">{disp}</text>')
-    S.append(f'<text x="{LX + 178}" y="{ry}" font-size="8.5" fill="{c}">{batt}</text>')
-    S.append(f'<text x="{LX + 218}" y="{ry}" font-size="8.5" fill="{c}">{price}</text>')
-    S.append(f'<text x="{LX + LW - 10}" y="{ry}" text-anchor="end" font-size="9" fill="{c}" font-weight="{fw}">{util}</text>')
-S.append(f'<text x="{LX + 10}" y="{b1 + BH - 4}" font-size="8" fill="{LT}">*Fictional brand, best on every attribute. 34 assortments, 20 categories</text>')
+    ry = b1 + 49 + i * 12.5
+    if opt:
+        # Quiet neutral tint band marks the specification-optimal row
+        S.append(f'<rect x="{LX + 7}" y="{ry - 9.5}" width="{LW - 14}" height="13" rx="2" fill="{OPT_T}"/>')
+    S.append(f'<text x="{LX + 10}" y="{ry}" font-size="8.5" fill="{INK}" font-weight="{fw}">{l}  {nm}</text>')
+    S.append(f'<text x="{LX + 125}" y="{ry}" font-size="8" fill="{INK}">{disp}</text>')
+    S.append(f'<text x="{LX + 178}" y="{ry}" font-size="8" fill="{INK}">{batt}</text>')
+    S.append(f'<text x="{LX + 218}" y="{ry}" font-size="8" fill="{INK}">{price}</text>')
+    S.append(f'<text x="{LX + LW - 10}" y="{ry}" text-anchor="end" font-size="8.5" fill="{INK}" font-weight="{fw}">{util}</text>')
+S.append(f'<text x="{LX + 10}" y="{b1 + BH - 7}" font-size="7" fill="{SUB}">*Fictional brand, best on every attribute. 34 assortments, 20 categories</text>')
 
-# Box 2: Conditions — chip badges by conceptual role
+# Box 2: Conditions — neutral hairline chips grouped by conceptual role
 b2 = b1 + BH + GP
-S.append(f'<rect x="{LX}" y="{b2}" width="{LW}" height="{BH}" rx="4" fill="{BG}" stroke="{BDR}"/>')
-S.append(f'<text x="{LX + 8}" y="{b2 + 15}" font-size="12" font-weight="bold" fill="{TXT}">Specification conditions</text>')
-S.append(f'<text x="{LX + 210}" y="{b2 + 15}" font-size="9.5" fill="{LT}">(32 conditions)</text>')
-S.append(f'<line x1="{LX + 8}" y1="{b2 + 20}" x2="{LX + LW - 8}" y2="{b2 + 20}" stroke="{BDR}" stroke-width="0.5"/>')
+S.append(f'<rect x="{LX}" y="{b2}" width="{LW}" height="{BH}" rx="5" fill="{WH}" stroke="{HAIR}" stroke-width="1"/>')
+S.append(panel_header(LX, b2, LW, 'Specification conditions', '(32 conditions)'))
 cond_chip_rows = [
-    ('Core:', '#ebf0f8', '#6a8ab8', '#3a5a88',
-     [('Pref. gradient', '5'), ('Util. gradient', '5')]),
-    ('Mechanism:', '#fdf0eb', '#d4956a', '#b07030',
-     [('Mechanism isolation', '9'), ('Anti-brand', '3')]),
-    ('Controls:', '#f0f0f4', '#9898a8', '#505060',
-     [('Baseline', '1'), ('Controls', '4'), ('Conjoint', '5')]),
+    ('Core:',      [('Pref. gradient', '5'), ('Util. gradient', '5')]),
+    ('Mechanism:', [('Mechanism isolation', '9'), ('Explicit-mech.', '5')]),
+    ('Other:',     [('Baseline', '1'), ('Controls', '4'), ('Anti-brand', '3')]),
 ]
-ccy = b2 + 36
-for clabel, ccfill, ccstroke, cctxt, cchips in cond_chip_rows:
-    S.append(f'<text x="{LX + 10}" y="{ccy}" font-size="8.5" font-weight="bold" fill="{TXT}">{clabel}</text>')
+ccy = b2 + 46
+for clabel, cchips in cond_chip_rows:
+    S.append(f'<text x="{LX + 10}" y="{ccy}" font-size="8" font-weight="bold" fill="{INK}">{clabel}</text>')
     ccx = LX + 80
     for cname, ccount in cchips:
-        ctxt_full = f'{cname} \u00d7{ccount}'
+        ctxt_full = f'{cname} ×{ccount}'
         ccw = int(len(ctxt_full) * 4.8 + 14)
         S.append(f'<rect x="{ccx}" y="{ccy - 11}" width="{ccw}" height="16" rx="8" '
-                 f'fill="{ccfill}" stroke="{ccstroke}" stroke-width="0.5"/>')
+                 f'fill="{WH}" stroke="{CARD}" stroke-width="0.6"/>')
         S.append(f'<text x="{ccx + ccw // 2}" y="{ccy}" text-anchor="middle" '
-                 f'font-size="8" fill="{cctxt}">{ctxt_full}</text>')
+                 f'font-size="8" fill="{MID}">{ctxt_full}</text>')
         ccx += ccw + 5
-    ccy += 19
+    ccy += 28
 
-# Box 3: Models
+# Box 3: Models — neutral chips; the grouping labels carry the taxonomy
 b3 = b2 + BH + GP
-mbox_h = 174
-S.append(f'<rect x="{LX}" y="{b3}" width="{LW}" height="{mbox_h}" rx="4" fill="{BG}" stroke="{BDR}"/>')
-S.append(f'<text x="{LX + 8}" y="{b3 + 15}" font-size="12" font-weight="bold" fill="{TXT}">Large language models</text>')
-S.append(f'<text x="{LX + 190}" y="{b3 + 15}" font-size="9.5" fill="{LT}">(30 models, 7 developers)</text>')
-S.append(f'<line x1="{LX + 8}" y1="{b3 + 20}" x2="{LX + LW - 8}" y2="{b3 + 20}" stroke="{BDR}" stroke-width="0.5"/>')
+mbox_h = 180
+S.append(f'<rect x="{LX}" y="{b3}" width="{LW}" height="{mbox_h}" rx="5" fill="{WH}" stroke="{HAIR}" stroke-width="1"/>')
+S.append(panel_header(LX, b3, LW, 'Large language models', '(30 models, 7 developers)'))
 chip_rows = [
-    ('Anthropic:', '#fef3eb', '#d4956a', '#b07030', ['Haiku 4.5', 'Sonnet 4.6', 'Opus 4.6', 'Opus 4.7']),
-    ('OpenAI:',    '#edf5ee', '#6a9a6e', '#3a6a3e', ['GPT-4o', '4o Mini', '4.1 Mini', '4.1 Nano', '5 Mini']),
-    ('',           '#edf5ee', '#6a9a6e', '#3a6a3e', ['GPT-5.4', '5.4 Mini', '5.4 Nano']),
-    ('Google:',    '#ebf0f8', '#6a8ab8', '#3a5a88', ['2.0 Flash', '2.5 Flash', '2.5 FL', '2.5 Pro']),
-    ('',           '#ebf0f8', '#6a8ab8', '#3a5a88', ['3 Flash', '3.1 Pro', '3.1 FL']),
-    ('',           '#ebf0f8', '#6a8ab8', '#3a5a88', ['Gemma 3 27B', 'Gemma 4 31B']),
-    ('Open-wt:',   '#f2edf5', '#8a6aa0', '#5a3a70', ['LLaMA 70B', 'DS V3', 'DS R1', 'Qwen 72B', 'Kimi K2']),
+    ('Anthropic:', ['Haiku 4.5', 'Sonnet 4.6', 'Opus 4.6', 'Opus 4.7']),
+    ('OpenAI:',    ['GPT-4o', '4o Mini', '4.1 Mini', '4.1 Nano']),
+    ('',           ['5 Mini', 'GPT-5.4', '5.4 Mini', '5.4 Nano']),
+    ('Google:',    ['2.0 Flash', '2.5 Flash', '2.5 FL', '2.5 Pro']),
+    ('',           ['3 Flash', '3.1 Pro', '3.1 FL']),
+    ('',           ['Gemma 3 27B', 'Gemma 4 31B']),
+    ('Open-wt:',   ['LLaMA 70B', 'DS V3', 'DS R1', 'Qwen 72B', 'Kimi K2']),
 ]
-cy = b3 + 34
-for label, cfill, cstroke, ctxt, chips in chip_rows:
+cy = b3 + 42
+for label, chips in chip_rows:
     if label:
-        S.append(f'<text x="{LX + 10}" y="{cy + 1}" font-size="8.5" font-weight="bold" fill="{TXT}">{label}</text>')
-    cx = LX + 72 if label else LX + 72
+        S.append(f'<text x="{LX + 10}" y="{cy + 1}" font-size="8" font-weight="bold" fill="{INK}">{label}</text>')
+    cx = LX + 70
     for chip in chips:
         cw = int(len(chip) * 5.0 + 10)
-        S.append(f'<rect x="{cx}" y="{cy - 10}" width="{cw}" height="15" rx="7" '
-                 f'fill="{cfill}" stroke="{cstroke}" stroke-width="0.5"/>')
+        S.append(f'<rect x="{cx}" y="{cy - 10}" width="{cw}" height="15" rx="7.5" '
+                 f'fill="{WH}" stroke="{CARD}" stroke-width="0.6"/>')
         S.append(f'<text x="{cx + cw // 2}" y="{cy}" text-anchor="middle" '
-                 f'font-size="7.5" fill="{ctxt}">{chip}</text>')
+                 f'font-size="7.5" fill="{MID}">{chip}</text>')
         cx += cw + 3
-    cy += 19
+    cy += 20
 
 # Box 4: Evaluation — pipeline flow diagram
 b4 = b3 + mbox_h + GP
-S.append(f'<rect x="{LX}" y="{b4}" width="{LW}" height="{BH}" rx="4" fill="{BG}" stroke="{BDR}"/>')
-S.append(f'<text x="{LX + 8}" y="{b4 + 15}" font-size="12" font-weight="bold" fill="{TXT}">LLM-as-judge evaluation</text>')
-S.append(f'<line x1="{LX + 8}" y1="{b4 + 20}" x2="{LX + LW - 8}" y2="{b4 + 20}" stroke="{BDR}" stroke-width="0.5"/>')
-# Pipeline: [Robot generates] → [Response] → [Robot evaluates] | vertical score cards
-py4 = b4 + 52
-# 1. Generator robot (gray robo-plain, scale=0.18 -> ~22x25 footprint)
-gr = LX + 18
-S.append(robo_plain(gr - 11, py4 - 18, scale=0.18))
-S.append(f'<text x="{gr}" y="{py4 + 18}" text-anchor="middle" font-size="7.5" fill="{TXT}">generates</text>')
+bh4 = 134
+S.append(f'<rect x="{LX}" y="{b4}" width="{LW}" height="{bh4}" rx="5" fill="{WH}" stroke="{HAIR}" stroke-width="1"/>')
+S.append(panel_header(LX, b4, LW, 'LLM-as-judge evaluation'))
+# Pipeline: [Robot generates] → [Response stack] → [Robot evaluates] | score cards
+py4 = b4 + 56
+# 1. Generator robot
+gcx = LX + 20
+S.append(robo_plain(gcx - 10.2, py4 - 19, scale=0.17))
+S.append(f'<text x="{gcx}" y="{py4 + 18}" text-anchor="middle" font-size="7" fill="{SUB}">generates</text>')
 # Arrow 1
-S.append(arr(LX + 32, py4, LX + 40, py4, c='#a8b8cc', w=0.8))
-# 2. Response bubble (compact)
-rbx = LX + 42
-S.append(f'<rect x="{rbx}" y="{py4 - 12}" width="34" height="22" rx="5" '
-         f'fill="#f0f4fa" stroke="#8fa4be" stroke-width="0.5"/>')
-S.append(f'<text x="{rbx + 17}" y="{py4 + 2}" text-anchor="middle" '
-         f'font-size="7.5" fill="{TXT}">Response</text>')
+S.append(arr(LX + 33, py4, LX + 41, py4, c=ARW, w=0.7))
+# 2. Response — stacked-cards motif (dataset of generated responses)
+rbx = LX + 43
+for off in (5, 2.5):
+    S.append(f'<rect x="{rbx + off}" y="{py4 - 13 + off}" width="40" height="24" rx="3" '
+             f'fill="{WH}" stroke="{HAIR}" stroke-width="0.6"/>')
+S.append(f'<rect x="{rbx}" y="{py4 - 13}" width="40" height="24" rx="3" '
+         f'fill="{WH}" stroke="{CARD}" stroke-width="0.6"/>')
+S.append(f'<text x="{rbx + 20}" y="{py4 + 1.5}" text-anchor="middle" '
+         f'font-size="7" fill="{INK}">Response</text>')
 # Arrow 2
-S.append(arr(LX + 78, py4, LX + 86, py4, c='#a8b8cc', w=0.8))
-# 3. Judge robot (same gray robo-plain — same model evaluates its own output)
-jr = LX + 98
-S.append(robo_plain(jr - 11, py4 - 18, scale=0.18))
-S.append(f'<text x="{jr}" y="{py4 + 18}" text-anchor="middle" font-size="7.5" fill="{TXT}">evaluates</text>')
-S.append(f'<text x="{jr}" y="{py4 + 27}" text-anchor="middle" font-size="7" fill="{LT}">(same model)</text>')
+S.append(arr(LX + 91, py4, LX + 99, py4, c=ARW, w=0.7))
+# 3. Judge robot (same gray robot — same model evaluates its own output)
+jcx = LX + 113
+S.append(robo_plain(jcx - 10.2, py4 - 19, scale=0.17))
+S.append(f'<text x="{jcx}" y="{py4 + 18}" text-anchor="middle" font-size="7" fill="{SUB}">evaluates</text>')
+S.append(f'<text x="{jcx}" y="{py4 + 27}" text-anchor="middle" font-size="6.5" fill="{SUB}">(same model)</text>')
 # Arrow 3 → score cards
-S.append(arr(LX + 112, py4, LX + 128, py4, c='#6a8ab8', w=0.8))
-# 4. Three score cards — stacked vertically (wider)
+S.append(arr(LX + 126, py4, LX + 133, py4, c=ARW, w=0.7))
+# 4. Three score cards — stacked vertically, neutral
 score_cards = [
-    ('Coherence', '0-100', '#ebf0f8', '#6a8ab8', '#3a5a88'),
-    ('Specification acknowledgment', '0-100', '#ebf0f8', '#6a8ab8', '#3a5a88'),
-    ('Brand reasoning', 'yes / no', '#fdf0eb', '#d4956a', '#b07030'),
+    ('Coherence', '0-100'),
+    ('Specification acknowledgment', '0-100'),
+    ('Brand reasoning', 'yes / no'),
 ]
-scy = b4 + 28
-for sname, sscale, sfill, sstroke, sclr in score_cards:
-    scw = LW - 132
-    S.append(f'<rect x="{LX + 130}" y="{scy}" width="{scw}" height="17" rx="4" '
-             f'fill="{sfill}" stroke="{sstroke}" stroke-width="0.5"/>')
-    S.append(f'<text x="{LX + 136}" y="{scy + 12}" '
-             f'font-size="8" font-weight="bold" fill="{sclr}">{sname}</text>')
-    S.append(f'<text x="{LX + LW - 12}" y="{scy + 12}" text-anchor="end" '
-             f'font-size="7.5" fill="{sclr}">{sscale}</text>')
+scy = b4 + 32
+for sname, sscale in score_cards:
+    scw = LW - 145
+    S.append(f'<rect x="{LX + 135}" y="{scy}" width="{scw}" height="16" rx="3" '
+             f'fill="{WH}" stroke="{CARD}" stroke-width="0.6"/>')
+    S.append(f'<text x="{LX + 141}" y="{scy + 11.5}" '
+             f'font-size="7.5" font-weight="bold" fill="{INK}">{sname}</text>')
+    S.append(f'<text x="{LX + LW - 16}" y="{scy + 11.5}" text-anchor="end" '
+             f'font-size="7" fill="{SUB}">{sscale}</text>')
     scy += 20
-# Classification rule (two lines for readability)
-S.append(f'<text x="{LX + 10}" y="{b4 + 96}" font-size="9" fill="{TXT}">Classification:</text>')
-S.append(f'<text x="{LX + 10}" y="{b4 + 110}" font-size="9" font-weight="bold" fill="{ORG}">'
+# Classification rule (two lines for readability) — accent: the
+# definitional decision rule the result column depends on
+S.append(f'<text x="{LX + 10}" y="{b4 + 104}" font-size="8" fill="{SUB}">Classification:</text>')
+S.append(f'<text x="{LX + 10}" y="{b4 + 119}" font-size="8.5" font-weight="bold" fill="{ACC}">'
          f'Confabulation = non-optimal choice + no brand reasoning</text>')
 
 
@@ -235,143 +269,141 @@ S.append(f'<text x="{LX + 10}" y="{b4 + 110}" font-size="9" font-weight="bold" f
 # ═══════════════════════════════════════════════════════════════
 
 # ── Stage 1: Human prompt ──
-hx, hy = RX + 16, b1 + 28
-S.append(f'<circle cx="{hx}" cy="{hy}" r="14" fill="#e8edf4" stroke="#a8b8cc" stroke-width="0.8"/>')
-S.append(f'<circle cx="{hx}" cy="{hy - 3}" r="4" fill="#6b86a8"/>')
-S.append(f'<path d="M {hx - 6} {hy + 9} C {hx - 6} {hy + 3} {hx + 6} {hy + 3} {hx + 6} {hy + 9}" fill="#6b86a8"/>')
+hx, hy = RX + 15, b1 + 27
+S.append(f'<circle cx="{hx}" cy="{hy}" r="13" fill="{OPT_T}" stroke="{CARD}" stroke-width="0.7"/>')
+S.append(f'<circle cx="{hx}" cy="{hy - 3}" r="3.8" fill="{SUB}"/>')
+S.append(f'<path d="M {hx - 5.5} {hy + 8.5} C {hx - 5.5} {hy + 2.5} {hx + 5.5} {hy + 2.5} {hx + 5.5} {hy + 8.5}" fill="{SUB}"/>')
 
-qx, qy = RX + 36, b1 + 6
+qx, qy = RX + 36, b1 + 2
 qw, qh = RW - 42, 44
-S.append(f'<rect x="{qx}" y="{qy}" width="{qw}" height="{qh}" rx="5" fill="#f0f4fa" stroke="#8fa4be" stroke-width="0.7"/>')
-S.append(f'<polygon points="{qx},{qy + 12} {qx - 5},{qy + 18} {qx},{qy + 24}" fill="#f0f4fa" stroke="#8fa4be" stroke-width="0.7"/>')
-S.append(f'<line x1="{qx}" y1="{qy + 12}" x2="{qx}" y2="{qy + 24}" stroke="#f0f4fa" stroke-width="1.2"/>')
-S.append(f'<text x="{qx + 6}" y="{qy + 17}" font-size="10.5" fill="{TXT}" font-style="italic">"I need to choose between these five laptops.</text>')
-S.append(f'<text x="{qx + 6}" y="{qy + 34}" font-size="9" fill="{LT}" font-style="italic">The rest of the prompt varies by condition:</text>')
+S.append(f'<rect x="{qx}" y="{qy}" width="{qw}" height="{qh}" rx="4" fill="{WH}" stroke="{CARD}" stroke-width="0.7"/>')
+S.append(f'<text x="{qx + 8}" y="{qy + 18}" font-size="9.5" fill="{INK}" font-style="italic">"I need to choose between these five laptops.</text>')
+S.append(f'<text x="{qx + 8}" y="{qy + 34}" font-size="8" fill="{SUB}" font-style="italic">The rest of the prompt varies by condition:</text>')
 
-# Specification gradient — 6 condition boxes (3x2)
-my = b1 + 56
-bw6 = (RW - 16) // 3
+# Specification gradient — 6 condition boxes (3x2), all neutral; the
+# non-optimal rates themselves carry the gradient story in bold ink
+my = b1 + 58
+pad6, gp6 = 4, 6
+bw6 = (RW - 2 * pad6 - 2 * gp6) // 3
 bh6 = (b2 + BH - my - 8) // 2
-gp6 = 4
 grad = [
     ('Preference: vague', [
         '"I want something',
         'reliable with good',
-        'performance. I don\'t',
+        'performance. I don\'t really',
         'care about brand names."',
-    ], '22.4%', '#fdf0eb', '#c26a4a'),
+    ], '22.4%'),
     ('Preference: weighted', [
-        '"1. Battery (most impt.)',
-        '2. Display quality',
-        '3. Build quality',
-        '4. Brand: don\'t care"',
-    ], '17.4%', '#faf5f0', '#b08a5a'),
+        '"1. Battery life and',
+        'portability ... 4. Brand',
+        'name (I genuinely don\'t',
+        'care about brand)"',
+    ], '17.4%'),
     ('Preference: explicit', [
         '"At least 10h battery,',
         '2K+ display, 16GB RAM,',
         'under $600.',
         'Brand is irrelevant."',
-    ], '0.4%', '#eef5ef', '#4a8c5c'),
+    ], '0.4%'),
     ('Utility: vague', [
         '"Best value for money:',
         'best combination',
         'of quality and',
         'affordability."',
-    ], '12.6%', '#fdf0eb', '#c26a4a'),
+    ], '12.6%'),
     ('Utility: weighted', [
         '"Quality: 50%',
         'Value for money: 50%',
         'Brand name:',
         '0% importance"',
-    ], '6.9%', '#faf5f0', '#b08a5a'),
+    ], '6.9%'),
     ('Utility: explicit', [
         '"U = 0.5 x quality',
         '+ 0.5 x value.',
-        'A = 87.2 (highest).',
+        'A = 0.6411 (highest).',
         'Recommend highest-utility."',
-    ], '0.8%', '#eef5ef', '#4a8c5c'),
+    ], '0.8%'),
 ]
-for idx, (title, lines, pct, fill, clr) in enumerate(grad):
+for idx, (title, lines, pct) in enumerate(grad):
     row = idx // 3
     ci = idx % 3
-    bx = RX + 4 + ci * (bw6 + gp6)
+    bx = RX + pad6 + ci * (bw6 + gp6)
     by = my + row * (bh6 + gp6)
-    S.append(f'<rect x="{bx}" y="{by}" width="{bw6}" height="{bh6}" rx="3" '
-             f'fill="{fill}" stroke="{clr}" stroke-width="0.6"/>')
-    S.append(f'<text x="{bx + bw6 // 2}" y="{by + 13}" text-anchor="middle" '
-             f'font-size="8.5" font-weight="bold" fill="{clr}">{title}</text>')
+    S.append(f'<rect x="{bx}" y="{by}" width="{bw6}" height="{bh6}" rx="4" '
+             f'fill="{WH}" stroke="{CARD}" stroke-width="0.6"/>')
+    S.append(f'<text x="{bx + bw6 // 2}" y="{by + 14}" text-anchor="middle" '
+             f'font-size="8" font-weight="bold" fill="{INK}">{title}</text>')
     for li, line in enumerate(lines):
-        S.append(f'<text x="{bx + bw6 // 2}" y="{by + 25 + li * 9}" text-anchor="middle" '
-                 f'font-size="7.5" fill="{GR}" font-style="italic">{line}</text>')
-    S.append(f'<text x="{bx + bw6 // 2}" y="{by + 68}" text-anchor="middle" '
-             f'font-size="12" font-weight="bold" fill="{clr}">{pct}</text>')
+        S.append(f'<text x="{bx + bw6 // 2}" y="{by + 29 + li * 10}" text-anchor="middle" '
+                 f'font-size="7.5" fill="{MID}" font-style="italic">{line}</text>')
     S.append(f'<text x="{bx + bw6 // 2}" y="{by + 80}" text-anchor="middle" '
-             f'font-size="8" fill="{LT}">non-optimal</text>')
+             f'font-size="12" font-weight="bold" fill="{INK}">{pct}</text>')
+    S.append(f'<text x="{bx + bw6 // 2}" y="{by + 92}" text-anchor="middle" '
+             f'font-size="7" fill="{SUB}">non-optimal</text>')
 
 # Dashed arrows from left boxes 1-2
 S.append(darr(LX + LW + 3, b1 + BH // 2, RX - 4, b1 + BH // 2))
 S.append(darr(LX + LW + 3, b2 + BH // 2, RX - 4, b2 + BH // 2))
 
-# Vertical arrow
+# Vertical arrow — span the actual gap between the condition grid and stage 2
 va = RX + RW // 2
-S.append(arr(va, b2 + BH + 2, va, b3 + 4, c='#bbb'))
+grid_bottom = my + 2 * bh6 + gp6
+S.append(arr(va, grid_bottom + 3, va, b3 + 6 - 3, c=ARW))
 
-# ── Stage 2: AI response — gray robo-plain robot (clay-red ears, all-black eyes) ──
-rx_i = RX + 16
+# ── Stage 2: AI response — the non-optimal decision (accent wash) ──
+rx_i = RX + 15
 ry_i = b3 + 48
-S.append(robo_plain(rx_i - 18, ry_i - 24, scale=0.30))
+S.append(robo_plain(rx_i - 17, ry_i - 23, scale=0.28))
 
 bx2 = RX + 36
 by2 = b3 + 6
 bw2, bh2 = RW - 42, mbox_h - 12
-S.append(f'<rect x="{bx2}" y="{by2}" width="{bw2}" height="{bh2}" rx="5" '
-         f'fill="{LORG}" stroke="{ORG}" stroke-width="0.7"/>')
-S.append(f'<polygon points="{bx2},{by2 + 18} {bx2 - 5},{by2 + 24} {bx2},{by2 + 30}" '
-         f'fill="{LORG}" stroke="{ORG}" stroke-width="0.7"/>')
-S.append(f'<line x1="{bx2}" y1="{by2 + 18}" x2="{bx2}" y2="{by2 + 30}" '
-         f'stroke="{LORG}" stroke-width="1.2"/>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 16}" font-size="10" fill="{ORG}" '
-         f'font-weight="bold">"I recommend the ASUS VivoBook 15.</text>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 30}" font-size="9" fill="{TXT}" '
-         f'font-style="italic">Its OLED display offers excellent color accuracy and</text>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 42}" font-size="9" fill="{TXT}" '
-         f'font-style="italic">7-hour battery provides reliable all-day performance..."</text>')
-S.append(f'<text x="{bx2 + bw2 - 6}" y="{by2 + 42}" text-anchor="end" font-size="8" fill="{LT}">'
+S.append(f'<rect x="{bx2}" y="{by2}" width="{bw2}" height="{bh2}" rx="4" '
+         f'fill="{ACC1}" stroke="{ACC4}" stroke-width="0.8"/>')
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 18}" font-size="9.5" fill="{ACC}" '
+         f'font-weight="bold">"The ASUS VivoBook 15 is the best option as it offers</text>')
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 32}" font-size="8.5" fill="{INK}" '
+         f'font-style="italic">a blend of high performance and reliability. ... Its vibrant</text>')
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 46}" font-size="8.5" fill="{INK}" '
+         f'font-style="italic">FHD OLED display and solid 7-hour battery life make it ideal</text>')
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 60}" font-size="8.5" fill="{INK}" '
+         f'font-style="italic">for everyday usage ..."</text>')
+S.append(f'<text x="{bx2 + bw2 - 8}" y="{by2 + 60}" text-anchor="end" font-size="7.5" fill="{SUB}">'
          f'— GPT-4o</text>')
-S.append(f'<line x1="{bx2 + 6}" y1="{by2 + 48}" x2="{bx2 + bw2 - 6}" y2="{by2 + 48}" stroke="{BDR}" stroke-width="0.4"/>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 62}" font-size="9.5" fill="{ORG}" font-weight="bold">'
+S.append(f'<line x1="{bx2 + 8}" y1="{by2 + 71}" x2="{bx2 + bw2 - 8}" y2="{by2 + 71}" stroke="{ACCR}" stroke-width="0.6"/>')
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 88}" font-size="9" fill="{ACC}" font-weight="bold">'
          f'Confabulation:</text>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 76}" font-size="9.5" fill="{TXT}">'
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 104}" font-size="8.5" fill="{INK}">'
          f'Product A has superior display (2.8K OLED),</text>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 90}" font-size="9.5" fill="{TXT}">'
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 119}" font-size="8.5" fill="{INK}">'
          f'longer battery (12h), and lower price ($480).</text>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 104}" font-size="9.5" fill="{TXT}">'
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 134}" font-size="8.5" fill="{INK}">'
          f'Model fabricates reasoning to justify familiar brand.</text>')
-S.append(f'<text x="{bx2 + 6}" y="{by2 + 122}" font-size="10" fill="{ORG}" font-weight="bold">'
+S.append(f'<text x="{bx2 + 8}" y="{by2 + 153}" font-size="9" fill="{ACC}" font-weight="bold">'
          f'74% of non-optimal responses show this pattern.</text>')
 
 S.append(darr(LX + LW + 3, b3 + mbox_h // 2, RX - 4, b3 + mbox_h // 2))
-S.append(arr(va, b3 + mbox_h + 2, va, b4 + 4, c='#bbb'))
+S.append(arr(va, by2 + bh2 + 3, va, b4 + 2 - 3, c=ARW))
 
-# ── Stage 3: Result ──
+# ── Stage 3: Result (accent wash) ──
 rx3, ry3 = RX + 4, b4 + 2
-rw3, rh3 = RW - 8, BH - 4
-S.append(f'<rect x="{rx3}" y="{ry3}" width="{rw3}" height="{rh3}" rx="4" '
-         f'fill="{LORG}" stroke="{ORG}" stroke-width="0.8"/>')
-S.append(f'<text x="{rx3 + 8}" y="{ry3 + 20}" font-size="12.5" '
-         f'font-weight="bold" fill="{ORG}">Specification gap: OR = 57x</text>')
-S.append(f'<text x="{rx3 + 8}" y="{ry3 + 40}" font-size="9.5" fill="{TXT}">'
-         f'Vague specifications: 22.4% non-optimal (preference pathway)</text>')
-S.append(f'<text x="{rx3 + 8}" y="{ry3 + 56}" font-size="9.5" fill="{TXT}">'
+rw3, rh3 = RW - 8, bh4 - 4
+S.append(f'<rect x="{rx3}" y="{ry3}" width="{rw3}" height="{rh3}" rx="5" '
+         f'fill="{ACC1}" stroke="{ACC4}" stroke-width="0.8"/>')
+S.append(f'<text x="{rx3 + 10}" y="{ry3 + 24}" font-size="12" '
+         f'font-weight="bold" fill="{ACC}">Specification gap: OR = 57x</text>')
+S.append(f'<text x="{rx3 + 10}" y="{ry3 + 47}" font-size="8.5" fill="{INK}">'
+         f'Weighted specifications: 17.4% non-optimal (preference pathway)</text>')
+S.append(f'<text x="{rx3 + 10}" y="{ry3 + 63}" font-size="8.5" fill="{INK}">'
          f'Explicit specifications: 0.4% non-optimal (preference pathway)</text>')
-S.append(f'<line x1="{rx3 + 8}" y1="{ry3 + 62}" x2="{rx3 + rw3 - 8}" '
-         f'y2="{ry3 + 62}" stroke="{BDR}" stroke-width="0.5"/>')
-S.append(f'<text x="{rx3 + 8}" y="{ry3 + 80}" font-size="9.5" '
-         f'font-weight="bold" fill="{TXT}">74% of non-optimal responses confabulate attribute reasoning</text>')
-S.append(f'<text x="{rx3 + rw3 - 8}" y="{ry3 + 96}" text-anchor="end" '
-         f'font-size="9" fill="{TXT}">Universal across all 30 models</text>')
+S.append(f'<line x1="{rx3 + 10}" y1="{ry3 + 76}" x2="{rx3 + rw3 - 10}" '
+         f'y2="{ry3 + 76}" stroke="{ACCR}" stroke-width="0.6"/>')
+S.append(f'<text x="{rx3 + 10}" y="{ry3 + 97}" font-size="8.5" '
+         f'font-weight="bold" fill="{ACC}">74% of non-optimal responses confabulate attribute reasoning</text>')
+S.append(f'<text x="{rx3 + rw3 - 10}" y="{ry3 + 117}" text-anchor="end" '
+         f'font-size="8" fill="{SUB}">Universal across all 30 models</text>')
 
-S.append(darr(LX + LW + 3, b4 + BH // 2, RX - 4, b4 + BH // 2))
+S.append(darr(LX + LW + 3, b4 + bh4 // 2, RX - 4, b4 + bh4 // 2))
 
 
 S.append('</svg>')

@@ -1,10 +1,11 @@
+import os
 """Full verification + exploratory analyses for all running studies."""
 import requests, json, time, io, zipfile, csv, math
 from collections import Counter
 from statistics import NormalDist
 
 API = "https://pdx1.qualtrics.com/API/v3"
-H = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY", "Content-Type": "application/json"}
+H = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"], "Content-Type": "application/json"}
 
 def download(sid):
     r = requests.post(f"{API}/surveys/{sid}/export-responses", headers=H, json={"format": "csv", "compress": True})

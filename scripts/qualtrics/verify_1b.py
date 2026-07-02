@@ -1,7 +1,8 @@
+import os
 """Full verification of Study 1B."""
 import requests, json, re
 API = "https://pdx1.qualtrics.com/API/v3"
-H = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY"}
+H = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"]}
 
 SID = "SV_3kHeshVnJ1jj1dQ"
 r = requests.get(f"{API}/survey-definitions/{SID}", headers=H)

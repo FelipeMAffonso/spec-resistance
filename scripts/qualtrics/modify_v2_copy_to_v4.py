@@ -1,3 +1,4 @@
+import os
 """
 Modify the V2 survey copy (SV_cx2kueJwMOwdDj8) with V4 content.
 The V2 copy is a WORKING survey with all Qualtrics config correct.
@@ -17,7 +18,7 @@ import time
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
 HEADERS = {
-    "X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+    "X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
     "Content-Type": "application/json"
 }
 

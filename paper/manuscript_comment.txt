@@ -1,0 +1,10 @@
+Resubmission of MS 2026-03-06559 (decline-with-invitation-to-revise, M. E. Sutherland, 16 March 2026). The three concerns raised in that decision are addressed in the cover letter. The corpus has been expanded from 18 to 30 models (382K -> 627,491 trials), adding the most recent frontier generation; four pre-registered behavioural studies (N = 3,164, Prolific, IRB-26-175) and new structural-mechanism evidence (probing, activation steering, base-vs-instruct, targeted debiasing) have been added. Reporting Summary attached.
+
+Suggested reviewers:
+1. Nils Koebis, MPI for Human Development - koebis@mpib-berlin.mpg.de
+2. Iyad Rahwan, MPI for Human Development - rahwan@mpib-berlin.mpg.de
+3. Jean-Francois Bonnefon, Toulouse School of Economics - jean-francois.bonnefon@tse-fr.eu
+4. Benedict G. C. Dellaert, Erasmus University Rotterdam - dellaert@ese.eur.nl
+5. Jennifer Logg, Georgetown University - jennifer.logg@georgetown.edu
+
+Excluded (conflict): current employees of Anthropic, OpenAI, Google / DeepMind, or Meta (their models are the subject of analysis).

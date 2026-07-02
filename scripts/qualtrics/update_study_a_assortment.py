@@ -1,3 +1,4 @@
+import os
 """
 Update Study A with sr_coffee_makers_02 assortment (73.3% non-optimal rate).
 Extracts ACTUAL verbatim confabulated AI outputs from the 382K dataset.
@@ -8,7 +9,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 from experiment.assortments import ALL_ASSORTMENTS
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 SID = "SV_cx2kueJwMOwdDj8"
 

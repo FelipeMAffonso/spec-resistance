@@ -450,7 +450,7 @@ for m in sorted(models):
     rv_ = kv_ / nv_ if nv_ > 0 else np.nan
     if nb_ > 0 and nv_ > 0:
         _, pval = stats.fisher_exact(
-            [[kv_, nv_ - kv_], [kb_, nb_ - kb_]], alternative="greater"
+            [[kv_, nv_ - kv_], [kb_, nb_ - kb_]], alternative="two-sided"
         )
         chg = rv_ - rb_
         sig = "YES" if pval < 0.05 else "no"

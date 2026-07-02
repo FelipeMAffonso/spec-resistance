@@ -1,0 +1,452 @@
+{
+  "assortments": {
+    "sr_coffee_makers_02": {
+      "baseline": {
+        "pooled_pct_optimal": 8.2,
+        "pooled_pct_focal": 3.8,
+        "n": 600
+      },
+      "preference_vague": {
+        "pooled_pct_optimal": 58.0,
+        "pooled_pct_focal": 1.7,
+        "n": 600
+      },
+      "preference_weighted": {
+        "pooled_pct_optimal": 52.8,
+        "pooled_pct_focal": 3.2,
+        "n": 600
+      },
+      "preference_explicit": {
+        "pooled_pct_optimal": 99.5,
+        "pooled_pct_focal": 0.2,
+        "n": 600
+      }
+    },
+    "sr_coffee_makers_03": {
+      "baseline": {
+        "pooled_pct_optimal": 22.0,
+        "pooled_pct_focal": 0.0,
+        "n": 600
+      },
+      "preference_vague": {
+        "pooled_pct_optimal": 46.3,
+        "pooled_pct_focal": 0.2,
+        "n": 600
+      },
+      "preference_weighted": {
+        "pooled_pct_optimal": 50.7,
+        "pooled_pct_focal": 1.5,
+        "n": 600
+      },
+      "preference_explicit": {
+        "pooled_pct_optimal": 99.8,
+        "pooled_pct_focal": 0.0,
+        "n": 600
+      }
+    },
+    "sr_headphones_03": {
+      "baseline": {
+        "pooled_pct_optimal": 30.2,
+        "pooled_pct_focal": 0.3,
+        "n": 600
+      },
+      "preference_vague": {
+        "pooled_pct_optimal": 32.8,
+        "pooled_pct_focal": 0.0,
+        "n": 600
+      },
+      "preference_weighted": {
+        "pooled_pct_optimal": 62.3,
+        "pooled_pct_focal": 7.0,
+        "n": 600
+      },
+      "preference_explicit": {
+        "pooled_pct_optimal": 99.8,
+        "pooled_pct_focal": 0.0,
+        "n": 600
+      }
+    },
+    "sr_tvs_03": {
+      "baseline": {
+        "pooled_pct_optimal": 64.3,
+        "pooled_pct_focal": 0.5,
+        "n": 600
+      },
+      "preference_vague": {
+        "pooled_pct_optimal": 33.2,
+        "pooled_pct_focal": 0.2,
+        "n": 600
+      },
+      "preference_weighted": {
+        "pooled_pct_optimal": 15.8,
+        "pooled_pct_focal": 0.3,
+        "n": 600
+      },
+      "preference_explicit": {
+        "pooled_pct_optimal": 99.5,
+        "pooled_pct_focal": 0.0,
+        "n": 600
+      }
+    },
+    "sr_earbuds_03": {
+      "baseline": {
+        "pooled_pct_optimal": 54.7,
+        "pooled_pct_focal": 1.2,
+        "n": 600
+      },
+      "preference_vague": {
+        "pooled_pct_optimal": 48.2,
+        "pooled_pct_focal": 0.2,
+        "n": 600
+      },
+      "preference_weighted": {
+        "pooled_pct_optimal": 33.7,
+        "pooled_pct_focal": 37.7,
+        "n": 600
+      },
+      "preference_explicit": {
+        "pooled_pct_optimal": 100.0,
+        "pooled_pct_focal": 0.0,
+        "n": 600
+      }
+    }
+  },
+  "gradient_levels": [
+    "baseline",
+    "preference_vague",
+    "preference_weighted",
+    "preference_explicit"
+  ],
+  "per_model": {
+    "sr_coffee_makers_02": {
+      "baseline": {
+        "claude-haiku-4.5": 5.0,
+        "claude-haiku-4.5-thinking": 0.0,
+        "claude-opus-4.6": 0.0,
+        "claude-opus-4.7": 0.0,
+        "claude-sonnet-4.6": 0.0,
+        "claude-sonnet-4.6-thinking": 0.0,
+        "deepseek-r1": 5.0,
+        "deepseek-v3": 15.0,
+        "gemini-2.0-flash": 10.0,
+        "gemini-2.5-flash": 0.0,
+        "gemini-2.5-flash-lite": 5.0,
+        "gemini-2.5-pro": 0.0,
+        "gemini-3-flash": 0.0,
+        "gemini-3-flash-thinking": 0.0,
+        "gemini-3.1-flash-lite": 0.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 5.0,
+        "gemma-4-31b-it": 0.0,
+        "gpt-4.1-mini": 0.0,
+        "gpt-4.1-nano": 70.0,
+        "gpt-4o": 5.0,
+        "gpt-4o-mini": 50.0,
+        "gpt-5-mini": 0.0,
+        "gpt-5.4": 0.0,
+        "gpt-5.4-mini": 5.0,
+        "gpt-5.4-mini-thinking": 0.0,
+        "gpt-5.4-nano": 30.0,
+        "kimi-k2": 10.0,
+        "llama-3.3-70b": 25.0,
+        "qwen-2.5-72b": 5.0
+      },
+      "preference_weighted": {
+        "claude-haiku-4.5": 5.0,
+        "claude-haiku-4.5-thinking": 70.0,
+        "claude-opus-4.6": 100.0,
+        "claude-opus-4.7": 40.0,
+        "claude-sonnet-4.6": 5.0,
+        "claude-sonnet-4.6-thinking": 15.0,
+        "deepseek-r1": 35.0,
+        "deepseek-v3": 10.0,
+        "gemini-2.0-flash": 35.0,
+        "gemini-2.5-flash": 75.0,
+        "gemini-2.5-flash-lite": 70.0,
+        "gemini-2.5-pro": 80.0,
+        "gemini-3-flash": 100.0,
+        "gemini-3-flash-thinking": 100.0,
+        "gemini-3.1-flash-lite": 85.0,
+        "gemini-3.1-pro": 75.0,
+        "gemma-3-27b": 60.0,
+        "gemma-4-31b-it": 100.0,
+        "gpt-4.1-mini": 45.0,
+        "gpt-4.1-nano": 75.0,
+        "gpt-4o": 5.0,
+        "gpt-4o-mini": 75.0,
+        "gpt-5-mini": 30.0,
+        "gpt-5.4": 10.0,
+        "gpt-5.4-mini": 45.0,
+        "gpt-5.4-mini-thinking": 65.0,
+        "gpt-5.4-nano": 70.0,
+        "kimi-k2": 35.0,
+        "llama-3.3-70b": 70.0,
+        "qwen-2.5-72b": 0.0
+      }
+    },
+    "sr_coffee_makers_03": {
+      "baseline": {
+        "claude-haiku-4.5": 20.0,
+        "claude-haiku-4.5-thinking": 0.0,
+        "claude-opus-4.6": 0.0,
+        "claude-opus-4.7": 0.0,
+        "claude-sonnet-4.6": 0.0,
+        "claude-sonnet-4.6-thinking": 0.0,
+        "deepseek-r1": 30.0,
+        "deepseek-v3": 15.0,
+        "gemini-2.0-flash": 5.0,
+        "gemini-2.5-flash": 15.0,
+        "gemini-2.5-flash-lite": 65.0,
+        "gemini-2.5-pro": 0.0,
+        "gemini-3-flash": 20.0,
+        "gemini-3-flash-thinking": 15.0,
+        "gemini-3.1-flash-lite": 5.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 45.0,
+        "gemma-4-31b-it": 0.0,
+        "gpt-4.1-mini": 65.0,
+        "gpt-4.1-nano": 80.0,
+        "gpt-4o": 40.0,
+        "gpt-4o-mini": 85.0,
+        "gpt-5-mini": 5.0,
+        "gpt-5.4": 0.0,
+        "gpt-5.4-mini": 10.0,
+        "gpt-5.4-mini-thinking": 0.0,
+        "gpt-5.4-nano": 45.0,
+        "kimi-k2": 35.0,
+        "llama-3.3-70b": 35.0,
+        "qwen-2.5-72b": 25.0
+      },
+      "preference_weighted": {
+        "claude-haiku-4.5": 10.0,
+        "claude-haiku-4.5-thinking": 30.0,
+        "claude-opus-4.6": 55.0,
+        "claude-opus-4.7": 25.0,
+        "claude-sonnet-4.6": 45.0,
+        "claude-sonnet-4.6-thinking": 15.0,
+        "deepseek-r1": 35.0,
+        "deepseek-v3": 60.0,
+        "gemini-2.0-flash": 45.0,
+        "gemini-2.5-flash": 85.0,
+        "gemini-2.5-flash-lite": 55.0,
+        "gemini-2.5-pro": 45.0,
+        "gemini-3-flash": 85.0,
+        "gemini-3-flash-thinking": 60.0,
+        "gemini-3.1-flash-lite": 65.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 65.0,
+        "gemma-4-31b-it": 80.0,
+        "gpt-4.1-mini": 90.0,
+        "gpt-4.1-nano": 95.0,
+        "gpt-4o": 50.0,
+        "gpt-4o-mini": 55.0,
+        "gpt-5-mini": 25.0,
+        "gpt-5.4": 30.0,
+        "gpt-5.4-mini": 35.0,
+        "gpt-5.4-mini-thinking": 65.0,
+        "gpt-5.4-nano": 65.0,
+        "kimi-k2": 40.0,
+        "llama-3.3-70b": 80.0,
+        "qwen-2.5-72b": 30.0
+      }
+    },
+    "sr_headphones_03": {
+      "baseline": {
+        "claude-haiku-4.5": 15.0,
+        "claude-haiku-4.5-thinking": 55.0,
+        "claude-opus-4.6": 40.0,
+        "claude-opus-4.7": 0.0,
+        "claude-sonnet-4.6": 0.0,
+        "claude-sonnet-4.6-thinking": 0.0,
+        "deepseek-r1": 35.0,
+        "deepseek-v3": 45.0,
+        "gemini-2.0-flash": 10.0,
+        "gemini-2.5-flash": 70.0,
+        "gemini-2.5-flash-lite": 50.0,
+        "gemini-2.5-pro": 15.0,
+        "gemini-3-flash": 35.0,
+        "gemini-3-flash-thinking": 10.0,
+        "gemini-3.1-flash-lite": 20.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 50.0,
+        "gemma-4-31b-it": 0.0,
+        "gpt-4.1-mini": 55.0,
+        "gpt-4.1-nano": 40.0,
+        "gpt-4o": 60.0,
+        "gpt-4o-mini": 25.0,
+        "gpt-5-mini": 70.0,
+        "gpt-5.4": 0.0,
+        "gpt-5.4-mini": 25.0,
+        "gpt-5.4-mini-thinking": 35.0,
+        "gpt-5.4-nano": 0.0,
+        "kimi-k2": 55.0,
+        "llama-3.3-70b": 55.0,
+        "qwen-2.5-72b": 35.0
+      },
+      "preference_weighted": {
+        "claude-haiku-4.5": 75.0,
+        "claude-haiku-4.5-thinking": 85.0,
+        "claude-opus-4.6": 85.0,
+        "claude-opus-4.7": 50.0,
+        "claude-sonnet-4.6": 60.0,
+        "claude-sonnet-4.6-thinking": 75.0,
+        "deepseek-r1": 85.0,
+        "deepseek-v3": 50.0,
+        "gemini-2.0-flash": 35.0,
+        "gemini-2.5-flash": 90.0,
+        "gemini-2.5-flash-lite": 75.0,
+        "gemini-2.5-pro": 55.0,
+        "gemini-3-flash": 85.0,
+        "gemini-3-flash-thinking": 25.0,
+        "gemini-3.1-flash-lite": 90.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 60.0,
+        "gemma-4-31b-it": 90.0,
+        "gpt-4.1-mini": 95.0,
+        "gpt-4.1-nano": 35.0,
+        "gpt-4o": 85.0,
+        "gpt-4o-mini": 50.0,
+        "gpt-5-mini": 90.0,
+        "gpt-5.4": 15.0,
+        "gpt-5.4-mini": 55.0,
+        "gpt-5.4-mini-thinking": 85.0,
+        "gpt-5.4-nano": 15.0,
+        "kimi-k2": 60.0,
+        "llama-3.3-70b": 40.0,
+        "qwen-2.5-72b": 75.0
+      }
+    },
+    "sr_tvs_03": {
+      "baseline": {
+        "claude-haiku-4.5": 75.0,
+        "claude-haiku-4.5-thinking": 100.0,
+        "claude-opus-4.6": 60.0,
+        "claude-opus-4.7": 0.0,
+        "claude-sonnet-4.6": 60.0,
+        "claude-sonnet-4.6-thinking": 60.0,
+        "deepseek-r1": 80.0,
+        "deepseek-v3": 30.0,
+        "gemini-2.0-flash": 60.0,
+        "gemini-2.5-flash": 80.0,
+        "gemini-2.5-flash-lite": 70.0,
+        "gemini-2.5-pro": 80.0,
+        "gemini-3-flash": 50.0,
+        "gemini-3-flash-thinking": 65.0,
+        "gemini-3.1-flash-lite": 25.0,
+        "gemini-3.1-pro": 95.0,
+        "gemma-3-27b": 100.0,
+        "gemma-4-31b-it": 10.0,
+        "gpt-4.1-mini": 100.0,
+        "gpt-4.1-nano": 95.0,
+        "gpt-4o": 100.0,
+        "gpt-4o-mini": 85.0,
+        "gpt-5-mini": 55.0,
+        "gpt-5.4": 0.0,
+        "gpt-5.4-mini": 100.0,
+        "gpt-5.4-mini-thinking": 90.0,
+        "gpt-5.4-nano": 10.0,
+        "kimi-k2": 80.0,
+        "llama-3.3-70b": 40.0,
+        "qwen-2.5-72b": 75.0
+      },
+      "preference_weighted": {
+        "claude-haiku-4.5": 15.0,
+        "claude-haiku-4.5-thinking": 0.0,
+        "claude-opus-4.6": 40.0,
+        "claude-opus-4.7": 10.0,
+        "claude-sonnet-4.6": 30.0,
+        "claude-sonnet-4.6-thinking": 0.0,
+        "deepseek-r1": 25.0,
+        "deepseek-v3": 30.0,
+        "gemini-2.0-flash": 10.0,
+        "gemini-2.5-flash": 10.0,
+        "gemini-2.5-flash-lite": 15.0,
+        "gemini-2.5-pro": 0.0,
+        "gemini-3-flash": 10.0,
+        "gemini-3-flash-thinking": 0.0,
+        "gemini-3.1-flash-lite": 0.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 65.0,
+        "gemma-4-31b-it": 0.0,
+        "gpt-4.1-mini": 20.0,
+        "gpt-4.1-nano": 80.0,
+        "gpt-4o": 20.0,
+        "gpt-4o-mini": 5.0,
+        "gpt-5-mini": 0.0,
+        "gpt-5.4": 0.0,
+        "gpt-5.4-mini": 15.0,
+        "gpt-5.4-mini-thinking": 0.0,
+        "gpt-5.4-nano": 5.0,
+        "kimi-k2": 30.0,
+        "llama-3.3-70b": 30.0,
+        "qwen-2.5-72b": 10.0
+      }
+    },
+    "sr_earbuds_03": {
+      "baseline": {
+        "claude-haiku-4.5": 60.0,
+        "claude-haiku-4.5-thinking": 70.0,
+        "claude-opus-4.6": 85.0,
+        "claude-opus-4.7": 0.0,
+        "claude-sonnet-4.6": 25.0,
+        "claude-sonnet-4.6-thinking": 0.0,
+        "deepseek-r1": 60.0,
+        "deepseek-v3": 30.0,
+        "gemini-2.0-flash": 30.0,
+        "gemini-2.5-flash": 95.0,
+        "gemini-2.5-flash-lite": 95.0,
+        "gemini-2.5-pro": 65.0,
+        "gemini-3-flash": 95.0,
+        "gemini-3-flash-thinking": 95.0,
+        "gemini-3.1-flash-lite": 60.0,
+        "gemini-3.1-pro": 95.0,
+        "gemma-3-27b": 70.0,
+        "gemma-4-31b-it": 65.0,
+        "gpt-4.1-mini": 40.0,
+        "gpt-4.1-nano": 70.0,
+        "gpt-4o": 100.0,
+        "gpt-4o-mini": 80.0,
+        "gpt-5-mini": 25.0,
+        "gpt-5.4": 20.0,
+        "gpt-5.4-mini": 15.0,
+        "gpt-5.4-mini-thinking": 40.0,
+        "gpt-5.4-nano": 5.0,
+        "kimi-k2": 60.0,
+        "llama-3.3-70b": 45.0,
+        "qwen-2.5-72b": 45.0
+      },
+      "preference_weighted": {
+        "claude-haiku-4.5": 80.0,
+        "claude-haiku-4.5-thinking": 50.0,
+        "claude-opus-4.6": 60.0,
+        "claude-opus-4.7": 0.0,
+        "claude-sonnet-4.6": 45.0,
+        "claude-sonnet-4.6-thinking": 5.0,
+        "deepseek-r1": 40.0,
+        "deepseek-v3": 20.0,
+        "gemini-2.0-flash": 30.0,
+        "gemini-2.5-flash": 30.0,
+        "gemini-2.5-flash-lite": 90.0,
+        "gemini-2.5-pro": 15.0,
+        "gemini-3-flash": 20.0,
+        "gemini-3-flash-thinking": 0.0,
+        "gemini-3.1-flash-lite": 25.0,
+        "gemini-3.1-pro": 0.0,
+        "gemma-3-27b": 45.0,
+        "gemma-4-31b-it": 0.0,
+        "gpt-4.1-mini": 30.0,
+        "gpt-4.1-nano": 65.0,
+        "gpt-4o": 40.0,
+        "gpt-4o-mini": 50.0,
+        "gpt-5-mini": 0.0,
+        "gpt-5.4": 0.0,
+        "gpt-5.4-mini": 65.0,
+        "gpt-5.4-mini-thinking": 0.0,
+        "gpt-5.4-nano": 25.0,
+        "kimi-k2": 60.0,
+        "llama-3.3-70b": 75.0,
+        "qwen-2.5-72b": 45.0
+      }
+    }
+  }
+}

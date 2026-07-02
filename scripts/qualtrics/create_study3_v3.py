@@ -1,3 +1,4 @@
+import os
 """
 Create Study 3 v3: Welfare Revelation (Dollar Cost) — WITH CATEGORY RANDOMIZATION
 Spec Resistance Project — Nature R&R Human Subjects
@@ -37,7 +38,7 @@ import sys
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
 HEADERS = {
-    "X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+    "X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
     "Content-Type": "application/json"
 }
 

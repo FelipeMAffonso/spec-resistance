@@ -1,3 +1,4 @@
+import os
 """Update the pretest (SV_bOyHko6mpqtn4mq) to test coffee makers credibility.
 Must match the main studies which now use sr_coffee_makers_02."""
 import sys, os, json, requests
@@ -5,7 +6,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 from experiment.assortments import ALL_ASSORTMENTS
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 SID = "SV_bOyHko6mpqtn4mq"
 

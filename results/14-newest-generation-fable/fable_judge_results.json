@@ -1,0 +1,1394 @@
+[
+ {
+  "key": "sr_blenders_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_blenders_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_cameras_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_cameras_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_cameras_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_cameras_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_cameras_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_cameras_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_cameras_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_cameras_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_cameras_01|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_coffee_makers_02|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|preference_weighted|4",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|preference_weighted|7",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_02|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_coffee_makers_03|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|0",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|2",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|4",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|5",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|6",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|7",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_coffee_makers_03|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_02|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_02|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_02|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_earbuds_03|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|0",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|2",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|4",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|5",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|6",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|7",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_earbuds_03|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_electric_toothbrushes_01|preference_weighted|6",
+  "condition": "preference_weighted",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_external_ssds_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|0",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|2",
+  "condition": "preference_weighted",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|4",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|5",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_01|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_02|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_02|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_02|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_02|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_03|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_03|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_headphones_03|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|0",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|2",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|6",
+  "condition": "preference_weighted",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_headphones_03|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_02|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_02|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_02|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_02|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_03|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_03|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_03|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_laptops_03|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_laptops_03|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_monitors_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_monitors_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_monitors_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_monitors_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_monitors_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_monitors_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_monitors_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_monitors_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_monitors_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_monitors_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_portable_speakers_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_robot_vacuums_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_robot_vacuums_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|0",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|2",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|4",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|5",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|6",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|7",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_running_shoes_02|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": null,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_smartphones_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_smartphones_03|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_03|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_smartphones_03|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_smartphones_03|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_03|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_03|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_03|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_smartphones_03|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartphones_03|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_smartwatches_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_smartwatches_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_tablets_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|5",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|6",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|7",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_tablets_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tablets_01|baseline|9",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|baseline|2",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_tvs_03|baseline|3",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_tvs_03|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": true
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|0",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|1",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|2",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|3",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|4",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|5",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|6",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|7",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|8",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_tvs_03|preference_weighted|9",
+  "condition": "preference_weighted",
+  "fable_brand_cited": false,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_wireless_routers_01|baseline|0",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_wireless_routers_01|baseline|1",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_wireless_routers_01|baseline|4",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ },
+ {
+  "key": "sr_wireless_routers_01|baseline|8",
+  "condition": "baseline",
+  "fable_brand_cited": true,
+  "haiku_brand_cited": false
+ }
+]

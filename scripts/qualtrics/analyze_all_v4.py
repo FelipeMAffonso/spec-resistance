@@ -1,3 +1,4 @@
+import os
 """
 COMPLETE V4 Analysis Pipeline — All Studies
 Downloads data from all surveys, runs all pre-registered analyses,
@@ -18,7 +19,7 @@ from math import sqrt, comb
 sys.stdout.reconfigure(encoding='utf-8')
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 
 SURVEYS = {

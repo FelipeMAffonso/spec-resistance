@@ -1,8 +1,9 @@
+import os
 """Build Study 1B (earbuds) by copying Study 1A (coffee makers) and swapping content."""
 import requests, json, re
 
 API = "https://pdx1.qualtrics.com/API/v3"
-H = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY", "Content-Type": "application/json"}
+H = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"], "Content-Type": "application/json"}
 STUDY_A = "SV_cx2kueJwMOwdDj8"
 
 # Step 1: Copy

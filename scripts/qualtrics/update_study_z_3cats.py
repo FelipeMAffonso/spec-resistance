@@ -1,10 +1,11 @@
+import os
 """Update Study Z with 3 HIGH-BIAS categories for competition design."""
 import sys, os, json, glob, requests, time
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', '..'))
 from experiment.assortments import ALL_ASSORTMENTS
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 SID = "SV_esVf052AlAoqBiS"
 RAW = os.path.join(os.path.dirname(__file__), '..', '..', '..', 'data', 'raw')

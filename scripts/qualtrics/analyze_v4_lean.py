@@ -15,6 +15,7 @@ Column mapping (from Qualtrics export):
   CategoryD     = coffee_makers (A/Y), coffee makers/headphones/wireless earbuds (Z)
 """
 import sys, csv, io, time, zipfile, json
+import os
 from collections import Counter
 
 try:
@@ -24,7 +25,7 @@ except ImportError:
     HAS_REQUESTS = False
 
 API = "https://pdx1.qualtrics.com/API/v3"
-TOKEN = "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY"
+TOKEN = os.environ.get("QUALTRICS_API_TOKEN", "")  # set your own Qualtrics API token
 H = {"X-API-TOKEN": TOKEN, "Content-Type": "application/json"}
 
 SURVEYS = {

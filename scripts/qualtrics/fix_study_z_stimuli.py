@@ -1,8 +1,9 @@
+import os
 """Fix Study Z: Create piped stimulus question + inject product table HTML"""
 import requests, json, sys, time
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY", "Content-Type": "application/json"}
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"], "Content-Type": "application/json"}
 SID = "SV_7P5xZMJrF242hHU"
 OPTS = {"BlockLocking": "false", "RandomizeQuestions": "false", "BlockVisibility": "Expanded"}
 

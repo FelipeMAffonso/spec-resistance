@@ -1,3 +1,4 @@
+import os
 """
 Create Study Z (V4): Head-to-Head Competition
 2 between-subjects conditions x 3 between-subjects categories = 6 cells
@@ -8,7 +9,7 @@ Competition framing: post-hoc pairing, $2 bonus for higher-utility choice
 import requests, json, sys, time
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY", "Content-Type": "application/json"}
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"], "Content-Type": "application/json"}
 OPTS = {"BlockLocking": "false", "RandomizeQuestions": "false", "BlockVisibility": "Expanded"}
 
 def api(method, path, data=None):

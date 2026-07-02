@@ -1,3 +1,4 @@
+import os
 """
 Modify Study Z V2 copy (SV_esVf052AlAoqBiS) with V4 competition content.
 Source: V2 Study 1 (confabulation mechanism)
@@ -11,7 +12,7 @@ Changes:
 import requests, json, sys, time
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 
 SID = "SV_esVf052AlAoqBiS"

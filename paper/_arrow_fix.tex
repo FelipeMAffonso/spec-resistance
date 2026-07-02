@@ -1,0 +1,9 @@
+% Palatino Linotype lacks U+2192; map it to the math right arrow so the seven
+% prose arrows in the Supplementary Information render instead of dropping.
+\usepackage{newunicodechar}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+% The SI figure captions carry their own "Supplementary Figure N" labels in the
+% caption text; suppress LaTeX's automatic "Figure N:" prefix so captions do not
+% double-number (tables in this SI are set as plain paragraphs, so unaffected).
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}

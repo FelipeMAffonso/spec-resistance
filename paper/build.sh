@@ -96,6 +96,7 @@ echo "  → Building supplementary.pdf..."
   --bibliography=references.bib \
   --resource-path="$PAPER_DIR:$(dirname "$PAPER_DIR")" \
   --pdf-engine=xelatex \
+  -H "$PAPER_DIR/_arrow_fix.tex" \
   -V geometry:margin=1in \
   -V fontsize=11pt \
   -V linestretch=1.15 \
@@ -112,7 +113,7 @@ echo "  → Building cover_letter.pdf..."
 "$PANDOC" cover_letter.md \
   --pdf-engine=xelatex \
   -V geometry:margin=1in \
-  -V fontsize=11pt \
+  -V fontsize=12pt \
   -V mainfont="Palatino Linotype" \
   -o cover_letter.pdf 2>&1
 

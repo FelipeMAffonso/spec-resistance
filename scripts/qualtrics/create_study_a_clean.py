@@ -1,3 +1,4 @@
+import os
 """
 Study A CLEAN BUILD — Atomic creation, no incremental modifications.
 Creates everything in one pass: questions, blocks, flow, embedded data.
@@ -9,7 +10,7 @@ Consent is display-only (implied by clicking Next). No attention check.
 import requests, json, sys, time
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 OPTS = {"BlockLocking": "false", "RandomizeQuestions": "false",
         "BlockVisibility": "Expanded"}

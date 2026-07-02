@@ -7,9 +7,10 @@ reference the participant's actual chosen product.
 Re-runnable: checks for existing block by description to avoid duplicates.
 """
 import requests, json, sys
+import os
 
 API = "https://pdx1.qualtrics.com/API/v3"
-TOKEN = "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY"
+TOKEN = os.environ.get("QUALTRICS_API_TOKEN", "")  # set your own Qualtrics API token
 H = {"X-API-TOKEN": TOKEN, "Content-Type": "application/json"}
 SID = "SV_8A33OiyMqjqr5LU"
 BLOCK_DESC = "post_choice_dvs"

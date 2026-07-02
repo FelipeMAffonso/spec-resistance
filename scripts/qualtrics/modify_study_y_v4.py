@@ -1,3 +1,4 @@
+import os
 """
 Modify Study Y V2 copy (SV_3kiTDAWUESPMQ7A) with V4 disclosure gradient content.
 Source: V2 Study 2 (hidden consideration set)
@@ -11,7 +12,7 @@ Changes:
 import requests, json, sys, time
 
 BASE = "https://pdx1.qualtrics.com/API/v3"
-HEADERS = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY",
+HEADERS = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"],
            "Content-Type": "application/json"}
 
 SID = "SV_3kiTDAWUESPMQ7A"

@@ -1,0 +1,70 @@
+RATER STUDY WAVES 2 + 3 — LAUNCH RECORD (2026-07-02)
+=====================================================
+
+WAVE 2 — replacement raters for underfilled wave-1 session blocks
+  Qualtrics survey : SV_8HVHIRx52ctRdZ4  (ACTIVE; published v1 2026-07-02)
+  Prolific study   : 6a4654ca08808a41db2d8959  (ACTIVE)
+  Completion code  : SRRW2AS3BP
+  Places           : 262  (deficit sum 110 valid sessions needed / 0.42 realised wave-1 validity = 261.9 -> 262)
+  Cost             : $628.85 (62,885 cents incl. Prolific fee; reward $1.80 x 9 min, desktop)
+  Exclusions       : previous_studies_blocklist = [6a45d85f42e86d0fe5bcf93a]  (all wave-1 raters)
+                     + US residence, English fluent, approval 95-100 (wave-1 filters mirrored)
+  QSF              : rater_study_wave2.qsf = the fielded wave-1 rater_study.qsf post-processed by
+                     build_wave2_qsf.py: randomizer children 41 -> 37 (dropped the four FILLED blocks
+                     b06, b20, b34, b37 per wave2_block_deficits.json; deficit basis = 5 minus current
+                     valid ratings per unit, 37/41 blocks underfilled, deficit sum 110), completion cc
+                     swapped SRRATE7K2M -> SRRW2AS3BP, qsf_build stamp +wave2-replacement. Surviving
+                     children verified byte-identical to wave 1; NOTHING renumbered, so wave-2 exports
+                     score against the SAME instruments/rater_study/rater_study_MAPPING.json
+                     (reruns/rater_scoring.py joins on session_block + u{NN}_c1/c2 unchanged).
+  Units covered    : 722/802 real units (the 80 units exclusive to the 4 filled blocks already have
+                     their 5 valid raters from wave 1).
+  Audit            : qualtrics-toolkit audit_survey.py = 0 FAIL, 4 WARN (the wave-1 fielded baseline:
+                     desktop enforced Prolific-side, attention handled by pay-then-exclude per prereg
+                     Q3, survey-level DefaultMessage is the no-paid-screen-out invariant, no timing
+                     gates same as wave 1). The audit's decline-ending check is satisfied by an
+                     explicit no-credit DisplayMessage ending (library message MS_MaY56WHtI8IcViV in
+                     UR_9GiLKDSXylBFeYu, created for this launch; fix_decline_ending.py) — decline
+                     still terminates with NO completion code, behaviour unchanged vs wave 1.
+  Data contract    : contract_check.py PASS — 46 slot tags u01_c1..u23_c2 present (MC, forced),
+                     168 embedded fields incl. session_block declared, sample blocks b01/b14/b41
+                     stamp unit_id/kind exactly per rater_study_MAPPING.json.
+  Stray import     : SV_diODVdKST2JwVyS = the pre-audit-fix first import; renamed
+                     "ZZ SUPERSEDED do-not-use", kept INACTIVE, zero responses. Ignore it.
+
+WAVE 3 — NEW units: human explicit_numeric non-optimal justifications (separate study)
+  Qualtrics survey : SV_aflZuy3ERfC8hAG  (ACTIVE; published v1 2026-07-02)
+  Prolific study   : 6a4655dbb77d139d2df33c27  (ACTIVE)
+  Completion code  : SRRW3NY5CN
+  Places           : 84  (7 blocks x 5 valid sessions = 35 / 0.42 = 83.3 -> ceil 84)
+  Cost             : $201.61 (20,161 cents incl. fee; same $1.80 x 9 min, desktop)
+  Exclusions       : previous_studies_blocklist = [6a45d85f42e86d0fe5bcf93a, 6a4654ca08808a41db2d8959]
+                     (raters of BOTH prior rater studies) + the same US/English/95-100 filters
+  Units            : 133 human explicit-rung units, built by build_wave3_packets.py. Kept rule =
+                     reruns/confirmatory_FINAL_numbers.py verbatim: iter17_final export 1,209 finished
+                     -> PROLIFIC_PID in iter17_final_approved_pids.json (1,200) -> analyze_full.
+                     apply_exclusions (kept 1,182; excl failed_attention 1, time_out_of_bounds 17)
+                     -> assigned_level == explicit_numeric (395) -> choice_is_optimal false (134)
+                     -> >= 15 chars after answer-prefix strip + brand resolves in locked bank (133).
+                     Per assortment: coffee_makers_02 23, coffee_makers_03 28, earbuds_03 20,
+                     headphones_03 40, tvs_03 22. HUMAN-ONLY by design (the model side of the explicit
+                     rung is not re-fielded; wave 1 fielded the pooled NL-rung human+model mix).
+                     Same 8 golds (2 rotating per session) + 1 instructed-attention item; 23 slots.
+  Files            : wave3_units.json + wave3_units_SOURCEMAP.json (provenance quarantined) +
+                     wave3.qsf + wave3_MAPPING.json (the scorer key for THIS survey; joins on
+                     session_block b01..b07 + u{NN}_c1/c2; padded units u0001-u0007 rated in 2 blocks).
+  Audit            : audit_survey.py = 0 FAIL, 4 WARN (same accepted baseline; same explicit
+                     no-credit DisplayMessage decline ending).
+  Data contract    : contract_check.py PASS — 46 slot tags present, 168 embedded fields declared,
+                     sample blocks b01/b04/b07 stamp exactly per wave3_MAPPING.json.
+
+LEDGER (prolific/spend_ledger.json)
+  before waves   : $2,724.21
+  after wave 2   : $3,353.06
+  after wave 3   : $3,554.67   (cap $3,700 in launch_pilot.py; headroom $145.33)
+
+GUARDRAILS HONOURED
+  Wave-1 survey SV_2gjG7ZYRVlTWhHU untouched: still ACTIVE in Qualtrics, Prolific study COMPLETED.
+  Places exactly as computed (262 / 84). Cap never exceeded; publish went through launch_pilot.py.
+  Wave-2 scoring: reuse rater_study_MAPPING.json + rater_units_SOURCEMAP.json (do NOT renumber).
+  Wave-3 scoring: point the scorer at wave3_MAPPING.json + wave3_units_SOURCEMAP.json + SV_aflZuy3ERfC8hAG.

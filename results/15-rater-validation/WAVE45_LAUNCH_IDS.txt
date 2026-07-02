@@ -1,0 +1,78 @@
+RATER STUDY WAVES 4 + 5 — TAIL TOP-UP LAUNCH RECORD (2026-07-02)
+=================================================================
+Goal: give every unit still below 3 valid ratings more raters. Under-3 tails computed live
+from the scorer outputs at build time (build_wave45_qsf.py re-asserts them before writing):
+  NL family  (reruns/rater_scores_pooled_w12.json, waves 1+2 pooled): 20 units u0701..u0720,
+              all at 2 valid ratings -> ALL live in ONE block, b36 (rater_study_MAPPING.json).
+  Explicit family (reruns/rater_scores_w3.json, wave 3): 13 units u0121..u0133, all at 1
+              valid rating -> ALL live in ONE block, b07 (wave3_MAPPING.json). b07 also
+              carries the padded u0001..u0007 (already 8-9 ratings), which ride along by design.
+
+WAVE 4 — NL tail top-up (block b36 only; scores against the WAVE-1 mapping)
+  Qualtrics survey : SV_4SZIzHPZQ6OqBFk  (ACTIVE; published v1 2026-07-02)
+  Prolific study   : 6a467262f46f85c8db630d8e  (ACTIVE)
+  Completion code  : SRRW4L8MT9
+  Places           : 8  (1 block x 3 valid sessions needed / 0.42 realised validity = 7.14 -> ceil 8)
+  Cost             : $19.20 (1,920 cents incl. Prolific fee; reward $1.80 x 9 min, desktop)
+  Exclusions       : previous_studies_blocklist = [6a45d85f42e86d0fe5bcf93a,   (wave 1)
+                     6a4654ca08808a41db2d8959,   (wave 2)
+                     6a4655dbb77d139d2df33c27]   (wave 3)
+                     + US residence, English fluent, approval 95-100 (waves 1-3 filters mirrored)
+  QSF              : rater_study_wave4.qsf = the fielded wave-2 artifact rater_study_wave2.qsf
+                     post-processed by build_wave45_qsf.py --wave 4: randomizer children 37 -> 1
+                     (kept ONLY b36), completion cc swapped SRRW2AS3BP -> SRRW4L8MT9, qsf_build
+                     stamp +wave4-tail-topup, SurveyName WAVE 4. The surviving b36 child is
+                     asserted byte-identical to wave 2 (which build_wave2_qsf.py had asserted
+                     byte-identical to wave 1), and the decline-ending DisplayMessage fix is
+                     already in the source bytes. NOTHING renumbered: wave-4 exports score
+                     against the SAME instruments/rater_study/rater_study_MAPPING.json
+                     (reruns/rater_scoring.py joins on session_block + u{NN}_c1/c2 unchanged).
+  Audit            : qualtrics-toolkit audit_survey.py = 0 FAIL, 4 WARN — byte-for-byte the
+                     accepted waves-2/3 baseline (desktop enforced Prolific-side, attention
+                     handled by pay-then-exclude per prereg Q3, survey-level DefaultMessage is
+                     the no-paid-screen-out invariant, no timing gates). Decline ending PASSes
+                     (explicit no-credit DisplayMessage MS_MaY56WHtI8IcViV / UR_9GiLKDSXylBFeYu
+                     inherited in-file from the wave-2 artifact; no fix needed post-import).
+  Data contract    : contract_check.py PASS — 46 slot tags u01_c1..u23_c2 present (MC, forced),
+                     168 embedded fields incl. session_block declared, sample block b36 stamps
+                     unit_id/kind exactly per rater_study_MAPPING.json.
+  Live-serve check : anon link HTTP 200, consent page serves, no closed marker.
+
+WAVE 5 — explicit tail top-up (block b07 only; scores against the WAVE-3 mapping)
+  Qualtrics survey : SV_9zvrKBdUMursoxU  (ACTIVE; published v1 2026-07-02)
+  Prolific study   : 6a46728ac1da3d037ae1cd71  (ACTIVE)
+  Completion code  : SRRW5G62PH
+  Places           : 8  (1 block x 3 / 0.42 = 7.14 -> ceil 8)
+  Cost             : $19.20 (1,920 cents incl. fee; same $1.80 x 9 min, desktop)
+  Exclusions       : previous_studies_blocklist = [6a45d85f42e86d0fe5bcf93a,   (wave 1)
+                     6a4654ca08808a41db2d8959,   (wave 2)
+                     6a4655dbb77d139d2df33c27,   (wave 3)
+                     6a467262f46f85c8db630d8e]   (wave 4, this launch)
+                     + the same US/English/95-100 filters
+  QSF              : wave5.qsf = the fielded wave-3 artifact wave3.qsf post-processed by
+                     build_wave45_qsf.py --wave 5: randomizer children 7 -> 1 (kept ONLY b07),
+                     cc swapped SRRW3NY5CN -> SRRW5G62PH, qsf_build stamp +wave5-tail-topup,
+                     SurveyName WAVE 5. Surviving b07 child byte-identical to wave 3; decline
+                     fix in-file. Wave-5 exports score against wave3_MAPPING.json +
+                     wave3_units_SOURCEMAP.json (same joins).
+  Audit            : audit_survey.py = 0 FAIL, 4 WARN (same accepted baseline; decline PASS).
+  Data contract    : contract_check.py PASS — 46 slot tags present, 168 embedded fields
+                     declared, sample block b07 stamps exactly per wave3_MAPPING.json.
+  Live-serve check : anon link HTTP 200, consent page serves, no closed marker.
+
+LEDGER (prolific/spend_ledger.json; cap $3,700 in launch_pilot.py)
+  before waves   : $3,554.67  (headroom $145.33)
+  after wave 4   : $3,573.87
+  after wave 5   : $3,593.07  (headroom left $106.93)
+  Total tail top-up spend $38.40 — no size-down needed; NO shortfall (both waves fielded at
+  the full computed places).
+
+GUARDRAILS HONOURED
+  Prior surveys untouched: SV_2gjG7ZYRVlTWhHU (wave 1), SV_8HVHIRx52ctRdZ4 (wave 2),
+  SV_aflZuy3ERfC8hAG (wave 3) only ever read (GETs); the superseded SV_diODVdKST2JwVyS ignored.
+  Places exactly as computed (8 / 8). Cap-guard passed on both publishes ($3,573.87 and
+  $3,593.07 vs $3,700); publishes went through launch_pilot.py.
+  Wave-4 scoring: reuse rater_study_MAPPING.json + rater_units_SOURCEMAP.json, point the
+  export at SV_4SZIzHPZQ6OqBFk, pool with waves 1+2 (do NOT renumber).
+  Wave-5 scoring: wave3_MAPPING.json + wave3_units_SOURCEMAP.json, export SV_9zvrKBdUMursoxU,
+  pool with wave 3.

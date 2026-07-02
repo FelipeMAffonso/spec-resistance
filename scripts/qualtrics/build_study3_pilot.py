@@ -1,7 +1,8 @@
+import os
 """Build Study 3 pilot: 3 conditions + intro + feedback + demographics."""
 import requests, json
 API = "https://pdx1.qualtrics.com/API/v3"
-H = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY", "Content-Type": "application/json"}
+H = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"], "Content-Type": "application/json"}
 SID = "SV_8A33OiyMqjqr5LU"
 
 def make_ed(field, value):

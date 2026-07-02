@@ -1,0 +1,296 @@
+{
+ "n_recruited": 1200,
+ "n_finished_rows": 1209,
+ "n_pid_valid": 1200,
+ "exclusions": {
+  "failed_attention": 1,
+  "time_out_of_bounds": 17
+ },
+ "n_kept": 1182,
+ "nl": {
+  "k": 544,
+  "n": 787,
+  "pct": 69.1,
+  "wilson": [
+   65.8,
+   72.3
+  ],
+  "model_pct": 39.6,
+  "gap_pp": 29.5
+ },
+ "frames": {
+  "advise_other": {
+   "k": 303,
+   "n": 402,
+   "pct": 75.4,
+   "model_pct": 39.6,
+   "gap_pp": 35.8
+  },
+  "choose_self": {
+   "k": 241,
+   "n": 385,
+   "pct": 62.6,
+   "model_pct": 39.5,
+   "gap_pp": 23.1
+  }
+ },
+ "levels": {
+  "baseline": {
+   "k": 257,
+   "n": 387,
+   "pct": 66.4,
+   "model_pct": 36.3
+  },
+  "weighted": {
+   "k": 287,
+   "n": 400,
+   "pct": 71.8,
+   "model_pct": 42.7
+  },
+  "explicit_numeric": {
+   "k": 261,
+   "n": 395,
+   "pct": 66.1,
+   "model_pct": 99.7
+  }
+ },
+ "assortments_nl": {
+  "sr_coffee_makers_02": {
+   "label": "espresso machines",
+   "k": 125,
+   "n": 160,
+   "pct": 78.1,
+   "model_pct": 31.1,
+   "gap_pp": 47.1
+  },
+  "sr_coffee_makers_03": {
+   "label": "single-serve and travel coffee",
+   "k": 103,
+   "n": 147,
+   "pct": 70.1,
+   "model_pct": 37.2,
+   "gap_pp": 32.8
+  },
+  "sr_earbuds_03": {
+   "label": "earbuds",
+   "k": 115,
+   "n": 164,
+   "pct": 70.1,
+   "model_pct": 44.1,
+   "gap_pp": 26.0
+  },
+  "sr_headphones_03": {
+   "label": "audiophile headphones",
+   "k": 91,
+   "n": 157,
+   "pct": 58.0,
+   "model_pct": 45.7,
+   "gap_pp": 12.2
+  },
+  "sr_tvs_03": {
+   "label": "televisions",
+   "k": 110,
+   "n": 159,
+   "pct": 69.2,
+   "model_pct": 39.6,
+   "gap_pp": 29.6
+  }
+ },
+ "comprehension": {
+  "pass_pct_kept": 88.7,
+  "nl_passers": {
+   "k": 505,
+   "n": 697,
+   "pct": 72.5,
+   "model_pct": 39.9,
+   "gap_pp": 32.6
+  }
+ },
+ "probe": {
+  "all_kept": 1.64,
+  "nl_nonopt": 2.73,
+  "nl_opt": 1.16,
+  "explicit_nonopt": 2.58,
+  "n_nl_nonopt": 243,
+  "explicit_nonopt_bottom_two": {
+   "k": 68,
+   "n": 134,
+   "pct": 50.7
+  }
+ },
+ "registered_p1": {
+  "model_level_mean": 39.6,
+  "gap_pp": 29.6,
+  "wild_ci": [
+   23.5,
+   35.6
+  ],
+  "boot_se": 3.09,
+  "z_vs_zero": 9.6,
+  "p_vs_zero": "5e-22",
+  "z_vs_margin10": 6.3,
+  "p_vs_margin10": "1e-10"
+ },
+ "robustness_prereg": {
+  "excl_familiar_with_dominant": {
+   "k": 510,
+   "n": 709,
+   "pct": 71.9,
+   "model_pct": 39.6,
+   "gap_pp": 32.3
+  },
+  "excl_toogood_top": {
+   "k": 521,
+   "n": 753,
+   "pct": 69.2,
+   "model_pct": 39.5,
+   "gap_pp": 29.6
+  },
+  "excl_toogood_agree_plus": {
+   "k": 383,
+   "n": 526,
+   "pct": 72.8,
+   "model_pct": 38.6,
+   "gap_pp": 34.2
+  },
+  "excl_hypothesis_guessers": {
+   "k": 463,
+   "n": 670,
+   "pct": 69.1,
+   "model_pct": 39.3,
+   "gap_pp": 29.9
+  }
+ },
+ "demand_bound": {
+  "brand_stick": {
+   "k": 173,
+   "n": 254,
+   "pct": 68.1
+  },
+  "none": {
+   "k": 195,
+   "n": 274,
+   "pct": 71.2
+  },
+  "spec_expectation": {
+   "k": 176,
+   "n": 259,
+   "pct": 68.0
+  }
+ },
+ "belief_conditionals_nl": {
+  "belief_neutral": {
+   "disagree": {
+    "k": 43,
+    "n": 99,
+    "pct": 43.4
+   },
+   "neutral": {
+    "k": 73,
+    "n": 119,
+    "pct": 61.3
+   },
+   "agree": {
+    "k": 428,
+    "n": 569,
+    "pct": 75.2
+   }
+  },
+  "belief_moreinfo": {
+   "disagree": {
+    "k": 247,
+    "n": 289,
+    "pct": 85.5
+   },
+   "neutral": {
+    "k": 214,
+    "n": 327,
+    "pct": 65.4
+   },
+   "agree": {
+    "k": 83,
+    "n": 171,
+    "pct": 48.5
+   }
+  },
+  "belief_personalised": {
+   "disagree": {
+    "k": 8,
+    "n": 19,
+    "pct": 42.1
+   },
+   "neutral": {
+    "k": 48,
+    "n": 102,
+    "pct": 47.1
+   },
+   "agree": {
+    "k": 488,
+    "n": 666,
+    "pct": 73.3
+   }
+  },
+  "belief_real": {
+   "disagree": {
+    "k": 30,
+    "n": 40,
+    "pct": 75.0
+   },
+   "neutral": {
+    "k": 171,
+    "n": 229,
+    "pct": 74.7
+   },
+   "agree": {
+    "k": 343,
+    "n": 518,
+    "pct": 66.2
+   }
+  },
+  "belief_pickedbest": {
+   "disagree": {
+    "k": 31,
+    "n": 49,
+    "pct": 63.3
+   },
+   "neutral": {
+    "k": 77,
+    "n": 158,
+    "pct": 48.7
+   },
+   "agree": {
+    "k": 436,
+    "n": 580,
+    "pct": 75.2
+   }
+  }
+ },
+ "believability": {
+  "kept_mean": 3.13,
+  "nl_mean": 3.09,
+  "nl_opt_mean": 3.24,
+  "nl_nonopt_mean": 2.74,
+  "kept_pct_moderate_plus": 75.8,
+  "too_good_kept_mean": 2.96
+ },
+ "did_secondary": {
+  "human_delta_pp": 5.3,
+  "model_delta_pp": 6.5,
+  "did_pp": -1.1,
+  "boot_se": 4.18,
+  "p_two_sided": "0.79"
+ },
+ "explicit_vs_nl_human": {
+  "explicit": [
+   261,
+   395,
+   66.1
+  ],
+  "nl": [
+   544,
+   787,
+   69.1
+  ],
+  "p_two_sided": "0.29"
+ }
+}

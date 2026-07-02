@@ -1,0 +1,2856 @@
+{
+"ref2unit": {
+"specres_claude-opus-4.7_sr_coffee_makers_03_baseline_t14_bb5d7cd8": "u0001",
+"specres_gpt-4.1-nano_sr_earbuds_03_preference_weighted_t1_c7525be6": "u0002",
+"specres_gpt-4o-mini_sr_headphones_03_baseline_t9_211acdca": "u0003",
+"specres_claude-sonnet-4.6_sr_tvs_03_baseline_t17_15b45b67": "u0004",
+"specres_gemini-2.5-flash-lite_sr_earbuds_03_baseline_t14_fc00e1c7": "u0005",
+"specres_gpt-5.4-mini_sr_earbuds_03_baseline_t2_228cd377": "u0006",
+"specres_gpt-4.1-nano_sr_coffee_makers_02_baseline_t0_4bad5fcf": "u0008",
+"specres_deepseek-v3_sr_tvs_03_preference_weighted_t12_22d0913c": "u0009",
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_preference_weighted_t9_8dc7b1ca": "u0010",
+"specres_claude-opus-4.6_sr_tvs_03_preference_weighted_t17_f7215245": "u0013",
+"specres_gpt-5-mini_sr_tvs_03_baseline_t7_4fc59519": "u0014",
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_baseline_t3_2e6d7b11": "u0018",
+"specres_deepseek-r1_sr_headphones_03_preference_weighted_t0_8c116d0d": "u0020",
+"specres_gemini-3.1-flash-lite_sr_tvs_03_baseline_t15_b033a756": "u0022",
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_preference_weighted_t15_72084d0b": "u0023",
+"specres_gpt-5.4-mini_sr_coffee_makers_03_baseline_t11_d6e681bf": "u0024",
+"specres_gemini-2.5-flash_sr_headphones_03_baseline_t7_1c7983e2": "u0025",
+"specres_gpt-4o-mini_sr_headphones_03_preference_weighted_t9_9da5d7cf": "u0026",
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_baseline_t8_1a14187d": "u0027",
+"specres_gemini-3-flash_sr_headphones_03_preference_weighted_t19_6b35962f": "u0028",
+"specres_deepseek-r1_sr_earbuds_03_baseline_t19_fdb36246": "u0029",
+"specres_gemini-3.1-flash-lite_sr_tvs_03_preference_weighted_t11_187f42af": "u0031",
+"specres_llama-3.3-70b_sr_headphones_03_baseline_t5_18547a2e": "u0034",
+"specres_gemini-2.5-pro_sr_tvs_03_preference_weighted_t5_fc44bdf9": "u0036",
+"specres_deepseek-v3_sr_coffee_makers_03_baseline_t16_d003067e": "u0038",
+"specres_qwen-2.5-72b_sr_tvs_03_baseline_t5_99cb0ae5": "u0041",
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_baseline_t0_76140fc0": "u0044",
+"specres_gemini-2.5-flash-lite_sr_tvs_03_baseline_t12_c1fd95b3": "u0045",
+"specres_gemini-2.5-flash_sr_coffee_makers_02_baseline_t12_d4e7785f": "u0046",
+"specres_gemini-3-flash-thinking_sr_headphones_03_baseline_t19_26fb84d9": "u0047",
+"specres_llama-3.3-70b_sr_tvs_03_baseline_t16_cfab400a": "u0048",
+"specres_gpt-5.4-mini_sr_tvs_03_preference_weighted_t7_ae85f025": "u0050",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_baseline_t19_fb467c5a": "u0051",
+"specres_deepseek-r1_sr_coffee_makers_03_baseline_t6_a0ed893d": "u0052",
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_baseline_t16_f8ec2d1f": "u0054",
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_baseline_t0_ab17bf0d": "u0055",
+"specres_qwen-2.5-72b_sr_headphones_03_baseline_t11_b72e30b2": "u0056",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_baseline_t13_7bb2189f": "u0057",
+"specres_gemma-4-31b-it_sr_coffee_makers_03_preference_weighted_t15_ea67d8a3": "u0058",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_preference_weighted_t16_32385309": "u0059",
+"specres_gemma-4-31b-it_sr_tvs_03_baseline_t9_16bccb62": "u0060",
+"specres_claude-opus-4.7_sr_coffee_makers_03_preference_weighted_t17_6218c35a": "u0062",
+"specres_gemini-2.5-flash_sr_headphones_03_preference_weighted_t16_47107960": "u0063",
+"specres_gemma-4-31b-it_sr_coffee_makers_03_baseline_t6_e627931f": "u0064",
+"specres_deepseek-v3_sr_headphones_03_baseline_t8_f59e2487": "u0065",
+"specres_gpt-5.4_sr_coffee_makers_02_preference_weighted_t6_6d1104ce": "u0068",
+"specres_gemini-2.5-pro_sr_headphones_03_baseline_t2_defc7604": "u0069",
+"specres_claude-opus-4.7_sr_coffee_makers_02_preference_weighted_t3_dcafb6e5": "u0073",
+"specres_gemini-2.5-flash-lite_sr_earbuds_03_preference_weighted_t10_e87d5d97": "u0075",
+"specres_gemma-3-27b_sr_tvs_03_preference_weighted_t2_7449b303": "u0076",
+"specres_gpt-5.4-mini_sr_coffee_makers_03_preference_weighted_t18_5e1424cd": "u0078",
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_preference_weighted_t5_01baba5d": "u0079",
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_baseline_t6_a74c3eee": "u0082",
+"specres_gemini-3-flash-thinking_sr_tvs_03_preference_weighted_t14_1fcc445f": "u0083",
+"specres_gemini-2.5-pro_sr_coffee_makers_03_baseline_t12_6466d7cf": "u0085",
+"specres_gpt-4o-mini_sr_coffee_makers_03_preference_weighted_t8_453b267a": "u0086",
+"specres_qwen-2.5-72b_sr_earbuds_03_baseline_t6_8accff0f": "u0087",
+"specres_gpt-4o_sr_coffee_makers_03_preference_weighted_t6_ac107292": "u0088",
+"specres_gpt-5.4_sr_tvs_03_baseline_t16_84ab1c22": "u0090",
+"specres_claude-opus-4.6_sr_earbuds_03_baseline_t6_cdd6635f": "u0092",
+"specres_deepseek-r1_sr_coffee_makers_02_preference_weighted_t2_f479f273": "u0094",
+"specres_gpt-4.1-nano_sr_tvs_03_preference_weighted_t17_510aa044": "u0095",
+"specres_gemini-2.0-flash_sr_tvs_03_baseline_t16_1ba9e35c": "u0096",
+"specres_gpt-4.1-mini_sr_coffee_makers_02_preference_weighted_t18_3412db13": "u0098",
+"specres_gpt-5-mini_sr_tvs_03_preference_weighted_t3_cfa08428": "u0099",
+"specres_gemini-3.1-flash-lite_sr_headphones_03_baseline_t0_ffbc61fd": "u0100",
+"specres_gemini-2.0-flash_sr_earbuds_03_baseline_t9_d92a1b7c": "u0101",
+"specres_claude-opus-4.7_sr_coffee_makers_02_baseline_t17_dc76e2a3": "u0102",
+"specres_gemini-3.1-pro_sr_coffee_makers_02_baseline_t3_879b536a": "u0103",
+"specres_deepseek-v3_sr_coffee_makers_02_baseline_t11_fff18986": "u0104",
+"specres_gemma-3-27b_sr_earbuds_03_preference_weighted_t7_61047431": "u0105",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_baseline_t11_fa1562d1": "u0106",
+"specres_gpt-4.1-mini_sr_headphones_03_preference_weighted_t8_f2a4aea0": "u0107",
+"specres_claude-sonnet-4.6_sr_headphones_03_preference_weighted_t4_c480ab8a": "u0108",
+"specres_gpt-4.1-nano_sr_headphones_03_baseline_t6_01c6df4e": "u0109",
+"specres_gpt-4o_sr_headphones_03_preference_weighted_t3_11fe17ea": "u0110",
+"specres_gemma-3-27b_sr_headphones_03_preference_weighted_t14_807b0b8c": "u0111",
+"specres_gemini-2.5-pro_sr_coffee_makers_03_preference_weighted_t19_d7a8db07": "u0112",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_preference_weighted_t0_ce4e1728": "u0114",
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_preference_weighted_t5_262e04e7": "u0115",
+"specres_gemini-3-flash_sr_headphones_03_baseline_t2_6e2e56af": "u0116",
+"specres_gemma-4-31b-it_sr_coffee_makers_03_baseline_t0_5727b353": "u0118",
+"specres_gemini-2.0-flash_sr_earbuds_03_preference_weighted_t8_43c886f6": "u0121",
+"specres_kimi-k2_sr_tvs_03_baseline_t3_9344f627": "u0122",
+"specres_gpt-5.4-mini_sr_coffee_makers_02_baseline_t0_1ef68edd": "u0123",
+"specres_claude-haiku-4.5_sr_coffee_makers_02_baseline_t18_4f30783b": "u0124",
+"specres_kimi-k2_sr_earbuds_03_baseline_t4_6e38ee55": "u0126",
+"specres_deepseek-v3_sr_headphones_03_baseline_t17_894e6693": "u0127",
+"specres_deepseek-v3_sr_tvs_03_preference_weighted_t18_eada8066": "u0128",
+"specres_claude-haiku-4.5_sr_coffee_makers_03_baseline_t4_f6edfd1a": "u0129",
+"specres_deepseek-v3_sr_headphones_03_preference_weighted_t8_bc2a59f0": "u0130",
+"specres_gpt-4o-mini_sr_tvs_03_baseline_t19_5e8968a0": "u0131",
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_baseline_t11_1baa3723": "u0132",
+"specres_gemini-2.0-flash_sr_coffee_makers_02_baseline_t15_7cf9ca06": "u0133",
+"specres_gpt-5.4-nano_sr_coffee_makers_02_preference_weighted_t0_b7dc6aed": "u0134",
+"specres_claude-opus-4.6_sr_headphones_03_baseline_t7_63deff2c": "u0135",
+"specres_gemini-2.0-flash_sr_coffee_makers_03_preference_weighted_t0_b3b43f3c": "u0136",
+"specres_gpt-4o_sr_earbuds_03_preference_weighted_t3_886aa1af": "u0138",
+"specres_gemini-3-flash_sr_coffee_makers_03_preference_weighted_t17_3e8948e9": "u0139",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_baseline_t9_278d12c8": "u0141",
+"specres_claude-opus-4.7_sr_headphones_03_preference_weighted_t16_747c5768": "u0142",
+"specres_qwen-2.5-72b_sr_headphones_03_preference_weighted_t16_2a08b6f1": "u0144",
+"specres_gemini-2.0-flash_sr_headphones_03_baseline_t5_7dc14678": "u0145",
+"specres_gemini-3-flash-thinking_sr_headphones_03_preference_weighted_t4_8d2b4dcf": "u0146",
+"specres_deepseek-v3_sr_earbuds_03_preference_weighted_t4_fe35daad": "u0149",
+"specres_gpt-5.4-mini_sr_headphones_03_baseline_t17_35223f69": "u0150",
+"specres_gpt-5.4-nano_sr_coffee_makers_02_baseline_t11_093e7dae": "u0151",
+"specres_gemini-2.5-flash-lite_sr_headphones_03_preference_weighted_t17_dc4eb7e5": "u0152",
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_preference_weighted_t18_d806d97c": "u0154",
+"specres_gemini-2.5-pro_sr_headphones_03_preference_weighted_t11_9e2fc515": "u0155",
+"specres_kimi-k2_sr_tvs_03_baseline_t14_eeb2d94e": "u0156",
+"specres_llama-3.3-70b_sr_tvs_03_preference_weighted_t4_6aede071": "u0157",
+"specres_gpt-5-mini_sr_coffee_makers_02_preference_weighted_t9_0f752a7b": "u0158",
+"specres_qwen-2.5-72b_sr_tvs_03_preference_weighted_t1_9e501d58": "u0159",
+"specres_deepseek-v3_sr_coffee_makers_02_preference_weighted_t6_4f3b5555": "u0160",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_preference_weighted_t5_5d8279cb": "u0161",
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_preference_weighted_t3_dd501e5a": "u0162",
+"specres_gpt-5-mini_sr_coffee_makers_03_preference_weighted_t8_6ef7aaa0": "u0163",
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_preference_weighted_t18_61961a0f": "u0164",
+"specres_gemma-3-27b_sr_earbuds_03_preference_weighted_t9_bb362bea": "u0166",
+"specres_gpt-5.4-nano_sr_headphones_03_preference_weighted_t15_815de424": "u0167",
+"specres_deepseek-r1_sr_coffee_makers_03_preference_weighted_t17_07e30588": "u0169",
+"specres_gpt-5.4-nano_sr_tvs_03_preference_weighted_t19_e3ddee88": "u0173",
+"specres_deepseek-r1_sr_coffee_makers_03_preference_weighted_t3_76ff051f": "u0174",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_preference_weighted_t4_cfcf15cf": "u0176",
+"specres_gemma-4-31b-it_sr_earbuds_03_preference_weighted_t3_70dfa8ae": "u0177",
+"specres_gemini-3-flash_sr_tvs_03_preference_weighted_t6_8c604104": "u0182",
+"specres_deepseek-r1_sr_tvs_03_preference_weighted_t7_f51ae244": "u0186",
+"specres_gemini-2.5-flash_sr_headphones_03_baseline_t6_2aae16a9": "u0187",
+"specres_gpt-5.4-nano_sr_coffee_makers_03_preference_weighted_t6_7c913de6": "u0188",
+"specres_gemini-3.1-pro_sr_coffee_makers_02_preference_weighted_t14_260072ac": "u0190",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_baseline_t18_49fbf85b": "u0191",
+"specres_kimi-k2_sr_coffee_makers_02_baseline_t18_f31cce3a": "u0194",
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_preference_weighted_t0_3bcfd1ff": "u0195",
+"specres_gemini-2.5-flash_sr_coffee_makers_03_baseline_t1_e013506d": "u0197",
+"specres_gpt-4o_sr_earbuds_03_preference_weighted_t5_06f62dab": "u0198",
+"specres_claude-opus-4.7_sr_tvs_03_preference_weighted_t5_41c79bdb": "u0202",
+"specres_gpt-4o_sr_coffee_makers_02_preference_weighted_t18_13f76e2f": "u0203",
+"specres_gemini-2.5-flash-lite_sr_headphones_03_baseline_t9_c00c37e2": "u0206",
+"specres_claude-haiku-4.5_sr_tvs_03_preference_weighted_t15_a9c9def9": "u0207",
+"specres_kimi-k2_sr_coffee_makers_03_baseline_t13_bf8b1c66": "u0208",
+"specres_claude-haiku-4.5_sr_headphones_03_preference_weighted_t6_689c2828": "u0209",
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_baseline_t15_26e06509": "u0210",
+"specres_gpt-4o_sr_coffee_makers_03_baseline_t14_0f95435c": "u0211",
+"specres_gemini-3-flash-thinking_sr_headphones_03_preference_weighted_t0_e12c402c": "u0213",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_baseline_t14_2a0e2a38": "u0214",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_baseline_t4_f8c1215f": "u0215",
+"specres_llama-3.3-70b_sr_coffee_makers_03_preference_weighted_t17_e6475c3b": "u0216",
+"specres_deepseek-r1_sr_tvs_03_preference_weighted_t16_fc089663": "u0217",
+"specres_deepseek-v3_sr_coffee_makers_03_preference_weighted_t15_b058aca9": "u0218",
+"specres_gemini-2.0-flash_sr_coffee_makers_02_preference_weighted_t6_34a3ef04": "u0219",
+"specres_gpt-5.4-mini_sr_earbuds_03_preference_weighted_t16_14693ec7": "u0220",
+"specres_gemma-4-31b-it_sr_tvs_03_preference_weighted_t8_1a619059": "u0221",
+"specres_claude-haiku-4.5_sr_coffee_makers_02_preference_weighted_t5_4d4e14b8": "u0222",
+"specres_gemini-3.1-flash-lite_sr_tvs_03_preference_weighted_t1_c408efb0": "u0223",
+"specres_llama-3.3-70b_sr_coffee_makers_02_baseline_t18_462e1e3b": "u0224",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_baseline_t0_2b4cbf19": "u0228",
+"specres_claude-haiku-4.5_sr_coffee_makers_03_preference_weighted_t0_bbb631fe": "u0229",
+"specres_gpt-4.1-mini_sr_tvs_03_preference_weighted_t0_ad299745": "u0230",
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_baseline_t14_cadbe2ba": "u0232",
+"specres_gemini-2.0-flash_sr_headphones_03_preference_weighted_t6_4e1bd98a": "u0234",
+"specres_gpt-5.4_sr_coffee_makers_03_preference_weighted_t19_1e46404f": "u0236",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_baseline_t13_86ca4a2f": "u0239",
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_baseline_t2_49be8c7d": "u0240",
+"specres_gpt-5-mini_sr_headphones_03_baseline_t19_69d662ca": "u0241",
+"specres_gpt-5.4-mini_sr_earbuds_03_preference_weighted_t19_ab2a04bc": "u0243",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_baseline_t0_5f8f5cb3": "u0244",
+"specres_gpt-5.4_sr_coffee_makers_02_baseline_t4_36c90757": "u0246",
+"specres_gemini-2.5-flash-lite_sr_tvs_03_baseline_t19_c0dffb2b": "u0247",
+"specres_gpt-5.4_sr_earbuds_03_baseline_t17_7462c942": "u0249",
+"specres_gemma-3-27b_sr_earbuds_03_baseline_t7_ea741d5f": "u0250",
+"specres_claude-haiku-4.5_sr_earbuds_03_preference_weighted_t14_baba131d": "u0252",
+"specres_claude-opus-4.6_sr_coffee_makers_03_preference_weighted_t13_1110b163": "u0253",
+"specres_gpt-5.4_sr_tvs_03_preference_weighted_t5_525e5125": "u0254",
+"specres_gpt-4o-mini_sr_coffee_makers_03_preference_weighted_t13_89eeac42": "u0255",
+"specres_gemma-3-27b_sr_coffee_makers_03_baseline_t18_f9caec50": "u0256",
+"specres_qwen-2.5-72b_sr_coffee_makers_02_preference_weighted_t11_1b56c00e": "u0257",
+"specres_claude-opus-4.6_sr_coffee_makers_03_preference_weighted_t10_1d21ca09": "u0260",
+"specres_claude-opus-4.7_sr_coffee_makers_03_baseline_t1_627501cb": "u0262",
+"specres_claude-opus-4.6_sr_tvs_03_baseline_t0_4b899c10": "u0266",
+"specres_gpt-5.4-mini_sr_coffee_makers_03_preference_weighted_t5_2dcdfd23": "u0267",
+"specres_deepseek-v3_sr_coffee_makers_03_baseline_t8_60768def": "u0268",
+"specres_gpt-4o-mini_sr_coffee_makers_02_preference_weighted_t0_8f469cfb": "u0269",
+"specres_gpt-4o-mini_sr_coffee_makers_02_baseline_t2_7bec3083": "u0271",
+"specres_gemini-2.5-pro_sr_earbuds_03_baseline_t2_23b084d1": "u0272",
+"specres_gpt-5.4_sr_earbuds_03_preference_weighted_t13_b64b3a30": "u0274",
+"specres_gpt-5-mini_sr_coffee_makers_02_preference_weighted_t15_a475d6a3": "u0275",
+"specres_gpt-4o-mini_sr_tvs_03_preference_weighted_t6_1fc859f9": "u0276",
+"specres_gemma-3-27b_sr_coffee_makers_03_baseline_t10_fb7fc7a8": "u0280",
+"specres_llama-3.3-70b_sr_headphones_03_baseline_t11_27f7daf3": "u0281",
+"specres_gemini-3-flash_sr_earbuds_03_baseline_t2_b3d80ea0": "u0282",
+"specres_deepseek-v3_sr_earbuds_03_baseline_t10_f31bc417": "u0283",
+"specres_gemma-3-27b_sr_headphones_03_baseline_t15_a3e40113": "u0284",
+"specres_claude-haiku-4.5_sr_headphones_03_baseline_t10_f9be975a": "u0285",
+"specres_gpt-4.1-mini_sr_earbuds_03_baseline_t19_c9482c74": "u0286",
+"specres_gemini-2.5-pro_sr_coffee_makers_03_baseline_t14_1b6125ea": "u0287",
+"specres_gemini-2.0-flash_sr_earbuds_03_baseline_t6_bdd1578a": "u0288",
+"specres_claude-haiku-4.5_sr_coffee_makers_02_preference_weighted_t0_22ab8649": "u0289",
+"specres_gemini-3-flash_sr_coffee_makers_02_baseline_t3_1c324ce5": "u0290",
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_baseline_t19_ef955d9f": "u0293",
+"specres_kimi-k2_sr_tvs_03_preference_weighted_t8_470a2a4b": "u0294",
+"specres_claude-opus-4.7_sr_tvs_03_baseline_t15_512d75c8": "u0295",
+"specres_claude-opus-4.7_sr_headphones_03_baseline_t19_e70fa944": "u0296",
+"specres_qwen-2.5-72b_sr_tvs_03_preference_weighted_t7_632546de": "u0297",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_baseline_t7_1575a7ad": "u0298",
+"specres_gpt-4.1-mini_sr_coffee_makers_02_baseline_t11_a1fe8f8f": "u0300",
+"specres_gpt-5.4-mini_sr_headphones_03_baseline_t19_469e3f55": "u0301",
+"specres_claude-opus-4.6_sr_coffee_makers_03_baseline_t12_1b353932": "u0302",
+"specres_gpt-4.1-mini_sr_coffee_makers_03_baseline_t7_c05e7e65": "u0303",
+"specres_claude-opus-4.6_sr_earbuds_03_preference_weighted_t1_9b589e8f": "u0304",
+"specres_gpt-4.1-nano_sr_coffee_makers_03_baseline_t15_286c7682": "u0305",
+"specres_claude-sonnet-4.6_sr_tvs_03_preference_weighted_t15_6b0abc64": "u0306",
+"specres_gpt-4o_sr_coffee_makers_03_baseline_t2_b7b9e97f": "u0309",
+"specres_gpt-5.4_sr_earbuds_03_baseline_t8_8a4a4129": "u0311",
+"specres_qwen-2.5-72b_sr_earbuds_03_preference_weighted_t14_c4c9e182": "u0312",
+"specres_kimi-k2_sr_earbuds_03_preference_weighted_t16_8f9d1f9d": "u0313",
+"specres_claude-sonnet-4.6_sr_headphones_03_preference_weighted_t3_331942ca": "u0314",
+"specres_claude-opus-4.7_sr_coffee_makers_02_baseline_t3_89d9e9d6": "u0315",
+"specres_gemini-3-flash_sr_tvs_03_baseline_t8_fc1b8515": "u0317",
+"specres_gemini-3.1-flash-lite_sr_headphones_03_preference_weighted_t6_26f3fed9": "u0319",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_baseline_t8_7bb19d6d": "u0320",
+"specres_gemma-4-31b-it_sr_headphones_03_baseline_t0_15b55718": "u0322",
+"specres_gpt-4o_sr_headphones_03_baseline_t11_7433e7f5": "u0324",
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_baseline_t16_bbcf62d7": "u0325",
+"specres_gpt-5.4_sr_tvs_03_baseline_t0_9115ebdd": "u0326",
+"specres_claude-opus-4.7_sr_tvs_03_baseline_t14_f694b3a8": "u0327",
+"specres_gemini-2.0-flash_sr_coffee_makers_03_preference_weighted_t19_ff19a9a4": "u0328",
+"specres_gemini-3.1-pro_sr_tvs_03_preference_weighted_t6_74f33fb7": "u0329",
+"specres_gemini-2.5-pro_sr_coffee_makers_02_preference_weighted_t12_e314207a": "u0331",
+"specres_claude-haiku-4.5_sr_coffee_makers_03_preference_weighted_t11_cddbafe4": "u0332",
+"specres_claude-opus-4.6_sr_headphones_03_preference_weighted_t6_b33acafe": "u0333",
+"specres_gemma-4-31b-it_sr_coffee_makers_03_preference_weighted_t4_8cd625c0": "u0334",
+"specres_claude-opus-4.6_sr_headphones_03_baseline_t9_00aa99cb": "u0335",
+"specres_gpt-4.1-mini_sr_headphones_03_baseline_t1_5ea84783": "u0336",
+"specres_gemini-3.1-pro_sr_tvs_03_preference_weighted_t15_6a3ae354": "u0337",
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_baseline_t19_a446da2e": "u0338",
+"specres_kimi-k2_sr_tvs_03_preference_weighted_t9_13c9b64a": "u0339",
+"specres_deepseek-r1_sr_headphones_03_baseline_t15_43f8c3a7": "u0340",
+"specres_deepseek-r1_sr_coffee_makers_02_preference_weighted_t16_9114f896": "u0341",
+"specres_llama-3.3-70b_sr_tvs_03_preference_weighted_t18_c1bb15e3": "u0343",
+"specres_qwen-2.5-72b_sr_coffee_makers_02_preference_weighted_t4_56727429": "u0344",
+"specres_claude-opus-4.6_sr_coffee_makers_03_baseline_t8_ce973c5f": "u0346",
+"specres_deepseek-r1_sr_tvs_03_baseline_t8_7058147d": "u0347",
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_baseline_t11_c244e48e": "u0348",
+"specres_gpt-4o_sr_coffee_makers_02_preference_weighted_t8_c8e14f9a": "u0349",
+"specres_gpt-4.1-mini_sr_earbuds_03_baseline_t16_d653ff25": "u0350",
+"specres_claude-haiku-4.5_sr_coffee_makers_03_baseline_t7_38cf5a0d": "u0351",
+"specres_gpt-4.1-mini_sr_earbuds_03_preference_weighted_t3_02ea5a6c": "u0352",
+"specres_gpt-4o-mini_sr_earbuds_03_preference_weighted_t0_e3df9d69": "u0353",
+"specres_gemini-2.5-pro_sr_earbuds_03_preference_weighted_t2_0dbf7a91": "u0354",
+"specres_claude-opus-4.7_sr_coffee_makers_02_preference_weighted_t4_dec6d8d8": "u0355",
+"specres_gemini-2.5-flash-lite_sr_earbuds_03_preference_weighted_t11_1c1e0e17": "u0356",
+"specres_gemma-3-27b_sr_coffee_makers_02_preference_weighted_t8_f0503e15": "u0361",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_preference_weighted_t3_87dc219d": "u0363",
+"specres_claude-haiku-4.5_sr_tvs_03_preference_weighted_t16_9489629f": "u0365",
+"specres_claude-opus-4.6_sr_tvs_03_baseline_t15_3b2f6a18": "u0366",
+"specres_gpt-5-mini_sr_coffee_makers_03_preference_weighted_t15_1a55d9f2": "u0369",
+"specres_kimi-k2_sr_headphones_03_baseline_t8_60f0c489": "u0370",
+"specres_gemini-2.5-flash_sr_headphones_03_preference_weighted_t2_7ab6a1ef": "u0371",
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_preference_weighted_t10_0cf06399": "u0372",
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_preference_weighted_t8_09232b5a": "u0374",
+"specres_gpt-5.4_sr_earbuds_03_preference_weighted_t4_9a8f81d8": "u0375",
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_preference_weighted_t0_f552353a": "u0377",
+"specres_qwen-2.5-72b_sr_headphones_03_preference_weighted_t1_aa8c401c": "u0378",
+"specres_kimi-k2_sr_headphones_03_baseline_t13_a14626ca": "u0379",
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_preference_weighted_t9_4eac3f1f": "u0380",
+"specres_gpt-4.1-nano_sr_coffee_makers_02_preference_weighted_t18_0b8d2283": "u0381",
+"specres_deepseek-r1_sr_coffee_makers_02_baseline_t1_6b9bcc41": "u0382",
+"specres_gemini-3.1-pro_sr_tvs_03_baseline_t9_e2e65a9e": "u0385",
+"specres_deepseek-v3_sr_tvs_03_baseline_t7_d8bdd66f": "u0388",
+"specres_kimi-k2_sr_coffee_makers_03_preference_weighted_t0_7162b4fe": "u0389",
+"specres_gemini-3.1-pro_sr_coffee_makers_03_preference_weighted_t2_e7f1f615": "u0390",
+"specres_gpt-4.1-mini_sr_headphones_03_baseline_t5_0cb7c5d5": "u0391",
+"specres_gpt-5.4-nano_sr_coffee_makers_03_baseline_t6_40c4641b": "u0393",
+"specres_gemini-3-flash-thinking_sr_tvs_03_preference_weighted_t3_320eee31": "u0395",
+"specres_gemini-2.0-flash_sr_headphones_03_preference_weighted_t16_f4e53975": "u0397",
+"specres_gemini-3-flash_sr_tvs_03_baseline_t1_9d8273ac": "u0398",
+"specres_gemma-4-31b-it_sr_earbuds_03_baseline_t18_661ac486": "u0399",
+"specres_gpt-5.4-nano_sr_headphones_03_baseline_t9_b51c5b5d": "u0400",
+"specres_gpt-5-mini_sr_earbuds_03_baseline_t17_c55737a3": "u0402",
+"specres_gpt-5-mini_sr_tvs_03_preference_weighted_t18_4ad661d2": "u0403",
+"specres_gpt-5-mini_sr_headphones_03_baseline_t7_f8a4911f": "u0404",
+"specres_kimi-k2_sr_earbuds_03_preference_weighted_t14_5cec0b11": "u0405",
+"specres_gpt-5.4_sr_coffee_makers_03_baseline_t15_5cd26368": "u0406",
+"specres_qwen-2.5-72b_sr_tvs_03_baseline_t2_97efdc18": "u0407",
+"specres_gpt-4.1-nano_sr_tvs_03_preference_weighted_t18_2701dab2": "u0408",
+"specres_llama-3.3-70b_sr_headphones_03_preference_weighted_t15_e1cc2b72": "u0409",
+"specres_gpt-4o-mini_sr_earbuds_03_baseline_t9_fc7f3398": "u0411",
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_preference_weighted_t3_645f7faa": "u0412",
+"specres_gpt-5.4-nano_sr_coffee_makers_03_preference_weighted_t12_00e6551f": "u0414",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_preference_weighted_t15_e964c245": "u0415",
+"specres_gpt-4.1-mini_sr_earbuds_03_preference_weighted_t18_57ff88bf": "u0416",
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_preference_weighted_t10_59509727": "u0417",
+"specres_gemma-3-27b_sr_headphones_03_baseline_t6_18ac6a19": "u0418",
+"specres_gpt-5.4_sr_coffee_makers_03_preference_weighted_t16_a91dc4fc": "u0419",
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_preference_weighted_t16_1bc3c489": "u0421",
+"specres_deepseek-v3_sr_coffee_makers_02_baseline_t7_da2fc5c3": "u0423",
+"specres_gemini-2.0-flash_sr_earbuds_03_preference_weighted_t0_4685c293": "u0425",
+"specres_qwen-2.5-72b_sr_coffee_makers_02_baseline_t19_b64e6b21": "u0427",
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_baseline_t4_bcd4fc3e": "u0428",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_preference_weighted_t17_fa901d68": "u0429",
+"specres_gpt-4.1-mini_sr_coffee_makers_03_preference_weighted_t11_9d4a87c3": "u0431",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_preference_weighted_t9_f5f9432a": "u0434",
+"specres_gpt-5.4-nano_sr_earbuds_03_preference_weighted_t0_8289d8f6": "u0437",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_preference_weighted_t5_e89d48cc": "u0438",
+"specres_gemini-3-flash-thinking_sr_earbuds_03_preference_weighted_t15_c9bed99e": "u0439",
+"specres_gemini-2.0-flash_sr_coffee_makers_02_preference_weighted_t13_8d1581d6": "u0440",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_preference_weighted_t5_0f556506": "u0441",
+"specres_gpt-5-mini_sr_headphones_03_preference_weighted_t1_a3497bb7": "u0442",
+"specres_claude-haiku-4.5-thinking_sr_tvs_03_preference_weighted_t13_32222925": "u0443",
+"specres_claude-opus-4.7_sr_headphones_03_baseline_t11_144c6ff0": "u0445",
+"specres_kimi-k2_sr_headphones_03_preference_weighted_t3_290cdb40": "u0447",
+"specres_gpt-5.4-nano_sr_coffee_makers_03_baseline_t9_816aa909": "u0449",
+"specres_kimi-k2_sr_coffee_makers_02_preference_weighted_t0_bac64181": "u0450",
+"specres_qwen-2.5-72b_sr_earbuds_03_baseline_t18_d0afbc98": "u0451",
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_baseline_t12_76c45cb1": "u0452",
+"specres_llama-3.3-70b_sr_tvs_03_baseline_t8_fbed6f57": "u0453",
+"specres_gemma-3-27b_sr_coffee_makers_03_preference_weighted_t13_03fadf33": "u0454",
+"specres_qwen-2.5-72b_sr_coffee_makers_03_baseline_t12_37af2cf0": "u0455",
+"specres_claude-sonnet-4.6_sr_headphones_03_baseline_t14_f9992ffc": "u0456",
+"specres_gemini-3.1-pro_sr_coffee_makers_02_baseline_t17_8f6420d3": "u0458",
+"specres_gemini-3.1-pro_sr_headphones_03_preference_weighted_t7_09aa4396": "u0460",
+"specres_gpt-4.1-mini_sr_tvs_03_preference_weighted_t5_7c149e50": "u0462",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_baseline_t10_e128f695": "u0464",
+"specres_gpt-4.1-nano_sr_headphones_03_preference_weighted_t12_862c4cb0": "u0465",
+"specres_gemini-3-flash_sr_tvs_03_preference_weighted_t17_549e157a": "u0467",
+"specres_kimi-k2_sr_coffee_makers_03_preference_weighted_t17_892a17bf": "u0470",
+"specres_gpt-4.1-mini_sr_coffee_makers_02_preference_weighted_t17_4ecec7c5": "u0472",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_preference_weighted_t18_48511e67": "u0473",
+"specres_deepseek-r1_sr_coffee_makers_03_baseline_t1_1df3fdcf": "u0475",
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_baseline_t1_89620947": "u0476",
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_preference_weighted_t17_bcd45238": "u0478",
+"specres_gpt-4o_sr_coffee_makers_02_baseline_t18_9d283329": "u0479",
+"specres_gemini-2.5-flash_sr_tvs_03_baseline_t18_fef61721": "u0480",
+"specres_gpt-5.4-nano_sr_earbuds_03_preference_weighted_t13_cf6ef385": "u0483",
+"specres_llama-3.3-70b_sr_earbuds_03_preference_weighted_t19_203ae540": "u0484",
+"specres_gpt-4.1-mini_sr_coffee_makers_02_baseline_t2_f91a91e0": "u0486",
+"specres_llama-3.3-70b_sr_coffee_makers_02_preference_weighted_t15_80c84b86": "u0487",
+"specres_qwen-2.5-72b_sr_coffee_makers_03_baseline_t18_47221ac9": "u0488",
+"specres_kimi-k2_sr_coffee_makers_02_preference_weighted_t5_a3cb04df": "u0490",
+"specres_gpt-5.4_sr_headphones_03_preference_weighted_t4_d13acb74": "u0491",
+"specres_claude-opus-4.6_sr_coffee_makers_02_baseline_t14_8bd34518": "u0493",
+"specres_kimi-k2_sr_headphones_03_preference_weighted_t11_4fe9f46b": "u0495",
+"specres_kimi-k2_sr_earbuds_03_baseline_t12_3186583f": "u0496",
+"specres_claude-opus-4.7_sr_earbuds_03_baseline_t16_7e7359d4": "u0497",
+"specres_deepseek-v3_sr_earbuds_03_baseline_t0_3825cb08": "u0499",
+"specres_gpt-4.1-nano_sr_coffee_makers_03_preference_weighted_t8_e30a08d6": "u0500",
+"specres_gemini-3.1-pro_sr_earbuds_03_baseline_t3_35d18177": "u0501",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_preference_weighted_t14_28edf302": "u0502",
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_preference_weighted_t10_2ca70010": "u0503",
+"specres_deepseek-r1_sr_earbuds_03_preference_weighted_t11_394d016f": "u0507",
+"specres_gpt-5.4-mini_sr_coffee_makers_02_baseline_t1_82659196": "u0511",
+"specres_gemini-2.5-flash-lite_sr_tvs_03_preference_weighted_t16_6d534eb3": "u0512",
+"specres_gemini-2.5-pro_sr_tvs_03_baseline_t10_c236f445": "u0513",
+"specres_gemini-3-flash_sr_coffee_makers_03_preference_weighted_t4_70fa57e8": "u0515",
+"specres_gpt-4o-mini_sr_tvs_03_preference_weighted_t14_2d8d2f1a": "u0517",
+"specres_gemini-2.0-flash_sr_tvs_03_preference_weighted_t8_374db3ce": "u0519",
+"specres_gpt-4o_sr_coffee_makers_03_preference_weighted_t7_26122b49": "u0520",
+"specres_kimi-k2_sr_coffee_makers_02_baseline_t6_2d17beb3": "u0523",
+"specres_gpt-5-mini_sr_coffee_makers_02_baseline_t3_ebd7308a": "u0524",
+"specres_claude-opus-4.7_sr_earbuds_03_preference_weighted_t8_50937716": "u0525",
+"specres_gemini-3-flash-thinking_sr_coffee_makers_02_baseline_t17_e537add2": "u0526",
+"specres_gpt-5.4_sr_coffee_makers_03_baseline_t18_81b25d1b": "u0527",
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_baseline_t7_0d3dc374": "u0529",
+"specres_gemini-2.5-pro_sr_coffee_makers_02_baseline_t6_2753e069": "u0531",
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_baseline_t15_f7a169c9": "u0533",
+"specres_gpt-4o_sr_coffee_makers_02_baseline_t13_4872ed0a": "u0534",
+"specres_gemini-2.0-flash_sr_tvs_03_preference_weighted_t6_2564d5f2": "u0535",
+"specres_gpt-4o_sr_headphones_03_baseline_t5_99d9d252": "u0536",
+"specres_gpt-4.1-nano_sr_headphones_03_preference_weighted_t15_7fd09a9b": "u0537",
+"specres_deepseek-r1_sr_headphones_03_preference_weighted_t10_7f396282": "u0541",
+"specres_claude-opus-4.6_sr_headphones_03_preference_weighted_t7_3fec7616": "u0542",
+"specres_gemma-4-31b-it_sr_headphones_03_baseline_t2_acb73b8e": "u0543",
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_baseline_t11_2b8d3fb1": "u0544",
+"specres_gemini-2.5-flash_sr_coffee_makers_03_baseline_t13_09b92f82": "u0546",
+"specres_gemini-2.5-pro_sr_earbuds_03_preference_weighted_t15_2a9180e8": "u0547",
+"specres_gemini-3-flash-thinking_sr_earbuds_03_preference_weighted_t12_d017f9db": "u0548",
+"specres_claude-sonnet-4.6_sr_earbuds_03_baseline_t17_4f5fab7d": "u0549",
+"specres_gemini-2.5-pro_sr_coffee_makers_03_preference_weighted_t9_bcb2ca1a": "u0550",
+"specres_gemini-2.5-flash_sr_tvs_03_preference_weighted_t4_f87183fc": "u0551",
+"specres_qwen-2.5-72b_sr_coffee_makers_03_preference_weighted_t17_74041845": "u0552",
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_baseline_t1_8afd1e4e": "u0555",
+"specres_qwen-2.5-72b_sr_earbuds_03_preference_weighted_t9_386d7d0b": "u0557",
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_baseline_t16_9d3aee1b": "u0558",
+"specres_gpt-4.1-mini_sr_coffee_makers_03_preference_weighted_t5_ed249a49": "u0560",
+"specres_gemini-3-flash-thinking_sr_tvs_03_baseline_t8_a15f6fe4": "u0561",
+"specres_claude-opus-4.6_sr_tvs_03_preference_weighted_t6_2c7839ff": "u0562",
+"specres_gemma-3-27b_sr_coffee_makers_02_baseline_t12_430a28c5": "u0565",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_baseline_t12_e525f4cf": "u0566",
+"specres_gemini-3-flash-thinking_sr_headphones_03_baseline_t7_d09a74de": "u0567",
+"specres_claude-haiku-4.5_sr_headphones_03_preference_weighted_t0_62a88e81": "u0569",
+"specres_gemini-2.0-flash_sr_tvs_03_baseline_t0_3e74a0fb": "u0570",
+"specres_llama-3.3-70b_sr_earbuds_03_baseline_t6_25858b5e": "u0571",
+"specres_gpt-4o-mini_sr_coffee_makers_02_baseline_t0_40198e57": "u0573",
+"specres_gpt-5.4-nano_sr_earbuds_03_baseline_t16_d68ecc65": "u0575",
+"specres_gpt-4o-mini_sr_headphones_03_baseline_t0_db806b22": "u0576",
+"specres_gemini-3.1-pro_sr_earbuds_03_preference_weighted_t14_b7c095ad": "u0577",
+"specres_gpt-5-mini_sr_tvs_03_baseline_t5_4494ede8": "u0579",
+"specres_claude-opus-4.7_sr_headphones_03_preference_weighted_t7_61437d0b": "u0580",
+"specres_llama-3.3-70b_sr_coffee_makers_02_baseline_t17_3d403eae": "u0581",
+"specres_gpt-4o-mini_sr_coffee_makers_03_baseline_t8_9a3b8410": "u0582",
+"specres_gpt-4o_sr_tvs_03_preference_weighted_t13_eb7db7b8": "u0583",
+"specres_gemini-3.1-pro_sr_earbuds_03_preference_weighted_t10_a2e37204": "u0585",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_preference_weighted_t4_995f1a50": "u0586",
+"specres_gpt-4.1-nano_sr_tvs_03_baseline_t10_b4d5264c": "u0587",
+"specres_gemma-4-31b-it_sr_earbuds_03_baseline_t10_ecb6eda0": "u0588",
+"specres_gpt-5.4-mini_sr_coffee_makers_02_preference_weighted_t18_3d9df5b2": "u0589",
+"specres_gpt-4.1-nano_sr_headphones_03_baseline_t0_6c57262a": "u0590",
+"specres_gpt-5.4_sr_coffee_makers_02_baseline_t9_084ccbef": "u0591",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_baseline_t5_bec8a1a0": "u0592",
+"specres_claude-sonnet-4.6_sr_tvs_03_preference_weighted_t9_80002211": "u0594",
+"specres_deepseek-v3_sr_earbuds_03_preference_weighted_t2_9cad10b5": "u0595",
+"specres_gemini-2.5-flash_sr_coffee_makers_02_preference_weighted_t2_f2712d21": "u0596",
+"specres_gemini-3-flash_sr_earbuds_03_preference_weighted_t2_0821bd06": "u0597",
+"specres_gemma-4-31b-it_sr_coffee_makers_02_baseline_t10_28beb4f9": "u0598",
+"specres_gemini-3.1-flash-lite_sr_headphones_03_preference_weighted_t5_7bc77a0b": "u0600",
+"specres_llama-3.3-70b_sr_headphones_03_preference_weighted_t10_67a4057b": "u0602",
+"specres_gemma-4-31b-it_sr_tvs_03_preference_weighted_t10_652bd95c": "u0605",
+"specres_gpt-5.4-nano_sr_tvs_03_preference_weighted_t0_75c753e8": "u0607",
+"specres_gpt-4o_sr_tvs_03_preference_weighted_t1_354ee0ba": "u0608",
+"specres_gpt-5-mini_sr_earbuds_03_preference_weighted_t15_7dbac1e5": "u0609",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_preference_weighted_t18_9fb904c9": "u0610",
+"specres_claude-haiku-4.5_sr_coffee_makers_02_baseline_t7_693eab76": "u0613",
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_preference_weighted_t11_37492cf7": "u0614",
+"specres_claude-opus-4.7_sr_earbuds_03_baseline_t6_c7e59daf": "u0615",
+"specres_deepseek-v3_sr_headphones_03_preference_weighted_t0_2a3f9aa7": "u0616",
+"specres_gemini-3-flash_sr_headphones_03_baseline_t7_16301632": "u0620",
+"specres_gpt-5-mini_sr_coffee_makers_03_baseline_t10_0ea7582f": "u0621",
+"specres_gemini-2.5-flash-lite_sr_headphones_03_preference_weighted_t1_3e39887b": "u0622",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_preference_weighted_t17_c567d3a5": "u0623",
+"specres_gpt-5.4-mini_sr_coffee_makers_03_baseline_t13_d35ddaa5": "u0624",
+"specres_gpt-5.4-nano_sr_headphones_03_baseline_t17_dcb519b6": "u0625",
+"specres_gemini-3-flash-thinking_sr_tvs_03_baseline_t15_2945ff13": "u0626",
+"specres_gemma-3-27b_sr_coffee_makers_03_preference_weighted_t16_0e11278d": "u0627",
+"specres_gpt-5.4-nano_sr_coffee_makers_02_baseline_t18_1648671b": "u0628",
+"specres_gemini-2.5-flash_sr_earbuds_03_baseline_t10_bb3c74f8": "u0632",
+"specres_gpt-4.1-nano_sr_coffee_makers_03_baseline_t1_cfade005": "u0633",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_preference_weighted_t2_08ef217b": "u0635",
+"specres_gpt-4o-mini_sr_earbuds_03_preference_weighted_t16_5ec1d407": "u0636",
+"specres_gpt-4o-mini_sr_headphones_03_preference_weighted_t18_ed40b70d": "u0637",
+"specres_gpt-5.4_sr_tvs_03_preference_weighted_t17_b93ecb29": "u0638",
+"specres_claude-opus-4.6_sr_earbuds_03_baseline_t11_ea25b270": "u0639",
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_baseline_t4_ef38791a": "u0640",
+"specres_gemini-2.5-pro_sr_headphones_03_baseline_t19_19d8ff4c": "u0641",
+"specres_gpt-5.4_sr_headphones_03_baseline_t8_733d208b": "u0642",
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_baseline_t12_7d70cadc": "u0643",
+"specres_gpt-4.1-mini_sr_coffee_makers_03_baseline_t6_c34a8e20": "u0644",
+"specres_gpt-4o-mini_sr_tvs_03_baseline_t8_dbc10d0e": "u0646",
+"specres_gpt-5-mini_sr_earbuds_03_preference_weighted_t18_7f9c98bc": "u0647",
+"specres_claude-haiku-4.5_sr_headphones_03_baseline_t19_557f6ff7": "u0648",
+"specres_gemini-3.1-pro_sr_coffee_makers_03_baseline_t6_ea34aae0": "u0650",
+"specres_gpt-5.4-nano_sr_coffee_makers_02_preference_weighted_t15_fa939eb2": "u0651",
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_preference_weighted_t8_4990f7e9": "u0652",
+"specres_gpt-4.1-nano_sr_coffee_makers_02_baseline_t4_b1f73448": "u0654",
+"specres_claude-opus-4.6_sr_coffee_makers_02_baseline_t18_0e646683": "u0656",
+"specres_gemini-2.5-pro_sr_tvs_03_preference_weighted_t8_eae8d2f1": "u0657",
+"specres_deepseek-r1_sr_tvs_03_baseline_t0_b736bcb8": "u0658",
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_preference_weighted_t2_3368d6b0": "u0660",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_baseline_t12_29085aa9": "u0661",
+"specres_claude-sonnet-4.6_sr_headphones_03_baseline_t0_cde25e0c": "u0662",
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_preference_weighted_t7_55e5703c": "u0663",
+"specres_gpt-5.4-mini_sr_coffee_makers_02_preference_weighted_t8_d5de52be": "u0664",
+"specres_gpt-4.1-nano_sr_coffee_makers_02_preference_weighted_t15_cb39e7ee": "u0665",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_baseline_t14_13bd823e": "u0666",
+"specres_kimi-k2_sr_coffee_makers_03_baseline_t17_db80b0dc": "u0667",
+"specres_qwen-2.5-72b_sr_coffee_makers_03_preference_weighted_t10_2f2c8b94": "u0668",
+"specres_gemini-3.1-pro_sr_headphones_03_preference_weighted_t12_4901b9db": "u0671",
+"specres_gemma-3-27b_sr_coffee_makers_02_baseline_t18_e36dfc73": "u0673",
+"specres_gemini-2.5-flash_sr_coffee_makers_02_preference_weighted_t9_2dc45f6f": "u0677",
+"specres_gemini-2.0-flash_sr_headphones_03_baseline_t13_fb38b640": "u0678",
+"specres_gpt-5.4-nano_sr_earbuds_03_baseline_t17_823be177": "u0679",
+"specres_gemini-3-flash_sr_headphones_03_preference_weighted_t3_033027c9": "u0680",
+"specres_gemini-2.5-pro_sr_earbuds_03_baseline_t12_d59370c8": "u0681",
+"specres_claude-haiku-4.5-thinking_sr_tvs_03_preference_weighted_t8_020fc598": "u0682",
+"specres_gpt-4o-mini_sr_coffee_makers_02_preference_weighted_t12_ffa7e120": "u0683",
+"specres_gemini-2.5-pro_sr_coffee_makers_02_baseline_t2_cd593813": "u0684",
+"specres_gpt-5.4_sr_headphones_03_baseline_t7_c5cedfc4": "u0685",
+"specres_gemini-2.5-flash_sr_earbuds_03_preference_weighted_t2_5b0f7852": "u0686",
+"specres_gpt-5.4-nano_sr_tvs_03_baseline_t10_cb68554a": "u0687",
+"specres_gpt-5-mini_sr_earbuds_03_baseline_t11_a3b2026e": "u0688",
+"specres_gemini-2.5-flash_sr_coffee_makers_03_preference_weighted_t13_9242f7e0": "u0690",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_preference_weighted_t10_f91f11a7": "u0691",
+"specres_gemini-3.1-pro_sr_coffee_makers_03_baseline_t15_42b5585e": "u0692",
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_baseline_t1_af42ed27": "u0693",
+"specres_claude-sonnet-4.6_sr_earbuds_03_preference_weighted_t5_aa46f8cc": "u0694",
+"specres_claude-haiku-4.5_sr_earbuds_03_preference_weighted_t9_4d6d1084": "u0695",
+"specres_llama-3.3-70b_sr_coffee_makers_03_preference_weighted_t1_c5d6a9cb": "u0698",
+"specres_gpt-4.1-nano_sr_earbuds_03_baseline_t14_3f257b2d": "u0699",
+"specres_claude-sonnet-4.6_sr_earbuds_03_preference_weighted_t10_606e290d": "u0700",
+"specres_gemini-2.5-flash_sr_coffee_makers_02_baseline_t9_7827ab6c": "u0701",
+"specres_gemini-2.5-pro_sr_coffee_makers_02_preference_weighted_t4_64424953": "u0702",
+"specres_llama-3.3-70b_sr_coffee_makers_03_baseline_t3_fc64a316": "u0703",
+"specres_claude-opus-4.7_sr_earbuds_03_preference_weighted_t9_24db6270": "u0704",
+"specres_gemini-3-flash-thinking_sr_coffee_makers_02_baseline_t3_aca99ac0": "u0705",
+"specres_deepseek-v3_sr_tvs_03_baseline_t1_30852180": "u0706",
+"specres_gemini-2.5-flash_sr_tvs_03_preference_weighted_t7_ea144471": "u0707",
+"specres_gemini-2.0-flash_sr_coffee_makers_02_baseline_t16_0a967cc8": "u0708",
+"specres_gemini-3-flash_sr_coffee_makers_03_baseline_t0_c8170191": "u0709",
+"specres_gemini-2.0-flash_sr_coffee_makers_03_baseline_t7_427e71ab": "u0711",
+"specres_gpt-4.1-nano_sr_earbuds_03_preference_weighted_t6_4c4d4495": "u0712",
+"specres_gpt-5-mini_sr_headphones_03_preference_weighted_t4_fb8cb9ab": "u0713",
+"specres_gemma-3-27b_sr_tvs_03_preference_weighted_t4_c97f7bc0": "u0714",
+"specres_deepseek-r1_sr_headphones_03_baseline_t10_6deb5714": "u0715",
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_preference_weighted_t14_1a502298": "u0716",
+"specres_gemini-2.5-flash-lite_sr_headphones_03_baseline_t15_8d304737": "u0717",
+"specres_gpt-5.4_sr_coffee_makers_02_preference_weighted_t11_e8581253": "u0718",
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_baseline_t9_3f9e59c3": "u0719",
+"specres_deepseek-r1_sr_coffee_makers_02_baseline_t14_336e1795": "u0721",
+"specres_gemini-3-flash_sr_earbuds_03_preference_weighted_t16_fd2b80ae": "u0722",
+"specres_claude-sonnet-4.6_sr_earbuds_03_baseline_t0_3a129e65": "u0723",
+"specres_llama-3.3-70b_sr_earbuds_03_baseline_t19_a88ffcc1": "u0724",
+"specres_gemma-3-27b_sr_earbuds_03_baseline_t16_a31e10b7": "u0726",
+"specres_deepseek-v3_sr_coffee_makers_02_preference_weighted_t10_d2831148": "u0727",
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_preference_weighted_t4_6512ce85": "u0728",
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_preference_weighted_t9_851899aa": "u0729",
+"specres_gemini-2.5-flash_sr_coffee_makers_03_preference_weighted_t15_435a5e81": "u0730",
+"specres_gpt-5-mini_sr_coffee_makers_03_baseline_t1_4d961cf0": "u0732",
+"specres_gemini-3.1-flash-lite_sr_tvs_03_baseline_t16_781408a1": "u0733",
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_preference_weighted_t19_da796c1c": "u0734",
+"specres_gpt-5.4-nano_sr_tvs_03_baseline_t12_59b40dad": "u0736",
+"specres_gemma-4-31b-it_sr_earbuds_03_preference_weighted_t5_e269443e": "u0737",
+"specres_gpt-5.4-mini_sr_headphones_03_preference_weighted_t0_daf00155": "u0741",
+"specres_gpt-5.4-nano_sr_headphones_03_preference_weighted_t3_23a307b3": "u0742",
+"specres_gemma-4-31b-it_sr_coffee_makers_02_baseline_t2_d68bba3a": "u0743",
+"specres_gpt-5.4_sr_headphones_03_preference_weighted_t19_c23c5568": "u0744",
+"specres_llama-3.3-70b_sr_coffee_makers_03_baseline_t16_c5e9f763": "u0745",
+"specres_gemini-3-flash-thinking_sr_earbuds_03_baseline_t11_1fedf9c9": "u0746",
+"specres_gemma-4-31b-it_sr_headphones_03_preference_weighted_t6_867b9dd1": "u0747",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_preference_weighted_t0_1c978764": "u0749",
+"specres_claude-sonnet-4.6_sr_tvs_03_baseline_t2_b42c2821": "u0750",
+"specres_gemini-3-flash_sr_coffee_makers_02_baseline_t2_83a18fcc": "u0751",
+"specres_qwen-2.5-72b_sr_coffee_makers_02_baseline_t6_fea7a31f": "u0753",
+"specres_gpt-4.1-nano_sr_earbuds_03_baseline_t13_4ea301c3": "u0755",
+"specres_gemini-3.1-pro_sr_headphones_03_baseline_t2_d5a3c566": "u0756",
+"specres_gpt-5.4-mini_sr_earbuds_03_baseline_t14_5e3dc82e": "u0757",
+"specres_claude-haiku-4.5_sr_tvs_03_baseline_t0_059080ac": "u0758",
+"specres_gemma-3-27b_sr_headphones_03_preference_weighted_t6_9475fe73": "u0759",
+"specres_deepseek-r1_sr_earbuds_03_baseline_t8_b6cfe8d6": "u0760",
+"specres_gemini-3.1-pro_sr_coffee_makers_02_preference_weighted_t2_15a326e3": "u0763",
+"specres_gpt-4o-mini_sr_coffee_makers_03_baseline_t6_d9f76fc8": "u0764",
+"specres_deepseek-r1_sr_earbuds_03_preference_weighted_t17_bddf9bc9": "u0765",
+"specres_gemini-3.1-pro_sr_coffee_makers_03_preference_weighted_t3_33b0822e": "u0767",
+"specres_gemma-4-31b-it_sr_tvs_03_baseline_t4_35cf9a40": "u0768",
+"specres_gemma-4-31b-it_sr_headphones_03_preference_weighted_t17_751141be": "u0769",
+"specres_qwen-2.5-72b_sr_headphones_03_baseline_t5_ade96de1": "u0770",
+"specres_gemini-2.5-pro_sr_tvs_03_baseline_t18_8965ff14": "u0771",
+"specres_claude-haiku-4.5_sr_earbuds_03_baseline_t2_717b2345": "u0772",
+"specres_gemini-2.5-flash_sr_earbuds_03_preference_weighted_t13_b673273b": "u0774",
+"specres_claude-haiku-4.5_sr_earbuds_03_baseline_t16_5ed4e0aa": "u0775",
+"specres_gemini-3.1-pro_sr_headphones_03_baseline_t19_26f71490": "u0776",
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_preference_weighted_t8_4241c1e2": "u0777",
+"specres_gemma-3-27b_sr_coffee_makers_02_preference_weighted_t2_ea0c0ef2": "u0778",
+"specres_gpt-5.4-mini_sr_tvs_03_preference_weighted_t11_85042287": "u0779",
+"specres_gemini-3.1-flash-lite_sr_headphones_03_baseline_t3_e3e906de": "u0781",
+"specres_gemini-2.5-pro_sr_headphones_03_preference_weighted_t18_14a04110": "u0782",
+"specres_gemini-2.0-flash_sr_coffee_makers_03_baseline_t11_d9f01d5a": "u0783",
+"specres_claude-haiku-4.5_sr_tvs_03_baseline_t3_db7548b4": "u0787",
+"specres_llama-3.3-70b_sr_coffee_makers_02_preference_weighted_t0_1b0925d2": "u0789",
+"specres_claude-opus-4.6_sr_earbuds_03_preference_weighted_t17_5a86e309": "u0790",
+"specres_gemini-3-flash_sr_coffee_makers_03_baseline_t1_88cdb97b": "u0791",
+"specres_gpt-4o-mini_sr_earbuds_03_baseline_t18_f9ea00e1": "u0792",
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_baseline_t3_860ffa09": "u0793",
+"specres_claude-opus-4.7_sr_coffee_makers_03_preference_weighted_t8_61a4f608": "u0794",
+"specres_deepseek-v3_sr_coffee_makers_03_preference_weighted_t5_16a78e24": "u0795",
+"specres_gemini-2.5-flash_sr_tvs_03_baseline_t19_a6a8d18f": "u0796",
+"specres_claude-opus-4.7_sr_tvs_03_preference_weighted_t14_5c2e21ed": "u0797",
+"specres_gpt-5.4-mini_sr_headphones_03_preference_weighted_t7_2d2fca30": "u0798",
+"specres_llama-3.3-70b_sr_earbuds_03_preference_weighted_t12_8641382f": "u0800",
+"specres_gpt-5-mini_sr_coffee_makers_02_baseline_t8_03457b01": "u0801",
+"specres_gemini-2.5-flash-lite_sr_tvs_03_preference_weighted_t14_6d47cd6d": "u0802"
+},
+"judge": {
+"specres_claude-haiku-4.5_sr_coffee_makers_02_baseline_t18_4f30783b": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_02_baseline_t7_693eab76": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_02_preference_weighted_t5_4d4e14b8": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_02_preference_weighted_t0_22ab8649": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_03_baseline_t4_f6edfd1a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_03_baseline_t7_38cf5a0d": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_03_preference_weighted_t0_bbb631fe": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_coffee_makers_03_preference_weighted_t11_cddbafe4": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_earbuds_03_baseline_t16_5ed4e0aa": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_earbuds_03_baseline_t2_717b2345": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_earbuds_03_preference_weighted_t14_baba131d": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_earbuds_03_preference_weighted_t9_4d6d1084": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_headphones_03_baseline_t10_f9be975a": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_headphones_03_baseline_t19_557f6ff7": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_headphones_03_preference_weighted_t0_62a88e81": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_headphones_03_preference_weighted_t6_689c2828": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_tvs_03_baseline_t0_059080ac": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_tvs_03_baseline_t3_db7548b4": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_tvs_03_preference_weighted_t15_a9c9def9": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5_sr_tvs_03_preference_weighted_t16_9489629f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_baseline_t16_f8ec2d1f": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_baseline_t9_3f9e59c3": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_preference_weighted_t3_dd501e5a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_02_preference_weighted_t2_3368d6b0": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_baseline_t1_8afd1e4e": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_baseline_t2_49be8c7d": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_preference_weighted_t9_851899aa": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_coffee_makers_03_preference_weighted_t10_0cf06399": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_earbuds_03_baseline_t0_3a129e65": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_earbuds_03_baseline_t17_4f5fab7d": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_earbuds_03_preference_weighted_t10_606e290d": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_earbuds_03_preference_weighted_t5_aa46f8cc": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_headphones_03_baseline_t0_cde25e0c": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_headphones_03_baseline_t14_f9992ffc": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_headphones_03_preference_weighted_t4_c480ab8a": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_headphones_03_preference_weighted_t3_331942ca": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_tvs_03_baseline_t17_15b45b67": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_tvs_03_baseline_t2_b42c2821": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_tvs_03_preference_weighted_t15_6b0abc64": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6_sr_tvs_03_preference_weighted_t9_80002211": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_deepseek-r1_sr_coffee_makers_02_baseline_t14_336e1795": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_02_baseline_t1_6b9bcc41": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_02_preference_weighted_t2_f479f273": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_02_preference_weighted_t16_9114f896": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_03_baseline_t1_1df3fdcf": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_03_baseline_t6_a0ed893d": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_03_preference_weighted_t17_07e30588": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_coffee_makers_03_preference_weighted_t3_76ff051f": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_earbuds_03_baseline_t19_fdb36246": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_earbuds_03_baseline_t8_b6cfe8d6": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_earbuds_03_preference_weighted_t11_394d016f": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_earbuds_03_preference_weighted_t17_bddf9bc9": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_headphones_03_baseline_t10_6deb5714": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_headphones_03_baseline_t15_43f8c3a7": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_headphones_03_preference_weighted_t10_7f396282": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_headphones_03_preference_weighted_t0_8c116d0d": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_tvs_03_baseline_t0_b736bcb8": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_tvs_03_baseline_t8_7058147d": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_tvs_03_preference_weighted_t16_fc089663": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-r1_sr_tvs_03_preference_weighted_t7_f51ae244": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-r1"
+},
+"specres_deepseek-v3_sr_coffee_makers_02_baseline_t11_fff18986": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_02_baseline_t7_da2fc5c3": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_02_preference_weighted_t6_4f3b5555": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_02_preference_weighted_t10_d2831148": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_03_baseline_t8_60768def": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_03_baseline_t16_d003067e": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_03_preference_weighted_t15_b058aca9": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_coffee_makers_03_preference_weighted_t5_16a78e24": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_earbuds_03_baseline_t10_f31bc417": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_earbuds_03_baseline_t0_3825cb08": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_earbuds_03_preference_weighted_t2_9cad10b5": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_earbuds_03_preference_weighted_t4_fe35daad": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_headphones_03_baseline_t17_894e6693": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_headphones_03_baseline_t8_f59e2487": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_headphones_03_preference_weighted_t0_2a3f9aa7": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_headphones_03_preference_weighted_t8_bc2a59f0": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_tvs_03_baseline_t7_d8bdd66f": {
+"judge_brand_reasoning": true,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_tvs_03_baseline_t1_30852180": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_tvs_03_preference_weighted_t12_22d0913c": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_deepseek-v3_sr_tvs_03_preference_weighted_t18_eada8066": {
+"judge_brand_reasoning": false,
+"judge_model": "deepseek/deepseek-chat-v3-0324"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_02_baseline_t15_7cf9ca06": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_02_baseline_t16_0a967cc8": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_02_preference_weighted_t13_8d1581d6": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_02_preference_weighted_t6_34a3ef04": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_03_baseline_t11_d9f01d5a": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_03_baseline_t7_427e71ab": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_03_preference_weighted_t0_b3b43f3c": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_coffee_makers_03_preference_weighted_t19_ff19a9a4": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_earbuds_03_baseline_t9_d92a1b7c": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_earbuds_03_baseline_t6_bdd1578a": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_earbuds_03_preference_weighted_t0_4685c293": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_earbuds_03_preference_weighted_t8_43c886f6": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_headphones_03_baseline_t5_7dc14678": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_headphones_03_baseline_t13_fb38b640": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_headphones_03_preference_weighted_t16_f4e53975": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_headphones_03_preference_weighted_t6_4e1bd98a": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_tvs_03_baseline_t0_3e74a0fb": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_tvs_03_baseline_t16_1ba9e35c": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_tvs_03_preference_weighted_t8_374db3ce": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.0-flash_sr_tvs_03_preference_weighted_t6_2564d5f2": {
+"judge_brand_reasoning": true,
+"judge_model": "gemini-2.0-flash"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_baseline_t4_ef38791a": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_baseline_t14_2a0e2a38": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_preference_weighted_t14_28edf302": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_02_preference_weighted_t2_08ef217b": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_baseline_t12_e525f4cf": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_baseline_t5_bec8a1a0": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_preference_weighted_t17_c567d3a5": {
+"judge_brand_reasoning": true,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_coffee_makers_03_preference_weighted_t4_cfcf15cf": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_earbuds_03_baseline_t14_fc00e1c7": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_earbuds_03_preference_weighted_t10_e87d5d97": {
+"judge_brand_reasoning": true,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_earbuds_03_preference_weighted_t11_1c1e0e17": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_headphones_03_baseline_t15_8d304737": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_headphones_03_baseline_t9_c00c37e2": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_headphones_03_preference_weighted_t17_dc4eb7e5": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_headphones_03_preference_weighted_t1_3e39887b": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_tvs_03_baseline_t12_c1fd95b3": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_tvs_03_baseline_t19_c0dffb2b": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_tvs_03_preference_weighted_t14_6d47cd6d": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash-lite_sr_tvs_03_preference_weighted_t16_6d534eb3": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash-lite"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_02_baseline_t12_d4e7785f": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_02_baseline_t9_7827ab6c": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_02_preference_weighted_t9_2dc45f6f": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_02_preference_weighted_t2_f2712d21": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_03_baseline_t13_09b92f82": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_03_baseline_t1_e013506d": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_03_preference_weighted_t15_435a5e81": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_coffee_makers_03_preference_weighted_t13_9242f7e0": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_earbuds_03_baseline_t10_bb3c74f8": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_earbuds_03_preference_weighted_t13_b673273b": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_earbuds_03_preference_weighted_t2_5b0f7852": {
+"judge_brand_reasoning": true,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_headphones_03_baseline_t7_1c7983e2": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_headphones_03_baseline_t6_2aae16a9": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_headphones_03_preference_weighted_t16_47107960": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_headphones_03_preference_weighted_t2_7ab6a1ef": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_tvs_03_baseline_t18_fef61721": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_tvs_03_baseline_t19_a6a8d18f": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_tvs_03_preference_weighted_t4_f87183fc": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash"
+},
+"specres_gemini-2.5-flash_sr_tvs_03_preference_weighted_t7_ea144471": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-flash"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_02_baseline_t2_cd593813": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_02_baseline_t6_2753e069": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_02_preference_weighted_t4_64424953": {
+"judge_brand_reasoning": true,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_02_preference_weighted_t12_e314207a": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_03_baseline_t14_1b6125ea": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_03_baseline_t12_6466d7cf": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_03_preference_weighted_t19_d7a8db07": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_coffee_makers_03_preference_weighted_t9_bcb2ca1a": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_earbuds_03_baseline_t12_d59370c8": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_earbuds_03_baseline_t2_23b084d1": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_earbuds_03_preference_weighted_t15_2a9180e8": {
+"judge_brand_reasoning": true,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_earbuds_03_preference_weighted_t2_0dbf7a91": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_headphones_03_baseline_t2_defc7604": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_headphones_03_baseline_t19_19d8ff4c": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_headphones_03_preference_weighted_t11_9e2fc515": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_headphones_03_preference_weighted_t18_14a04110": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_tvs_03_baseline_t10_c236f445": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_tvs_03_baseline_t18_8965ff14": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_tvs_03_preference_weighted_t5_fc44bdf9": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-2.5-pro_sr_tvs_03_preference_weighted_t8_eae8d2f1": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-2.5-pro"
+},
+"specres_gemini-3-flash_sr_coffee_makers_02_baseline_t3_1c324ce5": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_coffee_makers_02_baseline_t2_83a18fcc": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_coffee_makers_03_baseline_t0_c8170191": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_coffee_makers_03_baseline_t1_88cdb97b": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_coffee_makers_03_preference_weighted_t17_3e8948e9": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_coffee_makers_03_preference_weighted_t4_70fa57e8": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_earbuds_03_baseline_t2_b3d80ea0": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_earbuds_03_preference_weighted_t16_fd2b80ae": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_earbuds_03_preference_weighted_t2_0821bd06": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_headphones_03_baseline_t2_6e2e56af": {
+"judge_brand_reasoning": true,
+"judge_model": "google/gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_headphones_03_baseline_t7_16301632": {
+"judge_brand_reasoning": true,
+"judge_model": "google/gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_headphones_03_preference_weighted_t19_6b35962f": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_headphones_03_preference_weighted_t3_033027c9": {
+"judge_brand_reasoning": true,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_tvs_03_baseline_t1_9d8273ac": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_tvs_03_baseline_t8_fc1b8515": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_tvs_03_preference_weighted_t17_549e157a": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash_sr_tvs_03_preference_weighted_t6_8c604104": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemma-3-27b_sr_coffee_makers_02_baseline_t12_430a28c5": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_02_baseline_t18_e36dfc73": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_02_preference_weighted_t2_ea0c0ef2": {
+"judge_brand_reasoning": true,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_02_preference_weighted_t8_f0503e15": {
+"judge_brand_reasoning": true,
+"judge_model": "google/gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_03_baseline_t18_f9caec50": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_03_baseline_t10_fb7fc7a8": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_03_preference_weighted_t16_0e11278d": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_coffee_makers_03_preference_weighted_t13_03fadf33": {
+"judge_brand_reasoning": false,
+"judge_model": "google/gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_earbuds_03_baseline_t16_a31e10b7": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_earbuds_03_baseline_t7_ea741d5f": {
+"judge_brand_reasoning": true,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_earbuds_03_preference_weighted_t7_61047431": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_earbuds_03_preference_weighted_t9_bb362bea": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_headphones_03_baseline_t15_a3e40113": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_headphones_03_baseline_t6_18ac6a19": {
+"judge_brand_reasoning": true,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_headphones_03_preference_weighted_t14_807b0b8c": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_headphones_03_preference_weighted_t6_9475fe73": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_tvs_03_preference_weighted_t2_7449b303": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gemma-3-27b_sr_tvs_03_preference_weighted_t4_c97f7bc0": {
+"judge_brand_reasoning": false,
+"judge_model": "gemma-3-27b-it"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_02_baseline_t11_a1fe8f8f": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_02_baseline_t2_f91a91e0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_02_preference_weighted_t17_4ecec7c5": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_02_preference_weighted_t18_3412db13": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_03_baseline_t6_c34a8e20": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_03_baseline_t7_c05e7e65": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_03_preference_weighted_t11_9d4a87c3": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_coffee_makers_03_preference_weighted_t5_ed249a49": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_earbuds_03_baseline_t16_d653ff25": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_earbuds_03_baseline_t19_c9482c74": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_earbuds_03_preference_weighted_t3_02ea5a6c": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_earbuds_03_preference_weighted_t18_57ff88bf": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_headphones_03_baseline_t1_5ea84783": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_headphones_03_baseline_t5_0cb7c5d5": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_headphones_03_preference_weighted_t8_f2a4aea0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_tvs_03_preference_weighted_t0_ad299745": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-mini_sr_tvs_03_preference_weighted_t5_7c149e50": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-mini"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_02_baseline_t0_4bad5fcf": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_02_baseline_t4_b1f73448": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_02_preference_weighted_t15_cb39e7ee": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_02_preference_weighted_t18_0b8d2283": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_03_baseline_t15_286c7682": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_03_baseline_t1_cfade005": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_coffee_makers_03_preference_weighted_t8_e30a08d6": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_earbuds_03_baseline_t14_3f257b2d": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_earbuds_03_baseline_t13_4ea301c3": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_earbuds_03_preference_weighted_t1_c7525be6": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_earbuds_03_preference_weighted_t6_4c4d4495": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_headphones_03_baseline_t0_6c57262a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_headphones_03_baseline_t6_01c6df4e": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_headphones_03_preference_weighted_t12_862c4cb0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_headphones_03_preference_weighted_t15_7fd09a9b": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_tvs_03_baseline_t10_b4d5264c": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_tvs_03_preference_weighted_t18_2701dab2": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4.1-nano_sr_tvs_03_preference_weighted_t17_510aa044": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4.1-nano"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_02_baseline_t0_40198e57": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_02_baseline_t2_7bec3083": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_02_preference_weighted_t0_8f469cfb": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_02_preference_weighted_t12_ffa7e120": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_03_baseline_t8_9a3b8410": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_03_baseline_t6_d9f76fc8": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_03_preference_weighted_t13_89eeac42": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_coffee_makers_03_preference_weighted_t8_453b267a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_earbuds_03_baseline_t18_f9ea00e1": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_earbuds_03_baseline_t9_fc7f3398": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_earbuds_03_preference_weighted_t0_e3df9d69": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_earbuds_03_preference_weighted_t16_5ec1d407": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_headphones_03_baseline_t0_db806b22": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_headphones_03_baseline_t9_211acdca": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_headphones_03_preference_weighted_t18_ed40b70d": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_headphones_03_preference_weighted_t9_9da5d7cf": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_tvs_03_baseline_t19_5e8968a0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_tvs_03_baseline_t8_dbc10d0e": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_tvs_03_preference_weighted_t14_2d8d2f1a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o-mini_sr_tvs_03_preference_weighted_t6_1fc859f9": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o-mini"
+},
+"specres_gpt-4o_sr_coffee_makers_02_baseline_t13_4872ed0a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_02_baseline_t18_9d283329": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_02_preference_weighted_t8_c8e14f9a": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_02_preference_weighted_t18_13f76e2f": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_03_baseline_t14_0f95435c": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_03_baseline_t2_b7b9e97f": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_03_preference_weighted_t7_26122b49": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_coffee_makers_03_preference_weighted_t6_ac107292": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_earbuds_03_preference_weighted_t5_06f62dab": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_earbuds_03_preference_weighted_t3_886aa1af": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_headphones_03_baseline_t11_7433e7f5": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_headphones_03_baseline_t5_99d9d252": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_headphones_03_preference_weighted_t3_11fe17ea": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_tvs_03_preference_weighted_t13_eb7db7b8": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-4o_sr_tvs_03_preference_weighted_t1_354ee0ba": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-4o"
+},
+"specres_gpt-5-mini_sr_coffee_makers_02_baseline_t3_ebd7308a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_02_baseline_t8_03457b01": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_02_preference_weighted_t9_0f752a7b": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_02_preference_weighted_t15_a475d6a3": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_03_baseline_t10_0ea7582f": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_03_baseline_t1_4d961cf0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_03_preference_weighted_t15_1a55d9f2": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_coffee_makers_03_preference_weighted_t8_6ef7aaa0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_earbuds_03_baseline_t17_c55737a3": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_earbuds_03_baseline_t11_a3b2026e": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_earbuds_03_preference_weighted_t15_7dbac1e5": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_earbuds_03_preference_weighted_t18_7f9c98bc": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_headphones_03_baseline_t19_69d662ca": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_headphones_03_baseline_t7_f8a4911f": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_headphones_03_preference_weighted_t1_a3497bb7": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_headphones_03_preference_weighted_t4_fb8cb9ab": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_tvs_03_baseline_t7_4fc59519": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_tvs_03_baseline_t5_4494ede8": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_tvs_03_preference_weighted_t18_4ad661d2": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_gpt-5-mini_sr_tvs_03_preference_weighted_t3_cfa08428": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5-mini"
+},
+"specres_kimi-k2_sr_coffee_makers_02_baseline_t18_f31cce3a": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_02_baseline_t6_2d17beb3": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_02_preference_weighted_t0_bac64181": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_02_preference_weighted_t5_a3cb04df": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_03_baseline_t13_bf8b1c66": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_03_baseline_t17_db80b0dc": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_03_preference_weighted_t0_7162b4fe": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_coffee_makers_03_preference_weighted_t17_892a17bf": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_earbuds_03_baseline_t12_3186583f": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_earbuds_03_baseline_t4_6e38ee55": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_earbuds_03_preference_weighted_t14_5cec0b11": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_earbuds_03_preference_weighted_t16_8f9d1f9d": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_headphones_03_baseline_t13_a14626ca": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_headphones_03_baseline_t8_60f0c489": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_headphones_03_preference_weighted_t11_4fe9f46b": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_headphones_03_preference_weighted_t3_290cdb40": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_tvs_03_baseline_t14_eeb2d94e": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_tvs_03_baseline_t3_9344f627": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_tvs_03_preference_weighted_t9_13c9b64a": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_kimi-k2_sr_tvs_03_preference_weighted_t8_470a2a4b": {
+"judge_brand_reasoning": false,
+"judge_model": "moonshotai/kimi-k2"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_02_baseline_t17_3d403eae": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_02_baseline_t18_462e1e3b": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_02_preference_weighted_t0_1b0925d2": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_02_preference_weighted_t15_80c84b86": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_03_baseline_t16_c5e9f763": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_03_baseline_t3_fc64a316": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_03_preference_weighted_t17_e6475c3b": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_coffee_makers_03_preference_weighted_t1_c5d6a9cb": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_earbuds_03_baseline_t19_a88ffcc1": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_earbuds_03_baseline_t6_25858b5e": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_earbuds_03_preference_weighted_t12_8641382f": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_earbuds_03_preference_weighted_t19_203ae540": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_headphones_03_baseline_t11_27f7daf3": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_headphones_03_baseline_t5_18547a2e": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_headphones_03_preference_weighted_t10_67a4057b": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_headphones_03_preference_weighted_t15_e1cc2b72": {
+"judge_brand_reasoning": true,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_tvs_03_baseline_t16_cfab400a": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_tvs_03_baseline_t8_fbed6f57": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_tvs_03_preference_weighted_t4_6aede071": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_llama-3.3-70b_sr_tvs_03_preference_weighted_t18_c1bb15e3": {
+"judge_brand_reasoning": false,
+"judge_model": "meta-llama/llama-3.3-70b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_02_baseline_t19_b64e6b21": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_02_baseline_t6_fea7a31f": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_02_preference_weighted_t11_1b56c00e": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_02_preference_weighted_t4_56727429": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_03_baseline_t12_37af2cf0": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_03_baseline_t18_47221ac9": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_03_preference_weighted_t10_2f2c8b94": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_coffee_makers_03_preference_weighted_t17_74041845": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_earbuds_03_baseline_t18_d0afbc98": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_earbuds_03_baseline_t6_8accff0f": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_earbuds_03_preference_weighted_t14_c4c9e182": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_earbuds_03_preference_weighted_t9_386d7d0b": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_headphones_03_baseline_t11_b72e30b2": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_headphones_03_baseline_t5_ade96de1": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_headphones_03_preference_weighted_t16_2a08b6f1": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_headphones_03_preference_weighted_t1_aa8c401c": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_tvs_03_baseline_t2_97efdc18": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_tvs_03_baseline_t5_99cb0ae5": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_tvs_03_preference_weighted_t1_9e501d58": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_qwen-2.5-72b_sr_tvs_03_preference_weighted_t7_632546de": {
+"judge_brand_reasoning": false,
+"judge_model": "qwen/qwen-2.5-72b-instruct"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_baseline_t13_86ca4a2f": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_baseline_t19_fb467c5a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_preference_weighted_t18_48511e67": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_02_preference_weighted_t8_4990f7e9": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_baseline_t0_5f8f5cb3": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_baseline_t18_49fbf85b": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_preference_weighted_t18_9fb904c9": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_coffee_makers_03_preference_weighted_t9_f5f9432a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_baseline_t15_26e06509": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_baseline_t3_2e6d7b11": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_preference_weighted_t11_37492cf7": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_earbuds_03_preference_weighted_t14_1a502298": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_baseline_t11_2b8d3fb1": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_baseline_t4_bcd4fc3e": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_preference_weighted_t4_6512ce85": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_headphones_03_preference_weighted_t9_4eac3f1f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_tvs_03_preference_weighted_t13_32222925": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-haiku-4.5-thinking_sr_tvs_03_preference_weighted_t8_020fc598": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001"
+},
+"specres_claude-opus-4.6_sr_coffee_makers_02_baseline_t14_8bd34518": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_coffee_makers_02_baseline_t18_0e646683": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_coffee_makers_03_baseline_t12_1b353932": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_coffee_makers_03_baseline_t8_ce973c5f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_coffee_makers_03_preference_weighted_t10_1d21ca09": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_coffee_makers_03_preference_weighted_t13_1110b163": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_earbuds_03_baseline_t11_ea25b270": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_earbuds_03_baseline_t6_cdd6635f": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_earbuds_03_preference_weighted_t17_5a86e309": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_earbuds_03_preference_weighted_t1_9b589e8f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_headphones_03_baseline_t7_63deff2c": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_headphones_03_baseline_t9_00aa99cb": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_headphones_03_preference_weighted_t6_b33acafe": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_headphones_03_preference_weighted_t7_3fec7616": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_tvs_03_baseline_t0_4b899c10": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_tvs_03_baseline_t15_3b2f6a18": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_tvs_03_preference_weighted_t17_f7215245": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.6_sr_tvs_03_preference_weighted_t6_2c7839ff": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-6"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_02_baseline_t17_dc76e2a3": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_02_baseline_t3_89d9e9d6": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_02_preference_weighted_t3_dcafb6e5": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_02_preference_weighted_t4_dec6d8d8": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_03_baseline_t14_bb5d7cd8": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_03_baseline_t1_627501cb": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_03_preference_weighted_t17_6218c35a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_coffee_makers_03_preference_weighted_t8_61a4f608": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_earbuds_03_baseline_t16_7e7359d4": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_earbuds_03_baseline_t6_c7e59daf": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_earbuds_03_preference_weighted_t8_50937716": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_earbuds_03_preference_weighted_t9_24db6270": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_headphones_03_baseline_t11_144c6ff0": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_headphones_03_baseline_t19_e70fa944": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_headphones_03_preference_weighted_t16_747c5768": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_headphones_03_preference_weighted_t7_61437d0b": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_tvs_03_baseline_t14_f694b3a8": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_tvs_03_baseline_t15_512d75c8": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_tvs_03_preference_weighted_t14_5c2e21ed": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-opus-4.7_sr_tvs_03_preference_weighted_t5_41c79bdb": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-opus-4-7"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_baseline_t10_e128f695": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_baseline_t9_278d12c8": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_preference_weighted_t4_995f1a50": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_02_preference_weighted_t5_e89d48cc": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_baseline_t11_fa1562d1": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_baseline_t1_af42ed27": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_preference_weighted_t0_ce4e1728": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_coffee_makers_03_preference_weighted_t10_f91f11a7": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_baseline_t11_1baa3723": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_baseline_t12_76c45cb1": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_preference_weighted_t19_da796c1c": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_earbuds_03_preference_weighted_t5_01baba5d": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_baseline_t19_a446da2e": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_baseline_t1_89620947": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_preference_weighted_t17_bcd45238": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_headphones_03_preference_weighted_t3_645f7faa": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_baseline_t14_cadbe2ba": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_baseline_t16_9d3aee1b": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_preference_weighted_t7_55e5703c": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_claude-sonnet-4.6-thinking_sr_tvs_03_preference_weighted_t9_8dc7b1ca": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-sonnet-4-6"
+},
+"specres_gemini-3-flash-thinking_sr_coffee_makers_02_baseline_t17_e537add2": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_coffee_makers_02_baseline_t3_aca99ac0": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_baseline_t0_ab17bf0d": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_baseline_t11_c244e48e": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_preference_weighted_t0_3bcfd1ff": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_coffee_makers_03_preference_weighted_t18_61961a0f": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_earbuds_03_baseline_t11_1fedf9c9": {
+"judge_brand_reasoning": true,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_earbuds_03_preference_weighted_t12_d017f9db": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_earbuds_03_preference_weighted_t15_c9bed99e": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3-flash-preview"
+},
+"specres_gemini-3-flash-thinking_sr_headphones_03_baseline_t19_26fb84d9": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_headphones_03_baseline_t7_d09a74de": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_headphones_03_preference_weighted_t0_e12c402c": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_headphones_03_preference_weighted_t4_8d2b4dcf": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_tvs_03_baseline_t15_2945ff13": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_tvs_03_baseline_t8_a15f6fe4": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_tvs_03_preference_weighted_t14_1fcc445f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3-flash-thinking_sr_tvs_03_preference_weighted_t3_320eee31": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_baseline_t12_29085aa9": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_baseline_t13_7bb2189f": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_preference_weighted_t0_1c978764": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_02_preference_weighted_t8_4241c1e2": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_baseline_t4_f8c1215f": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_baseline_t7_1575a7ad": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_preference_weighted_t16_32385309": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_coffee_makers_03_preference_weighted_t5_0f556506": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_baseline_t16_bbcf62d7": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_baseline_t19_ef955d9f": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_preference_weighted_t10_2ca70010": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_earbuds_03_preference_weighted_t15_72084d0b": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_headphones_03_baseline_t0_ffbc61fd": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_headphones_03_baseline_t3_e3e906de": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_headphones_03_preference_weighted_t5_7bc77a0b": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_headphones_03_preference_weighted_t6_26f3fed9": {
+"judge_brand_reasoning": false,
+"judge_model": "gemini-3.1-flash-lite-preview"
+},
+"specres_gemini-3.1-flash-lite_sr_tvs_03_baseline_t15_b033a756": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-flash-lite_sr_tvs_03_baseline_t16_781408a1": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-flash-lite_sr_tvs_03_preference_weighted_t11_187f42af": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-flash-lite_sr_tvs_03_preference_weighted_t1_c408efb0": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_02_baseline_t17_8f6420d3": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_02_baseline_t3_879b536a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_02_preference_weighted_t14_260072ac": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_02_preference_weighted_t2_15a326e3": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_03_baseline_t15_42b5585e": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_03_baseline_t6_ea34aae0": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_03_preference_weighted_t2_e7f1f615": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_coffee_makers_03_preference_weighted_t3_33b0822e": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_earbuds_03_baseline_t3_35d18177": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_earbuds_03_preference_weighted_t10_a2e37204": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_earbuds_03_preference_weighted_t14_b7c095ad": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_headphones_03_baseline_t19_26f71490": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_headphones_03_baseline_t2_d5a3c566": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_headphones_03_preference_weighted_t12_4901b9db": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_headphones_03_preference_weighted_t7_09aa4396": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_tvs_03_baseline_t9_e2e65a9e": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_tvs_03_preference_weighted_t15_6a3ae354": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemini-3.1-pro_sr_tvs_03_preference_weighted_t6_74f33fb7": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_coffee_makers_02_baseline_t10_28beb4f9": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_coffee_makers_02_baseline_t2_d68bba3a": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_coffee_makers_03_baseline_t0_5727b353": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_coffee_makers_03_baseline_t6_e627931f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_coffee_makers_03_preference_weighted_t15_ea67d8a3": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_coffee_makers_03_preference_weighted_t4_8cd625c0": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_earbuds_03_baseline_t10_ecb6eda0": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_earbuds_03_baseline_t18_661ac486": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_earbuds_03_preference_weighted_t3_70dfa8ae": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_earbuds_03_preference_weighted_t5_e269443e": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_headphones_03_baseline_t0_15b55718": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_headphones_03_baseline_t2_acb73b8e": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_headphones_03_preference_weighted_t17_751141be": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_headphones_03_preference_weighted_t6_867b9dd1": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_tvs_03_baseline_t4_35cf9a40": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_tvs_03_baseline_t9_16bccb62": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_tvs_03_preference_weighted_t10_652bd95c": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gemma-4-31b-it_sr_tvs_03_preference_weighted_t8_1a619059": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_baseline_t14_13bd823e": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_baseline_t3_860ffa09": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_preference_weighted_t17_fa901d68": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_02_preference_weighted_t5_5d8279cb": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_baseline_t0_2b4cbf19": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_baseline_t8_7bb19d6d": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_preference_weighted_t15_e964c245": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_coffee_makers_03_preference_weighted_t3_87dc219d": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_baseline_t12_7d70cadc": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_baseline_t8_1a14187d": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_preference_weighted_t10_59509727": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_earbuds_03_preference_weighted_t5_262e04e7": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_baseline_t15_f7a169c9": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_baseline_t7_0d3dc374": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_preference_weighted_t0_f552353a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_headphones_03_preference_weighted_t18_d806d97c": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_baseline_t0_76140fc0": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_baseline_t6_a74c3eee": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_preference_weighted_t16_1bc3c489": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini-thinking_sr_tvs_03_preference_weighted_t8_09232b5a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_02_baseline_t0_1ef68edd": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_02_baseline_t1_82659196": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_02_preference_weighted_t18_3d9df5b2": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_02_preference_weighted_t8_d5de52be": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_03_baseline_t11_d6e681bf": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_03_baseline_t13_d35ddaa5": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_03_preference_weighted_t18_5e1424cd": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_coffee_makers_03_preference_weighted_t5_2dcdfd23": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_earbuds_03_baseline_t14_5e3dc82e": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_earbuds_03_baseline_t2_228cd377": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_earbuds_03_preference_weighted_t16_14693ec7": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_earbuds_03_preference_weighted_t19_ab2a04bc": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_headphones_03_baseline_t17_35223f69": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_headphones_03_baseline_t19_469e3f55": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_headphones_03_preference_weighted_t0_daf00155": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_headphones_03_preference_weighted_t7_2d2fca30": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_tvs_03_preference_weighted_t11_85042287": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-mini_sr_tvs_03_preference_weighted_t7_ae85f025": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-mini-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_02_baseline_t11_093e7dae": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_02_baseline_t18_1648671b": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_02_preference_weighted_t0_b7dc6aed": {
+"judge_brand_reasoning": true,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_02_preference_weighted_t15_fa939eb2": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_03_baseline_t6_40c4641b": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_03_baseline_t9_816aa909": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_03_preference_weighted_t12_00e6551f": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_coffee_makers_03_preference_weighted_t6_7c913de6": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_earbuds_03_baseline_t16_d68ecc65": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_earbuds_03_baseline_t17_823be177": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_earbuds_03_preference_weighted_t0_8289d8f6": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_earbuds_03_preference_weighted_t13_cf6ef385": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_headphones_03_baseline_t17_dcb519b6": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_headphones_03_baseline_t9_b51c5b5d": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_headphones_03_preference_weighted_t15_815de424": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_headphones_03_preference_weighted_t3_23a307b3": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_tvs_03_baseline_t10_cb68554a": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_tvs_03_baseline_t12_59b40dad": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_tvs_03_preference_weighted_t0_75c753e8": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4-nano_sr_tvs_03_preference_weighted_t19_e3ddee88": {
+"judge_brand_reasoning": false,
+"judge_model": "gpt-5.4-nano-2026-03-17"
+},
+"specres_gpt-5.4_sr_coffee_makers_02_baseline_t4_36c90757": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_02_baseline_t9_084ccbef": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_02_preference_weighted_t11_e8581253": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_02_preference_weighted_t6_6d1104ce": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_03_baseline_t15_5cd26368": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_03_baseline_t18_81b25d1b": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_03_preference_weighted_t16_a91dc4fc": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_coffee_makers_03_preference_weighted_t19_1e46404f": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_earbuds_03_baseline_t17_7462c942": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_earbuds_03_baseline_t8_8a4a4129": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_earbuds_03_preference_weighted_t13_b64b3a30": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_earbuds_03_preference_weighted_t4_9a8f81d8": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_headphones_03_baseline_t7_c5cedfc4": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_headphones_03_baseline_t8_733d208b": {
+"judge_brand_reasoning": true,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_headphones_03_preference_weighted_t19_c23c5568": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_headphones_03_preference_weighted_t4_d13acb74": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_tvs_03_baseline_t0_9115ebdd": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_tvs_03_baseline_t16_84ab1c22": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_tvs_03_preference_weighted_t17_b93ecb29": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+},
+"specres_gpt-5.4_sr_tvs_03_preference_weighted_t5_525e5125": {
+"judge_brand_reasoning": false,
+"judge_model": "claude-haiku-4-5-20251001 (cross-judge)"
+}
+}
+}

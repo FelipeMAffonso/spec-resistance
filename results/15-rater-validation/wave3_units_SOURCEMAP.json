@@ -1,0 +1,1105 @@
+{
+ "meta": {
+  "version": "rater-units-wave3-1.0",
+  "build_date": "2026-07-02",
+  "wave": 3,
+  "seed": "spec-resistance-rater-units-2026-wave3-pool",
+  "source_csv": "prolific\\iterations\\iter17_final\\qualtrics_responses.csv",
+  "kept_rule": "iter17_final finished rows -> PROLIFIC_PID in iter17_final_approved_pids.json -> analyze_full.apply_exclusions (the confirmatory_FINAL_numbers.py rule; kept 1182) -> assigned_level in ['explicit_numeric'], non-optimal choice, >= 15 chars after answer-prefix strip, brand resolves in the locked bank",
+  "filters": {
+   "assortment_ids": [
+    "sr_coffee_makers_02",
+    "sr_coffee_makers_03",
+    "sr_headphones_03",
+    "sr_tvs_03",
+    "sr_earbuds_03"
+   ],
+   "levels": [
+    "explicit_numeric"
+   ],
+   "non_optimal_only": true,
+   "min_justification_chars": 15
+  },
+  "counts": {
+   "units_total": 133,
+   "units_model": 0,
+   "units_human": 133,
+   "golds": 8,
+   "per_assortment": {
+    "sr_coffee_makers_02": 23,
+    "sr_coffee_makers_03": 28,
+    "sr_earbuds_03": 20,
+    "sr_headphones_03": 40,
+    "sr_tvs_03": 22
+   }
+  },
+  "human_side": "WAVE-3 HUMAN-ONLY BUILD (explicit_numeric rung). The model side of the explicit rung is deliberately NOT pooled here; wave 1 fielded the pooled NL-rung human+model mix per prereg Q3.",
+  "blinding": "units carry no source field; provenance lives ONLY in wave3_units_SOURCEMAP.json"
+ },
+ "units": {
+  "u0001": {
+   "source": "human",
+   "ref": "R_3HWtCDyRL2ZRvwJ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0002": {
+   "source": "human",
+   "ref": "R_72XkeUhINc6ZS92",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0003": {
+   "source": "human",
+   "ref": "R_5EiosHm7DOPLhdC",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0004": {
+   "source": "human",
+   "ref": "R_5OetHxHkCv7cwAC",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0005": {
+   "source": "human",
+   "ref": "R_5PPLY65pLwv67XH",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0006": {
+   "source": "human",
+   "ref": "R_6HqBG6HTzKDJ58f",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0007": {
+   "source": "human",
+   "ref": "R_7abIdG8bpyTBaeZ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0008": {
+   "source": "human",
+   "ref": "R_6LROZOVHgdnUe1p",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0009": {
+   "source": "human",
+   "ref": "R_1fUBH2m8ktEKwBV",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0010": {
+   "source": "human",
+   "ref": "R_7WV8aRgcrENOdyR",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0011": {
+   "source": "human",
+   "ref": "R_5fPgmwiX6RwE9hL",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0012": {
+   "source": "human",
+   "ref": "R_6zTNcCHUStPwtMI",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0013": {
+   "source": "human",
+   "ref": "R_1BhPVXUc1Olpnyo",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0014": {
+   "source": "human",
+   "ref": "R_67qUYlzhT7AJ1ya",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0015": {
+   "source": "human",
+   "ref": "R_6veJgalMgrU7yC7",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0016": {
+   "source": "human",
+   "ref": "R_7f7ZKYUdXVRrcwr",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0017": {
+   "source": "human",
+   "ref": "R_3JyCBVkWL2N7cJJ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0018": {
+   "source": "human",
+   "ref": "R_62n6AFNb6xEiHtf",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0019": {
+   "source": "human",
+   "ref": "R_75KQMX8dm6pD2i2",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0020": {
+   "source": "human",
+   "ref": "R_5cVxX7v8wfBYWBz",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0021": {
+   "source": "human",
+   "ref": "R_7NxEtO27nNw3UTv",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0022": {
+   "source": "human",
+   "ref": "R_1ECtvaV7uqwzUJz",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0023": {
+   "source": "human",
+   "ref": "R_6CsvOLVhGeJFLf1",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0024": {
+   "source": "human",
+   "ref": "R_7MFBV4Z3ECcIXDj",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0025": {
+   "source": "human",
+   "ref": "R_5oLO5c2qbeJFoaS",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0026": {
+   "source": "human",
+   "ref": "R_7WH89xia5d1AkUx",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0027": {
+   "source": "human",
+   "ref": "R_105zsbJgds2JNdL",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0028": {
+   "source": "human",
+   "ref": "R_6qEcz5u9Ez8nLfQ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0029": {
+   "source": "human",
+   "ref": "R_7k4wvZmGUjJiR3c",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0030": {
+   "source": "human",
+   "ref": "R_5FxvUI1jC1WORs5",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0031": {
+   "source": "human",
+   "ref": "R_3bJYHzL5f0QVTEJ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0032": {
+   "source": "human",
+   "ref": "R_7foXXD9bmwSXmCQ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0033": {
+   "source": "human",
+   "ref": "R_6dXUH8RjcE7qDLy",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0034": {
+   "source": "human",
+   "ref": "R_7l6gcFSybINMjyV",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0035": {
+   "source": "human",
+   "ref": "R_565crEAnaXYIu3T",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0036": {
+   "source": "human",
+   "ref": "R_6sVQndlGTjcKxTb",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0037": {
+   "source": "human",
+   "ref": "R_7y9s0dleI7EFtnP",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0038": {
+   "source": "human",
+   "ref": "R_3xYn81528aBWnbz",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0039": {
+   "source": "human",
+   "ref": "R_3nBmh9XqE3KlorH",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0040": {
+   "source": "human",
+   "ref": "R_7rUkp2yC2KcWjeN",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0041": {
+   "source": "human",
+   "ref": "R_3kHMBzpQlr8jxL5",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0042": {
+   "source": "human",
+   "ref": "R_7drOACC6R6jHjdr",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0043": {
+   "source": "human",
+   "ref": "R_3xDYTJoKftpRXZq",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0044": {
+   "source": "human",
+   "ref": "R_3Uf7I37uTKwBnU0",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0045": {
+   "source": "human",
+   "ref": "R_6017vK4MXaKEnsl",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0046": {
+   "source": "human",
+   "ref": "R_5mlvbwj51610Xjt",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0047": {
+   "source": "human",
+   "ref": "R_1ZMl2IX9OQ0NOIF",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0048": {
+   "source": "human",
+   "ref": "R_7KU8P0EPYAuxIAN",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0049": {
+   "source": "human",
+   "ref": "R_3l89Q5DClBgl9a9",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0050": {
+   "source": "human",
+   "ref": "R_7gBBcRpdQcOB7DS",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0051": {
+   "source": "human",
+   "ref": "R_5rYQHsytCtj89J7",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0052": {
+   "source": "human",
+   "ref": "R_7Rjw6ZEdxDPDzhf",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0053": {
+   "source": "human",
+   "ref": "R_5dBw7WQVe5Q1yTg",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0054": {
+   "source": "human",
+   "ref": "R_3dzi7xLXdOMI4PF",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0055": {
+   "source": "human",
+   "ref": "R_6C7wIeyOG4ONaPl",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0056": {
+   "source": "human",
+   "ref": "R_5QSJ2B3mNdXNjz3",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0057": {
+   "source": "human",
+   "ref": "R_75FsBMAsS7npldz",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0058": {
+   "source": "human",
+   "ref": "R_5KlIetRSHvTkavT",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0059": {
+   "source": "human",
+   "ref": "R_7QdY1mikql77rkR",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0060": {
+   "source": "human",
+   "ref": "R_6LcByAUindaaw6J",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0061": {
+   "source": "human",
+   "ref": "R_6rDjuzQWDd2l0ZQ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0062": {
+   "source": "human",
+   "ref": "R_3teNXNf6dKTob7p",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0063": {
+   "source": "human",
+   "ref": "R_3qDQmgbsP3b2MG9",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0064": {
+   "source": "human",
+   "ref": "R_3AYj8C4b1T901xv",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0065": {
+   "source": "human",
+   "ref": "R_5lsorMZvKSR4Rx6",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0066": {
+   "source": "human",
+   "ref": "R_61dFCTUpGqzqaOd",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0067": {
+   "source": "human",
+   "ref": "R_3sFINXdAJHX3x2p",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0068": {
+   "source": "human",
+   "ref": "R_7GZjhT95azhEp4F",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0069": {
+   "source": "human",
+   "ref": "R_3PTWcxjMI5Ng1Qv",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0070": {
+   "source": "human",
+   "ref": "R_7pmmqwM7esd5Vxl",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0071": {
+   "source": "human",
+   "ref": "R_1oz5sD8O6tolYLc",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0072": {
+   "source": "human",
+   "ref": "R_1dMtxgtrtoCZ880",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0073": {
+   "source": "human",
+   "ref": "R_7rOLZOXsypx4Inx",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0074": {
+   "source": "human",
+   "ref": "R_52KEOfGnmDBYPcc",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0075": {
+   "source": "human",
+   "ref": "R_11vnFT8ob1caynL",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0076": {
+   "source": "human",
+   "ref": "R_7ypHMYo53cCyUHT",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0077": {
+   "source": "human",
+   "ref": "R_62WSoRTzS4QaMgv",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0078": {
+   "source": "human",
+   "ref": "R_1eQ0OVWhZg4kbX7",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0079": {
+   "source": "human",
+   "ref": "R_6CeIRar2hLSeHVr",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0080": {
+   "source": "human",
+   "ref": "R_6CHgFbFUrnzjlQ5",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0081": {
+   "source": "human",
+   "ref": "R_3FN0suocvkrE1k5",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0082": {
+   "source": "human",
+   "ref": "R_3CWiP0BliZzTBvg",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0083": {
+   "source": "human",
+   "ref": "R_7DNq02DieiCYbz3",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0084": {
+   "source": "human",
+   "ref": "R_1sv3f8oAtYDOHGa",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0085": {
+   "source": "human",
+   "ref": "R_1KZSKTmR40wcrWA",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0086": {
+   "source": "human",
+   "ref": "R_7c8avBQV463hxDb",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0087": {
+   "source": "human",
+   "ref": "R_7AIo8N76Iru338J",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0088": {
+   "source": "human",
+   "ref": "R_6ISmkBTBGMT0RD6",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0089": {
+   "source": "human",
+   "ref": "R_6feblC7Akfi62Mc",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0090": {
+   "source": "human",
+   "ref": "R_7nln13bub1Rkca1",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0091": {
+   "source": "human",
+   "ref": "R_6v3Ttq4jFWs3AIN",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0092": {
+   "source": "human",
+   "ref": "R_71dHhDkZ55rjg4H",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0093": {
+   "source": "human",
+   "ref": "R_6c2avfQIBX5Q4sF",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0094": {
+   "source": "human",
+   "ref": "R_6OMXt8hgU0k9MeZ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0095": {
+   "source": "human",
+   "ref": "R_1hinAy6h79mBvRP",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0096": {
+   "source": "human",
+   "ref": "R_6oz5mWbv6e8sk4o",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0097": {
+   "source": "human",
+   "ref": "R_6UqpYRp9unqchwJ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0098": {
+   "source": "human",
+   "ref": "R_3tkRjVCHlWpK2sx",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0099": {
+   "source": "human",
+   "ref": "R_6doFFvfcWj66cVb",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0100": {
+   "source": "human",
+   "ref": "R_1I4gMX5KlxLg4sG",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0101": {
+   "source": "human",
+   "ref": "R_6hYlYDNSnOHCJDq",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0102": {
+   "source": "human",
+   "ref": "R_1wel8TSXOSpsoGl",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0103": {
+   "source": "human",
+   "ref": "R_5PZUFzx1fN5zB0P",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0104": {
+   "source": "human",
+   "ref": "R_1OrbeypA7o7Kclp",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0105": {
+   "source": "human",
+   "ref": "R_1MKcq5vfnVMeyYc",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0106": {
+   "source": "human",
+   "ref": "R_7rqhMLfUT8PzYXK",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0107": {
+   "source": "human",
+   "ref": "R_5HJfA0ckeYIECmB",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0108": {
+   "source": "human",
+   "ref": "R_7nXndfXD3kmAz8l",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0109": {
+   "source": "human",
+   "ref": "R_7c5aABhp5dR61Bv",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0110": {
+   "source": "human",
+   "ref": "R_6l9KiZE6EeS5yIb",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0111": {
+   "source": "human",
+   "ref": "R_5MYEHVAr93VE0Zr",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0112": {
+   "source": "human",
+   "ref": "R_3r0XmqSMpoSGZ2c",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0113": {
+   "source": "human",
+   "ref": "R_1ho8QL0lqA8YXdT",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0114": {
+   "source": "human",
+   "ref": "R_3AXp8GqRdFGPQux",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0115": {
+   "source": "human",
+   "ref": "R_6PdHxRgWQH1gQ2L",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0116": {
+   "source": "human",
+   "ref": "R_7Ny5ygePLty0l69",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0117": {
+   "source": "human",
+   "ref": "R_5DkxherpfjKSHIJ",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0118": {
+   "source": "human",
+   "ref": "R_3kVG0Nxy85i8bWp",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0119": {
+   "source": "human",
+   "ref": "R_17PrRwiNOcGYJAw",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0120": {
+   "source": "human",
+   "ref": "R_363AHKEFyhf6sRE",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_02",
+   "exact_duplicate_refs": []
+  },
+  "u0121": {
+   "source": "human",
+   "ref": "R_1MwH3XyPCttnsQh",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0122": {
+   "source": "human",
+   "ref": "R_7pMPaAqd3mf2kIy",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0123": {
+   "source": "human",
+   "ref": "R_11Lgt2u4BX5J5Ra",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0124": {
+   "source": "human",
+   "ref": "R_6OJvqouLaUesdgj",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0125": {
+   "source": "human",
+   "ref": "R_3DNhWZ7dtWa145P",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0126": {
+   "source": "human",
+   "ref": "R_7MfCPIbmX0lDNH8",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_earbuds_03",
+   "exact_duplicate_refs": []
+  },
+  "u0127": {
+   "source": "human",
+   "ref": "R_3wp31H7zz5BoSvh",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0128": {
+   "source": "human",
+   "ref": "R_320yRjPAN8IAJgt",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0129": {
+   "source": "human",
+   "ref": "R_7C7JT6aIJ0WbiYG",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_coffee_makers_03",
+   "exact_duplicate_refs": []
+  },
+  "u0130": {
+   "source": "human",
+   "ref": "R_7afuQMXIcrAF4sx",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_headphones_03",
+   "exact_duplicate_refs": []
+  },
+  "u0131": {
+   "source": "human",
+   "ref": "R_7LdJCOIpa9yq0we",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0132": {
+   "source": "human",
+   "ref": "R_3LtmLRK56pJVFnG",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  },
+  "u0133": {
+   "source": "human",
+   "ref": "R_1RmzlDudSNk6ipY",
+   "model_key": null,
+   "condition": "explicit_numeric",
+   "assortment_id": "sr_tvs_03",
+   "exact_duplicate_refs": []
+  }
+ }
+}

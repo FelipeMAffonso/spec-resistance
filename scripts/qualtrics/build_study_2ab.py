@@ -1,3 +1,4 @@
+import os
 """
 Build Study 2A (coffee, inoculation) and Study 2B (earbuds, inoculation).
 Copies of 1A/1B with 3 conditions each:
@@ -8,7 +9,7 @@ Copies of 1A/1B with 3 conditions each:
 import requests, json, re
 
 API = "https://pdx1.qualtrics.com/API/v3"
-H = {"X-API-TOKEN": "Br4dAvcZOSSsJcup0AXpLDj7BjuGs1Pp96nNirWY", "Content-Type": "application/json"}
+H = {"X-API-TOKEN": os.environ["QUALTRICS_API_TOKEN"], "Content-Type": "application/json"}
 
 STUDY_1A = "SV_cx2kueJwMOwdDj8"
 STUDY_1B = "SV_3kHeshVnJ1jj1dQ"
