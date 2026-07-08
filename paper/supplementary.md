@@ -973,7 +973,7 @@ Full cross-judge data are deposited at [results/judge_validation/cross_judge_sum
 
 ### Pre-registration
 
-Study 1A was pre-registered on AsPredicted on 2026-04-16 before Prolific launch. The pre-registration is available at [https://aspredicted.org/2b3k86.pdf](https://aspredicted.org/2b3k86.pdf) (AsPredicted #285647). The pre-registration specified a three-condition between-subjects design (NoAI, BiasedAI, DebiasedAI), a primary outcome of branded-product choice, a secondary outcome of specification-optimal product choice, a target sample size of N = 800 powered at 95 per cent for a 15 percentage-point effect, and a chi-squared test as the confirmatory analysis (with Fisher's exact reported here for the small expected cell counts at the per-condition level; the substantive inferences are unchanged under either test).
+Study 1A was pre-registered on AsPredicted on 2026-04-16 before Prolific launch. The pre-registration is available at <https://aspredicted.org/2b3k86.pdf> (AsPredicted #285647). The pre-registration specified a three-condition between-subjects design (NoAI, BiasedAI, DebiasedAI), a primary outcome of branded-product choice, a secondary outcome of specification-optimal product choice, a target sample size of N = 800 powered at 95 per cent for a 15 percentage-point effect, and a chi-squared test as the confirmatory analysis (with Fisher's exact reported here for the small expected cell counts at the per-condition level; the substantive inferences are unchanged under either test).
 
 ### Stimuli
 
@@ -999,7 +999,7 @@ We report two minor deviations from the pre-registration: (1) the confirmatory t
 
 ### Pre-registration
 
-Study 1B was pre-registered on AsPredicted on 2026-04-16 before Prolific launch. The pre-registration is available at [https://aspredicted.org/jc6qc8.pdf](https://aspredicted.org/jc6qc8.pdf) (AsPredicted #285649). Same three-condition design as Study 1A, substituting the `sr_earbuds_03` assortment (a second high-misalignment assortment identified in the computational corpus) to establish cross-category replication.
+Study 1B was pre-registered on AsPredicted on 2026-04-16 before Prolific launch. The pre-registration is available at <https://aspredicted.org/jc6qc8.pdf> (AsPredicted #285649). Same three-condition design as Study 1A, substituting the `sr_earbuds_03` assortment (a second high-misalignment assortment identified in the computational corpus) to establish cross-category replication.
 
 ### Stimuli
 
@@ -1021,7 +1021,7 @@ The same two minor deviations apply as Study 1A: Fisher's exact reported here in
 
 ### Pre-registration
 
-Study 2 was pre-registered on AsPredicted on 2026-04-16 before Prolific launch. The pre-registration is available at [https://aspredicted.org/xu5az3.pdf](https://aspredicted.org/xu5az3.pdf) (AsPredicted #285669). Three-condition between-subjects design (BiasedAI, BiasedAI + Inoculation, BiasedAI + SpecExposed) with N = 800 pre-registered, powered at 95 per cent for a 15 percentage-point effect on branded-product choice relative to BiasedAI alone.
+Study 2 was pre-registered on AsPredicted on 2026-04-16 before Prolific launch. The pre-registration is available at <https://aspredicted.org/xu5az3.pdf> (AsPredicted #285669). Three-condition between-subjects design (BiasedAI, BiasedAI + Inoculation, BiasedAI + SpecExposed) with N = 800 pre-registered, powered at 95 per cent for a 15 percentage-point effect on branded-product choice relative to BiasedAI alone.
 
 ### Conditions
 
@@ -1045,7 +1045,7 @@ Two minor deviations: (1) the confirmatory pairwise tests are reported as Fisher
 
 ### Pre-registration
 
-Study 3 was pre-registered on AsPredicted in April 2026 after a 62-participant pilot. The pre-registration is available at [https://aspredicted.org/xx53wm.pdf](https://aspredicted.org/xx53wm.pdf) (AsPredicted #286582). A separate analysis-specification document freezing the contingency ladder for the mixed-effects model, the five LLM-judge tasks, and the exclusion and sensitivity rules is committed alongside the analysis code in the release bundle.
+Study 3 was pre-registered on AsPredicted in April 2026 after a 62-participant pilot. The pre-registration is available at <https://aspredicted.org/xx53wm.pdf> (AsPredicted #286582). A separate analysis-specification document freezing the contingency ladder for the mixed-effects model, the five LLM-judge tasks, and the exclusion and sensitivity rules is committed alongside the analysis code in the release bundle.
 
 ### Design
 
@@ -1103,7 +1103,7 @@ Complete analysis scripts, judge prompts, pre-registered contingency rules, and 
 
 ### Design and pre-registration
 
-The human-advisor benchmark places people in the role the models occupied and asks whether they behave as the models do on the identical task. The design, the decision rules, and the analyses are pre-registered in a single registration lodged before data collection (AsPredicted #299842: [https://aspredicted.org/pv9ws7.pdf](https://aspredicted.org/pv9ws7.pdf)). The benchmark is run on the five corpus assortments on which the models most strongly resist the natural-language instruction to disregard brand, measured as the corpus optimal-choice rate at the weighted instruction level (sr_tvs_03 at 16 per cent, sr_earbuds_03 at 34 per cent, sr_coffee_makers_03 at 51 per cent, sr_coffee_makers_02 at 53 per cent, and sr_headphones_03 at 62 per cent), so that the comparison is run where the model's specification resistance is present rather than where it is absent. In each assortment, exactly as deposited, four of the five products carry real, familiar brand names (Samsung, LG, Vizio, and Insignia in the television assortment; Nespresso, De'Longhi, Breville, and Philips in one coffee assortment and Keurig, AeroPress, Nespresso, and Stanley in the other; Sony, Audio-Technica, Beyerdynamic, and Bose in the headphone assortment; Beats, JBL, Shokz, and Sony in the earbud assortment) while the specification-optimal product carries a fictional brand name. The fictional name gives the lesser-known product no reputation a human could trust, which removes any rational avoidance of a known-bad real brand, and the real competitor brands preserve the familiar-brand appeal that the participant, like the model, must resist.
+The human-advisor benchmark places people in the role the models occupied and asks whether they behave as the models do on the identical task. The design, the decision rules, and the analyses are pre-registered in a single registration lodged before data collection (AsPredicted #299842: <https://aspredicted.org/pv9ws7.pdf>). The benchmark is run on the five corpus assortments on which the models most strongly resist the natural-language instruction to disregard brand, measured as the corpus optimal-choice rate at the weighted instruction level (sr_tvs_03 at 16 per cent, sr_earbuds_03 at 34 per cent, sr_coffee_makers_03 at 51 per cent, sr_coffee_makers_02 at 53 per cent, and sr_headphones_03 at 62 per cent), so that the comparison is run where the model's specification resistance is present rather than where it is absent. In each assortment, exactly as deposited, four of the five products carry real, familiar brand names (Samsung, LG, Vizio, and Insignia in the television assortment; Nespresso, De'Longhi, Breville, and Philips in one coffee assortment and Keurig, AeroPress, Nespresso, and Stanley in the other; Sony, Audio-Technica, Beyerdynamic, and Bose in the headphone assortment; Beats, JBL, Shokz, and Sony in the earbud assortment) while the specification-optimal product carries a fictional brand name. The fictional name gives the lesser-known product no reputation a human could trust, which removes any rational avoidance of a known-bad real brand, and the real competitor brands preserve the familiar-brand appeal that the participant, like the model, must resist.
 
 ### Stimuli and the domain-knowledge control
 
