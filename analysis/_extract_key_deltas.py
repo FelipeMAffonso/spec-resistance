@@ -1,5 +1,6 @@
-"""Extract every paper-relevant number from EXTENDED.csv vs the published 18-model
-paper, write a delta table for use during paper revision.
+"""Extract every paper-relevant number from EXTENDED.csv vs the original 18-model
+collection batch, write a delta table. Internal comparison utility; not part of the
+reproduce.py --analyses chain.
 
 Output: analysis/_key_deltas.json + _key_deltas.md
 """
@@ -9,7 +10,7 @@ from collections import defaultdict, Counter
 import math
 
 ROOT = Path(__file__).resolve().parent.parent
-EXT = ROOT / "OSF" / "data" / "spec_resistance_EXTENDED.csv"
+EXT = ROOT / "data" / "spec_resistance_EXTENDED.csv"
 OUT_JSON = Path(__file__).parent / "_key_deltas.json"
 OUT_MD = Path(__file__).parent / "_key_deltas.md"
 

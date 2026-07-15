@@ -143,7 +143,6 @@ def run_analyses() -> int:
         HERE / "analysis" / "compute_all_stats.py",
         HERE / "analysis" / "supplementary_stats.py",
         HERE / "analysis" / "_recompute_stale_numbers.py",
-        HERE / "analysis" / "_extract_key_deltas.py",
     ]
     for s in scripts:
         if s.exists():

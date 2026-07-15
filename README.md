@@ -88,7 +88,7 @@ OSF/
 │   ├── _merge_xjudge.py               Merge cross-judged + matched-judged outputs
 │   └── README.md                      Detailed expansion procedure
 │
-├── data/                              All committed data (immutable — ground truth)
+├── data/                              All committed data (immutable ground truth)
 │   ├── spec_resistance_EXTENDED.csv          627,491 trials across 30 models (PRIMARY DATASET)
 │   ├── spec_resistance_CLEAN.csv             382,679 trials (subset; SHA-256 preserved across builds)
 │   ├── spec_resistance_NEW_MODELS.csv        244,812 trials (the cells appended to build EXTENDED)
@@ -183,15 +183,31 @@ Note on figure filenames: the underlying generator scripts produce `ed7_category
 
 ## Quick start: reproduce all results
 
-### Requirements
+### System requirements
+
+- **Operating system.** Developed and run on Windows 11. The pipeline is pure Python with no OS-specific code, so Linux and macOS work with the same commands.
+- **Software dependencies.** Tested on Python 3.11 and 3.13 (any 3.10+ works). All dependencies and minimum versions are pinned in `requirements.txt` (numpy, pandas, scipy, statsmodels, scikit-learn, matplotlib, tqdm, requests, plus the provider SDKs that only the live-experiment scripts use).
+- **Hardware.** No non-standard hardware is required for verification, analysis, figure regeneration, or the human-study analyses; a normal desktop with 8 GB of RAM is enough. The optional live experiments are the exception: representation probing, activation steering, and base-vs-instruct run on a cloud GPU (Modal, A10G or H100), and the fine-tuning experiments call provider APIs.
+
+### Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Python 3.10+. No GPU needed for verification or analysis. Only the live experiment scripts in `scripts/` (activation steering, representation probing, base-vs-instruct) require GPU and make API calls — these are optional.
+Typical install time on a normal desktop: one to two minutes. For corpus-level reproduction, additionally download `spec_resistance_EXTENDED.csv` (2.4 GB) from the Zenodo record above and place it at `data/spec_resistance_EXTENDED.csv`.
 
-### Verify and reproduce (no API calls, no GPU)
+### Demo (runs on data shipped in this repository; no download needed)
+
+```bash
+python human_studies/welfare_analysis_human_studies.py
+```
+
+Expected output: the script recomputes the Studies 1A, 1B, and 2 compliance shifts and the population-level welfare decomposition from the committed `anonymised.csv` files and rewrites `human_studies/welfare_analysis_output.txt`, byte-identical to the committed copy. Expected run time on a normal desktop: under ten seconds.
+
+The human-advisor benchmark has its own self-contained check: `python human_studies/study4-advisor-benchmark/analysis_confirmatory_numbers.py` reproduces every reported benchmark number into `confirmatory_numbers.json` from the committed data, in about two minutes.
+
+### Verify and reproduce (no API calls, no GPU; needs the Zenodo CSV in place)
 
 ```bash
 # 1. Verify committed-data SHA-256 integrity
@@ -206,6 +222,8 @@ python reproduce.py --figures
 # 4. All of the above sequentially
 python reproduce.py --full
 ```
+
+Expected output and run time, measured on a normal Windows 11 desktop: `--verify` prints an `OK` line per file and ends with `[verify] all files match` (well under a minute); `--analyses` recomputes every headline statistic section by section and rewrites `data/processed/manuscript_numbers.json`, byte-identical to the committed copy (about one to two minutes); `--figures` regenerates every figure into `figures/`.
 
 The analysis pipeline consumes `data/spec_resistance_EXTENDED.csv` by default.
 
@@ -535,7 +553,7 @@ Data were collected between January 2026 and April 2026 via direct API calls to 
 
 ## License
 
-Data and code are provided for peer review and academic replication. Please contact the author for other uses.
+Code in this repository is released under the MIT License (see `LICENSE`). The primary corpus deposited at Zenodo (DOI 10.5281/zenodo.19927068) is licensed CC BY 4.0. The anonymised human-study data are shared for peer review and academic replication; please contact the author about other uses.
 
 ## Citation
 
