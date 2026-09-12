@@ -174,7 +174,7 @@ OSF/
 
 This bundle is **self-contained** for full reproduction of every numerical claim, figure, statistical test, and rebuilt PDF in the paper. `python reproduce.py --full` runs end-to-end without referencing any path outside `OSF/`.
 
-The following materials are intentionally **hosted separately** rather than shipped in this bundle:
+The following materials are intentionally **hosted separately** and not shipped in this bundle:
 
 - **Qualtrics `.qsf` exports for Studies 1A, 1B, 2.** These define the survey instruments. The anonymised Prolific responses are in `human_studies/study{1a,1b,2}-*/anonymised.csv` and the analysis code reproduces every reported number from those CSVs. Only Study 3's `.qsf` ships in the bundle (in `human_studies/study3-chatbot/survey.qsf`) because Study 3 also requires the chatbot worker source for ecological validity. Researchers who wish to re-field Studies 1A/1B/2 on Qualtrics can request the `.qsf` files from the corresponding author.
 - **Pre-registration PDFs.** Hosted on a separate OSF registration linked from the paper's Methods section. The `prereg.md` files in each `human_studies/study*/` directory contain the full text of each pre-registration.
