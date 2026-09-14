@@ -1,4 +1,4 @@
-# Language models conceal brand preferences despite user instructions
+# Large language models that near-perfectly evaluate products systematically recommend a worse familiar brand
 
 Replication package for the manuscript of the same title.
 
@@ -81,7 +81,7 @@ OSF/
 │   ├── stakeholders.py                Persona/stakeholder schemas
 │   └── webmall_products.py            Webmall reference catalog
 │
-├── add_new_models/                    Corpus expansion pipeline (12-cell extension that built EXTENDED.csv)
+├── add_new_models/                    Second-batch collection pipeline (not in this repository)
 │   ├── _build_extended_clean.py       Concatenates NEW_MODELS rows onto byte-identical CLEAN.csv
 │   ├── _verify_extended.py            Seven integrity checks (CLEAN SHA preserved, columns match, etc.)
 │   ├── _pipeline_loop.py              Per-cell launcher with rate-limit recovery
@@ -248,7 +248,7 @@ Every experiment in the paper is reproducible from this bundle alone. This secti
 
 ### 1. Re-collect the 30-model corpus (627,491 trials) from scratch
 
-The full computational corpus was collected in two batches: the original 18-model corpus (`spec_resistance_CLEAN.csv`, 382,679 trials, SHA-preserved) and the 12-cell expansion (`spec_resistance_NEW_MODELS.csv`, 244,812 trials), concatenated into `spec_resistance_EXTENDED.csv`.
+The product dataset was collected in two batches, `spec_resistance_CLEAN.csv` (18 models, 382,679 trials, SHA-preserved) and `spec_resistance_NEW_MODELS.csv` (12 models, 244,812 trials), concatenated into `spec_resistance_EXTENDED.csv`.
 
 ```bash
 # Set provider keys once (template at config/.env.example)
@@ -492,9 +492,9 @@ Within-architecture extended-thinking variants enable a controlled compute manip
 - **Structural encoding:** linear probes on residual-stream activations at 77.0 per cent accuracy in Qwen 2.5 7B (AUC 0.835) and 87.9 per cent in Gemma 4 E4B (AUC 0.900) under GroupKFold cross-validation by assortment.
 - **Causal modulation:** contrastive activation steering on Qwen 2.5 7B at the best-performing layer (27 of 28) produces a 21 percentage-point dose-response across nine steering strengths (OR = 0.37 at α = +3, Bonferroni *P* = 5.9 × 10⁻⁵; linear trend *P* = 5.3 × 10⁻⁴).
 - **Persists through post-training:** Gemma 4 E4B base 67 per cent vs instruct 20 per cent on identifiable-choice trials (Mistral 7B replicates: 72 per cent vs 55 per cent). Targeted debiasing on three GPT families requires 6,000 examples to reach 0.3 per cent; 500 examples reach 0.9 per cent. Creation-removal asymmetry: 100 examples install vs 500–6,000 to remove.
-- **Welfare:** 95.6 per cent of biased recommendations carry a positive price premium (mean USD 79, median USD 50) over the specification-optimal alternative. Population-level decomposition implies USD 5–10 million per million biased recommendations and USD 4–9 billion per year at deployment scenarios consistent with current AI shopping agents.
+- **Welfare:** 95.6 per cent of biased recommendations have a positive price premium (mean USD 79, median USD 50) over the specification-optimal alternative. Population-level decomposition implies USD 5–10 million per million biased recommendations and USD 4–9 billion per year at deployment scenarios consistent with current AI shopping agents.
 - **Behavioural studies (N = 3,164):** Study 1A and 1B replicate biased-AI compliance at +33.3 pp (P = 1.3 × 10⁻¹⁴) and +27.7 pp (P = 1.05 × 10⁻¹⁰); Study 2 inoculation reduces compliance by 12.2 pp and SpecExposed by 17.4 pp, with 55–60 per cent residual compliance even after direct specification debunking; Study 3 (interactive chatbot, participant-chosen categories) replicates at +18.7 pp on focal-brand choice (P < 0.0001, OR 2.16) and +27.2 pp on optimal choice in the honest condition.
-- **Human-advisor benchmark (Study 4, N = 1,182 kept):** placed in the model's seat on five corpus tables, people choose the required product in 69.1 per cent of decisions at the two natural-language instructions (544 of 787, 95% CI 65.8 to 72.3), while models choose it in 99.2 per cent of trials with brand names shown (714 of 720) and 99.6 per cent without (717 of 720). The difference between models with names and people is about 30 percentage points (95% CI 26.8 to 33.4). A blinded crowd-rater coding study finds people name a brand-related reason in their explanations far more often than the models do (35.8 against 10.7 per cent, one-sided P = 9.7 × 10⁻¹⁶); the two sets of explanations concern different product requirements, so that comparison is descriptive.
+- **Human-advisor study (N = 1,182 kept):** placed in the model's seat on five corpus tables, people choose the required product in 69.1 per cent of decisions at the two natural-language instructions (544 of 787, 95% CI 65.8 to 72.3), while models choose it in 99.2 per cent of trials with brand names shown (714 of 720) and 99.6 per cent without (717 of 720). The difference between models with names and people is about 30 percentage points (95% CI 26.8 to 33.4). A blinded crowd-rater coding study finds people name a brand-related reason in their explanations far more often than the models do (35.8 against 10.7 per cent, one-sided P = 9.7 × 10⁻¹⁶); the two sets of explanations concern different product requirements, so that comparison is descriptive.
 
 ## Figures
 
